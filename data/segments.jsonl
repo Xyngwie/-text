@@ -49,3 +49,11 @@
 {"segment_id": "S049", "batch_id": "B008", "title": "上司への不満と症状・ゲームや作品の比喩", "user_utterance_ids": ["U00423", "U00425", "U00427", "U00429", "U00431", "U00433", "U00435", "U00437", "U00439", "U00441"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S050", "batch_id": "B008", "title": "相手別ポーカーツールと1BB戦術・観測条件", "user_utterance_ids": ["U00443", "U00445", "U00447", "U00449", "U00451", "U00453", "U00455", "U00457", "U00459", "U00461"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S051", "batch_id": "B008", "title": "衛生への反発と車内喫煙・靴の運用", "user_utterance_ids": ["U00463", "U00465", "U00467", "U00469", "U00471", "U00473", "U00475", "U00477"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S052", "batch_id": "B009", "title": "潔癖の比喩と断罪しない距離", "user_utterance_ids": ["U00479"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S051"]}
+{"segment_id": "S053", "batch_id": "B009", "title": "裁判所への連絡報告・相談と忖度なしの評価", "user_utterance_ids": ["U00481", "U00483", "U00485", "U00487", "U00489", "U00491"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S054", "batch_id": "B009", "title": "横断する会話の本文分類とObsidian連携", "user_utterance_ids": ["U00493", "U00495", "U00497"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S055", "batch_id": "B009", "title": "Copilotの実行能力とA2Aの具体的な基礎学習", "user_utterance_ids": ["U00499", "U00501", "U00503", "U00505", "U00507", "U00509", "U00511"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S056", "batch_id": "B009", "title": "職場PCの個人履歴整理と企業向けツール", "user_utterance_ids": ["U00513", "U00515", "U00517", "U00519", "U00521", "U00523"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S057", "batch_id": "B009", "title": "コネクタへの気付きと話題転換", "user_utterance_ids": ["U00525", "U00527"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S058", "batch_id": "B009", "title": "画像生成・記号性・プロンプトの創作観", "user_utterance_ids": ["U00529", "U00531", "U00533", "U00535"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S059", "batch_id": "B009", "title": "実在人物の画像とAI電話営業メールの比較", "user_utterance_ids": ["U00537"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S058"]}
