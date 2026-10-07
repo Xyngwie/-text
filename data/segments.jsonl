@@ -107,3 +107,11 @@
 {"segment_id": "S107", "batch_id": "B016", "title": "現場移動と業務システムの419障害", "user_utterance_ids": ["U00935", "U00937", "U00939", "U00941"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S108", "batch_id": "B016", "title": "電車で関数電卓を楽しむ人物への憧れ", "user_utterance_ids": ["U00943", "U00945", "U00947"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S109", "batch_id": "B016", "title": "八潮陥没事故のその後・現場を見てから評価する方針", "user_utterance_ids": ["U00949", "U00951", "U00953", "U00955", "U00957"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S110", "batch_id": "B017", "title": "作品の筋の調査要求・話題終了", "user_utterance_ids": ["U00959", "U00961"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S111", "batch_id": "B017", "title": "Xの投稿反応・収益と平和的な意見の出し方", "user_utterance_ids": ["U00963", "U00965", "U00967", "U00969"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S086"]}
+{"segment_id": "S112", "batch_id": "B017", "title": "測量見積りの範囲を説明する業務文案", "user_utterance_ids": ["U00971"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S113", "batch_id": "B017", "title": "遠洋漁業の種類・安全と収益の比較", "user_utterance_ids": ["U00973", "U00975", "U00977"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S102"]}
+{"segment_id": "S114", "batch_id": "B017", "title": "マンション価格案と営業探索・AIでの候補取得", "user_utterance_ids": ["U00979", "U00981", "U00983", "U00985", "U00987", "U00989", "U00991", "U00993", "U00995", "U00997"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S115", "batch_id": "B017", "title": "境界標亡失と外周チェックの業務文案", "user_utterance_ids": ["U00999"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S116", "batch_id": "B017", "title": "断捨離・初期化と大きな家具", "user_utterance_ids": ["U01001", "U01003"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S117", "batch_id": "B017", "title": "相手の感性への好意と資金・人生計画の距離", "user_utterance_ids": ["U01005", "U01007", "U01009", "U01011", "U01013", "U01015", "U01017"], "status": "provisional_boundary", "date": null}
