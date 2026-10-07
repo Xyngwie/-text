@@ -1,0 +1,19 @@
+{
+  "source_path": "こぴちーお引越し.txt",
+  "source_commit": "972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74",
+  "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
+  "source_sha256": "d659cc512d1f3c354dffee6bb101e83efb00e1f60800e643118c1df1b4b4710b",
+  "bytes": 6013387,
+  "line_count": 181369,
+  "utterance_counts": {
+    "user": 1721,
+    "copilot": 1717
+  },
+  "preamble_lines": [
+    1,
+    6
+  ],
+  "unclassified_user_utterances": 1188,
+  "date_policy": "Unknown: no year inferred from relative or incomplete dates.",
+  "parser_caveat": "Exact speaker labels inside pasted text may be mistaken for boundaries; manual review required."
+}
