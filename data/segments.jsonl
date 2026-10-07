@@ -15,3 +15,9 @@
 {"segment_id": "S015", "batch_id": "B002", "title": "予約送信の稼働条件・実行方針", "user_utterance_ids": ["U00106", "U00108"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S013"]}
 {"segment_id": "S016", "batch_id": "B002", "title": "古事記・アメシハラ・友人の連載", "user_utterance_ids": ["U00110", "U00112", "U00114", "U00116"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S017", "batch_id": "B002", "title": "参照先不明の「そのまま」", "user_utterance_ids": ["U00118"], "status": "unresolved_reference", "date": null}
+{"segment_id": "S018", "batch_id": "B003", "title": "フィッシングメール・文字の偽装・不整合", "user_utterance_ids": ["U00120", "U00122", "U00124"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S019", "batch_id": "B003", "title": "Google Earth・航空写真・現場の見込み", "user_utterance_ids": ["U00126", "U00128", "U00130", "U00132", "U00134"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S020", "batch_id": "B003", "title": "Ubuntuという用語", "user_utterance_ids": ["U00136"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S021", "batch_id": "B003", "title": "GitHub連携・AI並列開発・命名と周知", "user_utterance_ids": ["U00138", "U00139", "U00141", "U00143", "U00145", "U00147", "U00149", "U00151", "U00153", "U00155", "U00157", "U00159", "U00161"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S022", "batch_id": "B003", "title": "作業量と残量表示・無料枠の使い方", "user_utterance_ids": ["U00163", "U00165", "U00167", "U00169"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S023", "batch_id": "B003", "title": "有料AIへの評価・費用・制作への導入", "user_utterance_ids": ["U00171", "U00173", "U00175", "U00177"], "status": "provisional_boundary", "date": null}
