@@ -21,3 +21,8 @@
 {"segment_id": "S021", "batch_id": "B003", "title": "GitHub連携・AI並列開発・命名と周知", "user_utterance_ids": ["U00138", "U00139", "U00141", "U00143", "U00145", "U00147", "U00149", "U00151", "U00153", "U00155", "U00157", "U00159", "U00161"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S022", "batch_id": "B003", "title": "作業量と残量表示・無料枠の使い方", "user_utterance_ids": ["U00163", "U00165", "U00167", "U00169"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S023", "batch_id": "B003", "title": "有料AIへの評価・費用・制作への導入", "user_utterance_ids": ["U00171", "U00173", "U00175", "U00177"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S024", "batch_id": "B004", "title": "激辛料理・挑戦予定と体験", "user_utterance_ids": ["U00179", "U00181", "U00183", "U00185", "U00187", "U00189", "U00191"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S025", "batch_id": "B004", "title": "ポットオッズディフェンダー・設計と資料", "user_utterance_ids": ["U00193", "U00195", "U00197", "U00199", "U00201", "U00203", "U00205", "U00207"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S026", "batch_id": "B004", "title": "戦術の形式化・リレイズ・道具の転用", "user_utterance_ids": ["U00209", "U00211", "U00213", "U00215", "U00217", "U00219", "U00221", "U00223", "U00225", "U00227"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S025"]}
+{"segment_id": "S027", "batch_id": "B004", "title": "業務メールの添削", "user_utterance_ids": ["U00229"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S028", "batch_id": "B004", "title": "1BB戦術の例示・自己評価・道具との関係", "user_utterance_ids": ["U00231", "U00233", "U00235", "U00237"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S025", "S026"]}
