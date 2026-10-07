@@ -1,10 +1,10 @@
 # 分類の進捗
 
 - 検出本人発言：1,721件。
-- 文脈確認済み：180件（約10.5%）。
-- 最新：[B006](batches/B006.md)。前回：[B005](batches/B005.md)。
-- 次の開始位置：U00359。
-- 未解決の参照：U00118・U00128・U00143・U00263。
+- 文脈確認済み：210件（約12.2%）。
+- 最新：[B007](batches/B007.md)。前回：[B006](batches/B006.md)。
+- 次の開始位置：U00419。
+- 未解決の参照：U00118・U00128・U00143・U00263・U00375・U00393。
 - 全体の意味分類・ニュース反応モデルは未完了。
 
-自動候補のINDEX.mdと確認済み分類を区別する。詳細はdata/reviews.jsonl、data/segments.jsonl、data/progress.json。差分ZIPはリポジトリ直下のdata/・batches/配置に合わせ、追加・更新ファイルだけを収録する。アップロード待ちと分類作業は並行して進める。
+自動候補のINDEX.mdと確認済み分類を区別する。詳細はdata/reviews.jsonl、data/segments.jsonl、data/progress.json。差分ZIPはリポジトリ直下のdata/・batches/配置に合わせ、追加・更新ファイルだけを収録する。
