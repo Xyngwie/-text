@@ -90,3 +90,12 @@
 {"segment_id": "S090", "batch_id": "B014", "title": "事件鑑定の伝聞と世界の見え方への関心", "user_utterance_ids": ["U00809", "U00811"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S091", "batch_id": "B014", "title": "アニメの人物・世界共有と権利の比較", "user_utterance_ids": ["U00813", "U00815", "U00817", "U00819", "U00821", "U00823", "U00825", "U00827", "U00829", "U00831"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S092", "batch_id": "B014", "title": "ディープフェイクの否定権とAI人格の責任", "user_utterance_ids": ["U00833", "U00835", "U00837"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S058"]}
+{"segment_id": "S093", "batch_id": "B015", "title": "聖人ロールと本人・街での観察", "user_utterance_ids": ["U00839", "U00841", "U00843", "U00845"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S092"]}
+{"segment_id": "S094", "batch_id": "B015", "title": "日程より先に資料を求める業務メール", "user_utterance_ids": ["U00847"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S095", "batch_id": "B015", "title": "会話の保存トリガーとGrokの使い分け", "user_utterance_ids": ["U00849", "U00851", "U00853", "U00855"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S081"]}
+{"segment_id": "S096", "batch_id": "B015", "title": "裁量と確認の範囲・話題転換", "user_utterance_ids": ["U00857", "U00859"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S097", "batch_id": "B015", "title": "家電の指定価格と必要性能・IoTへの疑問", "user_utterance_ids": ["U00861", "U00863", "U00865", "U00867", "U00869", "U00871"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S098", "batch_id": "B015", "title": "盆の労働と他人の休日へのぼやき", "user_utterance_ids": ["U00873", "U00875"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S099", "batch_id": "B015", "title": "ジャスコ・サティの名称とモール", "user_utterance_ids": ["U00877", "U00879", "U00881", "U00883", "U00885", "U00887"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S100", "batch_id": "B015", "title": "敬語と作品由来の礼の表現", "user_utterance_ids": ["U00889", "U00891", "U00893"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S101", "batch_id": "B015", "title": "リクルート相手への疑いと面談報告", "user_utterance_ids": ["U00895", "U00897"], "status": "provisional_boundary", "date": null}
