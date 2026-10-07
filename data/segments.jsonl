@@ -57,3 +57,9 @@
 {"segment_id": "S057", "batch_id": "B009", "title": "コネクタへの気付きと話題転換", "user_utterance_ids": ["U00525", "U00527"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S058", "batch_id": "B009", "title": "画像生成・記号性・プロンプトの創作観", "user_utterance_ids": ["U00529", "U00531", "U00533", "U00535"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S059", "batch_id": "B009", "title": "実在人物の画像とAI電話営業メールの比較", "user_utterance_ids": ["U00537"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S058"]}
+{"segment_id": "S060", "batch_id": "B010", "title": "AI電話のパイプラインとPBXの基礎", "user_utterance_ids": ["U00539", "U00541", "U00543", "U00545"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S059"]}
+{"segment_id": "S061", "batch_id": "B010", "title": "筋弛緩薬と過去の目薬の体験・伝聞", "user_utterance_ids": ["U00547", "U00549", "U00551", "U00553"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S062", "batch_id": "B010", "title": "薬を風呂で均一に使う発想と条件変更", "user_utterance_ids": ["U00555", "U00557", "U00559", "U00561", "U00563", "U00565"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S063", "batch_id": "B010", "title": "社内資料の折りと測量成果の見た目", "user_utterance_ids": ["U00567", "U00569", "U00571", "U00573", "U00575", "U00577"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S064", "batch_id": "B010", "title": "スキル宣言・実装と専門エージェントの分担", "user_utterance_ids": ["U00579", "U00581", "U00583"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S055"]}
+{"segment_id": "S065", "batch_id": "B010", "title": "デスクトップの希望・価格不安と中古の選び方", "user_utterance_ids": ["U00585", "U00587", "U00589", "U00591", "U00593", "U00595", "U00597"], "status": "provisional_boundary", "date": null}
