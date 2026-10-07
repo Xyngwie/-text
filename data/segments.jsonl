@@ -36,3 +36,12 @@
 {"segment_id": "S036", "batch_id": "B006", "title": "AI開発とスマホの電池・用途分担", "user_utterance_ids": ["U00323", "U00325", "U00327"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S037", "batch_id": "B006", "title": "APK生成・非掲載アプリ・署名・PCの問題", "user_utterance_ids": ["U00329", "U00331", "U00333", "U00335", "U00337", "U00339", "U00341"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S012"]}
 {"segment_id": "S038", "batch_id": "B006", "title": "GitHubの基礎理解・AIの権限と確認範囲", "user_utterance_ids": ["U00343", "U00345", "U00347", "U00349", "U00351", "U00353", "U00355", "U00357"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S039", "batch_id": "B007", "title": "Markdown仕様書とY/Nの運用", "user_utterance_ids": ["U00359", "U00361"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S040", "batch_id": "B007", "title": "誤送信の訂正と地目変更の判断", "user_utterance_ids": ["U00363", "U00365", "U00367", "U00369", "U00371"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S041", "batch_id": "B007", "title": "ゲスト名の保存とスコアの補足", "user_utterance_ids": ["U00373", "U00375"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S042", "batch_id": "B007", "title": "会社登記の質問", "user_utterance_ids": ["U00377"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S043", "batch_id": "B007", "title": "楽になる姿勢の自己報告", "user_utterance_ids": ["U00379", "U00381", "U00383", "U00385", "U00387"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S044", "batch_id": "B007", "title": "体感の補足と道路幅・セットバック", "user_utterance_ids": ["U00389", "U00391"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S043"]}
+{"segment_id": "S045", "batch_id": "B007", "title": "頭身の冗談と姿勢の比較・話題終了", "user_utterance_ids": ["U00393", "U00395", "U00397"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S043"]}
+{"segment_id": "S046", "batch_id": "B007", "title": "攻めてくるマインスイーパーの設計", "user_utterance_ids": ["U00399", "U00401", "U00403", "U00405", "U00407", "U00409", "U00411"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S047", "batch_id": "B007", "title": "MODULE1〜3のゲーム循環", "user_utterance_ids": ["U00413", "U00415", "U00417"], "status": "provisional_boundary", "date": null}
