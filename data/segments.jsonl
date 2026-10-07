@@ -76,3 +76,12 @@
 {"segment_id": "S076", "batch_id": "B012", "title": "退職時の有給・代休と在籍の見通し", "user_utterance_ids": ["U00691", "U00693", "U00695", "U00697", "U00699", "U00701", "U00703", "U00705"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S077", "batch_id": "B012", "title": "都市計画図の大きな半径の曲線", "user_utterance_ids": ["U00707", "U00709"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S078", "batch_id": "B012", "title": "1BBCBの成績・HUの経過と対抗策", "user_utterance_ids": ["U00711", "U00713", "U00715", "U00717"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S050"]}
+{"segment_id": "S079", "batch_id": "B013", "title": "HU相手の強さと弱点", "user_utterance_ids": ["U00719"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S078"]}
+{"segment_id": "S080", "batch_id": "B013", "title": "見積り送付の業務文案", "user_utterance_ids": ["U00721"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S081", "batch_id": "B013", "title": "APIキーとObsidianの整理", "user_utterance_ids": ["U00723", "U00725"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S054"]}
+{"segment_id": "S082", "batch_id": "B013", "title": "ゲーム機の譲渡・投資の期待と将来像", "user_utterance_ids": ["U00727", "U00729", "U00731", "U00733", "U00735", "U00737", "U00739", "U00741", "U00743", "U00745"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S083", "batch_id": "B013", "title": "ボディペーパーの用途と頻度", "user_utterance_ids": ["U00747", "U00749", "U00751"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S084", "batch_id": "B013", "title": "順位の略語て・ゆと言葉の定着", "user_utterance_ids": ["U00753", "U00755", "U00757", "U00759"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S085", "batch_id": "B013", "title": "ポーカー診断の分類と状況による戦略", "user_utterance_ids": ["U00761", "U00763"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S086", "batch_id": "B013", "title": "子どもの暇と一芸・AI研究の方向性", "user_utterance_ids": ["U00765", "U00767"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S087", "batch_id": "B013", "title": "ポーカーハンドの武器比喩の体系", "user_utterance_ids": ["U00769", "U00771", "U00773", "U00775", "U00777"], "status": "provisional_boundary", "date": null}
