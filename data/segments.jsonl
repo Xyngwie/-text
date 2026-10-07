@@ -85,3 +85,8 @@
 {"segment_id": "S085", "batch_id": "B013", "title": "ポーカー診断の分類と状況による戦略", "user_utterance_ids": ["U00761", "U00763"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S086", "batch_id": "B013", "title": "子どもの暇と一芸・AI研究の方向性", "user_utterance_ids": ["U00765", "U00767"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S087", "batch_id": "B013", "title": "ポーカーハンドの武器比喩の体系", "user_utterance_ids": ["U00769", "U00771", "U00773", "U00775", "U00777"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S088", "batch_id": "B014", "title": "武器比喩の修正とレンジでの検査案", "user_utterance_ids": ["U00779", "U00781", "U00783", "U00785", "U00787"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S087"]}
+{"segment_id": "S089", "batch_id": "B014", "title": "賭け・技能・運営分離と国内資金のゲーム構想", "user_utterance_ids": ["U00789", "U00791", "U00793", "U00795", "U00797", "U00799", "U00801", "U00803", "U00805", "U00807"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S090", "batch_id": "B014", "title": "事件鑑定の伝聞と世界の見え方への関心", "user_utterance_ids": ["U00809", "U00811"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S091", "batch_id": "B014", "title": "アニメの人物・世界共有と権利の比較", "user_utterance_ids": ["U00813", "U00815", "U00817", "U00819", "U00821", "U00823", "U00825", "U00827", "U00829", "U00831"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S092", "batch_id": "B014", "title": "ディープフェイクの否定権とAI人格の責任", "user_utterance_ids": ["U00833", "U00835", "U00837"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S058"]}
