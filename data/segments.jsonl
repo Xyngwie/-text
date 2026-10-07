@@ -63,3 +63,9 @@
 {"segment_id": "S063", "batch_id": "B010", "title": "社内資料の折りと測量成果の見た目", "user_utterance_ids": ["U00567", "U00569", "U00571", "U00573", "U00575", "U00577"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S064", "batch_id": "B010", "title": "スキル宣言・実装と専門エージェントの分担", "user_utterance_ids": ["U00579", "U00581", "U00583"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S055"]}
 {"segment_id": "S065", "batch_id": "B010", "title": "デスクトップの希望・価格不安と中古の選び方", "user_utterance_ids": ["U00585", "U00587", "U00589", "U00591", "U00593", "U00595", "U00597"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S066", "batch_id": "B011", "title": "キャラの構造化・配布・背景設定と演技", "user_utterance_ids": ["U00599", "U00601", "U00603", "U00605", "U00607", "U00609"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S058"]}
+{"segment_id": "S067", "batch_id": "B011", "title": "眠りと完全記述・世界改変の創作設定", "user_utterance_ids": ["U00611", "U00613", "U00615", "U00617"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S068", "batch_id": "B011", "title": "AIエージェントの最小コードを根源から学ぶ", "user_utterance_ids": ["U00619", "U00621", "U00623", "U00625", "U00627", "U00629", "U00631", "U00633", "U00635", "U00637"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S064"]}
+{"segment_id": "S069", "batch_id": "B011", "title": "言質と責任・値引きへの取引上の不満", "user_utterance_ids": ["U00639"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S070", "batch_id": "B011", "title": "JSON動画プロンプトとMermaid・先生役の使い分け", "user_utterance_ids": ["U00641", "U00643", "U00645", "U00647", "U00649", "U00651"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S071", "batch_id": "B011", "title": "SUNOへの関心と効果音・落語ラップの案", "user_utterance_ids": ["U00653", "U00655", "U00657"], "status": "provisional_boundary", "date": null}
