@@ -1,0 +1,13 @@
+{
+  "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
+  "reviewed_user_utterances": 60,
+  "total_detected_user_utterances": 1721,
+  "reviewed_through": "U00118",
+  "next_user_utterance": "U00120",
+  "last_batch": "B002",
+  "semantic_classification_complete": false,
+  "repository_main_seen": "66c5036b6149c25ec3560a0472f78475cf6f8d14",
+  "unresolved_references": [
+    "U00118"
+  ]
+}

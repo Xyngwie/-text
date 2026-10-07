@@ -1,0 +1,17 @@
+{"segment_id": "S001", "batch_id": "B001", "title": "AIオタマトーン合唱・流行曲", "user_utterance_ids": ["U00001", "U00003"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S002", "batch_id": "B001", "title": "Copilotのメモリ・ログ移行", "user_utterance_ids": ["U00005", "U00007", "U00009", "U00011", "U00013", "U00015", "U00017", "U00018"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S003", "batch_id": "B001", "title": "五色地図・世界の形・創作", "user_utterance_ids": ["U00020", "U00022", "U00024", "U00026", "U00028", "U00030", "U00032", "U00034", "U00036"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S004", "batch_id": "B001", "title": "日経平均の数字の評価", "user_utterance_ids": ["U00038"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S005", "batch_id": "B001", "title": "図形の閉合と説明の違和感", "user_utterance_ids": ["U00040"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S006", "batch_id": "B001", "title": "努力目標・最低限の行動・漫才への転用", "user_utterance_ids": ["U00042", "U00044", "U00046", "U00048", "U00050", "U00052", "U00054", "U00056"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S007", "batch_id": "B001", "title": "測量に関する業務メールの添削", "user_utterance_ids": ["U00058"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S008", "batch_id": "B002", "title": "XML・Excelのファイル形式", "user_utterance_ids": ["U00060", "U00062"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S009", "batch_id": "B002", "title": "電柱の部材名", "user_utterance_ids": ["U00064", "U00066", "U00068"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S010", "batch_id": "B002", "title": "除毛道具の観察・手入れ・終了", "user_utterance_ids": ["U00070", "U00072", "U00074", "U00076"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S011", "batch_id": "B002", "title": "退職願の文面・終了", "user_utterance_ids": ["U00078", "U00080", "U00082"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S012", "batch_id": "B002", "title": "WebアプリのAPK化・Unity・別作品", "user_utterance_ids": ["U00084", "U00086", "U00088"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S013", "batch_id": "B002", "title": "予約送信・業務メール・送信時刻", "user_utterance_ids": ["U00090", "U00092", "U00094", "U00096"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S014", "batch_id": "B002", "title": "I Love Hue・続編・タイムラプス", "user_utterance_ids": ["U00098", "U00100", "U00102", "U00104"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S015", "batch_id": "B002", "title": "予約送信の稼働条件・実行方針", "user_utterance_ids": ["U00106", "U00108"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S013"]}
+{"segment_id": "S016", "batch_id": "B002", "title": "古事記・アメシハラ・友人の連載", "user_utterance_ids": ["U00110", "U00112", "U00114", "U00116"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S017", "batch_id": "B002", "title": "参照先不明の「そのまま」", "user_utterance_ids": ["U00118"], "status": "unresolved_reference", "date": null}
