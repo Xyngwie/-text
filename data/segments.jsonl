@@ -45,3 +45,7 @@
 {"segment_id": "S045", "batch_id": "B007", "title": "頭身の冗談と姿勢の比較・話題終了", "user_utterance_ids": ["U00393", "U00395", "U00397"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S043"]}
 {"segment_id": "S046", "batch_id": "B007", "title": "攻めてくるマインスイーパーの設計", "user_utterance_ids": ["U00399", "U00401", "U00403", "U00405", "U00407", "U00409", "U00411"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S047", "batch_id": "B007", "title": "MODULE1〜3のゲーム循環", "user_utterance_ids": ["U00413", "U00415", "U00417"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S048", "batch_id": "B008", "title": "戦闘の面白さと一度完成させる方針", "user_utterance_ids": ["U00419", "U00421"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S047"]}
+{"segment_id": "S049", "batch_id": "B008", "title": "上司への不満と症状・ゲームや作品の比喩", "user_utterance_ids": ["U00423", "U00425", "U00427", "U00429", "U00431", "U00433", "U00435", "U00437", "U00439", "U00441"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S050", "batch_id": "B008", "title": "相手別ポーカーツールと1BB戦術・観測条件", "user_utterance_ids": ["U00443", "U00445", "U00447", "U00449", "U00451", "U00453", "U00455", "U00457", "U00459", "U00461"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S051", "batch_id": "B008", "title": "衛生への反発と車内喫煙・靴の運用", "user_utterance_ids": ["U00463", "U00465", "U00467", "U00469", "U00471", "U00473", "U00475", "U00477"], "status": "provisional_boundary", "date": null}
