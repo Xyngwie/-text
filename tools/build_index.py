@@ -7,9 +7,9 @@ import subprocess
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'こぴちーお引越し.txt'
-OUT = ROOT / 'classification'
+OUT = ROOT
 MARKERS = {'あなたの発言': 'user', 'Copilot の発言': 'copilot'}
 THEMES = {
     'politics': ('政治・行政・制度', ['政治', '選挙', '政党', '首相', '議員', '政権', '政府', '国会', '官僚', '民主主義']),
