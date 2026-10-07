@@ -69,3 +69,10 @@
 {"segment_id": "S069", "batch_id": "B011", "title": "言質と責任・値引きへの取引上の不満", "user_utterance_ids": ["U00639"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S070", "batch_id": "B011", "title": "JSON動画プロンプトとMermaid・先生役の使い分け", "user_utterance_ids": ["U00641", "U00643", "U00645", "U00647", "U00649", "U00651"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S071", "batch_id": "B011", "title": "SUNOへの関心と効果音・落語ラップの案", "user_utterance_ids": ["U00653", "U00655", "U00657"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S072", "batch_id": "B012", "title": "測量図の照合と越境物の業務メール案", "user_utterance_ids": ["U00659"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S073", "batch_id": "B012", "title": "両立場の壁打ち・すれ違いと落としどころ", "user_utterance_ids": ["U00661", "U00663", "U00665", "U00667", "U00669", "U00671", "U00673"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S069"]}
+{"segment_id": "S074", "batch_id": "B012", "title": "短編の変化と逆向きの結果", "user_utterance_ids": ["U00675", "U00677", "U00679"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S075", "batch_id": "B012", "title": "八ヶ岳のポーカー仲間の宿泊予定と費用", "user_utterance_ids": ["U00681", "U00683", "U00685", "U00687", "U00689"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S076", "batch_id": "B012", "title": "退職時の有給・代休と在籍の見通し", "user_utterance_ids": ["U00691", "U00693", "U00695", "U00697", "U00699", "U00701", "U00703", "U00705"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S077", "batch_id": "B012", "title": "都市計画図の大きな半径の曲線", "user_utterance_ids": ["U00707", "U00709"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S078", "batch_id": "B012", "title": "1BBCBの成績・HUの経過と対抗策", "user_utterance_ids": ["U00711", "U00713", "U00715", "U00717"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S050"]}
