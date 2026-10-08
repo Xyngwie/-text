@@ -125,3 +125,17 @@
 {"segment_id": "S125", "batch_id": "B018", "title": "発達特性（ADHD/ASD）の自己認識と後付けラベル", "user_utterance_ids": ["U01057", "U01059", "U01061", "U01063"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S126", "batch_id": "B018", "title": "バーナム効果と名言もじり・構文の妙", "user_utterance_ids": ["U01065", "U01067", "U01069", "U01071"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S127", "batch_id": "B018", "title": "Zenbookのスペック選定とAI・API研究用途", "user_utterance_ids": ["U01073", "U01075", "U01077"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S128", "batch_id": "B019", "title": "車フィルム塗装のAI営業電話構想と声色研究", "user_utterance_ids": ["U01079", "U01081"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S129", "batch_id": "B019", "title": "AI営業研究用マシン選定とXでの発信戦略", "user_utterance_ids": ["U01083", "U01085"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S128"]}
+{"segment_id": "S130", "batch_id": "B019", "title": "境界確認書・通行承諾書未着時の置手紙文案", "user_utterance_ids": ["U01087", "U01089"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S131", "batch_id": "B019", "title": "マンション売却益の40%下落底打ちインデックスオールイン戦略", "user_utterance_ids": ["U01091", "U01093", "U01095"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S132", "batch_id": "B019", "title": "Xの悲鳴による底打ち感知とプランの客観評価要求", "user_utterance_ids": ["U01097", "U01099"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S131"]}
+{"segment_id": "S133", "batch_id": "B019", "title": "NISA先行と暴落時投入の配分・生活防衛の前提", "user_utterance_ids": ["U01101", "U01103"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S131", "S132"]}
+{"segment_id": "S134", "batch_id": "B019", "title": "投資クラスタ忌避と「AI創作×X収益化」クラスタの空気感知", "user_utterance_ids": ["U01105", "U01107", "U01109"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S132"]}
+{"segment_id": "S135", "batch_id": "B019", "title": "AI最強布陣とCopilot不在の冗談・API実行権限の問い", "user_utterance_ids": ["U01111", "U01113", "U01115"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S136", "batch_id": "B019", "title": "箇条書きからのエッセイ生成・承認後投稿の自動化構想", "user_utterance_ids": ["U01117"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S135"]}
+{"segment_id": "S137", "batch_id": "B019", "title": "PC必要性の認識とAI複数起動向けミドルクラスノート検討", "user_utterance_ids": ["U01119", "U01121"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S138", "batch_id": "B019", "title": "SSD高騰・ノートPCトレンド・国内メーカー忌避とレノボ", "user_utterance_ids": ["U01123", "U01125", "U01127", "U01129"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S137"]}
+{"segment_id": "S139", "batch_id": "B019", "title": "古千谷本町進捗報告と新規測量見積りの業務メール文案", "user_utterance_ids": ["U01131", "U01133"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S140", "batch_id": "B019", "title": "境界確認書再作成に伴う再押印依頼の手紙文案", "user_utterance_ids": ["U01135"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S141", "batch_id": "B019", "title": "スマホ機種変更（AQUOSからDIGNO）のデータ移行の問い", "user_utterance_ids": ["U01137"], "status": "provisional_boundary", "date": null}
