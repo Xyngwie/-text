@@ -193,3 +193,14 @@
 {"segment_id": "S193", "batch_id": "B023", "title": "図面座標値抽出のExcelコピペ不具合と抽出プロンプトの設計", "user_utterance_ids": ["U01365", "U01367"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S194", "batch_id": "B023", "title": "シノケン増田様からの越境物拡大図作図要望に関する部内共有文案の作成・改訂", "user_utterance_ids": ["U01369", "U01371"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S195", "batch_id": "B023", "title": "技名文化論（ストラトブレード・FSS・超信地回転射撃と技名を叫ばない美学）", "user_utterance_ids": ["U01373", "U01375", "U01377"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S196", "batch_id": "B024", "title": "技名文化論の総括（叫ぶ技の例外性と「使い手が必殺」という本質）", "user_utterance_ids": ["U01379", "U01381", "U01383"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S195"]}
+{"segment_id": "S197", "batch_id": "B024", "title": "布マスク×下着洗濯拒絶の心理（ちょい漏れ便への羞恥）とX投稿反響・短文化の検討", "user_utterance_ids": ["U01385", "U01387"], "status": "provisional_boundary", "date": "2026-06-29"}
+{"segment_id": "S198", "batch_id": "B024", "title": "マグロ漁船マネーの全額投資・2年目継続と「社会不在」の資源化戦略", "user_utterance_ids": ["U01389", "U01391"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S199", "batch_id": "B024", "title": "次のキャリア候補としての農業法人ホワイトカラー（農地集約・図面・境界管理）", "user_utterance_ids": ["U01393", "U01395"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S198"]}
+{"segment_id": "S200", "batch_id": "B024", "title": "サモハンKP氏からの正社員誘いと立ち上げ屋ビジネスモデル・人物調査", "user_utterance_ids": ["U01397", "U01399", "U01401", "U01403", "U01405"], "status": "provisional_boundary", "date": "2026-06-26"}
+{"segment_id": "S201", "batch_id": "B024", "title": "退職時期確定前は動かない誠実なスタンスとご飯を奢ってもらう体での接触方針", "user_utterance_ids": ["U01407"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S200"]}
+{"segment_id": "S202", "batch_id": "B024", "title": "Gemini雑談からの文章化3編（ラーメン屋行列・カジノ数学・警官小説）とオチの相談", "user_utterance_ids": ["U01409", "U01411", "U01413"], "status": "provisional_boundary", "date": "2026-06-26"}
+{"segment_id": "S203", "batch_id": "B024", "title": "小説風投稿のフォロワー獲得力と「感情のソムリエ型」新機軸シリーズの構想", "user_utterance_ids": ["U01415", "U01417", "U01419", "U01421"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S202"]}
+{"segment_id": "S204", "batch_id": "B024", "title": "第1弾「最上級の喜び」草案・AI読解限界と「作品摂取が仕事になる」好循環", "user_utterance_ids": ["U01423", "U01425", "U01427"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S203"]}
+{"segment_id": "S205", "batch_id": "B024", "title": "人名「辰弥」の読み候補確認と架電判断", "user_utterance_ids": ["U01429", "U01431"], "status": "provisional_boundary", "date": "2026-06-25"}
+{"segment_id": "S206", "batch_id": "B024", "title": "大田区西糀谷仮測での連絡漏れ・通報不調とシノケン向け次回調整メール文案", "user_utterance_ids": ["U01433", "U01435", "U01437"], "status": "provisional_boundary", "date": null}
