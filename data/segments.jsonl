@@ -171,3 +171,13 @@
 {"segment_id": "S171", "batch_id": "B021", "title": "古千谷本町四丁目先週末報告メール（8者分）のドラフト", "user_utterance_ids": ["U01249"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S159", "S169", "S170"]}
 {"segment_id": "S172", "batch_id": "B021", "title": "不在宅張り込みにおける「深夜」の定義と恐怖感への配慮", "user_utterance_ids": ["U01251", "U01253"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S173", "batch_id": "B021", "title": "21時頃までの張り込みの穏当な表現と岩澤様報告文案", "user_utterance_ids": ["U01255", "U01257"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S171", "S172"]}
+{"segment_id": "S174", "batch_id": "B022", "title": "無職転生の三大流派確認とポーカー戦術への見立て", "user_utterance_ids": ["U01259", "U01261", "U01263", "U01265", "U01267"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S175", "batch_id": "B022", "title": "無職転生アニメ3期の構成変化（エリス修行前倒しと視点移動）の考察", "user_utterance_ids": ["U01269", "U01271", "U01273", "U01275"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S174"]}
+{"segment_id": "S176", "batch_id": "B022", "title": "知人（椎名君）との距離感と退職ポストへの反応不在", "user_utterance_ids": ["U01277", "U01279", "U01281", "U01283", "U01285"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S177", "batch_id": "B022", "title": "無料スマホの性能とキャリアのいびつな商売構造への批判意図", "user_utterance_ids": ["U01287", "U01289"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S178", "batch_id": "B022", "title": "退職後のX収益化と入力デバイス（AI壁打ち速度）の高速化構想", "user_utterance_ids": ["U01291", "U01293", "U01295"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S179", "batch_id": "B022", "title": "こたつ記事対比での独自発信力と構文化・決まり文句の型作り", "user_utterance_ids": ["U01297", "U01299"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S178"]}
+{"segment_id": "S180", "batch_id": "B022", "title": "世田谷区「給田（きゅうでん）」の読み方と音読みへの驚き", "user_utterance_ids": ["U01301", "U01303", "U01305"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S181", "batch_id": "B022", "title": "3種AI（Copilot・Gemini・Grok）の検索域による使い分け", "user_utterance_ids": ["U01307", "U01309"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S182", "batch_id": "B022", "title": "オープンハウス宛て駒場一丁目再請求メールと退職の実感", "user_utterance_ids": ["U01311", "U01313", "U01315"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S183", "batch_id": "B022", "title": "MEO対策・Googleマップ順位向上FAX営業に対する虚業判定", "user_utterance_ids": ["U01317"], "status": "provisional_boundary", "date": null}
