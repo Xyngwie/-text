@@ -154,3 +154,20 @@
 {"segment_id": "S154", "batch_id": "B020", "title": "エコキュート変電機誤認と現況図の給湯器表記", "user_utterance_ids": ["U01187", "U01189"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S155", "batch_id": "B020", "title": "益業・奪業の美学区分と既存科目への違和感", "user_utterance_ids": ["U01191", "U01193"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S156", "batch_id": "B020", "title": "奪業増殖防止の方法論と美学教育としての「お花と茶道」", "user_utterance_ids": ["U01195", "U01197"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S155"]}
+{"segment_id": "S157", "batch_id": "B021", "title": "美学教育構想のストック・保留判断", "user_utterance_ids": ["U01199"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S156"]}
+{"segment_id": "S158", "batch_id": "B021", "title": "階段降りトレーニングと脚痩せ仮説の検討", "user_utterance_ids": ["U01201", "U01203"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S159", "batch_id": "B021", "title": "古千谷本町進捗報告メール文案（福田・岩澤・アーネストワン等）", "user_utterance_ids": ["U01205"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S160", "batch_id": "B021", "title": "本日の業務終了宣言と対話ダイジェスト要求", "user_utterance_ids": ["U01207", "U01209"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S161", "batch_id": "B021", "title": "計画実践の発信による支持獲得とパートナーとの釣り合い構想", "user_utterance_ids": ["U01211", "U01213"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S162", "batch_id": "B021", "title": "整数値しか取れない概念（離散値）の用語確認", "user_utterance_ids": ["U01215"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S163", "batch_id": "B021", "title": "フォルダリネーム遅延の不満と残業の疲弊", "user_utterance_ids": ["U01217", "U01219"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S164", "batch_id": "B021", "title": "深夜事務所でのアニメながら作業宣言と未消化リスト", "user_utterance_ids": ["U01221", "U01223"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S165", "batch_id": "B021", "title": "実際は無音集中・退勤宣言と日報前のヤニねこ", "user_utterance_ids": ["U01225", "U01227", "U01229"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S164"]}
+{"segment_id": "S166", "batch_id": "B021", "title": "Factorioのセンス要否・対応機種とPC非所持の告白", "user_utterance_ids": ["U01231", "U01233", "U01235"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S167", "batch_id": "B021", "title": "Surface検討とUnityゲーム制作（2D着手・グラフィック分業）への挑戦意欲", "user_utterance_ids": ["U01237", "U01239"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S166"]}
+{"segment_id": "S168", "batch_id": "B021", "title": "構想ゲーム像としてのフロントミッションオルタナティブ風マルチ", "user_utterance_ids": ["U01241"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S167"]}
+{"segment_id": "S169", "batch_id": "B021", "title": "難聴住民宛ての親族窓口依頼置手紙文案の推敲", "user_utterance_ids": ["U01243"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S170", "batch_id": "B021", "title": "隣地所有者アーネストワン・ホークワンへの照会手順確認", "user_utterance_ids": ["U01245", "U01247"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S171", "batch_id": "B021", "title": "古千谷本町四丁目先週末報告メール（8者分）のドラフト", "user_utterance_ids": ["U01249"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S159", "S169", "S170"]}
+{"segment_id": "S172", "batch_id": "B021", "title": "不在宅張り込みにおける「深夜」の定義と恐怖感への配慮", "user_utterance_ids": ["U01251", "U01253"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S173", "batch_id": "B021", "title": "21時頃までの張り込みの穏当な表現と岩澤様報告文案", "user_utterance_ids": ["U01255", "U01257"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S171", "S172"]}
