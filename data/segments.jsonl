@@ -115,3 +115,13 @@
 {"segment_id": "S115", "batch_id": "B017", "title": "境界標亡失と外周チェックの業務文案", "user_utterance_ids": ["U00999"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S116", "batch_id": "B017", "title": "断捨離・初期化と大きな家具", "user_utterance_ids": ["U01001", "U01003"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S117", "batch_id": "B017", "title": "相手の感性への好意と資金・人生計画の距離", "user_utterance_ids": ["U01005", "U01007", "U01009", "U01011", "U01013", "U01015", "U01017"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S118", "batch_id": "B018", "title": "出航前の対話と1年の待機希望", "user_utterance_ids": ["U01019"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S117"]}
+{"segment_id": "S119", "batch_id": "B018", "title": "串焼き屋動画と屋台の温め販売・バーナー構想", "user_utterance_ids": ["U01021", "U01023", "U01025", "U01027", "U01029", "U01031"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S120", "batch_id": "B018", "title": "トマホークステーキBBQの会費制パーティーと出店手順", "user_utterance_ids": ["U01033", "U01035", "U01037", "U01039"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S121", "batch_id": "B018", "title": "SMS文字数制限とフィッシング警戒", "user_utterance_ids": ["U01041", "U01043", "U01045"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S122", "batch_id": "B018", "title": "調査士業務メール文案とおたづね表現", "user_utterance_ids": ["U01047", "U01049"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S123", "batch_id": "B018", "title": "確定作業見積り更新と振込先の業務文案", "user_utterance_ids": ["U01051"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S124", "batch_id": "B018", "title": "メジェド神の神格と光線＝観測説", "user_utterance_ids": ["U01053", "U01055"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S125", "batch_id": "B018", "title": "発達特性（ADHD/ASD）の自己認識と後付けラベル", "user_utterance_ids": ["U01057", "U01059", "U01061", "U01063"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S126", "batch_id": "B018", "title": "バーナム効果と名言もじり・構文の妙", "user_utterance_ids": ["U01065", "U01067", "U01069", "U01071"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S127", "batch_id": "B018", "title": "Zenbookのスペック選定とAI・API研究用途", "user_utterance_ids": ["U01073", "U01075", "U01077"], "status": "provisional_boundary", "date": null}
