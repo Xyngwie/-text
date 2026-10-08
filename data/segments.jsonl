@@ -204,3 +204,11 @@
 {"segment_id": "S204", "batch_id": "B024", "title": "第1弾「最上級の喜び」草案・AI読解限界と「作品摂取が仕事になる」好循環", "user_utterance_ids": ["U01423", "U01425", "U01427"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S203"]}
 {"segment_id": "S205", "batch_id": "B024", "title": "人名「辰弥」の読み候補確認と架電判断", "user_utterance_ids": ["U01429", "U01431"], "status": "provisional_boundary", "date": "2026-06-25"}
 {"segment_id": "S206", "batch_id": "B024", "title": "大田区西糀谷仮測での連絡漏れ・通報不調とシノケン向け次回調整メール文案", "user_utterance_ids": ["U01433", "U01435", "U01437"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S207", "batch_id": "B025", "title": "成年後見関連書類（審判書・確定証明書等）の名称確認とAI回答の制止", "user_utterance_ids": ["U01439", "U01441", "U01443", "U01445"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S206"]}
+{"segment_id": "S208", "batch_id": "B025", "title": "測量図面における区画番号順序・閉合順の不自然さへの構造的違和感（P2, P1, P5, P4, P3）", "user_utterance_ids": ["U01447", "U01449", "U01451"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S209", "batch_id": "B025", "title": "電話発信テストの無料確認方法（111番線路試験）の確認", "user_utterance_ids": ["U01453", "U01455"], "status": "provisional_boundary", "date": "2026-06-24"}
+{"segment_id": "S210", "batch_id": "B025", "title": "チェスのアンパッサン・ポーンの主人公的性能と駒の物理的不足の疑問", "user_utterance_ids": ["U01457", "U01459", "U01461", "U01463"], "status": "provisional_boundary", "date": "2026-06-23"}
+{"segment_id": "S211", "batch_id": "B025", "title": "チェスの特殊技構造（キャッスリング・アンパッサン）と各駒の架空必殺技妄想", "user_utterance_ids": ["U01465", "U01467", "U01469", "U01471"], "status": "provisional_boundary", "date": "2026-06-23", "related_segment_ids": ["S210"]}
+{"segment_id": "S212", "batch_id": "B025", "title": "他社取得承諾書の個人情報参照における「借り」発生リスクと依頼文面の調整", "user_utterance_ids": ["U01473", "U01475", "U01477", "U01479", "U01481", "U01483", "U01485"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S213", "batch_id": "B025", "title": "上席（ボス）への事前許可・LINE短文共有と週明け口頭報告の手順検討", "user_utterance_ids": ["U01487", "U01489", "U01491"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S212"]}
+{"segment_id": "S214", "batch_id": "B025", "title": "古千谷本町地積更正登記経過報告メール（割と泣きのメール）の起案・推敲と送信決定", "user_utterance_ids": ["U01493", "U01495", "U01497"], "status": "provisional_boundary", "date": "2026-06-18"}
