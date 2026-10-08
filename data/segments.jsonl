@@ -139,3 +139,18 @@
 {"segment_id": "S139", "batch_id": "B019", "title": "古千谷本町進捗報告と新規測量見積りの業務メール文案", "user_utterance_ids": ["U01131", "U01133"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S140", "batch_id": "B019", "title": "境界確認書再作成に伴う再押印依頼の手紙文案", "user_utterance_ids": ["U01135"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S141", "batch_id": "B019", "title": "スマホ機種変更（AQUOSからDIGNO）のデータ移行の問い", "user_utterance_ids": ["U01137"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S142", "batch_id": "B020", "title": "DIGNO付属ACアダプタの低出力（5.3V1.5A）への苦言", "user_utterance_ids": ["U01139"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S141"]}
+{"segment_id": "S143", "batch_id": "B020", "title": "5G世界滅亡言説の回顧と投稿ネタ案", "user_utterance_ids": ["U01141", "U01143"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S144", "batch_id": "B020", "title": "6G規格化動向と5G最弱ミーム", "user_utterance_ids": ["U01145", "U01147"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S143"]}
+{"segment_id": "S145", "batch_id": "B020", "title": "1G・2Gの歴史とiモード対応・呼称の非浸透", "user_utterance_ids": ["U01149", "U01151"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S146", "batch_id": "B020", "title": "通信世代の神話化と「5Gは厨二」の詩的構文", "user_utterance_ids": ["U01153", "U01155"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S143", "S144", "S145"]}
+{"segment_id": "S147", "batch_id": "B020", "title": "早朝のこむら返りと話題転換（勝手に殺すな）", "user_utterance_ids": ["U01157", "U01159"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S148", "batch_id": "B020", "title": "Soundcore探しと耳の蒸れ防止（V型・開放型）", "user_utterance_ids": ["U01161", "U01163"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S149", "batch_id": "B020", "title": "マルチポイント接続仕様と会社・個人携帯の二刀流", "user_utterance_ids": ["U01165", "U01167"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S148"]}
+{"segment_id": "S150", "batch_id": "B020", "title": "AeroFit 2 Proの形状感想（ウーマナイザー類似）と自己客観視", "user_utterance_ids": ["U01169", "U01171", "U01173"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S148", "S149"]}
+{"segment_id": "S151", "batch_id": "B020", "title": "イヤホン注文完了・帰宅宣言と到着見込み", "user_utterance_ids": ["U01175", "U01177"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S150"]}
+{"segment_id": "S152", "batch_id": "B020", "title": "弁護士対応の言い回しと証人呼出しへのボスの不出頭方針", "user_utterance_ids": ["U01179", "U01181"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S153", "batch_id": "B020", "title": "退職後の個人責任追及リスクと業務上の使用者責任原則", "user_utterance_ids": ["U01183", "U01185"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S152"]}
+{"segment_id": "S154", "batch_id": "B020", "title": "エコキュート変電機誤認と現況図の給湯器表記", "user_utterance_ids": ["U01187", "U01189"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S155", "batch_id": "B020", "title": "益業・奪業の美学区分と既存科目への違和感", "user_utterance_ids": ["U01191", "U01193"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S156", "batch_id": "B020", "title": "奪業増殖防止の方法論と美学教育としての「お花と茶道」", "user_utterance_ids": ["U01195", "U01197"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S155"]}
