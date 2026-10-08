@@ -181,3 +181,15 @@
 {"segment_id": "S181", "batch_id": "B022", "title": "3種AI（Copilot・Gemini・Grok）の検索域による使い分け", "user_utterance_ids": ["U01307", "U01309"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S182", "batch_id": "B022", "title": "オープンハウス宛て駒場一丁目再請求メールと退職の実感", "user_utterance_ids": ["U01311", "U01313", "U01315"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S183", "batch_id": "B022", "title": "MEO対策・Googleマップ順位向上FAX営業に対する虚業判定", "user_utterance_ids": ["U01317"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S184", "batch_id": "B023", "title": "Google正規パートナーFAXのブラフ断定と虚業従事者の倫理考察", "user_utterance_ids": ["U01319", "U01321", "U01323", "U01325"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S183"]}
+{"segment_id": "S185", "batch_id": "B023", "title": "ネット黎明期リンク集や携帯アンテナ棒など「信じ込ませて買わせる商売」のやくざ性", "user_utterance_ids": ["U01327", "U01329"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S184"]}
+{"segment_id": "S186", "batch_id": "B023", "title": "古千谷本町未接触所有者状況報告メール文案と忖度なしレビュー要求", "user_utterance_ids": ["U01331", "U01333", "U01335"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S187", "batch_id": "B023", "title": "古千谷本町未取得所有者の1月〜7月時系列詳細報告メールの起案", "user_utterance_ids": ["U01337"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S186"]}
+{"segment_id": "S188", "batch_id": "B023", "title": "旧Outlookのダークモード解除と表示設定（左詰め）の確認", "user_utterance_ids": ["U01339", "U01341", "U01343", "U01345"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S189", "batch_id": "B023", "title": "古千谷本町地積更正登記相談方針・時系列報告と3月の空白に対する懸念・本音", "user_utterance_ids": ["U01347", "U01349", "U01351"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S187"]}
+{"segment_id": "S190", "batch_id": "B023", "title": "未回収者特化の時系列絞り込み文案の作成", "user_utterance_ids": ["U01353"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S189"]}
+{"segment_id": "S191", "batch_id": "B023", "title": "事前相談遅延に対する弁明時系列整理と電話・メールの切り分け主張", "user_utterance_ids": ["U01355", "U01357", "U01359", "U01361"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S189", "S190"]}
+{"segment_id": "S192", "batch_id": "B023", "title": "古千谷本町過去メール履歴全文（6月10日〜29日）の提示と筋の確認", "user_utterance_ids": ["U01363"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S191"]}
+{"segment_id": "S193", "batch_id": "B023", "title": "図面座標値抽出のExcelコピペ不具合と抽出プロンプトの設計", "user_utterance_ids": ["U01365", "U01367"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S194", "batch_id": "B023", "title": "シノケン増田様からの越境物拡大図作図要望に関する部内共有文案の作成・改訂", "user_utterance_ids": ["U01369", "U01371"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S195", "batch_id": "B023", "title": "技名文化論（ストラトブレード・FSS・超信地回転射撃と技名を叫ばない美学）", "user_utterance_ids": ["U01373", "U01375", "U01377"], "status": "provisional_boundary", "date": null}
