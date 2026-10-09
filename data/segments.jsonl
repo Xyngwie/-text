@@ -212,3 +212,16 @@
 {"segment_id": "S212", "batch_id": "B025", "title": "他社取得承諾書の個人情報参照における「借り」発生リスクと依頼文面の調整", "user_utterance_ids": ["U01473", "U01475", "U01477", "U01479", "U01481", "U01483", "U01485"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S213", "batch_id": "B025", "title": "上席（ボス）への事前許可・LINE短文共有と週明け口頭報告の手順検討", "user_utterance_ids": ["U01487", "U01489", "U01491"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S212"]}
 {"segment_id": "S214", "batch_id": "B025", "title": "古千谷本町地積更正登記経過報告メール（割と泣きのメール）の起案・推敲と送信決定", "user_utterance_ids": ["U01493", "U01495", "U01497"], "status": "provisional_boundary", "date": "2026-06-18"}
+{"segment_id":"S215","batch_id":"B026","title":"Xの青バッジ認証と、初日投稿を昼休みのポカチェに置く話","user_utterance_ids":["U01499","U01501","U01503","U01505"],"status":"provisional_boundary","date":null}
+{"segment_id":"S216","batch_id":"B026","title":"「できないことをできるまで」をしょうもない腹筋ローラー（未所持）へ落とす","user_utterance_ids":["U01507","U01509","U01511"],"status":"provisional_boundary","date":null,"related_segment_ids":["S215"]}
+{"segment_id":"S217","batch_id":"B026","title":"青バッジは本アカから移せず、ごった煮のままでは自分すぎる","user_utterance_ids":["U01513","U01515","U01517"],"status":"provisional_boundary","date":null,"related_segment_ids":["S215"]}
+{"segment_id":"S218","batch_id":"B026","title":"無水カレーはルーなしで足りるという料理上の気づき","user_utterance_ids":["U01519"],"status":"provisional_boundary","date":null}
+{"segment_id":"S219","batch_id":"B026","title":"書類返送のためのレターパック送付手紙と、逆接を残す訂正","user_utterance_ids":["U01521","U01523","U01525"],"status":"provisional_boundary","date":null}
+{"segment_id":"S220","batch_id":"B026","title":"誤植のあった確認書を訂正して返送する手紙","user_utterance_ids":["U01527"],"status":"provisional_boundary","date":null,"related_segment_ids":["S219"]}
+{"segment_id":"S221","batch_id":"B026","title":"古千谷本町の地積更正について法務局へ出す相談要旨","user_utterance_ids":["U01529","U01531","U01533","U01535"],"status":"provisional_boundary","date":null,"related_segment_ids":["S214"]}
+{"segment_id":"S222","batch_id":"B026","title":"照会は「できるか」ではなく「できるよね」の確認にする指示","user_utterance_ids":["U01537"],"status":"provisional_boundary","date":null,"related_segment_ids":["S221"]}
+{"segment_id":"S223","batch_id":"B026","title":"隣地からのペンキ写真への返信と、写っている範囲に限る結び","user_utterance_ids":["U01539","U01541"],"status":"provisional_boundary","date":null}
+{"segment_id":"S224","batch_id":"B026","title":"「いさいしょうちのすけ」だけの語呂","user_utterance_ids":["U01543"],"status":"provisional_boundary","date":null}
+{"segment_id":"S225","batch_id":"B026","title":"社内引越し後のIPと、席のデッドスペース","user_utterance_ids":["U01545","U01547"],"status":"provisional_boundary","date":null}
+{"segment_id":"S226","batch_id":"B026","title":"ファストフォールドとマクロで総ハンド数の誉が崩れる寂しさ","user_utterance_ids":["U01549","U01551"],"status":"provisional_boundary","date":null}
+{"segment_id":"S227","batch_id":"B026","title":"花やしき貸切への驚きと、退職間近の金曜に行けるかもしれない見立て","user_utterance_ids":["U01553","U01555","U01557"],"status":"provisional_boundary","date":null}
