@@ -212,3 +212,13 @@
 {"segment_id": "S212", "batch_id": "B025", "title": "他社取得承諾書の個人情報参照における「借り」発生リスクと依頼文面の調整", "user_utterance_ids": ["U01473", "U01475", "U01477", "U01479", "U01481", "U01483", "U01485"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S213", "batch_id": "B025", "title": "上席（ボス）への事前許可・LINE短文共有と週明け口頭報告の手順検討", "user_utterance_ids": ["U01487", "U01489", "U01491"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S212"]}
 {"segment_id": "S214", "batch_id": "B025", "title": "古千谷本町地積更正登記経過報告メール（割と泣きのメール）の起案・推敲と送信決定", "user_utterance_ids": ["U01493", "U01495", "U01497"], "status": "provisional_boundary", "date": "2026-06-18"}
+{"segment_id": "S215", "batch_id": "B026", "title": "X青バッジの認証完了と初日投稿を業務より後回しにする判断", "user_utterance_ids": ["U01499", "U01501", "U01503", "U01505"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S216", "batch_id": "B026", "title": "できないことをできるまでシリーズを未所持の腹筋ローラー企画へ縮小", "user_utterance_ids": ["U01507", "U01509", "U01511"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S215"]}
+{"segment_id": "S217", "batch_id": "B026", "title": "青バッジは本アカ専用で本人運用になり、ごった煮のままでは自分過ぎるという自己評価", "user_utterance_ids": ["U01513", "U01515", "U01517"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S215"]}
+{"segment_id": "S218", "batch_id": "B026", "title": "無水カレーはルーなしで足りるという料理判断", "user_utterance_ids": ["U01519"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S219", "batch_id": "B026", "title": "書類返送のレターパック送付と誤植訂正済み確認書返送の手紙", "user_utterance_ids": ["U01521", "U01523", "U01525", "U01527"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S220", "batch_id": "B026", "title": "古千谷本町地積更正の法務局相談文と確認スタンスでの再修正", "user_utterance_ids": ["U01529", "U01531", "U01533", "U01535", "U01537"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S214"]}
+{"segment_id": "S221", "batch_id": "B026", "title": "隣地からのペンキ写真への返信と写真外は未確認という結びの指定", "user_utterance_ids": ["U01539", "U01541", "U01543"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S222", "batch_id": "B026", "title": "社内引越し後のIP確認と席のデッドスペース活用", "user_utterance_ids": ["U01545", "U01547"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S223", "batch_id": "B026", "title": "ファストフォールドとマクロで総ハンド数の誉が崩れる寂しさ", "user_utterance_ids": ["U01549", "U01551"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S224", "batch_id": "B026", "title": "11月20日の花やしき貸切と退職間近の金曜に行けるかもしれないという見通し", "user_utterance_ids": ["U01553", "U01555", "U01557"], "status": "provisional_boundary", "date": null}
