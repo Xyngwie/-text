@@ -265,3 +265,19 @@
 {"segment_id": "S265", "batch_id": "B030", "title": "心療内科のハードルと、山に入れた書類の存在が不明になる記憶", "user_utterance_ids": ["U01788", "U01790"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S254"]}
 {"segment_id": "S266", "batch_id": "B030", "title": "ADは現実10回ほどで、自動処理は書く必要があってとっつきづらい", "user_utterance_ids": ["U01792", "U01794"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S262"]}
 {"segment_id": "S267", "batch_id": "B030", "title": "マイクロソフトエッジはなぜ人気がないのか", "user_utterance_ids": ["U01796"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S268", "batch_id": "B031", "title": "エッジに綽名をつけ、ブラウザ界の油そばとする", "user_utterance_ids": ["U01798"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S267"]}
+{"segment_id": "S269", "batch_id": "B031", "title": "全自動は手動手順の写しではなく、ECを抑えて現実へ届く手順を探す", "user_utterance_ids": ["U01800", "U01802", "U01804", "U01806", "U01808"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S266", "S262"]}
+{"segment_id": "S270", "batch_id": "B031", "title": "Windowsの機能でSMB1.0/CIFSのチェックボックスはどこか", "user_utterance_ids": ["U01810"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S271", "batch_id": "B031", "title": "西ケ原の分筆後は元地番以外を振れず、理由は書かなくてよいか", "user_utterance_ids": ["U01812"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S272", "batch_id": "B031", "title": "エイトノットへ日付入り請求書を再送し、隣接地の登記記録を求める", "user_utterance_ids": ["U01814"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S242"]}
+{"segment_id": "S273", "batch_id": "B031", "title": "中途の調査士は声量が届かず、試験は通っているがポンコツだと見る", "user_utterance_ids": ["U01816", "U01818", "U01820"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S274", "batch_id": "B031", "title": "アルコールチェックの体裁で停止を問われ、説明はメールだけでドライバーだけオンラインでよいか", "user_utterance_ids": ["U01822", "U01824", "U01826", "U01828", "U01830", "U01832"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S255"]}
+{"segment_id": "S275", "batch_id": "B031", "title": "一見のエイトノットへの請求メールを②案ベースにし、手続きを頼む文へ変える", "user_utterance_ids": ["U01834", "U01836"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S272"]}
+{"segment_id": "S276", "batch_id": "B031", "title": "小説の語り口は自分の文章と違い、売れていない人の物語も素敵だ", "user_utterance_ids": ["U01838", "U01840"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S203"]}
+{"segment_id": "S277", "batch_id": "B031", "title": "ウィングネオはコマンドラインかビジュアル系か", "user_utterance_ids": ["U01842"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S278", "batch_id": "B031", "title": "ADの自動処理はプログラムっぽいと聞いたが難しいか", "user_utterance_ids": ["U01844"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S269", "S266"]}
+{"segment_id": "S279", "batch_id": "B031", "title": "会えた人用の手紙を会えなかった相手への置き手紙にし、立会の一文が要るかを問う", "user_utterance_ids": ["U01846", "U01848"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S235", "S232"]}
+{"segment_id": "S280", "batch_id": "B031", "title": "グーグルマップ上で緯度経度を得るには", "user_utterance_ids": ["U01850"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S281", "batch_id": "B031", "title": "駒場一丁目の確認書受領メールは、冒頭を添削してほしい", "user_utterance_ids": ["U01852"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S182"]}
+{"segment_id": "S282", "batch_id": "B031", "title": "永遠の直後は時間定理からECまで手が続き、放置する暇がない", "user_utterance_ids": ["U01854"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S269", "S278"]}
+{"segment_id": "S283", "batch_id": "B031", "title": "あまり取引のないみらいアーキテクトへ、真北の追加測量と境界標の観測を報告する", "user_utterance_ids": ["U01856"], "status": "provisional_boundary", "date": null}
