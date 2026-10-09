@@ -281,3 +281,15 @@
 {"segment_id": "S281", "batch_id": "B031", "title": "駒場一丁目の確認書受領メールは、冒頭を添削してほしい", "user_utterance_ids": ["U01852"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S182"]}
 {"segment_id": "S282", "batch_id": "B031", "title": "永遠の直後は時間定理からECまで手が続き、放置する暇がない", "user_utterance_ids": ["U01854"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S269", "S278"]}
 {"segment_id": "S283", "batch_id": "B031", "title": "あまり取引のないみらいアーキテクトへ、真北の追加測量と境界標の観測を報告する", "user_utterance_ids": ["U01856"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S284", "batch_id": "B032", "title": "和泉の報告は悩むほどではないので、さっきの文面のまま送った", "user_utterance_ids": ["U01858"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S283"]}
+{"segment_id": "S285", "batch_id": "B032", "title": "墨出しと落とし込みで一日6〜7現場回り、写真帳だけがだるい", "user_utterance_ids": ["U01860", "U01862", "U01864"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S286", "batch_id": "B032", "title": "まんまるの計量スプーンはスープ向きでは、と無印の大さじを買った", "user_utterance_ids": ["U01866", "U01868", "U01870"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S287", "batch_id": "B032", "title": "やり方は思いつかず焦るが、本筋はフォーカスの駄洒落だった", "user_utterance_ids": ["U01872"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S288", "batch_id": "B032", "title": "図面はチェック待ちで、直したら納品して今日は仕舞い", "user_utterance_ids": ["U01874"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S289", "batch_id": "B032", "title": "発想は待ちの時ではなく寝ている時で、夢の構造を起きて詰める", "user_utterance_ids": ["U01876", "U01878", "U01880"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S290", "batch_id": "B032", "title": "マーチンの+1とブラシの切断を例に、穴埋めと悔しさからの変質を語る", "user_utterance_ids": ["U01882", "U01884", "U01886", "U01888", "U01890"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S247"]}
+{"segment_id": "S291", "batch_id": "B032", "title": "EC1を取らずに1e80を永遠で得る途中で、複製と受動、EC2とEC3を進める", "user_utterance_ids": ["U01892", "U01894", "U01896"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S282", "S269"]}
+{"segment_id": "S292", "batch_id": "B032", "title": "シュタイナーはドイツ語か、語感の命名かを尋ねる", "user_utterance_ids": ["U01898", "U01900", "U01902"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S293", "batch_id": "B032", "title": "駒場の確定測量と委任状の遅れを後手後手シュタイナーとして出し、添削は十分だと断る", "user_utterance_ids": ["U01904", "U01906"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S281", "S182"]}
+{"segment_id": "S294", "batch_id": "B032", "title": "フラッシュモブのフラッシュも、意味より語感の系かを問う", "user_utterance_ids": ["U01908", "U01910"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S295", "batch_id": "B032", "title": "67日目に現実へ達し、1RMか1時間で2RMかの二択だと訂正する", "user_utterance_ids": ["U01912", "U01914", "U01916"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S291", "S282"]}
