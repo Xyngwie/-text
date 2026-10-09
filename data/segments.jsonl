@@ -293,3 +293,15 @@
 {"segment_id": "S293", "batch_id": "B032", "title": "駒場の確定測量と委任状の遅れを後手後手シュタイナーとして出し、添削は十分だと断る", "user_utterance_ids": ["U01904", "U01906"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S281", "S182"]}
 {"segment_id": "S294", "batch_id": "B032", "title": "フラッシュモブのフラッシュも、意味より語感の系かを問う", "user_utterance_ids": ["U01908", "U01910"], "status": "provisional_boundary", "date": null}
 {"segment_id": "S295", "batch_id": "B032", "title": "67日目に現実へ達し、1RMか1時間で2RMかの二択だと訂正する", "user_utterance_ids": ["U01912", "U01914", "U01916"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S291", "S282"]}
+{"segment_id": "S296", "batch_id": "B033", "title": "現実したら2RMが取れるようになり、3RMは届かなそうなのでここで現実し、序盤は複製の3倍かと見る", "user_utterance_ids": ["U01918", "U01920", "U01922", "U01924"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S295", "S291"]}
+{"segment_id": "S297", "batch_id": "B033", "title": "流暢なLINE提出依頼は、だまされる人が出るだろうと見る", "user_utterance_ids": ["U01926"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S018", "S121"]}
+{"segment_id": "S298", "batch_id": "B033", "title": "エイトノット宇戸様への図面送付は、馴れ馴れしすぎないかと下書きを出す", "user_utterance_ids": ["U01928"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S275", "S272"]}
+{"segment_id": "S299", "batch_id": "B033", "title": "ありがとう存じますは下剋上の語で、秘書からポーカーまでの設定を並べて返す", "user_utterance_ids": ["U01930", "U01932", "U01934"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S300", "batch_id": "B033", "title": "三斜求積の手描き図面は、数値があれば形状は概略でもよいのではと問う", "user_utterance_ids": ["U01936", "U01938"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S301", "batch_id": "B033", "title": "週末にシュタゲをまた見て、話の構成力がすごいと言う", "user_utterance_ids": ["U01940"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S259"]}
+{"segment_id": "S302", "batch_id": "B033", "title": "1.8e308は最大値の個数とそこまでの数の2枠ではと見、逆数が最小単位かを尋ねる", "user_utterance_ids": ["U01942", "U01944", "U01946"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S303", "batch_id": "B033", "title": "初めてのエイトノット岩本様への現地作業の挨拶を、送るよう言われた文として出す", "user_utterance_ids": ["U01948"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S298", "S275"]}
+{"segment_id": "S304", "batch_id": "B033", "title": "年収の額ではFIREは決まらず、一生分がなければ働くしかないのではと置く", "user_utterance_ids": ["U01950"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S305", "batch_id": "B033", "title": "申請人の印鑑証明書は明日が実質期限だと受け、言わずに明朝申請する段取りの途中でどやんすーが鳴ると言う", "user_utterance_ids": ["U01952", "U01954", "U01956", "U01958", "U01960", "U01962", "U01964", "U01966", "U01968"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S306", "batch_id": "B033", "title": "エクスプローラーはローカルの新規フォルダ作成が遅く、右クリックは速いと分ける", "user_utterance_ids": ["U01970", "U01972", "U01974"], "status": "provisional_boundary", "date": null}
+{"segment_id": "S307", "batch_id": "B033", "title": "相手も勝ったと思っているがこちらが絶対勝っている場合しか勝ちではなく、他は些事ではと問う", "user_utterance_ids": ["U01976"], "status": "provisional_boundary", "date": null, "related_segment_ids": ["S245"]}
