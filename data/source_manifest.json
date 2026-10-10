@@ -13,9 +13,9 @@
     1,
     6
   ],
-  "reviewed_user_utterances": 1680,
-  "unreviewed_user_utterances": 41,
-  "unclassified_user_utterances": 34,
+  "reviewed_user_utterances": 1710,
+  "unreviewed_user_utterances": 11,
+  "unclassified_user_utterances": 10,
   "date_policy": "Unknown: no year inferred from relative or incomplete dates.",
   "parser_caveat": "Exact speaker labels inside pasted text may be mistaken for boundaries; manual review required."
 }
