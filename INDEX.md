@@ -6,9 +6,9 @@
 ## 進捗サマリ
 
 - **検出本人発言総数**: 1,721件
-- **文脈確認済み（確定）**: 1,650件 (95.9%)
-- **未確認発言（残り）**: 71件 (4.1%)
-- **設計済みセグメント数**: 543セグメント
+- **文脈確認済み（確定）**: 1,680件 (97.6%)
+- **未確認発言（残り）**: 41件 (2.4%)
+- **設計済みセグメント数**: 554セグメント
 - **Copilot発言総数**: 1,717件
 
 ## テーマ別索引一覧
@@ -17,19 +17,19 @@
 |---|---:|---:|---:|---|
 | [政治・行政・制度](themes/politics.md) | 0 | 0 | 0 | [themes/politics.md](themes/politics.md) |
 | [国際情勢・外交・紛争](themes/world.md) | 5 | 3 | 0 | [themes/world.md](themes/world.md) |
-| [経済・企業・労働](themes/economy.md) | 159 | 63 | 1 | [themes/economy.md](themes/economy.md) |
-| [社会・事件・情報環境](themes/society.md) | 169 | 78 | 0 | [themes/society.md](themes/society.md) |
-| [AI・対話・エージェント](themes/ai.md) | 167 | 56 | 4 | [themes/ai.md](themes/ai.md) |
-| [開発・ソフトウェア・運用](themes/software.md) | 299 | 114 | 1 | [themes/software.md](themes/software.md) |
+| [経済・企業・労働](themes/economy.md) | 159 | 63 | 0 | [themes/economy.md](themes/economy.md) |
+| [社会・事件・情報環境](themes/society.md) | 170 | 79 | 0 | [themes/society.md](themes/society.md) |
+| [AI・対話・エージェント](themes/ai.md) | 167 | 56 | 3 | [themes/ai.md](themes/ai.md) |
+| [開発・ソフトウェア・運用](themes/software.md) | 305 | 118 | 0 | [themes/software.md](themes/software.md) |
 | [測量・土地・登記](themes/survey.md) | 277 | 134 | 0 | [themes/survey.md](themes/survey.md) |
-| [ゲーム・設計・パズル](themes/games.md) | 297 | 102 | 0 | [themes/games.md](themes/games.md) |
-| [ポーカー・確率・戦略](themes/poker.md) | 163 | 56 | 5 | [themes/poker.md](themes/poker.md) |
-| [科学・工学・仕組み](themes/science.md) | 79 | 38 | 2 | [themes/science.md](themes/science.md) |
+| [ゲーム・設計・パズル](themes/games.md) | 309 | 109 | 0 | [themes/games.md](themes/games.md) |
+| [ポーカー・確率・戦略](themes/poker.md) | 169 | 59 | 1 | [themes/poker.md](themes/poker.md) |
+| [科学・工学・仕組み](themes/science.md) | 89 | 41 | 0 | [themes/science.md](themes/science.md) |
 | [音楽・表現・文化](themes/culture.md) | 293 | 107 | 0 | [themes/culture.md](themes/culture.md) |
-| [食・街歩き・旅行](themes/food.md) | 56 | 20 | 0 | [themes/food.md](themes/food.md) |
-| [生活・身体・機器](themes/life.md) | 326 | 141 | 0 | [themes/life.md](themes/life.md) |
-| [思考・価値観・自己理解](themes/thinking.md) | 585 | 287 | 3 | [themes/thinking.md](themes/thinking.md) |
-| [未分類・未精査](themes/unclassified.md) | - | - | 57 | [themes/unclassified.md](themes/unclassified.md) |
+| [食・街歩き・旅行](themes/food.md) | 63 | 23 | 0 | [themes/food.md](themes/food.md) |
+| [生活・身体・機器](themes/life.md) | 331 | 143 | 0 | [themes/life.md](themes/life.md) |
+| [思考・価値観・自己理解](themes/thinking.md) | 598 | 295 | 3 | [themes/thinking.md](themes/thinking.md) |
+| [未分類・未精査](themes/unclassified.md) | - | - | 34 | [themes/unclassified.md](themes/unclassified.md) |
 
 ※1つの発言やセグメントに複数テーマが付与される場合があるため、各テーマの確定発言数の合計は確認済み発言数と一致しません。
 
