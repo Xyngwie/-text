@@ -64,14 +64,20 @@
    - `last_batch`: 今回のバッチID（例: `"B026"`）
 5. `PROGRESS.md`: 冒頭の確認済み件数、進捗率、最新バッチ、次回開始位置を更新。
 
-### Step 6: 整合性バリデーション（必須）
+### Step 6: インデックスの再生成・同期（必須）
+以下のコマンドを実行し、テーマ別索引（`INDEX.md`、`themes/*.md`、`data/utterances.jsonl` 等）を今回の確定レビュー・セグメント・進捗と完全同期する：
+```bash
+python3 tools/build_index.py
+```
+
+### Step 7: 整合性バリデーション（必須）
 以下のコマンドを実行し、データの整合性を検査する：
 ```bash
 python3 tools/validate.py
 ```
 - エラーが出た場合は、出力内容を確認してファイルを修正し、パスするまでコミットに進まないこと。
 
-### Step 7: コミットとGitHubへのプッシュ
+### Step 8: コミットとGitHubへのプッシュ
 1. 差分を確認する:
    ```bash
    git status
@@ -79,19 +85,20 @@ python3 tools/validate.py
    ```
 2. 変更をステージングしてコミットする:
    ```bash
-   git add data/reviews.jsonl data/segments.jsonl data/progress.json PROGRESS.md batches/B*.md
-   git commit -m "Bxxx: Uyyyyy〜Uzzzzzの文脈精査・セグメント設計および進捗更新"
+   git add data/reviews.jsonl data/segments.jsonl data/progress.json PROGRESS.md batches/B*.md INDEX.md themes/*.md data/utterances.jsonl data/source_manifest.json
+   git commit -m "Bxxx: Uyyyyy〜Uzzzzzの文脈精査・セグメント設計およびインデックス・進捗更新"
    ```
 3. リモートへプッシュする:
    ```bash
    git push github main
    ```
 
-### Step 8: 完了報告
+### Step 9: 完了報告
 作業完了後、以下の項目を簡潔に報告して終了する：
 - 完了バッチID（例: `B026`）
 - 処理した本人発言範囲（例: `U01499`〜`U01557`、計30件）
 - 新設セグメント範囲（例: `S215`〜`S223`）
 - 累計進捗（例: `780 / 1721件 (約45.3%)`）
 - 次回開始位置（例: `U01559`）
+- インデックス同期（`tools/build_index.py` 実行完了）
 ```

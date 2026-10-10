@@ -73,7 +73,7 @@
 リポジトリのルートで実行する。
 
 ```bash
-python3 classification/tools/build_index.py
+python3 tools/build_index.py
 ```
 
-Python標準ライブラリとGitだけを使用。原本と手動レビューは書き換えない。発言区間の連続性、IDの重複、Copilotの発言を本人のテーマ候補にしないことを処理内で検査する。
+Python標準ライブラリとGitだけを使用。原本と手動レビューは書き換えない。確定したレビュー行（`data/reviews.jsonl`）およびセグメント（`data/segments.jsonl`）を自動的に取り込み、テーマ別索引（`INDEX.md`、`themes/*.md`）および発言索引（`data/utterances.jsonl`）を最新の確定分類・未精査候補と同期します。発言区間の連続性、IDの重複、Copilotの発言を本人のテーマ候補にしないことを処理内で検査します。

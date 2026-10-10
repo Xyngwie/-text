@@ -1,6 +1,6 @@
 {
-  "status": "provisional",
-  "method": "literal_keyword_candidates_user_only",
+  "status": "integrated",
+  "method": "confirmed_reviews_and_literal_keyword_candidates",
   "themes": {
     "politics": {
       "label": "政治・行政・制度",
