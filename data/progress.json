@@ -1,12 +1,12 @@
 {
   "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
-  "reviewed_user_utterances": 1710,
+  "reviewed_user_utterances": 1721,
   "total_detected_user_utterances": 1721,
-  "reviewed_through": "U03415",
-  "next_user_utterance": "U03417",
-  "last_batch": "B057",
-  "semantic_classification_complete": false,
-  "repository_main_seen": "f7b567ffcfe2e25cd3674be4bdf2c3a46cca67d0",
+  "reviewed_through": "U03437",
+  "next_user_utterance": null,
+  "last_batch": "B058",
+  "semantic_classification_complete": true,
+  "repository_main_seen": "42ec473ce8765e08006fbdd607e758415dd5a840",
   "unresolved_references": [
     "U00118",
     "U00128",

@@ -6,9 +6,9 @@
 ## 進捗サマリ
 
 - **検出本人発言総数**: 1,721件
-- **文脈確認済み（確定）**: 1,710件 (99.4%)
-- **未確認発言（残り）**: 11件 (0.6%)
-- **設計済みセグメント数**: 563セグメント
+- **文脈確認済み（確定）**: 1,721件 (100.0%)
+- **未確認発言（残り）**: 0件 (0.0%)
+- **設計済みセグメント数**: 567セグメント
 - **Copilot発言総数**: 1,717件
 
 ## テーマ別索引一覧
@@ -19,17 +19,17 @@
 | [国際情勢・外交・紛争](themes/world.md) | 5 | 3 | 0 | [themes/world.md](themes/world.md) |
 | [経済・企業・労働](themes/economy.md) | 159 | 63 | 0 | [themes/economy.md](themes/economy.md) |
 | [社会・事件・情報環境](themes/society.md) | 172 | 80 | 0 | [themes/society.md](themes/society.md) |
-| [AI・対話・エージェント](themes/ai.md) | 169 | 58 | 1 | [themes/ai.md](themes/ai.md) |
-| [開発・ソフトウェア・運用](themes/software.md) | 305 | 118 | 0 | [themes/software.md](themes/software.md) |
-| [測量・土地・登記](themes/survey.md) | 277 | 134 | 0 | [themes/survey.md](themes/survey.md) |
-| [ゲーム・設計・パズル](themes/games.md) | 319 | 113 | 0 | [themes/games.md](themes/games.md) |
+| [AI・対話・エージェント](themes/ai.md) | 170 | 59 | 0 | [themes/ai.md](themes/ai.md) |
+| [開発・ソフトウェア・運用](themes/software.md) | 309 | 120 | 0 | [themes/software.md](themes/software.md) |
+| [測量・土地・登記](themes/survey.md) | 285 | 136 | 0 | [themes/survey.md](themes/survey.md) |
+| [ゲーム・設計・パズル](themes/games.md) | 321 | 114 | 0 | [themes/games.md](themes/games.md) |
 | [ポーカー・確率・戦略](themes/poker.md) | 173 | 62 | 0 | [themes/poker.md](themes/poker.md) |
 | [科学・工学・仕組み](themes/science.md) | 89 | 41 | 0 | [themes/science.md](themes/science.md) |
 | [音楽・表現・文化](themes/culture.md) | 297 | 109 | 0 | [themes/culture.md](themes/culture.md) |
 | [食・街歩き・旅行](themes/food.md) | 74 | 26 | 0 | [themes/food.md](themes/food.md) |
 | [生活・身体・機器](themes/life.md) | 340 | 147 | 0 | [themes/life.md](themes/life.md) |
-| [思考・価値観・自己理解](themes/thinking.md) | 614 | 301 | 0 | [themes/thinking.md](themes/thinking.md) |
-| [未分類・未精査](themes/unclassified.md) | - | - | 10 | [themes/unclassified.md](themes/unclassified.md) |
+| [思考・価値観・自己理解](themes/thinking.md) | 617 | 304 | 0 | [themes/thinking.md](themes/thinking.md) |
+| [未分類・未精査](themes/unclassified.md) | - | - | 0 | [themes/unclassified.md](themes/unclassified.md) |
 
 ※1つの発言やセグメントに複数テーマが付与される場合があるため、各テーマの確定発言数の合計は確認済み発言数と一致しません。
 
