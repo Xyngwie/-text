@@ -42,3 +42,23 @@
 - 発言インデックス: `data/utterances.jsonl`
 - 確定レビューデータ: `data/reviews.jsonl`
 - 確定セグメント一覧: `data/segments.jsonl`
+
+## 発信と判断の観察（読み直し）
+
+バッチサマリの観察文を、テーマごとに読める文章へまとめ直したものです。`observations/` は索引の再生成では上書きしません。
+
+- [政治・行政・制度](observations/politics.md)
+- [国際情勢・外交・紛争](observations/world.md)
+- [経済・企業・労働](observations/economy.md)
+- [社会・事件・情報環境](observations/society.md)
+- [AI・対話・エージェント](observations/ai.md)
+- [開発・ソフトウェア・運用](observations/software.md)
+- [測量・土地・登記](observations/survey.md)
+- [ゲーム・設計・パズル](observations/games.md)
+- [ポーカー・確率・戦略](observations/poker.md)
+- [科学・工学・仕組み](observations/science.md)
+- [音楽・表現・文化](observations/culture.md)
+- [食・街歩き・旅行](observations/food.md)
+- [生活・身体・機器](observations/life.md)
+- [思考・価値観・自己理解](observations/thinking.md)
+

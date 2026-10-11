@@ -340,7 +340,17 @@ def main():
         '- 発言インデックス: `data/utterances.jsonl`',
         '- 確定レビューデータ: `data/reviews.jsonl`',
         '- 確定セグメント一覧: `data/segments.jsonl`',
+        '',
+        '## 発信と判断の観察（読み直し）',
+        '',
+        'バッチサマリの観察文を、テーマごとに読める文章へまとめ直したものです。`observations/` は索引の再生成では上書きしません。',
+        '',
     ])
+    for key, (label, _) in THEMES.items():
+        obs = OUT / 'observations' / f'{key}.md'
+        if obs.exists():
+            summary.append(f'- [{label}](observations/{key}.md)')
+    summary.append('')
 
     (OUT / 'INDEX.md').write_text('\n'.join(summary) + '\n', encoding='utf-8')
 
