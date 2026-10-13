@@ -1,6 +1,6 @@
 # テーマ別索引
 
-神宮氏とCopilotの対話ログ（原本: `こぴちーお引越し.txt`）をテーマ別に参照できるように整理した索引です。
+神宮氏とLLMの対話ログを、出典を区別してテーマ別に参照できるように整理した索引です。
 第2段階（文脈精査・セグメント設計）の確定レビュー結果および未精査のキーワード仮候補を反映しています。
 
 ## 進捗サマリ
@@ -9,7 +9,7 @@
 - **文脈確認済み（確定）**: 1,721件 (100.0%)
 - **未確認発言（残り）**: 0件 (0.0%)
 - **設計済みセグメント数**: 567セグメント
-- **Copilot発言総数**: 1,717件
+- **LLM発言総数**: 1,717件
 
 ## テーマ別索引一覧
 
@@ -35,7 +35,7 @@
 
 ## 関連リソース
 
-- 原本: [こぴちーお引越し.txt](https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt)（固定コミットリンク）
+- 原本（copilot-001 / Copilot）: [こぴちーお引越し.txt](https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt)（固定コミットリンク）
 - [進捗詳細 (PROGRESS.md)](PROGRESS.md)
 - [作業ガイドライン (GUIDELINES.md)](GUIDELINES.md)
 - [自動化エージェント指示文 (AUTOMATION_INSTRUCTIONS.md)](AUTOMATION_INSTRUCTIONS.md)

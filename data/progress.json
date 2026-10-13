@@ -17,5 +17,17 @@
     "U00639",
     "U00919",
     "U00921"
-  ]
+  ],
+  "sources": {
+    "copilot-001": {
+      "assistant": "Copilot",
+      "utterance_counts": {
+        "user": 1721,
+        "copilot": 1717
+      },
+      "reviewed_user_utterances": 1721,
+      "unreviewed_user_utterances": 0,
+      "semantic_classification_complete": true
+    }
+  }
 }

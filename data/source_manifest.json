@@ -1,20 +1,60 @@
 {
-  "source_path": "こぴちーお引越し.txt",
+  "source_id": "copilot-001",
+  "path": "こぴちーお引越し.txt",
+  "assistant": "Copilot",
+  "id_prefix": "",
   "source_commit": "972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74",
   "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
   "source_sha256": "d659cc512d1f3c354dffee6bb101e83efb00e1f60800e643118c1df1b4b4710b",
+  "speaker_markers": {
+    "あなたの発言": "user",
+    "Copilot の発言": "copilot"
+  },
   "bytes": 6013387,
   "line_count": 181369,
-  "utterance_counts": {
-    "user": 1721,
-    "copilot": 1717
-  },
   "preamble_lines": [
     1,
     6
   ],
+  "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt",
+  "utterance_counts": {
+    "user": 1721,
+    "copilot": 1717
+  },
   "reviewed_user_utterances": 1721,
   "unreviewed_user_utterances": 0,
+  "semantic_classification_complete": true,
+  "source_path": "こぴちーお引越し.txt",
+  "schema_version": 2,
+  "sources": [
+    {
+      "source_id": "copilot-001",
+      "path": "こぴちーお引越し.txt",
+      "assistant": "Copilot",
+      "id_prefix": "",
+      "source_commit": "972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74",
+      "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
+      "source_sha256": "d659cc512d1f3c354dffee6bb101e83efb00e1f60800e643118c1df1b4b4710b",
+      "speaker_markers": {
+        "あなたの発言": "user",
+        "Copilot の発言": "copilot"
+      },
+      "bytes": 6013387,
+      "line_count": 181369,
+      "preamble_lines": [
+        1,
+        6
+      ],
+      "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt",
+      "utterance_counts": {
+        "user": 1721,
+        "copilot": 1717
+      },
+      "reviewed_user_utterances": 1721,
+      "unreviewed_user_utterances": 0,
+      "semantic_classification_complete": true
+    }
+  ],
   "unclassified_user_utterances": 0,
   "date_policy": "Unknown: no year inferred from relative or incomplete dates.",
   "parser_caveat": "Exact speaker labels inside pasted text may be mistaken for boundaries; manual review required."

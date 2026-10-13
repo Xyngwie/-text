@@ -9,12 +9,10 @@ import re
 import subprocess
 from collections import Counter
 from pathlib import Path
-from urllib.parse import quote
+from source_catalog import parse_sources
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'こぴちーお引越し.txt'
 OUT = ROOT
-MARKERS = {'あなたの発言': 'user', 'Copilot の発言': 'copilot'}
 
 THEMES = {
     'politics': ('政治・行政・制度', ['政治', '選挙', '政党', '首相', '議員', '政権', '政府', '国会', '官僚', '民主主義']),
@@ -84,14 +82,8 @@ def load_jsonl(path):
 
 
 def main():
-    raw = SOURCE.read_bytes()
-    lines = raw.decode('utf-8').splitlines()
-    blob = git('hash-object', str(SOURCE))
-    # Use the last source-file commit so regeneration stays stable after index commits.
-    source_commit = git('log', '-1', '--format=%H', '--', SOURCE.name)
-    base = f'https://github.com/Xyngwie/-text/blob/{source_commit}/'
-    url = base + quote(SOURCE.name)
-    marks = [(i, MARKERS[line.strip()]) for i, line in enumerate(lines) if line.strip() in MARKERS]
+    parsed_sources = parse_sources(ROOT)
+    source_urls = {source['source_id']: source['source_url'] for source, _ in parsed_sources}
 
     # レビュー・セグメント・進捗データの読み込み
     reviews_list = load_jsonl(OUT / 'data' / 'reviews.jsonl')
@@ -106,42 +98,47 @@ def main():
 
     # 発言レコードの生成
     records = []
-    for pos, (start, role) in enumerate(marks):
-        stop = marks[pos + 1][0] if pos + 1 < len(marks) else len(lines)
-        body = '\n'.join(lines[start + 1:stop]).strip()
-        uid = f'U{pos + 1:05d}'
-        is_user = (role == 'user')
-        is_reviewed = is_user and (uid in reviews_map)
+    for source, utterances in parsed_sources:
+        for utterance in utterances:
+            uid = utterance['id']
+            role = utterance['role']
+            body = utterance.pop('_body')
+            is_user = (role == 'user')
+            is_reviewed = is_user and (uid in reviews_map)
 
-        row = {
-            'id': uid,
-            'role': role,
-            'start_line': start + 1,
-            'end_line': stop,
-            'body_sha256': hashlib.sha256(body.encode()).hexdigest(),
-            'preview': ' '.join(body.split())[:160],
-            'previous_id': f'U{pos:05d}' if pos else None,
-            'next_id': f'U{pos + 2:05d}' if pos + 1 < len(marks) else None,
-            'theme_candidates': hits(body) if is_user else {},
-            'review_status': 'reviewed' if is_reviewed else 'unreviewed',
-            'date': reviews_map[uid].get('date') if is_reviewed else None,
-        }
+            row = {
+                **utterance,
+                'theme_candidates': hits(body) if is_user else {},
+                'review_status': 'reviewed' if is_reviewed else 'unreviewed',
+                'date': reviews_map[uid].get('date') if is_reviewed else None,
+            }
 
-        if is_reviewed:
-            rev = reviews_map[uid]
-            row['theme_confirmed'] = rev.get('theme_labels', [])
-            row['speech_act'] = rev.get('speech_act')
-            row['news_relation'] = rev.get('news_relation')
-            row['authorship'] = rev.get('authorship')
-            row['batch_id'] = rev.get('batch_id')
-            if uid in seg_map:
-                row['segment_id'] = seg_map[uid]['segment_id']
+            if is_reviewed:
+                rev = reviews_map[uid]
+                row['theme_confirmed'] = rev.get('theme_labels', [])
+                row['speech_act'] = rev.get('speech_act')
+                row['news_relation'] = rev.get('news_relation')
+                row['authorship'] = rev.get('authorship')
+                row['batch_id'] = rev.get('batch_id')
+                if uid in seg_map:
+                    row['segment_id'] = seg_map[uid]['segment_id']
 
-        records.append(row)
+            records.append(row)
+
+    # Reject stale or foreign reviews before writing any generated data.
+    indexed = {r['id']: r for r in records}
+    legacy = {f'U{i:05d}' for i in range(1079, 1198, 2)}
+    for rev in reviews_list:
+        uid = rev['utterance_id']
+        if uid not in indexed or indexed[uid]['role'] != 'user':
+            raise ValueError(f'Unknown/non-user review: {uid}')
+        row = indexed[uid]
+        if rev.get('source_id', 'copilot-001') != row['source_id'] or rev['source_blob_sha'] != row['source_blob_sha']:
+            raise ValueError(f'Review source mismatch: {uid}')
+        if uid not in legacy and rev['body_sha256'] != row['body_sha256']:
+            raise ValueError(f'Review hash mismatch: {uid}')
 
     # 構造検証
-    assert records and records[-1]['end_line'] == len(lines)
-    assert all(a['end_line'] + 1 == b['start_line'] for a, b in zip(records, records[1:]))
     assert len({r['id'] for r in records}) == len(records)
     assert all(r['role'] == 'user' or not r['theme_candidates'] for r in records)
 
@@ -168,21 +165,52 @@ def main():
     unclassified_unreviewed = [r for r in unreviewed_records if not r['theme_candidates']]
 
     # 4. data/source_manifest.json
+    manifests = []
+    for source, _ in parsed_sources:
+        source_records = [r for r in records if r['source_id'] == source['source_id']]
+        users = [r for r in source_records if r['role'] == 'user']
+        reviewed = sum(r['review_status'] == 'reviewed' for r in users)
+        manifests.append({**source, 'utterance_counts': dict(Counter(r['role'] for r in source_records)),
+                          'reviewed_user_utterances': reviewed,
+                          'unreviewed_user_utterances': len(users) - reviewed,
+                          'semantic_classification_complete': reviewed == len(users)})
     dump(OUT / 'data' / 'source_manifest.json', {
-        'source_path': SOURCE.name,
-        'source_commit': source_commit,
-        'source_blob_sha': blob,
-        'source_sha256': hashlib.sha256(raw).hexdigest(),
-        'bytes': len(raw),
-        'line_count': len(lines),
-        'utterance_counts': dict(counts),
-        'preamble_lines': [1, marks[0][0]] if marks[0][0] else None,
+        **manifests[0], 'source_path': manifests[0]['path'],
+        'schema_version': 2, 'sources': manifests,
         'reviewed_user_utterances': len(reviewed_records),
         'unreviewed_user_utterances': len(unreviewed_records),
         'unclassified_user_utterances': len(unclassified_unreviewed),
         'date_policy': 'Unknown: no year inferred from relative or incomplete dates.',
         'parser_caveat': 'Exact speaker labels inside pasted text may be mistaken for boundaries; manual review required.',
     })
+    progress_path = OUT / 'data' / 'progress.json'
+    progress = json.loads(progress_path.read_text(encoding='utf-8'))
+    progress.update(total_detected_user_utterances=len(user_records),
+                    reviewed_user_utterances=len(reviewed_records),
+                    reviewed_through=reviews_list[-1]['utterance_id'] if reviews_list else None,
+                    next_user_utterance=unreviewed_records[0]['id'] if unreviewed_records else None,
+                    semantic_classification_complete=not unreviewed_records,
+                    sources={m['source_id']: {k: m[k] for k in
+                             ('assistant', 'utterance_counts', 'reviewed_user_utterances',
+                              'unreviewed_user_utterances', 'semantic_classification_complete')}
+                             for m in manifests})
+    dump(progress_path, progress)
+    progress_md = [
+        '# 分類の進捗', '',
+        f'- 検出本人発言：{len(user_records):,}件。',
+        f'- 文脈確認済み：{len(reviewed_records):,}件。未確認：{len(unreviewed_records):,}件。',
+        f"- 最新バッチ：{progress.get('last_batch', 'なし')}。",
+        f"- 次の開始位置：{progress['next_user_utterance'] or 'なし'}。",
+        '- 第3段階以降のテーマ横断プロファイルとニュース反応モデルは未完了。',
+        '', '## 原本ごとの進捗', '',
+        '| 原本ID | LLM | 本人発言 | 確認済み | 未確認 | 第2段階 |',
+        '|---|---|---:|---:|---:|---|',
+    ]
+    for m in manifests:
+        progress_md.append(f"| {m['source_id']} | {escape_md_cell(m['assistant'])} | {m['utterance_counts'].get('user', 0)} | {m['reviewed_user_utterances']} | {m['unreviewed_user_utterances']} | {'完了' if m['semantic_classification_complete'] else '未完了'} |")
+    progress_md.extend(['', '未解決の参照：' + '・'.join(progress.get('unresolved_references', [])),
+                        '', '[原本の追加手順](docs/ADDING_CONVERSATIONS.md)。詳細は `data/progress.json`、`data/reviews.jsonl`、`data/segments.jsonl`。', ''])
+    (OUT / 'PROGRESS.md').write_text('\n'.join(progress_md), encoding='utf-8')
 
     # 5. テーマごとの発言分類
     # theme_key -> list of confirmed records
@@ -216,8 +244,8 @@ def main():
         md = [
             f'# {label}',
             '',
-            f'原本リンクには原本固定コミット（`{source_commit[:7]}`）と行範囲を使用。',
-            '前後のCopilot回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。',
+            '原本リンクには出典ごとの固定コミットと行範囲を使用。',
+            '前後のLLM回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。',
             '',
             f'- **確定発言数**: {len(conf_list)}件',
             f'- **関連セグメント数**: {len(seg_set)}セグメント',
@@ -247,7 +275,7 @@ def main():
                 news_rel = escape_md_cell(r.get('news_relation', ''))
                 authorship = escape_md_cell(r.get('authorship', ''))
                 preview = escape_md_cell(r['preview'])
-                line_link = f"[L{r['start_line']}–{r['end_line']}]({url}#L{r['start_line']}-L{r['end_line']})"
+                line_link = f"[L{r['start_line']}–{r['end_line']}]({source_urls[r['source_id']]}#L{r['start_line']}-L{r['end_line']})"
                 md.append(f'| {uid} | {line_link} | {seg_info} | {speech_act} | {news_rel} | {authorship} | {preview} |')
         else:
             md.append('（現在、このテーマに確定された発言はありません。）')
@@ -266,7 +294,7 @@ def main():
             for r in cand_list:
                 preview = escape_md_cell(r['preview'])
                 words = ', '.join(r['theme_candidates'].get(key, []))
-                line_link = f"[L{r['start_line']}–{r['end_line']}]({url}#L{r['start_line']}-L{r['end_line']})"
+                line_link = f"[L{r['start_line']}–{r['end_line']}]({source_urls[r['source_id']]}#L{r['start_line']}-L{r['end_line']})"
                 md.append(f'| {r["id"]} | {line_link} | {words} | {preview} |')
         else:
             md.append('（現在、未精査のキーワード候補はありません。）')
@@ -291,7 +319,7 @@ def main():
         ])
         for r in unclassified_unreviewed:
             preview = escape_md_cell(r['preview'])
-            line_link = f"[L{r['start_line']}–{r['end_line']}]({url}#L{r['start_line']}-L{r['end_line']})"
+            line_link = f"[L{r['start_line']}–{r['end_line']}]({source_urls[r['source_id']]}#L{r['start_line']}-L{r['end_line']})"
             md_unclass.append(f'| {r["id"]} | {line_link} | {preview} |')
     else:
         md_unclass.extend(['', '全件の文脈精査が完了したため、未分類・未精査の発言はありません。'])
@@ -303,7 +331,7 @@ def main():
     summary = [
         '# テーマ別索引',
         '',
-        '神宮氏とCopilotの対話ログ（原本: `こぴちーお引越し.txt`）をテーマ別に参照できるように整理した索引です。',
+        '神宮氏とLLMの対話ログを、出典を区別してテーマ別に参照できるように整理した索引です。',
         '第2段階（文脈精査・セグメント設計）の確定レビュー結果および未精査のキーワード仮候補を反映しています。',
         '',
         '## 進捗サマリ',
@@ -312,7 +340,7 @@ def main():
         f'- **文脈確認済み（確定）**: {len(reviewed_records):,}件 ({pct_reviewed:.1f}%)',
         f'- **未確認発言（残り）**: {len(unreviewed_records):,}件 ({100 - pct_reviewed:.1f}%)',
         f'- **設計済みセグメント数**: {len(segments_list):,}セグメント',
-        f'- **Copilot発言総数**: {counts["copilot"]:,}件',
+        f'- **LLM発言総数**: {sum(v for k, v in counts.items() if k != "user"):,}件',
         '',
         '## テーマ別索引一覧',
         '',
@@ -333,7 +361,7 @@ def main():
         '',
         '## 関連リソース',
         '',
-        f'- 原本: [{SOURCE.name}]({url})（固定コミットリンク）',
+        *[f"- 原本（{m['source_id']} / {m['assistant']}）: [{m['path']}]({m['source_url']})（固定コミットリンク）" for m in manifests],
         '- [進捗詳細 (PROGRESS.md)](PROGRESS.md)',
         '- [作業ガイドライン (GUIDELINES.md)](GUIDELINES.md)',
         '- [自動化エージェント指示文 (AUTOMATION_INSTRUCTIONS.md)](AUTOMATION_INSTRUCTIONS.md)',
