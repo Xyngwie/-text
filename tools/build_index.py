@@ -195,13 +195,17 @@ def main():
                               'unreviewed_user_utterances', 'semantic_classification_complete')}
                              for m in manifests})
     dump(progress_path, progress)
+    analysis_path = OUT / 'analysis' / 'progress.json'
+    analysis = json.loads(analysis_path.read_text(encoding='utf-8')) if analysis_path.exists() else None
+    analysis_summary = (f"第3段階：分析継続中（{analysis['current_version']}）。[判断・口調の分析](analysis/README.md)。第4段階：未着手。"
+                        if analysis else '第3段階以降のテーマ横断プロファイルとニュース反応モデルは未完了。')
     progress_md = [
         '# 分類の進捗', '',
         f'- 検出本人発言：{len(user_records):,}件。',
         f'- 文脈確認済み：{len(reviewed_records):,}件。未確認：{len(unreviewed_records):,}件。',
         f"- 最新バッチ：{progress.get('last_batch', 'なし')}。",
         f"- 次の開始位置：{progress['next_user_utterance'] or 'なし'}。",
-        '- 第3段階以降のテーマ横断プロファイルとニュース反応モデルは未完了。',
+        '- ' + analysis_summary,
         '', '## 原本ごとの進捗', '',
         '| 原本ID | LLM | 本人発言 | 確認済み | 未確認 | 第2段階 |',
         '|---|---|---:|---:|---:|---|',
@@ -363,6 +367,7 @@ def main():
         '',
         *[f"- 原本（{m['source_id']} / {m['assistant']}）: [{m['path']}]({m['source_url']})（固定コミットリンク）" for m in manifests],
         '- [進捗詳細 (PROGRESS.md)](PROGRESS.md)',
+        *(['- [第三段階：判断・口調の分析](analysis/README.md)'] if (OUT / 'analysis' / 'README.md').exists() else []),
         '- [作業ガイドライン (GUIDELINES.md)](GUIDELINES.md)',
         '- [自動化エージェント指示文 (AUTOMATION_INSTRUCTIONS.md)](AUTOMATION_INSTRUCTIONS.md)',
         '- 発言インデックス: `data/utterances.jsonl`',

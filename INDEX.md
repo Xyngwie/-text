@@ -37,6 +37,7 @@
 
 - 原本（copilot-001 / Copilot）: [こぴちーお引越し.txt](https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt)（固定コミットリンク）
 - [進捗詳細 (PROGRESS.md)](PROGRESS.md)
+- [第三段階：判断・口調の分析](analysis/README.md)
 - [作業ガイドライン (GUIDELINES.md)](GUIDELINES.md)
 - [自動化エージェント指示文 (AUTOMATION_INSTRUCTIONS.md)](AUTOMATION_INSTRUCTIONS.md)
 - 発言インデックス: `data/utterances.jsonl`

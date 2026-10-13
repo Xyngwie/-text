@@ -1,0 +1,72 @@
+"""Check that analysis validation rejects corrupted quotations and leaked evidence."""
+import importlib.util
+import json
+import shutil
+import tempfile
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+spec = importlib.util.spec_from_file_location('validate_analysis', ROOT / 'tools/validate_analysis.py')
+module = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(module)
+
+
+class AnalysisTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.root = Path(self.tmp.name)
+        # The immutable snapshot is read from the original git object store.
+        (self.root / '.git').symlink_to(ROOT / '.git', target_is_directory=True)
+        shutil.copytree(ROOT / 'analysis', self.root / 'analysis')
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def test_valid_snapshot(self):
+        result = module.validate(root=self.root)
+        self.assertEqual(result['episodes'], 33)
+        self.assertEqual(result['findings'], 8)
+
+    def test_invented_quote_is_rejected(self):
+        path = self.root / 'analysis/v001/episodes.jsonl'
+        episodes = [json.loads(line) for line in path.read_text().splitlines()]
+        episodes[0]['evidence'][0]['quote'] = 'これは原文に存在しない捏造引用です'
+        path.write_text(''.join(json.dumps(e, ensure_ascii=False) + '\n' for e in episodes))
+        with self.assertRaisesRegex(AssertionError, 'Quote mismatch'):
+            module.validate(root=self.root)
+
+    def test_reserved_evidence_is_rejected(self):
+        folder = self.root / 'analysis/v001'
+        split = json.loads((folder / 'split.json').read_text())
+        episode = json.loads((folder / 'episodes.jsonl').read_text().splitlines()[0])
+        group = next(g for g in split['groups'] if g['group_id'] == episode['group_id'])
+        count = len(group['segment_ids'])
+        group['partition'] = 'reuse_reserve'
+        (folder / 'split.json').write_text(json.dumps(split, ensure_ascii=False))
+        manifest = json.loads((folder / 'manifest.json').read_text())
+        manifest['analysis_pool_segment_count'] -= count
+        manifest['reserve_segment_count'] += count
+        (folder / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False))
+        with self.assertRaisesRegex(AssertionError, 'Reserved evidence'):
+            module.validate(root=self.root)
+
+    def test_unknown_evidence_is_rejected(self):
+        path = self.root / 'analysis/v001/findings.json'
+        findings = json.loads(path.read_text())
+        findings['findings'][0]['support_episodes'].append('E999')
+        path.write_text(json.dumps(findings, ensure_ascii=False))
+        with self.assertRaisesRegex(AssertionError, 'Unknown episode'):
+            module.validate(root=self.root)
+
+    def test_excluded_question_cannot_support_finding(self):
+        path = self.root / 'analysis/v001/findings.json'
+        findings = json.loads(path.read_text())
+        findings['findings'][0]['support_episodes'].append('E33')
+        path.write_text(json.dumps(findings, ensure_ascii=False))
+        with self.assertRaisesRegex(AssertionError, 'Excluded episode'):
+            module.validate(root=self.root)
+
+
+if __name__ == '__main__':
+    unittest.main()
