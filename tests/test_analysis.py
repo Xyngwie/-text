@@ -28,6 +28,17 @@ class AnalysisTest(unittest.TestCase):
         self.assertEqual(result['episodes'], 33)
         self.assertEqual(result['findings'], 8)
 
+    def test_expanded_version_preserves_history(self):
+        result = module.validate(version='v002', root=self.root)
+        self.assertEqual(result['episodes'], 58)
+        self.assertEqual(result['reserve_segments'], 45)
+
+    def test_historical_artifact_change_is_rejected(self):
+        path = self.root / 'analysis/v001/profile.md'
+        path.write_text(path.read_text() + '\n初版を書き換える操作\n')
+        with self.assertRaisesRegex(AssertionError, 'Historical version changed'):
+            module.validate(version='v002', root=self.root)
+
     def test_invented_quote_is_rejected(self):
         path = self.root / 'analysis/v001/episodes.jsonl'
         episodes = [json.loads(line) for line in path.read_text().splitlines()]

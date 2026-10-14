@@ -111,6 +111,23 @@ def validate(version='v001', root=ROOT):
     assert set(manifest['reviewed_utterance_ids']) == coded_ids
     assert set(manifest['reviewed_segment_ids']) == coded_segments
 
+    if 'parent_version' in manifest:
+        parent = manifest['parent_version']
+        assert re.fullmatch(r'v\d{3}', parent) and parent < version, 'Invalid parent version'
+        assert manifest.get('parent_artifacts'), 'Missing parent provenance'
+        for path, digest in manifest['parent_artifacts'].items():
+            assert Path(path).parent.as_posix() == f'analysis/{parent}', 'Invalid parent artifact path'
+            assert hashlib.sha256(pinned(path)).hexdigest() == digest, f'Parent snapshot mismatch: {path}'
+            assert hashlib.sha256((root / path).read_bytes()).hexdigest() == digest, f'Historical version changed: {path}'
+        original = jsonl(pinned(f'analysis/{parent}/episodes.jsonl'))
+        for original_episode in original:
+            assert emap.get(original_episode['episode_id']) == original_episode, 'Historical episode changed'
+        parent_split = json.loads(pinned(f'analysis/{parent}/split.json'))
+        old_assignment = {sid: g['partition'] for g in parent_split['groups'] for sid in g['segment_ids']}
+        assert old_assignment == {sid: g['partition'] for sid, g in grouped.items()}, 'Historical reserve changed'
+        actual_added = set(emap) - {e['episode_id'] for e in original}
+        assert set(manifest['added_episode_ids']) == actual_added, 'Added episode count mismatch'
+
     findings = json.loads((folder / 'findings.json').read_text(encoding='utf-8'))
     assert findings['version'] == version
     fids = set()
