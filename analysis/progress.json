@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v002",
-  "profile_status": "expanded_hypotheses_with_negative_cases",
+  "current_version": "v003",
+  "profile_status": "expanded_hypotheses_with_process_boundaries",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -20,6 +20,11 @@
       "version": "v001",
       "feedback": "良い感じだと思う。続けて。",
       "meaning": "初版の方向性への肯定と継続指示。全仮説の正しさの確認や全事例の検証ではない。"
+    },
+    {
+      "version": "v002",
+      "feedback": "つづけて",
+      "meaning": "第二版を読んだ後の継続指示。項目ごとの妥当性確認や全仮説の承認ではない。"
     }
   ]
 }
