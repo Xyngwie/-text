@@ -1,17 +1,16 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v006",
-  "profile_status": "ten_hypotheses_one_provisional_observation",
+  "current_version": "v007",
+  "profile_status": "natural_language_synthesis_complete",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
   "stage4_status": "not_started",
   "strict_unseen_test_available": false,
   "remaining": [
-    "分析プールの未コーディング区間を確認し、追加の反例を探す",
-    "同じ案件の再登場と部分的重複を手動確認する",
-    "本人による現行版の項目ごとの違和感・適用条件の確認",
+    "自然言語版について本人に違和感のある箇所を確認する",
+    "本人確認を反映した版を第三段階の確定候補にする",
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する"
   ],
@@ -30,6 +29,11 @@
       "version": "v003",
       "feedback": "面白い面白い。続けて。",
       "meaning": "第三版への好意的な反応と継続指示。個別仮説の妥当性確認や全体の完成承認ではない。"
+    },
+    {
+      "version": "v006",
+      "feedback": "大体読んだ。ところどころ言葉が細分化されすぎて自然言語的には分からない。",
+      "meaning": "分析の大枠を読んだ上で、分類の細かさが人間向け本文の可読性を損ねているとの指摘。個別仮説の妥当性を全件承認したものではない。"
     }
   ]
 }
