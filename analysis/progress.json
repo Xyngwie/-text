@@ -1,16 +1,16 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v007",
-  "profile_status": "natural_language_synthesis_complete",
+  "current_version": "v008",
+  "profile_status": "values_and_voice_model_complete",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
   "stage4_status": "not_started",
   "strict_unseen_test_available": false,
   "remaining": [
-    "自然言語版について本人に違和感のある箇所を確認する",
-    "本人確認を反映した版を第三段階の確定候補にする",
+    "価値観8項目について本人に優先順位と違和感を確認する",
+    "口調再現モデルを場面別のサンプル生成で本人確認する",
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する"
   ],
@@ -34,6 +34,11 @@
       "version": "v006",
       "feedback": "大体読んだ。ところどころ言葉が細分化されすぎて自然言語的には分からない。",
       "meaning": "分析の大枠を読んだ上で、分類の細かさが人間向け本文の可読性を損ねているとの指摘。個別仮説の妥当性を全件承認したものではない。"
+    },
+    {
+      "version": "v007",
+      "feedback": "全部読んだ。良い感じになってきている。今後は色々な価値観の分析と、口調の再現に向けた分析が不足している。",
+      "meaning": "自然言語化の方向性への肯定と、次に深める二領域の指定。個々の判断仮説を無条件に確定したものではない。"
     }
   ]
 }
