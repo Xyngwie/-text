@@ -1,25 +1,26 @@
 # 第三段階：判断・口調の分析
 
-現在の版は **v009（立場を選ぶ発信モデル版）** です。第八版の152場面・407本人発言と価値観8仮説を維持したまま、本人の明示的な希望に基づき、最終出力で一方の立場を選び、煽りではなく争点によって議論を生む規則を追加しました。全567区間の第三段階はまだ完了していません。
+現在の版は **v010（価値観補強・発信校正版）** です。未使用の14区間から12場面・45本人発言を加え、累計164場面・452本人発言になりました。権威、責任、安全、公益組織、公開実践に関する既存の価値観を補強し、立場を選ぶ発信モデルを実際の題材へ適用しました。全567区間の第三段階はまだ完了していません。
 
-今回の中心は [立場を選び、議論を生む発信モデル](v009/publication_model.md) です。背景となる [価値観](v009/values.md) と [口調の再現モデル](v009/voice_model.md) も併せて参照してください。
+今回の中心は [発信モデルの校正例](v010/publication_calibration.md) です。背景となる [価値観](v010/values.md)、[立場を選ぶ発信モデル](v010/publication_model.md)、[口調の再現モデル](v010/voice_model.md) も併せて参照してください。
 
 | 内容 | ファイル |
 |---|---|
-| 結論を選び議論を生む編集規則 | [立場を選ぶ発信モデル](v009/publication_model.md) |
-| 8つの価値観仮説の読み物 | [会話から見える価値観](v009/values.md) |
-| 場面別の口調生成条件と評価基準 | [口調の再現モデル](v009/voice_model.md) |
-| 5つの大きなテーマによる人物像 | [会話から見える判断のしかた](v009/profile.md) |
-| 自然な文章による口調の観察 | [会話の調子と言葉の使い方](v009/speech.md) |
-| 判断仮説と価値観仮説の技術資料 | [構造化した判断仮説](v009/technical_profile.md) |
-| 仮説ごとの独立案件数と再利用 | [根拠の依存性監査](v009/DEPENDENCY_AUDIT.md) |
-| 第八版からの変更 | [変更点](v009/CHANGES.md) |
-| 原文リンク付きの152事例 | [根拠ページ](v009/cases.md) |
-| 抽出・統合の方法と限界 | [分析方法](v009/METHOD.md) |
-| 固定した入力と件数 | [manifest.json](v009/manifest.json) |
-| 引き継いだ分析・保留の割り当て | [split.json](v009/split.json) |
-| 構造化した事例 | [episodes.jsonl](v009/episodes.jsonl) |
-| 根拠・対比・適用条件付きの仮説 | [findings.json](v009/findings.json) |
+| 新しい題材へ適用した発信作例 | [発信モデルの校正例](v010/publication_calibration.md) |
+| 結論を選び議論を生む編集規則 | [立場を選ぶ発信モデル](v010/publication_model.md) |
+| 8つの価値観仮説の読み物 | [会話から見える価値観](v010/values.md) |
+| 場面別の口調生成条件と評価基準 | [口調の再現モデル](v010/voice_model.md) |
+| 5つの大きなテーマによる人物像 | [会話から見える判断のしかた](v010/profile.md) |
+| 自然な文章による口調の観察 | [会話の調子と言葉の使い方](v010/speech.md) |
+| 判断仮説と価値観仮説の技術資料 | [構造化した判断仮説](v010/technical_profile.md) |
+| 仮説ごとの独立案件数と再利用 | [根拠の依存性監査](v010/DEPENDENCY_AUDIT.md) |
+| 第九版からの変更 | [変更点](v010/CHANGES.md) |
+| 原文リンク付きの164事例 | [根拠ページ](v010/cases.md) |
+| 抽出・統合の方法と限界 | [分析方法](v010/METHOD.md) |
+| 固定した入力と件数 | [manifest.json](v010/manifest.json) |
+| 引き継いだ分析・保留の割り当て | [split.json](v010/split.json) |
+| 構造化した事例 | [episodes.jsonl](v010/episodes.jsonl) |
+| 根拠・対比・適用条件付きの仮説 | [findings.json](v010/findings.json) |
 | 第三・第四段階の進捗 | [progress.json](progress.json) |
 
 各版への感想と継続指示は記録しましたが、それを全仮説が正しいとの確認にはしていません。今回はCopilot原本だけを使っており、別のLLMとの比較、項目ごとの本人確認、ニュース反応の再現はまだ行っていません。
@@ -28,6 +29,6 @@
 
 今後も分析プールの未確認区間から、追加の反例や仮説の成立条件を探します。同じ案件や再送の重複確認も続けます。
 
-過去の版：[v008の価値観](v008/values.md)、[v007の判断](v007/profile.md)、[v006の判断](v006/profile.md)、[v005の判断](v005/profile.md)、[v004の判断](v004/profile.md)、[v003の判断](v003/profile.md)、[v002の判断](v002/profile.md)、[v001の判断](v001/profile.md)。過去の入力・引用・分割は更新していません。
+過去の版：[v009の発信モデル](v009/publication_model.md)、[v008の価値観](v008/values.md)、[v007の判断](v007/profile.md)、[v006の判断](v006/profile.md)、[v005の判断](v005/profile.md)、[v004の判断](v004/profile.md)、[v003の判断](v003/profile.md)、[v002の判断](v002/profile.md)、[v001の判断](v001/profile.md)。過去の入力・引用・分割は更新していません。
 
-現在の参照検証は `python3 tools/validate_analysis.py --version v009` で実行できます。過去版も `--version` を切り替えて検証できます。
+現在の参照検証は `python3 tools/validate_analysis.py --version v010` で実行できます。過去版も `--version` を切り替えて検証できます。
