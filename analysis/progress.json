@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v008",
-  "profile_status": "values_and_voice_model_complete",
+  "current_version": "v009",
+  "profile_status": "publication_stance_model_complete",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -10,7 +10,7 @@
   "strict_unseen_test_available": false,
   "remaining": [
     "価値観8項目について本人に優先順位と違和感を確認する",
-    "口調再現モデルを場面別のサンプル生成で本人確認する",
+    "立場を選ぶ発信モデルを未見題材の複数案で本人確認する",
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する"
   ],
@@ -39,6 +39,23 @@
       "version": "v007",
       "feedback": "全部読んだ。良い感じになってきている。今後は色々な価値観の分析と、口調の再現に向けた分析が不足している。",
       "meaning": "自然言語化の方向性への肯定と、次に深める二領域の指定。個々の判断仮説を無条件に確定したものではない。"
+    },
+    {
+      "version": "v008",
+      "feedback": "v08は良い感じだった。最終出力は立場を曖昧にして是非を問う形ではなく、どちらかの立場に立って議論を呼ぶ発言にしてほしい。",
+      "meaning": "価値観・口調分析の方向性への肯定と、最終的な公開発信に対する明示的な出力指定。過去ログから推測した論争回避傾向より優先する。"
     }
-  ]
+  ],
+  "explicit_output_preferences": {
+    "public_stance": "choose_one_side",
+    "discussion_goal": "invite_argument_through_a_clear_claim",
+    "avoid": [
+      "ending_with_an_uncommitted_question",
+      "false_balance",
+      "rage_bait",
+      "personal_attack",
+      "claiming_uncertain_facts_as_certain"
+    ],
+    "priority": "explicit_current_user_direction_over_inferred_historical_tendency"
+  }
 }
