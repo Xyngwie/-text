@@ -1,0 +1,55 @@
+name: RSS AI agent
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      max_items:
+        description: Maximum candidate Issues per run
+        required: false
+        default: "6"
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: rss-ai-agent
+  cancel-in-progress: false
+
+jobs:
+  collect-and-draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect allowlisted RSS candidates
+        env:
+          MAX_ITEMS: ${{ inputs.max_items || '6' }}
+        run: |
+          python3 tools/rss_agent.py \
+            --max-items "$MAX_ITEMS" \
+            --output "$RUNNER_TEMP/rss_candidates.json"
+
+      - name: Generate zero-shot review drafts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+        run: |
+          python3 tools/generate_rss_issues.py \
+            --input "$RUNNER_TEMP/rss_candidates.json" \
+            --output "$RUNNER_TEMP/issue_payloads.json"
+
+      - name: Create deduplicated Issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/publish_issue_payloads.py \
+            --input "$RUNNER_TEMP/issue_payloads.json" \
+            --repo "$GITHUB_REPOSITORY"

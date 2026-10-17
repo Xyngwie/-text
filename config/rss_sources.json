@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "source_id": "google-news-atelier",
+      "track": "normal",
+      "name": "Google News: Atelier",
+      "url": "https://news.google.com/rss/search?q=%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA&hl=ja&gl=JP&ceid=JP:ja",
+      "allowed_publishers": []
+    },
+    {
+      "source_id": "google-news-ai-dev",
+      "track": "normal",
+      "name": "Google News: AI development",
+      "url": "https://news.google.com/rss/search?q=GitHub%20Actions%20OR%20Cursor%20AI&hl=ja&gl=JP&ceid=JP:ja",
+      "allowed_publishers": []
+    },
+    {
+      "source_id": "google-news-reuters-politics",
+      "track": "experimental-politics",
+      "name": "Google News: Reuters politics",
+      "url": "https://news.google.com/rss/search?q=%E6%94%BF%E6%B2%BB%20OR%20%E7%A4%BE%E4%BC%9A%20source%3AReuters&hl=ja&gl=JP&ceid=JP:ja",
+      "allowed_publishers": ["Reuters", "ロイター"]
+    },
+    {
+      "source_id": "google-news-kyodo-politics",
+      "track": "experimental-politics",
+      "name": "Google News: Kyodo politics",
+      "url": "https://news.google.com/rss/search?q=%E6%94%BF%E6%B2%BB%20OR%20%E7%A4%BE%E4%BC%9A%20source%3A%E5%85%B1%E5%90%8C%E9%80%9A%E4%BF%A1&hl=ja&gl=JP&ceid=JP:ja",
+      "allowed_publishers": ["共同通信", "Kyodo News"]
+    },
+    {
+      "source_id": "egov-official-news",
+      "track": "experimental-politics",
+      "name": "e-Gov official news",
+      "url": "https://www.e-gov.go.jp/news/news.xml",
+      "allowed_publishers": []
+    }
+  ],
+  "experimental_excluded_terms": [
+    "社説", "論説", "コラム", "寄稿", "識者", "ネット騒然", "批判殺到", "炎上", "衝撃", "悲報"
+  ]
+}

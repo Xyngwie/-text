@@ -117,6 +117,18 @@ class AnalysisTest(unittest.TestCase):
         self.assertEqual(result['coded_utterances'], 452)
         self.assertEqual(result['findings'], 19)
 
+    def test_seventeenth_version_preserves_history(self):
+        result = module.validate(version='v017', root=self.root)
+        self.assertEqual(result['episodes'], 164)
+        self.assertEqual(result['coded_utterances'], 452)
+        self.assertEqual(result['findings'], 19)
+
+    def test_sixteenth_version_change_is_rejected(self):
+        path = self.root / 'analysis/v016/profile.md'
+        path.write_text(path.read_text() + '\n第十六版を書き換える操作\n')
+        with self.assertRaisesRegex(AssertionError, 'Historical version changed'):
+            module.validate(version='v017', root=self.root)
+
     def test_fifteenth_version_change_is_rejected(self):
         path = self.root / 'analysis/v015/profile.md'
         path.write_text(path.read_text() + '\n第十五版を書き換える操作\n')

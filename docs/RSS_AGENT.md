@@ -1,0 +1,68 @@
+# RSS価値観スライド実験
+
+この機能は、RSSから集めた話題へ既存の判断条件を仮適用し、本人確認前の投稿案をGitHub Issueへ作ります。政治・社会枠は過去実績のない領域なので、本人の意見を再現したものではなく、ゼロショット仮説として扱います。
+
+## 構成
+
+- `.github/workflows/rss_ai_agent.yml`：6時間ごとの収集、Geminiによる構造化、Issue作成。
+- `config/rss_sources.json`：通常枠と実験枠のソース、配信元許可リスト、除外語。
+- `tools/rss_agent.py`：RSS/Atom解析、配信元照合、重複排除、ノイズ候補除外。
+- `prompts/rss_value_slide.md`：価値観スライド用の制約付きプロンプト。
+- `tools/generate_rss_issues.py`：GeminiのJSON出力を、本人確認用Issueへ変換。
+- `.github/workflows/import_rss_feedback.yml`：本人が閉じたIssueから確定文を取り込む。
+- `tools/import_issue_feedback.py`：本人コメント、本文ハッシュ、固定書式を検証する。
+
+## ソースについて
+
+通常枠はGoogle Newsの検索RSS、実験枠はReuters・共同通信へ絞った検索RSSと、e-Govの公式RSSを初期設定にしています。
+
+Google Newsは配信経路であって事実の保証者ではありません。実験枠ではRSS内の配信元名を許可リストと照合しますが、タイトルと概要だけで記事内容の正確さや「純粋な事実」を保証することはできません。そのため、全候補を `fact_candidate_not_verified` としてIssueへ載せ、原記事・一次資料で未確認の点を別欄へ出します。
+
+除外語は「批判殺到」「コラム」など明白な候補を減らす補助です。感情語がない記事を客観報道と断定する分類器ではありません。LLMによる事実候補の抽出も、事実確認の代替にはしません。
+
+官報や法案の直接フィードを追加する場合は、運営主体とURLを手動で確認してから `config/rss_sources.json` へ追加します。存在を確認できないRSS URLを推測で登録しません。
+
+## GitHub設定
+
+リポジトリのActions Secretsへ次を登録します。
+
+- `GEMINI_API_KEY`：RSS断片の構造化と初稿生成に使用。
+
+必要ならActions Variablesへ `GEMINI_MODEL` を設定します。未設定時は `gemini-2.5-flash` を使います。`GITHUB_TOKEN` はActionsが発行する標準トークンを使い、個人アクセストークンをSecretsへ追加する必要はありません。
+
+リポジトリまたはOrganizationのActions設定で、Workflowの読み書き権限とIssue作成を許可してください。収集ワークフローは `contents: read` と `issues: write` だけを持ちます。履歴書込ワークフローだけが `contents: write` を持ち、GeminiのSecretは受け取りません。
+
+ブランチ保護でActionsからmainへ直接pushできない場合、フィードバック取込は失敗します。その場合はbot用ブランチとPull Requestを作る運用へ変更してください。保護を迂回する設定は推奨しません。
+
+## スマホでの操作
+
+Issueには初稿がコードブロックで表示されます。本人が修整後、本人アカウントから次の形でコメントします。
+
+````text
+/final
+```text
+ここへ確定文
+```
+/posted https://実際の投稿URL
+````
+
+`/posted` は実際に投稿した場合だけ付けます。その後、本人がIssueを閉じると取込ワークフローが動きます。
+
+次の条件をすべて満たさなければ履歴へ入りません。
+
+- Issueに `rss-agent` ラベルがある。
+- Issue本文の候補ID、初稿、初稿ハッシュが一致する。
+- `/final` コメントの投稿者がリポジトリ所有者本人である。
+- Issueを閉じた人物もリポジトリ所有者本人である。
+- 同じ候補IDがまだ取り込まれていない。
+
+## ローカル検証
+
+ネットワークを使わない単体テストと履歴検証は次で実行できます。
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 tools/validate.py
+```
+
+実際のRSS取得は、接続先の停止やレート制限で失敗する可能性があります。一つのフィードが失敗しても他のフィードは処理しますが、全フィードが失敗して候補がゼロの場合はWorkflowを失敗させます。
