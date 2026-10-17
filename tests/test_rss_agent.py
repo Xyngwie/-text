@@ -76,6 +76,8 @@ class RssAgentTest(unittest.TestCase):
         self.assertIn("本人の意見ではなく", issue["body"])
         self.assertIn("投稿禁止", issue["body"])
         self.assertIn("experimental-politics", issue["labels"])
+        self.assertIn("Closeを合図に校正履歴へ取り込まれる", issue["body"])
+        self.assertIn("本人承認済み・未投稿", issue["body"])
 
     def test_model_selection_prefers_stable_flash_and_excludes_specialized_models(self):
         models = [

@@ -215,7 +215,11 @@ def issue_payload(candidate, generation):
 
 ## スマホからのフィードバック
 
-修整後の確定文を、本人アカウントから次の固定書式でコメントしてください。
+次の3段階で校正結果を取り込みます。
+
+1. 修整後の確定文を、本人アカウントから次の固定書式でコメントする。
+2. コメントされた文章が最終版になっていることを確認する。
+3. 本人アカウントでこのIssueをCloseする。Closeを合図に校正履歴へ取り込まれる。
 
 ````text
 /final
@@ -224,7 +228,7 @@ def issue_payload(candidate, generation):
 ```
 ````
 
-実際に投稿済みでURLも記録する場合は、続けて `/posted URL` を一行で付けます。コメント後に本人がIssueを閉じると、確定文を校正履歴へ取り込みます。
+実際にSNS等へ投稿済みで、そのURLも記録する場合だけ、同じコメントの末尾へ `/posted URL` を一行で付けます。`/posted` がなければ「本人承認済み・未投稿」、あれば「本人承認済み・実投稿済み」として記録されます。コメントだけでは取り込まれません。必ず最終確認後にIssueをCloseしてください。
 """
     labels = ["rss-agent", candidate["track"]]
     if generation["do_not_publish_reason"]:
