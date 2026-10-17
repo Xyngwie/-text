@@ -4,6 +4,7 @@ import json
 import sys
 from pathlib import Path
 from source_catalog import parse_sources
+from publication_feedback import load_events, validate as validate_publication_events
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -17,6 +18,7 @@ def main():
     reviews_file = ROOT / "data" / "reviews.jsonl"
     segments_file = ROOT / "data" / "segments.jsonl"
     utterances_file = ROOT / "data" / "utterances.jsonl"
+    publication_file = ROOT / "data" / "publication_events.jsonl"
 
     if not progress_file.exists() or not reviews_file.exists() or not segments_file.exists():
         print("Required data files missing.")
@@ -93,7 +95,13 @@ def main():
             assert len(source_ids) == 1, f"Cross-source segment: {seg['segment_id']}"
             assert seg.get('source_id', 'copilot-001') in source_ids, 'Segment source mismatch'
 
-    print(f"Validation successful: {rev_count} reviews, {len(segments)} segments verified against progress.json.")
+    # 8. 本人修整・承諾・実投稿の状態遷移と本文ハッシュ
+    publication_result = validate_publication_events(load_events(publication_file))
+
+    print(
+        f"Validation successful: {rev_count} reviews, {len(segments)} segments, "
+        f"{publication_result['records']} publication records verified."
+    )
 
 if __name__ == "__main__":
     main()
