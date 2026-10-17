@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v013",
-  "profile_status": "register_modes_user_confirmed_intensity_calibrated",
+  "current_version": "v014",
+  "profile_status": "intensity_2_25_and_approval_gate_specified",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -10,7 +10,8 @@
   "strict_unseen_test_available": false,
   "remaining": [
     "語彙・構文一覧について本人に過不足を確認する",
-    "抑制・標準・強めの校正案について本人に自然さと既定強度を確認する",
+    "強度2.25の作例について本人に語感を確認する",
+    "自動投稿機能を実装する場合は、本人承諾・本文照合・実行記録を組み込む",
     "将来の追加原本からモードが文中で持続する完全例を収集する",
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する"
@@ -65,6 +66,11 @@
       "version": "v012",
       "feedback": "どれも自分が書きそうな口調で、お嬢様も例文は少ないが概ねその口調の通り。",
       "meaning": "通常・ギャル・お嬢様の三案と末尾の武将調復帰について、作例全体の方向性を本人が確認した。各単語の使用頻度まで確定したものではない。"
+    },
+    {
+      "version": "v013",
+      "feedback": "強度2.25くらいで、投稿・発言前に本人承諾があり、その後に自動投稿される形がベスト。",
+      "meaning": "公開案の既定強度と外部実行の権限境界に対する明示指定。案の自動生成は許容するが、本人名義での投稿・発言には個別承諾を必要とする。"
     }
   ],
   "explicit_output_preferences": {
@@ -77,7 +83,10 @@
       "personal_attack",
       "claiming_uncertain_facts_as_certain"
     ],
-    "priority": "explicit_current_user_direction_over_inferred_historical_tendency"
+    "priority": "explicit_current_user_direction_over_inferred_historical_tendency",
+    "default_intensity": 2.25,
+    "external_execution": "only_after_explicit_approval_of_final_content_and_destination",
+    "post_approval_edits": "require_reapproval"
   },
   "explicit_style_preferences": {
     "salient_registers": ["archaic_or_warrior_like", "gal_like", "ojou_sama_like"],
