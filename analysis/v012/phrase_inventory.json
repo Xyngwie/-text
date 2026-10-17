@@ -1,0 +1,46 @@
+{
+  "version": "v012",
+  "unit": "own-authored utterances containing the expression at least once",
+  "scope": "1721 reviewed user utterances; mixed-authorship passages excluded",
+  "note": "Counts are concordance aids, not probabilities for generation. Closely related spellings are grouped only where stated.",
+  "discourse_operators": [
+    {"label": "じゃん", "utterance_count": 90, "function": "共有前提を置き、連鎖説明を前へ進める"},
+    {"label": "である", "utterance_count": 49, "function": "定義、総括、芝居がかった断定"},
+    {"label": "いや／んや（発話冒頭）", "utterance_count": 43, "function": "直前の理解を止めて修正する"},
+    {"label": "別に", "utterance_count": 43, "function": "対象や執着の範囲を狭める"},
+    {"label": "AではなくB型", "utterance_count": 40, "function": "似た概念を切り分け、争点を移す"},
+    {"label": "〜わけ型", "utterance_count": 40, "function": "因果や現在地を本人の言葉で再要約する"},
+    {"label": "そもそも", "utterance_count": 33, "function": "前提へ戻り、問いを作り直す"},
+    {"label": "〜って感じ／という感じ", "utterance_count": 31, "function": "観察・伝聞・暫定像として距離を残す"},
+    {"label": "ああ（発話冒頭）", "utterance_count": 31, "function": "理解、想起、自己訂正を開始する"},
+    {"label": "つーか／ていうか／ちうか", "utterance_count": 21, "function": "より本質だと思う論点へ寄せる"},
+    {"label": "一旦／いったん", "utterance_count": 6, "function": "結論ではなく保留・区切りを宣言する"},
+    {"label": "でもまあ／でもまぁ", "utterance_count": 4, "function": "反対条件を認めながら自分の着地点へ戻る"},
+    {"label": "かといって", "utterance_count": 3, "function": "直前の主張を逆側へ一般化しすぎない"}
+  ],
+  "archaic_or_theatrical": [
+    {"label": "なのだが／ではあるが／であるが", "utterance_count": 3},
+    {"label": "ワシ／わし", "utterance_count": 1},
+    {"label": "あやつ", "utterance_count": 2},
+    {"label": "民草", "utterance_count": 2},
+    {"label": "解せぬ", "utterance_count": 1},
+    {"label": "仕官", "utterance_count": 1},
+    {"label": "誉れ", "utterance_count": 1},
+    {"label": "如何ともしがたい", "utterance_count": 1},
+    {"label": "どうじゃろ", "utterance_count": 1},
+    {"label": "ありがとう存じます", "utterance_count": 1}
+  ],
+  "gal_or_contemporary_play": [
+    {"label": "マジ／まじ", "utterance_count": 14},
+    {"label": "〜み（学びみ・くやしみ等の候補）", "utterance_count": 8},
+    {"label": "めっちゃ", "utterance_count": 4},
+    {"label": "マジ卍／卍", "utterance_count": 2},
+    {"label": "やばい／やば", "utterance_count": 2}
+  ],
+  "explicit_user_report_not_frequency_claim": {
+    "registers": ["ギャル", "お嬢様", "武将"],
+    "transition": "ギャルまたはお嬢様モードに入ると文章中は維持し、最後だけ急に元の武将調へ戻ることが多い",
+    "evidence_type": "current explicit user description",
+    "caution": "The archive concordance alone is insufficient to estimate the frequency of complete mode runs."
+  }
+}
