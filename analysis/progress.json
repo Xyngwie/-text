@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v024",
-  "profile_status": "evaluator_stance_corrected_for_achievement_anchored_hyperbole",
+  "current_version": "v025",
+  "profile_status": "self_deprecation_and_caveat_functions_explored",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -21,6 +21,7 @@
     "十分条件で止める判断と大きく振る判断の切替条件を別事例で確認する",
     "公平と反撃可能性の判断順がゲーム以外の制度・公共サービスでも現れるか確認する",
     "採点者的な尊大さが勝負・冗談以外の公開批評でも現れるか確認する",
+    "自虐が主張を撤回する場合と、主張を社会的に通しやすくする場合を実投稿差分で確認する",
     "The Division 2の瞬間最高6位を裏付ける順位画面等があれば本人申告から添付資料付き記録へ更新する",
     "将来の追加原本からモードが文中で持続する完全例を収集する",
     "別LLMとの比較は追加原本が分類された後に行う",
@@ -91,6 +92,11 @@
       "version": "v023",
       "feedback": "世界有数のスナイパーには証左がある。The Division 2のヘッドショットキル数で瞬間最高6位だった。",
       "meaning": "完全な虚構とした解釈への訂正。特定ゲーム・特定指標・瞬間順位という限定を保った本人申告であり、総合世界6位や現在順位には広げない。"
+    },
+    {
+      "version": "v024",
+      "feedback": "はい、了解です。続きをお願いします。",
+      "meaning": "実績に根を持つ大言として範囲を限定した訂正を受けた継続指示。順位の外部検証や他の仮説まで承認したものではない。"
     },
     {
       "version": "v022",
