@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v019",
-  "profile_status": "first_rss_revision_calibrated_for_authorship_and_attachment",
+  "current_version": "v020",
+  "profile_status": "question_endings_classified_by_function",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -17,6 +17,7 @@
     "最初の通常枠・政治実験枠Issueを本人が校正し、着眼点・判断・口調を別々に評価する",
     "探索した比喩7場面を別題材の事例と照合し、正式な口調仮説へ昇格するか判断する",
     "作者性・愛着を優先する修整が別ニュースでも反復するか確認する",
+    "挑戦型の疑問終止が別の本人確定文でも使われるか確認する",
     "将来の追加原本からモードが文中で持続する完全例を収集する",
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する"
@@ -81,6 +82,11 @@
       "version": "v014",
       "feedback": "本人校正・訂正・修整後に実際に投稿した内容を再び取り込む仕組みがあれば、さらに精度が上がる。",
       "meaning": "AI初稿ではなく本人の修整差分と実投稿結果を、次回の生成モデルへ戻す継続校正ループの追加指定。"
+    },
+    {
+      "version": "v019",
+      "feedback": "作者性・愛着の分析も良い。次を進めて。",
+      "meaning": "道具の管理可能性と作品の固有性を分ける方向性への本人確認。一件の校正から恒常的価値観まで確定したものではない。"
     },
     {
       "version": "v018",
