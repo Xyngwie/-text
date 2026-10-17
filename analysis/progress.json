@@ -1,16 +1,17 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v010",
-  "profile_status": "values_reinforced_publication_calibrated",
+  "current_version": "v011",
+  "profile_status": "lexicon_constructions_and_register_modes_modeled",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
   "stage4_status": "not_started",
   "strict_unseen_test_available": false,
   "remaining": [
-    "発信校正例について本人に主張の方向と強度を確認する",
-    "同じ題材の抑制・標準・強め三案で口調強度を校正する",
+    "語彙・構文一覧について本人に過不足を確認する",
+    "同一内容を通常・ギャル・お嬢様モードで書き分け、末尾の武将調復帰を校正する",
+    "将来の追加原本からモードが文中で持続する完全例を収集する",
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する"
   ],
@@ -49,6 +50,11 @@
       "version": "v009",
       "feedback": "ありがとう、つづけて。",
       "meaning": "立場を選ぶ発信モデルを受けた継続指示。個々の作例や主張強度の本人確認ではない。"
+    },
+    {
+      "version": "v010",
+      "feedback": "発信では単語レベルの多用語と構文レベルの言い回しをある程度決めると、らしさが固まる。現代人があまり使わない言い回しもよく拾ってほしい。",
+      "meaning": "表面的な語尾模倣ではなく、反復語・反復構文・古風な表現を再現資源として明示する指示。"
     }
   ],
   "explicit_output_preferences": {
@@ -62,5 +68,11 @@
       "claiming_uncertain_facts_as_certain"
     ],
     "priority": "explicit_current_user_direction_over_inferred_historical_tendency"
+  },
+  "explicit_style_preferences": {
+    "salient_registers": ["archaic_or_warrior_like", "gal_like", "ojou_sama_like"],
+    "mode_persistence": "once_gal_or_ojou_mode_starts_keep_it_through_the_body",
+    "typical_ending": "abruptly_return_to_warrior_like_base_at_the_end",
+    "evidence_status": "explicit_current_user_report_separate_from_archive_frequency"
   }
 }
