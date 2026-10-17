@@ -77,6 +77,15 @@ class RssAgentTest(unittest.TestCase):
         self.assertIn("投稿禁止", issue["body"])
         self.assertIn("experimental-politics", issue["labels"])
 
+    def test_model_selection_prefers_stable_flash_and_excludes_specialized_models(self):
+        models = [
+            "gemini-pro-latest", "gemini-3-flash-preview", "gemini-2.5-flash",
+            "gemini-2.0-flash", "gemini-embedding-001", "gemini-2.5-flash-image",
+        ]
+        self.assertEqual(generator.rank_generation_models(models), [
+            "gemini-2.5-flash", "gemini-2.0-flash", "gemini-3-flash-preview", "gemini-pro-latest",
+        ])
+
 
 class IssueFeedbackImportTest(unittest.TestCase):
     def setUp(self):

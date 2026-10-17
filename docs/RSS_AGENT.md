@@ -28,7 +28,7 @@ Google Newsは配信経路であって事実の保証者ではありません。
 
 - `GEMINI_API_KEY`：RSS断片の構造化と初稿生成に使用。
 
-必要ならActions Variablesへ `GEMINI_MODEL` を設定します。未設定時は `gemini-2.5-flash` を使います。`GITHUB_TOKEN` はActionsが発行する標準トークンを使い、個人アクセストークンをSecretsへ追加する必要はありません。
+必要ならActions Variablesへ `GEMINI_MODEL` を設定します。未設定時は `auto` とし、そのAPIキーで利用可能な `generateContent` 対応テキストモデルを取得して、Flash系の安定版を優先選択します。固定名を設定した場合は自動フォールバックしません。`GITHUB_TOKEN` はActionsが発行する標準トークンを使い、個人アクセストークンをSecretsへ追加する必要はありません。
 
 リポジトリまたはOrganizationのActions設定で、Workflowの読み書き権限とIssue作成を許可してください。収集ワークフローは `contents: read` と `issues: write` だけを持ちます。履歴書込ワークフローだけが `contents: write` を持ち、GeminiのSecretは受け取りません。
 

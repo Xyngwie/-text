@@ -5,7 +5,10 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
+import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -18,25 +21,115 @@ def fail(message):
     raise SystemExit(message)
 
 
+API_ROOT = "https://generativelanguage.googleapis.com/v1beta"
+
+
+class GeminiAPIError(RuntimeError):
+    def __init__(self, status, message):
+        super().__init__(message)
+        self.status = status
+
+
+def api_json(path, api_key, payload=None, timeout=90):
+    url = f"{API_ROOT}/{path}"
+    body = None if payload is None else json.dumps(payload).encode("utf-8")
+    request = urllib.request.Request(
+        url,
+        data=body,
+        headers={"Content-Type": "application/json", "x-goog-api-key": api_key},
+        method="GET" if payload is None else "POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return json.loads(response.read())
+    except urllib.error.HTTPError as exc:
+        try:
+            error = json.loads(exc.read().decode("utf-8", errors="replace"))
+            message = error.get("error", {}).get("message", "")
+        except json.JSONDecodeError:
+            message = ""
+        raise GeminiAPIError(exc.code, message or exc.reason) from None
+
+
+def available_generation_models(api_key):
+    models = []
+    page_token = ""
+    while True:
+        query = "models?pageSize=1000"
+        if page_token:
+            query += "&pageToken=" + urllib.parse.quote(page_token)
+        result = api_json(query, api_key, timeout=30)
+        models.extend(
+            item["name"].removeprefix("models/")
+            for item in result.get("models", [])
+            if "generateContent" in item.get("supportedGenerationMethods", [])
+        )
+        page_token = result.get("nextPageToken", "")
+        if not page_token:
+            return models
+
+
+def rank_generation_models(models):
+    excluded = ("embedding", "image", "imagen", "tts", "audio", "live", "robotics")
+    usable = [name for name in models if not any(term in name.lower() for term in excluded)]
+
+    def score(name):
+        lower = name.lower()
+        stable = "preview" not in lower and "exp" not in lower and "latest" not in lower
+        version = re.search(r"gemini-(\d+)(?:\.(\d+))?", lower)
+        major, minor = (int(version.group(1)), int(version.group(2) or 0)) if version else (0, 0)
+        return (
+            0 if "flash" in lower else 1,
+            0 if stable else 1,
+            -major,
+            -minor,
+            name,
+        )
+
+    return sorted(set(usable), key=score)
+
+
 def call_gemini(prompt, api_key, model):
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+    model = model.removeprefix("models/")
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0.35},
     }
-    request = urllib.request.Request(
-        url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    with urllib.request.urlopen(request, timeout=90) as response:
-        result = json.loads(response.read())
+    result = api_json(f"models/{model}:generateContent", api_key, payload)
     try:
         content = result["candidates"][0]["content"]["parts"][0]["text"]
         return json.loads(content)
     except (KeyError, IndexError, json.JSONDecodeError) as exc:
         fail(f"Unexpected Gemini response: {exc}")
+
+
+def gemini_generator(api_key, requested_model):
+    if requested_model != "auto":
+        models = [requested_model]
+    else:
+        models = rank_generation_models(available_generation_models(api_key))
+        if not models:
+            fail("Gemini API returned no text generateContent models")
+    selected = None
+
+    def generate(prompt):
+        nonlocal selected
+        candidates = [selected] if selected else models
+        errors = []
+        for model in candidates:
+            try:
+                result = call_gemini(prompt, api_key, model)
+                if selected is None:
+                    selected = model
+                    print(f"Using Gemini model: {model}", file=sys.stderr)
+                return result
+            except GeminiAPIError as exc:
+                errors.append(f"{model}: HTTP {exc.status}: {exc}")
+                if requested_model != "auto" or exc.status not in (400, 404):
+                    break
+        fail("Gemini generation failed: " + " | ".join(errors))
+
+    return generate
 
 
 def validate_generation(value):
@@ -162,13 +255,13 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path)
-    parser.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"))
+    parser.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "auto"))
     args = parser.parse_args()
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         fail("GEMINI_API_KEY is required")
     input_data = json.loads(args.input.read_text(encoding="utf-8"))
-    result = generate_all(input_data, lambda prompt: call_gemini(prompt, api_key, args.model))
+    result = generate_all(input_data, gemini_generator(api_key, args.model))
     encoded = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

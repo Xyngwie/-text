@@ -40,7 +40,7 @@ jobs:
       - name: Generate zero-shot review drafts
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'auto' }}
         run: |
           python3 tools/generate_rss_issues.py \
             --input "$RUNNER_TEMP/rss_candidates.json" \
