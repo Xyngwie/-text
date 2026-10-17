@@ -1,0 +1,2522 @@
+{
+  "version": "v016",
+  "unit": "related_segment_component_plus_documented_manual_links",
+  "seed": "stage3-v001",
+  "manual_links": [
+    {
+      "segment_ids": [
+        "S021",
+        "S038",
+        "S039",
+        "S055",
+        "S068"
+      ],
+      "reason": "AIの分担・権限・基礎学習の再登場"
+    },
+    {
+      "segment_ids": [
+        "S319",
+        "S320",
+        "S321",
+        "S341",
+        "S342",
+        "S360",
+        "S361",
+        "S362"
+      ],
+      "reason": "列とマナーの話、怒りと正しさの振り返り"
+    }
+  ],
+  "groups": [
+    {
+      "group_id": "G-S001",
+      "segment_ids": [
+        "S001"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S002",
+      "segment_ids": [
+        "S002"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S003",
+      "segment_ids": [
+        "S003"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S004",
+      "segment_ids": [
+        "S004"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S005",
+      "segment_ids": [
+        "S005"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S006",
+      "segment_ids": [
+        "S006"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S007",
+      "segment_ids": [
+        "S007"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S008",
+      "segment_ids": [
+        "S008"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S009",
+      "segment_ids": [
+        "S009"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S010",
+      "segment_ids": [
+        "S010"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S011",
+      "segment_ids": [
+        "S011"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S012",
+      "segment_ids": [
+        "S012",
+        "S037"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S013",
+      "segment_ids": [
+        "S013",
+        "S015",
+        "S188",
+        "S259",
+        "S260",
+        "S301",
+        "S515"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S014",
+      "segment_ids": [
+        "S014"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S016",
+      "segment_ids": [
+        "S016"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S017",
+      "segment_ids": [
+        "S017"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S018",
+      "segment_ids": [
+        "S018",
+        "S121",
+        "S297"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S019",
+      "segment_ids": [
+        "S019",
+        "S377"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S020",
+      "segment_ids": [
+        "S020"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S021",
+      "segment_ids": [
+        "S021",
+        "S038",
+        "S039",
+        "S055",
+        "S064",
+        "S068"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S022",
+      "segment_ids": [
+        "S022"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S023",
+      "segment_ids": [
+        "S023"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S024",
+      "segment_ids": [
+        "S024"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S025",
+      "segment_ids": [
+        "S025",
+        "S026",
+        "S028",
+        "S050",
+        "S078",
+        "S079",
+        "S224",
+        "S244",
+        "S245",
+        "S246",
+        "S247",
+        "S257",
+        "S258",
+        "S290",
+        "S307",
+        "S308",
+        "S309",
+        "S311",
+        "S371",
+        "S372",
+        "S373",
+        "S375",
+        "S387",
+        "S388",
+        "S392",
+        "S420",
+        "S421",
+        "S422",
+        "S428",
+        "S429",
+        "S430",
+        "S431",
+        "S434",
+        "S435",
+        "S436",
+        "S437",
+        "S438",
+        "S439",
+        "S442",
+        "S443",
+        "S444",
+        "S445",
+        "S472",
+        "S473",
+        "S474",
+        "S484",
+        "S485",
+        "S486",
+        "S487",
+        "S497",
+        "S498",
+        "S499",
+        "S500",
+        "S501",
+        "S502",
+        "S503",
+        "S504",
+        "S505",
+        "S506",
+        "S507",
+        "S508",
+        "S511",
+        "S512",
+        "S513",
+        "S514",
+        "S516",
+        "S517",
+        "S518",
+        "S519",
+        "S524",
+        "S525",
+        "S526",
+        "S528",
+        "S529",
+        "S530",
+        "S531",
+        "S532",
+        "S533",
+        "S538",
+        "S539",
+        "S540",
+        "S545",
+        "S546",
+        "S547",
+        "S548",
+        "S549",
+        "S550",
+        "S551",
+        "S552",
+        "S562",
+        "S563",
+        "S564"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S027",
+      "segment_ids": [
+        "S027"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S029",
+      "segment_ids": [
+        "S029",
+        "S033",
+        "S034"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S030",
+      "segment_ids": [
+        "S030"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S031",
+      "segment_ids": [
+        "S031"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S032",
+      "segment_ids": [
+        "S032"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S035",
+      "segment_ids": [
+        "S035"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S036",
+      "segment_ids": [
+        "S036"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S040",
+      "segment_ids": [
+        "S040"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S041",
+      "segment_ids": [
+        "S041"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S042",
+      "segment_ids": [
+        "S042"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S043",
+      "segment_ids": [
+        "S043",
+        "S044",
+        "S045"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S046",
+      "segment_ids": [
+        "S046"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S047",
+      "segment_ids": [
+        "S047",
+        "S048"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S049",
+      "segment_ids": [
+        "S049"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S051",
+      "segment_ids": [
+        "S051",
+        "S052"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S053",
+      "segment_ids": [
+        "S053"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S054",
+      "segment_ids": [
+        "S054",
+        "S081",
+        "S095"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S056",
+      "segment_ids": [
+        "S056"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S057",
+      "segment_ids": [
+        "S057"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S058",
+      "segment_ids": [
+        "S058",
+        "S059",
+        "S060",
+        "S066",
+        "S092",
+        "S093"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S061",
+      "segment_ids": [
+        "S061"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S062",
+      "segment_ids": [
+        "S062"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S063",
+      "segment_ids": [
+        "S063"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S065",
+      "segment_ids": [
+        "S065"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S067",
+      "segment_ids": [
+        "S067"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S069",
+      "segment_ids": [
+        "S069",
+        "S073"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S070",
+      "segment_ids": [
+        "S070"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S071",
+      "segment_ids": [
+        "S071"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S072",
+      "segment_ids": [
+        "S072"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S074",
+      "segment_ids": [
+        "S074"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S075",
+      "segment_ids": [
+        "S075"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S076",
+      "segment_ids": [
+        "S076"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S077",
+      "segment_ids": [
+        "S077"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S080",
+      "segment_ids": [
+        "S080"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S082",
+      "segment_ids": [
+        "S082"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S083",
+      "segment_ids": [
+        "S083",
+        "S104"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S084",
+      "segment_ids": [
+        "S084"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S085",
+      "segment_ids": [
+        "S085"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S086",
+      "segment_ids": [
+        "S086",
+        "S111",
+        "S114",
+        "S215",
+        "S216",
+        "S217"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S087",
+      "segment_ids": [
+        "S087",
+        "S088",
+        "S359"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S089",
+      "segment_ids": [
+        "S089"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S090",
+      "segment_ids": [
+        "S090"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S091",
+      "segment_ids": [
+        "S091"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S094",
+      "segment_ids": [
+        "S094"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S096",
+      "segment_ids": [
+        "S096"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S097",
+      "segment_ids": [
+        "S097"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S098",
+      "segment_ids": [
+        "S098"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S099",
+      "segment_ids": [
+        "S099"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S100",
+      "segment_ids": [
+        "S100",
+        "S367"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S101",
+      "segment_ids": [
+        "S101",
+        "S102",
+        "S113"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S103",
+      "segment_ids": [
+        "S103"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S105",
+      "segment_ids": [
+        "S105"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S106",
+      "segment_ids": [
+        "S106"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S107",
+      "segment_ids": [
+        "S107"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S108",
+      "segment_ids": [
+        "S108"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S109",
+      "segment_ids": [
+        "S109"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S110",
+      "segment_ids": [
+        "S110"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S112",
+      "segment_ids": [
+        "S112",
+        "S242",
+        "S272",
+        "S275",
+        "S298",
+        "S303",
+        "S322"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S115",
+      "segment_ids": [
+        "S115"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S116",
+      "segment_ids": [
+        "S116"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S117",
+      "segment_ids": [
+        "S117",
+        "S118"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S119",
+      "segment_ids": [
+        "S119"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S120",
+      "segment_ids": [
+        "S120"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S122",
+      "segment_ids": [
+        "S122"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S123",
+      "segment_ids": [
+        "S123"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S124",
+      "segment_ids": [
+        "S124"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S125",
+      "segment_ids": [
+        "S125"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S126",
+      "segment_ids": [
+        "S126"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S127",
+      "segment_ids": [
+        "S127"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S128",
+      "segment_ids": [
+        "S128",
+        "S129"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S130",
+      "segment_ids": [
+        "S130"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S131",
+      "segment_ids": [
+        "S131",
+        "S132",
+        "S133",
+        "S134"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S135",
+      "segment_ids": [
+        "S135",
+        "S136"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S137",
+      "segment_ids": [
+        "S137",
+        "S138"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S139",
+      "segment_ids": [
+        "S139"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S140",
+      "segment_ids": [
+        "S140"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S141",
+      "segment_ids": [
+        "S141",
+        "S142"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S143",
+      "segment_ids": [
+        "S143",
+        "S144",
+        "S145",
+        "S146"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S147",
+      "segment_ids": [
+        "S147"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S148",
+      "segment_ids": [
+        "S148",
+        "S149",
+        "S150",
+        "S151"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S152",
+      "segment_ids": [
+        "S152",
+        "S153"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S154",
+      "segment_ids": [
+        "S154"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S155",
+      "segment_ids": [
+        "S155",
+        "S156",
+        "S157"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S158",
+      "segment_ids": [
+        "S158"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S159",
+      "segment_ids": [
+        "S159",
+        "S169",
+        "S170",
+        "S171",
+        "S172",
+        "S173"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S160",
+      "segment_ids": [
+        "S160"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S161",
+      "segment_ids": [
+        "S161"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S162",
+      "segment_ids": [
+        "S162"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S163",
+      "segment_ids": [
+        "S163"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S164",
+      "segment_ids": [
+        "S164",
+        "S165"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S166",
+      "segment_ids": [
+        "S166",
+        "S167",
+        "S168"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S174",
+      "segment_ids": [
+        "S174",
+        "S175"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S176",
+      "segment_ids": [
+        "S176"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S177",
+      "segment_ids": [
+        "S177"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S178",
+      "segment_ids": [
+        "S178",
+        "S179"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S180",
+      "segment_ids": [
+        "S180"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S181",
+      "segment_ids": [
+        "S181"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S182",
+      "segment_ids": [
+        "S182",
+        "S281",
+        "S293",
+        "S389",
+        "S470",
+        "S527"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S183",
+      "segment_ids": [
+        "S183",
+        "S184",
+        "S185"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S186",
+      "segment_ids": [
+        "S186",
+        "S187",
+        "S189",
+        "S190",
+        "S191",
+        "S192",
+        "S212",
+        "S213",
+        "S214",
+        "S219",
+        "S220",
+        "S229",
+        "S232",
+        "S233",
+        "S234",
+        "S235",
+        "S279"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S193",
+      "segment_ids": [
+        "S193"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S194",
+      "segment_ids": [
+        "S194"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S195",
+      "segment_ids": [
+        "S195",
+        "S196"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S197",
+      "segment_ids": [
+        "S197"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S198",
+      "segment_ids": [
+        "S198",
+        "S199",
+        "S225",
+        "S226",
+        "S236",
+        "S237",
+        "S238",
+        "S240",
+        "S241",
+        "S248",
+        "S249",
+        "S250",
+        "S251",
+        "S252",
+        "S254",
+        "S263",
+        "S264",
+        "S265"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S200",
+      "segment_ids": [
+        "S200",
+        "S201"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S202",
+      "segment_ids": [
+        "S202",
+        "S203",
+        "S204",
+        "S276"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S205",
+      "segment_ids": [
+        "S205"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S206",
+      "segment_ids": [
+        "S206",
+        "S207"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S208",
+      "segment_ids": [
+        "S208"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S209",
+      "segment_ids": [
+        "S209"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S210",
+      "segment_ids": [
+        "S210",
+        "S211"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S218",
+      "segment_ids": [
+        "S218"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S221",
+      "segment_ids": [
+        "S221"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S222",
+      "segment_ids": [
+        "S222"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S223",
+      "segment_ids": [
+        "S223"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S227",
+      "segment_ids": [
+        "S227",
+        "S228"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S230",
+      "segment_ids": [
+        "S230",
+        "S231"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S239",
+      "segment_ids": [
+        "S239",
+        "S255",
+        "S256",
+        "S274"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S243",
+      "segment_ids": [
+        "S243"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S253",
+      "segment_ids": [
+        "S253"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S261",
+      "segment_ids": [
+        "S261"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S262",
+      "segment_ids": [
+        "S262",
+        "S266",
+        "S269",
+        "S278",
+        "S282",
+        "S291",
+        "S295",
+        "S296",
+        "S314",
+        "S316",
+        "S317",
+        "S318",
+        "S323",
+        "S324",
+        "S325",
+        "S336",
+        "S337",
+        "S345",
+        "S346",
+        "S347",
+        "S348",
+        "S357",
+        "S363",
+        "S364",
+        "S365",
+        "S366",
+        "S370",
+        "S380",
+        "S390",
+        "S391",
+        "S394",
+        "S395",
+        "S396",
+        "S397",
+        "S402",
+        "S403",
+        "S404",
+        "S406",
+        "S413",
+        "S451",
+        "S452",
+        "S453",
+        "S454",
+        "S455"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S267",
+      "segment_ids": [
+        "S267",
+        "S268"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S270",
+      "segment_ids": [
+        "S270"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S271",
+      "segment_ids": [
+        "S271"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S273",
+      "segment_ids": [
+        "S273"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S277",
+      "segment_ids": [
+        "S277"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S280",
+      "segment_ids": [
+        "S280"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S283",
+      "segment_ids": [
+        "S283",
+        "S284"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S285",
+      "segment_ids": [
+        "S285"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S286",
+      "segment_ids": [
+        "S286"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S287",
+      "segment_ids": [
+        "S287"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S288",
+      "segment_ids": [
+        "S288"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S289",
+      "segment_ids": [
+        "S289"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S292",
+      "segment_ids": [
+        "S292"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S294",
+      "segment_ids": [
+        "S294"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S299",
+      "segment_ids": [
+        "S299"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S300",
+      "segment_ids": [
+        "S300"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S302",
+      "segment_ids": [
+        "S302",
+        "S378"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S304",
+      "segment_ids": [
+        "S304"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S305",
+      "segment_ids": [
+        "S305"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S306",
+      "segment_ids": [
+        "S306"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S310",
+      "segment_ids": [
+        "S310"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S312",
+      "segment_ids": [
+        "S312",
+        "S313",
+        "S315"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S319",
+      "segment_ids": [
+        "S319",
+        "S320",
+        "S321",
+        "S341",
+        "S342",
+        "S360",
+        "S361",
+        "S362"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S326",
+      "segment_ids": [
+        "S326",
+        "S327",
+        "S328",
+        "S329",
+        "S330",
+        "S334",
+        "S355",
+        "S356",
+        "S400",
+        "S405",
+        "S407",
+        "S408",
+        "S409",
+        "S410",
+        "S417",
+        "S418",
+        "S419"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S331",
+      "segment_ids": [
+        "S331",
+        "S332"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S333",
+      "segment_ids": [
+        "S333"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S335",
+      "segment_ids": [
+        "S335"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S338",
+      "segment_ids": [
+        "S338"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S339",
+      "segment_ids": [
+        "S339"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S340",
+      "segment_ids": [
+        "S340"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S343",
+      "segment_ids": [
+        "S343",
+        "S344"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S349",
+      "segment_ids": [
+        "S349",
+        "S350",
+        "S351"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S352",
+      "segment_ids": [
+        "S352"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S353",
+      "segment_ids": [
+        "S353",
+        "S354",
+        "S446",
+        "S447",
+        "S448",
+        "S464",
+        "S465",
+        "S466",
+        "S492",
+        "S493",
+        "S494",
+        "S521",
+        "S522",
+        "S523"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S358",
+      "segment_ids": [
+        "S358"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S368",
+      "segment_ids": [
+        "S368"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S369",
+      "segment_ids": [
+        "S369"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S374",
+      "segment_ids": [
+        "S374"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S376",
+      "segment_ids": [
+        "S376"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S379",
+      "segment_ids": [
+        "S379"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S381",
+      "segment_ids": [
+        "S381"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S382",
+      "segment_ids": [
+        "S382"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S383",
+      "segment_ids": [
+        "S383"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S384",
+      "segment_ids": [
+        "S384"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S385",
+      "segment_ids": [
+        "S385"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S386",
+      "segment_ids": [
+        "S386"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S393",
+      "segment_ids": [
+        "S393"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S398",
+      "segment_ids": [
+        "S398"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S399",
+      "segment_ids": [
+        "S399"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S401",
+      "segment_ids": [
+        "S401",
+        "S425",
+        "S426",
+        "S427"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S411",
+      "segment_ids": [
+        "S411"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S412",
+      "segment_ids": [
+        "S412"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S414",
+      "segment_ids": [
+        "S414"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S415",
+      "segment_ids": [
+        "S415"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S416",
+      "segment_ids": [
+        "S416"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S423",
+      "segment_ids": [
+        "S423"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S424",
+      "segment_ids": [
+        "S424"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S432",
+      "segment_ids": [
+        "S432"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S433",
+      "segment_ids": [
+        "S433"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S440",
+      "segment_ids": [
+        "S440"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S441",
+      "segment_ids": [
+        "S441"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S449",
+      "segment_ids": [
+        "S449"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S450",
+      "segment_ids": [
+        "S450"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S456",
+      "segment_ids": [
+        "S456"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S457",
+      "segment_ids": [
+        "S457",
+        "S458",
+        "S459",
+        "S509",
+        "S510"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S460",
+      "segment_ids": [
+        "S460"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S461",
+      "segment_ids": [
+        "S461"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S462",
+      "segment_ids": [
+        "S462"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S463",
+      "segment_ids": [
+        "S463"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S467",
+      "segment_ids": [
+        "S467",
+        "S468",
+        "S469"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S471",
+      "segment_ids": [
+        "S471"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S475",
+      "segment_ids": [
+        "S475",
+        "S536",
+        "S537"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S476",
+      "segment_ids": [
+        "S476"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S477",
+      "segment_ids": [
+        "S477",
+        "S478"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S479",
+      "segment_ids": [
+        "S479",
+        "S480",
+        "S481"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S482",
+      "segment_ids": [
+        "S482",
+        "S483"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S488",
+      "segment_ids": [
+        "S488"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S489",
+      "segment_ids": [
+        "S489"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S490",
+      "segment_ids": [
+        "S490"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S491",
+      "segment_ids": [
+        "S491"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S495",
+      "segment_ids": [
+        "S495"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S496",
+      "segment_ids": [
+        "S496"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S520",
+      "segment_ids": [
+        "S520"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S534",
+      "segment_ids": [
+        "S534"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S535",
+      "segment_ids": [
+        "S535"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S541",
+      "segment_ids": [
+        "S541",
+        "S542"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S543",
+      "segment_ids": [
+        "S543",
+        "S544"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S553",
+      "segment_ids": [
+        "S553",
+        "S554",
+        "S555"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S556",
+      "segment_ids": [
+        "S556",
+        "S557",
+        "S558"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S559",
+      "segment_ids": [
+        "S559"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S560",
+      "segment_ids": [
+        "S560",
+        "S561"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S565",
+      "segment_ids": [
+        "S565"
+      ],
+      "partition": "reuse_reserve",
+      "assignment_reason": "deterministic_sha256_mod5",
+      "is_unseen": false
+    },
+    {
+      "group_id": "G-S566",
+      "segment_ids": [
+        "S566",
+        "S567"
+      ],
+      "partition": "analysis_pool",
+      "assignment_reason": "contains_initial_episode_or_context",
+      "is_unseen": false
+    }
+  ],
+  "warning": "Both partitions were exposed to stage-2 review and observation summaries. This is a retrospective reuse reserve, not an unseen test set. Manual semantic duplicate checks are not exhaustive.",
+  "inherited_from": "v006",
+  "assignment_changes": []
+}

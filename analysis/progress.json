@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v015",
-  "profile_status": "publication_feedback_loop_implemented",
+  "current_version": "v016",
+  "profile_status": "conditional_value_conflicts_modeled",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -13,6 +13,7 @@
     "強度2.25の作例について本人に語感を確認する",
     "実投稿が生じたら、AI初稿・本人修整・承諾・実表示をイベント履歴へ登録する",
     "独立した複数投稿で繰り返す修整を抽出し、口調・強度モデルの次版へ反映する",
+    "価値観の反転条件について本人に優先順と例外を確認する",
     "将来の追加原本からモードが文中で持続する完全例を収集する",
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する"
