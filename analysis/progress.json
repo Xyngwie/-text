@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v026",
-  "profile_status": "intention_history_and_stopping_conditions_explored",
+  "current_version": "v027",
+  "profile_status": "shame_pride_and_future_self_evaluators_explored",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -23,6 +23,7 @@
     "採点者的な尊大さが勝負・冗談以外の公開批評でも現れるか確認する",
     "自虐が主張を撤回する場合と、主張を社会的に通しやすくする場合を実投稿差分で確認する",
     "意図・動機の推定が本人校正で残るか、事実と推測の境界を別事例で確認する",
+    "誉れや矜持の表現が公開演出だけか、実際の撤退・継続判断にも残るか確認する",
     "The Division 2の瞬間最高6位を裏付ける順位画面等があれば本人申告から添付資料付き記録へ更新する",
     "将来の追加原本からモードが文中で持続する完全例を収集する",
     "別LLMとの比較は追加原本が分類された後に行う",
