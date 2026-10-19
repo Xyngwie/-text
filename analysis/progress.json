@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v030",
-  "profile_status": "x_grandeur_and_laughter_explored",
+  "current_version": "v031",
+  "profile_status": "honor_intervention_and_self_obligation_explored",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -144,6 +144,11 @@
       "version": "v030",
       "feedback": "Xは渡邉さんではなく神宮さんのアカウントなので、尊大で誉れ高くカッコいい事を言うアカウントである。（笑）",
       "meaning": "Xで前景化する発信姿勢の明示指定。全側面の均等提示や機械的な謙遜は求めず、主張を保つ笑いも許容する。投稿内容の個別承諾を代替しない。"
+    },
+    {
+      "version": "v031",
+      "feedback": "僕は許すよ、だけど神宮さんがなんて言うかな？という問いで勇気を得ることがある。行き過ぎて喧嘩っ早いかと思った時期もあるが、駅や職場での抗議は死ぬ時にもやって良かったと思うだろう。拳を振り上げるは比喩。",
+      "meaning": "行動を促す信条、過剰さへの自己点検、過去の抗議への現在の肯定を同時に扱う。重大な加害阻止の仮定や移民問題への危機感は中心文書で別記し、実績・犯罪統計・助手側の停止規則へ変換しない。"
     }
   ],
   "explicit_output_preferences": {
