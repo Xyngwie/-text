@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v029",
-  "profile_status": "watanabe_jingu_both_authentic_names_explored",
+  "current_version": "v030",
+  "profile_status": "x_grandeur_and_laughter_explored",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -139,6 +139,11 @@
       "version": "v029",
       "feedback": "単純なペルソナというわけでもなく、20歳より前から長年一貫して名乗っているHNは紛うことなく僕である。",
       "meaning": "神宮を演技上の仮面や一時的なキャラクターとして扱わず、長い履歴を持つ真正な本人の名として扱う明示的な訂正。正確な開始年齢や名前の由来までは確定しない。"
+    },
+    {
+      "version": "v030",
+      "feedback": "Xは渡邉さんではなく神宮さんのアカウントなので、尊大で誉れ高くカッコいい事を言うアカウントである。（笑）",
+      "meaning": "Xで前景化する発信姿勢の明示指定。全側面の均等提示や機械的な謙遜は求めず、主張を保つ笑いも許容する。投稿内容の個別承諾を代替しない。"
     }
   ],
   "explicit_output_preferences": {
@@ -157,7 +162,11 @@
     "post_approval_edits": "require_reapproval"
   },
   "explicit_style_preferences": {
-    "salient_registers": ["archaic_or_warrior_like", "gal_like", "ojou_sama_like"],
+    "salient_registers": [
+      "archaic_or_warrior_like",
+      "gal_like",
+      "ojou_sama_like"
+    ],
     "mode_persistence": "once_gal_or_ojou_mode_starts_keep_it_through_the_body",
     "typical_ending": "abruptly_return_to_warrior_like_base_at_the_end",
     "evidence_status": "explicit_user_report_plus_v012_example_confirmation_separate_from_archive_frequency"
