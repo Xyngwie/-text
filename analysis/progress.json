@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v027",
-  "profile_status": "shame_pride_and_future_self_evaluators_explored",
+  "current_version": "v028",
+  "profile_status": "watanabe_jingu_coexisting_self_images_explored",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -129,6 +129,11 @@
       "version": "v016",
       "feedback": "通信社・公的ソース限定のRSS収集、政治への価値観スライド、GitHub Issue通知、本人修整と確定ログ回収を含む自律循環仕様を提示。",
       "meaning": "第四段階の入口となる具体的な実装仕様。政治初稿は未実績領域へのゼロショット予測として分離し、本人確定文を初の実績にする。"
+    },
+    {
+      "version": "v028",
+      "feedback": "今でも気弱な渡邉陽介さんと、気高く誉れにいきる神宮さんがいる。",
+      "meaning": "弱い過去を強い現在が置き換えたのではなく、恐怖や不安を感じる自己像と、誉れを選ぶ自己像が現在も共存するという本人による明示的な補足。名前の由来や医学的意味までは示さない。"
     }
   ],
   "explicit_output_preferences": {
