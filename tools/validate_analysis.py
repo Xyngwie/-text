@@ -36,7 +36,7 @@ def validate(version='v001', root=ROOT):
     assert manifest['sources'] == json.loads(inputs['data/sources.json'])['sources']
     archives = {}
     for sid, s in sources.items():
-        raw = pinned(s['path'], s['source_commit'])
+        raw = pinned(s.get('source_commit_path', s['path']), s['source_commit'])
         assert hashlib.sha256(raw).hexdigest() == s['source_sha256'], f'Source mismatch: {sid}'
         blob = subprocess.check_output(['git', 'hash-object', '--stdin'], input=raw, cwd=root).decode().strip()
         assert blob == s['source_blob_sha'], f'Blob mismatch: {sid}'

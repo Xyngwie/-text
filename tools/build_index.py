@@ -197,7 +197,10 @@ def main():
     dump(progress_path, progress)
     analysis_path = OUT / 'analysis' / 'progress.json'
     analysis = json.loads(analysis_path.read_text(encoding='utf-8')) if analysis_path.exists() else None
-    analysis_summary = (f"第3段階：分析継続中（{analysis['current_version']}）。[判断・口調の分析](analysis/README.md)。第4段階：未着手。"
+    stage4_summary = ('RSS・Issue・確定ログ取込パイプライン実装済み、本人試行を継続中。'
+                      if analysis and analysis.get('stage4_status', '').startswith('pipeline_implemented')
+                      else '未着手。')
+    analysis_summary = (f"第3段階：分析継続中（{analysis['current_version']}）。[判断・口調の分析](analysis/README.md)。第4段階：{stage4_summary}"
                         if analysis else '第3段階以降のテーマ横断プロファイルとニュース反応モデルは未完了。')
     progress_md = [
         '# 分類の進捗', '',

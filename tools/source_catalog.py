@@ -35,8 +35,13 @@ def parse_sources(root):
         commit = source['source_commit']
         if not re.fullmatch(r'[0-9a-f]{40}', commit):
             raise ValueError(f'Archive commit must be pinned: {sid}')
-        pinned = subprocess.check_output(['git', 'show', f'{commit}:{path}'], cwd=root)
-        blob = subprocess.check_output(['git', 'rev-parse', f'{commit}:{path}'], cwd=root, text=True).strip()
+        # A storage move must not change the original evidence revision or URLs.
+        commit_path = source.get('source_commit_path', path)
+        if (not commit_path or Path(commit_path).is_absolute()
+                or '..' in Path(commit_path).parts):
+            raise ValueError(f'Invalid pinned archive path: {sid}')
+        pinned = subprocess.check_output(['git', 'show', f'{commit}:{commit_path}'], cwd=root)
+        blob = subprocess.check_output(['git', 'rev-parse', f'{commit}:{commit_path}'], cwd=root, text=True).strip()
         if pinned != raw or blob != source['source_blob_sha']:
             raise ValueError(f'Pinned archive does not match: {sid}')
         markers = source['speaker_markers']
@@ -48,7 +53,7 @@ def parse_sources(root):
             raise ValueError(f'No speaker boundaries found: {sid}')
         source.update(bytes=len(raw), line_count=len(lines),
                       preamble_lines=[1, marks[0][0]] if marks[0][0] else None,
-                      source_url=f'https://github.com/Xyngwie/-text/blob/{commit}/{quote(path)}')
+                      source_url=f'https://github.com/Xyngwie/-text/blob/{commit}/{quote(commit_path)}')
         rows = []
         for pos, (start, role) in enumerate(marks):
             stop = marks[pos + 1][0] if pos + 1 < len(marks) else len(lines)

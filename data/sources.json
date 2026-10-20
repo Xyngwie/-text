@@ -3,7 +3,8 @@
   "sources": [
     {
       "source_id": "copilot-001",
-      "path": "こぴちーお引越し.txt",
+      "path": "sources/copilot-001/こぴちーお引越し.txt",
+      "source_commit_path": "こぴちーお引越し.txt",
       "assistant": "Copilot",
       "id_prefix": "",
       "source_commit": "972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74",
