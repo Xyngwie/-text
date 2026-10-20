@@ -16,6 +16,7 @@
 JSONだけを返してください。トップレベルは reviews, observation, observation_post_ids の3項目です。
 
 reviews はtargetsと同じID集合の配列。各項目は次の7項目だけです：
+post_idにはtargetsの短い識別子（P001など）をそのまま返します。長いX投稿IDを推測・生成しません。元の投稿IDへの変換はスクリプトが行います。
 post_id（文字列）, authorship, themes（文字列配列）, speech_act（具体的な発話の働き）, note（解釈の留保）, evidence_quote（原文の短い部分）, context_status（standalone / parent_available / missing_parent / mention_without_parent / repost_external のいずれか）。
 
 observation は300文字以内、1〜2文の具体的な観察です。observation_post_ids はその根拠となるtargetsのIDを1〜3個。著者性の不確かな発言を本人の確定的な特徴へ変換しないでください。
