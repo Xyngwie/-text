@@ -221,7 +221,7 @@ def main():
     if x_manifest_path.exists():
         x_progress = json.loads(x_manifest_path.read_text(encoding='utf-8'))
         progress_md.extend(['## X原本（会話原本とは別集計）', '',
-                            f"- 索引：{x_progress['post_count']:,}件。意味分類済み：{x_progress.get('reviewed_posts', 0):,}件。",
+                            f"- 索引：{x_progress['post_count']:,}件。精査記録：{x_progress.get('reviewed_posts', 0):,}件。AI分類案：{x_progress.get('ai_classified_posts', 0):,}件。",
                             f"- 次の投稿：{x_progress.get('next_post_id') or 'なし／未設定'}。",
                             '- [X原本の観察](observations/x/activity_and_first_batch.md)。分類進捗は `data/x_manifest.json`。', ''])
     (OUT / 'PROGRESS.md').write_text('\n'.join(progress_md), encoding='utf-8')

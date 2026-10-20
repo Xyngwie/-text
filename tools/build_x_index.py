@@ -55,6 +55,11 @@ def build(root=ROOT):
     review_map = {review['post_id']: review for review in reviews}
     if len(review_map) != len(reviews):
         raise ValueError('Duplicate X review')
+    ai_path = root / 'data/x_ai_reviews.jsonl'
+    ai_reviews = [json.loads(line) for line in ai_path.read_text().splitlines() if line.strip()] if ai_path.exists() else []
+    ai_map = {(r['source_id'], r['post_id']): r for r in ai_reviews}
+    if len(ai_map) != len(ai_reviews):
+        raise ValueError('Duplicate AI classification')
     rows, summaries, global_ids = [], [], set()
     for source in config['sources']:
         path = (root / source['path']).resolve()
@@ -96,35 +101,50 @@ def build(root=ROOT):
             local_rows.append(row)
         local_rows.sort(key=lambda row: (row['created_at'], int(row['post_id'])))
         for row in local_rows:
-            review = review_map.get(row['post_id'])
+            review = review_map.get(row['post_id']) or ai_map.get((row['source_id'], row['post_id']))
             if review is None:
                 continue
             if (review['source_id'] != source['source_id'] or review['text_sha256'] != row['text_sha256']
-                    or review['review_status'] != 'reviewed'
+                    or review['review_status'] not in {'reviewed', 'ai_classified'}
                     or review['authorship'] not in {'own', 'mixed', 'pasted', 'unknown'}):
                 raise ValueError(f"X review mismatch: {row['post_id']}")
             for key in ('authorship', 'review_status', 'theme_confirmed', 'speech_act',
                         'review_note', 'batch_id', 'context_status'):
                 row[key] = review[key]
+            if review['review_status'] == 'ai_classified':
+                row['classification_provenance'] = review['provenance']
         reviewed = sum(row['review_status'] == 'reviewed' for row in local_rows)
+        automated = sum(row['review_status'] == 'ai_classified' for row in local_rows)
         rows.extend(local_rows)
         summaries.append(dict(source_id=source['source_id'], post_count=len(local_rows),
                               first_at_jst=local_rows[0]['created_at_jst'] if local_rows else None,
                               last_at_jst=local_rows[-1]['created_at_jst'] if local_rows else None,
                               year_counts_jst=dict(sorted(years.items())), kind_counts=dict(kinds),
                               year_kind_counts_jst={year: dict(counts) for year, counts in sorted(year_kinds.items())},
-                              semantic_classification_complete=reviewed == len(local_rows),
-                              reviewed_posts=reviewed, unreviewed_posts=len(local_rows) - reviewed))
+                              semantic_classification_complete=reviewed + automated == len(local_rows),
+                              reviewed_posts=reviewed, ai_classified_posts=automated,
+                              unreviewed_posts=len(local_rows) - reviewed - automated))
     if set(review_map) - {row['post_id'] for row in rows}:
         raise ValueError('Unknown X review post')
+    indexed = {(r['source_id'], r['post_id']): r for r in rows}
+    for key, review in ai_map.items():
+        row = indexed.get(key)
+        if (row is None or review['review_status'] != 'ai_classified'
+                or review['text_sha256'] != row['text_sha256']
+                or not review.get('evidence_quote') or review['evidence_quote'] not in row['text']
+                or not review.get('provenance', {}).get('model_version')
+                or not review['provenance'].get('prompt_sha256')):
+            raise ValueError('AI classification provenance mismatch')
     # All input validation completes before generated files are replaced.
     (root / 'data/x_posts.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) + '\n' for r in rows))
     reviewed = sum(source['reviewed_posts'] for source in summaries)
+    automated = sum(source['ai_classified_posts'] for source in summaries)
     pending = [row for row in rows if row['review_status'] == 'unreviewed']
     summary = dict(schema_version=1, sources=summaries, post_count=len(rows),
-                   stage=2 if reviewed else 1,
-                   status=('semantic_classification_in_progress' if pending else 'semantic_classification_complete') if reviewed else 'indexed_not_semantically_classified',
-                   reviewed_posts=reviewed, unreviewed_posts=len(pending),
+                   stage=2 if reviewed + automated else 1,
+                   status=('semantic_classification_in_progress' if pending else 'semantic_classification_complete') if reviewed + automated else 'indexed_not_semantically_classified',
+                   reviewed_posts=reviewed, ai_classified_posts=automated,
+                   owner_confirmation_inferred=False, stage3='manual_dialogue_only', unreviewed_posts=len(pending),
                    next_post_id=pending[0]['id'] if pending else None,
                    completeness='Only supplied export; deleted or omitted posts and external context are not guaranteed.')
     (root / 'data/x_manifest.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
