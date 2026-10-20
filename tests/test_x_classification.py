@@ -61,6 +61,7 @@ class XClassificationTest(unittest.TestCase):
             self.assertEqual(classifier.run(self.root)['status'], 'idle')
         ledger = classifier.jsonl(self.root / 'data/x_ai_reviews.jsonl')
         self.assertEqual(len(ledger), 3)
+        self.assertEqual([r['post_id'] for r in ledger], ['1', '2', '3'])
         self.assertEqual(len({r['post_id'] for r in ledger}), 3)
         manifest = json.loads((self.root / 'data/x_manifest.json').read_text())
         self.assertEqual(manifest['reviewed_posts'], 0)

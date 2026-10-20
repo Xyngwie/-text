@@ -6,6 +6,8 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import subprocess
+import sys
 
 from build_x_index import build
 from generate_rss_issues import api_json, available_generation_models, rank_generation_models, GeminiAPIError
@@ -101,17 +103,16 @@ def validate_response(value, targets, themes):
 
 def response_schema(ids, themes):
     return {'type': 'OBJECT', 'required': ['reviews', 'observation', 'observation_post_ids'], 'properties': {
-        'reviews': {'type': 'ARRAY', 'minItems': len(ids), 'maxItems': len(ids), 'items': {
+        'reviews': {'type': 'ARRAY', 'items': {
             'type': 'OBJECT', 'required': ['post_id', 'authorship', 'themes', 'speech_act', 'note', 'evidence_quote', 'context_status'],
-            'properties': {'post_id': {'type': 'STRING', 'enum': ids},
+            'properties': {'post_id': {'type': 'STRING'},
                            'authorship': {'type': 'STRING', 'enum': ['own', 'mixed', 'pasted', 'unknown']},
                            'themes': {'type': 'ARRAY', 'items': {'type': 'STRING', 'enum': list(themes)}},
                            'speech_act': {'type': 'STRING'}, 'note': {'type': 'STRING'},
                            'evidence_quote': {'type': 'STRING'},
                            'context_status': {'type': 'STRING', 'enum': sorted(CONTEXT)}}}},
         'observation': {'type': 'STRING'},
-        'observation_post_ids': {'type': 'ARRAY', 'minItems': 1, 'maxItems': 3,
-                                 'items': {'type': 'STRING', 'enum': ids}}}}
+        'observation_post_ids': {'type': 'ARRAY', 'items': {'type': 'STRING'}}}}
 
 
 def gemini(prompt, key, requested, schema):
@@ -124,10 +125,14 @@ def gemini(prompt, key, requested, schema):
                                      'temperature': 0.2, 'maxOutputTokens': 16384},
             })
         except GeminiAPIError as exc:
+            print(f'{model}: HTTP {exc.status}: {exc}', file=sys.stderr)
             if requested == 'auto' and exc.status in (400, 404):
                 continue
             raise
         candidate = response['candidates'][0]
+        print(json.dumps({'selected_model': model, 'model_version': response.get('modelVersion', model),
+                          'finish_reason': candidate.get('finishReason'),
+                          'usage': response.get('usageMetadata', {})}), file=sys.stderr)
         if candidate.get('finishReason') != 'STOP':
             raise ValueError('Generation did not finish normally')
         text = ''.join(part.get('text', '') for part in candidate['content']['parts'] if not part.get('thought'))
@@ -174,7 +179,8 @@ def run(root=ROOT, limit=30, generator=None):
     prompt_sha = digest(instructions.encode())
     batch_id = 'XA-' + digest(json.dumps([r['id'] for r in targets]).encode())[:16]
     provenance = dict(provider='Gemini', **model, executed_at=now, prompt_sha256=prompt_sha,
-                      input_sha256=digest(prompt.encode()), base_commit=os.environ.get('GITHUB_SHA', 'local'),
+                      input_sha256=digest(prompt.encode()), base_commit=(subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
+                                        if (root / '.git').exists() else 'local'),
                       workflow_run_url=(f"https://github.com/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{os.environ['GITHUB_RUN_ID']}"
                                         if os.environ.get('GITHUB_RUN_ID') and os.environ.get('GITHUB_REPOSITORY') else None),
                       execution_actor=os.environ.get('GITHUB_ACTOR', 'local'), executor='github-actions' if os.environ.get('GITHUB_ACTIONS') else 'local')
