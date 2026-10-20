@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v031",
-  "profile_status": "honor_intervention_and_self_obligation_explored",
+  "current_version": "v032",
+  "profile_status": "borrowed_ideas_and_meaningful_play_explored",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -27,7 +27,8 @@
     "The Division 2の瞬間最高6位を裏付ける順位画面等があれば本人申告から添付資料付き記録へ更新する",
     "将来の追加原本からモードが文中で持続する完全例を収集する",
     "別LLMとの比較は追加原本が分類された後に行う",
-    "第四段階の未見検証は新規会話を読む前に分割して実施する"
+    "第四段階の未見検証は新規会話を読む前に分割して実施する",
+    "借りた着想を確認・修正・放棄する流れと、オノマトペ単独・オウム返しの完全な文脈例を追加資料で確認する"
   ],
   "user_feedback": [
     {
@@ -149,6 +150,11 @@
       "version": "v031",
       "feedback": "僕は許すよ、だけど神宮さんがなんて言うかな？という問いで勇気を得ることがある。行き過ぎて喧嘩っ早いかと思った時期もあるが、駅や職場での抗議は死ぬ時にもやって良かったと思うだろう。拳を振り上げるは比喩。",
       "meaning": "行動を促す信条、過剰さへの自己点検、過去の抗議への現在の肯定を同時に扱う。重大な加害阻止の仮定や移民問題への危機感は中心文書で別記し、実績・犯罪統計・助手側の停止規則へ変換しない。"
+    },
+    {
+      "version": "v032",
+      "feedback": "いろんなところから着想を持ってくる。ふざけてオノマトペだけを話すことやオウム返しもあるが、大概は意味のあることを言うようにしているつもり。",
+      "meaning": "着想の入口と発話の意図についての本人補足。すべての発話に深い命題を読み込まず、内容・応答・表現の働きを文脈で調べる。使用頻度や個々の反復の機能は別途確認する。"
     }
   ],
   "explicit_output_preferences": {
