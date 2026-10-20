@@ -149,6 +149,7 @@ def prompt_for(candidate, instructions, policy):
     source_data = {
         "candidate_id": candidate["candidate_id"],
         "track": candidate["track"],
+        "category": candidate.get('category', candidate['track']),
         "publisher": candidate["publisher"],
         "title": candidate["title"],
         "description": candidate["description"],
@@ -170,9 +171,10 @@ def issue_payload(candidate, generation):
     draft = generation["draft"].strip()
     draft_sha = hashlib.sha256(draft.encode("utf-8")).hexdigest()
     experimental = candidate["track"] == "experimental-politics"
-    title_prefix = "[実験・政治]" if experimental else "[通常]"
+    category = candidate.get('category', 'politics' if experimental else 'normal')
+    title_prefix = ('[実験・' + {'general': '一般ニュース', 'world': '世界情勢', 'politics': '政治', 'official': '公的情報'}.get(category, '政治') + ']') if experimental else '[通常]'
     warning = (
-        "> [!WARNING]\n> これは実績のない政治領域へのゼロショット仮説です。本人の意見ではなく、投稿禁止の校正用初稿です。"
+        "> [!WARNING]\n> これは政治・社会・国際などの題材への反応仮説です。本人の意見ではなく、投稿禁止の校正用初稿です。"
         if experimental else
         "> [!IMPORTANT]\n> 本人確認前の校正用初稿です。承諾なしに本人名義で投稿しないでください。"
     )
@@ -224,6 +226,8 @@ def issue_payload(candidate, generation):
 確定文を直す場合は、元のコメントを編集するか、新しい確定文をそのままコメントしてください。修整後に投稿した場合は改めて投稿報告をお願いします。Issueは整理のため好きな時にCloseできます。旧形式の /final と /posted も引き続き読み取れます。
 """
     labels = ["rss-agent", candidate["track"]]
+    if candidate.get('category'):
+        labels.append('news-' + category)
     if generation["do_not_publish_reason"]:
         labels.append("insufficient-source")
     return {

@@ -32,10 +32,24 @@ jobs:
       - name: Collect allowlisted RSS candidates
         env:
           MAX_ITEMS: ${{ inputs.max_items || '6' }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           python3 tools/rss_agent.py \
             --max-items "$MAX_ITEMS" \
+            --exclude-existing-issues --repo "$GITHUB_REPOSITORY" \
             --output "$RUNNER_TEMP/rss_candidates.json"
+          python3 - "$RUNNER_TEMP/rss_candidates.json" "$GITHUB_STEP_SUMMARY" <<'PY'
+          import collections, json, sys
+          result = json.load(open(sys.argv[1], encoding='utf-8'))
+          with open(sys.argv[2], 'a', encoding='utf-8') as summary:
+              summary.write('## RSS収集\n\n')
+              summary.write('選択分野: ' + json.dumps(dict(collections.Counter(row['category'] for row in result['candidates'])), ensure_ascii=False) + '\n\n')
+              summary.write('既存Issue候補の除外: ' + str(result['excluded_existing_count']) + '\n\n')
+              for feed in result['source_diagnostics']:
+                  summary.write(f"- {feed['source_id']}: 取得{feed['fetched']}、採用可能{feed['accepted']}、除外{feed['rejected']}\n")
+              for error in result['errors']:
+                  summary.write(f"- 取得失敗: {error['source_id']}\n")
+          PY
 
       - name: Generate zero-shot review drafts
         env:

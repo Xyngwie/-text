@@ -1,43 +1,196 @@
 {
-  "version": 1,
+  "version": 2,
   "sources": [
     {
       "source_id": "google-news-atelier",
       "track": "normal",
       "name": "Google News: Atelier",
-      "url": "https://news.google.com/rss/search?q=%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA&hl=ja&gl=JP&ceid=JP:ja",
-      "allowed_publishers": []
+      "url": "https://news.google.com/rss/search?q=%E3%82%A2%E3%83%88%E3%83%AA%E3%82%A8%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [],
+      "category": "games"
     },
     {
       "source_id": "google-news-ai-dev",
       "track": "normal",
       "name": "Google News: AI development",
-      "url": "https://news.google.com/rss/search?q=GitHub%20Actions%20OR%20Cursor%20AI&hl=ja&gl=JP&ceid=JP:ja",
-      "allowed_publishers": []
+      "url": "https://news.google.com/rss/search?q=%28%22GitHub+Actions%22+OR+%22Cursor+AI%22%29+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [],
+      "category": "technology"
     },
     {
       "source_id": "google-news-reuters-politics",
       "track": "experimental-politics",
       "name": "Google News: Reuters politics",
-      "url": "https://news.google.com/rss/search?q=%E6%94%BF%E6%B2%BB%20OR%20%E7%A4%BE%E4%BC%9A%20source%3AReuters&hl=ja&gl=JP&ceid=JP:ja",
-      "allowed_publishers": ["Reuters", "ロイター"]
+      "url": "https://news.google.com/rss/search?q=%28%E6%94%BF%E6%B2%BB+OR+%E5%9B%BD%E4%BC%9A+OR+%E9%81%B8%E6%8C%99%29+%E3%83%AD%E3%82%A4%E3%82%BF%E3%83%BC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [
+        "Reuters",
+        "ロイター"
+      ],
+      "category": "politics"
     },
     {
       "source_id": "google-news-kyodo-politics",
       "track": "experimental-politics",
       "name": "Google News: Kyodo politics",
       "url": "https://news.google.com/rss/search?q=%E6%94%BF%E6%B2%BB%20OR%20%E7%A4%BE%E4%BC%9A%20source%3A%E5%85%B1%E5%90%8C%E9%80%9A%E4%BF%A1&hl=ja&gl=JP&ceid=JP:ja",
-      "allowed_publishers": ["共同通信", "Kyodo News"]
+      "allowed_publishers": [
+        "共同通信",
+        "Kyodo News"
+      ],
+      "category": "politics",
+      "enabled": false,
+      "disabled_reason": "Googleの配信元表示が47NEWSやYahoo等になり、共同通信の原配信を確認できないため休止。許可リストを緩めず直接RSSを追加する。"
     },
     {
       "source_id": "egov-official-news",
       "track": "experimental-politics",
       "name": "e-Gov official news",
       "url": "https://www.e-gov.go.jp/news/news.xml",
-      "allowed_publishers": []
+      "allowed_publishers": [],
+      "category": "official",
+      "publisher": "e-Gov"
+    },
+    {
+      "source_id": "nhk-general",
+      "track": "experimental-politics",
+      "category": "general",
+      "name": "NHK 主要ニュース",
+      "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+      "allowed_publishers": [],
+      "publisher": "NHK",
+      "enabled": false,
+      "disabled_reason": "取得は可能だが2026-10-20確認時に更新が8月で止まっていたため休止。現在のNHK記事をGoogle News経由で配信元確認して取得する。"
+    },
+    {
+      "source_id": "nhk-politics",
+      "track": "experimental-politics",
+      "category": "politics",
+      "name": "NHK 政治",
+      "url": "https://www3.nhk.or.jp/rss/news/cat4.xml",
+      "allowed_publishers": [],
+      "publisher": "NHK",
+      "enabled": false,
+      "disabled_reason": "取得は可能だが2026-10-20確認時に更新が8月で止まっていたため休止。現在のNHK記事をGoogle News経由で配信元確認して取得する。"
+    },
+    {
+      "source_id": "nhk-world",
+      "track": "experimental-politics",
+      "category": "world",
+      "name": "NHK 国際",
+      "url": "https://www3.nhk.or.jp/rss/news/cat6.xml",
+      "allowed_publishers": [],
+      "publisher": "NHK",
+      "enabled": false,
+      "disabled_reason": "取得は可能だが2026-10-20確認時に更新が8月で止まっていたため休止。現在のNHK記事をGoogle News経由で配信元確認して取得する。"
+    },
+    {
+      "source_id": "bbc-japanese-world",
+      "track": "experimental-politics",
+      "category": "world",
+      "name": "BBC 日本語",
+      "url": "https://feeds.bbci.co.uk/japanese/rss.xml",
+      "allowed_publishers": [],
+      "publisher": "BBC"
+    },
+    {
+      "source_id": "google-news-reuters-world",
+      "track": "experimental-politics",
+      "category": "world",
+      "name": "Google News: Reuters world",
+      "url": "https://news.google.com/rss/search?q=%28%E5%9B%BD%E9%9A%9B+OR+%E5%A4%96%E4%BA%A4+OR+%E7%B4%9B%E4%BA%89+OR+%E7%B1%B3%E5%9B%BD%29+%E3%83%AD%E3%82%A4%E3%82%BF%E3%83%BC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [
+        "Reuters",
+        "ロイター"
+      ]
+    },
+    {
+      "source_id": "google-news-reuters-general",
+      "track": "experimental-politics",
+      "category": "general",
+      "name": "Google News: Reuters general",
+      "url": "https://news.google.com/rss/search?q=%28%E7%B5%8C%E6%B8%88+OR+%E7%A4%BE%E4%BC%9A+OR+%E7%A7%91%E5%AD%A6+OR+%E4%BC%81%E6%A5%AD%29+%E3%83%AD%E3%82%A4%E3%82%BF%E3%83%BC+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [
+        "Reuters",
+        "ロイター"
+      ]
+    },
+    {
+      "source_id": "google-news-nhk-general",
+      "category": "general",
+      "name": "Google News: NHK general",
+      "url": "https://news.google.com/rss/search?q=NHK+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [
+        "NHK",
+        "NHKニュース"
+      ],
+      "track": "experimental-politics"
+    },
+    {
+      "source_id": "google-news-nhk-politics",
+      "category": "politics",
+      "name": "Google News: NHK politics",
+      "url": "https://news.google.com/rss/search?q=%E6%94%BF%E6%B2%BB+source%3ANHK+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [
+        "NHK",
+        "NHKニュース"
+      ],
+      "track": "experimental-politics"
+    },
+    {
+      "source_id": "google-news-nhk-world",
+      "category": "world",
+      "name": "Google News: NHK world",
+      "url": "https://news.google.com/rss/search?q=%28%E5%9B%BD%E9%9A%9B+OR+%E5%A4%96%E4%BA%A4+OR+%E7%B1%B3%E5%9B%BD+OR+%E3%82%A6%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%8A%29+NHK+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [
+        "NHK",
+        "NHKニュース"
+      ],
+      "track": "experimental-politics"
+    },
+    {
+      "source_id": "google-news-public-politics",
+      "category": "politics",
+      "name": "Google News: public and wire politics",
+      "url": "https://news.google.com/rss/search?q=%28%E6%94%BF%E6%B2%BB+OR+%E5%9B%BD%E4%BC%9A+OR+%E5%86%85%E9%96%A3+OR+%E9%81%B8%E6%8C%99%29+when%3A7d&hl=ja&gl=JP&ceid=JP%3Aja",
+      "allowed_publishers": [
+        "NHK",
+        "NHKニュース",
+        "Reuters",
+        "ロイター",
+        "時事ドットコム",
+        "時事通信ニュース",
+        "共同通信",
+        "共同通信社",
+        "BBC"
+      ],
+      "track": "experimental-politics"
     }
   ],
   "experimental_excluded_terms": [
-    "社説", "論説", "コラム", "寄稿", "識者", "ネット騒然", "批判殺到", "炎上", "衝撃", "悲報"
+    "社説",
+    "論説",
+    "コラム",
+    "寄稿",
+    "識者",
+    "ネット騒然",
+    "批判殺到",
+    "炎上",
+    "衝撃",
+    "悲報"
+  ],
+  "max_age_hours": 168,
+  "category_order": [
+    "general",
+    "politics",
+    "world",
+    "technology",
+    "games",
+    "official"
+  ],
+  "excluded_title_patterns": [
+    "Stock Price",
+    "Company Profile",
+    "^[A-Z0-9][A-Z0-9._-]{0,18}\\s+-\\s+(?:\\|.*)?Reuters$",
+    "^ロイター\\s*\\|"
   ]
 }

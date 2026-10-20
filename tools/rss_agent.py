@@ -8,9 +8,11 @@ import html
 import json
 import re
 import sys
+import subprocess
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
+from collections import deque
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -97,7 +99,7 @@ def parse_feed(payload, source, excluded_terms):
         description = clean_markup(text_of(item, {"description", "summary", "content"}))
         link = entry_link(item)
         guid = text_of(item, {"guid", "id"})
-        publisher = normalized_publisher(item, title)
+        publisher = normalized_publisher(item, title) or source.get('publisher', '')
         raw_date = text_of(item, {"pubDate", "published", "updated"})
         if not title or not link or urlparse(link).scheme not in {"http", "https"}:
             continue
@@ -113,6 +115,7 @@ def parse_feed(payload, source, excluded_terms):
             "source_id": source["source_id"],
             "source_name": source["name"],
             "track": source["track"],
+            "category": source.get('category', source['track']),
             "title": title,
             "description": description,
             "publisher": publisher,
@@ -129,28 +132,84 @@ def collect(config, timeout, include_rejected=False, fetcher=fetch):
     candidates = []
     errors = []
     seen = set()
-    sources = config["sources"]
+    sources = [source for source in config['sources'] if source.get('enabled', True)]
     with ThreadPoolExecutor(max_workers=min(8, max(1, len(sources)))) as pool:
-        futures = {source["source_id"]: pool.submit(fetcher, source["url"], timeout) for source in sources}
+        futures = [(source, pool.submit(fetcher, source['url'], timeout)) for source in sources]
         fetched = []
-        for source in sources:
+        for source, future in futures:
             try:
-                fetched.append((source, futures[source["source_id"]].result()))
+                fetched.append((source, future.result()))
             except Exception as exc:  # report one feed failure without losing all feeds
                 errors.append({"source_id": source.get("source_id"), "error": f"{type(exc).__name__}: {exc}"})
+    diagnostics = []
     for source, payload in fetched:
         try:
             rows = parse_feed(payload, source, excluded)
         except Exception as exc:
             errors.append({"source_id": source.get("source_id"), "error": f"{type(exc).__name__}: {exc}"})
             continue
+        max_age = source.get('max_age_hours', config.get('max_age_hours'))
+        if max_age is not None:
+            cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=max_age)
+            for row in rows:
+                if row['published_at'] and dt.datetime.fromisoformat(row['published_at']) < cutoff:
+                    row['rejected_reasons'].append('stale_item')
+        for row in rows:
+            if any(re.search(pattern, row['title'], re.IGNORECASE) for pattern in config.get('excluded_title_patterns', [])):
+                row['rejected_reasons'].append('non_article_title')
+        diagnostics.append(dict(source_id=source['source_id'], fetched=len(rows),
+                                accepted=sum(not row['rejected_reasons'] for row in rows),
+                                rejected=sum(bool(row['rejected_reasons']) for row in rows)))
         for row in rows:
             if row["candidate_id"] in seen:
                 continue
             seen.add(row["candidate_id"])
             if include_rejected or not row["rejected_reasons"]:
                 candidates.append(row)
-    return {"schema_version": 1, "candidates": candidates, "errors": errors}
+    return {"schema_version": 1, "candidates": candidates, "errors": errors, 'source_diagnostics': diagnostics}
+
+
+def balanced_candidates(candidates, limit, category_order=(), excluded_ids=()):
+    """Round-robin categories and feeds; sort newest first inside each feed."""
+    if limit < 0:
+        raise ValueError('max-items must be nonnegative')
+    excluded = set(excluded_ids)
+    groups = {}
+    for row in candidates:
+        if row['candidate_id'] in excluded:
+            continue
+        category = row.get('category', row['track'])
+        groups.setdefault(category, {}).setdefault(row['source_id'], []).append(row)
+    order = [category for category in category_order if category in groups]
+    order.extend(category for category in groups if category not in order)
+    queues = {}
+    for category, sources in groups.items():
+        feeds = [sorted(rows, key=lambda r: r['published_at'] or '', reverse=True) for rows in sources.values()]
+        feeds.sort(key=lambda rows: rows[0]['published_at'] or '', reverse=True)
+        queues[category] = deque(deque(rows) for rows in feeds)
+    result = []
+    while len(result) < limit:
+        advanced = False
+        for category in order:
+            if not queues[category]:
+                continue
+            feed = queues[category].popleft()
+            result.append(feed.popleft())
+            if feed:
+                queues[category].append(feed)
+            advanced = True
+            if len(result) == limit:
+                break
+        if not advanced:
+            break
+    return result
+
+
+def existing_candidate_ids(repo):
+    bodies = subprocess.check_output(['gh', 'api', '--paginate',
+                                     f'repos/{repo}/issues?state=all&labels=rss-agent&per_page=100',
+                                     '--jq', '.[].body'], text=True)
+    return set(re.findall(r'<!-- candidate-id:(rss-[0-9a-f]{20}) -->', bodies))
 
 
 def main():
@@ -160,10 +219,17 @@ def main():
     parser.add_argument("--timeout", type=int, default=20)
     parser.add_argument("--include-rejected", action="store_true")
     parser.add_argument("--max-items", type=int, default=10)
+    parser.add_argument('--exclude-existing-issues', action='store_true')
+    parser.add_argument('--repo')
     args = parser.parse_args()
     config = json.loads(args.config.read_text(encoding="utf-8"))
     result = collect(config, args.timeout, args.include_rejected)
-    result["candidates"] = result["candidates"][:args.max_items]
+    excluded = existing_candidate_ids(args.repo) if args.exclude_existing_issues and args.repo else set()
+    if args.exclude_existing_issues and not args.repo:
+        parser.error('--repo is required for Issue deduplication')
+    result['excluded_existing_count'] = sum(row['candidate_id'] in excluded for row in result['candidates'])
+    result['candidates'] = balanced_candidates(result['candidates'], args.max_items,
+                                               config.get('category_order', []), excluded)
     encoded = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

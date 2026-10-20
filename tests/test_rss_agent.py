@@ -58,6 +58,50 @@ class RssAgentTest(unittest.TestCase):
         result = rss.collect(config, 1, fetcher=lambda _url, _timeout: self.sample_feed())
         self.assertEqual(len(result["candidates"]), 3)
 
+    def candidate(self, pid, source, category, date='2026-01-01T00:00:00+00:00'):
+        return dict(candidate_id=pid, source_id=source, category=category, track='normal', published_at=date)
+
+    def test_selection_is_balanced_not_first_feed_only(self):
+        rows = [self.candidate(f'game-{i}', 'atelier', 'games') for i in range(20)]
+        rows += [self.candidate('general', 'nhk', 'general'), self.candidate('politics', 'nhk-politics', 'politics'),
+                 self.candidate('world', 'bbc', 'world'), self.candidate('tech', 'ai', 'technology'),
+                 self.candidate('official', 'egov', 'official')]
+        selected = rss.balanced_candidates(rows, 6, ['general', 'politics', 'world', 'technology', 'games', 'official'])
+        self.assertEqual([r['category'] for r in selected], ['general', 'politics', 'world', 'technology', 'games', 'official'])
+
+    def test_existing_issues_are_excluded_before_slot_selection(self):
+        rows = [self.candidate('old', 'atelier', 'games'), self.candidate('new', 'nhk', 'general')]
+        self.assertEqual([r['candidate_id'] for r in rss.balanced_candidates(rows, 1, excluded_ids={'old'})], ['new'])
+
+    def test_sources_rotate_and_newest_is_first_within_source(self):
+        rows = [self.candidate('old', 'one', 'world', '2025-01-01T00:00:00+00:00'),
+                self.candidate('new', 'one', 'world', '2026-01-01T00:00:00+00:00'),
+                self.candidate('other', 'two', 'world', '2025-06-01T00:00:00+00:00')]
+        self.assertEqual([r['candidate_id'] for r in rss.balanced_candidates(rows, 3)], ['new', 'other', 'old'])
+
+    def test_direct_feed_publisher_and_stale_item_are_recorded(self):
+        source = dict(source_id='direct', name='Official', track='experimental-politics', category='general',
+                      publisher='NHK', allowed_publishers=[], url='https://example.test/feed')
+        feed = b'<rss><channel><item><title>News</title><link>https://example.test/a</link><pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate></item></channel></rss>'
+        result = rss.collect(dict(sources=[source], max_age_hours=168), 1, True, lambda *_: feed)
+        self.assertEqual(result['candidates'][0]['publisher'], 'NHK')
+        self.assertIn('stale_item', result['candidates'][0]['rejected_reasons'])
+        self.assertEqual(result['source_diagnostics'][0]['accepted'], 0)
+
+    def test_disabled_feed_is_not_fetched(self):
+        def fail(*_):
+            raise AssertionError('disabled feed fetched')
+        result = rss.collect({'sources': [dict(source_id='off', enabled=False)]}, 1, fetcher=fail)
+        self.assertEqual(result['candidates'], [])
+
+    def test_stock_quote_page_is_not_a_news_article(self):
+        source = dict(source_id='search', name='Reuters', track='experimental-politics',
+                      allowed_publishers=[], url='https://example.test/feed')
+        feed = b'<rss><channel><item><title>8101.TW - | Stock Price &amp; Latest News - Reuters</title><link>https://example.test/a</link></item></channel></rss>'
+        result = rss.collect(dict(sources=[source], excluded_title_patterns=['Stock Price']), 1, True, lambda *_: feed)
+        self.assertIn('non_article_title', result['candidates'][0]['rejected_reasons'])
+        self.assertEqual(result['source_diagnostics'][0]['accepted'], 0)
+
     def test_issue_marks_political_draft_as_unverified_hypothesis(self):
         candidate = {
             "candidate_id": "rss-0123456789abcdef0123", "track": "experimental-politics",
