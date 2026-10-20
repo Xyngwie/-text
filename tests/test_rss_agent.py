@@ -76,7 +76,8 @@ class RssAgentTest(unittest.TestCase):
         self.assertIn("本人の意見ではなく", issue["body"])
         self.assertIn("投稿禁止", issue["body"])
         self.assertIn("experimental-politics", issue["labels"])
-        self.assertIn("Closeを合図に校正履歴へ取り込まれる", issue["body"])
+        self.assertIn("タグやコードブロックは不要", issue["body"])
+        self.assertIn("Closeは不要", issue["body"])
         self.assertIn("本人承認済み・未投稿", issue["body"])
 
     def test_model_selection_prefers_stable_flash_and_excludes_specialized_models(self):
@@ -141,6 +142,89 @@ class IssueFeedbackImportTest(unittest.TestCase):
         self.run_import(success=False)
         self.comments_file.write_text(json.dumps([]), encoding="utf-8")
         self.run_import(actor="attacker", success=False)
+
+    def owner_comment(self, cid, body, when='2026-01-01T00:30:00Z'):
+        return dict(id=cid, body=body, created_at=when, user={'login': 'Xyngwie'},
+                    html_url=f'https://github.com/owner/repo/issues/12#issuecomment-{cid}')
+
+    def events(self):
+        return [json.loads(line) for line in self.log.read_text().splitlines()]
+
+    def save_comments(self, comments):
+        self.comments_file.write_text(json.dumps(comments), encoding='utf-8')
+
+    def test_plain_final_then_separate_publication_without_url(self):
+        final = self.owner_comment(101, '本人がそのまま貼った文\n改行も残す。')
+        self.save_comments([final])
+        self.run_import()
+        first = self.events()
+        self.assertEqual(first[1]['content'], final['body'])
+        self.assertEqual(first[-1]['event_type'], 'user_approved')
+        posted = self.owner_comment(102, '投稿しました', '2026-01-01T00:40:00Z')
+        self.save_comments([final, posted])
+        self.run_import()
+        events = self.events()
+        self.assertEqual(events[:len(first)], first)
+        self.assertEqual(events[-1]['event_type'], 'published')
+        self.assertIsNone(events[-1]['post_url'])
+        self.assertEqual(events[-1]['publication_evidence'], 'owner_report')
+        self.assertEqual(events[-1]['post_reference'], posted['html_url'])
+        before = self.log.read_bytes()
+        self.run_import()
+        self.assertEqual(before, self.log.read_bytes())
+
+    def test_closed_issue_can_receive_publication_report_later(self):
+        final = self.owner_comment(101, '最終版')
+        self.save_comments([final])
+        self.run_import()
+        url = 'https://x.com/Xyngwie/status/123456'
+        self.save_comments([final, self.owner_comment(102, url, '2026-01-01T02:00:00Z')])
+        self.run_import()
+        self.assertEqual(self.events()[-1]['post_reference'], url)
+
+    def test_other_users_posted_report_is_ignored(self):
+        final = self.owner_comment(101, '最終版')
+        other = self.owner_comment(102, '投稿しました')
+        other['user']['login'] = 'attacker'
+        self.save_comments([final, other])
+        self.run_import()
+        self.assertEqual(self.events()[-1]['event_type'], 'user_approved')
+
+    def test_revised_final_requires_a_new_publication_report(self):
+        first = self.owner_comment(101, '最初の確定文')
+        posted = self.owner_comment(102, '投稿しました', '2026-01-01T00:40:00Z')
+        self.save_comments([first, posted])
+        self.run_import()
+        revised = self.owner_comment(103, '新しい確定文', '2026-01-01T00:50:00Z')
+        self.save_comments([first, posted, revised])
+        self.run_import()
+        events = self.events()
+        self.assertEqual(events[-1]['event_type'], 'user_approved')
+        self.assertEqual(sum(e['event_type'] == 'published' for e in events), 1)
+
+    def test_edit_is_append_only_and_does_not_reuse_old_posted_report(self):
+        final = self.owner_comment(101, '最初の確定文')
+        posted = self.owner_comment(102, '投稿しました', '2026-01-01T00:40:00Z')
+        self.save_comments([final, posted])
+        self.run_import()
+        first_events = self.events()
+        final['body'] = '編集した確定文'
+        final['updated_at'] = '2026-01-01T00:50:00Z'
+        self.save_comments([final, posted])
+        self.run_import()
+        events = self.events()
+        self.assertEqual(events[:len(first_events)], first_events)
+        self.assertEqual(events[-1]['event_type'], 'user_approved')
+        self.assertEqual(sum(e['event_type'] == 'published' for e in events), 1)
+
+    def test_negative_publication_report_is_not_a_final_or_publication(self):
+        final = self.owner_comment(101, '最終版')
+        self.save_comments([final])
+        self.run_import()
+        before = self.log.read_bytes()
+        self.save_comments([final, self.owner_comment(102, 'まだ投稿していません')])
+        self.run_import()
+        self.assertEqual(before, self.log.read_bytes())
 
 
 if __name__ == "__main__":

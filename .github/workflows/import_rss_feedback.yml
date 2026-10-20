@@ -3,6 +3,8 @@ name: Import approved RSS feedback
 on:
   issues:
     types: [closed]
+  issue_comment:
+    types: [created, edited]
 
 permissions:
   contents: write
@@ -50,7 +52,8 @@ jobs:
             --issue-file "$RUNNER_TEMP/issue.json" \
             --comments-file "$RUNNER_TEMP/comments.json" \
             --authorized-login "$AUTHORIZED_LOGIN" \
-            --closing-actor "$CLOSING_ACTOR"
+            --closing-actor "$CLOSING_ACTOR" \
+            --allow-empty
           python3 tools/validate.py
 
       - name: Commit append-only feedback event
@@ -65,4 +68,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/publication_events.jsonl
           git commit -m "Import approved RSS feedback from issue #$ISSUE_NUMBER"
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1

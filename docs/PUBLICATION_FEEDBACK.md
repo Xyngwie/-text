@@ -2,6 +2,8 @@
 
 `tools/publication_feedback.py` は、AIの初稿、本人の修整、本人承諾、送信内容、プラットフォーム上の実表示を別々のイベントとして `data/publication_events.jsonl` へ追記します。
 
+RSSのIssueでは、最終文をそのままコメントし、投稿後に別コメントで「投稿しました」と知らせるだけで取り込めます。タグやクローズは不要です。詳細は[RSSのスマホ操作](RSS_AGENT.md#スマホでの操作)を参照してください。Issue経由の `published` は `publication_evidence: owner_report` を付け、本人申告であることと外部表示を独立検証していないことを記録します。以下のコマンド操作による直接登録とは区別します。
+
 ## 基本手順
 
 初稿を登録します。
