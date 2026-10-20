@@ -50,6 +50,11 @@ def read_archive(path, members):
 
 def build(root=ROOT):
     config = json.loads((root / 'data/x_sources.json').read_text())
+    review_path = root / 'data/x_reviews.jsonl'
+    reviews = [json.loads(line) for line in review_path.read_text().splitlines() if line.strip()] if review_path.exists() else []
+    review_map = {review['post_id']: review for review in reviews}
+    if len(review_map) != len(reviews):
+        raise ValueError('Duplicate X review')
     rows, summaries, global_ids = [], [], set()
     for source in config['sources']:
         path = (root / source['path']).resolve()
@@ -60,7 +65,7 @@ def build(root=ROOT):
         posts, hashes = read_archive(path, source['members'])
         if hashes != source['member_sha256']:
             raise ValueError('X export member changed')
-        years, kinds = Counter(), Counter()
+        years, kinds, year_kinds = Counter(), Counter(), {}
         local_rows = []
         for tweet, created, member, ordinal in posts:
             pid = tweet['id_str']
@@ -74,6 +79,7 @@ def build(root=ROOT):
             kind = 'repost_candidate' if rt else ('reply' if reply else 'post_or_quote')
             years[created.astimezone(JST).year] += 1
             kinds[kind] += 1
+            year_kinds.setdefault(created.astimezone(JST).year, Counter())[kind] += 1
             row = dict(id=f"{source['source_id']}:{pid}", source_id=source['source_id'],
                        platform='X', account_handle=source['account_handle'], post_id=pid,
                        url=f"https://x.com/{source['account_handle']}/status/{pid}",
@@ -89,17 +95,37 @@ def build(root=ROOT):
                        authorship='unreviewed', review_status='unreviewed')
             local_rows.append(row)
         local_rows.sort(key=lambda row: (row['created_at'], int(row['post_id'])))
+        for row in local_rows:
+            review = review_map.get(row['post_id'])
+            if review is None:
+                continue
+            if (review['source_id'] != source['source_id'] or review['text_sha256'] != row['text_sha256']
+                    or review['review_status'] != 'reviewed'
+                    or review['authorship'] not in {'own', 'mixed', 'pasted', 'unknown'}):
+                raise ValueError(f"X review mismatch: {row['post_id']}")
+            for key in ('authorship', 'review_status', 'theme_confirmed', 'speech_act',
+                        'review_note', 'batch_id', 'context_status'):
+                row[key] = review[key]
+        reviewed = sum(row['review_status'] == 'reviewed' for row in local_rows)
         rows.extend(local_rows)
         summaries.append(dict(source_id=source['source_id'], post_count=len(local_rows),
                               first_at_jst=local_rows[0]['created_at_jst'] if local_rows else None,
                               last_at_jst=local_rows[-1]['created_at_jst'] if local_rows else None,
                               year_counts_jst=dict(sorted(years.items())), kind_counts=dict(kinds),
-                              semantic_classification_complete=False,
-                              reviewed_posts=0, unreviewed_posts=len(local_rows)))
+                              year_kind_counts_jst={year: dict(counts) for year, counts in sorted(year_kinds.items())},
+                              semantic_classification_complete=reviewed == len(local_rows),
+                              reviewed_posts=reviewed, unreviewed_posts=len(local_rows) - reviewed))
+    if set(review_map) - {row['post_id'] for row in rows}:
+        raise ValueError('Unknown X review post')
     # All input validation completes before generated files are replaced.
     (root / 'data/x_posts.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) + '\n' for r in rows))
+    reviewed = sum(source['reviewed_posts'] for source in summaries)
+    pending = [row for row in rows if row['review_status'] == 'unreviewed']
     summary = dict(schema_version=1, sources=summaries, post_count=len(rows),
-                   stage=1, status='indexed_not_semantically_classified',
+                   stage=2 if reviewed else 1,
+                   status=('semantic_classification_in_progress' if pending else 'semantic_classification_complete') if reviewed else 'indexed_not_semantically_classified',
+                   reviewed_posts=reviewed, unreviewed_posts=len(pending),
+                   next_post_id=pending[0]['id'] if pending else None,
                    completeness='Only supplied export; deleted or omitted posts and external context are not guaranteed.')
     (root / 'data/x_manifest.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n')
     return summary

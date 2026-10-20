@@ -55,6 +55,29 @@ class XArchiveTest(unittest.TestCase):
                 module.build(root)
             self.assertFalse((root / 'data/x_posts.jsonl').exists())
 
+    def test_review_survives_rebuild_and_corruption_is_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.fixture(root, [self.tweet('1', 'hello')])
+            module.build(root)
+            row = json.loads((root / 'data/x_posts.jsonl').read_text())
+            review = dict(post_id='1', source_id='x-test', text_sha256=row['text_sha256'],
+                          review_status='reviewed', authorship='own', theme_confirmed=['life'],
+                          speech_act='greeting', review_note='test', batch_id='X001', context_status='standalone')
+            path = root / 'data/x_reviews.jsonl'
+            path.write_text(json.dumps(review) + '\n')
+            summary = module.build(root)
+            self.assertEqual(summary['reviewed_posts'], 1)
+            self.assertIsNone(summary['next_post_id'])
+            before = (root / 'data/x_posts.jsonl').read_bytes()
+            module.build(root)
+            self.assertEqual(before, (root / 'data/x_posts.jsonl').read_bytes())
+            review['text_sha256'] = 'wrong'
+            path.write_text(json.dumps(review) + '\n')
+            with self.assertRaisesRegex(ValueError, 'review mismatch'):
+                module.build(root)
+            self.assertEqual(before, (root / 'data/x_posts.jsonl').read_bytes())
+
     def test_javascript_is_parsed_as_data_not_executed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

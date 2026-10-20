@@ -29,13 +29,96 @@
         "reply": 13791,
         "post_or_quote": 7802
       },
+      "year_kind_counts_jst": {
+        "2011": {
+          "post_or_quote": 9,
+          "reply": 1
+        },
+        "2012": {
+          "post_or_quote": 115,
+          "repost_candidate": 9,
+          "reply": 6
+        },
+        "2013": {
+          "reply": 66,
+          "post_or_quote": 115,
+          "repost_candidate": 12
+        },
+        "2014": {
+          "post_or_quote": 29,
+          "reply": 19
+        },
+        "2015": {
+          "reply": 46,
+          "post_or_quote": 53,
+          "repost_candidate": 4
+        },
+        "2016": {
+          "post_or_quote": 66,
+          "reply": 35,
+          "repost_candidate": 5
+        },
+        "2017": {
+          "reply": 153,
+          "post_or_quote": 158,
+          "repost_candidate": 62
+        },
+        "2018": {
+          "reply": 1240,
+          "post_or_quote": 606,
+          "repost_candidate": 86
+        },
+        "2019": {
+          "reply": 2928,
+          "post_or_quote": 1569,
+          "repost_candidate": 100
+        },
+        "2020": {
+          "post_or_quote": 1544,
+          "reply": 3267,
+          "repost_candidate": 175
+        },
+        "2021": {
+          "reply": 1497,
+          "post_or_quote": 850,
+          "repost_candidate": 102
+        },
+        "2022": {
+          "reply": 503,
+          "post_or_quote": 384,
+          "repost_candidate": 39
+        },
+        "2023": {
+          "reply": 1929,
+          "post_or_quote": 872,
+          "repost_candidate": 105
+        },
+        "2024": {
+          "post_or_quote": 502,
+          "reply": 877,
+          "repost_candidate": 56
+        },
+        "2025": {
+          "reply": 221,
+          "post_or_quote": 222,
+          "repost_candidate": 9
+        },
+        "2026": {
+          "repost_candidate": 105,
+          "reply": 1003,
+          "post_or_quote": 708
+        }
+      },
       "semantic_classification_complete": false,
-      "reviewed_posts": 0,
-      "unreviewed_posts": 22462
+      "reviewed_posts": 30,
+      "unreviewed_posts": 22432
     }
   ],
   "post_count": 22462,
-  "stage": 1,
-  "status": "indexed_not_semantically_classified",
+  "stage": 2,
+  "status": "semantic_classification_in_progress",
+  "reviewed_posts": 30,
+  "unreviewed_posts": 22432,
+  "next_post_id": "x-archive-001:204006751752818688",
   "completeness": "Only supplied export; deleted or omitted posts and external context are not guaranteed."
 }

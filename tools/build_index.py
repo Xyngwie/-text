@@ -217,6 +217,13 @@ def main():
         progress_md.append(f"| {m['source_id']} | {escape_md_cell(m['assistant'])} | {m['utterance_counts'].get('user', 0)} | {m['reviewed_user_utterances']} | {m['unreviewed_user_utterances']} | {'完了' if m['semantic_classification_complete'] else '未完了'} |")
     progress_md.extend(['', '未解決の参照：' + '・'.join(progress.get('unresolved_references', [])),
                         '', '[原本の追加手順](docs/ADDING_CONVERSATIONS.md)。詳細は `data/progress.json`、`data/reviews.jsonl`、`data/segments.jsonl`。', ''])
+    x_manifest_path = OUT / 'data/x_manifest.json'
+    if x_manifest_path.exists():
+        x_progress = json.loads(x_manifest_path.read_text(encoding='utf-8'))
+        progress_md.extend(['## X原本（会話原本とは別集計）', '',
+                            f"- 索引：{x_progress['post_count']:,}件。意味分類済み：{x_progress.get('reviewed_posts', 0):,}件。",
+                            f"- 次の投稿：{x_progress.get('next_post_id') or 'なし／未設定'}。",
+                            '- [X原本の観察](observations/x/activity_and_first_batch.md)。分類進捗は `data/x_manifest.json`。', ''])
     (OUT / 'PROGRESS.md').write_text('\n'.join(progress_md), encoding='utf-8')
 
     # 5. テーマごとの発言分類

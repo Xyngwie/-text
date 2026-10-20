@@ -15,3 +15,9 @@
 未解決の参照：U00118・U00128・U00143・U00263・U00375・U00393・U00639・U00919・U00921
 
 [原本の追加手順](docs/ADDING_CONVERSATIONS.md)。詳細は `data/progress.json`、`data/reviews.jsonl`、`data/segments.jsonl`。
+
+## X原本（会話原本とは別集計）
+
+- 索引：22,462件。意味分類済み：30件。
+- 次の投稿：x-archive-001:204006751752818688。
+- [X原本の観察](observations/x/activity_and_first_batch.md)。分類進捗は `data/x_manifest.json`。
