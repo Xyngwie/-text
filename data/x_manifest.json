@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "source_id": "x-archive-001",
+      "post_count": 22462,
+      "first_at_jst": "2011-06-30T22:42:40+09:00",
+      "last_at_jst": "2026-10-20T17:36:11+09:00",
+      "year_counts_jst": {
+        "2011": 10,
+        "2012": 130,
+        "2013": 193,
+        "2014": 48,
+        "2015": 103,
+        "2016": 106,
+        "2017": 373,
+        "2018": 1932,
+        "2019": 4597,
+        "2020": 4986,
+        "2021": 2449,
+        "2022": 926,
+        "2023": 2906,
+        "2024": 1435,
+        "2025": 452,
+        "2026": 1816
+      },
+      "kind_counts": {
+        "repost_candidate": 869,
+        "reply": 13791,
+        "post_or_quote": 7802
+      },
+      "semantic_classification_complete": false,
+      "reviewed_posts": 0,
+      "unreviewed_posts": 22462
+    }
+  ],
+  "post_count": 22462,
+  "stage": 1,
+  "status": "indexed_not_semantically_classified",
+  "completeness": "Only supplied export; deleted or omitted posts and external context are not guaranteed."
+}
