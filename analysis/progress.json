@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v034",
-  "profile_status": "ideas_checks_and_revision_explored",
+  "current_version": "v035",
+  "profile_status": "acting_and_waiting_under_uncertainty_explored",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -29,7 +29,8 @@
     "別LLMとの比較は追加原本が分類された後に行う",
     "第四段階の未見検証は新規会話を読む前に分割して実施する",
     "借りた着想を確認・修正・放棄する流れと、オノマトペ単独・オウム返しの完全な文脈例を追加資料で確認する",
-    "謎語の文中位置と会話段階を独立に記録し、本人の着地が明示される例・途中に出る例の双方を追加原本でも確認する"
+    "謎語の文中位置と会話段階を独立に記録し、本人の着地が明示される例・途中に出る例の双方を追加原本でも確認する",
+    "最終決定と先行できる小さな行動の境目、期限が迫っても確認を待つ条件を本人と照合する"
   ],
   "user_feedback": [
     {
@@ -187,5 +188,6 @@
     "mode_persistence": "once_gal_or_ojou_mode_starts_keep_it_through_the_body",
     "typical_ending": "abruptly_return_to_warrior_like_base_at_the_end",
     "evidence_status": "explicit_user_report_plus_v012_example_confirmation_separate_from_archive_frequency"
-  }
+  },
+  "stage3_mode": "manual_dialogue_only"
 }
