@@ -1,0 +1,1290 @@
+{
+  "batch_id": "XA-7197dd4c1f5501b2",
+  "stage": 2,
+  "status": "ai_classified_not_owner_confirmed",
+  "count": 30,
+  "observation": "サバイバルゲームの参加や電動ガン・装備の準備に言及する投稿があり、趣味の活動とそれに関連する交流が具体的に記録されている。",
+  "observation_post_ids": [
+    "249295457803714560",
+    "295495245133668354",
+    "295536664795811842"
+  ],
+  "source_ids": [
+    "x-archive-001"
+  ],
+  "context_post_ids": [
+    "x-archive-001:239528933064839168",
+    "x-archive-001:306173820375556096"
+  ],
+  "provenance": {
+    "provider": "Gemini",
+    "requested_model": "auto",
+    "selected_model": "gemini-3.8-flash",
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 5616,
+      "candidatesTokenCount": 2089,
+      "totalTokenCount": 11434,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 5616
+        }
+      ],
+      "thoughtsTokenCount": 3729,
+      "serviceTier": "standard"
+    },
+    "executed_at": "2026-10-21T07:50:24.735328+00:00",
+    "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+    "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+    "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+    "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+    "execution_actor": "Xyngwie",
+    "executor": "github-actions"
+  },
+  "reviews": [
+    {
+      "post_id": "239856254955159552",
+      "source_id": "x-archive-001",
+      "text_sha256": "2a2a4750f711a13529dcc0ff9b002781b3e7292cd0e97b296fa175b59cb12de5",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "society",
+        "life"
+      ],
+      "speech_act": "学生の夏休み終了に対するからかいと感情表出",
+      "review_note": "冗談めかした口調での発言",
+      "evidence_quote": "学生共の夏休みも終わりじゃー",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "240433768874258432",
+      "source_id": "x-archive-001",
+      "text_sha256": "08fb5e2be98c43797cc4197bfdba9c9c9dcd7270238c2ef86c669a1426945199",
+      "review_status": "ai_classified",
+      "authorship": "mixed",
+      "theme_confirmed": [
+        "culture",
+        "games"
+      ],
+      "speech_act": "診断メーカー結果の共有と疑問の提示",
+      "review_note": "診断結果の引用文に自身のツッコミを付与している",
+      "evidence_quote": "これだけじゃ館…に行ける指示は無しか？",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "241309208123961344",
+      "source_id": "x-archive-001",
+      "text_sha256": "8f7bae1e2760260c643d65abc16efbc4d1659093c08b6f9d789da5478fc0fe24",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "現在地と担当業務の報告",
+      "review_note": "サーキット場での役割を報告",
+      "evidence_quote": "つくばサーキットなうas記録係",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "242914101305679872",
+      "source_id": "x-archive-001",
+      "text_sha256": "00a995460c57287679867175d46937feebe6355eabcc6f911f420c608e17725d",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "業務終了の報告と解放感の吐露",
+      "review_note": "退勤時の感情表出",
+      "evidence_quote": "仕事おわたなああぁぁああう！！",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "243170905222701057",
+      "source_id": "x-archive-001",
+      "text_sha256": "1987fafca1eefafba80f5ab23a1347d54f75813c7b4f9eef04b1a9e179c07852",
+      "review_status": "ai_classified",
+      "authorship": "pasted",
+      "theme_confirmed": [
+        "culture"
+      ],
+      "speech_act": "診断メーカー結果の共有",
+      "review_note": "自動生成テキストの転記のみ",
+      "evidence_quote": "神宮は『地図屋』です",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "244305593974784000",
+      "source_id": "x-archive-001",
+      "text_sha256": "80dda4b1c647f2a22afcfbd362d37dda3d10fcd8d4983bbb7fd221b3763d79a1",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "thinking",
+        "life"
+      ],
+      "speech_act": "運転行動に関する自らの姿勢の表明",
+      "review_note": "煽り運転に関する私見の短文",
+      "evidence_quote": "煽り運転も出来るよ？しないだけでさ。",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "248263805530959875",
+      "source_id": "x-archive-001",
+      "text_sha256": "157f839fa6720874c7123fa9f6f6d5be0202e74f61c8ca9a18dad9a0910926fe",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "food",
+        "life"
+      ],
+      "speech_act": "食事内容の近況報告",
+      "review_note": "カップ焼きそばを食べる状況の報告",
+      "evidence_quote": "ペヤングなう",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "248427331226587136",
+      "source_id": "x-archive-001",
+      "text_sha256": "8771e0de49219e8b977b8b4095c3dc3d1a04aa2d377d62250102c903b7305989",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "culture",
+        "thinking"
+      ],
+      "speech_act": "画像に対する感想の募集・お題提示",
+      "review_note": "リンク先画像に関する所感を他者に尋ねている",
+      "evidence_quote": "問、この画像について、100字以内で思うところを述べよ。",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "248915898646274048",
+      "source_id": "x-archive-001",
+      "text_sha256": "9b3e69932b451f23f2900b49249c28d467a444cb57879ac87c4938cbfacce548",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "作業の失念報告と対応予定の連絡",
+      "review_note": "車割の決定を忘れていたことへの言及",
+      "evidence_quote": "車割考えるの忘れてた！",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "249295457803714560",
+      "source_id": "x-archive-001",
+      "text_sha256": "080c6a51ce00dce2661af9c12fb7ff4085ed30c30e0c040bfe0261096ce208c1",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games",
+        "life"
+      ],
+      "speech_act": "休日出勤の報告と準備ができないことへの嘆き",
+      "review_note": "文脈からエアソフトガンの充電と思われる",
+      "evidence_quote": "銃の充電したいが休出！",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "249784563243569152",
+      "source_id": "x-archive-001",
+      "text_sha256": "2d093bc882ecb7d3b75ec91327b7f763ccd86c298391e8d76d4abdcc04eb5d8d",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "悪天候下のバイク帰宅に対する不満の吐露",
+      "review_note": "雨天時の移動への愚痴",
+      "evidence_quote": "雨のなか職場から自宅までバイクで帰るのダルすぐる",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "250729027952844801",
+      "source_id": "x-archive-001",
+      "text_sha256": "287c0434d200ff4496e2267ab19d67c8de4cb810919a4d5e2077fe3619880451",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "外気温の低さに対する反応",
+      "review_note": "寒さに対する短い所感",
+      "evidence_quote": "外、寒ッ",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "260622934257831936",
+      "source_id": "x-archive-001",
+      "text_sha256": "45c11ce499ad34d49afa2068a716e7c746b5b306fc45d3c5e666856f0b87daa7",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "food",
+        "life"
+      ],
+      "speech_act": "混雑による商品購入見送りの報告",
+      "review_note": "キャンペーンメニューの待ち時間に対する見送り判断",
+      "evidence_quote": "絶品チーズ五段タワーは一時間待ちとか言われたのでパスです",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "266425957664038912",
+      "source_id": "x-archive-001",
+      "text_sha256": "5113a9db98e62f65dfa55da2a0a4c8ad933b2a4da992f51e9e9a103af110b575",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "現在地の報告",
+      "review_note": "地名での現在地共有",
+      "evidence_quote": "姉ヶ崎なう",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "276517981335478272",
+      "source_id": "x-archive-001",
+      "text_sha256": "0024a2973dde1ef0274c4dc47686b8d94a28bc699fca717829851b9c017f9d7d",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "外出先での知人の目撃報告と容姿への言及",
+      "review_note": "郵便局での遭遇体験",
+      "evidence_quote": "取手の郵便局によったら古巣の隣の部署の課長がいた",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "277966540417155072",
+      "source_id": "x-archive-001",
+      "text_sha256": "7d4dfb6668d8895fb9cc3d2c8e5c7033eec472935298e6a69681941e2f54d783",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "economy",
+        "life"
+      ],
+      "speech_act": "取引先との業務上の齟齬に対する失望の吐露",
+      "review_note": "仕事のやり取りに関する苦言",
+      "evidence_quote": "⑩お願いして、「必ず」⑦しか返ってこない取引先と話をする絶望感",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "280678594450165760",
+      "source_id": "x-archive-001",
+      "text_sha256": "a19d9e40482fdc061b7c5280ea8d8be2a25985a9b5b0eea1c4e9daa02434b79e",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "culture"
+      ],
+      "speech_act": "共有リンクへのからかい混じりの言及",
+      "review_note": "リンク先への短い感想",
+      "evidence_quote": "暇人め！",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "282253139422351361",
+      "source_id": "x-archive-001",
+      "text_sha256": "c67537cde88c1a996657be93ba2869d70857335f704275dc1430b5e46a374897",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "寒さに対する比喩的な感想の吐露",
+      "review_note": "気候の厳しさを冬将軍と表現",
+      "evidence_quote": "外出たら冬将軍が突っ立っていたでござる",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "282353215402545153",
+      "source_id": "x-archive-001",
+      "text_sha256": "aed96096a392cab04b49ca3761586518dc34e2fb3005c31971077fe4d8f32e15",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "喪中であることの告知",
+      "review_note": "私的な状況の共有",
+      "evidence_quote": "今更ですが喪中です",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "283839766141734913",
+      "source_id": "x-archive-001",
+      "text_sha256": "8d5a4724e1ab05d3bf0aefbbf84c57acfbb208d3a3630b609c03d21552679f53",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games",
+        "life"
+      ],
+      "speech_act": "急ぎの移動をゲームに例えた近況報告",
+      "review_note": "運転の慌ただしさをクレイジータクシーに例えている",
+      "evidence_quote": "市川市内をラリー。っていうかクレイジータクシー",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "287098618886897664",
+      "source_id": "x-archive-001",
+      "text_sha256": "ac078c90c14c119bc4f5f6bd8b88e8bd2336f30c591bdf822ec8a4195f558c6f",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "寒冷による帰宅の躊躇の吐露",
+      "review_note": "事務所での状況に関するつぶやき",
+      "evidence_quote": "事務所から帰りたくない",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "291028678383644672",
+      "source_id": "x-archive-001",
+      "text_sha256": "8faac01a76370554caf108344cc36ca0c8aa203c2ca055e3022a185771c2e387",
+      "review_status": "ai_classified",
+      "authorship": "mixed",
+      "theme_confirmed": [
+        "society"
+      ],
+      "speech_act": "外部記事リンクの共有と驚きの反応",
+      "review_note": "ニュース記事等への短いリアクション",
+      "evidence_quote": "市川市…ｴ",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "291278676941754369",
+      "source_id": "x-archive-001",
+      "text_sha256": "97f5a2d946e843015b696434ad7a3d74aa5b9ce04346de93e58a4d3b9d633f51",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "thinking",
+        "life"
+      ],
+      "speech_act": "他者の投稿に触発されたアイデアの提示",
+      "review_note": "靴底の仕様に関する思いつきの提案",
+      "evidence_quote": "スタッドレスタイヤの材質とパターンの靴があれば転ばないんぢゃね？",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "294207110630232064",
+      "source_id": "x-archive-001",
+      "text_sha256": "8e9aa127a9c3a3aeecf0199b25c72fb3b98010de077ca1240f80f3b6aa1e48e0",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "culture",
+        "life"
+      ],
+      "speech_act": "レンタルDVDを視聴できない忙しさへの嘆き",
+      "review_note": "時間の確保難を無理ゲーと表現",
+      "evidence_quote": "借りたDVD が全く見れずに一週間経ってしまう無理ゲー感について",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "295495245133668354",
+      "source_id": "x-archive-001",
+      "text_sha256": "ba419c32f20dcf877189d12c4d9004fe20d14c028d14eb5d03b8c83b2a606daf",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games",
+        "life"
+      ],
+      "speech_act": "サバイバルゲーム参加の成果と感想の報告",
+      "review_note": "趣味の活動体験の振り返り",
+      "evidence_quote": "四ヶ月ぶりにサバゲしてきたー",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "295536664795811842",
+      "source_id": "x-archive-001",
+      "text_sha256": "728bafd6cf1fc011a005bcedd0faa23adb221ae84b119ae6ad0d472a4e2a0bd6",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games"
+      ],
+      "speech_act": "サバイバルゲームにおける仲間の戦術的成果の報告",
+      "review_note": "親投稿が欠落したリプライ",
+      "evidence_quote": "今回の最大の成果は夕さんがガンナーの効果的な運用に目覚めたことなだー",
+      "context_status": "missing_parent",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "296021530121486336",
+      "source_id": "x-archive-001",
+      "text_sha256": "c636adcb21e13a6b3769bc498f0af12b1ecaf816e0a43aea5cf721ab19f3ba65",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "時間の勘違いによる焦りと自己反省の吐露",
+      "review_note": "起床時の読み違えミスに関する投稿",
+      "evidence_quote": "時計一時間読み違えて超焦った",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "301576358612566017",
+      "source_id": "x-archive-001",
+      "text_sha256": "248ff9a8ff2f42fa64d7a12642dbaa9cc86b3d1af3d72c16ca7d677bca09fae2",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "自らの持ち物管理の不手際についての嘆き",
+      "review_note": "他人に指示したパスポートの所在が自分でも不明な状況",
+      "evidence_quote": "チームメイトにパスポートチェックしとけと言って、俺がどこにあるか分からん",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "303062057652211713",
+      "source_id": "x-archive-001",
+      "text_sha256": "6f8485ef0f45cddfac27ad3a6ad1efe9859515e4aec119966e76e29191274e54",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "パスポート探索の失敗と焦燥の報告",
+      "review_note": "実家での捜索結果に関する投稿",
+      "evidence_quote": "実家探索；パスポート見つからず！",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "304701360136396800",
+      "source_id": "x-archive-001",
+      "text_sha256": "5ccc0e5b4b6dac58a74c5cc36cba1664707171894fac1d0bff1cbb4e28e70cc8",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "所有ヘルメットの買い替え先延ばしに対する述懐",
+      "review_note": "装備品の長期使用に関するつぶやき",
+      "evidence_quote": "もうヘルメットが大分古いと言いつつ更に三年くらい経ちつつある",
+      "context_status": "standalone",
+      "batch_id": "XA-7197dd4c1f5501b2",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 5616,
+          "candidatesTokenCount": 2089,
+          "totalTokenCount": 11434,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 5616
+            }
+          ],
+          "thoughtsTokenCount": 3729,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-21T07:50:24.735328+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "674d86deb831e57ca09167c2ba6d12cafd15d5f60bee678302c082a69dd93af5",
+        "base_commit": "cde2f3da0b8abe2165477a15ff3f4f3398198e57",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/39564714090",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    }
+  ],
+  "remaining": 22312
+}
