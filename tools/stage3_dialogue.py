@@ -185,8 +185,9 @@ def prepare(root, repo, owner, issues, fetch_comments, generator=None):
         number, comments, history = 1, [], []
     instructions = (root / 'prompts/stage3_dialogue.md').read_text()
     # Recent dialogues are provisional context, never established personality facts.
+    latest_topics = sorted(by_topic.values(), key=lambda p: p['provenance']['created_at'])[-3:]
     recent = [dict(hypothesis=p['generation']['hypothesis'], owner_comments=p['owner_comments'])
-              for p in list(by_topic.values())[-3:]]
+              for p in latest_topics]
     progress = read_json(root / 'analysis/progress.json', {})
     version = progress.get('current_version', '')
     prior_context = {}
