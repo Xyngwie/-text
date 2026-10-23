@@ -1,0 +1,54 @@
+name: Archive owner Issue comments as source material
+
+on:
+  issue_comment:
+    types: [created, edited, deleted]
+  issues:
+    types: [edited, closed, reopened]
+  schedule:
+    - cron: '43 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: archive-issue-comments
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Capture original comments and Issue context
+        env:
+          GH_TOKEN: ${{ github.token }}
+          AUTHORIZED_LOGIN: ${{ github.repository_owner }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          args=()
+          if [ -n "$ISSUE_NUMBER" ]; then args+=(--issue-number "$ISSUE_NUMBER"); fi
+          python3 tools/archive_issue_comments.py \
+            --repo "$GITHUB_REPOSITORY" \
+            --authorized-login "$AUTHORIZED_LOGIN" "${args[@]}"
+      - name: Commit source snapshots
+        run: |
+          git add sources/github-issues-001/snapshots.jsonl
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Archive owner Issue comments with source context'
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
