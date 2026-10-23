@@ -80,8 +80,9 @@ def candidate_id(source_id, guid, link, title):
 def publisher_allowed(publisher, allowlist):
     if not allowlist:
         return True
-    folded = publisher.casefold()
-    return any(item.casefold() in folded for item in allowlist)
+    def normalized(value):
+        return ' '.join(value.split()).casefold()
+    return normalized(publisher) in {normalized(item) for item in allowlist}
 
 
 def fetch(url, timeout):

@@ -48,6 +48,11 @@ class RssAgentTest(unittest.TestCase):
         self.assertIn("publisher_not_allowlisted", rows[2]["rejected_reasons"])
         self.assertEqual(rows[0]["source_claim_status"], "fact_candidate_not_verified")
 
+    def test_publisher_name_does_not_accept_a_different_pr_service(self):
+        self.assertTrue(rss.publisher_allowed(' Reuters ', ['Reuters']))
+        self.assertFalse(rss.publisher_allowed('共同通信PRワイヤー', ['共同通信']))
+        self.assertFalse(rss.publisher_allowed('Not Reuters', ['Reuters']))
+
     def test_collection_deduplicates_same_candidate(self):
         config = {
             "experimental_excluded_terms": [],
