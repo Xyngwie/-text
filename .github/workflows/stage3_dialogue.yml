@@ -1,0 +1,76 @@
+name: Stage 3 dialogue with owner in Issues
+
+on:
+  schedule:
+    - cron: '11 * * * *'
+  workflow_dispatch:
+  issue_comment:
+    types: [created, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: stage3-dialogue
+  cancel-in-progress: false
+
+jobs:
+  dialogue:
+    if: >-
+      vars.STAGE3_DIALOGUE_PAUSED != 'true' &&
+      (github.event_name != 'issue_comment' ||
+       (github.actor == github.repository_owner &&
+        contains(github.event.issue.labels.*.name, 'stage3-dialogue')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verify sources and prepare one dialogue turn
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          STAGE3_DIALOGUE_MODEL: ${{ vars.STAGE3_DIALOGUE_MODEL || 'auto' }}
+        run: |
+          python3 tools/build_x_index.py
+          python3 tools/validate.py
+          python3 tools/stage3_dialogue.py prepare | tee "$RUNNER_TEMP/dialogue_result.json"
+          cat "$RUNNER_TEMP/dialogue_result.json" >> "$GITHUB_STEP_SUMMARY"
+      - name: Save dialogue before sending
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! test -d analysis/dialogues; then exit 0; fi
+          git add analysis/dialogues
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Prepare provisional stage-3 owner dialogue'
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1
+      - name: Deliver saved dialogue to Issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/stage3_dialogue.py deliver
+      - name: Save delivery receipt and source comments
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/archive_issue_comments.py \
+            --repo "$GITHUB_REPOSITORY" --authorized-login "$GITHUB_REPOSITORY_OWNER"
+          if test -f data/stage3_dialogue_receipts.json; then git add data/stage3_dialogue_receipts.json; fi
+          git add sources/github-issues-001/snapshots.jsonl
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Record dialogue delivery and preserve owner source comments'
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1

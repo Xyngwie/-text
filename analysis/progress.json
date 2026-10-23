@@ -204,5 +204,13 @@
     "typical_ending": "abruptly_return_to_warrior_like_base_at_the_end",
     "evidence_status": "explicit_user_report_plus_v012_example_confirmation_separate_from_archive_frequency"
   },
-  "stage3_mode": "manual_dialogue_only"
+  "stage3_mode": "manual_dialogue_only",
+  "stage3_dialogue_channels": ["chat", "github_issues"],
+  "issue_dialogue_automation": {
+    "authorized_on": "2026-10-23",
+    "scope": "Generate provisional questions and responses to owner comments; no automatic formal findings or generation-prompt updates",
+    "workflow": ".github/workflows/stage3_dialogue.yml",
+    "max_unanswered_topics": 1,
+    "max_ai_turns_per_topic": 3
+  }
 }
