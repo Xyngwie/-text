@@ -1,5 +1,7 @@
 # 第三段階：判断・価値観・口調の分析
 
+[返信の学習と「違うか？」の実装確認](feedback_learning_implementation_check.md)：現在は返信の保存と次回生成への反映がつながっていません。共有されたCopilotの説明と、実装で確認できた事実を分けて記録しました。
+
 本人補足：[建設的な議論について](constructive_discussion_clarification.md)。反論には完成した解決策までは求めず、解決へ向かうきっかけを示す、という基準です。v036の「対案」の読みをこの範囲に訂正します。
 
 本人補足：[依頼先に生じる貸し借り](indirect_obligations_clarification.md)。依頼先の次の行動に伴う関係への考慮と、いつも実践できることは区別します。
