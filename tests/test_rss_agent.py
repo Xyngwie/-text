@@ -9,6 +9,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'tools'))
 
 
 def load_module(name, path):
@@ -72,6 +73,38 @@ class RssAgentTest(unittest.TestCase):
     def test_existing_issues_are_excluded_before_slot_selection(self):
         rows = [self.candidate('old', 'atelier', 'games'), self.candidate('new', 'nhk', 'general')]
         self.assertEqual([r['candidate_id'] for r in rss.balanced_candidates(rows, 1, excluded_ids={'old'})], ['new'])
+
+    def test_categories_beyond_six_slots_get_their_turn_next_run(self):
+        categories = ['science', 'health', 'education', 'environment', 'culture', 'sports', 'life', 'labor']
+        rows = [self.candidate(c, 'feed-' + c, c) for c in categories]
+        first = rss.balanced_candidates(rows, 6, categories, category_last_seen={})
+        seen = {r['category']: '2026-10-23T00:00:00Z' for r in first}
+        second = rss.balanced_candidates(rows, 6, categories, category_last_seen=seen)
+        self.assertEqual([r['category'] for r in second[:2]], ['life', 'labor'])
+
+    def test_longest_absent_category_precedes_recent_category(self):
+        rows = [self.candidate('a', 'a', 'science'), self.candidate('b', 'b', 'politics')]
+        selected = rss.balanced_candidates(rows, 1, ['science', 'politics'], category_last_seen={
+            'science': '2026-10-23T00:00:00Z', 'politics': '2026-10-20T00:00:00Z'})
+        self.assertEqual(selected[0]['category'], 'politics')
+
+    def test_history_includes_closed_issues_and_ignores_unmarked_records(self):
+        cid = 'rss-' + 'a' * 20
+        issues = [dict(body=f'<!-- candidate-id:{cid} -->', state='closed',
+                       labels=[{'name': 'news-science'}], created_at='2026-10-23T00:00:00Z'),
+                  dict(body='unrelated', labels=[{'name': 'news-health'}], created_at='2026-10-24T00:00:00Z')]
+        ids, history = rss.issue_selection_history(issues)
+        self.assertEqual(ids, {cid})
+        self.assertEqual(history, {'science': '2026-10-23T00:00:00Z'})
+
+    def test_diverse_sources_are_not_tied_to_known_interests(self):
+        config = json.loads((ROOT / 'config/rss_sources.json').read_text())
+        active = [s for s in config['sources'] if s.get('enabled', True)]
+        categories = {s['category'] for s in active}
+        self.assertTrue({'science', 'health', 'education', 'environment', 'culture', 'sports',
+                         'life', 'labor', 'law', 'infrastructure', 'economy'} <= categories)
+        self.assertEqual(len({s['source_id'] for s in config['sources']}), len(config['sources']))
+        self.assertFalse(any('atelier' in s['source_id'] for s in active))
 
     def test_sources_rotate_and_newest_is_first_within_source(self):
         rows = [self.candidate('old', 'one', 'world', '2025-01-01T00:00:00+00:00'),

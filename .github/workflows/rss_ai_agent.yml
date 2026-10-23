@@ -45,6 +45,7 @@ jobs:
               summary.write('## RSS収集\n\n')
               summary.write('選択分野: ' + json.dumps(dict(collections.Counter(row['category'] for row in result['candidates'])), ensure_ascii=False) + '\n\n')
               summary.write('既存Issue候補の除外: ' + str(result['excluded_existing_count']) + '\n\n')
+              summary.write('選択方法: 未出・長く出ていない分野を優先して巡回\n\n')
               for feed in result['source_diagnostics']:
                   summary.write(f"- {feed['source_id']}: 取得{feed['fetched']}、採用可能{feed['accepted']}、除外{feed['rejected']}\n")
               for error in result['errors']:

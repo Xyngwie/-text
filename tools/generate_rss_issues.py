@@ -15,6 +15,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PROMPT_PATH = ROOT / "prompts/rss_value_slide.md"
 POLICY_PATH = ROOT / "analysis/v016/decision_policy.json"
+CATEGORY_LABELS = {
+    'general': '一般ニュース', 'politics': '政治', 'world': '世界情勢', 'official': '公的情報',
+    'economy': '経済・企業', 'science': '科学・宇宙', 'health': '医療・健康',
+    'education': '教育', 'environment': '環境・生き物', 'culture': '文化・芸術',
+    'sports': 'スポーツ', 'life': '暮らし・食・旅', 'labor': '仕事・福祉',
+    'law': '司法・権利', 'infrastructure': '交通・街・防災',
+    'technology': '技術', 'games': 'ゲーム',
+}
 
 
 def fail(message):
@@ -172,9 +180,9 @@ def issue_payload(candidate, generation):
     draft_sha = hashlib.sha256(draft.encode("utf-8")).hexdigest()
     experimental = candidate["track"] == "experimental-politics"
     category = candidate.get('category', 'politics' if experimental else 'normal')
-    title_prefix = ('[実験・' + {'general': '一般ニュース', 'world': '世界情勢', 'politics': '政治', 'official': '公的情報'}.get(category, '政治') + ']') if experimental else '[通常]'
+    title_prefix = ('[実験・' + CATEGORY_LABELS.get(category, category) + ']') if experimental else '[通常・' + CATEGORY_LABELS.get(category, category) + ']'
     warning = (
-        "> [!WARNING]\n> これは政治・社会・国際などの題材への反応仮説です。本人の意見ではなく、投稿禁止の校正用初稿です。"
+        "> [!WARNING]\n> これは幅広い題材への反応仮説です。本人の意見ではなく、本人確認前は投稿禁止の校正用初稿です。"
         if experimental else
         "> [!IMPORTANT]\n> 本人確認前の校正用初稿です。承諾なしに本人名義で投稿しないでください。"
     )

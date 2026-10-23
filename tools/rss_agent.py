@@ -8,7 +8,6 @@ import html
 import json
 import re
 import sys
-import subprocess
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
@@ -16,6 +15,7 @@ from collections import deque
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urlparse
+from archive_issue_comments import api
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONFIG = ROOT / "config/rss_sources.json"
@@ -169,7 +169,7 @@ def collect(config, timeout, include_rejected=False, fetcher=fetch):
     return {"schema_version": 1, "candidates": candidates, "errors": errors, 'source_diagnostics': diagnostics}
 
 
-def balanced_candidates(candidates, limit, category_order=(), excluded_ids=()):
+def balanced_candidates(candidates, limit, category_order=(), excluded_ids=(), category_last_seen=None):
     """Round-robin categories and feeds; sort newest first inside each feed."""
     if limit < 0:
         raise ValueError('max-items must be nonnegative')
@@ -182,6 +182,10 @@ def balanced_candidates(candidates, limit, category_order=(), excluded_ids=()):
         groups.setdefault(category, {}).setdefault(row['source_id'], []).append(row)
     order = [category for category in category_order if category in groups]
     order.extend(category for category in groups if category not in order)
+    if category_last_seen is not None:
+        # Never-selected categories first, then least recently issued. Stable
+        # ties follow configuration order, without resetting priority each run.
+        order.sort(key=lambda category: category_last_seen.get(category, ''))
     queues = {}
     for category, sources in groups.items():
         feeds = [sorted(rows, key=lambda r: r['published_at'] or '', reverse=True) for rows in sources.values()]
@@ -205,11 +209,26 @@ def balanced_candidates(candidates, limit, category_order=(), excluded_ids=()):
     return result
 
 
+def issue_selection_history(issues):
+    excluded, last_seen = set(), {}
+    for issue in issues:
+        if 'pull_request' in issue:
+            continue
+        body = issue.get('body') or ''
+        ids = re.findall(r'<!-- candidate-id:(rss-[0-9a-f]{20}) -->', body)
+        if not ids:
+            continue
+        excluded.update(ids)
+        for label in issue.get('labels', []):
+            name = label['name']
+            if name.startswith('news-'):
+                category = name.removeprefix('news-')
+                last_seen[category] = max(last_seen.get(category, ''), issue.get('created_at') or '')
+    return excluded, last_seen
+
+
 def existing_candidate_ids(repo):
-    bodies = subprocess.check_output(['gh', 'api', '--paginate',
-                                     f'repos/{repo}/issues?state=all&labels=rss-agent&per_page=100',
-                                     '--jq', '.[].body'], text=True)
-    return set(re.findall(r'<!-- candidate-id:(rss-[0-9a-f]{20}) -->', bodies))
+    return issue_selection_history(api(f'repos/{repo}/issues?state=all&labels=rss-agent&per_page=100'))[0]
 
 
 def main():
@@ -224,12 +243,16 @@ def main():
     args = parser.parse_args()
     config = json.loads(args.config.read_text(encoding="utf-8"))
     result = collect(config, args.timeout, args.include_rejected)
-    excluded = existing_candidate_ids(args.repo) if args.exclude_existing_issues and args.repo else set()
     if args.exclude_existing_issues and not args.repo:
         parser.error('--repo is required for Issue deduplication')
+    excluded, last_seen = (issue_selection_history(api(
+        f'repos/{args.repo}/issues?state=all&labels=rss-agent&per_page=100'))
+        if args.exclude_existing_issues else (set(), None))
     result['excluded_existing_count'] = sum(row['candidate_id'] in excluded for row in result['candidates'])
     result['candidates'] = balanced_candidates(result['candidates'], args.max_items,
-                                               config.get('category_order', []), excluded)
+                                               config.get('category_order', []), excluded, last_seen)
+    result['category_last_issued_at'] = last_seen or {}
+    result['selection_policy'] = 'least_recently_issued_category_then_feed_round_robin'
     encoded = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
