@@ -4,7 +4,7 @@ on:
   issue_comment:
     types: [created, edited, deleted]
   issues:
-    types: [edited, closed, reopened]
+    types: [opened, edited, closed, reopened]
   schedule:
     - cron: '43 * * * *'
   workflow_dispatch:

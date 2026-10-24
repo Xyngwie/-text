@@ -46,8 +46,10 @@ def snapshot(repo, owner, issue, comments):
     if 'pull_request' in issue:
         return None
     ordered = sorted(comments, key=lambda c: (c.get('created_at') or '', c['id']))
-    if not any((c.get('user', {}).get('login') or '').casefold() == owner.casefold()
-               for c in ordered):
+    owner_body = ((issue.get('user', {}).get('login') or '').casefold() == owner.casefold()
+                  and bool(issue.get('body')))
+    if not owner_body and not any((c.get('user', {}).get('login') or '').casefold() == owner.casefold()
+                                 for c in ordered):
         return None
     context = {
         'repository': repo, 'authorized_owner': owner,
@@ -76,8 +78,9 @@ def validate(rows):
             expected = 'owner' if item['author_login'].casefold() == owner else 'other'
             if item['speaker_role'] != expected:
                 raise ValueError('Incorrect speaker attribution')
-        if not any(c['speaker_role'] == 'owner' for c in context['comments']):
-            raise ValueError('Snapshot contains no owner comment')
+        owner_body = context['issue']['speaker_role'] == 'owner' and bool(context['issue']['body'])
+        if not owner_body and not any(c['speaker_role'] == 'owner' for c in context['comments']):
+            raise ValueError('Snapshot contains no owner text')
 
 
 def append_snapshots(path, snapshots):
@@ -112,9 +115,13 @@ def main():
               else api(f'repos/{args.repo}/issues?state=all&per_page=100'))
     snapshots = []
     for issue in issues:
-        if 'pull_request' in issue or not issue.get('comments'):
+        if 'pull_request' in issue:
             continue
-        comments = api(f"repos/{args.repo}/issues/{issue['number']}/comments?per_page=100")
+        owner_body = ((issue.get('user', {}).get('login') or '').casefold() == args.authorized_login.casefold()
+                      and bool(issue.get('body')))
+        if not issue.get('comments') and not owner_body:
+            continue
+        comments = api(f"repos/{args.repo}/issues/{issue['number']}/comments?per_page=100") if issue.get('comments') else []
         snapshots.append(snapshot(args.repo, args.authorized_login, issue, comments))
     added = append_snapshots(args.output, snapshots)
     print(json.dumps({'issues_checked': len(issues), 'snapshots_added': added}, ensure_ascii=False))

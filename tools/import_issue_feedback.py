@@ -19,6 +19,7 @@ DRAFT_SHA_RE = re.compile(r"<!-- draft-sha256:([0-9a-f]{64}) -->")
 DRAFT_RE = re.compile(r"## 本人確認前の初稿（強度2\.25）\s+```text\r?\n([\s\S]*?)\r?\n```")
 POST_URL_RE = re.compile(r'https://(?:www\.)?(?:x\.com|twitter\.com)/[^\s/]+/status/\d+(?:\?[^\s]*)?')
 POSTED_RE = re.compile(r'(?:(?:X|Twitter|SNS|ツイッター|エックス)(?:に|へ))?(?:投稿|ポスト)(?:しました|した|したよ|したぞ|しましたよ|済み|済みです)[。.!！\s]*', re.IGNORECASE)
+REPORT_PREFIX_RE = re.compile(r'^(?:上記|上の|直前|先ほど|この)(?:の)?(?:コメント|本文|文章|内容)(?:で|を)[、,\s]*')
 
 
 def fail(message):
@@ -63,9 +64,9 @@ def comment_parts(comment):
     stripped = body.strip()
     urls = POST_URL_RE.findall(stripped)
     rest = POST_URL_RE.sub('', stripped).strip()
-    if POSTED_RE.fullmatch(rest) or (urls and not rest):
+    if POSTED_RE.fullmatch(REPORT_PREFIX_RE.sub('', rest)) or (urls and not rest):
         return None, True, urls[0] if urls else None
-    if re.fullmatch(r'(?:まだ)?(?:投稿|ポスト)(?:していません|してない|しません|しない)[。.!！\s]*', stripped):
+    if re.fullmatch(r'(?:まだ)?(?:投稿|ポスト)(?:していません|してない|しません|しない)[。.!！\s]*', REPORT_PREFIX_RE.sub('', stripped)):
         return None, False, None
     if stripped in {'', 'ありがとう', 'ありがとうございます', '了解', '了解です', '確認しました', 'OK', 'ok'}:
         return None, False, None
@@ -136,6 +137,31 @@ def build_events(existing, issue, comments, authorized_login, closing_actor, all
             if not record:
                 continue
             latest = next(e for e in reversed(record) if e['event_type'] in {'draft_created', 'user_revised'})
+            # Older importer versions mistook "上記のコメントで投稿しました" for
+            # final text. Restore the preceding content with an explicit audit
+            # event; never delete the original mistaken events or raw comment.
+            if (latest.get('issue_comment_id') == comment.get('id')
+                    and latest.get('content') == (comment.get('body') or '')):
+                preceding_finals = [comment_parts(c)[0] for c in authorized[:authorized.index(comment)]
+                                    if comment_parts(c)[0] is not None]
+                prior = next((e for e in reversed(record[:record.index(latest)])
+                              if preceding_finals and e['event_type'] in {'draft_created', 'user_revised'}
+                              and e.get('content') == preceding_finals[-1]), None)
+                if not prior:
+                    continue
+                sha = prior['content_sha256']
+                append('user_revised', comment, 'publication_report_correction',
+                       content=prior['content'], content_sha256=sha,
+                       previous_content_sha256=latest['content_sha256'], editor='import-correction',
+                       revision_note='Restore preceding final: this comment reports publication, not a new final',
+                       restored_from_comment_id=prior.get('issue_comment_id'))
+                append('user_approved', comment, 'publication_report_correction',
+                       approved_content_sha256=sha, destination='manual-social-copy',
+                       account_label='user-selected', execution_time='manual', attachments=[],
+                       approval_text='Owner explicitly reported publishing preceding final; not automated posting permission',
+                       issue_number=issue['number'])
+                record = current_record()
+                latest = next(e for e in reversed(record) if e['event_type'] == 'user_revised')
             # At most one publication report per currently approved content version.
             tail = record[record.index(latest)+1:]
             if any(e['event_type'] == 'published' for e in tail):

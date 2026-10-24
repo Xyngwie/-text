@@ -264,6 +264,33 @@ class IssueFeedbackImportTest(unittest.TestCase):
         self.run_import()
         self.assertEqual(self.events()[-1]['post_reference'], url)
 
+    def test_prefixed_publication_report_and_legacy_repair(self):
+        final = self.owner_comment(101, '実際の投稿本文')
+        self.save_comments([final])
+        self.run_import()
+        previous = self.events()
+        posted = self.owner_comment(102, '上記のコメントで投稿しました。', '2026-01-01T00:40:00Z')
+        # Reproduce the prior importer misclassifying this report as a final.
+        import hashlib
+        sha = hashlib.sha256(posted['body'].encode()).hexdigest()
+        wrong = dict(previous[-2], content=posted['body'], content_sha256=sha,
+                     previous_content_sha256=previous[-2]['content_sha256'],
+                     issue_comment_id=102, issue_comment_sha256=sha, recorded_at=posted['created_at'])
+        approval = dict(previous[-1], approved_content_sha256=sha,
+                        issue_comment_id=102, issue_comment_sha256=sha, recorded_at=posted['created_at'])
+        old = previous + [wrong, approval]
+        self.log.write_text(''.join(json.dumps(e, ensure_ascii=False) + '\n' for e in old))
+        self.save_comments([final, posted])
+        self.run_import()
+        rows = self.events()
+        self.assertEqual(rows[:len(old)], old)
+        self.assertEqual(rows[-1]['event_type'], 'published')
+        self.assertEqual(rows[-1]['posted_content'], final['body'])
+        self.assertEqual(rows[-1]['publication_evidence'], 'owner_report')
+        before = self.log.read_bytes()
+        self.run_import()
+        self.assertEqual(before, self.log.read_bytes())
+
     def test_other_users_posted_report_is_ignored(self):
         final = self.owner_comment(101, '最終版')
         other = self.owner_comment(102, '投稿しました')

@@ -48,6 +48,13 @@ class IssueArchiveTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate([row])
 
+    def test_owner_issue_body_without_comments_is_a_source(self):
+        issue = dict(self.issue, user={'login': 'Owner'}, body='持ち込んだ壁打ちの要約', state='closed')
+        row = snapshot('Owner/repo', 'Owner', issue, [])
+        validate([row])
+        self.assertEqual(row['context']['issue']['body'], issue['body'])
+        self.assertEqual(row['context']['comments'], [])
+
     def test_api_collects_all_pages_without_slurp(self):
         with patch('archive_issue_comments.subprocess.check_output',
                    return_value='[ {"id": 1} ]\n[{"id": 2}]\n'):

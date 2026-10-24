@@ -5,6 +5,7 @@ import sys
 from pathlib import Path
 from source_catalog import parse_sources
 from publication_feedback import load_events, validate as validate_publication_events
+from validate_issue_reviews import validate as validate_issue_reviews
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -97,10 +98,13 @@ def main():
 
     # 8. 本人修整・承諾・実投稿の状態遷移と本文ハッシュ
     publication_result = validate_publication_events(load_events(publication_file))
+    issue_result = (validate_issue_reviews(ROOT) if (ROOT / 'data/issue_reviews.jsonl').exists()
+                    else {'classified_issue_units': 0})
 
     print(
         f"Validation successful: {rev_count} reviews, {len(segments)} segments, "
-        f"{publication_result['records']} publication records verified."
+        f"{publication_result['records']} publication records, "
+        f"{issue_result['classified_issue_units']} Issue source units verified."
     )
 
 if __name__ == "__main__":
