@@ -3,8 +3,8 @@
 原本リンクには出典ごとの固定コミットと行範囲を使用。
 前後のLLM回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。
 
-- **確定発言数**: 309件
-- **関連セグメント数**: 120セグメント
+- **確定発言数**: 314件
+- **関連セグメント数**: 121セグメント
 - **未確認候補数**: 0件
 
 ## 1. 文脈確認済み発言（確定分類）
@@ -320,6 +320,11 @@
 | U03423 | [L180759–180761](https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L180759-L180761) | [S566: 宛名をシールに出したいがVALUE?になると置き、どやぁと置き、教えた内容でできたと言おうと思ったと置き、隣地17件は稀なのでこれでよく、手書きのご挨拶感より手間が先だと置く](../batches/B058.md) | 宛名を書くのが面倒なのでシールに出したいが、VALUE?になると置く | personal | own | 宛名書くのめんどいのでシールに出したい。けど、VALUE?ってなっちゃうの。 |
 | U03425 | [L180867–180869](https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L180867-L180869) | [S566: 宛名をシールに出したいがVALUE?になると置き、どやぁと置き、教えた内容でできたと言おうと思ったと置き、隣地17件は稀なのでこれでよく、手書きのご挨拶感より手間が先だと置く](../batches/B058.md) | どやぁ、と置く | personal | own | どやぁ |
 | U03427 | [L180990–180992](https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L180990-L180992) | [S566: 宛名をシールに出したいがVALUE?になると置き、どやぁと置き、教えた内容でできたと言おうと思ったと置き、隣地17件は稀なのでこれでよく、手書きのご挨拶感より手間が先だと置く](../batches/B058.md) | 教えた内容で宛名シールができたと言おうと思った、と置く | personal | own | あれ？教えてくれた内容で、宛名シールできたよーって言おうと思ったんだけど。 |
+| codex-dialogue-001:U00053 | [L170–172](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L170-L172) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 援助要請への抵抗のなさを説明する | general | own | 全然ありません。が、自分で色々出来るので頼らなくても出来ることが多いほうであります。瞬間瞬間で手が足りないとかそういう場合に誰かに頼ることに抵抗はありませんね |
+| codex-dialogue-001:U00055 | [L176–178](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L176-L178) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 異なる方法を許容し検証を求める | general | own | 全然気にしません。が、成果が検証不可能な方法だったら、検証時に指摘します。 |
+| codex-dialogue-001:U00057 | [L182–184](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L182-L184) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 今回の成果と次回の検証手順を分ける | general | own | 次回に検証が可能な状態で試行するようお願いするだけですね。成果は成果として成立するかだけを見ます。手戻りして検証可能な方法で差し戻しはしません。 |
+| codex-dialogue-001:U00059 | [L188–190](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L188-L190) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 成果の比較基準を暫定的に挙げる | general | own | 自分が作成した（したであろう）成果と同一かどうか、かな。 |
+| codex-dialogue-001:U00061 | [L194–196](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L194-L196) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 想定外の成果を目的で検証する | general | own | 作業目標と照らして、その成果が十分であるかどうかを、検証します。目的を達するのに足りれば良し、足りなければそれは差し戻し。 |
 
 ## 2. 未精査のキーワード候補（仮候補）
 

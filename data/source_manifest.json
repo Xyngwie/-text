@@ -22,7 +22,7 @@
     "user": 1721,
     "copilot": 1717
   },
-  "reviewed_user_utterances": 1721,
+  "reviewed_user_utterances": 1762,
   "unreviewed_user_utterances": 0,
   "semantic_classification_complete": true,
   "source_path": "sources/copilot-001/こぴちーお引越し.txt",
@@ -53,6 +53,30 @@
         "copilot": 1717
       },
       "reviewed_user_utterances": 1721,
+      "unreviewed_user_utterances": 0,
+      "semantic_classification_complete": true
+    },
+    {
+      "source_id": "codex-dialogue-001",
+      "path": "sources/codex-dialogue-001/conversation.txt",
+      "assistant": "Codex",
+      "id_prefix": "codex-dialogue-001:",
+      "source_commit": "70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54",
+      "source_blob_sha": "266c3b96c51ba0358b013c98f6fd67b771d2f4b5",
+      "source_sha256": "cc56f553353c450aaa479009f54e28315d432300582083e5f6991bdf85d7d4a7",
+      "speaker_markers": {
+        "User": "user",
+        "Assistant": "assistant"
+      },
+      "bytes": 13724,
+      "line_count": 260,
+      "preamble_lines": null,
+      "source_url": "https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt",
+      "utterance_counts": {
+        "user": 41,
+        "assistant": 40
+      },
+      "reviewed_user_utterances": 41,
       "unreviewed_user_utterances": 0,
       "semantic_classification_complete": true
     }

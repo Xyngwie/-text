@@ -14,6 +14,19 @@
         "あなたの発言": "user",
         "Copilot の発言": "copilot"
       }
+    },
+    {
+      "source_id": "codex-dialogue-001",
+      "path": "sources/codex-dialogue-001/conversation.txt",
+      "assistant": "Codex",
+      "id_prefix": "codex-dialogue-001:",
+      "source_commit": "70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54",
+      "source_blob_sha": "266c3b96c51ba0358b013c98f6fd67b771d2f4b5",
+      "source_sha256": "cc56f553353c450aaa479009f54e28315d432300582083e5f6991bdf85d7d4a7",
+      "speaker_markers": {
+        "User": "user",
+        "Assistant": "assistant"
+      }
     }
   ]
 }

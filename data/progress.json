@@ -1,8 +1,8 @@
 {
   "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
-  "reviewed_user_utterances": 1721,
-  "total_detected_user_utterances": 1721,
-  "reviewed_through": "U03437",
+  "reviewed_user_utterances": 1762,
+  "total_detected_user_utterances": 1762,
+  "reviewed_through": "codex-dialogue-001:U00081",
   "next_user_utterance": null,
   "last_batch": "B058",
   "semantic_classification_complete": true,
@@ -26,6 +26,16 @@
         "copilot": 1717
       },
       "reviewed_user_utterances": 1721,
+      "unreviewed_user_utterances": 0,
+      "semantic_classification_complete": true
+    },
+    "codex-dialogue-001": {
+      "assistant": "Codex",
+      "utterance_counts": {
+        "user": 41,
+        "assistant": 40
+      },
+      "reviewed_user_utterances": 41,
       "unreviewed_user_utterances": 0,
       "semantic_classification_complete": true
     }
