@@ -6,6 +6,8 @@ Issueの本人コメントは、[原典アーカイブ](../sources/github-issues
 
 ## 構成
 
+v039から、本人申告の実投稿18件を分析して手動選定した6対を、RSS生成時の参考資料に渡します。[校正の範囲と限界](../analysis/v039/publication_trial_calibration.md)を参照してください。生コメントが無条件に反映される仕組みではなく、モデルの重みの追加学習でもありません。次回の通常配信で改善を確認します。
+
 - `.github/workflows/rss_ai_agent.yml`：1日1回の収集、Geminiによる構造化、最大6件のIssue作成。日本時間9:17（UTC 0:17）の起動設定です。GitHub側の遅延・欠落はあり得ます。手動実行は別途可能です。
 - `config/rss_sources.json`：通常枠と実験枠のソース、配信元許可リスト、除外語。
 - `tools/rss_agent.py`：RSS/Atom解析、配信元照合、重複排除、ノイズ候補除外。

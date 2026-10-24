@@ -394,6 +394,17 @@ class AnalysisTest(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, 'Unknown episode'):
             module.validate(root=self.root)
 
+    def test_v039_pins_publication_calibration_without_inflating_formal_counts(self):
+        result = module.validate(version='v039', root=self.root)
+        self.assertEqual(result['episodes'], 164)
+        self.assertEqual(result['findings'], 19)
+
+    def test_v039_rejects_changed_calibration_artifact(self):
+        path = self.root / 'analysis/v039/publication_pairs.json'
+        path.write_text(path.read_text() + ' ')
+        with self.assertRaisesRegex(AssertionError, 'Calibration artifact mismatch'):
+            module.validate(version='v039', root=self.root)
+
     def test_excluded_question_cannot_support_finding(self):
         path = self.root / 'analysis/v001/findings.json'
         findings = json.loads(path.read_text())

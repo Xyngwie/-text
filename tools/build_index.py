@@ -197,7 +197,9 @@ def main():
     dump(progress_path, progress)
     analysis_path = OUT / 'analysis' / 'progress.json'
     analysis = json.loads(analysis_path.read_text(encoding='utf-8')) if analysis_path.exists() else None
-    stage4_summary = ('RSS・Issue・確定ログ取込パイプライン実装済み、本人試行を継続中。'
+    stage4_summary = ('本人申告の実投稿18件を校正し、生成時の参照例を追加。未見の題材での検証はこれから。'
+                      if analysis and analysis.get('stage4_status') == 'owner_report_calibration_active_pending_prospective_validation'
+                      else 'RSS・Issue・確定ログ取込パイプライン実装済み、本人試行を継続中。'
                       if analysis and analysis.get('stage4_status', '').startswith('pipeline_implemented')
                       else '未着手。')
     analysis_summary = (f"第3段階：分析継続中（{analysis['current_version']}）。[判断・口調の分析](analysis/README.md)。第4段階：{stage4_summary}"

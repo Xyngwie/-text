@@ -32,6 +32,11 @@ def validate(version='v001', root=ROOT):
     required = {'data/sources.json', 'data/reviews.jsonl', 'data/segments.jsonl',
                 'data/utterances.jsonl', 'data/taxonomy.json'}
     assert set(inputs) == required, 'Missing snapshot input'
+    for path, digest in manifest.get('supplemental_input_files', {}).items():
+        assert hashlib.sha256(pinned(path)).hexdigest() == digest, f'Supplemental snapshot mismatch: {path}'
+    artifact = manifest.get('calibration_artifact')
+    if artifact:
+        assert hashlib.sha256((root / artifact['path']).read_bytes()).hexdigest() == artifact['sha256'], 'Calibration artifact mismatch'
     sources = {s['source_id']: s for s in manifest['sources']}
     assert manifest['sources'] == json.loads(inputs['data/sources.json'])['sources']
     archives = {}
