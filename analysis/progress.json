@@ -178,6 +178,12 @@
       "feedback": "自分の貸し借りだけでなく、依頼先がそれを完遂する為に負うことになる貸し借りまで考えが及ぶことで一段先まで先が見えているという事になるかな。いつも実践できているわけではないけれどね。",
       "meaning": "依頼先の次の行動に伴う貸し借りまで考慮した点の本人補足。常時の実践や予測精度の証拠とはしない。",
       "record": "analysis/indirect_obligations_clarification.md"
+    },
+    {
+      "version": "v039",
+      "feedback": "全体のトーンとして主張の強さ係数2.25は少し強すぎたかも。1.5〜2.5でランダムに生成したい。",
+      "meaning": "公開案ごとの生成強度に幅を持たせる明示指定。口調の強さの指定であり、本人の意見や事実の確度をランダム化する指示ではない。",
+      "record": "analysis/random_intensity_clarification.md"
     }
   ],
   "explicit_output_preferences": {
@@ -191,9 +197,16 @@
       "claiming_uncertain_facts_as_certain"
     ],
     "priority": "explicit_current_user_direction_over_inferred_historical_tendency",
-    "default_intensity": 2.25,
+    "default_intensity": null,
     "external_execution": "only_after_explicit_approval_of_final_content_and_destination",
-    "post_approval_edits": "require_reapproval"
+    "post_approval_edits": "require_reapproval",
+    "intensity_selection": {
+      "mode": "uniform_random_per_draft",
+      "min": 1.5,
+      "max": 2.5,
+      "step": 0.01,
+      "record_selected_value": true
+    }
   },
   "explicit_style_preferences": {
     "salient_registers": [

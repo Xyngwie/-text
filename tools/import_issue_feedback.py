@@ -16,7 +16,8 @@ FINAL_RE = re.compile(
 )
 MARKER_RE = re.compile(r"<!-- candidate-id:(rss-[0-9a-f]{20}) -->")
 DRAFT_SHA_RE = re.compile(r"<!-- draft-sha256:([0-9a-f]{64}) -->")
-DRAFT_RE = re.compile(r"## 本人確認前の初稿（強度2\.25）\s+```text\r?\n([\s\S]*?)\r?\n```")
+DRAFT_RE = re.compile(r"## 本人確認前の初稿（強度(?P<intensity>\d+(?:\.\d+)?)）\s+```text\r?\n(?P<text>[\s\S]*?)\r?\n```")
+INTENSITY_RE = re.compile(r'<!-- draft-intensity:([0-9]+(?:\.[0-9]+)?) -->')
 POST_URL_RE = re.compile(r'https://(?:www\.)?(?:x\.com|twitter\.com)/[^\s/]+/status/\d+(?:\?[^\s]*)?')
 POSTED_RE = re.compile(r'(?:(?:X|Twitter|SNS|ツイッター|エックス)(?:に|へ)?)?(?:投稿|ポスト)(?:しました|した|したよ|したぞ|しましたよ|済み|済みです)[。.!！\s]*', re.IGNORECASE)
 REPORT_PREFIX_RE = re.compile(r'^(?:上記|上の|直前|先ほど|この)(?:の)?(?:(?:コメント|本文|文章|内容)(?:で|を))?[、,\s]*')
@@ -49,11 +50,26 @@ def parse_issue(issue):
     draft = DRAFT_RE.search(body)
     if not marker or not draft_sha or not draft:
         fail("Issue body is missing fixed RSS agent markers")
-    content = draft.group(1)
+    content = draft.group('text')
+    draft_intensity(issue)
     if digest(content) != draft_sha.group(1):
         fail("Issue draft does not match its hash marker")
     track = "experimental-politics" if "experimental-politics" in labels else "normal"
     return marker.group(1), content, track
+
+
+def draft_intensity(issue):
+    body = issue.get('body') or ''
+    match = DRAFT_RE.search(body)
+    if not match:
+        fail('Missing draft intensity heading')
+    value = float(match.group('intensity'))
+    if not 1.5 <= value <= 2.5:
+        fail('Draft intensity is outside 1.5..2.5')
+    marker = INTENSITY_RE.search(body)
+    if marker and float(marker.group(1)) != value:
+        fail('Draft intensity marker differs from heading')
+    return value
 
 
 def comment_parts(comment):
@@ -80,11 +96,13 @@ def build_events(existing, issue, comments, authorized_login, closing_actor, all
     if closing_actor.casefold() != authorized_login.casefold():
         fail("Only the authorized user may import RSS feedback")
     record_id, draft, track = parse_issue(issue)
+    intensity = draft_intensity(issue)
     events = list(existing)
     original_count = len(events)
     record = [e for e in events if e.get('record_id') == record_id]
     if record and (record[0].get('content_sha256') != digest(draft)
-                   or record[0].get('issue_number') != issue['number']):
+                   or record[0].get('issue_number') != issue['number']
+                   or record[0].get('intensity') != intensity):
         fail('Existing record does not match this Issue')
     revised = False
     authorized = [c for c in comments if c.get('user', {}).get('login', '').casefold() == authorized_login.casefold()]
@@ -115,7 +133,7 @@ def build_events(existing, issue, comments, authorized_login, closing_actor, all
                 if not record:
                     events.append(dict(schema_version=SCHEMA_VERSION, event_type='draft_created', record_id=record_id,
                                        recorded_at=event_time(issue.get('created_at')), content=draft,
-                                       content_sha256=digest(draft), mode='normal', intensity=2.25,
+                                       content_sha256=digest(draft), mode='normal', intensity=intensity,
                                        generator='rss-agent', track=track, issue_number=issue['number']))
                     record = current_record()
                 latest = next(e for e in reversed(record) if e['event_type'] in {'draft_created', 'user_revised'})
