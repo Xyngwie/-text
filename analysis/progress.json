@@ -1,8 +1,8 @@
 {
   "stage": 3,
   "status": "in_progress",
-  "current_version": "v039",
-  "profile_status": "owner_adopted_publications_analyzed_and_calibrated",
+  "current_version": "v040",
+  "profile_status": "owner_qa_consolidated",
   "full_corpus_coding_complete": false,
   "independent_review_complete": false,
   "user_review_complete": false,
@@ -34,7 +34,8 @@
     "解決へ向かうきっかけの具体例と、当座の救済が根本解決を妨げる場合の優先順を本人と照合する",
     "専門性・契約・好意・緊急性によって引き受ける範囲が変わる条件を本人と照合する",
     "相手の事情を理解した後も批判を続ける条件、嫌いな相手への評価更新の例を本人と照合する",
-    "次回の1日最大6件で校正例参照後の修整を記録し、語尾・否定の射程・経験の捏造を前向きに評価する"
+    "次回の1日最大6件で校正例参照後の修整を記録し、語尾・否定の射程・経験の捏造を前向きに評価する",
+    "今夜の一問一答の自己説明を別の実際の場面と照合し、質問条件に依存した答えを恒常的な規則へ広げない"
   ],
   "user_feedback": [
     {
@@ -190,6 +191,12 @@
       "feedback": "元妻とのDivisionでは、パッド経験が少ない相手が、倒されていた敵を何度かのプレイで二人くらい倒せるようになった。出来ないことを出来るようになるための努力は、どんなレベルでも尊い。自分と同水準になるとは思っておらず、一人で練習するほどの興味ではなかったようだ。",
       "meaning": "本人による当時の背景説明と価値判断。本人内の進歩と努力を、自分との技能比較や同じ熱量から区別する。相手の動機は推測のまま保持し、原投稿と独立した再現例には数えない。",
       "record": "analysis/effort_and_personal_progress_clarification.md"
+    },
+    {
+      "version": "v040",
+      "feedback": "一問一答形式だと話しやすい。今夜の会話をまとめてmainへ組み込む。",
+      "meaning": "質問と回答を一つの新原本に保存・分類し、本人の補足と訂正を分析へ残す明示指示。仮定への回答を実施歴にはしない。",
+      "record": "analysis/v040/qa_summary.md"
     }
   ],
   "explicit_output_preferences": {
@@ -222,7 +229,8 @@
     ],
     "mode_persistence": "once_gal_or_ojou_mode_starts_keep_it_through_the_body",
     "typical_ending": "abruptly_return_to_warrior_like_base_at_the_end",
-    "evidence_status": "explicit_user_report_plus_v012_example_confirmation_separate_from_archive_frequency"
+    "evidence_status": "explicit_user_report_plus_v012_example_confirmation_separate_from_archive_frequency",
+    "dialogue_format": "one_question_at_a_time"
   },
   "stage3_mode": "manual_dialogue_only",
   "stage3_dialogue_channels": [

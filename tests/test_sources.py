@@ -16,6 +16,9 @@ class SourcesTest(unittest.TestCase):
         self.root = Path(self.tmp.name) / 'repo'
         subprocess.run(['git', 'clone', '-q', '--local', '--no-hardlinks', str(ROOT), str(self.root)], check=True)
         shutil.copytree(ROOT / 'tools', self.root / 'tools', dirs_exist_ok=True)
+        # Source registration and the new analysis may be one working change.
+        # Keep the fixture's analysis metadata aligned with the working catalog.
+        shutil.copytree(ROOT / 'analysis', self.root / 'analysis', dirs_exist_ok=True)
         shutil.copyfile(ROOT / 'data/sources.json', self.root / 'data/sources.json')
         for source in json.loads((ROOT / 'data/sources.json').read_text())['sources']:
             target = self.root / source['path']
@@ -58,7 +61,8 @@ class SourcesTest(unittest.TestCase):
         self.assertFalse(progress['semantic_classification_complete'])
         self.assertTrue(progress['sources']['copilot-001']['semantic_classification_complete'])
         self.assertEqual(progress['next_user_utterance'], 'claude-001:U00001')
-        self.assertEqual(progress['total_detected_user_utterances'], 1723)
+        self.assertEqual(progress['total_detected_user_utterances'],
+                         sum(row['role'] == 'user' for row in self.original) + 2)
         before = (self.root / 'data/utterances.jsonl').read_bytes()
         self.run_tool('tools/build_index.py')
         self.assertEqual(before, (self.root / 'data/utterances.jsonl').read_bytes())

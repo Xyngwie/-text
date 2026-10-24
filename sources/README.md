@@ -8,6 +8,8 @@ sources/
     こぴちーお引越し.txt
   x-archive-001/
     tweets.zip
+  codex-dialogue-001/
+    conversation.txt
   <新しい原本ID>/
     <原本ファイル>
 ```

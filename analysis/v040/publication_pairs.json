@@ -1,0 +1,582 @@
+{
+  "schema_version": 1,
+  "status": "retrospective_calibration_not_unseen_validation",
+  "input_files": {
+    "data/publication_events.jsonl": "c9ca9f488b9b7afbdb264e44912d85df0b3ef65c3dc93191537dbb798fc10d7b",
+    "sources/github-issues-001/snapshots.jsonl": "c590803dc72db0a6ee1d80b193cc3552af553bee472eb7d99c5c7e991970a430"
+  },
+  "normalization": {
+    "removed_for_comparison_only": [
+      "URLs",
+      "whitespace",
+      "listed editorial notes"
+    ],
+    "editorial_notes": [
+      "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）",
+      "（実験政治枠：価値観スライドによるゼロショット仮説）",
+      "実験政治枠（価値観スライドによるゼロショット仮説）。",
+      "実験政治枠（価値観スライドによるゼロショット仮説）：",
+      "（※価値観スライドによるゼロショット仮説）",
+      "（価値観スライドによるゼロショット仮説）",
+      "【価値観スライドによるゼロショット仮説】",
+      "※価値観スライドによるゼロショット仮説"
+    ]
+  },
+  "metrics": {
+    "pair_count": 18,
+    "drafts_with_chigauka": 16,
+    "removed_chigauka": 15,
+    "retained_chigauka": 1,
+    "final_with_chigauka": 1,
+    "finals_with_blank_line": 16,
+    "finals_with_source_url": 18
+  },
+  "pairs": [
+    {
+      "record_id": "rss-a50681642ab0f9df298e",
+      "issue_number": 125,
+      "draft": "賃上げの号令で良い顔をし、その原資と雇用維持の破綻リスクを地方の経営者へ丸投げするなら、それは制度設計として三流だ。生活防衛という目的自体は正当だが、取引価格への転嫁構造も作らずに数字だけ吊り上げれば、待っているのは現場の疲弊と雇用の縮小に過ぎない。美名の費用を末端へ押し付けるのが政策の役割か。違うか？",
+      "final": "賃上げの号令で良い顔をし、その原資と雇用維持の破綻リスクを地方の経営者へ丸投げするなら、それは制度設計として三流だ。\n\n生活防衛という目的自体は正当だが、取引価格への転嫁構造も作らずに数字だけ吊り上げれば、待っているのは現場の疲弊と雇用の縮小に過ぎない。\n\n美名の費用を末端へ押し付けるのが政策の役割か？\n\nhttps://newsdig.tbs.co.jp/articles/gallery/3035239?image=4",
+      "draft_sha256": "a3879569c84c1525934278800bd56c5d702e047ddadd85707a25c6251ccc0155",
+      "final_sha256": "be67c7c0f55be6cd85ed552445d56ddf74885fc0d7c34e5df9c7f8be27b3699a",
+      "source_comment_id": 6377898052,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/125#issuecomment-6377898052",
+      "source_snapshot_sha256": "9d2cf054c7eded7e07890c45dbb4ef3029dc657d57843ff33b7ad28f3e0e2e7c",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/125#issuecomment-6377903778",
+      "reported_at": "2026-10-24T01:03:24Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "賃上げの号令で良い顔をし、その原資と雇用維持の破綻リスクを地方の経営者へ丸投げするなら、それは制度設計として三流だ。生活防衛という目的自体は正当だが、取引価格への転嫁構造も作らずに数字だけ吊り上げれば、待っているのは現場の疲弊と雇用の縮小に過ぎない。美名の費用を末端へ押し付けるのが政策の役割か。違うか？",
+      "normalized_final": "賃上げの号令で良い顔をし、その原資と雇用維持の破綻リスクを地方の経営者へ丸投げするなら、それは制度設計として三流だ。生活防衛という目的自体は正当だが、取引価格への転嫁構造も作らずに数字だけ吊り上げれば、待っているのは現場の疲弊と雇用の縮小に過ぎない。美名の費用を末端へ押し付けるのが政策の役割か？",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "。違うか",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-db535bde527ab1ceba8c",
+      "issue_number": 134,
+      "draft": "モデルの派手な数字に群がる連中を尻目に、物理の限界を材料で押し広げる側が最後に基盤を握る。前工程の微細化だけでなく後工程の泥臭い実装まで含めて押さえるのが、実業としての正しい手筋だ。虚業の騒ぎより、こういう足元の設計美を見ろという話だな。",
+      "final": "モデルの派手な数字に群がる連中を尻目に、物理の限界を材料で押し広げる側が最後に基盤を握る。前工程の微細化だけでなく後工程の泥臭い実装まで含めて押さえるのが、実業としての正しい手筋だ。虚業の騒ぎより、こういう足元の設計美を見ろという話だな。https://news.google.com/rss/articles/CBMibEFVX3lxTFB5RWJfWXQ3OERJVmk1UHFGa21FcXVCRjFMdFA3M2t6N0gtcWVyMm9TWE9XSlRfYU9SdFhsbWwzXzVRS0xRNXJ5T2FKMjhpMENQMkk0eGhfX2VXVnVBTXlaV3hkajJoV3BySi05Tw?oc=5",
+      "draft_sha256": "84c69c639153b3e2f116660ef45c2a4d809f6524ad702cb9233981353500ffa4",
+      "final_sha256": "88974b0f410d3f937dd161cfb4faa8039f7932081e162d5984a05ae5c5a81d3f",
+      "source_comment_id": 6382995048,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/134#issuecomment-6382995048",
+      "source_snapshot_sha256": "ab693520e11b23c335b4c61da5ad3108aa989118ca2dce25848feffaf5e2a1a8",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/134#issuecomment-6382997279",
+      "reported_at": "2026-10-24T10:16:31Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "モデルの派手な数字に群がる連中を尻目に、物理の限界を材料で押し広げる側が最後に基盤を握る。前工程の微細化だけでなく後工程の泥臭い実装まで含めて押さえるのが、実業としての正しい手筋だ。虚業の騒ぎより、こういう足元の設計美を見ろという話だな。",
+      "normalized_final": "モデルの派手な数字に群がる連中を尻目に、物理の限界を材料で押し広げる側が最後に基盤を握る。前工程の微細化だけでなく後工程の泥臭い実装まで含めて押さえるのが、実業としての正しい手筋だ。虚業の騒ぎより、こういう足元の設計美を見ろという話だな。",
+      "text_edits": [],
+      "draft_has_chigauka": false,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 1
+    },
+    {
+      "record_id": "rss-1a1f89cdc210f0ab1a9e",
+      "issue_number": 133,
+      "draft": "※価値観スライドによるゼロショット仮説\n大統領が解除されたと語ろうが、現場の回線が繋がらなければ何の意味もない。障害の正確な原因や意図は確認が必要だが、重要基盤のスイッチが政治的パフォーマンスや特定個人の裁量で揺らぐ設計そのものが落第だ。誰が決め、誰が直すのか保証されない通信に命運を握らせる脆さをいつまで放置する気だ。結果が伴わない宣言に拍手を送る義理などない。違うか？",
+      "final": "大統領が解除されたと語ろうが、現場の回線が繋がらなければ何の意味もない。障害の正確な原因や意図は確認が必要だが、重要基盤のスイッチが政治的パフォーマンスや特定個人の裁量で揺らぐ設計そのものが落第だ。誰が決め、誰が直すのか保証されない通信に命運を握らせる脆さをいつまで放置する気だ。結果が伴わない宣言に拍手を送る義理などない。\nhttps://www.bbc.com/japanese/articles/cm2d6zzwddypo?at_medium=RSS&at_campaign=rss",
+      "draft_sha256": "00d7d93e5af528085c4d406ef805bf0aea2788d4c5b23c3a92c1cda75ca448d9",
+      "final_sha256": "397e21e8a85d62ec8518ebb16b0bef23a448d9d33428bf96f99a560a73dd3192",
+      "source_comment_id": 6383015658,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/133#issuecomment-6383015658",
+      "source_snapshot_sha256": "5c1280c5361efc52be27e38fa4f9c41b5088ecb76bfee1654cc56854185e2545",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/133#issuecomment-6383017865",
+      "reported_at": "2026-10-24T10:18:45Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "大統領が解除されたと語ろうが、現場の回線が繋がらなければ何の意味もない。障害の正確な原因や意図は確認が必要だが、重要基盤のスイッチが政治的パフォーマンスや特定個人の裁量で揺らぐ設計そのものが落第だ。誰が決め、誰が直すのか保証されない通信に命運を握らせる脆さをいつまで放置する気だ。結果が伴わない宣言に拍手を送る義理などない。違うか？",
+      "normalized_final": "大統領が解除されたと語ろうが、現場の回線が繋がらなければ何の意味もない。障害の正確な原因や意図は確認が必要だが、重要基盤のスイッチが政治的パフォーマンスや特定個人の裁量で揺らぐ設計そのものが落第だ。誰が決め、誰が直すのか保証されない通信に命運を握らせる脆さをいつまで放置する気だ。結果が伴わない宣言に拍手を送る義理などない。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 1
+    },
+    {
+      "record_id": "rss-a60ef4a3d784e3df5a9f",
+      "issue_number": 130,
+      "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n作業員4人が命を落とした以上、これは現場の不注意などではなく安全管理の設計そのものの破綻だ。国交省が連絡会議を開いて「徹底を確認した」程度で幕を引いていい話ではない。どの工程に無理があり、誰がリスクを現場へ押し付けていたのかを洗い出し、二度と同じ事故を起こせない仕組みに改修することこそが筋だ。形式的な通達だけで現場の命が守れるとでも思っているのか。違うか？",
+      "final": "鉄道敷地での測量作業なども行うことがあるので他人事ではない。\n作業員4人が命を落とした以上、これは現場の不注意などではなく安全管理の設計そのものの破綻だ。\n\n国交省が連絡会議を開いて「徹底を確認した」程度で幕を引いていい話ではない。どの工程に無理があり、誰がリスクを現場へ押し付けていたのかを洗い出し、二度と同じ事故を起こせない仕組みに改修することこそが筋だ。\n\n形式的な通達だけで現場の命が守れるとでも思っているのか。https://www.yomiuri.co.jp/national/20261023-GYT1T00432/",
+      "draft_sha256": "dd97ba56454e5e988bee2abd5e6d9f26dd826c68654c878d77419477e8543d1a",
+      "final_sha256": "bca9ab058df1dcce84c14e22eb956936c28ea053b3202f36e91c559b8346e92b",
+      "source_comment_id": 6383053284,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/130#issuecomment-6383053284",
+      "source_snapshot_sha256": "84f7e2b57c12a9b1b7c67c95d06206e369c434821ebcd81dc71bf10e382496f8",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/130#issuecomment-6383056273",
+      "reported_at": "2026-10-24T10:22:49Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "作業員4人が命を落とした以上、これは現場の不注意などではなく安全管理の設計そのものの破綻だ。国交省が連絡会議を開いて「徹底を確認した」程度で幕を引いていい話ではない。どの工程に無理があり、誰がリスクを現場へ押し付けていたのかを洗い出し、二度と同じ事故を起こせない仕組みに改修することこそが筋だ。形式的な通達だけで現場の命が守れるとでも思っているのか。違うか？",
+      "normalized_final": "鉄道敷地での測量作業なども行うことがあるので他人事ではない。作業員4人が命を落とした以上、これは現場の不注意などではなく安全管理の設計そのものの破綻だ。国交省が連絡会議を開いて「徹底を確認した」程度で幕を引いていい話ではない。どの工程に無理があり、誰がリスクを現場へ押し付けていたのかを洗い出し、二度と同じ事故を起こせない仕組みに改修することこそが筋だ。形式的な通達だけで現場の命が守れるとでも思っているのか。",
+      "text_edits": [
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "鉄道敷地での測量作業なども行うことがあるので他人事ではない。"
+        },
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 2,
+      "final_paragraphs": 3
+    },
+    {
+      "record_id": "rss-b7680e51206060a7569f",
+      "issue_number": 131,
+      "draft": "（実験政治枠：価値観スライドによるゼロショット仮説）\n\n米国への配慮か何か知らないが、経済安保を滑り込ませて「防衛費枠を広げました」と見せかけるだけの看板の付け替えなら筋が悪すぎる。定義を弄って数字の帳尻を合わせたところで、実質的な機能と防衛能力が伴わなければただの欺瞞だ。必要な実力に正面から予算を当てる覚悟がないまま外聞を取り繕う設計は、美しくないし責任の所在も濁る。目的と手段を取り違えているのではないか？",
+      "final": "米国への配慮か何か知らないが、経済安保を滑り込ませて「防衛費枠を広げました」と見せかけるだけの看板の付け替えなら筋が悪すぎる。\n\n定義を弄って数字の帳尻を合わせたところで、実質的な機能と防衛能力が伴わなければただの欺瞞だ。\n\n必要な実力に正面から予算を当てる覚悟がないまま外聞を取り繕う設計は、美しくないし責任の所在も濁る。https://www.nikkei.com/article/DGXZQOUA231QR0T21C26A0000000/",
+      "draft_sha256": "0fadd37b1ebfbe00fe4914d90b0c46da9135f1abb5bf0203acf770cbd29a35fb",
+      "final_sha256": "e498d9231537a0d25961d10f64bf7884ca57cdca35e7ef53d6b152920565cdb3",
+      "source_comment_id": 6383083585,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/131#issuecomment-6383083585",
+      "source_snapshot_sha256": "030a20faead7321674b3588c7f29fdfe15ec2b016cceed87084aca4b7d1958cf",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/131#issuecomment-6383085564",
+      "reported_at": "2026-10-24T10:25:56Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "米国への配慮か何か知らないが、経済安保を滑り込ませて「防衛費枠を広げました」と見せかけるだけの看板の付け替えなら筋が悪すぎる。定義を弄って数字の帳尻を合わせたところで、実質的な機能と防衛能力が伴わなければただの欺瞞だ。必要な実力に正面から予算を当てる覚悟がないまま外聞を取り繕う設計は、美しくないし責任の所在も濁る。目的と手段を取り違えているのではないか？",
+      "normalized_final": "米国への配慮か何か知らないが、経済安保を滑り込ませて「防衛費枠を広げました」と見せかけるだけの看板の付け替えなら筋が悪すぎる。定義を弄って数字の帳尻を合わせたところで、実質的な機能と防衛能力が伴わなければただの欺瞞だ。必要な実力に正面から予算を当てる覚悟がないまま外聞を取り繕う設計は、美しくないし責任の所在も濁る。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "目的と手段を取り違えているのではないか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": false,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 2,
+      "final_paragraphs": 3
+    },
+    {
+      "record_id": "rss-e4f96e06b0646c104a18",
+      "issue_number": 129,
+      "draft": "【価値観スライドによるゼロショット仮説】最高裁が高裁判決を覆して生活保護減額を違法と断じたという。算定プロセスの具体的な瑕疵は原典の確認を要するが、行政が手続や根拠を都合よく歪めて結果を押し通そうとしたのなら、司法に叩き落とされるのは当然の帰結だ。勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。違うか？",
+      "final": "最高裁が高裁判決を覆して生活保護減額を違法と断じたという。\n\n算定プロセスの具体的な瑕疵は原典の確認を要するが、行政が手続や根拠を都合よく歪めて結果を押し通そうとしたのなら、司法に叩き落とされるのは当然の帰結だ。\n\n勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。\n\nhttps://www.asahi.com/articles/DA3S16573376.html",
+      "draft_sha256": "f854a66b39756ca6b4c09c4629540fbaf67240104fa44f31900df980f6098ddd",
+      "final_sha256": "6e4eed6c10ff728c4cccf6c2b8c7529eb2c2e96f319b31134fb6148df3551efd",
+      "source_comment_id": 6383099828,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/129#issuecomment-6383099828",
+      "source_snapshot_sha256": "6c1df298e4a90ef10545b44dac28c00fa4923226650ae48089d576de1140c732",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/129#issuecomment-6383101740",
+      "reported_at": "2026-10-24T10:27:38Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "最高裁が高裁判決を覆して生活保護減額を違法と断じたという。算定プロセスの具体的な瑕疵は原典の確認を要するが、行政が手続や根拠を都合よく歪めて結果を押し通そうとしたのなら、司法に叩き落とされるのは当然の帰結だ。勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。違うか？",
+      "normalized_final": "最高裁が高裁判決を覆して生活保護減額を違法と断じたという。算定プロセスの具体的な瑕疵は原典の確認を要するが、行政が手続や根拠を都合よく歪めて結果を押し通そうとしたのなら、司法に叩き落とされるのは当然の帰結だ。勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-c9a5e86a72ffc15fc975",
+      "issue_number": 124,
+      "draft": "（価値観スライドによるゼロショット仮説）\n消費者物価が９カ月ぶりに２％を超えたところで、コスト高を末端に押し付けた結果なら何の誇りにもならん。目標数値の帳尻合わせを成果と錯覚し、生活者の実質負担を直視しない設計は二流だ。見かけの数字で経済が回った気になっているんじゃないか、違うか？",
+      "final": "消費者物価が９カ月ぶりに２％を超えたところで、コスト高を末端に押し付けた結果なら何の誇りにもならん。\n\n目標数値の帳尻合わせを成果と錯覚し、生活者の実質負担を直視しない設計は二流だ。\n\n見かけの数字で経済が回った気になっているんじゃないか、\n依然として民草の暮らしは改善していない。\n\nhttps://www.jiji.com/jc/article?k=2026102300210&g=eco",
+      "draft_sha256": "a67dd2de7b67560632ed95aaa8c96223cf9922aac621f1f109723f6c3780c1de",
+      "final_sha256": "5eeefc5bea716f6d94bb39aa31ec43174f8947b36eab50ac9b88ae5a8e02ddc7",
+      "source_comment_id": 6383117645,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/124#issuecomment-6383117645",
+      "source_snapshot_sha256": "24828294d78a4f4acc59116b79cfac95f266d63022389cbc70f810aee6f39f63",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/124#issuecomment-6383119210",
+      "reported_at": "2026-10-24T10:29:27Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "消費者物価が９カ月ぶりに２％を超えたところで、コスト高を末端に押し付けた結果なら何の誇りにもならん。目標数値の帳尻合わせを成果と錯覚し、生活者の実質負担を直視しない設計は二流だ。見かけの数字で経済が回った気になっているんじゃないか、違うか？",
+      "normalized_final": "消費者物価が９カ月ぶりに２％を超えたところで、コスト高を末端に押し付けた結果なら何の誇りにもならん。目標数値の帳尻合わせを成果と錯覚し、生活者の実質負担を直視しない設計は二流だ。見かけの数字で経済が回った気になっているんじゃないか、依然として民草の暮らしは改善していない。",
+      "text_edits": [
+        {
+          "operation": "replace",
+          "before": "違うか？",
+          "after": "依然として民草の暮らしは改善していない。"
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-428369fbd229646aec6f",
+      "issue_number": 123,
+      "draft": "一度弾かれた場所へ、何の手土産もなしに戻るのはただの未練だが、社会人で腕を磨き直して「自信がある」と言えるだけの根拠を積んで立つなら話は別だ。選別の巡り合わせに愚痴を吐く暇があるなら、相手が無視できない実績を叩きつけて再挑戦の場を自力で作るのが筋というもの。結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。違うか？",
+      "final": "一度弾かれた場所へ、何の手土産もなしに戻るのはただの未練だが、社会人で腕を磨き直して「自信がある」と言えるだけの根拠を積んで立つなら話は別だ。\n\n選別の巡り合わせに愚痴を吐く暇があるなら、相手が無視できない実績を叩きつけて再挑戦の場を自力で作るのが筋というもの。\n\n結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。\n頑張って！！\n\nhttps://mainichi.jp/articles/20261021/k00/00m/050/066000c",
+      "draft_sha256": "92213f67a3a6790a821dd216c26c375049d23978bcf9a65e3293bbc20e68917c",
+      "final_sha256": "1bdcbc8d4707d60c6927ee2ab34d199871f57e61c6d80d4447ac13f4ba9527b8",
+      "source_comment_id": 6383136056,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/123#issuecomment-6383136056",
+      "source_snapshot_sha256": "76a9115f8791326f6d7310dacff2cafbccd53caa1aeb5df65dc2566227491c2a",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/123#issuecomment-6383137135",
+      "reported_at": "2026-10-24T10:31:27Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "一度弾かれた場所へ、何の手土産もなしに戻るのはただの未練だが、社会人で腕を磨き直して「自信がある」と言えるだけの根拠を積んで立つなら話は別だ。選別の巡り合わせに愚痴を吐く暇があるなら、相手が無視できない実績を叩きつけて再挑戦の場を自力で作るのが筋というもの。結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。違うか？",
+      "normalized_final": "一度弾かれた場所へ、何の手土産もなしに戻るのはただの未練だが、社会人で腕を磨き直して「自信がある」と言えるだけの根拠を積んで立つなら話は別だ。選別の巡り合わせに愚痴を吐く暇があるなら、相手が無視できない実績を叩きつけて再挑戦の場を自力で作るのが筋というもの。結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。頑張って！！",
+      "text_edits": [
+        {
+          "operation": "replace",
+          "before": "違うか？",
+          "after": "頑張って！！"
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-f01e746c9448e2a34dd6",
+      "issue_number": 122,
+      "draft": "※価値観スライドによるゼロショット仮説\n\n千年の時を越えて残る正倉院宝物の凄みは、単なる異国情緒の珍しさではない。失われずに守り抜かれた厳格な管理規律と、限られた期間しか姿を見せない制約そのものが美の重みを支えている。安易な常設や過剰な観光消費に流さず、この緊張感を保って公開することこそが文化を預かる側の矜持というものだ。違うか？",
+      "final": "千年の時を越えて残る正倉院宝物の凄みは、\n単なる異国情緒の珍しさではない。\n\n失われずに守り抜かれた厳格な管理規律と、\n限られた期間しか姿を見せない制約そのものが美の重みを支えている。\n\n安易な常設や過剰な観光消費に流さず、\nこの緊張感を保って公開することこそが文化を預かる側の矜持というものだ。\n\nhttps://artexhibition.jp/topics/news/20261023-AEJ3026097/",
+      "draft_sha256": "017dc4a63183cd349a1d979e6b8585f6c01e2544b5c5ec7ca554af8176397b74",
+      "final_sha256": "d273f1c3bb3f9c89d9df4fe9837eef087e648fe1252d93685e2664bdd3940ac7",
+      "source_comment_id": 6383150914,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/122#issuecomment-6383150914",
+      "source_snapshot_sha256": "c03d80033dd73cec1380465d405f88572dfb3fb8f0784c39af296c650a5d50bc",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/122#issuecomment-6383152612",
+      "reported_at": "2026-10-24T10:33:12Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "千年の時を越えて残る正倉院宝物の凄みは、単なる異国情緒の珍しさではない。失われずに守り抜かれた厳格な管理規律と、限られた期間しか姿を見せない制約そのものが美の重みを支えている。安易な常設や過剰な観光消費に流さず、この緊張感を保って公開することこそが文化を預かる側の矜持というものだ。違うか？",
+      "normalized_final": "千年の時を越えて残る正倉院宝物の凄みは、単なる異国情緒の珍しさではない。失われずに守り抜かれた厳格な管理規律と、限られた期間しか姿を見せない制約そのものが美の重みを支えている。安易な常設や過剰な観光消費に流さず、この緊張感を保って公開することこそが文化を預かる側の矜持というものだ。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 2,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-2f75ec39376dc51700b2",
+      "issue_number": 121,
+      "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。気候変動を物語に持ち込むとき、単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。だが、環境が不可逆に向きを変えた現実を前提として、人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。恐怖を煽る記号ではなく、変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。違うか？",
+      "final": "気候変動を物語に持ち込むとき、\n単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。\n\nだが、環境が不可逆に向きを変えた現実を前提として、\n人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。\n\n恐怖を煽る記号ではなく、変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。\n\nhttps://www.asahi.com/articles/DA3S16573261.html",
+      "draft_sha256": "075e582a6f3d195d2489b1be3a60f32b793e02a508f385d9cee95e231f3ea5f1",
+      "final_sha256": "7d39758270e7bf010b6de8033a01711359a3d87443fce7e73d5aa3b8d454e601",
+      "source_comment_id": 6383168636,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/121#issuecomment-6383168636",
+      "source_snapshot_sha256": "26c68eaa308e88ea00b53bbe8e081e45b2938573b4277df8f6495322485f4012",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/121#issuecomment-6383170222",
+      "reported_at": "2026-10-24T10:35:10Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "気候変動を物語に持ち込むとき、単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。だが、環境が不可逆に向きを変えた現実を前提として、人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。恐怖を煽る記号ではなく、変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。違うか？",
+      "normalized_final": "気候変動を物語に持ち込むとき、単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。だが、環境が不可逆に向きを変えた現実を前提として、人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。恐怖を煽る記号ではなく、変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-7690924d4b21e28a65c4",
+      "issue_number": 117,
+      "draft": "※価値観スライドによるゼロショット仮説\n\nAIで材料開発や創薬を加速させる試み自体は至極真っ当な道具の運用だ。膨大な探索空間を機械に刈り取らせるのは勝負の定石だろう。だが、効率化の美名に酔って「なぜその解に辿り着いたか」を読み解く人間の鑑識眼まで手放すなら、それは研究の進展ではなく単なる思考の外部委託に過ぎない。浮いた手間で次の仮説を鋭く研ぎ澄まし、不要な筋は即座に切り捨てる撤退基準を持てるかどうかが全てだ。道具に使われて帳尻を合わせるだけの研究に価値はない。違うか？",
+      "final": "AIで材料開発や創薬を加速させる試み自体は至極真っ当な道具の運用だ。\n\n膨大な探索空間を機械に刈り取らせるのは勝負の定石だろう。\n\nだが、効率化の美名に酔って「なぜその解に辿り着いたか」を読み解く人間の鑑識眼まで手放すなら、\nそれは研究の進展ではなく単なる思考の外部委託に過ぎない。\n\n浮いた手間で次の仮説を鋭く研ぎ澄まし、不要な筋は即座に切り捨てる撤退基準を持てるかどうかが全てだ。\n道具に使われて帳尻を合わせるだけでは創造的発想に至るには程遠いだろう。\n\nhttps://www.yomiuri.co.jp/science/20261023-GYT1T00123/",
+      "draft_sha256": "9f9ce3e7883a7f1c136ed81cf60f860fa35ce37ef1dc95299cd4382fc27dc07b",
+      "final_sha256": "4980bc6974ad3edc004e4404909bb32b56ca883bd497d981bb0fc2338e829a48",
+      "source_comment_id": 6383206969,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/117#issuecomment-6383206969",
+      "source_snapshot_sha256": "6b8938e2bb1184064fc0cd44e2ff22547b28af4d0b37c8f3f5da76294aa4c87e",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/117#issuecomment-6383209088",
+      "reported_at": "2026-10-24T10:39:31Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "AIで材料開発や創薬を加速させる試み自体は至極真っ当な道具の運用だ。膨大な探索空間を機械に刈り取らせるのは勝負の定石だろう。だが、効率化の美名に酔って「なぜその解に辿り着いたか」を読み解く人間の鑑識眼まで手放すなら、それは研究の進展ではなく単なる思考の外部委託に過ぎない。浮いた手間で次の仮説を鋭く研ぎ澄まし、不要な筋は即座に切り捨てる撤退基準を持てるかどうかが全てだ。道具に使われて帳尻を合わせるだけの研究に価値はない。違うか？",
+      "normalized_final": "AIで材料開発や創薬を加速させる試み自体は至極真っ当な道具の運用だ。膨大な探索空間を機械に刈り取らせるのは勝負の定石だろう。だが、効率化の美名に酔って「なぜその解に辿り着いたか」を読み解く人間の鑑識眼まで手放すなら、それは研究の進展ではなく単なる思考の外部委託に過ぎない。浮いた手間で次の仮説を鋭く研ぎ澄まし、不要な筋は即座に切り捨てる撤退基準を持てるかどうかが全てだ。道具に使われて帳尻を合わせるだけでは創造的発想に至るには程遠いだろう。",
+      "text_edits": [
+        {
+          "operation": "replace",
+          "before": "の研究",
+          "after": "では創造的発想"
+        },
+        {
+          "operation": "replace",
+          "before": "価値",
+          "after": "至るに"
+        },
+        {
+          "operation": "replace",
+          "before": "な",
+          "after": "程遠"
+        },
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "だろう"
+        },
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 2,
+      "final_paragraphs": 5
+    },
+    {
+      "record_id": "rss-2bbfcbd9d6d70e04150b",
+      "issue_number": 118,
+      "draft": "（価値観スライドによるゼロショット仮説）\n欧州が羨むほどの速度や仕組みを整えたというなら結構な話だが、評価すべきは威勢のいい看板ではなく「誰が責任を取り、問題時にどこで止められるか」の設計だ。手続きの無駄を省いて国内に基盤を残すのは筋の通った攻略法だが、安全管理の負担を現場へ丸投げしただけの加速なら誇るに値しない。制度の格とは、スピードと撤退条件の両立で決まる。違うか？",
+      "final": "欧州が羨むほどの速度や仕組みを整えたというなら結構な話だが、\n評価すべきは威勢のいい看板ではなく「誰が責任を取り、問題時にどこで止められるか」の設計だ。\n\n手続きの無駄を省いて国内に基盤を残すのは筋の通った攻略法だが、安全管理の負担を現場へ丸投げしただけの加速なら誇るに値しない。制度の格とは、スピードと撤退条件の両立で決まる。\n\nhttps://www.nikkei.com/article/DGXZQOUC069OT0W6A001C2000000/",
+      "draft_sha256": "579bc1b81410263e0c253edf37cea2196fd8ea8b60d28efafa2361f6692f0339",
+      "final_sha256": "d3e467ecc827f2c3b6552eba4ce738f06d865ba9ee539a7551b5bbb8569ee41d",
+      "source_comment_id": 6383223559,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/118#issuecomment-6383223559",
+      "source_snapshot_sha256": "e468e4b3795cd89b98a0dfec1d6acf508baf31cb1e08db3d21b7c7bebd19d020",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/118#issuecomment-6383225672",
+      "reported_at": "2026-10-24T10:41:22Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "欧州が羨むほどの速度や仕組みを整えたというなら結構な話だが、評価すべきは威勢のいい看板ではなく「誰が責任を取り、問題時にどこで止められるか」の設計だ。手続きの無駄を省いて国内に基盤を残すのは筋の通った攻略法だが、安全管理の負担を現場へ丸投げしただけの加速なら誇るに値しない。制度の格とは、スピードと撤退条件の両立で決まる。違うか？",
+      "normalized_final": "欧州が羨むほどの速度や仕組みを整えたというなら結構な話だが、評価すべきは威勢のいい看板ではなく「誰が責任を取り、問題時にどこで止められるか」の設計だ。手続きの無駄を省いて国内に基盤を残すのは筋の通った攻略法だが、安全管理の負担を現場へ丸投げしただけの加速なら誇るに値しない。制度の格とは、スピードと撤退条件の両立で決まる。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 3
+    },
+    {
+      "record_id": "rss-06ec6beae875ebc93236",
+      "issue_number": 115,
+      "draft": "ゲームを「文化として認めてもらった」などと卑屈に喜ぶ筋合いはない。身体感覚に根ざした操作の面白さと制約の設計を積み上げ、世界中で通じる共通言語へ押し上げた結果、制度側が追認せざるを得なくなっただけの話だ。宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。違うか？",
+      "final": "ゲームを「文化として認めてもらった」などと卑屈に喜ぶ筋合いはない。\n\n身体感覚に根ざした操作の面白さと制約の設計を積み上げ、\n世界中で通じる共通言語へ押し上げた結果、制度側が追認せざるを得なくなっただけの話だ。\n\n宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。\n\nhttps://www.asahi.com/articles/ASVBR03KWVBRPQIP01WM.html",
+      "draft_sha256": "884d69770760d2358e642ad94016a3e4d4f62b8e290cfe9def9b6d866106c074",
+      "final_sha256": "44f2a7c77c8a923524dcce92f2d628938ff255dd0ea7fcb85d737ba308e605ed",
+      "source_comment_id": 6383255192,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/115#issuecomment-6383255192",
+      "source_snapshot_sha256": "209c129da5052ba4ce43e7c76355d30492b4073d3f8f60238b7f74e8b0305674",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/115#issuecomment-6383256559",
+      "reported_at": "2026-10-24T10:44:51Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "ゲームを「文化として認めてもらった」などと卑屈に喜ぶ筋合いはない。身体感覚に根ざした操作の面白さと制約の設計を積み上げ、世界中で通じる共通言語へ押し上げた結果、制度側が追認せざるを得なくなっただけの話だ。宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。違うか？",
+      "normalized_final": "ゲームを「文化として認めてもらった」などと卑屈に喜ぶ筋合いはない。身体感覚に根ざした操作の面白さと制約の設計を積み上げ、世界中で通じる共通言語へ押し上げた結果、制度側が追認せざるを得なくなっただけの話だ。宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-00f50719e41af6cf5417",
+      "issue_number": 113,
+      "draft": "実験政治枠（価値観スライドによるゼロショット仮説）：企業の巨額投資や雇用創出を政治家が華々しくアピールしたところで、額面だけで評価は決まらん。関税圧力や優遇措置で無理に引き出したものなら、歪みのコストは別の誰かが払わされる。手柄の誇示より、持続可能な基盤になるのか、頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。違うか？",
+      "final": "企業の巨額投資や雇用創出を政治家が華々しくアピールしたところで、\n額面だけで評価は決まらんね。\n\n関税圧力や優遇措置で無理に引き出したものなら、\n歪みのコストは別の誰かが払わされる。手柄の誇示より、持続可能な基盤になるのか、\n頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。\n\nhttps://www.reuters.com/jp/economy/TY3FBXDZGZJWPBY3I36PJXF7QM-2026-10-23/",
+      "draft_sha256": "bde7243f75ae0f86e62731efa7c0039e3043fc604b177030e9abec2c702a8832",
+      "final_sha256": "b2f0f9c3aa44bfbf598e05c1a8923dbafb60f193c4cb2404d9646ea3eaebe688",
+      "source_comment_id": 6383281303,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/113#issuecomment-6383281303",
+      "source_snapshot_sha256": "4aa0e225cd9472d8bbe6a4c3c39b8ae1f02373bec5339a301ac798fbb54ddd67",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/113#issuecomment-6383291712",
+      "reported_at": "2026-10-24T10:48:48Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "企業の巨額投資や雇用創出を政治家が華々しくアピールしたところで、額面だけで評価は決まらん。関税圧力や優遇措置で無理に引き出したものなら、歪みのコストは別の誰かが払わされる。手柄の誇示より、持続可能な基盤になるのか、頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。違うか？",
+      "normalized_final": "企業の巨額投資や雇用創出を政治家が華々しくアピールしたところで、額面だけで評価は決まらんね。関税圧力や優遇措置で無理に引き出したものなら、歪みのコストは別の誰かが払わされる。手柄の誇示より、持続可能な基盤になるのか、頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。",
+      "text_edits": [
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "ね"
+        },
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 3
+    },
+    {
+      "record_id": "rss-e61e6fcf8387cc7614dc",
+      "issue_number": 111,
+      "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n投票に行けと声を張る姿勢そのものは否定しないが、ただ箱に紙を入れる行為を促すだけなら単なるお題目で終わる。「誰が何を決めてどう責任を負うのか」を検証する視点がなければ、動員された参加に実質的な価値は残らない。問われるべきは頭数ではなく、有権者が次につながる判断の物差しを持てるかどうだ。違うか？",
+      "final": "投票に行けと声を張る姿勢そのものは否定しないが、\nただ箱に紙を入れる行為を促すだけなら単なるお題目で終わる。\n\n「誰が何を決めてどう責任を負うのか」を検証する視点がなければ、\n動員された参加に実質的な価値は残らない。\n\n問われるべきは頭数ではなく、有権者が次につながる判断の物差しを持てるかどうだ。違うか？\n\nhttps://www.nhk.or.jp/fukushima/info/articles/310/074/04/",
+      "draft_sha256": "ba069e380559199633364fd86b89da1f2e5fcc0cadc0364ab80e844e86e9e5d1",
+      "final_sha256": "0d82a0bbcc629ab7c8fa72e4eefc659105e6edecc27fd2ecbbc2efeba645287f",
+      "source_comment_id": 6383307865,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/111#issuecomment-6383307865",
+      "source_snapshot_sha256": "bd3bfc6fc27bfb64ee52e20eee2d4e6bc481e7fcfec3a657abac070b4c63a13e",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/111#issuecomment-6383310375",
+      "reported_at": "2026-10-24T10:50:54Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "投票に行けと声を張る姿勢そのものは否定しないが、ただ箱に紙を入れる行為を促すだけなら単なるお題目で終わる。「誰が何を決めてどう責任を負うのか」を検証する視点がなければ、動員された参加に実質的な価値は残らない。問われるべきは頭数ではなく、有権者が次につながる判断の物差しを持てるかどうだ。違うか？",
+      "normalized_final": "投票に行けと声を張る姿勢そのものは否定しないが、ただ箱に紙を入れる行為を促すだけなら単なるお題目で終わる。「誰が何を決めてどう責任を負うのか」を検証する視点がなければ、動員された参加に実質的な価値は残らない。問われるべきは頭数ではなく、有権者が次につながる判断の物差しを持てるかどうだ。違うか？",
+      "text_edits": [],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": true,
+      "draft_paragraphs": 2,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-d13e1f16f1e1058efb23",
+      "issue_number": 101,
+      "draft": "3週ぶりに減少したという言葉面だけで一息ついた気になるのは甘い。前年同時期と比べて約2.8倍という水準にある以上、防備を解く理由にはならない。一時的な波の揺らぎで安心を買うのではなく、現実に残るリスクに合わせて構えを保ち続けるのが筋だ。違うか？（※価値観スライドによるゼロショット仮説）",
+      "final": "3週ぶりに減少したという言葉面だけで一息ついた気になるのは甘い。\n\n前年同時期と比べて約2.8倍という水準にある以上、防備を解く理由にはならない。\n\n一時的な波の揺らぎで安心を買うのではなく、現実に残るリスクに合わせて構えを保ち続けるのが肝要だ。\n\nhttps://newsdig.tbs.co.jp/articles/-/3033835",
+      "draft_sha256": "bf5745487be9cdc3e1602edac225221820b15ba5240ae46929e63fc16f0f81dc",
+      "final_sha256": "04bce1518be23d4b1a4a74114f21495ba5e0c7f9819df9ed55635ae421dd0340",
+      "source_comment_id": 6383339632,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/101#issuecomment-6383339632",
+      "source_snapshot_sha256": "ba30b622ae7effddbac1da8fa1424af1b146c836c646c91e9235c658fc16b9f4",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/101#issuecomment-6383341245",
+      "reported_at": "2026-10-24T10:54:25Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "3週ぶりに減少したという言葉面だけで一息ついた気になるのは甘い。前年同時期と比べて約2.8倍という水準にある以上、防備を解く理由にはならない。一時的な波の揺らぎで安心を買うのではなく、現実に残るリスクに合わせて構えを保ち続けるのが筋だ。違うか？",
+      "normalized_final": "3週ぶりに減少したという言葉面だけで一息ついた気になるのは甘い。前年同時期と比べて約2.8倍という水準にある以上、防備を解く理由にはならない。一時的な波の揺らぎで安心を買うのではなく、現実に残るリスクに合わせて構えを保ち続けるのが肝要だ。",
+      "text_edits": [
+        {
+          "operation": "replace",
+          "before": "筋",
+          "after": "肝要"
+        },
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 4
+    },
+    {
+      "record_id": "rss-17ca7f21106d2cf76f67",
+      "issue_number": 93,
+      "draft": "※価値観スライドによるゼロショット仮説\n\n車がなければ生活が成り立たない構造を放置したまま、燃料高の痛みを最も逃げ場のない層に押し付けて平然としているなら、その政治設計は三流だ。代替手段も安全網も整備せず、マクロのツケを末端の生活者に転嫁する態勢を統治とは呼ばない。基盤を守る責任を果たさずに語る大義に、一体どれほどの価値があるというのか。違うか？",
+      "final": "車がなければ生活が成り立たない構造を放置したまま、\n料高の痛みを最も逃げ場のない層に押し付けて平然としているなら、\nその政治設計は三流だ。\n\n代替手段も安全網も整備せず、マクロのツケを末端の生活者に転嫁する態勢を統治とは呼ばない。\n基盤を守る責任を果たさずに語る大義に、一体どれほどの価値があるというのか。\n\nhttps://www.reuters.com/jp/world/us/UCWAR563ZJMXNALXAMTO4KGCYQ-2026-10-23/",
+      "draft_sha256": "1ebe65dfacf1b16ed3286d559766e769581e3893cc4c968b18726468415bccab",
+      "final_sha256": "c0cfad9d927763a0bce117c3f4b08d4378600d99b52b313abae82c4b042b6bd4",
+      "source_comment_id": 6383373659,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/93#issuecomment-6383373659",
+      "source_snapshot_sha256": "116f20e8bfea94635fc64812d37f593dc0265212217afccc6f44d8fdf065b26e",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/93#issuecomment-6383376076",
+      "reported_at": "2026-10-24T10:58:20Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "車がなければ生活が成り立たない構造を放置したまま、燃料高の痛みを最も逃げ場のない層に押し付けて平然としているなら、その政治設計は三流だ。代替手段も安全網も整備せず、マクロのツケを末端の生活者に転嫁する態勢を統治とは呼ばない。基盤を守る責任を果たさずに語る大義に、一体どれほどの価値があるというのか。違うか？",
+      "normalized_final": "車がなければ生活が成り立たない構造を放置したまま、料高の痛みを最も逃げ場のない層に押し付けて平然としているなら、その政治設計は三流だ。代替手段も安全網も整備せず、マクロのツケを末端の生活者に転嫁する態勢を統治とは呼ばない。基盤を守る責任を果たさずに語る大義に、一体どれほどの価値があるというのか。",
+      "text_edits": [
+        {
+          "operation": "delete",
+          "before": "燃",
+          "after": ""
+        },
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 2,
+      "final_paragraphs": 3
+    },
+    {
+      "record_id": "rss-7022d6b20af6e69093db",
+      "issue_number": 79,
+      "draft": "（価値観スライドによるゼロショット仮説）事実関係の検証は前提だが、仮にクラスター弾頭を用いたのなら設計として極めて筋が悪い。後始末のつかない不発弾リスクを未来の非戦闘員へ丸投げして目先の制圧効率を買うなど、手詰まりの責任転嫁に過ぎない。軍事的な必要性を並べ立てようが、第三者に不可逆な負債を押し付ける手法を戦果と呼べる道理はない。違うか？",
+      "final": "事実関係の検証は前提だが、仮にクラスター弾頭を用いたのなら戦略として極めて筋が悪い。\n\n後始末のつかない不発弾リスクを未来の非戦闘員へ丸投げして目先の制圧効率を買うなど、手詰まりの責任転嫁に過ぎない。\n軍事的な必要性を並べ立てようが、第三者に不可逆な負債を押し付ける手法を戦果と呼べる道理はない。\n\nhttps://www.reuters.com/jp/world/ukraine/DEGS66UTJZOVRDROJB6UPA3MOM-2026-10-22/",
+      "draft_sha256": "588ef707040e813d7feab08b8d1deab18b9660e8ba068e7152f9bbc9e30a993b",
+      "final_sha256": "8198a729ed594c906244607f0a0304da889bbcf946c6ae6951b258c465192ef2",
+      "source_comment_id": 6383400568,
+      "source_comment_url": "https://github.com/Xyngwie/-text/issues/79#issuecomment-6383400568",
+      "source_snapshot_sha256": "61ffbc432986c50a11148490cd141cf8cbda745744a9c5d8737ddde32c718f87",
+      "publication_report_url": "https://github.com/Xyngwie/-text/issues/79#issuecomment-6383401779",
+      "reported_at": "2026-10-24T11:01:14Z",
+      "evidence_status": "owner_report_not_independently_fetched",
+      "authorship": "mixed_ai_draft_owner_adopted_and_edited",
+      "normalized_draft": "事実関係の検証は前提だが、仮にクラスター弾頭を用いたのなら設計として極めて筋が悪い。後始末のつかない不発弾リスクを未来の非戦闘員へ丸投げして目先の制圧効率を買うなど、手詰まりの責任転嫁に過ぎない。軍事的な必要性を並べ立てようが、第三者に不可逆な負債を押し付ける手法を戦果と呼べる道理はない。違うか？",
+      "normalized_final": "事実関係の検証は前提だが、仮にクラスター弾頭を用いたのなら戦略として極めて筋が悪い。後始末のつかない不発弾リスクを未来の非戦闘員へ丸投げして目先の制圧効率を買うなど、手詰まりの責任転嫁に過ぎない。軍事的な必要性を並べ立てようが、第三者に不可逆な負債を押し付ける手法を戦果と呼べる道理はない。",
+      "text_edits": [
+        {
+          "operation": "replace",
+          "before": "設計",
+          "after": "戦略"
+        },
+        {
+          "operation": "delete",
+          "before": "違うか？",
+          "after": ""
+        }
+      ],
+      "draft_has_chigauka": true,
+      "final_has_chigauka": false,
+      "draft_paragraphs": 1,
+      "final_paragraphs": 3
+    }
+  ],
+  "selected_example_issues": [
+    125,
+    111,
+    123,
+    117,
+    130,
+    134
+  ],
+  "selection_note": "Manual contrast set: rhetorical question, retained 違うか, encouragement, scope-limited correction, personal context, and unchanged body. Not a frequency sample."
+}

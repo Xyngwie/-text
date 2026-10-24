@@ -129,7 +129,9 @@ def validate(version='v001', root=ROOT):
             assert emap.get(original_episode['episode_id']) == original_episode, 'Historical episode changed'
         parent_split = json.loads(pinned(f'analysis/{parent}/split.json'))
         old_assignment = {sid: g['partition'] for g in parent_split['groups'] for sid in g['segment_ids']}
-        assert old_assignment == {sid: g['partition'] for sid, g in grouped.items()}, 'Historical reserve changed'
+        new_assignment = {sid: g['partition'] for sid, g in grouped.items()}
+        assert old_assignment == {sid: new_assignment.get(sid) for sid in old_assignment}, 'Historical reserve changed'
+        assert set(new_assignment) - set(old_assignment) == set(manifest.get('added_segment_ids', [])), 'Undocumented added segments'
         actual_added = set(emap) - {e['episode_id'] for e in original}
         assert set(manifest['added_episode_ids']) == actual_added, 'Added episode count mismatch'
 

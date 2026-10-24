@@ -405,6 +405,25 @@ class AnalysisTest(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, 'Calibration artifact mismatch'):
             module.validate(version='v039', root=self.root)
 
+    def test_v040_adds_a_source_without_changing_old_reserve(self):
+        result = module.validate(version='v040', root=self.root)
+        self.assertEqual(result['episodes'], 164)
+        manifest = json.loads((self.root / 'analysis/v040/manifest.json').read_text())
+        self.assertEqual(manifest['classified_user_utterances'], 1762)
+        self.assertEqual(len(manifest['added_segment_ids']), 8)
+
+    def test_v040_rejects_changes_to_historical_partition(self):
+        path = self.root / 'analysis/v040/split.json'
+        data = json.loads(path.read_text())
+        group = next(g for g in data['groups'] if g['partition'] == 'reuse_reserve')
+        segment_id = group['segment_ids'].pop()
+        data['groups'][-1]['segment_ids'].append(segment_id)
+        path.write_text(json.dumps(data))
+        # A reserve reassignment must fail, independently of whether it is
+        # detected by partition totals or the historical assignment check.
+        with self.assertRaises(AssertionError):
+            module.validate(version='v040', root=self.root)
+
     def test_excluded_question_cannot_support_finding(self):
         path = self.root / 'analysis/v001/findings.json'
         findings = json.loads(path.read_text())
