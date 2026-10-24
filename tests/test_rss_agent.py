@@ -291,6 +291,15 @@ class IssueFeedbackImportTest(unittest.TestCase):
         self.run_import()
         self.assertEqual(before, self.log.read_bytes())
 
+    def test_natural_short_publication_reports_are_not_final_text(self):
+        sys.path.insert(0, str(ROOT / 'tools'))
+        from import_issue_feedback import comment_parts
+        for text in ['上記投稿しました', '上記投稿しました。', '上記X投稿しました。',
+                     '上記、投稿しました。', '上記のコメントで投稿しました。']:
+            with self.subTest(text=text):
+                self.assertEqual(comment_parts({'body': text}), (None, True, None))
+        self.assertEqual(comment_parts({'body': '上記、まだ投稿していません。'}), (None, False, None))
+
     def test_other_users_posted_report_is_ignored(self):
         final = self.owner_comment(101, '最終版')
         other = self.owner_comment(102, '投稿しました')

@@ -18,8 +18,8 @@ MARKER_RE = re.compile(r"<!-- candidate-id:(rss-[0-9a-f]{20}) -->")
 DRAFT_SHA_RE = re.compile(r"<!-- draft-sha256:([0-9a-f]{64}) -->")
 DRAFT_RE = re.compile(r"## 本人確認前の初稿（強度2\.25）\s+```text\r?\n([\s\S]*?)\r?\n```")
 POST_URL_RE = re.compile(r'https://(?:www\.)?(?:x\.com|twitter\.com)/[^\s/]+/status/\d+(?:\?[^\s]*)?')
-POSTED_RE = re.compile(r'(?:(?:X|Twitter|SNS|ツイッター|エックス)(?:に|へ))?(?:投稿|ポスト)(?:しました|した|したよ|したぞ|しましたよ|済み|済みです)[。.!！\s]*', re.IGNORECASE)
-REPORT_PREFIX_RE = re.compile(r'^(?:上記|上の|直前|先ほど|この)(?:の)?(?:コメント|本文|文章|内容)(?:で|を)[、,\s]*')
+POSTED_RE = re.compile(r'(?:(?:X|Twitter|SNS|ツイッター|エックス)(?:に|へ)?)?(?:投稿|ポスト)(?:しました|した|したよ|したぞ|しましたよ|済み|済みです)[。.!！\s]*', re.IGNORECASE)
+REPORT_PREFIX_RE = re.compile(r'^(?:上記|上の|直前|先ほど|この)(?:の)?(?:(?:コメント|本文|文章|内容)(?:で|を))?[、,\s]*')
 
 
 def fail(message):
