@@ -6,6 +6,8 @@
 sources/
   copilot-001/
     こぴちーお引越し.txt
+  copilot-002/
+    10月6日以降のこぴちーとの会話.txt
   x-archive-001/
     tweets.zip
   codex-dialogue-001/

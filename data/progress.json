@@ -1,11 +1,11 @@
 {
   "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
   "reviewed_user_utterances": 1762,
-  "total_detected_user_utterances": 1762,
+  "total_detected_user_utterances": 1930,
   "reviewed_through": "codex-dialogue-001:U00081",
-  "next_user_utterance": null,
+  "next_user_utterance": "copilot-002:U00001",
   "last_batch": "B058",
-  "semantic_classification_complete": true,
+  "semantic_classification_complete": false,
   "repository_main_seen": "42ec473ce8765e08006fbdd607e758415dd5a840",
   "unresolved_references": [
     "U00118",
@@ -38,6 +38,16 @@
       "reviewed_user_utterances": 41,
       "unreviewed_user_utterances": 0,
       "semantic_classification_complete": true
+    },
+    "copilot-002": {
+      "assistant": "Copilot",
+      "utterance_counts": {
+        "user": 168,
+        "assistant": 168
+      },
+      "reviewed_user_utterances": 0,
+      "unreviewed_user_utterances": 168,
+      "semantic_classification_complete": false
     }
   }
 }

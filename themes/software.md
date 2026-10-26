@@ -5,7 +5,7 @@
 
 - **確定発言数**: 314件
 - **関連セグメント数**: 121セグメント
-- **未確認候補数**: 0件
+- **未確認候補数**: 12件
 
 ## 1. 文脈確認済み発言（確定分類）
 
@@ -328,4 +328,17 @@
 
 ## 2. 未精査のキーワード候補（仮候補）
 
-（現在、未精査のキーワード候補はありません。）
+| 発言ID | 原文 | 一致語 | 本人発言の冒頭抜粋 |
+|---|---|---|---|
+| copilot-002:U00045 | [L2385–2391](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L2385-L2391) | GitHub, Github | 了解、神宮。 「自宅で再現性のないものは今はいいや」って判断、めちゃくちゃ正しい。 GitHub A.txt プレーン テキスト 今日した、別の話を統合します。 |
+| copilot-002:U00063 | [L3232–3234](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L3232-L3234) | コード | ソフトウェア開発会社って、自分じゃ全くコード書けないけどA2A環境構築して成果は出せる子が来たら歓迎される？ |
+| copilot-002:U00071 | [L3774–3776](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L3774-L3776) | アプリ | ちゃんとログインしてもアプリ版でこぴちーと話すと全然違う感じの受け答えなんだけど、どうなってんの？二重人格？ |
+| copilot-002:U00107 | [L5197–5199](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L5197-L5199) | API | XにもAPIキーあるって知ってた？ |
+| copilot-002:U00111 | [L5437–5439](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L5437-L5439) | GitHub, Github | 僕のアカウント @Xyngwie 自体は公開アカウントだから Github actionsに自動取得させてもいいとは思うんだけど…どっちがお手軽かねえ |
+| copilot-002:U00115 | [L5644–5646](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L5644-L5646) | GitHub, Github | https://github.com/Xyngwie/-text あれ？読みに行けないぽい？ |
+| copilot-002:U00119 | [L5824–5912](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L5824-L5912) | GitHub, Github, コード, JSON | Cursor Automations 設定用 Instructions（指示文） 複数原本への対応：新しいLLMのログを扱うときは 原本の追加手順 を先に読み、data/sources.json と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲・Copilot表記は最初の原本に関する説明。新規レビュー／セグ |
+| copilot-002:U00123 | [L6167–6371](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L6167-L6371) | GitHub, Github, コード, JSON | 解析のやり方は、Grokにお任せして作ってもらったやつ。： 会話ログ構造化・分析作業ガイドライン（自動化エージェント向け基準書） 複数原本への対応：新しいLLMのログを扱うときは 原本の追加手順 を先に読み、data/sources.json と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲・Copilot |
+| copilot-002:U00209 | [L11448–11485](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L11448-L11485) | アプリ | おはこぴちー。こんなメール来たよー。： ✓ e⁠-Tax 証明書の確認とアプリの準備 年末調整の証明書をご確認くだ⁠さい 証明書を確認するための スマートフォン操作のご案内 e⁠-Taxをご利用いただきありがとうございます。 年末調整のための（特定増改築等）住宅借入金等特別控除証明書について、お知らせがあります。スマー |
+| copilot-002:U00235 | [L12919–13026](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L12919-L13026) | GitHub, Github, コード, JSON | # Cursor Automations 設定用 Instructions（指示文） &gt; 複数原本への対応：新しいLLMのログを扱うときは [原本の追加手順](docs/ADDING_CONVERSATIONS.md) を先に読み、\`data/sources.json\` と原本別の進捗を確認する。以下の旧原本名・件数・ |
+| copilot-002:U00237 | [L13101–13362](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L13101-L13362) | GitHub, Github, コード, JSON | # 会話ログ構造化・分析作業ガイドライン（自動化エージェント向け基準書） &gt; 複数原本への対応：新しいLLMのログを扱うときは [原本の追加手順](docs/ADDING_CONVERSATIONS.md) を先に読み、\`data/sources.json\` と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲 |
+| copilot-002:U00239 | [L13373–13438](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L13373-L13438) | GitHub, Github | # テーマ別索引 神宮氏とLLMの対話ログを、出典を区別してテーマ別に参照できるように整理した索引です。 第2段階（文脈精査・セグメント設計）の確定レビュー結果および未精査のキーワード仮候補を反映しています。 ## 進捗サマリ - **検出本人発言総数**: 1,721件 - **文脈確認済み（確定）**: 1,721 |

@@ -23,7 +23,7 @@
     "copilot": 1717
   },
   "reviewed_user_utterances": 1762,
-  "unreviewed_user_utterances": 0,
+  "unreviewed_user_utterances": 168,
   "semantic_classification_complete": true,
   "source_path": "sources/copilot-001/こぴちーお引越し.txt",
   "schema_version": 2,
@@ -79,9 +79,36 @@
       "reviewed_user_utterances": 41,
       "unreviewed_user_utterances": 0,
       "semantic_classification_complete": true
+    },
+    {
+      "source_id": "copilot-002",
+      "path": "sources/copilot-002/10月6日以降のこぴちーとの会話.txt",
+      "assistant": "Copilot",
+      "id_prefix": "copilot-002:",
+      "source_commit": "40e5dc4506d693a8cd7d65862265635773a44a84",
+      "source_blob_sha": "b2456ef75c6d38acc6cf6af340505a7d4f5fccb6",
+      "source_sha256": "2a9ca6bc5e0e4de699aa5d6ab530034609546e6201bdb7cb330f19cdcea85fc0",
+      "speaker_markers": {
+        "あなたの発言": "user",
+        "Copilot の発言": "assistant"
+      },
+      "bytes": 594346,
+      "line_count": 19498,
+      "preamble_lines": [
+        1,
+        6
+      ],
+      "source_url": "https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt",
+      "utterance_counts": {
+        "user": 168,
+        "assistant": 168
+      },
+      "reviewed_user_utterances": 0,
+      "unreviewed_user_utterances": 168,
+      "semantic_classification_complete": false
     }
   ],
-  "unclassified_user_utterances": 0,
+  "unclassified_user_utterances": 117,
   "date_policy": "Unknown: no year inferred from relative or incomplete dates.",
   "parser_caveat": "Exact speaker labels inside pasted text may be mistaken for boundaries; manual review required."
 }

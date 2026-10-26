@@ -27,6 +27,19 @@
         "User": "user",
         "Assistant": "assistant"
       }
+    },
+    {
+      "source_id": "copilot-002",
+      "path": "sources/copilot-002/10月6日以降のこぴちーとの会話.txt",
+      "assistant": "Copilot",
+      "id_prefix": "copilot-002:",
+      "source_commit": "40e5dc4506d693a8cd7d65862265635773a44a84",
+      "source_blob_sha": "b2456ef75c6d38acc6cf6af340505a7d4f5fccb6",
+      "source_sha256": "2a9ca6bc5e0e4de699aa5d6ab530034609546e6201bdb7cb330f19cdcea85fc0",
+      "speaker_markers": {
+        "あなたの発言": "user",
+        "Copilot の発言": "assistant"
+      }
     }
   ]
 }
