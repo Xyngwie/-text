@@ -12,3 +12,5 @@
 登録手順は [会話原典の追加](../../docs/ADDING_CONVERSATIONS.md) を参照。
 
 第一段階の索引・仮分類は完了。[全168件の一覧と確認事項](../../batches/copilot-002/STAGE1.md)を参照。第二段階の文脈精査は未実施。
+
+Copilot側の人物評に対する本人の個別y/n確認は [data/owner_profile_checks.jsonl](../../data/owner_profile_checks.jsonl) に保存する。これは本人の自己認識の確認であり、客観的能力評価や回答全体の承認とは区別する。
