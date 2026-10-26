@@ -3,17 +3,11 @@
 文脈精査がまだ行われておらず、かつキーワード一致による仮テーマ候補も持たない本人発言の一覧です。
 （次回以降のバッチ処理で文脈を精査して分類します）
 
-- **残件数**: 117件（本人発言全1930件中）
-- **対象発言ID範囲**: copilot-002:U00005 〜 copilot-002:U00333
+- **残件数**: 111件（本人発言全1930件中）
+- **対象発言ID範囲**: copilot-002:U00017 〜 copilot-002:U00333
 
 | 発言ID | 原文 | 本人発言の冒頭抜粋 |
 |---|---|---|
-| copilot-002:U00005 | [L177–179](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L177-L179) | じゃあまぁあんまり変わってないんだね。了解了解。 |
-| copilot-002:U00007 | [L205–207](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L205-L207) | スマートフォンと同期するにはどうしたらいいの？ |
-| copilot-002:U00009 | [L288–290](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L288-L290) | なんか、notebookチャットだと同期されないみたいな事を言っていたから、同期が出来るチャットってどうやって開くんだろうと思って。 |
-| copilot-002:U00011 | [L368–370](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L368-L370) | さっきの.MDだけど。 |
-| copilot-002:U00013 | [L439–441](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L439-L441) | 各チャットを全選択してコピーしただけだから、結構不要な情報があると思うんだけど、ちゃんと話題がある発言だけ残せる？ 念のため、元の.MDとは別に出力してほしい。 |
-| copilot-002:U00015 | [L540–542](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L540-L542) | 321万文字あるよ |
 | copilot-002:U00017 | [L618–623](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L618-L623) | 招待 9 月 9、水曜日 |
 | copilot-002:U00023 | [L1286–1289](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L1286-L1289) | いや、僕は面倒くさがりなんだ。 そんな300回もコピペしてらんない。（わがまま） |
 | copilot-002:U00025 | [L1451–1453](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L1451-L1453) | OK,分かったリポジトリに置いて、話題毎に切り出して切り出せた部分は削除していく |

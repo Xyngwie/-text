@@ -3,8 +3,8 @@
 原本リンクには出典ごとの固定コミットと行範囲を使用。
 前後のLLM回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。
 
-- **確定発言数**: 314件
-- **関連セグメント数**: 121セグメント
+- **確定発言数**: 319件
+- **関連セグメント数**: 123セグメント
 - **未確認候補数**: 12件
 
 ## 1. 文脈確認済み発言（確定分類）
@@ -325,6 +325,11 @@
 | codex-dialogue-001:U00057 | [L182–184](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L182-L184) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 今回の成果と次回の検証手順を分ける | general | own | 次回に検証が可能な状態で試行するようお願いするだけですね。成果は成果として成立するかだけを見ます。手戻りして検証可能な方法で差し戻しはしません。 |
 | codex-dialogue-001:U00059 | [L188–190](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L188-L190) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 成果の比較基準を暫定的に挙げる | general | own | 自分が作成した（したであろう）成果と同一かどうか、かな。 |
 | codex-dialogue-001:U00061 | [L194–196](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L194-L196) | [S572: 助けの依頼、成果の成立と手順の検証](../batches/B059.md) | 想定外の成果を目的で検証する | general | own | 作業目標と照らして、その成果が十分であるかどうかを、検証します。目的を達するのに足りれば良し、足りなければそれは差し戻し。 |
+| copilot-002:U00007 | [L205–207](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L205-L207) | [S577: スマートフォンと同期できるチャットを探す](../batches/B060.md) | スマートフォンとの同期方法を尋ねる | general | own | スマートフォンと同期するにはどうしたらいいの？ |
+| copilot-002:U00009 | [L288–290](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L288-L290) | [S577: スマートフォンと同期できるチャットを探す](../batches/B060.md) | 同期できるチャットの開き方を 明確化する | general | own | なんか、notebookチャットだと同期されないみたいな事を言っていたから、同期が出来るチャットってどうやって開くんだろうと思って。 |
+| copilot-002:U00011 | [L368–370](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L368-L370) | [S578: 元ファイルを残して会話ログの整理版を求める](../batches/B060.md) | 保存した会話ファイルへ話題を戻す | general | own | さっきの.MDだけど。 |
+| copilot-002:U00013 | [L439–441](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L439-L441) | [S578: 元ファイルを残して会話ログの整理版を求める](../batches/B060.md) | 原本を保持した別ファイルへの整理を依頼 | general | own | 各チャットを全選択してコピーしただけだから、結構不要な情報があると思うんだけど、ちゃんと話題がある発言だけ残せる？ 念のため、元の.MDとは別に出力してほしい。 |
+| copilot-002:U00015 | [L540–542](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L540-L542) | [S578: 元ファイルを残して会話ログの整理版を求める](../batches/B060.md) | 会話ファイルの規模を伝える | general | own | 321万文字あるよ |
 
 ## 2. 未精査のキーワード候補（仮候補）
 

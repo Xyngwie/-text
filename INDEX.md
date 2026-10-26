@@ -6,9 +6,9 @@
 ## 進捗サマリ
 
 - **検出本人発言総数**: 1,930件
-- **文脈確認済み（確定）**: 1,762件 (91.3%)
-- **未確認発言（残り）**: 168件 (8.7%)
-- **設計済みセグメント数**: 575セグメント
+- **文脈確認済み（確定）**: 1,770件 (91.7%)
+- **未確認発言（残り）**: 160件 (8.3%)
+- **設計済みセグメント数**: 578セグメント
 - **LLM発言総数**: 1,925件
 
 ## テーマ別索引一覧
@@ -19,17 +19,17 @@
 | [国際情勢・外交・紛争](themes/world.md) | 5 | 3 | 2 | [themes/world.md](themes/world.md) |
 | [経済・企業・労働](themes/economy.md) | 159 | 63 | 10 | [themes/economy.md](themes/economy.md) |
 | [社会・事件・情報環境](themes/society.md) | 187 | 82 | 5 | [themes/society.md](themes/society.md) |
-| [AI・対話・エージェント](themes/ai.md) | 170 | 59 | 24 | [themes/ai.md](themes/ai.md) |
-| [開発・ソフトウェア・運用](themes/software.md) | 314 | 121 | 12 | [themes/software.md](themes/software.md) |
+| [AI・対話・エージェント](themes/ai.md) | 178 | 62 | 22 | [themes/ai.md](themes/ai.md) |
+| [開発・ソフトウェア・運用](themes/software.md) | 319 | 123 | 12 | [themes/software.md](themes/software.md) |
 | [測量・土地・登記](themes/survey.md) | 285 | 136 | 13 | [themes/survey.md](themes/survey.md) |
 | [ゲーム・設計・パズル](themes/games.md) | 321 | 114 | 4 | [themes/games.md](themes/games.md) |
 | [ポーカー・確率・戦略](themes/poker.md) | 173 | 62 | 2 | [themes/poker.md](themes/poker.md) |
 | [科学・工学・仕組み](themes/science.md) | 89 | 41 | 6 | [themes/science.md](themes/science.md) |
 | [音楽・表現・文化](themes/culture.md) | 305 | 111 | 5 | [themes/culture.md](themes/culture.md) |
 | [食・街歩き・旅行](themes/food.md) | 74 | 26 | 1 | [themes/food.md](themes/food.md) |
-| [生活・身体・機器](themes/life.md) | 368 | 152 | 7 | [themes/life.md](themes/life.md) |
-| [思考・価値観・自己理解](themes/thinking.md) | 658 | 312 | 18 | [themes/thinking.md](themes/thinking.md) |
-| [未分類・未精査](themes/unclassified.md) | - | - | 117 | [themes/unclassified.md](themes/unclassified.md) |
+| [生活・身体・機器](themes/life.md) | 369 | 153 | 7 | [themes/life.md](themes/life.md) |
+| [思考・価値観・自己理解](themes/thinking.md) | 659 | 313 | 18 | [themes/thinking.md](themes/thinking.md) |
+| [未分類・未精査](themes/unclassified.md) | - | - | 111 | [themes/unclassified.md](themes/unclassified.md) |
 
 ※1つの発言やセグメントに複数テーマが付与される場合があるため、各テーマの確定発言数の合計は確認済み発言数と一致しません。
 

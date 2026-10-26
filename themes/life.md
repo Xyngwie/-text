@@ -3,8 +3,8 @@
 原本リンクには出典ごとの固定コミットと行範囲を使用。
 前後のLLM回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。
 
-- **確定発言数**: 368件
-- **関連セグメント数**: 152セグメント
+- **確定発言数**: 369件
+- **関連セグメント数**: 153セグメント
 - **未確認候補数**: 7件
 
 ## 1. 文脈確認済み発言（確定分類）
@@ -379,6 +379,7 @@
 | codex-dialogue-001:U00051 | [L164–166](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L164-L166) | [S571: 危険への介入、説得の打切り、役割と責務](../batches/B059.md) | 預かる責務では安全側へ寄せる | general | own | その場合は若干安全に振れますね。無事に帰すまでが保護者、引率者の責務と考えます。 |
 | codex-dialogue-001:U00079 | [L248–252](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L248-L252) | [S575: 称賛・再依頼と、成果の良い部分を褒める話し方](../batches/B059.md) | 称賛と再依頼の両方を喜ぶ | general | own | わざわざ言葉にして褒めてもらえると嬉しいよね。 次の依頼があるって事は成果が足りていたから、次も依頼があるということだと捉えます。それも嬉しいことだよね。 |
 | codex-dialogue-001:U00081 | [L256–260](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L256-L260) | [S575: 称賛・再依頼と、成果の良い部分を褒める話し方](../batches/B059.md) | 成果の良い点を褒めると振り返り記録を指示 | general | own | 端的に成果の良い部分を褒めます、あんまり途中経過の努力を褒めることはしないかも。 さて、今夜は一旦この辺で切り上げますので、 会話をまとめてmainへ組み込んでください。 |
+| copilot-002:U00007 | [L205–207](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L205-L207) | [S577: スマートフォンと同期できるチャットを探す](../batches/B060.md) | スマートフォンとの同期方法を尋ねる | general | own | スマートフォンと同期するにはどうしたらいいの？ |
 
 ## 2. 未精査のキーワード候補（仮候補）
 
