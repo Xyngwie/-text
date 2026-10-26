@@ -1,0 +1,2021 @@
+{
+  "stage": 1,
+  "status": "provisional_not_semantically_reviewed",
+  "source_id": "copilot-002",
+  "source_commit": "40e5dc4506d693a8cd7d65862265635773a44a84",
+  "source_sha256": "2a9ca6bc5e0e4de699aa5d6ab530034609546e6201bdb7cb330f19cdcea85fc0",
+  "method": "build_index.hits: literal keyword matches in user-labelled turns; quotations not yet attributed",
+  "user_turns": 168,
+  "assistant_turns": 168,
+  "candidate_turns": 51,
+  "no_keyword_turns": 117,
+  "theme_candidate_counts": {
+    "ai": 24,
+    "culture": 5,
+    "software": 12,
+    "thinking": 18,
+    "economy": 10,
+    "survey": 13,
+    "life": 7,
+    "science": 6,
+    "society": 5,
+    "games": 4,
+    "poker": 2,
+    "world": 2,
+    "politics": 1,
+    "food": 1
+  },
+  "records": [
+    {
+      "id": "copilot-002:U00001",
+      "start_line": 7,
+      "end_line": 13,
+      "body_sha256": "b976a7d56eb1c5cf1e3ee9026c9297409d07ed381cc5376740084d329b51c48f",
+      "previous_id": null,
+      "next_id": "copilot-002:U00002",
+      "theme_candidates": {
+        "ai": [
+          "こぴちー"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00003",
+      "start_line": 59,
+      "end_line": 61,
+      "body_sha256": "eadbeb18bbaa16723216f81e5fd90e8c50c515453616eb9e460c0e4816aaf457",
+      "previous_id": "copilot-002:U00002",
+      "next_id": "copilot-002:U00004",
+      "theme_candidates": {
+        "ai": [
+          "こぴちー"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00005",
+      "start_line": 177,
+      "end_line": 179,
+      "body_sha256": "48d87e7440d74a4c5ed96161acdef5601ee45ecd57f8e3f97fca3a079c719e83",
+      "previous_id": "copilot-002:U00004",
+      "next_id": "copilot-002:U00006",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00007",
+      "start_line": 205,
+      "end_line": 207,
+      "body_sha256": "46d241e54e4ca07be8b1ea42796e3c35d7943e7d11abfc92ad4caafefa55d3c6",
+      "previous_id": "copilot-002:U00006",
+      "next_id": "copilot-002:U00008",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00009",
+      "start_line": 288,
+      "end_line": 290,
+      "body_sha256": "baacc907b4a8bf5b4f6ecd9a04e1281d3420b4f7032111160477c3119a8aee56",
+      "previous_id": "copilot-002:U00008",
+      "next_id": "copilot-002:U00010",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00011",
+      "start_line": 368,
+      "end_line": 370,
+      "body_sha256": "c176e709310f4edcb4d5ff564e639732288ead5263a46ba23da8301b852d3360",
+      "previous_id": "copilot-002:U00010",
+      "next_id": "copilot-002:U00012",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00013",
+      "start_line": 439,
+      "end_line": 441,
+      "body_sha256": "ba4fede258e61d2d7eaaa0bceb7665a2674d3daf1bcc5602051f0e84bac5bd18",
+      "previous_id": "copilot-002:U00012",
+      "next_id": "copilot-002:U00014",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00015",
+      "start_line": 540,
+      "end_line": 542,
+      "body_sha256": "311b99d583964071e54a81c66caedfccf3fc0aa4da1de3d6e59e84d65c1b530f",
+      "previous_id": "copilot-002:U00014",
+      "next_id": "copilot-002:U00016",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00017",
+      "start_line": 618,
+      "end_line": 623,
+      "body_sha256": "cd0075ebe259d993fea4d0a5d898d6f1bd2c526f554eb66423f9190199b7970c",
+      "previous_id": "copilot-002:U00016",
+      "next_id": "copilot-002:U00018",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00018",
+      "start_line": 624,
+      "end_line": 629,
+      "body_sha256": "a109f5fcdd7efeaac4e0cd7063bf8d66acdda9e80440cf040dfed64ed50ede26",
+      "previous_id": "copilot-002:U00017",
+      "next_id": "copilot-002:U00019",
+      "theme_candidates": {
+        "ai": [
+          "AI"
+        ],
+        "culture": [
+          "オタマトーン"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00020",
+      "start_line": 846,
+      "end_line": 851,
+      "body_sha256": "ddcc0451e2ce47d3188f2765d3ca406c1966ccf9a122a52d729d7d9652ced494",
+      "previous_id": "copilot-002:U00019",
+      "next_id": "copilot-002:U00021",
+      "theme_candidates": {
+        "culture": [
+          "歌"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00023",
+      "start_line": 1286,
+      "end_line": 1289,
+      "body_sha256": "12ced182fbecbc74f988dfd3a492c5eb8f97fba0500b24e939af6251b2d784ba",
+      "previous_id": "copilot-002:U00022",
+      "next_id": "copilot-002:U00024",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00025",
+      "start_line": 1451,
+      "end_line": 1453,
+      "body_sha256": "817085ebd5e5a23f278d9bf3379fb0f6c50f94d2a509f00e9629f06c48508731",
+      "previous_id": "copilot-002:U00024",
+      "next_id": "copilot-002:U00026",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00027",
+      "start_line": 1586,
+      "end_line": 1588,
+      "body_sha256": "f6450c88c370a1ee72f4a50b6c94b829cc098e2a3b2c0d58a26b16971205c3b1",
+      "previous_id": "copilot-002:U00026",
+      "next_id": "copilot-002:U00028",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00029",
+      "start_line": 1687,
+      "end_line": 1689,
+      "body_sha256": "51bb671dae6c8837b5590df169b8382b7030d482c3326f760524713b5516fc1c",
+      "previous_id": "copilot-002:U00028",
+      "next_id": "copilot-002:U00030",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00031",
+      "start_line": 1787,
+      "end_line": 1789,
+      "body_sha256": "44fdd48242ada35a5c232355eb5fedc6c2c220f85733cc1fc304c51e8dd47895",
+      "previous_id": "copilot-002:U00030",
+      "next_id": "copilot-002:U00032",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00033",
+      "start_line": 1901,
+      "end_line": 1907,
+      "body_sha256": "dcc5d4fb51eefdff8484684d4230ba65794f1d19fbe7f970afe28c00cf2afcbb",
+      "previous_id": "copilot-002:U00032",
+      "next_id": "copilot-002:U00034",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00035",
+      "start_line": 1991,
+      "end_line": 1993,
+      "body_sha256": "5c61f1f5c675f48f3b64078820964187cdf29b7a32766577eb2529a517ed3999",
+      "previous_id": "copilot-002:U00034",
+      "next_id": "copilot-002:U00036",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00037",
+      "start_line": 2089,
+      "end_line": 2091,
+      "body_sha256": "3b31d1b8653f37842355df84f5bc07467bc2302a6095dce8b367cc35887f2eba",
+      "previous_id": "copilot-002:U00036",
+      "next_id": "copilot-002:U00038",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00039",
+      "start_line": 2150,
+      "end_line": 2152,
+      "body_sha256": "499a5c2ead4a34103387e3f9b30223e1d9be492f42c8d6b32e9db39ad2bd8605",
+      "previous_id": "copilot-002:U00038",
+      "next_id": "copilot-002:U00040",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00041",
+      "start_line": 2207,
+      "end_line": 2209,
+      "body_sha256": "a68d7628cbfffe4271feb46e77980e3815d561b8111aa82d14b0c0e2ffced0dd",
+      "previous_id": "copilot-002:U00040",
+      "next_id": "copilot-002:U00042",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00043",
+      "start_line": 2283,
+      "end_line": 2285,
+      "body_sha256": "94e4b89b00c570efb7fef1440647c2868fd59da3c591d2a8fc8b5bed8b90d0b6",
+      "previous_id": "copilot-002:U00042",
+      "next_id": "copilot-002:U00044",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00045",
+      "start_line": 2385,
+      "end_line": 2391,
+      "body_sha256": "5a44b7b36cfb327ca04de335631ce91874f1e895e8a2499b8c2281048256f325",
+      "previous_id": "copilot-002:U00044",
+      "next_id": "copilot-002:U00046",
+      "theme_candidates": {
+        "software": [
+          "GitHub",
+          "Github"
+        ],
+        "thinking": [
+          "判断"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00047",
+      "start_line": 2521,
+      "end_line": 2537,
+      "body_sha256": "4ace13b5385fa87225a9c8bc8c39dabea4840c28c417d2340da8dd03c96a0657",
+      "previous_id": "copilot-002:U00046",
+      "next_id": "copilot-002:U00048",
+      "theme_candidates": {
+        "economy": [
+          "会社"
+        ],
+        "survey": [
+          "測量",
+          "土地",
+          "調査士"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00049",
+      "start_line": 2582,
+      "end_line": 2600,
+      "body_sha256": "e87c65f0158a7795b9a61317522db3cf5d15926632314179efae679786f85675",
+      "previous_id": "copilot-002:U00048",
+      "next_id": "copilot-002:U00050",
+      "theme_candidates": {
+        "economy": [
+          "会社"
+        ],
+        "survey": [
+          "土地",
+          "調査士"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00051",
+      "start_line": 2632,
+      "end_line": 2634,
+      "body_sha256": "3b773d6f1a67fc037aa0e49346d312cea9d53e58aa9dd1a98e8329da7bc36d7a",
+      "previous_id": "copilot-002:U00050",
+      "next_id": "copilot-002:U00052",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00053",
+      "start_line": 2707,
+      "end_line": 2710,
+      "body_sha256": "df63d269a4769cb5741fb4019771c323eed0573ab673d88dda42ab548a77f1a9",
+      "previous_id": "copilot-002:U00052",
+      "next_id": "copilot-002:U00054",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00055",
+      "start_line": 2742,
+      "end_line": 2744,
+      "body_sha256": "e1ee5807f18d01cc6dd0a9bd3bc15460e6c8a19243fd66a409dec7361c4f1f5c",
+      "previous_id": "copilot-002:U00054",
+      "next_id": "copilot-002:U00056",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00057",
+      "start_line": 2876,
+      "end_line": 2878,
+      "body_sha256": "4ec310675eedf598647eb5502c5b2b6ab8238b041a5a2ebc1122c77aa503ced8",
+      "previous_id": "copilot-002:U00056",
+      "next_id": "copilot-002:U00058",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00059",
+      "start_line": 2986,
+      "end_line": 2988,
+      "body_sha256": "2992cae31040153dfd984c2d2522c313a8ed5e0709e8f099f063308949fc6e30",
+      "previous_id": "copilot-002:U00058",
+      "next_id": "copilot-002:U00060",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00061",
+      "start_line": 3119,
+      "end_line": 3122,
+      "body_sha256": "0810743441f84ae28190e5315832cdafc517573ba5bdb0b6ce3b0c41d447ab25",
+      "previous_id": "copilot-002:U00060",
+      "next_id": "copilot-002:U00062",
+      "theme_candidates": {
+        "ai": [
+          "LLM"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00063",
+      "start_line": 3232,
+      "end_line": 3234,
+      "body_sha256": "be54fac8e391a5ff0016c9c10958847caeda9a50f05a7603cf7c1c73a9028fca",
+      "previous_id": "copilot-002:U00062",
+      "next_id": "copilot-002:U00064",
+      "theme_candidates": {
+        "economy": [
+          "会社"
+        ],
+        "ai": [
+          "A2A"
+        ],
+        "software": [
+          "コード"
+        ],
+        "thinking": [
+          "自分"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00065",
+      "start_line": 3358,
+      "end_line": 3360,
+      "body_sha256": "c72d6de01297a976678427182bb406eb90aa34154642d6d3310b38969f8b4248",
+      "previous_id": "copilot-002:U00064",
+      "next_id": "copilot-002:U00066",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00067",
+      "start_line": 3515,
+      "end_line": 3517,
+      "body_sha256": "77e58b7dcc4f266c081504a22fd8e6690e979767d22f38d0446c6519e3f4cd56",
+      "previous_id": "copilot-002:U00066",
+      "next_id": "copilot-002:U00068",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00069",
+      "start_line": 3653,
+      "end_line": 3655,
+      "body_sha256": "d58b19896316881474552b35c8f54e296157c8cd7aa9b256e619ed305a9f0a15",
+      "previous_id": "copilot-002:U00068",
+      "next_id": "copilot-002:U00070",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00071",
+      "start_line": 3774,
+      "end_line": 3776,
+      "body_sha256": "82a20ddb3a1ccb82acd4489477f72f1cf867c8f00cfc3b76971903b7065f260c",
+      "previous_id": "copilot-002:U00070",
+      "next_id": "copilot-002:U00072",
+      "theme_candidates": {
+        "ai": [
+          "こぴちー"
+        ],
+        "software": [
+          "アプリ"
+        ],
+        "thinking": [
+          "人格"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00073",
+      "start_line": 3916,
+      "end_line": 3918,
+      "body_sha256": "83a36d5fbbf43e5e82d76afcef0edecaa1754735ce5ffdb78fe747767cbda325",
+      "previous_id": "copilot-002:U00072",
+      "next_id": "copilot-002:U00074",
+      "theme_candidates": {
+        "economy": [
+          "退職"
+        ],
+        "life": [
+          "健康"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00075",
+      "start_line": 4009,
+      "end_line": 4011,
+      "body_sha256": "e5751bd73bb8cc1ca6fe1fa5c7c1b2c5c27ee2fb46ae4e1cece9f4f4cbf6b676",
+      "previous_id": "copilot-002:U00074",
+      "next_id": "copilot-002:U00076",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00077",
+      "start_line": 4109,
+      "end_line": 4111,
+      "body_sha256": "e5506517d8f2d8930c8888e35427c1a7c7187a7af86fa031743504a83fd39e73",
+      "previous_id": "copilot-002:U00076",
+      "next_id": "copilot-002:U00078",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00079",
+      "start_line": 4200,
+      "end_line": 4202,
+      "body_sha256": "f679c06e31f918a0197691fe61d7358043cc71a7e03806dc6568328e809ef307",
+      "previous_id": "copilot-002:U00078",
+      "next_id": "copilot-002:U00080",
+      "theme_candidates": {
+        "life": [
+          "健康"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00081",
+      "start_line": 4290,
+      "end_line": 4292,
+      "body_sha256": "628cda18b509fd0acc6b35edb2f1e5deeec991709fde36897aeacf9a2865148f",
+      "previous_id": "copilot-002:U00080",
+      "next_id": "copilot-002:U00082",
+      "theme_candidates": {
+        "thinking": [
+          "自分"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00083",
+      "start_line": 4365,
+      "end_line": 4367,
+      "body_sha256": "615b28ec86223a641805dcae4ca87a0f33f4f75662fb7491229f27f28e0d95ba",
+      "previous_id": "copilot-002:U00082",
+      "next_id": "copilot-002:U00084",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00085",
+      "start_line": 4445,
+      "end_line": 4447,
+      "body_sha256": "f1d6296c8863d84b8cbdbe539135d40d7cf8db4e1c5740e118614dee6f05b3a7",
+      "previous_id": "copilot-002:U00084",
+      "next_id": "copilot-002:U00086",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00087",
+      "start_line": 4517,
+      "end_line": 4519,
+      "body_sha256": "e994a8df10fa3444bf6c97e104cd83a4a253fdaaa3a934cefd7512d16b0e5823",
+      "previous_id": "copilot-002:U00086",
+      "next_id": "copilot-002:U00088",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00089",
+      "start_line": 4558,
+      "end_line": 4562,
+      "body_sha256": "286432bef7e4f1a06f8e05f77a9c989121957f7bd9866efcd56552f40467c4ae",
+      "previous_id": "copilot-002:U00088",
+      "next_id": "copilot-002:U00090",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00091",
+      "start_line": 4639,
+      "end_line": 4641,
+      "body_sha256": "a8a7f8ea31ed0220c7e9688232ea5b64793bbda0502041dfd1bebdde0c20ac3c",
+      "previous_id": "copilot-002:U00090",
+      "next_id": "copilot-002:U00092",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00093",
+      "start_line": 4707,
+      "end_line": 4713,
+      "body_sha256": "de6257af8fabdeec1041bd513d237adc1ca0323d83ce6249011c002ad1769015",
+      "previous_id": "copilot-002:U00092",
+      "next_id": "copilot-002:U00094",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00095",
+      "start_line": 4738,
+      "end_line": 4740,
+      "body_sha256": "471797df2952535a7e4e513aac058eff62c3b9c069aab1fc0da5a9d50276d0aa",
+      "previous_id": "copilot-002:U00094",
+      "next_id": "copilot-002:U00096",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00097",
+      "start_line": 4760,
+      "end_line": 4781,
+      "body_sha256": "b5ca245dbbd690ae5f9d7689da541ca01cf8a60d14358d968cbd135951aa3e85",
+      "previous_id": "copilot-002:U00096",
+      "next_id": "copilot-002:U00098",
+      "theme_candidates": {
+        "economy": [
+          "会社"
+        ],
+        "survey": [
+          "測量",
+          "土地",
+          "調査士"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00099",
+      "start_line": 4826,
+      "end_line": 4828,
+      "body_sha256": "7cb5e0558c07d0745966102b887d956dfded38adeab1387c40044b8af5f4120c",
+      "previous_id": "copilot-002:U00098",
+      "next_id": "copilot-002:U00100",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00101",
+      "start_line": 5024,
+      "end_line": 5026,
+      "body_sha256": "327d349a8dfd59941fdf846fafb4a0baa05bf6d94febf6dd8c43df9b783b4885",
+      "previous_id": "copilot-002:U00100",
+      "next_id": "copilot-002:U00102",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00103",
+      "start_line": 5116,
+      "end_line": 5118,
+      "body_sha256": "1c8a2a282d6583b4146b2c4ad0ad36de4a6c4b8f26a28578525808eed5d0f43b",
+      "previous_id": "copilot-002:U00102",
+      "next_id": "copilot-002:U00104",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00105",
+      "start_line": 5175,
+      "end_line": 5177,
+      "body_sha256": "631a59afcbd16e545250f899a57527b03642af6344948d2c39537cde103661db",
+      "previous_id": "copilot-002:U00104",
+      "next_id": "copilot-002:U00106",
+      "theme_candidates": {
+        "ai": [
+          "こぴちー"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00107",
+      "start_line": 5197,
+      "end_line": 5199,
+      "body_sha256": "b3547c730bb76c9e2fe5a6de0247eba9b8ddb288909ee6d05f2987c110405029",
+      "previous_id": "copilot-002:U00106",
+      "next_id": "copilot-002:U00108",
+      "theme_candidates": {
+        "software": [
+          "API"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00109",
+      "start_line": 5301,
+      "end_line": 5303,
+      "body_sha256": "74a366156032713d1e20a5e8c6ccbc7a646b2376c6c950cf8c5ab36b64b83b35",
+      "previous_id": "copilot-002:U00108",
+      "next_id": "copilot-002:U00110",
+      "theme_candidates": {
+        "ai": [
+          "LLM"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00111",
+      "start_line": 5437,
+      "end_line": 5439,
+      "body_sha256": "4e8c5f875e0dd6a724aacca68981ec6261ee204136f9ee4f3ed1200b5f44d0e0",
+      "previous_id": "copilot-002:U00110",
+      "next_id": "copilot-002:U00112",
+      "theme_candidates": {
+        "software": [
+          "GitHub",
+          "Github"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00113",
+      "start_line": 5548,
+      "end_line": 5550,
+      "body_sha256": "a2154a9bfa40789100062c1715e8907a2e69906e3ca6b946a37b5de1d0d7178c",
+      "previous_id": "copilot-002:U00112",
+      "next_id": "copilot-002:U00114",
+      "theme_candidates": {
+        "thinking": [
+          "人格"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00115",
+      "start_line": 5644,
+      "end_line": 5646,
+      "body_sha256": "e29e370013325d1fe291ccca73b49f4795d3d3c33017edb04655c594ac47a08f",
+      "previous_id": "copilot-002:U00114",
+      "next_id": "copilot-002:U00116",
+      "theme_candidates": {
+        "software": [
+          "GitHub",
+          "Github"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00117",
+      "start_line": 5721,
+      "end_line": 5723,
+      "body_sha256": "2b63845b80500a7ed07870666eca30539297998c35014888d71c7b6cde80a8a0",
+      "previous_id": "copilot-002:U00116",
+      "next_id": "copilot-002:U00118",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00119",
+      "start_line": 5824,
+      "end_line": 5912,
+      "body_sha256": "e77050cb242a285c60b4fb99ebaac13ffab61d9f1eed4b8b371a7b56ff66f140",
+      "previous_id": "copilot-002:U00118",
+      "next_id": "copilot-002:U00120",
+      "theme_candidates": {
+        "ai": [
+          "AI",
+          "LLM",
+          "Copilot",
+          "こぴちー",
+          "エージェント",
+          "プロンプト"
+        ],
+        "software": [
+          "GitHub",
+          "Github",
+          "コード",
+          "JSON"
+        ],
+        "science": [
+          "実験"
+        ],
+        "thinking": [
+          "思考",
+          "構造",
+          "判断",
+          "人格"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00121",
+      "start_line": 6057,
+      "end_line": 6059,
+      "body_sha256": "66c0bc36388c75ab8d410f2c4f3fe71537205250a16a43fe953c6c2d659f5212",
+      "previous_id": "copilot-002:U00120",
+      "next_id": "copilot-002:U00122",
+      "theme_candidates": {
+        "ai": [
+          "AI"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00123",
+      "start_line": 6167,
+      "end_line": 6371,
+      "body_sha256": "d6b7d87c978c0a422d0ef03cbfad1f5290236f84141043b1320416bafccd258e",
+      "previous_id": "copilot-002:U00122",
+      "next_id": "copilot-002:U00124",
+      "theme_candidates": {
+        "economy": [
+          "企業"
+        ],
+        "society": [
+          "報道",
+          "ニュース",
+          "事件"
+        ],
+        "ai": [
+          "AI",
+          "LLM",
+          "Copilot",
+          "こぴちー",
+          "Grok",
+          "エージェント",
+          "プロンプト"
+        ],
+        "software": [
+          "GitHub",
+          "Github",
+          "コード",
+          "JSON"
+        ],
+        "survey": [
+          "測量",
+          "登記"
+        ],
+        "games": [
+          "ゲーム",
+          "盤面"
+        ],
+        "science": [
+          "実験"
+        ],
+        "culture": [
+          "創作"
+        ],
+        "life": [
+          "健康"
+        ],
+        "thinking": [
+          "思考",
+          "価値観",
+          "構造",
+          "判断",
+          "倫理",
+          "人格",
+          "自分"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00125",
+      "start_line": 6426,
+      "end_line": 6428,
+      "body_sha256": "85165193eafa87219c4df0c40b9bcab1b51b9e54a9ea3fee6c75f4be3e8587a8",
+      "previous_id": "copilot-002:U00124",
+      "next_id": "copilot-002:U00126",
+      "theme_candidates": {
+        "ai": [
+          "こぴちー"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00127",
+      "start_line": 6515,
+      "end_line": 6519,
+      "body_sha256": "f25e2d9777aff8885741c7c1172c1eb53e05d3cbd6adf40e91c3ce3048692bf0",
+      "previous_id": "copilot-002:U00126",
+      "next_id": "copilot-002:U00128",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00129",
+      "start_line": 6625,
+      "end_line": 6638,
+      "body_sha256": "3fe7372a2bbf995a9f22957f81023d56e431b95a27da3208081d6041023db353",
+      "previous_id": "copilot-002:U00128",
+      "next_id": "copilot-002:U00130",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00131",
+      "start_line": 6760,
+      "end_line": 6762,
+      "body_sha256": "e4918587053118771688c7ef3cf43b073964ec4c4e3adf185592dd65d7642cc3",
+      "previous_id": "copilot-002:U00130",
+      "next_id": "copilot-002:U00132",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00133",
+      "start_line": 6869,
+      "end_line": 6871,
+      "body_sha256": "9536bb18265aa6c9efab74d260068827dc8666d02a67c6a7e8c176b03322157f",
+      "previous_id": "copilot-002:U00132",
+      "next_id": "copilot-002:U00134",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00135",
+      "start_line": 7005,
+      "end_line": 7007,
+      "body_sha256": "271812549d04674bbfdc7cd9a0a0fa885e68464d210a2dccb717f88026fda6e2",
+      "previous_id": "copilot-002:U00134",
+      "next_id": "copilot-002:U00136",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00137",
+      "start_line": 7094,
+      "end_line": 7114,
+      "body_sha256": "4faebfcded56d21d9cbf6aa2b37fe48edd144550b57dc4d6a2ff30d039249b4b",
+      "previous_id": "copilot-002:U00136",
+      "next_id": "copilot-002:U00138",
+      "theme_candidates": {
+        "economy": [
+          "会社"
+        ],
+        "survey": [
+          "境界",
+          "土地",
+          "筆界",
+          "調査士"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00139",
+      "start_line": 7165,
+      "end_line": 7167,
+      "body_sha256": "28d506c370fc1febdc2f3d3cd484bb70b420963f809afdd6aaf85dc96147d25b",
+      "previous_id": "copilot-002:U00138",
+      "next_id": "copilot-002:U00140",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00141",
+      "start_line": 7237,
+      "end_line": 7239,
+      "body_sha256": "e2914508ae8c7b119639715569e9971d9c2cd1eb4e0e91075510acd2653fd932",
+      "previous_id": "copilot-002:U00140",
+      "next_id": "copilot-002:U00142",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00143",
+      "start_line": 7269,
+      "end_line": 7333,
+      "body_sha256": "05ccac3d7a18c752f16e16f04ead8906decb438549664afd638c20583fb04271",
+      "previous_id": "copilot-002:U00142",
+      "next_id": "copilot-002:U00144",
+      "theme_candidates": {
+        "society": [
+          "差別"
+        ],
+        "ai": [
+          "Copilot"
+        ],
+        "survey": [
+          "境界"
+        ],
+        "games": [
+          "ゲーム"
+        ],
+        "poker": [
+          "ポーカー",
+          "ベット",
+          "GTO"
+        ],
+        "science": [
+          "科学",
+          "数学",
+          "宇宙",
+          "量子",
+          "確率"
+        ],
+        "thinking": [
+          "構造",
+          "判断",
+          "人格",
+          "自分"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00145",
+      "start_line": 7482,
+      "end_line": 7484,
+      "body_sha256": "d193e9947df6828aecce4141ebc3d6b7d633b2b7d135cbbe9f0767dd9329aa06",
+      "previous_id": "copilot-002:U00144",
+      "next_id": "copilot-002:U00146",
+      "theme_candidates": {
+        "thinking": [
+          "人格"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00147",
+      "start_line": 7672,
+      "end_line": 7674,
+      "body_sha256": "3966212eb60d73d560c09444083e5756f2a61ae187d57aa79262a5f3302e9faf",
+      "previous_id": "copilot-002:U00146",
+      "next_id": "copilot-002:U00148",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00149",
+      "start_line": 7830,
+      "end_line": 7832,
+      "body_sha256": "7bd3fc47f3a12437abfc6a9c35e1e5d5d89498f0b6a596186dcccd33d841f956",
+      "previous_id": "copilot-002:U00148",
+      "next_id": "copilot-002:U00150",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00151",
+      "start_line": 7939,
+      "end_line": 7941,
+      "body_sha256": "55c78c1b3b58cdda01bcaf511bf87d40d7927d62ed352401f35491fdca3381b3",
+      "previous_id": "copilot-002:U00150",
+      "next_id": "copilot-002:U00152",
+      "theme_candidates": {
+        "society": [
+          "報道"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00153",
+      "start_line": 8077,
+      "end_line": 8079,
+      "body_sha256": "bf7a717f22dd92bd038015381433b27795454781f9dd950d365a1654dae5b8c8",
+      "previous_id": "copilot-002:U00152",
+      "next_id": "copilot-002:U00154",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00155",
+      "start_line": 8203,
+      "end_line": 8205,
+      "body_sha256": "47ffe12e6ead528052de231eb3ab755731f5f8ea57f06e038b5adbc25cd5147d",
+      "previous_id": "copilot-002:U00154",
+      "next_id": "copilot-002:U00156",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00157",
+      "start_line": 8363,
+      "end_line": 8365,
+      "body_sha256": "f085ae06c2ea92c6e29c262bf415d7baa1533a909af6078c7f96c15cb17fd8e0",
+      "previous_id": "copilot-002:U00156",
+      "next_id": "copilot-002:U00158",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00159",
+      "start_line": 8486,
+      "end_line": 8488,
+      "body_sha256": "34b255c6a4db19f3fa689f1753e77ddac29c8a16e18182a75383b495c18a26f7",
+      "previous_id": "copilot-002:U00158",
+      "next_id": "copilot-002:U00160",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00161",
+      "start_line": 8654,
+      "end_line": 8656,
+      "body_sha256": "5c2cea558800dac2c80c460bb07e19ab88fca479aec251f96efaa9fbc1e4f691",
+      "previous_id": "copilot-002:U00160",
+      "next_id": "copilot-002:U00162",
+      "theme_candidates": {
+        "world": [
+          "ロシア"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00163",
+      "start_line": 8809,
+      "end_line": 8811,
+      "body_sha256": "4a0c0181c1a2ff625168e4f59e5522088f927141cfd0494539d73b122d3b13a1",
+      "previous_id": "copilot-002:U00162",
+      "next_id": "copilot-002:U00164",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00165",
+      "start_line": 8993,
+      "end_line": 8995,
+      "body_sha256": "2f9ff480e621a5d910d1020e91c9419d5ab86c9f187c1eafb40edf45350a6bba",
+      "previous_id": "copilot-002:U00164",
+      "next_id": "copilot-002:U00166",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00167",
+      "start_line": 9142,
+      "end_line": 9144,
+      "body_sha256": "a03b0726851b9651573f3e8389997fb114c67ed5acd8ce63e043b0cc3e142c9d",
+      "previous_id": "copilot-002:U00166",
+      "next_id": "copilot-002:U00168",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00169",
+      "start_line": 9282,
+      "end_line": 9284,
+      "body_sha256": "3aa2fa3bc74d6a3b25db52092c4d49a57cd204dc57321fe567b9488f220d05e8",
+      "previous_id": "copilot-002:U00168",
+      "next_id": "copilot-002:U00170",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00171",
+      "start_line": 9403,
+      "end_line": 9405,
+      "body_sha256": "b9708ef26ddf9a7c6cb1520a4bcec47103bfd383c000b2f00cf458306592179d",
+      "previous_id": "copilot-002:U00170",
+      "next_id": "copilot-002:U00172",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00173",
+      "start_line": 9545,
+      "end_line": 9547,
+      "body_sha256": "43d4109248f19c6f240681ba3fa4e4f5d5a212cfb9f386e097356445e269241e",
+      "previous_id": "copilot-002:U00172",
+      "next_id": "copilot-002:U00174",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00175",
+      "start_line": 9704,
+      "end_line": 9706,
+      "body_sha256": "db44d2d8fa67ee0119011a319307d7db510573246979a55f1abb5a2355b3c146",
+      "previous_id": "copilot-002:U00174",
+      "next_id": "copilot-002:U00176",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00177",
+      "start_line": 9810,
+      "end_line": 9812,
+      "body_sha256": "5e97f57ad3aab78a1f4463526b7fbd99b081c241e226827c8834ce4bff651524",
+      "previous_id": "copilot-002:U00176",
+      "next_id": "copilot-002:U00178",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00179",
+      "start_line": 9902,
+      "end_line": 9904,
+      "body_sha256": "c524db6a63b65345fa9a1fbd998ce5ea397a113e14fad621cb7308c2685231a9",
+      "previous_id": "copilot-002:U00178",
+      "next_id": "copilot-002:U00180",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00181",
+      "start_line": 10032,
+      "end_line": 10034,
+      "body_sha256": "9a348ee26928d8c17b7ad328ae0eea7493ab49c64fae95c86e06c3d7a373a9c8",
+      "previous_id": "copilot-002:U00180",
+      "next_id": "copilot-002:U00182",
+      "theme_candidates": {
+        "life": [
+          "スマホ"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00183",
+      "start_line": 10188,
+      "end_line": 10190,
+      "body_sha256": "06e7fed5cdee1fe773ba3bbf89892c007a63234b7d1574241ec5e23fd267df31",
+      "previous_id": "copilot-002:U00182",
+      "next_id": "copilot-002:U00184",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00185",
+      "start_line": 10333,
+      "end_line": 10335,
+      "body_sha256": "cb60861e6ea9fa08175335c5b4e3b7040c292ef38ac9726a633148ab086a9843",
+      "previous_id": "copilot-002:U00184",
+      "next_id": "copilot-002:U00186",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00187",
+      "start_line": 10402,
+      "end_line": 10404,
+      "body_sha256": "d1cbd11d942a8589cce4d421b096c91f3003b881fa0651d571be13c9bb84ea79",
+      "previous_id": "copilot-002:U00186",
+      "next_id": "copilot-002:U00188",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00189",
+      "start_line": 10521,
+      "end_line": 10523,
+      "body_sha256": "3f0e61d06051efddfb94511cc5709947ac0ab7440bb5585f63a1a9dba64d11d6",
+      "previous_id": "copilot-002:U00188",
+      "next_id": "copilot-002:U00190",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00191",
+      "start_line": 10643,
+      "end_line": 10645,
+      "body_sha256": "6223ce9999b9e12766837b130a515f10cdfc0a4bf011ff37985f7b89273e61a6",
+      "previous_id": "copilot-002:U00190",
+      "next_id": "copilot-002:U00192",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00193",
+      "start_line": 10745,
+      "end_line": 10747,
+      "body_sha256": "952abc5c1acd284de923aaa3b90a4d0ea333fb051890483a4781e99fc6c752f0",
+      "previous_id": "copilot-002:U00192",
+      "next_id": "copilot-002:U00194",
+      "theme_candidates": {
+        "thinking": [
+          "自分"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00195",
+      "start_line": 10842,
+      "end_line": 10844,
+      "body_sha256": "f67f488f896c86f8052534b5ac08803c10a095078a104fa1081c97ae61f89f0b",
+      "previous_id": "copilot-002:U00194",
+      "next_id": "copilot-002:U00196",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00197",
+      "start_line": 10961,
+      "end_line": 10967,
+      "body_sha256": "8698a66b345dd7e2a0e088daf39f4050c5bbeb2703adf7b56edb411be77ec90a",
+      "previous_id": "copilot-002:U00196",
+      "next_id": "copilot-002:U00198",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00199",
+      "start_line": 11075,
+      "end_line": 11077,
+      "body_sha256": "02f1ea642a265b0899480b0df40a920248869598363a4b03069dafc725e4fe0b",
+      "previous_id": "copilot-002:U00198",
+      "next_id": "copilot-002:U00200",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00201",
+      "start_line": 11249,
+      "end_line": 11251,
+      "body_sha256": "e6f026a0a1888864b4346e03b6dfc7f96f82f30f5f22709eea0018c775abbf2f",
+      "previous_id": "copilot-002:U00200",
+      "next_id": "copilot-002:U00202",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00203",
+      "start_line": 11298,
+      "end_line": 11300,
+      "body_sha256": "6901063fd5966ce190230b69f175a4c1ce05f35eaa108071bed5f78b4be4d973",
+      "previous_id": "copilot-002:U00202",
+      "next_id": "copilot-002:U00204",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00205",
+      "start_line": 11352,
+      "end_line": 11354,
+      "body_sha256": "0313832e27546440298ec3d7451a92f078e2b75b034e70c4504bfc25ff36f14c",
+      "previous_id": "copilot-002:U00204",
+      "next_id": "copilot-002:U00206",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00207",
+      "start_line": 11423,
+      "end_line": 11425,
+      "body_sha256": "33a1fc1f3e2d0334cd6454fcde5c6d269a762e5f0133ccf7d68e6d9a943ed2e3",
+      "previous_id": "copilot-002:U00206",
+      "next_id": "copilot-002:U00208",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00209",
+      "start_line": 11448,
+      "end_line": 11485,
+      "body_sha256": "70fb9ea961f59598c1be804e25f671950e496101cf2ed53ef9dcf9456724e365",
+      "previous_id": "copilot-002:U00208",
+      "next_id": "copilot-002:U00210",
+      "theme_candidates": {
+        "ai": [
+          "こぴちー"
+        ],
+        "software": [
+          "アプリ"
+        ],
+        "life": [
+          "スマホ"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00211",
+      "start_line": 11624,
+      "end_line": 11626,
+      "body_sha256": "13ae921cc182de6eb235e4b561a23232391b5699115d8a6c68f4c47c3fe159d2",
+      "previous_id": "copilot-002:U00210",
+      "next_id": "copilot-002:U00212",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00213",
+      "start_line": 11715,
+      "end_line": 11717,
+      "body_sha256": "22b4e0d8e0d70f43ba7af1de8cae2c89c074d09562afdf58afec952ffb019002",
+      "previous_id": "copilot-002:U00212",
+      "next_id": "copilot-002:U00214",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00215",
+      "start_line": 11810,
+      "end_line": 11812,
+      "body_sha256": "53fd3d09ed66e121c5dea4500de1b347e1651100a38631a94a84be28db92c75f",
+      "previous_id": "copilot-002:U00214",
+      "next_id": "copilot-002:U00216",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00217",
+      "start_line": 11870,
+      "end_line": 11872,
+      "body_sha256": "ec43de8f584e68d89014b691fe9a61c9e44b9bb1de2a5df7b9fc5ec14b55a248",
+      "previous_id": "copilot-002:U00216",
+      "next_id": "copilot-002:U00218",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00219",
+      "start_line": 11937,
+      "end_line": 11939,
+      "body_sha256": "82f79fee86d285eecbb3ea5ccfc83db24d89bc5ccfe2f1938f6fe4ac46fe8237",
+      "previous_id": "copilot-002:U00218",
+      "next_id": "copilot-002:U00220",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00221",
+      "start_line": 12009,
+      "end_line": 12011,
+      "body_sha256": "5d6589688ebfcc5507ec37cfd035b0140db6e6f74410eb65dfaa75cd353f0595",
+      "previous_id": "copilot-002:U00220",
+      "next_id": "copilot-002:U00222",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00223",
+      "start_line": 12054,
+      "end_line": 12065,
+      "body_sha256": "8381f58138fba8d484f3a2c71fc4c639b555106ab5c2f8fe4194700b9dd5453a",
+      "previous_id": "copilot-002:U00222",
+      "next_id": "copilot-002:U00224",
+      "theme_candidates": {
+        "ai": [
+          "AI",
+          "エージェント"
+        ],
+        "thinking": [
+          "価値観",
+          "判断"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00225",
+      "start_line": 12203,
+      "end_line": 12205,
+      "body_sha256": "5ca747cee833904416d8604e9a2daf430f06d8ba65bbe274a362ce2af6f2315f",
+      "previous_id": "copilot-002:U00224",
+      "next_id": "copilot-002:U00226",
+      "theme_candidates": {
+        "ai": [
+          "LLM"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00227",
+      "start_line": 12349,
+      "end_line": 12351,
+      "body_sha256": "7b61a921faedae1be7736a0d80bdcf8cce7fcc52b32a539c8d8dd1ffced794ca",
+      "previous_id": "copilot-002:U00226",
+      "next_id": "copilot-002:U00228",
+      "theme_candidates": {
+        "ai": [
+          "LLM",
+          "ChatGPT",
+          "Claude",
+          "エージェント"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00229",
+      "start_line": 12504,
+      "end_line": 12506,
+      "body_sha256": "cfca447a656c78c3942f942ec199a3b2ee2dfd2731e0aa68de81745ff0269a6d",
+      "previous_id": "copilot-002:U00228",
+      "next_id": "copilot-002:U00230",
+      "theme_candidates": {
+        "ai": [
+          "LLM"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00231",
+      "start_line": 12652,
+      "end_line": 12656,
+      "body_sha256": "989c8f4082f35c5bcd3878c749976e3d768f263fc2fe662a44d20b6414ac7349",
+      "previous_id": "copilot-002:U00230",
+      "next_id": "copilot-002:U00232",
+      "theme_candidates": {
+        "ai": [
+          "エージェント"
+        ],
+        "thinking": [
+          "価値観",
+          "判断"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00233",
+      "start_line": 12793,
+      "end_line": 12795,
+      "body_sha256": "b189bd16d77ee331025c24f6c99864ece9510aa2be92434252edf2ad19006b0b",
+      "previous_id": "copilot-002:U00232",
+      "next_id": "copilot-002:U00234",
+      "theme_candidates": {
+        "thinking": [
+          "自分"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00235",
+      "start_line": 12919,
+      "end_line": 13026,
+      "body_sha256": "8b4445aa14b9f7463fe49388ebd1bb33ecdd6165c526c2fe67f92e2161ff0d51",
+      "previous_id": "copilot-002:U00234",
+      "next_id": "copilot-002:U00236",
+      "theme_candidates": {
+        "ai": [
+          "AI",
+          "LLM",
+          "Copilot",
+          "こぴちー",
+          "エージェント",
+          "プロンプト"
+        ],
+        "software": [
+          "GitHub",
+          "Github",
+          "コード",
+          "JSON"
+        ],
+        "science": [
+          "実験"
+        ],
+        "thinking": [
+          "思考",
+          "構造",
+          "判断",
+          "人格"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00237",
+      "start_line": 13101,
+      "end_line": 13362,
+      "body_sha256": "1a2ad3eb3b954a2ec26bd535966a45588c75bf28b02a4cfd60043b9d0792db83",
+      "previous_id": "copilot-002:U00236",
+      "next_id": "copilot-002:U00238",
+      "theme_candidates": {
+        "economy": [
+          "企業"
+        ],
+        "society": [
+          "報道",
+          "ニュース",
+          "事件"
+        ],
+        "ai": [
+          "AI",
+          "LLM",
+          "Copilot",
+          "こぴちー",
+          "エージェント",
+          "プロンプト"
+        ],
+        "software": [
+          "GitHub",
+          "Github",
+          "コード",
+          "JSON"
+        ],
+        "survey": [
+          "測量",
+          "登記"
+        ],
+        "games": [
+          "ゲーム",
+          "盤面"
+        ],
+        "science": [
+          "実験"
+        ],
+        "culture": [
+          "創作"
+        ],
+        "life": [
+          "健康"
+        ],
+        "thinking": [
+          "思考",
+          "価値観",
+          "構造",
+          "判断",
+          "倫理",
+          "人格",
+          "自分"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00239",
+      "start_line": 13373,
+      "end_line": 13438,
+      "body_sha256": "d1446b78614ef1c784ae10509e6a728d23255a402fa5ff74f619acf9ce087c8e",
+      "previous_id": "copilot-002:U00238",
+      "next_id": "copilot-002:U00240",
+      "theme_candidates": {
+        "politics": [
+          "政治"
+        ],
+        "world": [
+          "外交"
+        ],
+        "economy": [
+          "経済",
+          "企業"
+        ],
+        "society": [
+          "事件"
+        ],
+        "ai": [
+          "AI",
+          "LLM",
+          "Copilot",
+          "こぴちー",
+          "エージェント"
+        ],
+        "software": [
+          "GitHub",
+          "Github"
+        ],
+        "survey": [
+          "測量",
+          "登記",
+          "土地"
+        ],
+        "games": [
+          "ゲーム",
+          "パズル"
+        ],
+        "poker": [
+          "ポーカー"
+        ],
+        "science": [
+          "科学",
+          "確率"
+        ],
+        "culture": [
+          "音楽"
+        ],
+        "food": [
+          "旅行"
+        ],
+        "life": [
+          "身体"
+        ],
+        "thinking": [
+          "思考",
+          "価値観",
+          "判断"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00241",
+      "start_line": 13581,
+      "end_line": 13583,
+      "body_sha256": "ba4ec4ba009162a0720f99af9c248faaefe7db3e5a0567acecb101272ccc1c82",
+      "previous_id": "copilot-002:U00240",
+      "next_id": "copilot-002:U00242",
+      "theme_candidates": {
+        "thinking": [
+          "判断"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00243",
+      "start_line": 13768,
+      "end_line": 13770,
+      "body_sha256": "3e2f57abb73683f098b639ee56ba4eef8dd9708f33973a954a196c320ab5bbc2",
+      "previous_id": "copilot-002:U00242",
+      "next_id": "copilot-002:U00244",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00245",
+      "start_line": 13903,
+      "end_line": 13905,
+      "body_sha256": "4804f6fa7361f2ec67485aa0d1bf0e0e180d0c8b98d5b91e5872e8d3044a2188",
+      "previous_id": "copilot-002:U00244",
+      "next_id": "copilot-002:U00246",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00247",
+      "start_line": 13960,
+      "end_line": 13962,
+      "body_sha256": "ef399fb7caca2ea66dc86f80d5573314dca4f14343564c78e487b80f0185b6b5",
+      "previous_id": "copilot-002:U00246",
+      "next_id": "copilot-002:U00248",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00249",
+      "start_line": 14065,
+      "end_line": 14067,
+      "body_sha256": "01d6eb0363c114ea8bb32b6a211202b58b56f2c8f130be1cdbeac9a4248c669b",
+      "previous_id": "copilot-002:U00248",
+      "next_id": "copilot-002:U00250",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00251",
+      "start_line": 14195,
+      "end_line": 14197,
+      "body_sha256": "aaba7a43e28df8de21c5a5f8b680e4d153d4775098ed920fd771077516150386",
+      "previous_id": "copilot-002:U00250",
+      "next_id": "copilot-002:U00252",
+      "theme_candidates": {
+        "ai": [
+          "AI"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00253",
+      "start_line": 14305,
+      "end_line": 14307,
+      "body_sha256": "f1261e3662946c5237ffda64e4468496351e7e11f6f92e0b888e63a6f8e19b6f",
+      "previous_id": "copilot-002:U00252",
+      "next_id": "copilot-002:U00254",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00255",
+      "start_line": 14338,
+      "end_line": 14340,
+      "body_sha256": "5460504c458a443fd78357ec11808f1d28949676af4d195ccfa7ddaed6737a3d",
+      "previous_id": "copilot-002:U00254",
+      "next_id": "copilot-002:U00256",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00257",
+      "start_line": 14465,
+      "end_line": 14467,
+      "body_sha256": "f35cf26648659665fae9bcfe1ed2a828d2000c1e75109e1f5c011c606ae14543",
+      "previous_id": "copilot-002:U00256",
+      "next_id": "copilot-002:U00258",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00259",
+      "start_line": 14558,
+      "end_line": 14560,
+      "body_sha256": "c8e4cd1c7e1ec4f1d478d3b2019c40d544570e0155a54deb91f478f95cefd873",
+      "previous_id": "copilot-002:U00258",
+      "next_id": "copilot-002:U00260",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00261",
+      "start_line": 14669,
+      "end_line": 14671,
+      "body_sha256": "d8d71ba2cc14a3047b622c708209081f1f68e56e4398fed7c9a519584613a0f2",
+      "previous_id": "copilot-002:U00260",
+      "next_id": "copilot-002:U00262",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00263",
+      "start_line": 14777,
+      "end_line": 14779,
+      "body_sha256": "14fd5d156958b3177f95e6e143983e6a998907b2ed8e3af126d236f2b2e5ada4",
+      "previous_id": "copilot-002:U00262",
+      "next_id": "copilot-002:U00264",
+      "theme_candidates": {
+        "thinking": [
+          "構造"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00265",
+      "start_line": 14891,
+      "end_line": 14893,
+      "body_sha256": "cdb0a047d5b4d96baab9c6804775bf8db2d78617e59776695100af3b4e808df5",
+      "previous_id": "copilot-002:U00264",
+      "next_id": "copilot-002:U00266",
+      "theme_candidates": {
+        "economy": [
+          "退職"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00267",
+      "start_line": 15045,
+      "end_line": 15047,
+      "body_sha256": "726c527ea20720c734993fc89626e720ea0eae2f14cab4ec7a4b0de66ba797f3",
+      "previous_id": "copilot-002:U00266",
+      "next_id": "copilot-002:U00268",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00269",
+      "start_line": 15230,
+      "end_line": 15232,
+      "body_sha256": "49f1d0f0b60c787b280bb265eb2f88dd9f18d9240022e82aba5f5e439030d6a0",
+      "previous_id": "copilot-002:U00268",
+      "next_id": "copilot-002:U00270",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00271",
+      "start_line": 15397,
+      "end_line": 15399,
+      "body_sha256": "f14fbc7355e92f0093931a22f537939abe28ba4bd3872e18d6217b90e54613e2",
+      "previous_id": "copilot-002:U00270",
+      "next_id": "copilot-002:U00272",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00273",
+      "start_line": 15544,
+      "end_line": 15546,
+      "body_sha256": "8587644def2e1c26c57d7c3d39d4da3684c07d4d0a85aeff81ee216af515f072",
+      "previous_id": "copilot-002:U00272",
+      "next_id": "copilot-002:U00274",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00275",
+      "start_line": 15673,
+      "end_line": 15675,
+      "body_sha256": "700cedb4e47ebfb3e239f60468d561b3cb8d05eaf24c64e97c737d80a4796596",
+      "previous_id": "copilot-002:U00274",
+      "next_id": "copilot-002:U00276",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00277",
+      "start_line": 15802,
+      "end_line": 15804,
+      "body_sha256": "2e19d434faf4bbd71609efc8b2be15d7c9869a9f2c974da05e9bc7e21322c7bd",
+      "previous_id": "copilot-002:U00276",
+      "next_id": "copilot-002:U00278",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00279",
+      "start_line": 15914,
+      "end_line": 15916,
+      "body_sha256": "025c95f4dfeacf0bf7d96d8f01fe3dece41f19e2cb39c15b17930c23aa8d9b69",
+      "previous_id": "copilot-002:U00278",
+      "next_id": "copilot-002:U00280",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00281",
+      "start_line": 16073,
+      "end_line": 16075,
+      "body_sha256": "057507d74cea941c72a78bdb5537703f747e50a6f4ef2b52343f996134ee8384",
+      "previous_id": "copilot-002:U00280",
+      "next_id": "copilot-002:U00282",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00283",
+      "start_line": 16209,
+      "end_line": 16211,
+      "body_sha256": "3dc1c08aea50e8fd25a5d3b5b378b4f7c35d6c6b13be4db4816e9a01984ee85c",
+      "previous_id": "copilot-002:U00282",
+      "next_id": "copilot-002:U00284",
+      "theme_candidates": {
+        "ai": [
+          "こぴちー"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00285",
+      "start_line": 16253,
+      "end_line": 16255,
+      "body_sha256": "f64a4854a19a5f869b607fd53a3dcf62d7be7373d9fea4eab86545c97b60933d",
+      "previous_id": "copilot-002:U00284",
+      "next_id": "copilot-002:U00286",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00287",
+      "start_line": 16368,
+      "end_line": 16370,
+      "body_sha256": "27b37e04d701a4e2a00eaf149a9f1e6f902f66f32a165ffe29e2a8f52dc1e4c6",
+      "previous_id": "copilot-002:U00286",
+      "next_id": "copilot-002:U00288",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00289",
+      "start_line": 16463,
+      "end_line": 16465,
+      "body_sha256": "60cd3f64b86879486e1e7986536e0bac07a3413ca5be5ec8680474b4490effb4",
+      "previous_id": "copilot-002:U00288",
+      "next_id": "copilot-002:U00290",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00291",
+      "start_line": 16547,
+      "end_line": 16549,
+      "body_sha256": "fa6640d32cafed4b249a9b68ac46879ba9f011505edf4c383a75e0d7590f8d64",
+      "previous_id": "copilot-002:U00290",
+      "next_id": "copilot-002:U00292",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00293",
+      "start_line": 16669,
+      "end_line": 16671,
+      "body_sha256": "4e13bc65b2387f2604b850f4e457bd23ad339c086eb1741f78c1b78109c7397b",
+      "previous_id": "copilot-002:U00292",
+      "next_id": "copilot-002:U00294",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00295",
+      "start_line": 16771,
+      "end_line": 16773,
+      "body_sha256": "d3f26d99249cd52b0a38813ba6fd75b1d7c65b03759479b3416d93aa61501d1f",
+      "previous_id": "copilot-002:U00294",
+      "next_id": "copilot-002:U00296",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00297",
+      "start_line": 16911,
+      "end_line": 16913,
+      "body_sha256": "6ec1c6b8add9b183569b9f152890b5cfac0a091cd8e2099cb36c1aef16d3fa26",
+      "previous_id": "copilot-002:U00296",
+      "next_id": "copilot-002:U00298",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00299",
+      "start_line": 17046,
+      "end_line": 17048,
+      "body_sha256": "192bbd3b61208ebc217e3d3f4de699827991ca46064549546ebd871f8bcbc325",
+      "previous_id": "copilot-002:U00298",
+      "next_id": "copilot-002:U00300",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00301",
+      "start_line": 17180,
+      "end_line": 17182,
+      "body_sha256": "d18f0817821b613b374880d9de75fc4372f05bc4de4fecfeb84cb75522314e33",
+      "previous_id": "copilot-002:U00300",
+      "next_id": "copilot-002:U00302",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00303",
+      "start_line": 17304,
+      "end_line": 17306,
+      "body_sha256": "605cb3ad0fcbabed2b9397d04af5e5188cc55a39b80a2903ee18ebdc21fe6fa1",
+      "previous_id": "copilot-002:U00302",
+      "next_id": "copilot-002:U00304",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00305",
+      "start_line": 17429,
+      "end_line": 17431,
+      "body_sha256": "3c72c65333b199a900566766ebce7858bd47667fde50b20d63be856ceed90af6",
+      "previous_id": "copilot-002:U00304",
+      "next_id": "copilot-002:U00306",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00307",
+      "start_line": 17550,
+      "end_line": 17552,
+      "body_sha256": "f46d7e2301c59d8531ac0f3dfb6e272d47d83b8c55387eb806d6f8f285aaf034",
+      "previous_id": "copilot-002:U00306",
+      "next_id": "copilot-002:U00308",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00309",
+      "start_line": 17649,
+      "end_line": 17651,
+      "body_sha256": "efcd375601aa4963324d5937c2b506e53ab12f761cecc92e2a680138eb0306fe",
+      "previous_id": "copilot-002:U00308",
+      "next_id": "copilot-002:U00310",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00311",
+      "start_line": 17745,
+      "end_line": 17747,
+      "body_sha256": "cfd5a204672803aaa4f90f2e0fbd4e21e1a94f4b917573cca0c3800f5bcae1ac",
+      "previous_id": "copilot-002:U00310",
+      "next_id": "copilot-002:U00312",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00313",
+      "start_line": 17866,
+      "end_line": 17868,
+      "body_sha256": "38a080b8e04a0697bcae1f7b173a9be9c269a5082fe88b1a5d1ba0125a6ce1bd",
+      "previous_id": "copilot-002:U00312",
+      "next_id": "copilot-002:U00314",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00315",
+      "start_line": 17996,
+      "end_line": 17998,
+      "body_sha256": "5e2db70f3dd8d0c8c261a0c7615b11b762a3b8e85456e9c32f803c9483049fe4",
+      "previous_id": "copilot-002:U00314",
+      "next_id": "copilot-002:U00316",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00317",
+      "start_line": 18113,
+      "end_line": 18115,
+      "body_sha256": "bb5233a62a8de6cec6455306c5e3a2b5ae5e60ab0c93f4998da97ba4a1aab927",
+      "previous_id": "copilot-002:U00316",
+      "next_id": "copilot-002:U00318",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00319",
+      "start_line": 18223,
+      "end_line": 18225,
+      "body_sha256": "670334a2e279b6f9c1dd4ee68a27dc8cef5fc0cbe8896d163386416e212c4ff6",
+      "previous_id": "copilot-002:U00318",
+      "next_id": "copilot-002:U00320",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00321",
+      "start_line": 18396,
+      "end_line": 18398,
+      "body_sha256": "26d8140bc88871187c30e0a5a036aa1fc8612dc4387980b02e47b4082cde86e0",
+      "previous_id": "copilot-002:U00320",
+      "next_id": "copilot-002:U00322",
+      "theme_candidates": {
+        "survey": [
+          "境界"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00323",
+      "start_line": 18525,
+      "end_line": 18527,
+      "body_sha256": "ed01441a60fabe936ff0d2f0b6c415a233ac353be8d0fd158f48b0f1bba9a563",
+      "previous_id": "copilot-002:U00322",
+      "next_id": "copilot-002:U00324",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00325",
+      "start_line": 18654,
+      "end_line": 18656,
+      "body_sha256": "608c21844cf7b5e74a72b9f05647d7f34bca458f186b2213454e637ab8c8be68",
+      "previous_id": "copilot-002:U00324",
+      "next_id": "copilot-002:U00326",
+      "theme_candidates": {
+        "survey": [
+          "境界",
+          "土地"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00327",
+      "start_line": 18769,
+      "end_line": 18771,
+      "body_sha256": "e8d9628ddd9c4c233494680e80290b631a3a4d71ad2fe3de257b55468902e057",
+      "previous_id": "copilot-002:U00326",
+      "next_id": "copilot-002:U00328",
+      "theme_candidates": {
+        "survey": [
+          "境界"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00329",
+      "start_line": 18918,
+      "end_line": 18920,
+      "body_sha256": "c094e4b2b392e0e30da72ca716d43c2ffbc3eaa4a0b35101bab1b94dc18f011d",
+      "previous_id": "copilot-002:U00328",
+      "next_id": "copilot-002:U00330",
+      "theme_candidates": {
+        "survey": [
+          "測量"
+        ]
+      }
+    },
+    {
+      "id": "copilot-002:U00331",
+      "start_line": 19074,
+      "end_line": 19076,
+      "body_sha256": "20eca206553189d613a43b38b01e21da5d9ffc515fd03c1bd96d9f1856f79a83",
+      "previous_id": "copilot-002:U00330",
+      "next_id": "copilot-002:U00332",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00333",
+      "start_line": 19205,
+      "end_line": 19207,
+      "body_sha256": "c829130eaa098dcc849d972d485e863690f7ca8539c14462cb295ebcf5693fd7",
+      "previous_id": "copilot-002:U00332",
+      "next_id": "copilot-002:U00334",
+      "theme_candidates": {}
+    },
+    {
+      "id": "copilot-002:U00335",
+      "start_line": 19354,
+      "end_line": 19356,
+      "body_sha256": "564bad15377685bc74ee99b3c31bed3f0a340ad3e9b8be45c64fad51a301e819",
+      "previous_id": "copilot-002:U00334",
+      "next_id": "copilot-002:U00336",
+      "theme_candidates": {
+        "survey": [
+          "境界"
+        ]
+      }
+    }
+  ]
+}
