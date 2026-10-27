@@ -483,6 +483,54 @@
           "recorded_date_jst": "2026-10-27"
         }
       ]
+    },
+    {
+      "entry_id": "VD019",
+      "speech_function": "書き言葉での笑い",
+      "question": "書き言葉で笑うとき。「笑」「（笑）」「w」など、使う形・使わない形を教えてください。",
+      "owner_answer_verbatim": "笑\n（笑）\nw\nwww\n※4つ以上は使わない、2つも使わない\n\n極稀に英語文を書く際には\nlol \n:D\n等、文化に合った表記は使う",
+      "used_forms": [
+        "笑",
+        "（笑）",
+        "w",
+        "www"
+      ],
+      "unused_forms": [
+        "ww"
+      ],
+      "conditional_forms": [
+        {
+          "forms": [
+            "lol",
+            ":D"
+          ],
+          "condition": "英語文を書く際",
+          "frequency_owner_report": "極稀",
+          "purpose_owner_report": "文化に合った表記を使う",
+          "notes": "本人の「等」を保持。挙げられていない具体表記を追加したり、日本語文での常用を推定したりしない。"
+        }
+      ],
+      "form_constraints": [
+        {
+          "character": "w",
+          "allowed_repeat_counts": [
+            1,
+            3
+          ],
+          "unused_repeat_counts": [
+            2
+          ],
+          "unused_repeat_count_minimum": 4,
+          "scope": "本人が今回説明した小文字wの連続表記。大文字や他の笑い表記には拡張しない。"
+        }
+      ],
+      "notes": [
+        "wの2個・4個以上は使わないと本人が明示。4個以上は個別文字列の無限列挙ではなくform_constraintsに記録。",
+        "lol・:Dは英語文でごく稀に使う条件付き表記として保存。実測頻度ではない。",
+        "相手別の使い分けや句読点、未提示の表記は未確認。"
+      ],
+      "answer_source": "本チャットでの本人回答。独立した会話エクスポートは未登録。",
+      "recorded_date_jst": "2026-10-27"
     }
   ],
   "notation_rules": [
