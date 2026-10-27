@@ -6,9 +6,9 @@
 ## 進捗サマリ
 
 - **検出本人発言総数**: 1,930件
-- **文脈確認済み（確定）**: 1,770件 (91.7%)
-- **未確認発言（残り）**: 160件 (8.3%)
-- **設計済みセグメント数**: 578セグメント
+- **文脈確認済み（確定）**: 1,793件 (92.9%)
+- **未確認発言（残り）**: 137件 (7.1%)
+- **設計済みセグメント数**: 587セグメント
 - **LLM発言総数**: 1,925件
 
 ## テーマ別索引一覧
@@ -17,19 +17,19 @@
 |---|---:|---:|---:|---|
 | [政治・行政・制度](themes/politics.md) | 1 | 1 | 1 | [themes/politics.md](themes/politics.md) |
 | [国際情勢・外交・紛争](themes/world.md) | 5 | 3 | 2 | [themes/world.md](themes/world.md) |
-| [経済・企業・労働](themes/economy.md) | 159 | 63 | 10 | [themes/economy.md](themes/economy.md) |
+| [経済・企業・労働](themes/economy.md) | 160 | 64 | 8 | [themes/economy.md](themes/economy.md) |
 | [社会・事件・情報環境](themes/society.md) | 187 | 82 | 5 | [themes/society.md](themes/society.md) |
-| [AI・対話・エージェント](themes/ai.md) | 178 | 62 | 22 | [themes/ai.md](themes/ai.md) |
-| [開発・ソフトウェア・運用](themes/software.md) | 319 | 123 | 12 | [themes/software.md](themes/software.md) |
-| [測量・土地・登記](themes/survey.md) | 285 | 136 | 13 | [themes/survey.md](themes/survey.md) |
+| [AI・対話・エージェント](themes/ai.md) | 191 | 68 | 20 | [themes/ai.md](themes/ai.md) |
+| [開発・ソフトウェア・運用](themes/software.md) | 330 | 128 | 11 | [themes/software.md](themes/software.md) |
+| [測量・土地・登記](themes/survey.md) | 289 | 139 | 11 | [themes/survey.md](themes/survey.md) |
 | [ゲーム・設計・パズル](themes/games.md) | 321 | 114 | 4 | [themes/games.md](themes/games.md) |
-| [ポーカー・確率・戦略](themes/poker.md) | 173 | 62 | 2 | [themes/poker.md](themes/poker.md) |
-| [科学・工学・仕組み](themes/science.md) | 89 | 41 | 6 | [themes/science.md](themes/science.md) |
-| [音楽・表現・文化](themes/culture.md) | 305 | 111 | 5 | [themes/culture.md](themes/culture.md) |
-| [食・街歩き・旅行](themes/food.md) | 74 | 26 | 1 | [themes/food.md](themes/food.md) |
-| [生活・身体・機器](themes/life.md) | 369 | 153 | 7 | [themes/life.md](themes/life.md) |
-| [思考・価値観・自己理解](themes/thinking.md) | 659 | 313 | 18 | [themes/thinking.md](themes/thinking.md) |
-| [未分類・未精査](themes/unclassified.md) | - | - | 111 | [themes/unclassified.md](themes/unclassified.md) |
+| [ポーカー・確率・戦略](themes/poker.md) | 174 | 63 | 2 | [themes/poker.md](themes/poker.md) |
+| [科学・工学・仕組み](themes/science.md) | 91 | 42 | 6 | [themes/science.md](themes/science.md) |
+| [音楽・表現・文化](themes/culture.md) | 307 | 112 | 3 | [themes/culture.md](themes/culture.md) |
+| [食・街歩き・旅行](themes/food.md) | 77 | 27 | 1 | [themes/food.md](themes/food.md) |
+| [生活・身体・機器](themes/life.md) | 371 | 154 | 7 | [themes/life.md](themes/life.md) |
+| [思考・価値観・自己理解](themes/thinking.md) | 665 | 318 | 17 | [themes/thinking.md](themes/thinking.md) |
+| [未分類・未精査](themes/unclassified.md) | - | - | 94 | [themes/unclassified.md](themes/unclassified.md) |
 
 ※1つの発言やセグメントに複数テーマが付与される場合があるため、各テーマの確定発言数の合計は確認済み発言数と一致しません。
 

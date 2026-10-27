@@ -3,9 +3,9 @@
 原本リンクには出典ごとの固定コミットと行範囲を使用。
 前後のLLM回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。
 
-- **確定発言数**: 305件
-- **関連セグメント数**: 111セグメント
-- **未確認候補数**: 5件
+- **確定発言数**: 307件
+- **関連セグメント数**: 112セグメント
+- **未確認候補数**: 3件
 
 ## 1. 文脈確認済み発言（確定分類）
 
@@ -316,13 +316,13 @@
 | codex-dialogue-001:U00073 | [L230–232](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L230-L232) | [S574: 美意識分の手間を必要十分へ調整し要求で戻す](../batches/B059.md) | 必要十分に絞って反応を見る | general | own | 必要十分を満たすのみで足りるか反応を見ます。 |
 | codex-dialogue-001:U00075 | [L236–238](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L236-L238) | [S574: 美意識分の手間を必要十分へ調整し要求で戻す](../batches/B059.md) | 自分の感想を留保し要求に応じて戻す | general | own | 貰い捨てにされるのは、自分の感想であって、必要な条件だったのだと解釈してクオリティを戻します。 |
 | codex-dialogue-001:U00077 | [L242–244](https://github.com/Xyngwie/-text/blob/70a20f9741c8f3ea6102ca76cc8fe66d4d3e3d54/sources/codex-dialogue-001/conversation.txt#L242-L244) | [S574: 美意識分の手間を必要十分へ調整し要求で戻す](../batches/B059.md) | 美意識の自己満足と承認を述べる | general | own | 自己満足ですね。 さきほどの経過を辿った後に元に戻すように言われたなら、その時始めて認められたように思うかも。 |
+| copilot-002:U00018 | [L624–629](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L624-L629) | [S579: 旧原典を貼り付けて整理を試す](../batches/B061.md) | 旧会話のオタマトーン合唱案を再掲 | general | pasted | 人間には扱いが難しいオタマトーンをAIがコントロールして完璧をちょっと外して大合唱してるのどうかな？ |
+| copilot-002:U00020 | [L846–851](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L846-L851) | [S579: 旧原典を貼り付けて整理を試す](../batches/B061.md) | 旧会話の流行曲への方針を再掲 | general | pasted | やっぱ流行の歌をよりはやく |
 
 ## 2. 未精査のキーワード候補（仮候補）
 
 | 発言ID | 原文 | 一致語 | 本人発言の冒頭抜粋 |
 |---|---|---|---|
-| copilot-002:U00018 | [L624–629](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L624-L629) | オタマトーン | 人間には扱いが難しいオタマトーンをAIがコントロールして完璧をちょっと外して大合唱してるのどうかな？ |
-| copilot-002:U00020 | [L846–851](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L846-L851) | 歌 | やっぱ流行の歌をよりはやく |
 | copilot-002:U00123 | [L6167–6371](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L6167-L6371) | 創作 | 解析のやり方は、Grokにお任せして作ってもらったやつ。： 会話ログ構造化・分析作業ガイドライン（自動化エージェント向け基準書） 複数原本への対応：新しいLLMのログを扱うときは 原本の追加手順 を先に読み、data/sources.json と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲・Copilot |
 | copilot-002:U00237 | [L13101–13362](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L13101-L13362) | 創作 | # 会話ログ構造化・分析作業ガイドライン（自動化エージェント向け基準書） &gt; 複数原本への対応：新しいLLMのログを扱うときは [原本の追加手順](docs/ADDING_CONVERSATIONS.md) を先に読み、\`data/sources.json\` と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲 |
 | copilot-002:U00239 | [L13373–13438](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L13373-L13438) | 音楽 | # テーマ別索引 神宮氏とLLMの対話ログを、出典を区別してテーマ別に参照できるように整理した索引です。 第2段階（文脈精査・セグメント設計）の確定レビュー結果および未精査のキーワード仮候補を反映しています。 ## 進捗サマリ - **検出本人発言総数**: 1,721件 - **文脈確認済み（確定）**: 1,721 |
