@@ -75,3 +75,5 @@
 現在の参照検証は `python3 tools/validate_analysis.py --version v040` で実行できます。過去版も `--version` を切り替えて検証できます。
 
 - [砕けた言い方を含めた口調分析への本人補足](relaxed_voice_clarification.md)：精査済み原典の実例と、今後の拾い方。
+
+- [衛星フライホイール構想](satellite_flywheel_reconstruction.md)：本人提示の再構成対話の要約。逐語原典や技術検証済み資料とは区別。
