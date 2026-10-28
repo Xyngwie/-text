@@ -1,0 +1,1293 @@
+{
+  "batch_id": "XA-4fd16bcb15d1ac0e",
+  "stage": 2,
+  "status": "ai_classified_not_owner_confirmed",
+  "count": 30,
+  "observation": "ゲーム（ディアブロ3）のやり込みや他者とのマルチプレイ調整を行う一方で、土地家屋調査士や法律の用語・実務責任の構造について具体例を挙げながら思考を整理する様子が見られる。",
+  "observation_post_ids": [
+    "1009585366825701376",
+    "1010160374757318658",
+    "1010162020560203776"
+  ],
+  "source_ids": [
+    "x-archive-001"
+  ],
+  "context_post_ids": [
+    "x-archive-001:1005305836497821696",
+    "x-archive-001:1011390024783298560"
+  ],
+  "provenance": {
+    "provider": "Gemini",
+    "requested_model": "auto",
+    "selected_model": "gemini-3.8-flash",
+    "model_version": "gemini-3.8-flash",
+    "usage": {
+      "promptTokenCount": 8210,
+      "candidatesTokenCount": 3180,
+      "totalTokenCount": 12270,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 8210
+        }
+      ],
+      "thoughtsTokenCount": 880,
+      "serviceTier": "standard"
+    },
+    "executed_at": "2026-10-28T18:56:43.380486+00:00",
+    "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+    "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+    "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+    "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+    "execution_actor": "Xyngwie",
+    "executor": "github-actions"
+  },
+  "reviews": [
+    {
+      "post_id": "1005306736347996160",
+      "source_id": "x-archive-001",
+      "text_sha256": "974cd51cb43f4c7d82770c340b6876266db899015b705f2611b14a15ac15c93a",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "返信相手に対する確認・問いかけ",
+      "review_note": "対象の文脈が会話相手との間でのみ共有されており具体的な対象物は不明",
+      "evidence_quote": "ついに現行型？",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1005323572988895233",
+      "source_id": "x-archive-001",
+      "text_sha256": "7f4f391fea2d45fcb4216e3b46f6ede09b121e73affc5e2909c366d2e8083c1b",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "自虐を交えた振り返り・共感の表明",
+      "review_note": "咄嗟のトラブルや危険への対処に関するやりとりの一部",
+      "evidence_quote": "咄嗟には身体が動かないですね",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1005323747799154693",
+      "source_id": "x-archive-001",
+      "text_sha256": "1d088c5cbf5d2ea2c2525ced0d7c517827f4612a03d333a9d5c681bf54d4a47e",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "冗談交じりの問いかけ",
+      "review_note": "相手の投稿内容を受けた伏字・疑問の投げかけ",
+      "evidence_quote": "組織…？全身タイｔ…？",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1005622800428646400",
+      "source_id": "x-archive-001",
+      "text_sha256": "edfc7d432cda2489148eff24f694500d07cee4451aea3e24a4f7927a6a1b1aa6",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life",
+        "thinking"
+      ],
+      "speech_act": "親になることへの不安・自己省察の吐露",
+      "review_note": "引用先投稿を踏まえた個人的な所感",
+      "evidence_quote": "親になれる自信がないなあ",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1006031947640946691",
+      "source_id": "x-archive-001",
+      "text_sha256": "157ea0807a918a7debc0e0ae5108b7d77ec3cf6fbdcd747978901de8a3190f64",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "特定の人物と同席・遭遇することへの喜びの表明",
+      "review_note": "「てるみさん」の身元や関係性は不明",
+      "evidence_quote": "今週てるみさんがいる！！嬉しぃぃぃぃぃいん！",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1006176624964857856",
+      "source_id": "x-archive-001",
+      "text_sha256": "2def799e8783583f09dc29666c8109db4b213496353888aa68306e98d4839f68",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games",
+        "thinking"
+      ],
+      "speech_act": "診断結果の共有と知人への興味の表明",
+      "review_note": "精神年齢診断テストの結果のシェア",
+      "evidence_quote": "私の精神年齢は40歳でした",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1006185997778866177",
+      "source_id": "x-archive-001",
+      "text_sha256": "1f112336d38bb63761a6718b168e0f6697e1e9a95847e07e7b9b99e271cba54e",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games",
+        "life"
+      ],
+      "speech_act": "相手の回答に対する判定",
+      "review_note": "事前のクイズや推測に対する返答",
+      "evidence_quote": "はずれ。",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1006377987283881984",
+      "source_id": "x-archive-001",
+      "text_sha256": "7b4d79504a382674907d0d5c81873c5883fe0456716b4aee4668d866a56df3fc",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "food",
+        "life"
+      ],
+      "speech_act": "アイスの好みに関する日常報告",
+      "review_note": "個人的な嗜好の変化の記録",
+      "evidence_quote": "ブラックサンダーアイスが好きです",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1006529688351756288",
+      "source_id": "x-archive-001",
+      "text_sha256": "0dbf31da580bfb1c512b4e3191722a263b0bc0dd73d2c24a9d142b259533e28c",
+      "review_status": "ai_classified",
+      "authorship": "pasted",
+      "theme_confirmed": [
+        "society",
+        "science"
+      ],
+      "speech_act": "地震に関するニュース記事のリポスト",
+      "review_note": "ハフポスト日本版によるスロースリップ観測報道の拡散",
+      "evidence_quote": "千葉沖プレートでスロースリップを観測",
+      "context_status": "repost_external",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1006530976896303104",
+      "source_id": "x-archive-001",
+      "text_sha256": "6d5e24736e49600d46fcf20d46000594c8dab38298fe95111a47274a21253bfe",
+      "review_status": "ai_classified",
+      "authorship": "pasted",
+      "theme_confirmed": [
+        "games"
+      ],
+      "speech_act": "ゲーム攻略・装備に関する他者投稿のリポスト",
+      "review_note": "ディアブロ3の装備ステータスに関する投稿の拡散",
+      "evidence_quote": "#ディアブロ3",
+      "context_status": "repost_external",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1006801704589955072",
+      "source_id": "x-archive-001",
+      "text_sha256": "4be6051100bdd0eda31ca2327c3b1892200efaa768e4cfbc5864434051c77b70",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "家具の使い勝手に関する気付き・愚痴の吐露",
+      "review_note": "白い机で紙を扱う作業のやりづらさについて",
+      "evidence_quote": "資料を折り紙するのには向いてないなぁ",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1008255198760820736",
+      "source_id": "x-archive-001",
+      "text_sha256": "a79fa1b67868923564a3948e1e427545f15f7c633dc2470adef597f96ea63548",
+      "review_status": "ai_classified",
+      "authorship": "pasted",
+      "theme_confirmed": [
+        "culture"
+      ],
+      "speech_act": "地図デザインに関する他者投稿のリポスト",
+      "review_note": "道路だけの地図画像に関する投稿の拡散",
+      "evidence_quote": "道路だけの地図ができたのですが",
+      "context_status": "repost_external",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1009450665037291522",
+      "source_id": "x-archive-001",
+      "text_sha256": "870ce5c307792b1ef2350e6dd08e24ea479eaecf7096c0b23e0a5ac607979ff2",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "複数名に対する冗談・軽口の挨拶",
+      "review_note": "巻き込みリプライに対するフランクな反応",
+      "evidence_quote": "巻き込んで失礼？",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1009585366825701376",
+      "source_id": "x-archive-001",
+      "text_sha256": "c40e04a9a64e7dd17874e66455b093ad21ac3f9a200fce298035b878d770a38d",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games"
+      ],
+      "speech_act": "ゲームデータ初期化の報告とマルチプレイの打診",
+      "review_note": "ディアブロ3と思われるゲームのプレイ状況に関する連絡",
+      "evidence_quote": "一緒に遊んでもらえるだろうか？",
+      "context_status": "mention_without_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1009638595546701824",
+      "source_id": "x-archive-001",
+      "text_sha256": "b8211f21a9a742ac28412d30e48e9741d588cae990c0e9d44808f83a0b14d65b",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games"
+      ],
+      "speech_act": "ゲームプレイ条件の承諾と今後の申請連絡",
+      "review_note": "前投稿に続くゲームマルチプレイに関する調整",
+      "evidence_quote": "条件について了解しました",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1009640966154645504",
+      "source_id": "x-archive-001",
+      "text_sha256": "37720a871d64da3f8fbe6fa7553eb164c728d69724bf733c08da40ef6854c443",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "顔文字による疑問・反応の返答",
+      "review_note": "相手の発言を受けたリアクション",
+      "evidence_quote": "・x・？",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1009688938846404609",
+      "source_id": "x-archive-001",
+      "text_sha256": "2eb4fee69c4e173d4b9a8bab5444fbda6624178b81d1fbe2b73268696dc3f2c5",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games"
+      ],
+      "speech_act": "得意なビルド・クラスに関する説明",
+      "review_note": "ディアブロ3のビルド構成や使用経験についての返答",
+      "evidence_quote": "一番造詣が深いのはDH",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1009998298566909953",
+      "source_id": "x-archive-001",
+      "text_sha256": "7c28412ad2501495901645951bdb9c89b0513d88edca23f8c02ab0166959a1d6",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games",
+        "life"
+      ],
+      "speech_act": "感謝と挨拶の表明",
+      "review_note": "ゲーム仲間等に対する挨拶",
+      "evidence_quote": "ありがとうございます！",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010068396417773569",
+      "source_id": "x-archive-001",
+      "text_sha256": "842643d2a2a575bb3fcb4c3eeb9f78fd6b198fa485ed5860f4846482e3c5766a",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "眠気覚ましの助言",
+      "review_note": "眠気を感じている相手に対する身体的な対処法のアドバイス",
+      "evidence_quote": "耳を引っ張れ",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010150825744691202",
+      "source_id": "x-archive-001",
+      "text_sha256": "fdf2e16d42c0a74809607963701e4d6d4abc69e12d2ed8448beda9d692c15b0f",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "society",
+        "thinking"
+      ],
+      "speech_act": "法律用語の理解に関する疑問・思考の言語化",
+      "review_note": "民法の「動機の錯誤」についての個人的な具体例と解釈の検討",
+      "evidence_quote": "動機の錯誤て用語がよく分からない",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010151478588104704",
+      "source_id": "x-archive-001",
+      "text_sha256": "4de008806bec0136926d4c2e74685fed64cfcb1f7ac9c2ed0b7cd8c333f24e5c",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "society",
+        "thinking"
+      ],
+      "speech_act": "法律用語の解釈に関する思考の整理",
+      "review_note": "「要素の錯誤」についての個人的な理解の言語化",
+      "evidence_quote": "要素の錯誤てのは",
+      "context_status": "parent_available",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010160374757318658",
+      "source_id": "x-archive-001",
+      "text_sha256": "a1b2edebbbc94af8b0990b572ed2c8af4ca19e424224258d4c9351463d900be1",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "society",
+        "survey"
+      ],
+      "speech_act": "土地家屋調査士の実務・法律関係に関する事例の提示",
+      "review_note": "調査士の復代理・立会に関する状況設定",
+      "evidence_quote": "調査士の補助者や使用人である無資格者を復代理人として",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010161173822492674",
+      "source_id": "x-archive-001",
+      "text_sha256": "5563b78a76ff4fe7b9c4d6266fbcbc85868021e78041b37606214012614faf9f",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "society",
+        "survey",
+        "thinking"
+      ],
+      "speech_act": "法律上の責任関係に関する自問・確認",
+      "review_note": "前投稿の状況における代理責任の所在に関する検討",
+      "evidence_quote": "で合ってるかな？",
+      "context_status": "parent_available",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010162020560203776",
+      "source_id": "x-archive-001",
+      "text_sha256": "747722d5e1bb57ca5a40d04670899cb2f73684075d7a49d09f1c0fed6732af56",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "society",
+        "survey",
+        "life"
+      ],
+      "speech_act": "学習内容の実感に関する感想と切り上げの報告",
+      "review_note": "法律や実務知識の勉強に関する進捗・理解度の振り返り",
+      "evidence_quote": "実務ではどんなケースだろうってのが想像もつかない法律とかは全然頭に入ってこねえ",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010488490729996289",
+      "source_id": "x-archive-001",
+      "text_sha256": "89997551a04a914c4cd48581723aac72075978f8c0ff8a1c138a68f2f5edd71a",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "games"
+      ],
+      "speech_act": "ゲームの進行状況と支援への感謝の報告",
+      "review_note": "ディアブロ3のボス戦およびレベルの進捗報告",
+      "evidence_quote": "おかげさまで今日のところはPL5になりました",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010644253381259264",
+      "source_id": "x-archive-001",
+      "text_sha256": "3073a1f799d093381fedb6ce865473808d9c4b7808238b89c8522f9831ec852e",
+      "review_status": "ai_classified",
+      "authorship": "pasted",
+      "theme_confirmed": [
+        "thinking",
+        "life"
+      ],
+      "speech_act": "自己啓発・成功に関する他者投稿のリポスト",
+      "review_note": "Testosterone氏の投稿の拡散",
+      "evidence_quote": "「そこまでやる！？」ってとこまでやれ",
+      "context_status": "repost_external",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010650067949137920",
+      "source_id": "x-archive-001",
+      "text_sha256": "f22998fc4488f81da75ea2f4778cc602a16e5f5a8a15dde011b1423717bf1bab",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life"
+      ],
+      "speech_act": "誕生日祝いと応援の伝達",
+      "review_note": "知人への祝意の表明",
+      "evidence_quote": "たんおめです。応援してるよー！",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010786883066945536",
+      "source_id": "x-archive-001",
+      "text_sha256": "956c3981b8c0b33a23cb20643c156e1899a8abc52725815e4087c4da1b6798d5",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "life",
+        "thinking"
+      ],
+      "speech_act": "実家での近況とブレインストーミングの報告",
+      "review_note": "ノートの写真付きで父の日の帰省状況を投稿",
+      "evidence_quote": "やることなくて閑なのでブレインストーミングしてる…",
+      "context_status": "standalone",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010814025205100544",
+      "source_id": "x-archive-001",
+      "text_sha256": "003c31f994348dc5399ea8a8c3880a2296be80b29fdc04834ff006981647dd16",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "culture"
+      ],
+      "speech_act": "作品例を挙げての質問・確認",
+      "review_note": "相手との話題（ファンタジーや小説等）に合わせた確認",
+      "evidence_quote": "グインサーガとかもちがう？",
+      "context_status": "missing_parent",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    },
+    {
+      "post_id": "1010814283943276544",
+      "source_id": "x-archive-001",
+      "text_sha256": "e4d3905412f235ba71fbecab0fa51269eaee9453fd4c84571110b8b991deaace",
+      "review_status": "ai_classified",
+      "authorship": "own",
+      "theme_confirmed": [
+        "culture"
+      ],
+      "speech_act": "検索結果を踏まえた誤認の自認・報告",
+      "review_note": "直前の質問対象に関する自己解決と訂正",
+      "evidence_quote": "イメージだけでぜーんぜん違ってたわw",
+      "context_status": "parent_available",
+      "batch_id": "XA-4fd16bcb15d1ac0e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8210,
+          "candidatesTokenCount": 3180,
+          "totalTokenCount": 12270,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8210
+            }
+          ],
+          "thoughtsTokenCount": 880,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-10-28T18:56:43.380486+00:00",
+        "prompt_sha256": "aca5a1a0192fdc80024f5be9c2cb73e661883eec049e7ad0b1087f9aaba4b19a",
+        "input_sha256": "20188c0a14c0b6260b7315415e44bf2845e769fc4d8fc2de04333a8a92773e0d",
+        "base_commit": "c055eba4cad6393864b3a4327a89e403c9901515",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/40749686487",
+        "execution_actor": "Xyngwie",
+        "executor": "github-actions"
+      }
+    }
+  ],
+  "remaining": 21348
+}
