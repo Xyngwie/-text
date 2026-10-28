@@ -77,3 +77,5 @@
 - [砕けた言い方を含めた口調分析への本人補足](relaxed_voice_clarification.md)：精査済み原典の実例と、今後の拾い方。
 
 - [衛星フライホイール構想](satellite_flywheel_reconstruction.md)：本人提示の再構成対話の要約。逐語原典や技術検証済み資料とは区別。
+
+- [認知の受肉と人工神](cognition_and_artificial_god.md)：発想・論旨は本人確認済み、口調は再構成につき原典にしない。
