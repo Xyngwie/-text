@@ -3,22 +3,11 @@
 文脈精査がまだ行われておらず、かつキーワード一致による仮テーマ候補も持たない本人発言の一覧です。
 （次回以降のバッチ処理で文脈を精査して分類します）
 
-- **残件数**: 31件（本人発言全1930件中）
-- **対象発言ID範囲**: copilot-002:U00259 〜 copilot-002:U00333
+- **残件数**: 20件（本人発言全1930件中）
+- **対象発言ID範囲**: copilot-002:U00287 〜 copilot-002:U00333
 
 | 発言ID | 原文 | 本人発言の冒頭抜粋 |
 |---|---|---|
-| copilot-002:U00259 | [L14558–14560](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L14558-L14560) | 古巣の器械マンもしつつ、更に掛け持ちするとどうなる？ |
-| copilot-002:U00261 | [L14669–14671](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L14669-L14671) | いっそのこと、夜職のドライバーとか、ホストとか？ |
-| copilot-002:U00267 | [L15045–15047](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L15045-L15047) | 他にはどんなのがあるんだ？ |
-| copilot-002:U00269 | [L15230–15232](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L15230-L15232) | ちゃんと出来ないから練習がてらディーラーでもやるかなぁ。どこも人手不足っぽいし。 |
-| copilot-002:U00271 | [L15397–15399](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L15397-L15399) | 仕事じゃなくて無報酬でディーラーの練習させてくれ、ってどうなんだろ？ |
-| copilot-002:U00273 | [L15544–15546](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L15544-L15546) | いや、それってあんまりお店に得なくない？絶対営業中の卓回させるのは報酬が発生するの？ |
-| copilot-002:U00275 | [L15673–15675](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L15673-L15675) | 店の営業中でも 、 営業行為と関係のない卓が存在しててもいいってこと？ |
-| copilot-002:U00277 | [L15802–15804](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L15802-L15804) | ま、一つの案として、考えとこう。 |
-| copilot-002:U00279 | [L15914–15916](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L15914-L15916) | それが出来るのはスキルなので、案外食うに困らなくなるよな |
-| copilot-002:U00281 | [L16073–16075](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L16073-L16075) | プレイングディーラーって別にやらんでもいいんでしょ？ |
-| copilot-002:U00285 | [L16253–16255](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L16253-L16255) | KINGS取手の店長が神宮寺ってやつなんだけど、知り合いでさ。ちょっと聞いてみよう。 |
 | copilot-002:U00287 | [L16368–16370](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L16368-L16370) | それはさておき、 lets do that ! |
 | copilot-002:U00289 | [L16463–16465](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L16463-L16465) | ああ、いや、 それって大体どんな意味？ 「やったるで～」と「やってやろうやん」 |
 | copilot-002:U00291 | [L16547–16549](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L16547-L16549) | まぁそんな感じね。 常に雑念の中になぜか それ がウロウロしている。こいつだけなぜか英語。(笑) |

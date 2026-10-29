@@ -6,9 +6,9 @@
 ## 進捗サマリ
 
 - **検出本人発言総数**: 1,930件
-- **文脈確認済み（確定）**: 1,891件 (98.0%)
-- **未確認発言（残り）**: 39件 (2.0%)
-- **設計済みセグメント数**: 623セグメント
+- **文脈確認済み（確定）**: 1,905件 (98.7%)
+- **未確認発言（残り）**: 25件 (1.3%)
+- **設計済みセグメント数**: 628セグメント
 - **LLM発言総数**: 1,925件
 
 ## テーマ別索引一覧
@@ -17,19 +17,19 @@
 |---|---:|---:|---:|---|
 | [政治・行政・制度](themes/politics.md) | 5 | 4 | 0 | [themes/politics.md](themes/politics.md) |
 | [国際情勢・外交・紛争](themes/world.md) | 19 | 8 | 0 | [themes/world.md](themes/world.md) |
-| [経済・企業・労働](themes/economy.md) | 175 | 70 | 1 | [themes/economy.md](themes/economy.md) |
+| [経済・企業・労働](themes/economy.md) | 186 | 74 | 0 | [themes/economy.md](themes/economy.md) |
 | [社会・事件・情報環境](themes/society.md) | 206 | 92 | 0 | [themes/society.md](themes/society.md) |
-| [AI・対話・エージェント](themes/ai.md) | 239 | 92 | 1 | [themes/ai.md](themes/ai.md) |
+| [AI・対話・エージェント](themes/ai.md) | 240 | 93 | 0 | [themes/ai.md](themes/ai.md) |
 | [開発・ソフトウェア・運用](themes/software.md) | 362 | 144 | 0 | [themes/software.md](themes/software.md) |
-| [測量・土地・登記](themes/survey.md) | 301 | 144 | 5 | [themes/survey.md](themes/survey.md) |
+| [測量・土地・登記](themes/survey.md) | 302 | 145 | 5 | [themes/survey.md](themes/survey.md) |
 | [ゲーム・設計・パズル](themes/games.md) | 321 | 114 | 0 | [themes/games.md](themes/games.md) |
-| [ポーカー・確率・戦略](themes/poker.md) | 174 | 63 | 0 | [themes/poker.md](themes/poker.md) |
+| [ポーカー・確率・戦略](themes/poker.md) | 182 | 67 | 0 | [themes/poker.md](themes/poker.md) |
 | [科学・工学・仕組み](themes/science.md) | 93 | 43 | 0 | [themes/science.md](themes/science.md) |
 | [音楽・表現・文化](themes/culture.md) | 316 | 117 | 0 | [themes/culture.md](themes/culture.md) |
 | [食・街歩き・旅行](themes/food.md) | 83 | 29 | 0 | [themes/food.md](themes/food.md) |
-| [生活・身体・機器](themes/life.md) | 398 | 164 | 0 | [themes/life.md](themes/life.md) |
-| [思考・価値観・自己理解](themes/thinking.md) | 694 | 336 | 1 | [themes/thinking.md](themes/thinking.md) |
-| [未分類・未精査](themes/unclassified.md) | - | - | 31 | [themes/unclassified.md](themes/unclassified.md) |
+| [生活・身体・機器](themes/life.md) | 405 | 167 | 0 | [themes/life.md](themes/life.md) |
+| [思考・価値観・自己理解](themes/thinking.md) | 699 | 340 | 0 | [themes/thinking.md](themes/thinking.md) |
+| [未分類・未精査](themes/unclassified.md) | - | - | 20 | [themes/unclassified.md](themes/unclassified.md) |
 
 ※1つの発言やセグメントに複数テーマが付与される場合があるため、各テーマの確定発言数の合計は確認済み発言数と一致しません。
 
