@@ -22,8 +22,8 @@
     "user": 1721,
     "copilot": 1717
   },
-  "reviewed_user_utterances": 1905,
-  "unreviewed_user_utterances": 25,
+  "reviewed_user_utterances": 1930,
+  "unreviewed_user_utterances": 0,
   "semantic_classification_complete": true,
   "source_path": "sources/copilot-001/こぴちーお引越し.txt",
   "schema_version": 2,
@@ -103,12 +103,12 @@
         "user": 168,
         "assistant": 168
       },
-      "reviewed_user_utterances": 143,
-      "unreviewed_user_utterances": 25,
-      "semantic_classification_complete": false
+      "reviewed_user_utterances": 168,
+      "unreviewed_user_utterances": 0,
+      "semantic_classification_complete": true
     }
   ],
-  "unclassified_user_utterances": 20,
+  "unclassified_user_utterances": 0,
   "date_policy": "Unknown: no year inferred from relative or incomplete dates.",
   "parser_caveat": "Exact speaker labels inside pasted text may be mistaken for boundaries; manual review required."
 }
