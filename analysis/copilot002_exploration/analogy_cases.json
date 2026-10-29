@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "owner_supplied_illustrative_case_not_observed_event",
+  "status": "exploratory_inventory_owner_example_and_original_evidence",
   "cases": [
     {
       "case_id": "AN001",
@@ -40,6 +40,87 @@
         "部下が常に断れる、奢りに必ず返礼義務が生じる等の現実の条件を本人の説明から補完しない。"
       ],
       "source": "本チャットの本人作例。独立した会話エクスポートは未登録。",
+      "recorded_date_jst": "2026-10-29"
+    },
+    {
+      "case_id": "AN002",
+      "status": "original_owner_utterances",
+      "target_domain": "ポーカーで相手と応酬すること",
+      "borrowed_domain": "会話・チャンバラ",
+      "purpose": "ベットを発言として読み、返しを受けて次の問いを出す。",
+      "limits": [
+        "各アクションと台詞の対応は本人の明示。相手の実際の手札や意図が確定するという意味にはしない。"
+      ],
+      "evidence": [
+        {
+          "utterance_id": "U03227",
+          "quote": "あわよくば、1BBCB（アグレッサーです。）→2BBリレイズ（当たってますよ）→2/3potリレイズ（フラッシュかOESDですかー？）などという会話というかチャンバラしたいんよね",
+          "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L172244",
+          "body_sha256": "9e16516fecb395831ee3984316137babb730276e3d902261283aff8f21a0ac7a"
+        },
+        {
+          "utterance_id": "U03229",
+          "quote": "流石に高ランク帯でもちゃんと話通じる人は少ないね。勝負の場ではあるので殺意高い人が多いわ。（笑）",
+          "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L172369",
+          "body_sha256": "486047aa259876a01c6be02decb6adad1f5736fa1167b52bc9389fd3ce9d4b24"
+        }
+      ],
+      "recorded_date_jst": "2026-10-29"
+    },
+    {
+      "case_id": "AN003",
+      "status": "original_owner_utterances",
+      "target_domain": "純粋戦略と戦術の組み合わせ",
+      "borrowed_domain": "三角形・円・隙間",
+      "purpose": "尖りを弱点、三角形を純粋戦略に対応させ、複数の優れた戦略でも組み合わせに隙間があるのでは、と考えを進める。",
+      "limits": [
+        "本人の視覚的な思考実験。GTOの数学的証明や戦略の優劣の検証結果ではない。"
+      ],
+      "evidence": [
+        {
+          "utterance_id": "U02617",
+          "quote": "三角形の尖っている部分を弱点と捉えて、それを無限回修正すると円になる。つまりこれってGTOを視覚的に捉えるとそうなる。みたいな事を考えたい。",
+          "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L141786",
+          "body_sha256": "c4e5758bb7d80fc2371436304ac71cd3e4c2f9981fade9628acdbf75db25a436"
+        },
+        {
+          "utterance_id": "U02619",
+          "quote": "それでね。純粋戦略って一つの三角形だと思っていて、いくつかの三角形を組み合わせていくのがその人の戦術を形としてあらわしたものになると思うのね。　で、実はみんないくつかの優れた三角形を持っているんだけど、実は優れた三角形同士でもきちんと組み合うものを用意できないので、中心まで隙間が出来ちゃっているんじゃないかなぁと思う訳よ。　それなら一つの純粋戦略の方がきちんと中心を守れるじゃん。って思うって話。",
+          "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L141944",
+          "body_sha256": "331397eee376701e274f9a74c44125a960d493ac8d2512ff4778e8875443affe"
+        }
+      ],
+      "recorded_date_jst": "2026-10-29"
+    },
+    {
+      "case_id": "AN004",
+      "status": "original_owner_utterances",
+      "target_domain": "ベットと応答によるポーカーの取引",
+      "borrowed_domain": "宇宙貿易・売買注文",
+      "purpose": "お買い得という捉え方から宇宙貿易へ進み、ベットは売り注文なのかと対応を問い直す。",
+      "limits": [
+        "対応を検討する問い。Copilotの追加した数値評価や売買モデル全体を本人の確定説にしない。"
+      ],
+      "evidence": [
+        {
+          "utterance_id": "U02575",
+          "quote": "ああ、そっか。　重いのに軽く見える1BBを出すから、少なくともルール上は同額を出さないといけない相手は1BBをコール時点では大変お買い得出来ているわけだ。　でもその後のアクションがそれ以上に歪められるので、通常通りのポット依存の額に対して僕がコールした日には確度が違い過ぎて取られちゃうわけね",
+          "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L139065",
+          "body_sha256": "13d3b647456e9c912e1a65fcf537b74969f206dbbb4c20ddd727235224376e1d"
+        },
+        {
+          "utterance_id": "U02577",
+          "quote": "つまりこれはただの宇宙貿易だったのだ…",
+          "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L139214",
+          "body_sha256": "5303456b7d969ebbb0b7944bdef68ce4e72c6b4f4c8134433a936eba87913e20"
+        },
+        {
+          "utterance_id": "U02579",
+          "quote": "という事はベットは売り注文なのか？",
+          "source_url": "https://github.com/Xyngwie/-text/blob/972b45c4b6eea00b13b8c54fcd9e0d3c185c1f74/%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%8A%E5%BC%95%E8%B6%8A%E3%81%97.txt#L139344",
+          "body_sha256": "f99811bb08f75bd33558e624f38291f28f6498c71277a32469c8a412bb2b7541"
+        }
+      ],
       "recorded_date_jst": "2026-10-29"
     }
   ]
