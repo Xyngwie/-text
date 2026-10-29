@@ -161,5 +161,12 @@
       ],
       "recorded_date_jst": "2026-10-29"
     }
-  ]
+  ],
+  "owner_confirmation": {
+    "recorded_date_jst": "2026-10-29",
+    "source": "本チャット。独立した会話エクスポートは未登録。",
+    "owner_reply_verbatim": "良いね。言葉にするとまさにそんな感じです。",
+    "implementation_request_verbatim": "是非実現しましょう",
+    "scope": "直前の分析に示した、対応関係から次の疑問や見立てへ話を進める説明への同意。各比喩の科学的正しさや普遍的適用への同意ではない。"
+  }
 }
