@@ -1,0 +1,51 @@
+{
+  "status": "exploratory_owner_dialogue_pending",
+  "analysis_id": "copilot002-exploration-01",
+  "base_commit": "87b3d76155aadf3ba4f54a2d7ad79b4b3df487b7",
+  "source_id": "copilot-002",
+  "source_commit": "40e5dc4506d693a8cd7d65862265635773a44a84",
+  "source_sha256": "2a9ca6bc5e0e4de699aa5d6ab530034609546e6201bdb7cb330f19cdcea85fc0",
+  "input_files": {
+    "data/reviews.jsonl": "2490635fbe0d2bcb34764265c75eca952853188d910214b071cb949f84bc2ea6",
+    "data/segments.jsonl": "86200a7d40cb1e4164aefe6c33d455407f6bde6c6d8c49a28d6d4d85506f1933",
+    "data/utterances.jsonl": "fb42af471bb4a19be1e9f727cae9c09a6a2faf857dfc0705669070833b599194",
+    "data/owner_profile_checks.jsonl": "701332372c2b1796ec9dd5deaaf8ef49f5ddac29cce5a24c4fc802f8ace86538",
+    "data/owner_voice_dictionary.json": "4549510afd841b851ab47703284da1c88ab3d2aa7bcf2bd6dcff31f10e4cbd9a",
+    "analysis/relaxed_voice_clarification.md": "96480c037f54319e59475e118d5109518d583da29b34b6302019c220dba2485e"
+  },
+  "evidence_user_ids": [
+    "copilot-002:U00023",
+    "copilot-002:U00027",
+    "copilot-002:U00037",
+    "copilot-002:U00047",
+    "copilot-002:U00091",
+    "copilot-002:U00141",
+    "copilot-002:U00205",
+    "copilot-002:U00207",
+    "copilot-002:U00289",
+    "copilot-002:U00295",
+    "copilot-002:U00307",
+    "copilot-002:U00309",
+    "copilot-002:U00315",
+    "copilot-002:U00317"
+  ],
+  "owner_checks": [
+    "PC003",
+    "PC005"
+  ],
+  "dictionary_entries": [
+    "VD002",
+    "VD007",
+    "VD022",
+    "VD027",
+    "VD029"
+  ],
+  "formal_model_version": "v040",
+  "formal_counts_unchanged": {
+    "episodes": 164,
+    "coded_utterances": 452,
+    "findings": 19
+  },
+  "generation_runtime_changed": false,
+  "unseen_validation": false
+}

@@ -79,3 +79,5 @@
 - [衛星フライホイール構想](satellite_flywheel_reconstruction.md)：本人提示の再構成対話の要約。逐語原典や技術検証済み資料とは区別。
 
 - [認知の受肉と人工神](cognition_and_artificial_god.md)：発想・論旨は本人確認済み、口調は再構成につき原典にしない。
+
+- [追加Copilot原典の第三段階・探索01：砕けた言葉でも、話の中身は手放さない](copilot002_exploration/01_relaxed_but_precise.md)：分類完了後の原典・本人確認・辞書を照合。正式モデルと生成反映は別。
