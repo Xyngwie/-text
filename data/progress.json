@@ -1,10 +1,10 @@
 {
   "source_blob_sha": "81a8da49dbbf40b80bbdb26a5f3d8020ace3e54d",
-  "reviewed_user_utterances": 1866,
+  "reviewed_user_utterances": 1879,
   "total_detected_user_utterances": 1930,
-  "reviewed_through": "copilot-002:U00207",
-  "next_user_utterance": "copilot-002:U00209",
-  "last_batch": "B065",
+  "reviewed_through": "copilot-002:U00233",
+  "next_user_utterance": "copilot-002:U00235",
+  "last_batch": "B066",
   "semantic_classification_complete": false,
   "repository_main_seen": "42ec473ce8765e08006fbdd607e758415dd5a840",
   "unresolved_references": [
@@ -45,8 +45,8 @@
         "user": 168,
         "assistant": 168
       },
-      "reviewed_user_utterances": 104,
-      "unreviewed_user_utterances": 64,
+      "reviewed_user_utterances": 117,
+      "unreviewed_user_utterances": 51,
       "semantic_classification_complete": false
     }
   }
