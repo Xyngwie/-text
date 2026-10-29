@@ -3,22 +3,11 @@
 文脈精査がまだ行われておらず、かつキーワード一致による仮テーマ候補も持たない本人発言の一覧です。
 （次回以降のバッチ処理で文脈を精査して分類します）
 
-- **残件数**: 74件（本人発言全1930件中）
-- **対象発言ID範囲**: copilot-002:U00135 〜 copilot-002:U00333
+- **残件数**: 63件（本人発言全1930件中）
+- **対象発言ID範囲**: copilot-002:U00167 〜 copilot-002:U00333
 
 | 発言ID | 原文 | 本人発言の冒頭抜粋 |
 |---|---|---|
-| copilot-002:U00135 | [L7005–7007](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L7005-L7007) | 仮想デスクトップの切り替えってどうやるんだっけ |
-| copilot-002:U00139 | [L7165–7167](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L7165-L7167) | ていうかセットバックが不要っぽい…は見れば分かるじゃん。いちいち聞くなし。 |
-| copilot-002:U00141 | [L7237–7239](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L7237-L7239) | んや、このままで良いので送りました。 |
-| copilot-002:U00147 | [L7672–7674](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L7672-L7674) | それよりなにより、パリの暴動知ってるかい？ |
-| copilot-002:U00149 | [L7830–7832](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L7830-L7832) | 学生のデモがあったのは、まぁ事実でしょう。で、実際に略奪と放火、破壊活動してるのは誰なの？ |
-| copilot-002:U00153 | [L8077–8079](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L8077-L8079) | 推測で構いませんけれども、暴徒のなかに宗教的左翼はふくまれますか |
-| copilot-002:U00155 | [L8203–8205](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L8203-L8205) | 少なくともこういう事を行うのは右翼ではないわね？ |
-| copilot-002:U00157 | [L8363–8365](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L8363-L8365) | 正直 僕には、誰が何を隠して、誰が暴動を起こして、誰がきっかけを作ったかは重要ではなくて。 |
-| copilot-002:U00159 | [L8486–8488](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L8486-L8488) | これで一番得をするのは誰？ |
-| copilot-002:U00163 | [L8809–8811](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L8809-L8811) | 表立ってそれが分かるようにはしないだろうけど、どこかが支援している可能性がある |
-| copilot-002:U00165 | [L8993–8995](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L8993-L8995) | だから今回の事で第三世界が悪い！って言っている人が的外れだなあと思っている。 |
 | copilot-002:U00167 | [L9142–9144](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9142-L9144) | 僕もイスラム世界の台頭はとても嫌だなぁって思っているけど是々非々で今回は関係ないからね。 |
 | copilot-002:U00169 | [L9282–9284](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9282-L9284) | そうは言っても上手く利用すれば、イスラム世界を抑え込めるきっかけに使えるかもしれないと思っていて。 |
 | copilot-002:U00171 | [L9403–9405](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9403-L9405) | まぁ一旦これはここでおしまい。一応.mdにまとめておいて。 |
