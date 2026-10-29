@@ -20,6 +20,14 @@ POLICY_PATH = ROOT / "analysis/v016/decision_policy.json"
 CALIBRATION_PATH = ROOT / 'analysis/v039/publication_pairs.json'
 
 
+REACTION_DIRECTIONS = ('賛成・称賛', '反対・批判', '驚き・好奇心', '楽しむ・おどける', '共感・いたわり', '冷淡・関心が薄い', '戸惑い・判断保留')
+REACTION_FORMS = ('率直な感想', '具体的な提案', '別分野との比喩', '自分ならどうするかという仮定', '短い断言', '疑問から考えを進める', '軽口・皮肉', '良い点を拾って褒める')
+
+
+def select_exploration():
+    return dict(direction=secrets.choice(REACTION_DIRECTIONS), form=secrets.choice(REACTION_FORMS))
+
+
 def select_intensity():
     """Uniform draw on 1.50..2.50 in 0.01 steps, once per proposal."""
     return (150 + secrets.randbelow(101)) / 100
@@ -36,6 +44,9 @@ CATEGORY_LABELS = {
     'sports': 'スポーツ', 'life': '暮らし・食・旅', 'labor': '仕事・福祉',
     'law': '司法・権利', 'infrastructure': '交通・街・防災',
     'technology': '技術', 'games': 'ゲーム',
+    'music': '音楽', 'regional': '地方・地域', 'wellness': '日常の健康',
+    'fashion': '服・美容', 'animals': '動物・自然', 'history': '歴史・人文',
+    'hobbies': '趣味・手仕事', 'food': '食・料理', 'relationships': '家族・人間関係',
 }
 
 
@@ -167,7 +178,7 @@ def validate_generation(value):
     return value
 
 
-def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25):
+def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25, exploration=None):
     validate_intensity(intensity)
     source_data = {
         "candidate_id": candidate["candidate_id"],
@@ -184,6 +195,8 @@ def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25
                 + json.dumps(calibration, ensure_ascii=False, indent=2) + "\n```\n") if calibration else ''
     return (
         instructions
+        + ("\n\n## 今回の探索条件\n" + json.dumps(exploration, ensure_ascii=False)
+           + "\n本人が言いそうな候補として、この反応と展開を試す。本人の賛否や経験が確認済みとは扱わない。\n" if exploration else '')
         + "\n\n## 判断条件（参考データ）\n```json\n"
         + json.dumps(policy, ensure_ascii=False, indent=2)
         + "\n```\n" + examples
@@ -195,7 +208,7 @@ def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25
     )
 
 
-def issue_payload(candidate, generation, intensity=2.25):
+def issue_payload(candidate, generation, intensity=2.25, exploration=None):
     validate_intensity(intensity)
     draft = generation["draft"].strip()
     draft_sha = hashlib.sha256(draft.encode("utf-8")).hexdigest()
@@ -210,6 +223,7 @@ def issue_payload(candidate, generation, intensity=2.25):
     facts = "\n".join(f"- {item}" for item in generation["facts"]) or "- RSS断片から確定できる事項なし"
     unknowns = "\n".join(f"- {item}" for item in generation["uncertainties"]) or "- なし"
     mapping = "\n".join(f"- {item}" for item in generation["value_mapping"]) or "- なし"
+    exploration_note = ('探索条件: ' + exploration['direction'] + ' ／ ' + exploration['form']) if exploration else ''
     body = f"""<!-- rss-agent:v1 -->
 <!-- candidate-id:{candidate['candidate_id']} -->
 <!-- draft-sha256:{draft_sha} -->
@@ -217,6 +231,8 @@ def issue_payload(candidate, generation, intensity=2.25):
 <!-- track:{candidate['track']} -->
 
 {warning}
+
+{exploration_note}
 
 ## 出典候補
 
@@ -247,6 +263,8 @@ def issue_payload(candidate, generation, intensity=2.25):
 
 ## スマホからのフィードバック
 
+まず「言わん」「言う」「採用」のいずれかを単独の行でコメントできます。続く行に理由を書けます。「絶対言わない」も使えます。判定だけでは投稿承認・投稿済みになりません。採用する場合も確定文は別コメントにしてください。
+
 1. 修整後の確定文を、本人アカウントからそのままコメントしてください。タグやコードブロックは不要です。修整なしなら初稿をそのまま貼れます。
 2. コメントを合図に「本人承認済み・未投稿（投稿報告なし）」として校正履歴へ取り込みます。Closeは不要です。
 3. 実際にSNS等へ投稿したら、別コメントで「投稿しました」と知らせてください。投稿URLを添えても、URLだけをコメントしても構いません。
@@ -268,6 +286,7 @@ def issue_payload(candidate, generation, intensity=2.25):
         "draft": draft,
         "draft_sha256": draft_sha,
         "intensity": intensity,
+        "exploration": exploration,
     }
 
 
@@ -280,8 +299,9 @@ def generate_all(input_data, generator):
         if candidate.get("rejected_reasons"):
             continue
         intensity = select_intensity()
-        generated = validate_generation(generator(prompt_for(candidate, instructions, policy, calibration, intensity)))
-        issues.append(issue_payload(candidate, generated, intensity))
+        exploration = select_exploration()
+        generated = validate_generation(generator(prompt_for(candidate, instructions, policy, calibration, intensity, exploration)))
+        issues.append(issue_payload(candidate, generated, intensity, exploration))
     return {"schema_version": 1, "issues": issues, "collection_errors": input_data.get("errors", [])}
 
 

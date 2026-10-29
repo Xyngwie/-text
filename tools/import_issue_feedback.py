@@ -78,6 +78,10 @@ def comment_parts(comment):
     if legacy:
         return legacy.group('text'), bool(legacy.group('url')), legacy.group('url')
     stripped = body.strip()
+    # Owner ratings and optional reasons are evidence, never final publication text.
+    first_line = stripped.splitlines()[0].strip().rstrip('。！!') if stripped else ''
+    if first_line in {'言わん', '言う', '採用', '言わなそう', '言いそう', '絶対言わない', '僕は言わない'}:
+        return None, False, None
     urls = POST_URL_RE.findall(stripped)
     rest = POST_URL_RE.sub('', stripped).strip()
     if POSTED_RE.fullmatch(REPORT_PREFIX_RE.sub('', rest)) or (urls and not rest):

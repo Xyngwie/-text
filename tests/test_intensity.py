@@ -50,3 +50,30 @@ class IntensityTests(unittest.TestCase):
         for value in [1.49, 2.51, float('nan'), True]:
             with self.subTest(value=value), self.assertRaises(ValueError):
                 rss.issue_payload(self.candidate(1), self.generation(''), value)
+
+
+class ExplorationTests(IntensityTests):
+    def test_independent_choices_reach_prompt_and_issue_without_changing_strength(self):
+        seen = []
+        choices = [dict(direction='楽しむ・おどける', form='短い断言'),
+                   dict(direction='共感・いたわり', form='率直な感想')]
+        def generate(prompt):
+            seen.append(prompt)
+            return self.generation(prompt)
+        with patch.object(rss, 'select_exploration', side_effect=choices), patch.object(rss, 'select_intensity', return_value=1.5):
+            result = rss.generate_all({'candidates': [self.candidate(1), self.candidate(2)]}, generate)
+        for prompt, issue, choice in zip(seen, result['issues'], choices):
+            self.assertIn(choice['direction'], prompt)
+            self.assertIn(choice['form'], issue['body'])
+            self.assertEqual(issue['exploration'], choice)
+            self.assertEqual(issue['intensity'], 1.5)
+
+    def test_ratings_with_reasons_never_become_approved_text(self):
+        from import_issue_feedback import comment_parts
+        for rating in ['言わん', '言う', '採用', '絶対言わない']:
+            body = rating + '\nこの題材にこの反応はしません。'
+            self.assertEqual(comment_parts({'body': body}), (None, False, None))
+            payload = rss.issue_payload(self.candidate(1), self.generation(''), 1.5)
+            issue = dict(number=1, body=payload['body'], labels=[{'name':'rss-agent'}])
+            events, _ = build_events([], issue, [dict(id=1, body=body, user={'login':'Owner'})], 'Owner', 'Owner', allow_empty=True)
+            self.assertEqual(events, [])
