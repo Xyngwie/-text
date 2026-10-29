@@ -122,6 +122,44 @@
         }
       ],
       "recorded_date_jst": "2026-10-29"
+    },
+    {
+      "case_id": "AN005",
+      "status": "original_owner_utterances",
+      "target_domain": "CADの関係検出から、ベクトル解析とLLMのたとえ話への応用",
+      "borrowed_domain": "離れた位置にある線の平行・直交関係",
+      "purpose": "位置が違っても関係が対応するものを見つける発想を、別の対象へ移せないかと問う。",
+      "limits": [
+        "本人が応用可能性を尋ねた記録。幾何学のベクトルと意味表現が同じ操作で扱えるという技術的実証ではない。",
+        "「並行」「直行」は原典表記のまま引用する。"
+      ],
+      "evidence": [
+        {
+          "utterance_id": "copilot-002:U00055",
+          "quote": "CADのモードで、線とかをピックアップした時に、「並行であるもの」と「直行するもの」をハイライトする機能。 すでにある？",
+          "source_url": "https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L2742",
+          "body_sha256": "e1ee5807f18d01cc6dd0a9bd3bc15460e6c8a19243fd66a409dec7361c4f1f5c"
+        },
+        {
+          "utterance_id": "copilot-002:U00057",
+          "quote": "そうなの、意外とこの機能どのCADにもないのでわ。 天才か。",
+          "source_url": "https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L2876",
+          "body_sha256": "4ec310675eedf598647eb5502c5b2b6ab8238b041a5a2ebc1122c77aa503ced8"
+        },
+        {
+          "utterance_id": "copilot-002:U00059",
+          "quote": "ちなみにこれ、ベクトル解析に用いると、位置が違うけど、全く同義なベクトルを発見できるのではないかと思いますけどいかがでしょうか",
+          "source_url": "https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L2986",
+          "body_sha256": "2992cae31040153dfd984c2d2522c313a8ed5e0709e8f099f063308949fc6e30"
+        },
+        {
+          "utterance_id": "copilot-002:U00061",
+          "quote": "LLMの発展にも使えるかもよ？\nたとえ話が上手くなるんじゃない？",
+          "source_url": "https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L3119",
+          "body_sha256": "0810743441f84ae28190e5315832cdafc517573ba5bdb0b6ce3b0c41d447ab25"
+        }
+      ],
+      "recorded_date_jst": "2026-10-29"
     }
   ]
 }
