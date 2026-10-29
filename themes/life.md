@@ -3,9 +3,9 @@
 原本リンクには出典ごとの固定コミットと行範囲を使用。
 前後のLLM回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。
 
-- **確定発言数**: 382件
-- **関連セグメント数**: 158セグメント
-- **未確認候補数**: 4件
+- **確定発言数**: 391件
+- **関連セグメント数**: 161セグメント
+- **未確認候補数**: 3件
 
 ## 1. 文脈確認済み発言（確定分類）
 
@@ -393,12 +393,20 @@
 | copilot-002:U00099 | [L4826–4828](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L4826-L4828) | [S593: 移動中の食事候補を既知の近隣店で収束させる](../batches/B062.md) | 移動ルート上の食事候補を探す | general | own | 沼袋、荻窪、からの 大田区仲六郷 ・・・環八でいくとして、まともなラーいなくない？ |
 | copilot-002:U00103 | [L5116–5118](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L5116-L5118) | [S593: 移動中の食事候補を既知の近隣店で収束させる](../batches/B062.md) | 近隣エリアを候補にして選択を収束させる | general | own | よく考えたら道中のラーが薄いだけで 環八と蒲田めっちゃ近いじゃん。それでおけ |
 | copilot-002:U00135 | [L7005–7007](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L7005-L7007) | [S600: 仮想デスクトップ操作を確認する](../batches/B064.md) | 仮想デスクトップの切替操作を尋ねる | personal | own | 仮想デスクトップの切り替えってどうやるんだっけ |
+| copilot-002:U00175 | [L9704–9706](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9704-L9706) | [S608: 電話番号の発信元を尋ねる](../batches/B065.md) | 電話番号の発信元を短く尋ねる | personal | own | 05-0505-0591どっから？ |
+| copilot-002:U00177 | [L9810–9812](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9810-L9812) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | 仮想デスクトップを閉じる操作を確認する | personal | own | 仮想デスクトップを消すってどうやるんだっけ？ |
+| copilot-002:U00179 | [L9902–9904](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9902-L9904) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | Androidにも同様の作業空間機能を望む | general | own | アンドロイドにも同じような機能あったらいいのになあ |
+| copilot-002:U00181 | [L10032–10034](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L10032-L10034) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | 同一端末で別アカウントを試す用途を説明する | personal | own | 同一スマホで別アカウントでログインみたいな事をテストしたいこともあるじゃんね |
+| copilot-002:U00183 | [L10188–10190](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L10188-L10190) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | 使う端末名を短く回答する | personal | own | pixel10PROFOLD |
+| copilot-002:U00201 | [L11249–11251](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L11249-L11251) | [S612: 昼食と空腹を伝え帰宅の挨拶で閉じる](../batches/B065.md) | 食べ物と個数を列挙する | personal | own | 煮卵二つ、ファミチキ一つ、コロッケ一つ。 |
+| copilot-002:U00203 | [L11298–11300](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L11298-L11300) | [S612: 昼食と空腹を伝え帰宅の挨拶で閉じる](../batches/B065.md) | 列挙したものは昼食だったと補足する | personal | own | お昼にそれを食べたのよ。 |
+| copilot-002:U00205 | [L11352–11354](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L11352-L11354) | [S612: 昼食と空腹を伝え帰宅の挨拶で閉じる](../batches/B065.md) | 現在の空腹を平明に伝える | personal | own | 今とてもお腹が減っています。 |
+| copilot-002:U00207 | [L11423–11425](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L11423-L11425) | [S612: 昼食と空腹を伝え帰宅の挨拶で閉じる](../batches/B065.md) | 帰宅の意向と翌日への別れを示す | personal | own | もう帰るとこですよー。また明日ね。ノシノシ |
 
 ## 2. 未精査のキーワード候補（仮候補）
 
 | 発言ID | 原文 | 一致語 | 本人発言の冒頭抜粋 |
 |---|---|---|---|
-| copilot-002:U00181 | [L10032–10034](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L10032-L10034) | スマホ | 同一スマホで別アカウントでログインみたいな事をテストしたいこともあるじゃんね |
 | copilot-002:U00209 | [L11448–11485](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L11448-L11485) | スマホ | おはこぴちー。こんなメール来たよー。： ✓ e⁠-Tax 証明書の確認とアプリの準備 年末調整の証明書をご確認くだ⁠さい 証明書を確認するための スマートフォン操作のご案内 e⁠-Taxをご利用いただきありがとうございます。 年末調整のための（特定増改築等）住宅借入金等特別控除証明書について、お知らせがあります。スマー |
 | copilot-002:U00237 | [L13101–13362](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L13101-L13362) | 健康 | # 会話ログ構造化・分析作業ガイドライン（自動化エージェント向け基準書） &gt; 複数原本への対応：新しいLLMのログを扱うときは [原本の追加手順](docs/ADDING_CONVERSATIONS.md) を先に読み、\`data/sources.json\` と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲 |
 | copilot-002:U00239 | [L13373–13438](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L13373-L13438) | 身体 | # テーマ別索引 神宮氏とLLMの対話ログを、出典を区別してテーマ別に参照できるように整理した索引です。 第2段階（文脈精査・セグメント設計）の確定レビュー結果および未精査のキーワード仮候補を反映しています。 ## 進捗サマリ - **検出本人発言総数**: 1,721件 - **文脈確認済み（確定）**: 1,721 |

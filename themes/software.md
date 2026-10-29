@@ -3,8 +3,8 @@
 原本リンクには出典ごとの固定コミットと行範囲を使用。
 前後のLLM回答も含めた文脈精査に基づく確定分類と、未精査のキーワード候補を掲載しています。
 
-- **確定発言数**: 345件
-- **関連セグメント数**: 135セグメント
+- **確定発言数**: 349件
+- **関連セグメント数**: 136セグメント
 - **未確認候補数**: 4件
 
 ## 1. 文脈確認済み発言（確定分類）
@@ -356,6 +356,10 @@
 | copilot-002:U00121 | [L6057–6059](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L6057-L6059) | [S597: LoRAを尋ねGrok作成の分析基準書を見せる](../batches/B063.md) | LoRAの意味を尋ね既知の印象と照合する | general | own | LoRAってたまに聞くけどなあに？なんか画像生成AIがそんな名前じゃなかったっけ |
 | copilot-002:U00123 | [L6167–6371](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L6167-L6371) | [S597: LoRAを尋ねGrok作成の分析基準書を見せる](../batches/B063.md) | 分析手順の作成をGrokへ任せたと説明し資料を提示する | general | mixed | 解析のやり方は、Grokにお任せして作ってもらったやつ。： 会話ログ構造化・分析作業ガイドライン（自動化エージェント向け基準書） 複数原本への対応：新しいLLMのログを扱うときは 原本の追加手順 を先に読み、data/sources.json と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲・Copilot |
 | copilot-002:U00135 | [L7005–7007](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L7005-L7007) | [S600: 仮想デスクトップ操作を確認する](../batches/B064.md) | 仮想デスクトップの切替操作を尋ねる | personal | own | 仮想デスクトップの切り替えってどうやるんだっけ |
+| copilot-002:U00177 | [L9810–9812](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9810-L9812) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | 仮想デスクトップを閉じる操作を確認する | personal | own | 仮想デスクトップを消すってどうやるんだっけ？ |
+| copilot-002:U00179 | [L9902–9904](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L9902-L9904) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | Androidにも同様の作業空間機能を望む | general | own | アンドロイドにも同じような機能あったらいいのになあ |
+| copilot-002:U00181 | [L10032–10034](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L10032-L10034) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | 同一端末で別アカウントを試す用途を説明する | personal | own | 同一スマホで別アカウントでログインみたいな事をテストしたいこともあるじゃんね |
+| copilot-002:U00183 | [L10188–10190](https://github.com/Xyngwie/-text/blob/40e5dc4506d693a8cd7d65862265635773a44a84/sources/copilot-002/10%E6%9C%886%E6%97%A5%E4%BB%A5%E9%99%8D%E3%81%AE%E3%81%93%E3%81%B4%E3%81%A1%E3%83%BC%E3%81%A8%E3%81%AE%E4%BC%9A%E8%A9%B1.txt#L10188-L10190) | [S609: Androidでの別アカウント検証を相談する](../batches/B065.md) | 使う端末名を短く回答する | personal | own | pixel10PROFOLD |
 
 ## 2. 未精査のキーワード候補（仮候補）
 
