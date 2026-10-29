@@ -83,3 +83,5 @@
 - [追加Copilot原典の第三段階・探索01：砕けた言葉でも、話の中身は手放さない](copilot002_exploration/01_relaxed_but_precise.md)：分類完了後の原典・本人確認・辞書を照合。正式モデルと生成反映は別。
 
 - [対応関係を使った説明の事例](copilot002_exploration/02_analogy_examples.md)と[その後の話の展開](copilot002_exploration/03_analogy_development.md)：本人確認後、RSS生成プロンプトへ参考例と適用条件を反映。モデル追加学習や生成品質の実証とは区別。
+
+- [「違う」と言うとき、何を直しているか](copilot002_exploration/04_what_is_being_corrected.md)：原典の訂正4場面を比較。内容・意図・作者・追加修整の要否を混同しないための探索。
