@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "exploratory_pending_owner_clarification",
+  "sources": [
+    {
+      "issue_number": 215,
+      "snapshot_sha256": "27a33168aeae52b440ba0ac012fe83d0c79de174a3fb734590af871e7afd1cfb",
+      "captured_at": "2026-10-31T08:26:32+00:00",
+      "url": "https://github.com/Xyngwie/-text/issues/215",
+      "source_type": "owner_submitted_gemini_summary_not_verbatim_dialogue",
+      "authorship": "mixed_reported_owner_statements_and_gemini_analysis"
+    },
+    {
+      "issue_number": 216,
+      "snapshot_sha256": "963bc9f0df0574666b4eb74556692afb6900153747412c9be314b44ef9bbac27",
+      "captured_at": "2026-10-31T09:44:59+00:00",
+      "url": "https://github.com/Xyngwie/-text/issues/216",
+      "source_type": "owner_submitted_gemini_summary_not_verbatim_dialogue",
+      "authorship": "mixed_reported_owner_statements_and_gemini_analysis"
+    }
+  ]
+}
