@@ -89,3 +89,5 @@
 - [勝敗より前に、選択の根拠を見る](copilot002_exploration/06_winning_and_judgment.md)／[探している間と、戦術が定まった後](copilot002_exploration/07_exploring_and_committing.md)：作品論から続く本人確認。勝因の評価、戦術の維持と切替、探索中の留保を記録。
 
 - [信条との戦いと、見る側の立場](copilot002_exploration/08_convictions_and_the_observer.md)：信条の維持・変更・揺れ、結果への責任、好悪と許可の違いについての本人補足。
+
+- [同じ言い方を通すことと、注意を使う場所](copilot002_exploration/09_fixed_wording_and_attention.md)：古風な語の口語使用、「吝かではない」の固定方針、ポーカーでの注意配分に関する本人補足。
