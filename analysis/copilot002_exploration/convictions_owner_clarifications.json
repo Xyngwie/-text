@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "source": "本チャットの本人補足。独立した会話エクスポートは未登録。",
+  "recorded_date_utc": "2026-10-31",
+  "status": "exploratory_owner_dialogue_not_runtime_policy",
+  "turns": [
+    {
+      "question_summary": "最善手より情や信条を優先する主人公をどう見るか",
+      "owner_reply_verbatim": "殺さずの誓い、とか？\n\n主義思想はその人格形成のピースなので尊重するよ"
+    },
+    {
+      "question_summary": "誓いの結果として仲間や無関係な人に被害が出ても評価は変わらないか",
+      "owner_reply_verbatim": "その責任と向き合うのが、信条との戦いと思うね"
+    },
+    {
+      "question_summary": "誓いを守る人物と変える人物の双方に納得できる描写があるか",
+      "owner_reply_verbatim": "どちらもつよい意志が必要でしょうね"
+    },
+    {
+      "question_summary": "変えた信条へ戻る展開も経緯があれば納得できるか",
+      "owner_reply_verbatim": "それも人よね。重みに依らず、あっちいったりこっちいったりすんだ"
+    },
+    {
+      "question_summary": "助手が信条の揺れを人間の姿として受け止めると要約した後の補足",
+      "owner_reply_verbatim": "それを許すとか許さないとか言う立場でもないしさ？"
+    },
+    {
+      "question_summary": "助手が理解や好き嫌いと生き方の許可を分けて要約した後",
+      "owner_reply_verbatim": "はい。では分析を進めよう"
+    }
+  ],
+  "limits": [
+    "質問・助手の要約は要旨、本人回答は原文として転記。",
+    "作品の人物像についての会話であり、現実の全行為への容認や法的責任の否定ではない。",
+    "信条を変えることが常に正しい・誤り、あるいは揺れ自体が常に好ましいという回答ではない。"
+  ]
+}

@@ -87,3 +87,5 @@
 - [「違う」と言うとき、何を直しているか](copilot002_exploration/04_what_is_being_corrected.md)：原典の訂正4場面を比較。内容・意図・作者・追加修整の要否を混同しないための探索。
 
 - [勝敗より前に、選択の根拠を見る](copilot002_exploration/06_winning_and_judgment.md)／[探している間と、戦術が定まった後](copilot002_exploration/07_exploring_and_committing.md)：作品論から続く本人確認。勝因の評価、戦術の維持と切替、探索中の留保を記録。
+
+- [信条との戦いと、見る側の立場](copilot002_exploration/08_convictions_and_the_observer.md)：信条の維持・変更・揺れ、結果への責任、好悪と許可の違いについての本人補足。
