@@ -93,3 +93,5 @@
 - [同じ言い方を通すことと、注意を使う場所](copilot002_exploration/09_fixed_wording_and_attention.md)：古風な語の口語使用、「吝かではない」の固定方針、ポーカーでの注意配分に関する本人補足。
 
 - [手間をかけて、日々の手間を減らす](copilot002_exploration/10_learning_to_spend_less_attention.md)：他者の方法を率直に尋ね、習得後の脳内リソース消費を見て検討するという本人補足。
+
+- [美しさと検証を、総合評価へ含める](copilot002_exploration/11_beauty_verification_and_ev.md)：簡潔さ、プロセスの理解、統計的な試行、美意識と脳内リソースを含むEV評価についての本人補足。
