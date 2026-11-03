@@ -94,4 +94,4 @@
 
 - [手間をかけて、日々の手間を減らす](copilot002_exploration/10_learning_to_spend_less_attention.md)：他者の方法を率直に尋ね、習得後の脳内リソース消費を見て検討するという本人補足。
 
-- [美しさと検証を、総合評価へ含める](copilot002_exploration/11_beauty_verification_and_ev.md)：簡潔さ、プロセスの理解、統計的な試行、美意識と脳内リソースを含むEV評価についての本人補足。
+- [美しさと検証を、総合評価へ含める](copilot002_exploration/11_beauty_verification_and_ev.md)：簡潔さ、プロセスの理解、統計的な試行についての本人補足。EVのスカラー化は対話中の整理で、普段の全数量化ではないとの後続訂正を反映。
