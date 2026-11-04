@@ -47,3 +47,7 @@ python3 tools/validate.py
 ```
 
 `--dry-run` はAPIを呼ばず、対象・未処理件数・大きすぎる原典を確認する。GitHub側の実生成はActionsで確認できる。
+
+## 初回動作確認
+
+[初回Action](https://github.com/Xyngwie/-text/actions/runs/41815670489)で2件を実生成し、引用検証・台帳保存・レポートのコミットまで確認した。[最初のレポート](../../batches/issues/auto/IA-b380a6c982add8a4.md)を精読対象として保存。未処理は117件から115件になった。自動案の本文にはCloseから時系列を推定した記述があったため、その根拠に使わない指示を追加した。元の案は訂正前の出力として保持し、精査済みには数えない。
