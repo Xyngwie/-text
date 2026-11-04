@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "created_on": "2026-11-04",
+  "base_commit": "f784ccbd491760a71aeba5d17a52ccbc799a9951",
+  "status": "selected_retrospective_adopted_manuscripts_not_unseen_test",
+  "owner_confirmation": {
+    "source": "本チャット。独立エクスポートは未登録。",
+    "quote": "コピペしてコメントしたものは採用原稿として扱ってよいからね",
+    "scope": "本文のコピー・修整は採用。メタ評価や却下を本文へ変換せず、実投稿報告も別に扱う。"
+  },
+  "selection_note": "本文コピーと編集の違いを比較する12件。全候補の採用率や本人の自然な使用頻度は推定しない。",
+  "counts": {
+    "body_edited": 6,
+    "source_url_removed": 1,
+    "exact_copy": 3,
+    "editorial_note_removed": 2
+  },
+  "pairs": [
+    {
+      "issue_number": 203,
+      "comment_id": 6624148748,
+      "source_url": "https://github.com/Xyngwie/-text/issues/203#issuecomment-6624148748",
+      "snapshot_sha256": "24f8b4e0651ef5db97fc757d30c82caa62def2333016d5b927bf454deb704ea1",
+      "draft": "序盤の内政が整っていないのに拠点を一気に9つまで増やし、維持費で自滅するシミュレーションゲームの初心者を思わせる。\n\n盤面を広げればインカムが増えるという皮算用自体は分からなくもないが、リソース管理と撤退条件を持たずに突っ込めば、返済イベント一発でゲームオーバーを迎えるのは当然の摂理だ。\n\n攻めの姿勢自体は派手で嫌いじゃないが、手元のスタックを見ない拡大路線は戦略ではなく単なる大味なプレイングだな（笑）。",
+      "draft_sha256": "d759fcb76fe82b6ffd2c217dc404ce202872fe94f6f2173a918d9892fa185311",
+      "adopted_text": "序盤の内政が整っていないのに拠点を一気に9つまで増やし、維持費で自滅するシミュレーションゲームの初心者を思わせる。\n\n盤面を広げればインカムが増えるという皮算用自体は分からなくもないが、リソース管理と撤退条件を持たずに突っ込めば、返済イベント一発でゲームオーバーを迎えるのは当然の摂理だ。\n\n攻めの姿勢自体は派手で嫌いじゃないが、手元のスタックを見ない拡大路線は戦略ではなく単なる大味なプレイングに感じる。",
+      "adopted_sha256": "453a04528f6d44f2ddde5289ef77a68cc9dce41b83ac13af075ca269b8edcede",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "body_edited",
+      "interpretation": "ゲームの比喩は残し、「大味なプレイングだな（笑）」を「大味なプレイングに感じる」へ修整。笑い全般の禁止とはしない。",
+      "exact_edits": [
+        {
+          "operation": "replace",
+          "before": "だな（笑）",
+          "after": "に感じる"
+        }
+      ]
+    },
+    {
+      "issue_number": 208,
+      "comment_id": 6624133459,
+      "source_url": "https://github.com/Xyngwie/-text/issues/208#issuecomment-6624133459",
+      "snapshot_sha256": "3128975b68f7b27e56cc207a5b6936d8e933e8469529cd34e69d3470dcaf422a",
+      "draft": "睡眠を削って時間を捻出する悪弊や、無呼吸の放置が招くリスクへの指摘は、理屈としてぐうの音も出ない正論だ。\n\nだが、いざ自分ならどうするかと引き受けて考えたとき、日々の活動を何を削って睡眠へ回すのか、自覚しにくい寝ている間の呼吸不全をどの段階で疑って検査に踏み切るのか、即座に正解を選べる自信がない。\n\n根性論を捨てて睡眠を第一の制約条件として生活を組み直す覚悟があるのか。重要性を認めることと、自分の行動を実際に割り切れるかの間には、思っている以上に深い溝がある。",
+      "draft_sha256": "977727693c2f286c5b09b12c5b971abe33da146419d5da3cbc08720bfa93a8cc",
+      "adopted_text": "睡眠を削って時間を捻出する悪弊や、無呼吸の放置が招くリスクへの指摘は、理屈としてぐうの音も出ない正論だ。\n\nだが、いざ自分ならどうするかと引き受けて考えたとき、日々の活動を何を削って睡眠へ回すのか、自覚しにくい寝ている間の呼吸不全をどの段階で疑って検査に踏み切るのか、即座に正解を選べる自信がない。\n\n根性論を捨てて睡眠を第一の制約条件として生活を組み直す覚悟があるのか。重要性を認めることと、自分の行動を実際に割り切れるかの間には、思っている以上に深い溝がある。",
+      "adopted_sha256": "977727693c2f286c5b09b12c5b971abe33da146419d5da3cbc08720bfa93a8cc",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "exact_copy",
+      "interpretation": "睡眠の重要性を認めつつ自分の行動の変更には自信がないという初稿を全文コピー。実際の睡眠状態・診断の申告とはしない。",
+      "exact_edits": []
+    },
+    {
+      "issue_number": 209,
+      "comment_id": 6624115117,
+      "source_url": "https://github.com/Xyngwie/-text/issues/209#issuecomment-6624115117",
+      "snapshot_sha256": "c2d9ad9ae8b2adb7a92e96203ab3561ce981e15d9d6bc4cf3f497894cc2babf6",
+      "draft": "「東京だけズルいから金をよこせ」という不毛な泥仕合に付き合わず、「それぞれの強みを生かして共栄しよう」と盤面を塗り替えるあたり、さすがに喧嘩の売り方と看板の掲げ方を分かっているな（笑）。\n\n他人のサイフから毟り取るゼロサムゲームを延々と続けるより、各自が己の武器を磨いて稼ぐルールに再設計する方が百倍健全だし面白い。\n\n財源の押し付け合いを「強みの発掘」へ昇華させたこの構図の美しさは素直に褒めてやるべきだ。あとは口先だけでなく、本当に地方の牙を研ぐ制度に仕上げられるか、腕前を見せてもらおうか。",
+      "draft_sha256": "823e5370e345ea598780ed8c4e456015b65b1da713b9511530756b2749645d12",
+      "adopted_text": "「東京だけズルいから金をよこせ」という不毛な泥仕合に付き合わず、「それぞれの強みを生かして共栄しよう」と盤面を塗り替えるあたり、さすがに喧嘩の売り方と看板の掲げ方を分かっているな（笑）。\n\n他人のサイフから毟り取るゼロサムゲームを延々と続けるより、各自が己の武器を磨いて稼ぐルールに再設計する方が百倍健全だし面白い。\n\n財源の押し付け合いを「強みの発掘」へ昇華させたこの構図の美しさは素直に褒めてやるべきだ。あとは口先だけでなく、本当に地方の牙を研ぐ制度に仕上げられるか、腕前を見せてもらおうか。",
+      "adopted_sha256": "823e5370e345ea598780ed8c4e456015b65b1da713b9511530756b2749645d12",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "exact_copy",
+      "interpretation": "比喩、（笑）、強い評価を含む初稿を全文コピー。既存の政治家への恒常的な好意やニュース事実の独立確認とはしない。",
+      "exact_edits": []
+    },
+    {
+      "issue_number": 210,
+      "comment_id": 6600258681,
+      "source_url": "https://github.com/Xyngwie/-text/issues/210#issuecomment-6600258681",
+      "snapshot_sha256": "638d388bbf48a3134f5241b01b5ff32ea669a1cde8f43725c21a052575e70c8b",
+      "draft": "恵まれた環境や肩書に甘んじることなく、あえて自分にとってコンプレックスだった領域に飛び込んで作曲まで手を伸ばす。逃げ場を作らずに泥臭く挑み、弱点を攻略して自前の表現に昇華させた手筋は見事というほかない。\n\n苦手を得意へ裏返してプロの道をこじ開けるのは、ものづくりに向き合う者として文句なしに美しい姿勢だ。",
+      "draft_sha256": "fa2e8050b48c9507386393b4934aa891241e456452ba6da29143cd0a4c748235",
+      "adopted_text": "恵まれた環境や肩書に甘んじることなく、あえて自分にとってコンプレックスだった領域に飛び込んで作曲まで手を伸ばす。逃げ場を作らずに泥臭く挑み、弱点を攻略して自前の表現に昇華させた手筋は見事というほかない。\n\n苦手を得意へ裏返してプロの道をこじ開けるのは、ものづくりに向き合う者として文句なしに美しい姿勢だ。\n\nで、どなた？w",
+      "adopted_sha256": "8d852bd2dea23bbaf884ee0e8bcbe18ea1861386b69176c16b3dc7758509a717",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "body_edited",
+      "interpretation": "初稿を残して「で、どなた？w」を追加。評価と対象の知名の違いを示す読みが可能。",
+      "exact_edits": [
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "\n\nで、どなた？w"
+        }
+      ]
+    },
+    {
+      "issue_number": 211,
+      "comment_id": 6600241928,
+      "source_url": "https://github.com/Xyngwie/-text/issues/211#issuecomment-6600241928",
+      "snapshot_sha256": "2efb2ac0c54a8a23c23af3ac538b1f0b5aa2611ed033529a0d5f804551bebf79",
+      "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n人が集まらないなら海を越えて頭数を調達してくればいい、という発想の軽快さだけは認めてもいい。\n\n根本的な待遇や足元の魅力を直す知恵は出ないのに、補給路を外へ伸ばす手間だけは惜しまないあたり、実に分かりやすい帳尻合わせだ。\n\n自前の歪みを直さずに外輪山を広げたところで、どうせその場しのぎに過ぎないだろうが。まあ勝手にやってくれという話だな。",
+      "draft_sha256": "7de8ddb56b103a1c3772cd6a4a6ae0e435fde3e2b9a5ac586c42e2e9d754c79f",
+      "adopted_text": "人が集まらないなら海を越えて頭数を調達してくればいい、という発想の軽快さだけは認めてもいい。\n\nただし、根本的な待遇や足元の魅力を直す知恵は出ないのに、補給路を外へ伸ばす手間だけは惜しまないあたり、実に分かりやすい帳尻合わせだ。\n\n自前の歪みを直さずに外輪山を広げたところで、どうせその場しのぎに過ぎないだろう。",
+      "adopted_sha256": "2e2ca7212df219d92c0ce940eb2d29d9876b4beeb4f71065c43c694f21c77b48",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "body_edited",
+      "interpretation": "ただしを足し、最後の「まあ勝手にやってくれ」を削除した採用原稿。否定的評価そのものは残す。",
+      "exact_edits": [
+        {
+          "operation": "delete",
+          "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+          "after": ""
+        },
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "ただし、"
+        },
+        {
+          "operation": "delete",
+          "before": "が",
+          "after": ""
+        },
+        {
+          "operation": "delete",
+          "before": "まあ勝手にやってくれという話だな。",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "issue_number": 212,
+      "comment_id": 6600167535,
+      "source_url": "https://github.com/Xyngwie/-text/issues/212#issuecomment-6600167535",
+      "snapshot_sha256": "ce11cec78e881ec4d3a6a3166b8e6e9110854dd4d859fc5c4cdb262f048afbb0",
+      "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n漢方や医療の基礎原料である甘草を、海外依存から国内の大規模栽培に切り替える動きは素直に見事だ。美名だけの安全保障論議より、こうしたサプライチェーンの急所を現場の実業で押さえにいく方がよほど実質的な備えになる。\n\n製紙で培った育種や森林管理の基盤を別用途の重要資材へ転用する手筋も極めて堅実。派手さはないが、こういう足元を固める投資は実に気持ちがいい。",
+      "draft_sha256": "fbc22905356285628da01dc465490b46ca05a2a385af4695868a62dde0ecb8f7",
+      "adopted_text": "漢方や医療の基礎原料である甘草を、海外依存から国内の大規模栽培に切り替える動きは素直に見事だ。美名だけの安全保障論議より、こうしたサプライチェーンの急所を現場の実業で押さえにいく方がよほど実質的な備えになる。\n\n製紙で培った育種や森林管理の基盤を別用途の重要資材へ転用する手筋も極めて堅実。派手さはないが、こういう足元を固める投資は実に気持ちがいい。",
+      "adopted_sha256": "a4dca191107f222261f5a5adbb9ceccfe1abad5887ff068fc4b02c561238749d",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "editorial_note_removed",
+      "interpretation": "実験枠の説明を外し、称賛本文を維持。採用済みだが本人の自発的な多用表現の根拠にはしない。",
+      "exact_edits": [
+        {
+          "operation": "delete",
+          "before": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "issue_number": 222,
+      "comment_id": 6600118707,
+      "source_url": "https://github.com/Xyngwie/-text/issues/222#issuecomment-6600118707",
+      "snapshot_sha256": "641f0df4e3f8fdd12b9ec3f731d8adf7e47c60114f20a22d20c645e8c6620b2e",
+      "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n「本来の料理は楽しいもの」と言われると、確かにそうあってほしい理想や文化的な面白さは分かる気がする一方で、日々のタスクとして向き合う現実を思うと、素直に「楽しい」と受け取っていいものか少し戸惑う。\n\n義務や手間としての側面をどこまで削ぎ落とせばその楽しさに辿り着けるのか、気負わない姿勢に惹かれつつも、自分の中でどう捉えるべきかはまだ判断がつかないな。\n\nhttps://news.google.com/rss/articles/CBMibEFVX3lxTFA0QTkyaHVpSXNBT3RlVE90STV2Y1ZORFo2WkNkcGYwS2x5eFZHTHNZWmppbWFUd2g1YnZ3cEU0RXc2T05TU1g4SkNMRGc2ZlFtWlVZTjhPNldzZklQUUdXSGJ0SDFvanRXT1E0RA?oc=5",
+      "draft_sha256": "95fcfadd90cce46b56781adcf698582cff7ce244926de2ae098518c7f477816c",
+      "adopted_text": "「本来の料理は楽しいもの」と言われると、確かにそうあってほしい理想や文化的な面白さは分かる気がする一方で、日々のタスクとして向き合う現実を思うと新たなメニューの会得にリソースを割くのは現代人には難しい側面もある。\n\nそれでも自分の出来ないことが出来るようになる最も身近な事である。\n日々精進。",
+      "adopted_sha256": "c57b8d6984415eab30055701186d8979f0f787b6e13d1cdb995bc1d24a6d0a3f",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "body_edited",
+      "interpretation": "料理への戸惑いから、習得の負荷を認めつつ出来ることを増やす評価へ修整。",
+      "exact_edits": [
+        {
+          "operation": "delete",
+          "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+          "after": ""
+        },
+        {
+          "operation": "replace",
+          "before": "、素直",
+          "after": "新たなメニューの会得"
+        },
+        {
+          "operation": "replace",
+          "before": "「楽",
+          "after": "リソースを割くのは現代人には難"
+        },
+        {
+          "operation": "replace",
+          "before": "」と受け取っていい",
+          "after": "側面"
+        },
+        {
+          "operation": "replace",
+          "before": "のか少し戸惑う",
+          "after": "ある"
+        },
+        {
+          "operation": "replace",
+          "before": "義務や手間としての側面をどこま",
+          "after": "それ"
+        },
+        {
+          "operation": "delete",
+          "before": "削ぎ落とせばその楽しさに辿り着けるのか、気負わない姿勢に惹かれつつ",
+          "after": ""
+        },
+        {
+          "operation": "delete",
+          "before": "、",
+          "after": ""
+        },
+        {
+          "operation": "replace",
+          "before": "中でどう捉えるべきかはまだ判断がつか",
+          "after": "出来"
+        },
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "ことが出来るように"
+        },
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "る最も身近な事である"
+        },
+        {
+          "operation": "replace",
+          "before": "\nhttps://news.google.com/rss/articles/CBMibEFVX3lxTFA0QTkyaHVpSXNBT3RlVE90STV2Y1ZORFo2WkNkcGYwS2x5eFZHTHNZWmppbWFUd2g1YnZ3cEU0RXc2T05TU1g4SkNMRGc2ZlFtWlVZTjhPNldzZklQUUdXSGJ0SDFvanRXT1E0RA?oc=5",
+          "after": "日々精進。"
+        }
+      ]
+    },
+    {
+      "issue_number": 236,
+      "comment_id": 6599675477,
+      "source_url": "https://github.com/Xyngwie/-text/issues/236#issuecomment-6599675477",
+      "snapshot_sha256": "99dda422a79f902f5e25b52f518b1da891f301ca933cf0e1b3f43e66ad5689b6",
+      "draft": "※実験政治枠（価値観スライドによるゼロショット仮説）\n\n足腰が弱まり外に出る機会が失われれば、心身の機能は加速度的に細ってしまう。地域のコミュニティー交通が本格運行に漕ぎ着けたのは、単に車を走らせたというより、途切れかけていた末梢の毛細血管を自力でつなぎ直したような仕事だ。\n\n幹線交通の採算や効率ばかりが語られがちだが、玄関先から外へ出る最後の一歩がつながらなければ人は孤立する。住民が悲願として形にした生活の導線を、息切れさせずに支え続けてほしいところだ。",
+      "draft_sha256": "d055e099dad731d0e667147ff6c1d9f76f72c558b90856578467a648e560f223",
+      "adopted_text": "足腰が弱まり外に出る機会が失われれば、心身の機能は加速度的に細ってしまう。地域のコミュニティー交通が本格運行に漕ぎ着けたのは、単に車を走らせたというより、途切れかけていた末梢の毛細血管を自力でつなぎ直したような仕事だ。\n\n幹線交通の採算や効率ばかりが語られがちだが、玄関先から外へ出る最後の一歩がつながらなければ人は孤立する。住民が悲願として形にした生活の導線を、息切れさせずに支え続けてほしいところだ。",
+      "adopted_sha256": "def1efd89fece49eab6dca1cfc3f23cbbfed27144dbc04d9e2248e8dacc22e36",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "editorial_note_removed",
+      "interpretation": "実験枠の注記を削除し、地域交通を毛細血管に見立てる本文を維持。比喩はAI起案・本人採用。",
+      "exact_edits": [
+        {
+          "operation": "delete",
+          "before": "※実験政治枠（価値観スライドによるゼロショット仮説）\n\n",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "issue_number": 237,
+      "comment_id": 6599656969,
+      "source_url": "https://github.com/Xyngwie/-text/issues/237#issuecomment-6599656969",
+      "snapshot_sha256": "dbe4f3f8b1c0944bbc1eeb014ee420843cae8f1080de81dbeb9784b293bab2fc",
+      "draft": "「最後」の覚悟だの家族の祈りだのと情緒的な見出しで飾り立てたくなるのは分かるが、盤上の相手を詰ませたのは祈りではなく本人の指した手だろう。\n\n美談で綺麗にまとめるのは野暮というものだ。退路を断った勝負師が極限状態でどれだけの出力を叩き出したのか、その盤上の事実のほうに余程そそられる。\n\nhttps://news.google.com/rss/articles/CBMiXEFVX3lxTE44MEJTWGk0eTM5ZEZRRGcyXzZxNmtIaXFDaXRHV2d3X01MUl80MDR2X1hLWVE4bXlZeTR6Vzk5bUxBdmxJN1BTeS1TWExsR1dDVVVOSDl6ODBPaHB6?oc=5",
+      "draft_sha256": "c016725cbf7f0cda459cca9865633a36d17b8caccb54ca618f780516b6dd7a72",
+      "adopted_text": "「最後」の覚悟だの家族の祈りだのと情緒的な見出しで飾り立てたくなるのは分かるが、盤上の相手を詰ませたのは祈りではなく本人の指した手だろう。\n\n美談で綺麗にまとめるのは野暮というものだ。退路を断った勝負師が極限状態でどれだけの出力を叩き出したのか、その盤上の事実のほうに余程そそられる。",
+      "adopted_sha256": "153dbf2f12937682b13c07c3e68c648dd5fc4ac330856ff80d7623da278778d7",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "source_url_removed",
+      "interpretation": "出典URLを削除し、将棋の勝利を本人の指し手に求める本文を維持。一般的な祈りへの態度へ広げない。",
+      "exact_edits": [
+        {
+          "operation": "delete",
+          "before": "\n\nhttps://news.google.com/rss/articles/CBMiXEFVX3lxTE44MEJTWGk0eTM5ZEZRRGcyXzZxNmtIaXFDaXRHV2d3X01MUl80MDR2X1hLWVE4bXlZeTR6Vzk5bUxBdmxJN1BTeS1TWExsR1dDVVVOSDl6ODBPaHB6?oc=5",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "issue_number": 239,
+      "comment_id": 6599423928,
+      "source_url": "https://github.com/Xyngwie/-text/issues/239#issuecomment-6599423928",
+      "snapshot_sha256": "82a1c1fadd4519ba9a7cbb8ad0d692451a0c8a38de1827118b2cc6398d98d8e4",
+      "draft": "阪神高速の環状線、あれは道路というより完全に無理ゲーのコース設計だ。\n\n分岐の判断を一瞬でも迷った車を容赦なく弾くあたり、現実の物理エンジンは手加減を知らない。運転手が軽傷で済んだのは何よりの幸運だが、初見殺しのトラップみたいな線形で大型車をひっくり返している場合じゃないだろう。\n\n道かナビか判断か、どこがバグったのかは知らんが、派手に転がる前に難易度設定を見直せという話だな。",
+      "draft_sha256": "988cf94269e788d6910ce8f0a9b7cd8293af0f4a6cff6b0fe12900f0723c5d7e",
+      "adopted_text": "過去に一度走った事はあるけれど阪神高速の環状線、\nあれは初見殺しの設計になっている箇所がある。\n\n分岐の判断を一瞬でも迷った車を容赦なく弾くあたり、現実の物理エンジンは手加減を知らない。運転手が軽傷で済んだのは何よりの幸運だが、初見殺しのトラップみたいな線形で大型車をひっくり返している場合じゃないだろう。",
+      "adopted_sha256": "05fc6c9ec186f36320069140850bc48da44e97afbea1093c6770b30dc482f45c",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "body_edited",
+      "interpretation": "一度走ったという本人の経験を追加し、道路全体の断定を箇所へ限定、末尾を削除。残った事故原因の描写は独立確認していない。",
+      "exact_edits": [
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "過去に一度走った事はあるけれど"
+        },
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "\n"
+        },
+        {
+          "operation": "replace",
+          "before": "道路というより完全に無理ゲー",
+          "after": "初見殺し"
+        },
+        {
+          "operation": "delete",
+          "before": "コース",
+          "after": ""
+        },
+        {
+          "operation": "replace",
+          "before": "だ",
+          "after": "になっている箇所がある"
+        },
+        {
+          "operation": "delete",
+          "before": "\n\n道かナビか判断か、どこがバグったのかは知らんが、派手に転がる前に難易度設定を見直せという話だな。",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "issue_number": 240,
+      "comment_id": 6599383879,
+      "source_url": "https://github.com/Xyngwie/-text/issues/240#issuecomment-6599383879",
+      "snapshot_sha256": "d26762e712b7feaf92caaed933ec5b2be74abe78571fd7a35245d240ec588f15",
+      "draft": "埃をかぶった遺物を並べるだけの「静的なインベントリ」から、時間の堆積を清流に見立てて動的に体験させるUIへの転換なら、博物館の設計としてかなり面白い試みだ。地域史という重厚なアーカイブを、デジタル演出でどう淀みなく流して見せるのか。単なる目新しさの追加ではなく、空間全体の体験設計としてどこまで研ぎ澄まされているのかは純粋に見ものだな。",
+      "draft_sha256": "337381af4af366c1b1fd5a35fa7f00b6e1fea677f34a52e73b3acf460b37de36",
+      "adopted_text": "埃をかぶった遺物を並べるだけの「静的なイベント」から、時間の堆積を清流に見立てて動的に体験させる形式への転換なら、博物館の設計として面白い試みだ。\n\n地域史という重厚なアーカイブを、デジタル演出でどう淀みなく流して見せるのか。\n単なる目新しさの追加ではなく、空間全体の体験設計としてどこまで研ぎ澄まされているのかは純粋に見に行ってみたい。",
+      "adopted_sha256": "73c1d6e7c8a768884fc06be415b4edcd3ab1b318a610b2e0244ce5a959c79680",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "body_edited",
+      "interpretation": "UIを形式へ、見ものを見に行ってみたいへ変更。インベントリからイベントへの変更理由は未確認。",
+      "exact_edits": [
+        {
+          "operation": "delete",
+          "before": "ン",
+          "after": ""
+        },
+        {
+          "operation": "delete",
+          "before": "リ",
+          "after": ""
+        },
+        {
+          "operation": "replace",
+          "before": "UI",
+          "after": "形式"
+        },
+        {
+          "operation": "delete",
+          "before": "かなり",
+          "after": ""
+        },
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "\n\n"
+        },
+        {
+          "operation": "insert",
+          "before": "",
+          "after": "\n"
+        },
+        {
+          "operation": "replace",
+          "before": "ものだな",
+          "after": "に行ってみたい"
+        }
+      ]
+    },
+    {
+      "issue_number": 241,
+      "comment_id": 6599326962,
+      "source_url": "https://github.com/Xyngwie/-text/issues/241#issuecomment-6599326962",
+      "snapshot_sha256": "d5ce74edfaf322825cfdb132366d5ba23ab18a821f5c80325d98ffe1bbb9f98a",
+      "draft": "期限が過ぎた以上、行政として代執行を検討する理屈は分かる。\n\nだが、現場に生きた動物が220頭も残っているとなると話は別だ。単なる違法建築の解体撤去とはわけが違い、引き取り先の確保や移送の手当てなしに強行できる性質のものではないだろう。\n\n法令を守らせる筋道と現場の命の処遇が完全にぶつかっていて、どう着地させるのが正解なのか率直に見当がつかないな。",
+      "draft_sha256": "7aff2e8cacf16753faa587b556d39e463fdbd781a75b72ee23111228841d8bb5",
+      "adopted_text": "期限が過ぎた以上、行政として代執行を検討する理屈は分かる。\n\nだが、現場に生きた動物が220頭も残っているとなると話は別だ。単なる違法建築の解体撤去とはわけが違い、引き取り先の確保や移送の手当てなしに強行できる性質のものではないだろう。\n\n法令を守らせる筋道と現場の命の処遇が完全にぶつかっていて、どう着地させるのが正解なのか率直に見当がつかないな。",
+      "adopted_sha256": "7aff2e8cacf16753faa587b556d39e463fdbd781a75b72ee23111228841d8bb5",
+      "authorship": "ai_draft_owner_adopted_or_edited",
+      "status": "adopted_manuscript_not_publication_report",
+      "comparison_kind": "exact_copy",
+      "interpretation": "法令と動物の移送の両立に判断保留を示す初稿を全文コピー。「理屈は分かる」の使用を普段の口癖として数えない。",
+      "exact_edits": []
+    }
+  ]
+}

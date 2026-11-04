@@ -99,3 +99,5 @@
 - [選択を悔やむことと、判断を直すこと](copilot002_exploration/12_regret_and_revision.md)：後悔を控える努力、既存戦法の試行、修整後の敗北を完敗とする本人の区切り。
 
 - [役割を固定しないことと、火力役で狙うもの](copilot002_exploration/13_roles_and_reliable_elimination.md)：仕事の相性をDPSで説明した例、ロマン砲と命中・即死・操作の好みについての本人補足。
+
+- [採用原稿を比べる](november_consolidation/adopted_manuscripts.md)：本人確認に基づき、コピー・修整した12件を採用原稿として比較。実投稿・自発的な口癖と区別し、差分と無修整例を保存。

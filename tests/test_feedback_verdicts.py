@@ -33,6 +33,17 @@ class VerdictTests(unittest.TestCase):
                 issue, comments = self.fixture(number)
                 self.assertEqual(self.run_import(issue, comments), [])
 
+    def test_copied_and_edited_manuscripts_are_adopted_without_publication_report(self):
+        for number in [208, 209, 210, 222, 239, 241]:
+            with self.subTest(issue=number):
+                issue, comments = self.fixture(number)
+                events = self.run_import(issue, comments)
+                self.assertEqual(events[-1]['event_type'], 'user_approved')
+                latest = next(e for e in reversed(events) if e['event_type'] in {'draft_created', 'user_revised'})
+                self.assertEqual(latest['content'], comments[-1]['body'])
+                self.assertFalse(any(e['event_type'] == 'published' for e in events))
+                self.assertEqual(self.run_import(issue, comments, events), events)
+
     def test_exact_revision_not_keyword_filter(self):
         issue, comments = self.fixture()
         changed = dict(comments[0], body='こんな無責任なことは言わない。まず現場を見よう。')
