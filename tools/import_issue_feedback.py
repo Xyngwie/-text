@@ -8,6 +8,7 @@ import re
 from pathlib import Path
 
 from publication_feedback import DEFAULT_LOG, SCHEMA_VERSION, digest, load_events, validate
+from reviewed_feedback import load_verdict_keys, is_verdict_comment, is_verdict_event
 
 FINAL_RE = re.compile(
     r"(?:^|\n)/final[ \t]*\r?\n```text\r?\n(?P<text>[\s\S]*?)\r?\n```"
@@ -72,11 +73,13 @@ def draft_intensity(issue):
     return value
 
 
-def comment_parts(comment):
+def comment_parts(comment, reviewed_verdict=False):
     body = comment.get('body') or ''
     legacy = FINAL_RE.search(body)
     if legacy:
         return legacy.group('text'), bool(legacy.group('url')), legacy.group('url')
+    if reviewed_verdict:
+        return None, False, None
     stripped = body.strip()
     # Owner ratings and optional reasons are evidence, never final publication text.
     first_line = stripped.splitlines()[0].strip().rstrip('。！!') if stripped else ''
@@ -96,7 +99,7 @@ def comment_parts(comment):
     return body, False, None
 
 
-def build_events(existing, issue, comments, authorized_login, closing_actor, allow_empty=False):
+def build_events(existing, issue, comments, authorized_login, closing_actor, allow_empty=False, verdict_keys=None):
     if closing_actor.casefold() != authorized_login.casefold():
         fail("Only the authorized user may import RSS feedback")
     record_id, draft, track = parse_issue(issue)
@@ -108,6 +111,7 @@ def build_events(existing, issue, comments, authorized_login, closing_actor, all
                    or record[0].get('issue_number') != issue['number']
                    or record[0].get('intensity') != intensity):
         fail('Existing record does not match this Issue')
+    verdict_keys = load_verdict_keys() if verdict_keys is None else verdict_keys
     revised = False
     authorized = [c for c in comments if c.get('user', {}).get('login', '').casefold() == authorized_login.casefold()]
     authorized.sort(key=lambda c: (c.get('created_at') or '', c.get('id') or 0))
@@ -127,8 +131,11 @@ def build_events(existing, issue, comments, authorized_login, closing_actor, all
                            issue_comment_id=comment.get('id'), issue_comment_sha256=digest(comment.get('body') or ''),
                            feedback_part=part, **fields))
 
+    def parts(comment):
+        return comment_parts(comment, is_verdict_comment(verdict_keys, issue['number'], comment))
+
     for comment in authorized:
-        final, posted, posted_url = comment_parts(comment)
+        final, posted, posted_url = parts(comment)
         if final is not None and not seen(comment, 'final'):
             record = current_record()
             legacy_seen = any(e.get('issue_comment_id') == comment.get('id')
@@ -159,13 +166,15 @@ def build_events(existing, issue, comments, authorized_login, closing_actor, all
             if not record:
                 continue
             latest = next(e for e in reversed(record) if e['event_type'] in {'draft_created', 'user_revised'})
+            if is_verdict_event(verdict_keys, issue['number'], latest):
+                continue  # Historical review text is not a publishable final.
             # Older importer versions mistook "上記のコメントで投稿しました" for
             # final text. Restore the preceding content with an explicit audit
             # event; never delete the original mistaken events or raw comment.
             if (latest.get('issue_comment_id') == comment.get('id')
                     and latest.get('content') == (comment.get('body') or '')):
-                preceding_finals = [comment_parts(c)[0] for c in authorized[:authorized.index(comment)]
-                                    if comment_parts(c)[0] is not None]
+                preceding_finals = [parts(c)[0] for c in authorized[:authorized.index(comment)]
+                                    if parts(c)[0] is not None]
                 prior = next((e for e in reversed(record[:record.index(latest)])
                               if preceding_finals and e['event_type'] in {'draft_created', 'user_revised'}
                               and e.get('content') == preceding_finals[-1]), None)
@@ -189,7 +198,7 @@ def build_events(existing, issue, comments, authorized_login, closing_actor, all
             if any(e['event_type'] == 'published' for e in tail):
                 continue
             approval = next((e for e in reversed(tail) if e['event_type'] == 'user_approved'), None)
-            if not approval:
+            if not approval or is_verdict_event(verdict_keys, issue['number'], approval):
                 continue
             if final is None and comment.get('created_at') and comment['created_at'] < approval['recorded_at']:
                 continue  # An older report cannot attest a final supplied later.

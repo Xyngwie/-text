@@ -7,6 +7,7 @@ import hashlib
 import json
 import re
 from pathlib import Path
+from reviewed_feedback import load_verdict_keys, is_verdict_comment
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTES = [
@@ -34,6 +35,7 @@ def comparison_text(text):
 
 
 def build_pairs(events, snapshots):
+    verdict_keys = load_verdict_keys()
     groups = collections.defaultdict(list)
     for event in events:
         groups[event['record_id']].append(event)
@@ -52,6 +54,8 @@ def build_pairs(events, snapshots):
         if not matches:
             raise ValueError(f'No owner source comment for published final in Issue {number}')
         source, comment = matches[-1]
+        if is_verdict_comment(verdict_keys, number, comment):
+            continue  # An old importer may have mistaken a verdict for a final.
         if not any(c['id'] == publication['issue_comment_id'] and c['speaker_role'] == 'owner'
                    for s in snapshots if s['context']['issue']['number'] == number
                    for c in s['context']['comments']):

@@ -7,6 +7,7 @@ import hashlib
 import json
 import sys
 from pathlib import Path
+from reviewed_feedback import load_verdict_keys, is_verdict_event
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_LOG = ROOT / "data/publication_events.jsonl"
@@ -126,9 +127,15 @@ def command_approve(args, events, path):
 
 def latest_approval(events, record_id):
     rows = record_events(events, record_id)
+    verdict_keys = load_verdict_keys()
+    number = next((r.get("issue_number") for r in rows if r["event_type"] == "draft_created"), None)
     for index in range(len(rows) - 1, -1, -1):
         event = rows[index]
         if event["event_type"] == "user_approved":
+            latest_content = next((r for r in reversed(rows[:index])
+                                   if r["event_type"] in {"draft_created", "user_revised"}), {})
+            if is_verdict_event(verdict_keys, number, event) or is_verdict_event(verdict_keys, number, latest_content):
+                fail("Reviewed verdict is not approved publication text; supply a final text comment")
             later = rows[index + 1:]
             if any(row["event_type"] in {"user_revised", "draft_created"} for row in later):
                 fail("Content changed after approval; reapproval is required")

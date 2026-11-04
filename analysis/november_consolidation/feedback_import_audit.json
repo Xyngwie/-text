@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-04",
+  "status": "manual_review_overlay_original_events_retained",
+  "ledger_sha256": "853a2749bb32ab1f223553fc18391dcc2f105674304f01829f8bc4750d961966",
+  "reviewed_issue_numbers": [
+    221,
+    234,
+    238
+  ],
+  "affected_events": [
+    {
+      "event_line": 293,
+      "event_sha256": "67bab021b43238c5504122276eca8f068a275ca0e326bac29aa4a2246c115cd6",
+      "issue_number": 234,
+      "event_type": "user_revised",
+      "comment_id": 6592062637,
+      "comment_sha256": "4780672febf9df01eb0d0c8d60590fc0753ce3e077cc43fd4ba635faf1a2d633",
+      "record_id": "rss-829d869f997da066334c"
+    },
+    {
+      "event_line": 294,
+      "event_sha256": "7cc2164308b7f94f7cd69036a48d0e9e6e80a946002d5babeaff1696fecdc2e2",
+      "issue_number": 234,
+      "event_type": "user_approved",
+      "comment_id": 6592062637,
+      "comment_sha256": "4780672febf9df01eb0d0c8d60590fc0753ce3e077cc43fd4ba635faf1a2d633",
+      "record_id": "rss-829d869f997da066334c"
+    },
+    {
+      "event_line": 334,
+      "event_sha256": "b9f99636173b6437fb6f0ac8ac3707769a23f14b992722b7c140efd6306c17b5",
+      "issue_number": 238,
+      "event_type": "user_revised",
+      "comment_id": 6599630185,
+      "comment_sha256": "b7d702468d976981fcfc6cd77554d331d7e995ff7286c7944a650ec38120565a",
+      "record_id": "rss-918a56dae09199dcf779"
+    },
+    {
+      "event_line": 335,
+      "event_sha256": "dc0deef96c8020e7f0b15b0a08c86715162a170d7b1097d6e066f56d8277a8fe",
+      "issue_number": 238,
+      "event_type": "user_approved",
+      "comment_id": 6599630185,
+      "comment_sha256": "b7d702468d976981fcfc6cd77554d331d7e995ff7286c7944a650ec38120565a",
+      "record_id": "rss-918a56dae09199dcf779"
+    },
+    {
+      "event_line": 349,
+      "event_sha256": "8b8c6f80afa5c8e9a152aabe3f9c9c33d309e38bed4d3bcfcfb8fe8020034149",
+      "issue_number": 221,
+      "event_type": "user_revised",
+      "comment_id": 6599835016,
+      "comment_sha256": "1ede418630a33c0f125735f08154d3047a95d2df04e901e9f2ebd20616b55158",
+      "record_id": "rss-7145fb019776586444f7"
+    },
+    {
+      "event_line": 350,
+      "event_sha256": "0baa3a74d9b7545cb207f093fff015b3337439d6814e7e4fce9593ede0ab239b",
+      "issue_number": 221,
+      "event_type": "user_approved",
+      "comment_id": 6599835016,
+      "comment_sha256": "1ede418630a33c0f125735f08154d3047a95d2df04e901e9f2ebd20616b55158",
+      "record_id": "rss-7145fb019776586444f7"
+    }
+  ],
+  "scope": "Known exact reviewed comment revisions excluded from final import, approval reuse and new calibration pairs. Arbitrary unreviewed natural-language verdicts remain unresolved."
+}
