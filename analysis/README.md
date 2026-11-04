@@ -101,3 +101,5 @@
 - [役割を固定しないことと、火力役で狙うもの](copilot002_exploration/13_roles_and_reliable_elimination.md)：仕事の相性をDPSで説明した例、ロマン砲と命中・即死・操作の好みについての本人補足。
 
 - [採用原稿を比べる](november_consolidation/adopted_manuscripts.md)：本人確認に基づき、コピー・修整した12件を採用原稿として比較。実投稿・自発的な口癖と区別し、差分と無修整例を保存。
+
+- [おちゃらけても、同じ働きとは限らない](november_consolidation/playful_utterances.md)：称賛後の軽い落とし方と、失敗の指摘を和らげる言い方を比較。
