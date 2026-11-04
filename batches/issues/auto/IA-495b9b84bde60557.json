@@ -1,0 +1,360 @@
+{
+  "batch_id": "IA-495b9b84bde60557",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6308767417",
+      "unit_kind": "comment",
+      "issue_number": 33,
+      "comment_id": 6308767417,
+      "body_sha256": "dadd7a479466b7854495541924ce0f9f675f257f6e8aa36f24b7b0f4911e684e",
+      "url": "https://github.com/Xyngwie/-text/issues/33#issuecomment-6308767417",
+      "snapshot_sha256": "ad93aa827b57cd06e80041fbd9eed1e7990078a836d568ffadbfd7bc5fb6626a",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games"
+        ],
+        "speech_act": "同意の表明",
+        "feedback_kind": "draft_verdict",
+        "verdict": "acceptable",
+        "note": "初稿のテキストを修整・コピーした採用原稿ではなく、初稿の意見に対する賛意を示すメタ評価コメント。",
+        "evidence_quote": "この意見には賛成",
+        "analysis_candidates": [
+          {
+            "observation": "提示された初稿の論旨（調合の試行錯誤や制約の面白さを重視する姿勢）に対して賛同を示している。",
+            "evidence_quote": "この意見には賛成",
+            "limitation": "「この意見には賛成」という短い肯定のみであり、具体的にどの論点（調合の仕様、自動化への懸念など）にどの程度強く共感しているかまでは特定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-495b9b84bde60557",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8691,
+          "candidatesTokenCount": 1157,
+          "totalTokenCount": 9848,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8691
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-04T23:57:58+00:00",
+        "input_sha256": "e85442a406188845309bc8a4476de129952940dde273cffe4e521add58fd9369",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "42de1909792696eec21ba2e28fdfab6a60c0420d",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41937723716"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "アトリエの完全新作発表。2027年と先の話だが、待つに値するかどうかは調合の骨太さで決まる。単に遊びやすくするために制約を薄め、素材選びの試行錯誤まで自動化されては錬金術の看板が泣くというものだ。不便を整えることと、頭を抱えて最適解を導く面白さを奪うことは別物だ。プレイヤーが工夫と発見で正解を掴み取る手応えを残してこその新作だろう。違うか？",
+        "draft_sha256": "95e2b14b82d3b953738456f17943092b207464206ddad87e22f4963869cc4374",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "アトリエ",
+            "after": "こ"
+          },
+          {
+            "operation": "replace",
+            "before": "完全新作発表。2027年と先の話だが、待つ",
+            "after": "意見"
+          },
+          {
+            "operation": "delete",
+            "before": "値するかどうか",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "調合の骨太さで決まる。単に遊びやすくするために制約を薄め、素材選びの試行錯誤まで自動化されては錬金術の看板が泣くというものだ。不便を整えることと、頭を抱えて最適解を導く面白さを奪うことは別物だ。プレイヤーが工夫と発見で正解を掴み取る手応えを残してこその新作だろう。違うか？",
+            "after": "賛成"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6308787282",
+      "unit_kind": "comment",
+      "issue_number": 35,
+      "comment_id": 6308787282,
+      "body_sha256": "dadd7a479466b7854495541924ce0f9f675f257f6e8aa36f24b7b0f4911e684e",
+      "url": "https://github.com/Xyngwie/-text/issues/35#issuecomment-6308787282",
+      "snapshot_sha256": "cd4066fa15f59939f17d9d29aaf5c8c801d35f19ebb423ad52c41c2382e37881",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "ai",
+          "economy"
+        ],
+        "speech_act": "同意の表明",
+        "feedback_kind": "draft_verdict",
+        "verdict": "acceptable",
+        "note": "AI企業の急落と巨額投資に関する初稿の意見に対して賛成を表明する評価コメント。",
+        "evidence_quote": "この意見には賛成",
+        "analysis_candidates": [
+          {
+            "observation": "AI投資に対する損失管理や回収可能性の設計を問う初稿の主張に肯定的な評価を与えている。",
+            "evidence_quote": "この意見には賛成",
+            "limitation": "文面全体を本人の口調として採用したわけではなく、論旨への賛成にとどまるため、独自の表現スタイルを裏付けるものではない。"
+          }
+        ]
+      },
+      "batch_id": "IA-495b9b84bde60557",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8691,
+          "candidatesTokenCount": 1157,
+          "totalTokenCount": 9848,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8691
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-04T23:57:58+00:00",
+        "input_sha256": "e85442a406188845309bc8a4476de129952940dde273cffe4e521add58fd9369",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "42de1909792696eec21ba2e28fdfab6a60c0420d",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41937723716"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "【価値観スライドによるゼロショット仮説】\n巨額の資金を投じて先端技術を掲げれば、市場が際限なく買い支えてくれるとでも思ったか。問われているのは規模の誇示ではなく、いつ実質的な利益を返し、どこで損失を止めるかという設計の確かさだ。夢の費用を市場へ付け替えるだけの膨張なら、初日に叩き落とされるのは至極真っ当な採点結果だ。違うか？",
+        "draft_sha256": "86c624137a3510ddbae5f6bd5cbd75b45702a52939d59281281253695ede666b",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "【価値観スライド",
+            "after": "この意見"
+          },
+          {
+            "operation": "delete",
+            "before": "よるゼロショット仮説】\n巨額の資金を投じて先端技術を掲げれば、市場が際限なく買い支えてくれるとでも思ったか。問われているの",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "規模の誇示ではなく、いつ実質的な利益を返し、どこで損失を止めるかという設計の確かさだ。夢の費用を市場へ付け替えるだけの膨張なら、初日に叩き落とされるのは至極真っ当な採点結果だ。違うか？",
+            "after": "賛成"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6308795892",
+      "unit_kind": "comment",
+      "issue_number": 29,
+      "comment_id": 6308795892,
+      "body_sha256": "ad4fbd93b821232099faae8df93299460f8dbdd46ef1a57580314b2f80e26288",
+      "url": "https://github.com/Xyngwie/-text/issues/29#issuecomment-6308795892",
+      "snapshot_sha256": "fb25ac6a1c7ac89bf0051cdeae3fd67b4d8c95f1274d8028b9b2ff5489222ddc",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games"
+        ],
+        "speech_act": "同意の表明",
+        "feedback_kind": "draft_verdict",
+        "verdict": "acceptable",
+        "note": "キャラクターの体型変化機能に関する初稿の論点に対して賛同の判定を下している。",
+        "evidence_quote": "この意見に賛成。",
+        "analysis_candidates": [
+          {
+            "observation": "選択肢の増加が無条件の改善とは限らないという初稿の立場に同意している。",
+            "evidence_quote": "この意見に賛成。",
+            "limitation": "短文による同意判定であり、体型変化機能そのものに対する細かな要望や許容範囲の詳細は不明。"
+          }
+        ]
+      },
+      "batch_id": "IA-495b9b84bde60557",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8691,
+          "candidatesTokenCount": 1157,
+          "totalTokenCount": 9848,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8691
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-04T23:57:58+00:00",
+        "input_sha256": "e85442a406188845309bc8a4476de129952940dde273cffe4e521add58fd9369",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "42de1909792696eec21ba2e28fdfab6a60c0420d",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41937723716"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "キャラの体型を変えられる自由を、無条件に進化と呼ぶのは早計だ。作品やキャラクターの魅力は、ときに制約や固定された造形への愛着から生まれる。単なるアバター的都合で固有の輪郭を薄めるのではなく、システムや物語として意味のある変化になっているかが分かれ目だ。選択肢が増えればそれだけで偉いわけではない、違うか？",
+        "draft_sha256": "fbff3da8d6c04986702ff7f165bb0c3483aa16284734f1d675002129c8c95078",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "キャラ",
+            "after": "こ"
+          },
+          {
+            "operation": "replace",
+            "before": "体型を変えられる自由を、無条件",
+            "after": "意見"
+          },
+          {
+            "operation": "replace",
+            "before": "進化と呼ぶのは早計だ",
+            "after": "賛成"
+          },
+          {
+            "operation": "delete",
+            "before": "作品やキャラクターの魅力は、ときに制約や固定された造形への愛着から生まれる。単なるアバター的都合で固有の輪郭を薄めるのではなく、システムや物語として意味のある変化になっているかが分かれ目だ。選択肢が増えればそれだけで偉いわけではない、違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6311729333",
+      "unit_kind": "comment",
+      "issue_number": 41,
+      "comment_id": 6311729333,
+      "body_sha256": "9294e3be26dafd97eb285de95c7a75ac4a4580601e2ebc2efb7e0667312fc60c",
+      "url": "https://github.com/Xyngwie/-text/issues/41#issuecomment-6311729333",
+      "snapshot_sha256": "dfeaabd6bce93c889c4a72bdd5fd4115b236a6419bcc824505f9a9f7cde0ac2a",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "life",
+          "thinking"
+        ],
+        "speech_act": "過去の自己発言に対する感想・内省",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "過去の自身のX投稿の分類レポートに対し、当時の言動への自己評価や距離感を述べている。",
+        "evidence_quote": "昔の自分、結構恐いこと言ってるなあ…\n\n過激派だー、きしょーい。",
+        "analysis_candidates": [
+          {
+            "observation": "過去の自身の言動に対して「恐い」「過激派」「きしょーい」と自虐的・批評的に捉え、現在の感覚との乖離を認識している。",
+            "evidence_quote": "昔の自分、結構恐いこと言ってるなあ…\n\n過激派だー、きしょーい。",
+            "limitation": "過去のどの投稿のどのフレーズを指して「恐い」「過激派」と評したのかはコメント単体からは特定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-495b9b84bde60557",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8691,
+          "candidatesTokenCount": 1157,
+          "totalTokenCount": 9848,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8691
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-04T23:57:58+00:00",
+        "input_sha256": "e85442a406188845309bc8a4476de129952940dde273cffe4e521add58fd9369",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "42de1909792696eec21ba2e28fdfab6a60c0420d",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41937723716"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6311755122",
+      "unit_kind": "comment",
+      "issue_number": 42,
+      "comment_id": 6311755122,
+      "body_sha256": "7a17b26f12390302bd490ce95ce1022968eb346c77b203c7db1bec1e2526db5d",
+      "url": "https://github.com/Xyngwie/-text/issues/42#issuecomment-6311755122",
+      "snapshot_sha256": "0cced3681d707afb468be72de2ab7428fdf5ce843d746ce52afdf4972b0c4e5f",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "life"
+        ],
+        "speech_act": "過去の活動の回顧・事実確認",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "過去の自身の投稿ログがサバイバルゲーム関連に偏っていたことに対する振り返りコメント。",
+        "evidence_quote": "この頃はサバゲーばっかりやっていましたね。",
+        "analysis_candidates": [
+          {
+            "observation": "提示された時期の自身の活動においてサバイバルゲームへの傾倒が顕著であったことを事実として認めている。",
+            "evidence_quote": "この頃はサバゲーばっかりやっていましたね。",
+            "limitation": "当時の頻度や熱中度合い、また現在におけるサバゲーとの関わり方の変化までは言及されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-495b9b84bde60557",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8691,
+          "candidatesTokenCount": 1157,
+          "totalTokenCount": 9848,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8691
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-04T23:57:58+00:00",
+        "input_sha256": "e85442a406188845309bc8a4476de129952940dde273cffe4e521add58fd9369",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "42de1909792696eec21ba2e28fdfab6a60c0420d",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41937723716"
+      },
+      "draft_comparison": null
+    }
+  ]
+}
