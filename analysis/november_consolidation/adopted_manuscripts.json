@@ -35,7 +35,8 @@
           "before": "だな（笑）",
           "after": "に感じる"
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 208,
@@ -50,7 +51,8 @@
       "status": "adopted_manuscript_not_publication_report",
       "comparison_kind": "exact_copy",
       "interpretation": "睡眠の重要性を認めつつ自分の行動の変更には自信がないという初稿を全文コピー。実際の睡眠状態・診断の申告とはしない。",
-      "exact_edits": []
+      "exact_edits": [],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 209,
@@ -65,7 +67,8 @@
       "status": "adopted_manuscript_not_publication_report",
       "comparison_kind": "exact_copy",
       "interpretation": "比喩、（笑）、強い評価を含む初稿を全文コピー。既存の政治家への恒常的な好意やニュース事実の独立確認とはしない。",
-      "exact_edits": []
+      "exact_edits": [],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 210,
@@ -86,7 +89,8 @@
           "before": "",
           "after": "\n\nで、どなた？w"
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 211,
@@ -122,7 +126,8 @@
           "before": "まあ勝手にやってくれという話だな。",
           "after": ""
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 212,
@@ -143,7 +148,8 @@
           "before": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n",
           "after": ""
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 222,
@@ -219,7 +225,8 @@
           "before": "\nhttps://news.google.com/rss/articles/CBMibEFVX3lxTFA0QTkyaHVpSXNBT3RlVE90STV2Y1ZORFo2WkNkcGYwS2x5eFZHTHNZWmppbWFUd2g1YnZ3cEU0RXc2T05TU1g4SkNMRGc2ZlFtWlVZTjhPNldzZklQUUdXSGJ0SDFvanRXT1E0RA?oc=5",
           "after": "日々精進。"
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 236,
@@ -240,7 +247,8 @@
           "before": "※実験政治枠（価値観スライドによるゼロショット仮説）\n\n",
           "after": ""
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 237,
@@ -261,7 +269,8 @@
           "before": "\n\nhttps://news.google.com/rss/articles/CBMiXEFVX3lxTE44MEJTWGk0eTM5ZEZRRGcyXzZxNmtIaXFDaXRHV2d3X01MUl80MDR2X1hLWVE4bXlZeTR6Vzk5bUxBdmxJN1BTeS1TWExsR1dDVVVOSDl6ODBPaHB6?oc=5",
           "after": ""
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 239,
@@ -307,7 +316,8 @@
           "before": "\n\n道かナビか判断か、どこがバグったのかは知らんが、派手に転がる前に難易度設定を見直せという話だな。",
           "after": ""
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 240,
@@ -358,7 +368,8 @@
           "before": "ものだな",
           "after": "に行ってみたい"
         }
-      ]
+      ],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     },
     {
       "issue_number": 241,
@@ -373,7 +384,13 @@
       "status": "adopted_manuscript_not_publication_report",
       "comparison_kind": "exact_copy",
       "interpretation": "法令と動物の移送の両立に判断保留を示す初稿を全文コピー。「理屈は分かる」の使用を普段の口癖として数えない。",
-      "exact_edits": []
+      "exact_edits": [],
+      "preference_status": "unknown_adoption_may_include_tolerance"
     }
-  ]
+  ],
+  "owner_followup": {
+    "quote": "許容しちゃったのもあるよね。\n続けてください",
+    "source": "本チャット。独立エクスポートは未登録。",
+    "meaning": "採用には許容も含まれる。どの原稿・どの箇所が許容だったかは未特定。"
+  }
 }
