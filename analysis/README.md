@@ -95,3 +95,5 @@
 - [手間をかけて、日々の手間を減らす](copilot002_exploration/10_learning_to_spend_less_attention.md)：他者の方法を率直に尋ね、習得後の脳内リソース消費を見て検討するという本人補足。
 
 - [美しさと検証を、総合評価へ含める](copilot002_exploration/11_beauty_verification_and_ev.md)：簡潔さ、プロセスの理解、統計的な試行についての本人補足。EVのスカラー化は対話中の整理で、普段の全数量化ではないとの後続訂正を反映。
+
+- [選択を悔やむことと、判断を直すこと](copilot002_exploration/12_regret_and_revision.md)：後悔を控える努力、既存戦法の試行、修整後の敗北を完敗とする本人の区切り。
