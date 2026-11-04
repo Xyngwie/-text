@@ -1,0 +1,69 @@
+name: Issue source classification and analysis proposals
+
+on:
+  schedule:
+    # Archive refresh runs at :43; analyze stored originals at :53.
+    - cron: '53 * * * *'
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: Owner units per run (1..10)
+        default: '5'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: issue-source-analysis
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    if: vars.ISSUE_ANALYSIS_PAUSED != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Analyze one bounded batch of archived Issue units
+        shell: bash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ISSUE_ANALYSIS_MODEL: ${{ vars.ISSUE_ANALYSIS_MODEL || 'auto' }}
+          BATCH_SIZE: ${{ inputs.batch_size || '5' }}
+        run: |
+          set -euo pipefail
+          python3 tools/analyze_issue_batch.py --batch-size "$BATCH_SIZE" | tee "$RUNNER_TEMP/issue_analysis_result.json"
+          cat "$RUNNER_TEMP/issue_analysis_result.json" >> "$GITHUB_STEP_SUMMARY"
+          python3 tools/validate.py
+          python3 - "$RUNNER_TEMP/issue_analysis_result.json" "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json, sys
+          result = json.load(open(sys.argv[1], encoding='utf-8'))
+          with open(sys.argv[2], 'a', encoding='utf-8') as output:
+              output.write('\n\nAI分析案です。採否と解釈は精読・精査を待ちます。\n\n')
+              if result.get('batch_id'):
+                  output.write('レポート: batches/issues/auto/' + result['batch_id'] + '.md\n')
+          PY
+
+      - name: Commit provisional analysis and readable reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if test -f data/issue_ai_reviews.jsonl; then git add data/issue_ai_reviews.jsonl; fi
+          if test -d batches/issues/auto; then git add batches/issues/auto; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Analyze one archived Issue batch (AI proposals pending review)'
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push origin HEAD:main; then exit 0; fi
+          done
+          exit 1

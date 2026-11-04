@@ -6,6 +6,7 @@ from pathlib import Path
 from source_catalog import parse_sources
 from publication_feedback import load_events, validate as validate_publication_events
 from validate_issue_reviews import validate as validate_issue_reviews
+from analyze_issue_batch import validate_ledger as validate_issue_ai_reviews
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -15,6 +16,7 @@ KNOWN_LEGACY_HASH_EXCEPTIONS = {
 }
 
 def main():
+    validate_issue_ai_reviews(ROOT)
     progress_file = ROOT / "data" / "progress.json"
     reviews_file = ROOT / "data" / "reviews.jsonl"
     segments_file = ROOT / "data" / "segments.jsonl"

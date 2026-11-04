@@ -103,3 +103,5 @@
 - [採用原稿を比べる](november_consolidation/adopted_manuscripts.md)：本人確認に基づき、コピー・修整した12件を採用原稿として比較。実投稿・自発的な口癖と区別し、差分と無修整例を保存。
 
 - [おちゃらけても、同じ働きとは限らない](november_consolidation/playful_utterances.md)：称賛後の軽い落とし方と、失敗の指摘を和らげる言い方を比較。
+
+- [Issue原典の自動分析と精読の運用](november_consolidation/issue_analysis_operation.md)：毎時最大5件の分類・分析案を蓄積し、この窓で精読・精査する。自動案は本人承認や確定モデルへ直結させない。

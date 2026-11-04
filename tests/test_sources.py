@@ -108,7 +108,19 @@ class SourcesTest(unittest.TestCase):
         self.assertEqual(before, (self.root / 'data/utterances.jsonl').read_bytes())
 
     def test_analysis_snapshot_reads_pinned_path_after_move(self):
-        # A future analysis pins today's registry, whose local and historical paths differ.
+        # Relocation preserves the frozen inputs of the version under test.
+        version = json.loads((self.root / 'analysis/progress.json').read_text())['current_version']
+        manifest_path = self.root / 'analysis' / version / 'manifest.json'
+        manifest = json.loads(manifest_path.read_text())
+        # Relocate the registry of the frozen analysis, not today's expanded
+        # catalog. Re-pinning unrelated current classifications changes the
+        # snapshot under test (e.g. after copilot-002 was added).
+        for name in {**manifest['input_files'], **manifest.get('supplemental_input_files', {})}:
+            target = self.root / name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(subprocess.check_output(
+                ['git', 'show', f"{manifest['base_commit']}:{name}"], cwd=self.root))
+            subprocess.run(['git', 'add', name], cwd=self.root, check=True)
         registry = self.root / 'data/sources.json'
         config = json.loads(registry.read_text())
         source = config['sources'][0]
