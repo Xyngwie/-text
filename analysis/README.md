@@ -97,3 +97,5 @@
 - [美しさと検証を、総合評価へ含める](copilot002_exploration/11_beauty_verification_and_ev.md)：簡潔さ、プロセスの理解、統計的な試行についての本人補足。EVのスカラー化は対話中の整理で、普段の全数量化ではないとの後続訂正を反映。
 
 - [選択を悔やむことと、判断を直すこと](copilot002_exploration/12_regret_and_revision.md)：後悔を控える努力、既存戦法の試行、修整後の敗北を完敗とする本人の区切り。
+
+- [役割を固定しないことと、火力役で狙うもの](copilot002_exploration/13_roles_and_reliable_elimination.md)：仕事の相性をDPSで説明した例、ロマン砲と命中・即死・操作の好みについての本人補足。
