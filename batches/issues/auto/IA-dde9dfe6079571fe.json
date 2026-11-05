@@ -1,0 +1,545 @@
+{
+  "batch_id": "IA-dde9dfe6079571fe",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6328201703",
+      "unit_kind": "comment",
+      "issue_number": 47,
+      "comment_id": 6328201703,
+      "body_sha256": "be4a090c3977168ed3220198e999548f9e28ae5fb7f41e352f18516446d714bd",
+      "url": "https://github.com/Xyngwie/-text/issues/47#issuecomment-6328201703",
+      "snapshot_sha256": "5ff9c30c2917c83a8e3b503f8f0c0c6bb944449bdb65b53bde4ce35bc930740d",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "culture"
+        ],
+        "speech_act": "AI初稿の表現（「泥臭い」等）を退けつつ、対象作品群への愛着やシリーズのコラボレーション難度に関する自論を述べ、新作への期待を表明する発言",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "初稿の文面（「泥臭い試行錯誤」など）を採用せず、「泥臭いかはさておき」と前置きして完全に独自の文章でゲームシリーズの構造的特徴や期待を語っている。",
+        "evidence_quote": "泥臭いかはさておき、どちらも好きな作品群である。アトリエシリーズは他のゲーム作品と違い、別作品からコラボ的なキャラクター参入をさせることが困難である弱点をもつ（メインキャラクターとして登場させるなら錬金術士としての側面がないと厳しいので）。独立した作品としての立ち上げは妥当なところだろう。良いゲームになることを期待したい。",
+        "analysis_candidates": [
+          {
+            "observation": "アトリエシリーズのゲーム性や世界観の要件（錬金術士としての側面）に着目し、他IPとの独立した新規立ち上げを妥当と分析している。",
+            "evidence_quote": "アトリエシリーズは他のゲーム作品と違い、別作品からコラボ的なキャラクター参入をさせることが困難である弱点をもつ（メインキャラクターとして登場させるなら錬金術士としての側面がないと厳しいので）。独立した作品としての立ち上げは妥当なところだろう。",
+            "limitation": "本ゲームの具体的なゲームシステム仕様や発売後の出来栄えについての評価までは言及していない。"
+          }
+        ]
+      },
+      "batch_id": "IA-dde9dfe6079571fe",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11154,
+          "candidatesTokenCount": 1746,
+          "totalTokenCount": 12900,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11154
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T21:37:20+00:00",
+        "input_sha256": "6ce2866c0e3ac81a73cd5b80a4043aa84a467cedc8e04ccc3e732f2e2434bc48",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "a4e390a6c3540e9f772a64c554a06ea5c9c178b3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42114242703"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "ガストに『薬屋』を作らせるという着眼点そのものは美しい。調合と採取という文脈を考えれば、これ以上噛み合う選択肢もないだろう。だが、問われるべきはアトリエのガワを着せ替えただけの安直なキャラゲーで終わらせない覚悟だ。毒の検証や環境の制約といった、あの作品特有の泥臭い試行錯誤をシステム上の必然として残せるかどうかにすべてがかかっている。無難な便利さで抵抗を削ぎ落とすなら看板が泣くぞ。本気で「猫猫の調合」を解かせる設計になっているのか、見せてもらおうか。",
+        "draft_sha256": "1a326f83e8ccf06143b50f327c2197e9265e1fd89cc9caff83d40db17402e42a",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "ガス",
+            "after": "泥臭いかはさておき、どちらも好きな作品群である。ア"
+          },
+          {
+            "operation": "replace",
+            "before": "に『薬屋』",
+            "after": "リエシリーズは他のゲーム作品と違い、別作品からコラボ的なキャラクター参入"
+          },
+          {
+            "operation": "replace",
+            "before": "作ら",
+            "after": "さ"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "こ"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "が困難である弱点をもつ（メインキャラクターとして登場させるなら錬金術士としての側面がな"
+          },
+          {
+            "operation": "replace",
+            "before": "う着眼点そのものは美",
+            "after": "と厳"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "ので）"
+          },
+          {
+            "operation": "replace",
+            "before": "調合",
+            "after": "独立した作品"
+          },
+          {
+            "operation": "replace",
+            "before": "採取",
+            "after": "しての立ち上げは妥当な"
+          },
+          {
+            "operation": "delete",
+            "before": "いう文脈を考えれば、",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "れ以上噛み合う選択肢もない",
+            "after": "ろ"
+          },
+          {
+            "operation": "replace",
+            "before": "だが、問われるべきはアトリエのガワを着せ替えただけの安直なキャラ",
+            "after": "良い"
+          },
+          {
+            "operation": "delete",
+            "before": "で終わらせない覚悟だ。毒の検証や環境の制約といった、あの作品特有の泥臭い試行錯誤をシステ",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "上の必然として残せるかどうかにすべてがかかっている。無難な便利さで抵抗を削ぎ落とすなら看板が泣くぞ。本気で「猫猫の調合」を解かせる設計",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "って",
+            "after": "ることを期待した"
+          },
+          {
+            "operation": "delete",
+            "before": "るのか、見せてもらおうか",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6328502939",
+      "unit_kind": "comment",
+      "issue_number": 61,
+      "comment_id": 6328502939,
+      "body_sha256": "f7c26b793dca98e17de88bf7f8217584196c68406821250c76c540fbe4cc296c",
+      "url": "https://github.com/Xyngwie/-text/issues/61#issuecomment-6328502939",
+      "snapshot_sha256": "dc1cc3f0abb7dc20f915a23fba9cfc179e499e868d8c5dca6a61d92309614ea6",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "culture",
+          "society"
+        ],
+        "speech_act": "過去のネットスラング・構文の使用傾向の変遷および2013年当時のソシャゲ史に関する疑問と所感を述べる発言",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "X過去ログの分類タスクに対する本人コメント。「〜は滅べ」という構文についての振り返りと疑問を投げかけている。",
+        "evidence_quote": "「〜は滅べ」って構文、最近あまり見なくなったな。2013当時ってソシャゲってまだ初期だったのかなあ？",
+        "analysis_candidates": [
+          {
+            "observation": "2013年当時のソーシャルゲームの発展段階やネットミームの変遷に関心を示している。",
+            "evidence_quote": "「〜は滅べ」って構文、最近あまり見なくなったな。2013当時ってソシャゲってまだ初期だったのかなあ？",
+            "limitation": "当時の具体的なゲームタイトルや、どの投稿を指しての発言かの詳細な紐付けは本コメント単体からは不明。"
+          }
+        ]
+      },
+      "batch_id": "IA-dde9dfe6079571fe",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11154,
+          "candidatesTokenCount": 1746,
+          "totalTokenCount": 12900,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11154
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T21:37:20+00:00",
+        "input_sha256": "6ce2866c0e3ac81a73cd5b80a4043aa84a467cedc8e04ccc3e732f2e2434bc48",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "a4e390a6c3540e9f772a64c554a06ea5c9c178b3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42114242703"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6333020931",
+      "unit_kind": "comment",
+      "issue_number": 49,
+      "comment_id": 6333020931,
+      "body_sha256": "4dc51b3461b07e7ae7d73b3fce33656644dffdfcbe7e5696694da41fe8fd1f17",
+      "url": "https://github.com/Xyngwie/-text/issues/49#issuecomment-6333020931",
+      "snapshot_sha256": "8110446f9119c3b03d4de7728aa95131e313b0a68429e03fc4e2bf482ea5398c",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "software"
+        ],
+        "speech_act": "PHP脆弱性に関連したゲームのメンテ状況に触れつつ、自身が過去に投稿したオフラインゲーム推奨の投稿URLを共有・報告する発言",
+        "feedback_kind": "publication_report",
+        "verdict": "would_not_say",
+        "note": "AIの政治・管理責任を追及する初稿案を採用せず、障害メンテに対するオフラインゲームのオススメという自身の実投稿URLを共有している。",
+        "evidence_quote": "ゲーム会社も対応に追われて、みんなメンテナンス中でゲームできないみたいなので大好きなオフゲーをオススメしてみました。\nhttps://x.com/Xyngwie/status/2113129488494256514",
+        "analysis_candidates": [
+          {
+            "observation": "オンラインゲームのメンテナンス等の状況に対して、オフラインゲームのプレイを勧める行動を取っている。",
+            "evidence_quote": "ゲーム会社も対応に追われて、みんなメンテナンス中でゲームできないみたいなので大好きなオフゲーをオススメしてみました。",
+            "limitation": "オススメされた具体的なオフラインゲームの内容やタイトルはリンク先を参照しないと確認できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-dde9dfe6079571fe",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11154,
+          "candidatesTokenCount": 1746,
+          "totalTokenCount": 12900,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11154
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T21:37:20+00:00",
+        "input_sha256": "6ce2866c0e3ac81a73cd5b80a4043aa84a467cedc8e04ccc3e732f2e2434bc48",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "a4e390a6c3540e9f772a64c554a06ea5c9c178b3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42114242703"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "（実験政治枠：価値観スライドによるゼロショット仮説）\n広範な基盤となっているPHPに重大脆弱性が出たというなら、ただ騒ぎ立てるだけで済む話ではない。道具の恩恵を貪りながら保守と修正の責任を放棄し、潜在的な損害を第三者に押し付けるのは最も美しくない振る舞いだ。誰が管理し、誰が速やかに手当てを完了させるのか。インフラを握るならその責任を引き受けてみせろ。違うか？",
+        "draft_sha256": "251fdcf6f484fa861d8ef20de1e00734f9a356474d156aa681759fb5cfec8b7e",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "（実験政治枠：価値観",
+            "after": "ゲーム会社も対応に追われて、みんなメンテナン"
+          },
+          {
+            "operation": "replace",
+            "before": "ライドによるゼロショット仮説）\n広範な基盤となっているPHPに重大脆弱性が出たというなら、ただ騒ぎ立てるだけ",
+            "after": "中"
+          },
+          {
+            "operation": "replace",
+            "before": "済む話",
+            "after": "ゲーム"
+          },
+          {
+            "operation": "replace",
+            "before": "は",
+            "after": "き"
+          },
+          {
+            "operation": "replace",
+            "before": "。道具",
+            "after": "みたいな"
+          },
+          {
+            "operation": "replace",
+            "before": "恩恵",
+            "after": "で大好きなオフゲー"
+          },
+          {
+            "operation": "replace",
+            "before": "貪りながら保守と修正の責任を放棄",
+            "after": "オススメ"
+          },
+          {
+            "operation": "delete",
+            "before": "、潜在的な損害を第三者に押し付けるのは最も美しくない振る舞いだ。誰が管理し、誰が速やかに手当てを完了させるのか。インフラを握るならその責任を引き受け",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "せろ",
+            "after": "ました"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\nhttps://x.com/Xyngwie/status/2113129488494256514"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6352976704",
+      "unit_kind": "comment",
+      "issue_number": 50,
+      "comment_id": 6352976704,
+      "body_sha256": "61f1c40b64735ecd19147d00d122990de324757896f090508689c578f9191e8c",
+      "url": "https://github.com/Xyngwie/-text/issues/50#issuecomment-6352976704",
+      "snapshot_sha256": "2cb8a3d9c03ad7e54e685bc52f920a6d6059cd11f65e2c0267336583e4e6b657",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "society"
+        ],
+        "speech_act": "自身が当事者（有権者）ではないという立場を留保しつつ、AI提案の論旨に対して同意を表明する判定発言",
+        "feedback_kind": "draft_verdict",
+        "verdict": "acceptable",
+        "note": "投稿用テキストとしての確定文を出力しているわけではなく、初稿の論旨に対する評価コメントである。",
+        "evidence_quote": "そこの有権者ではないので、これをいう権利はないけれど。論旨は同意。",
+        "analysis_candidates": [
+          {
+            "observation": "地方選挙や地域課題において有権者としての当事者性がないことに留意しつつも、公費投入や責任境界に関する論旨自体には同意を示している。",
+            "evidence_quote": "そこの有権者ではないので、これをいう権利はないけれど。論旨は同意。",
+            "limitation": "具体的にどの候補者のどの政策にどの程度賛同しているかまでは記述されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-dde9dfe6079571fe",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11154,
+          "candidatesTokenCount": 1746,
+          "totalTokenCount": 12900,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11154
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T21:37:20+00:00",
+        "input_sha256": "6ce2866c0e3ac81a73cd5b80a4043aa84a467cedc8e04ccc3e732f2e2434bc48",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "a4e390a6c3540e9f772a64c554a06ea5c9c178b3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42114242703"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "（価値観スライドによるゼロショット仮説）新潟市長選の液状化対策で見るべきは、耳触りのいい全面支援の掛け声ではない。公費でどこまで救い、どこからを個人の管理責任とするか、その冷徹な線引きと財源の裏付けだ。責任の境界を濁したバラマキは破綻を生むだけだが、実効性ある制度設計を示せている候補は誰なのか、そこを厳しく採点させてもらう。違うか？",
+        "draft_sha256": "c5d0f631e20018a9c3af714f23be51e34be5da712d5c4d1b50bef38f3323e672",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "（価値観スライドによるゼロショット仮説）新潟市長選",
+            "after": "そこ"
+          },
+          {
+            "operation": "replace",
+            "before": "液状化対策で見るべきは、耳触りのいい全面支援の掛け声",
+            "after": "有権者"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "ので、これをいう権利はないけれど"
+          },
+          {
+            "operation": "replace",
+            "before": "公費でどこまで救い、どこからを個人の管理責任とするか、その冷徹な線引きと財源の裏付けだ",
+            "after": "論旨は同意"
+          },
+          {
+            "operation": "delete",
+            "before": "責任の境界を濁したバラマキは破綻を生むだけだが、実効性ある制度設計を示せている候補は誰なのか、そこを厳しく採点させてもらう。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6353046542",
+      "unit_kind": "comment",
+      "issue_number": 51,
+      "comment_id": 6353046542,
+      "body_sha256": "215ca8ee258d2f2640405050a93b85f0bdf5a60c05d8f0c5d965667b24954717",
+      "url": "https://github.com/Xyngwie/-text/issues/51#issuecomment-6353046542",
+      "snapshot_sha256": "ab30b9c114f08203d5f46ef390d1aa791eaf94d07f7fb2abacd0fc6cdf2858f5",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "world",
+          "politics"
+        ],
+        "speech_act": "3者協議のニュースを契機として、将来的な国際秩序や共通敵の推移に関する自身の国際政治観を述べる発言",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "AI初稿の「時間稼ぎと現状固定の道具」という批判論調を採用せず、平和への進展を願いつつ独自の共通敵理論・地政学的見解を述べている。",
+        "evidence_quote": "これで平和への道が一歩進む事を願う。次の共通敵は中国でも構わない。そうなってから更なる共通敵を見つける過程で中国とも同じ方向を向けばよい。\nさらにその次は第三世界、イスラム世界だし、そことも戦いの末に落としどころが見つかればよいだろう",
+        "analysis_candidates": [
+          {
+            "observation": "共通敵を設定・更新しながら段階的に平和や落としどころを見出していくという独自のリアリズム的秩序観を述べている。",
+            "evidence_quote": "これで平和への道が一歩進む事を願う。次の共通敵は中国でも構わない。そうなってから更なる共通敵を見つける過程で中国とも同じ方向を向けばよい。\nさらにその次は第三世界、イスラム世界だし、そことも戦いの末に落としどころが見つかればよいだろう",
+            "limitation": "この発言が恒常的な地政学的信条であるか、あるいは思考実験的な言及であるかの厳密な線引きはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-dde9dfe6079571fe",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11154,
+          "candidatesTokenCount": 1746,
+          "totalTokenCount": 12900,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11154
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T21:37:20+00:00",
+        "input_sha256": "6ce2866c0e3ac81a73cd5b80a4043aa84a467cedc8e04ccc3e732f2e2434bc48",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "a4e390a6c3540e9f772a64c554a06ea5c9c178b3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42114242703"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠の価値観スライドによるゼロショット仮説。アブダビでの3者協議再開が事実だとしても、テーブルに着くこと自体を前進と呼ぶつもりはない。重要なのは、誰が合意の履行を保証し、約束が反故にされた際にどう損失を止めるのかという設計の有無だ。検証と撤退の条件なき対話は、単なる時間稼ぎと現状固定の道具にしかならない。形だけの対話で成果を気取るのは筋違いだ、違うか？",
+        "draft_sha256": "23bc338f84dd92ac037bf52e67892e6401110108625c9b945cc6679191875c5e",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "実験政治枠",
+            "after": "これで平和へ"
+          },
+          {
+            "operation": "replace",
+            "before": "価値観スライドによるゼロショット仮説",
+            "after": "道が一歩進む事を願う"
+          },
+          {
+            "operation": "replace",
+            "before": "アブダビ",
+            "after": "次の共通敵は中国"
+          },
+          {
+            "operation": "delete",
+            "before": "の3者協議再開が事実だとして",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "、テーブルに着くこと自体を前進と呼ぶつもりは",
+            "after": "構わ"
+          },
+          {
+            "operation": "replace",
+            "before": "重要",
+            "after": "そう"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "ってから更なる共通敵を見つける過程で中国とも同じ方向を向けばよい。\nさらにそ"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "次"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "第三世界"
+          },
+          {
+            "operation": "replace",
+            "before": "誰が合意の履行を保証",
+            "after": "イスラム世界だ"
+          },
+          {
+            "operation": "replace",
+            "before": "約束",
+            "after": "そことも戦いの末に落としどころ"
+          },
+          {
+            "operation": "replace",
+            "before": "反故にさ",
+            "after": "見つか"
+          },
+          {
+            "operation": "replace",
+            "before": "た際にどう損失を止めるのかという設計の有無だ。検証と撤退の条件なき対話は、単なる時間稼ぎと現状固定の道具にしかならない。形だけの対話で成果を気取るのは筋違",
+            "after": "ばよ"
+          },
+          {
+            "operation": "replace",
+            "before": "、違",
+            "after": "ろ"
+          },
+          {
+            "operation": "delete",
+            "before": "か？",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
