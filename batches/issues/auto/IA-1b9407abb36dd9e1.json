@@ -1,0 +1,509 @@
+{
+  "batch_id": "IA-1b9407abb36dd9e1",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6311776772",
+      "unit_kind": "comment",
+      "issue_number": 38,
+      "comment_id": 6311776772,
+      "body_sha256": "0f8fabad867afd78d76b3fa0afe9cab84943f47f64f269db704f3c31d1a543b0",
+      "url": "https://github.com/Xyngwie/-text/issues/38#issuecomment-6311776772",
+      "snapshot_sha256": "c347563ca5bff88eeea74695079a201fa9ac2fdc0927915f49c1129dd3823aed",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "software"
+        ],
+        "speech_act": "自身の知識不足の表明と初稿の判断留保",
+        "feedback_kind": "draft_verdict",
+        "verdict": "unknown",
+        "note": "対象トピックに関する知識が要約を読んでも理解できないレベルであると表明しており、初稿の採否判断そのものを留保している。",
+        "evidence_quote": "これについて要約を読んでもちんぷんかんぷんな程度に知識がありません。",
+        "analysis_candidates": [
+          {
+            "observation": "専門的な技術トピックにおいて、理解が及ばない場合に無理に採否を決めず知識不足を率直に自己申告する姿勢が見られる。",
+            "evidence_quote": "これについて要約を読んでもちんぷんかんぷんな程度に知識がありません。",
+            "limitation": "本Issue単体での発言であり、どの程度の専門性であれば理解・判断可能とするのかの閾値は不明である。"
+          }
+        ]
+      },
+      "batch_id": "IA-1b9407abb36dd9e1",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10259,
+          "candidatesTokenCount": 1223,
+          "totalTokenCount": 13398,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10259
+            }
+          ],
+          "thoughtsTokenCount": 1916,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T07:28:13+00:00",
+        "input_sha256": "dc73662e1e9e3ffcc0dd9175164619a6ef9b51768b0ef7fea6a244184e45b92b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "037d3a5750eb349e80a49ca020c069fe4671e47a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41987363686"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "詳細な停止期日や移行手順は原典で詰める必要があるが、静的トークンを抱え落ちさせるリスクを切り、OIDCへ退路を断つ設計思想そのものは正解だ。古い鍵を残したままの利便性など、ただの怠慢と脆弱性の放置にすぎない。管理できない権限をきれいに畳むことこそが開発基盤の矜持だろう。違うか？",
+        "draft_sha256": "820decc0ad9c084b56e273211d7f00a953dc9e2ed8b86a146056e274333f7347",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "詳細",
+            "after": "これについて要約を読んでもちんぷんかんぷん"
+          },
+          {
+            "operation": "replace",
+            "before": "停止期日や移行手順は原典で詰める必要",
+            "after": "程度に知識"
+          },
+          {
+            "operation": "replace",
+            "before": "るが、静的トークンを抱え落ちさ",
+            "after": "りま"
+          },
+          {
+            "operation": "replace",
+            "before": "るリスクを切り、OIDCへ退路を断つ設計思想そのものは正解だ",
+            "after": "ん"
+          },
+          {
+            "operation": "delete",
+            "before": "古い鍵を残したままの利便性など、ただの怠慢と脆弱性の放置にすぎない。管理できない権限をきれいに畳むことこそが開発基盤の矜持だろう。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6317798722",
+      "unit_kind": "comment",
+      "issue_number": 36,
+      "comment_id": 6317798722,
+      "body_sha256": "a66a11f95c8850501a9aa6a8a6335001bb598fe21ef3a4f19e35db38e737e65d",
+      "url": "https://github.com/Xyngwie/-text/issues/36#issuecomment-6317798722",
+      "snapshot_sha256": "0bdae73eacd52f37f4e80c1627e407a71c7198bb05b474fc9d0b94b46c4b7844",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "world"
+        ],
+        "speech_act": "初稿の妥当性を認めつつ批判に偏ることへの懸念と対案提示の要求",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "初稿の論理（批判内容）自体は肯定しつつも、批判だけで終わる文章は採用せず対案を示すべきだとして修正を促している。",
+        "evidence_quote": "それはその通りだが批判だけでは心を打たないだろう。対案を提示しよう。",
+        "analysis_candidates": [
+          {
+            "observation": "単なる問題点の批判にとどまらず、聞き手に響くためには対案の提示が不可欠であるという発信方針を持っていることが窺える。",
+            "evidence_quote": "批判だけでは心を打たないだろう。対案を提示しよう。",
+            "limitation": "具体的にどのような対案を想定しているか、また政治分野以外でも同様の対案提示を求めるかは定かではない。"
+          }
+        ]
+      },
+      "batch_id": "IA-1b9407abb36dd9e1",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10259,
+          "candidatesTokenCount": 1223,
+          "totalTokenCount": 13398,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10259
+            }
+          ],
+          "thoughtsTokenCount": 1916,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T07:28:13+00:00",
+        "input_sha256": "dc73662e1e9e3ffcc0dd9175164619a6ef9b51768b0ef7fea6a244184e45b92b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "037d3a5750eb349e80a49ca020c069fe4671e47a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41987363686"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "価値観スライドによるゼロショット仮説。半年揉めてようやく親欧州の新内閣が立ったというが、看板を掛け替えただけで統治が戻った気になられては困る。政治の停滞を終わらせるのは耳ざわりのいいスローガンではなく、政策が破綻した際に誰が責任を負い、どう軌道修正できるかの統治設計だ。枠組みが整ったこと自体で満足するなら、それは仕事の完成ではなく着手に過ぎない。",
+        "draft_sha256": "662c3578e4307c5030144c2d2c36e008fbf2e8c0c1699cfe3d2a3cbc6639f808",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "価値観スライドによるゼロショット仮説。半年揉めてようやく親欧州",
+            "after": "それはそ"
+          },
+          {
+            "operation": "replace",
+            "before": "新内閣",
+            "after": "通りだ"
+          },
+          {
+            "operation": "replace",
+            "before": "立ったというが、看板を掛け替えた",
+            "after": "批判"
+          },
+          {
+            "operation": "replace",
+            "before": "統治が戻っ",
+            "after": "は心を打"
+          },
+          {
+            "operation": "delete",
+            "before": "気になられては困る。政治の停滞を終わらせるのは耳ざわりのいいスローガンではなく、政策が破綻した際に誰が責任を負い、どう軌道修正できるかの統治設計だ。枠組みが整ったこと自体で満足するなら、それは仕事の完成ではなく着手に過ぎ",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "だろう"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "対案を提示しよう。"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6317845547",
+      "unit_kind": "comment",
+      "issue_number": 37,
+      "comment_id": 6317845547,
+      "body_sha256": "68da44b38af18cfa476b96b858ef056c36a0a18aa1ff90b39cb6e647a2e2fbff",
+      "url": "https://github.com/Xyngwie/-text/issues/37#issuecomment-6317845547",
+      "snapshot_sha256": "9be4444addab3dc89cd872b557b4406f2c2bb2ab5178591e4a609fd33ba33833",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "world"
+        ],
+        "speech_act": "初稿の分析に対する不満表明とより本質的な対立軸の提示",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "形式的な合意枠組み批判に終始する初稿に対し、共通敵の明確化という別の視座を提示して深掘りを求めている。",
+        "evidence_quote": "当事者ではない一国民から見ても今回の提案は形式的に映る。一連の紛争を最も喜ぶ共通敵を明確にすべきだ。",
+        "analysis_candidates": [
+          {
+            "observation": "外交・紛争の議論において、表面的な手続きや枠組みの評価にとどまらず、背後で利害を得る共通敵を明示すべきという分析軸を重視している。",
+            "evidence_quote": "一連の紛争を最も喜ぶ共通敵を明確にすべきだ。",
+            "limitation": "ここで指す共通敵が具体的にどの勢力を想定しているのかは言及されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-1b9407abb36dd9e1",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10259,
+          "candidatesTokenCount": 1223,
+          "totalTokenCount": 13398,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10259
+            }
+          ],
+          "thoughtsTokenCount": 1916,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T07:28:13+00:00",
+        "input_sha256": "dc73662e1e9e3ffcc0dd9175164619a6ef9b51768b0ef7fea6a244184e45b92b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "037d3a5750eb349e80a49ca020c069fe4671e47a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41987363686"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※価値観スライドによるゼロショット仮説\n\n首脳会談の枠組みを掲げること自体は外交の定石だが、問われるべきは看板の大きさではなく、誰が合意を守らせ、誰が破綻時の責任を負うのかという設計だ。3か国の内実がどこであれ、履行の強制力と修正の担保がないテーブルなら、当事者の費用と現場の負担を引き延ばすだけに終わる。実効性を担保しない形式の合意に価値はない。違うか？",
+        "draft_sha256": "753e7de156730ed9d604f32e8d364a241897bf1b2fe90eeb8bad6bcd798cdc3d",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "※価値観スライドによるゼロショット仮説\n\n首脳会談の枠組みを掲げること自体は外交の定石だが、問われるべきは看板の大きさ",
+            "after": "当事者"
+          },
+          {
+            "operation": "replace",
+            "before": "く、誰が合意",
+            "after": "い一国民から見ても今回の提案は形式的に映る。一連の紛争"
+          },
+          {
+            "operation": "replace",
+            "before": "守らせ、誰が破綻時の責任",
+            "after": "最も喜ぶ共通敵"
+          },
+          {
+            "operation": "replace",
+            "before": "負うのかという設計",
+            "after": "明確にすべき"
+          },
+          {
+            "operation": "delete",
+            "before": "3か国の内実がどこであれ、履行の強制力と修正の担保がないテーブルなら、当事者の費用と現場の負担を引き延ばすだけに終わる。実効性を担保しない形式の合意に価値はない。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6317857655",
+      "unit_kind": "comment",
+      "issue_number": 37,
+      "comment_id": 6317857655,
+      "body_sha256": "7d8546920ea4efee42fe246bccf325a86175ea331eb459726e927272aa5a9ed7",
+      "url": "https://github.com/Xyngwie/-text/issues/37#issuecomment-6317857655",
+      "snapshot_sha256": "9be4444addab3dc89cd872b557b4406f2c2bb2ab5178591e4a609fd33ba33833",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "world"
+        ],
+        "speech_act": "直前の自発言を要約した初稿の掘り下げ不足の指摘",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "自身の直前コメントを受けて、初稿の問題点が本質への踏み込み不足にあると総括している。",
+        "evidence_quote": "つまり、問題に対する深掘りが一段階不足している。",
+        "analysis_candidates": [
+          {
+            "observation": "AIが生成した論点や初稿に対し、表層的な枠組み論にとどまるものを「深掘りが一段階不足」と捉え、一段深い論理展開を求めている。",
+            "evidence_quote": "つまり、問題に対する深掘りが一段階不足している。",
+            "limitation": "どの段階まで掘り下げれば十分とみなすかの具体的な評価基準は示されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-1b9407abb36dd9e1",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10259,
+          "candidatesTokenCount": 1223,
+          "totalTokenCount": 13398,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10259
+            }
+          ],
+          "thoughtsTokenCount": 1916,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T07:28:13+00:00",
+        "input_sha256": "dc73662e1e9e3ffcc0dd9175164619a6ef9b51768b0ef7fea6a244184e45b92b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "037d3a5750eb349e80a49ca020c069fe4671e47a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41987363686"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※価値観スライドによるゼロショット仮説\n\n首脳会談の枠組みを掲げること自体は外交の定石だが、問われるべきは看板の大きさではなく、誰が合意を守らせ、誰が破綻時の責任を負うのかという設計だ。3か国の内実がどこであれ、履行の強制力と修正の担保がないテーブルなら、当事者の費用と現場の負担を引き延ばすだけに終わる。実効性を担保しない形式の合意に価値はない。違うか？",
+        "draft_sha256": "753e7de156730ed9d604f32e8d364a241897bf1b2fe90eeb8bad6bcd798cdc3d",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "※価値観スライドによるゼロショット仮説\n\n首脳会談の枠組みを掲げること自体は外交の定石だが",
+            "after": "つまり"
+          },
+          {
+            "operation": "replace",
+            "before": "われ",
+            "after": "題に対す"
+          },
+          {
+            "operation": "replace",
+            "before": "べきは看板の大きさではなく、誰",
+            "after": "深掘り"
+          },
+          {
+            "operation": "replace",
+            "before": "合意を守らせ、誰が破綻時の責任を負うのかと",
+            "after": "一段階不足して"
+          },
+          {
+            "operation": "delete",
+            "before": "う設計だ。3か国の内実がどこであれ、履行の強制力と修正の担保がないテーブルなら、当事者の費用と現場の負担を引き延ばすだけに終わ",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "実効性を担保しない形式の合意に価値はない。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6317925365",
+      "unit_kind": "comment",
+      "issue_number": 39,
+      "comment_id": 6317925365,
+      "body_sha256": "64a527fdabbb45037b02a22b9b33f98b54db0844c31bc2933f852d8930047e81",
+      "url": "https://github.com/Xyngwie/-text/issues/39#issuecomment-6317925365",
+      "snapshot_sha256": "1910422ed64bfaf9e582246aa25ea44575789c78d7591342e9c96e32264dad3e",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games"
+        ],
+        "speech_act": "初稿の問いかけへの部分的是認とゲーム分岐に対する独自の考察の提示",
+        "feedback_kind": "draft_verdict",
+        "verdict": "acceptable",
+        "note": "初稿末尾の問いかけ「違うか？」に対し部分的一致を示しつつ、ノベルゲームにおける分岐と読者の質についての持論を展開している。",
+        "evidence_quote": "違くはないが、ノベルゲームという枠組みの中ではすべての分岐を読ませたところで作品が全うされたと思えば、枝の分かれ目から続きを正確に文脈を追えるかどうかはプレイヤーの読み込みの質に依る。",
+        "analysis_candidates": [
+          {
+            "observation": "ゲームの分岐設計の評価において、開発側のギミックだけでなく、プレイヤー側が文脈を正確に追えているかという読み込みの質に依存するという受容者側の視点を提示している。",
+            "evidence_quote": "枝の分かれ目から続きを正確に文脈を追えるかどうかはプレイヤーの読み込みの質に依る。",
+            "limitation": "対象ゲーム（シミュレーション）をノベルゲームの枠組みと捉えた理由や、他のゲームジャンルに対する視点は不明である。"
+          }
+        ]
+      },
+      "batch_id": "IA-1b9407abb36dd9e1",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10259,
+          "candidatesTokenCount": 1223,
+          "totalTokenCount": 13398,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10259
+            }
+          ],
+          "thoughtsTokenCount": 1916,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-05T07:28:13+00:00",
+        "input_sha256": "dc73662e1e9e3ffcc0dd9175164619a6ef9b51768b0ef7fea6a244184e45b92b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "037d3a5750eb349e80a49ca020c069fe4671e47a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/41987363686"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "温泉シミュレーションにホラーを掛け合わせ、選択で宿の運命が変わるという。悪くない着想だ。だが、客をもてなす選択肢が単なる作業分岐や正解探しの暗記に堕ちているなら、ホラーの看板はすぐ剥がれる。ルーチンをこなす手元に不可逆な緊張が宿ってこその題材だ。プレイヤーを安全圏に置いたままの小手先ギミックで終わるか、それとも宿主としての覚悟を試す作り込みがあるか、見極めさせてもらおう。違うか？",
+        "draft_sha256": "8ed8cd6c37cfeeb76ca2791f72c10b574440d729b916c8a10ab64ed68754a080",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "温泉シミュレ",
+            "after": "違くはないが、ノベルゲ"
+          },
+          {
+            "operation": "replace",
+            "before": "ションにホラーを掛け合わせ、選択で宿の運命が変わる",
+            "after": "ム"
+          },
+          {
+            "operation": "replace",
+            "before": "。悪くない着想だ。だが、客をも",
+            "after": "枠組みの中ではすべ"
+          },
+          {
+            "operation": "replace",
+            "before": "なす選択肢が単なる作業",
+            "after": "の"
+          },
+          {
+            "operation": "replace",
+            "before": "や",
+            "after": "を読ませたところで作品が全うされたと思えば、枝の分かれ目から続きを"
+          },
+          {
+            "operation": "replace",
+            "before": "解探しの暗記",
+            "after": "確"
+          },
+          {
+            "operation": "replace",
+            "before": "堕ちてい",
+            "after": "文脈を追え"
+          },
+          {
+            "operation": "replace",
+            "before": "なら、ホラーの看板",
+            "after": "かどうか"
+          },
+          {
+            "operation": "delete",
+            "before": "すぐ剥がれる。ルーチンをこなす手元に不可逆な緊張が宿ってこその題材だ。",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "を安全圏に置いたまま",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "小手先ギミックで終わるか、それとも宿主としての覚悟を試す作り",
+            "after": "読み"
+          },
+          {
+            "operation": "replace",
+            "before": "があ",
+            "after": "の質に依"
+          },
+          {
+            "operation": "delete",
+            "before": "か、見極めさせてもらおう",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "違うか？",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
