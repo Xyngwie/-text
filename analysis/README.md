@@ -107,3 +107,5 @@
 - [Issue原典の自動分析と精読の運用](november_consolidation/issue_analysis_operation.md)：毎時最大5件の分類・分析案を蓄積し、この窓で精読・精査する。自動案は本人承認や確定モデルへ直結させない。
 
 - [言葉の荒さと、本気の怒り](november_consolidation/audience_and_anger.md)：#41への本人補足。読者との距離、仲間内のじゃれ合い、真剣な追及を区別。
+
+- [既知の判定、議論の速さ、見返しての理解](november_consolidation/thinking_pace.md)：人狼の具体例と本人補足。分野限定の速い判定を、会話全般の即応力へ広げない。

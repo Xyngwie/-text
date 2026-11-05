@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-05",
+  "source": "本チャットの本人回答。独立エクスポートは未登録。",
+  "status": "owner_self_report_not_cognitive_assessment",
+  "turns": [
+    {
+      "question_or_context_summary": "冗談の流れから思い出した本人の補足",
+      "owner_reply_verbatim": "あ、ここで思いだしたこと。\n\n僕は思考は深いけど、全く速くはない"
+    },
+    {
+      "question_or_context_summary": "本人が挙げた具体例",
+      "owner_reply_verbatim": "人狼ゲームとかは他人のスピードに全く追いつけません。不慣れなのもあるけれど。"
+    },
+    {
+      "question_or_context_summary": "聞いて整理する段階か、まとまる前に議題が進むのか",
+      "owner_reply_verbatim": "次の話になっちゃって、話せず。が多いねえ。\n\n人の話聞いても、よほど変じゃない限り騙されちゃうよ。"
+    },
+    {
+      "question_or_context_summary": "終わってから振り返れば騙された箇所に気づくことはあるか",
+      "owner_reply_verbatim": "それはちゃんと見返す事が出来れば、理解できるのよ。"
+    }
+  ],
+  "limits": [
+    "質問・文脈欄は要旨、回答は原文転記。",
+    "思考の深さ・速さは本人の自己認識。客観的測定や診断ではない。",
+    "人狼への不慣れさを本人が限定として示した。",
+    "見返せれば理解できるという説明を、あらゆる虚偽を必ず検出できる能力に一般化しない。"
+  ]
+}
