@@ -109,3 +109,5 @@
 - [言葉の荒さと、本気の怒り](november_consolidation/audience_and_anger.md)：#41への本人補足。読者との距離、仲間内のじゃれ合い、真剣な追及を区別。
 
 - [既知の判定、議論の速さ、見返しての理解](november_consolidation/thinking_pace.md)：人狼の具体例と本人補足。分野限定の速い判定を、会話全般の即応力へ広げない。
+
+- [減らしたい手間と、残したい試行錯誤](november_consolidation/effort_and_play.md)：自動分析から3件を精読。短い賛意と採用原稿を区別し、定型化と遊びの手応えを照合。
