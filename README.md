@@ -24,6 +24,7 @@ Xの公式アーカイブも追加しました。[神宮 @Xyngwie の原本・�
 - [X原本の毎時自動分類](docs/X_CLASSIFICATION_ACTION.md)：第一・第二段階を毎時最大30件進め、第三段階は本人との壁打ちで扱う。
 - [実投稿の取込手順](docs/PUBLICATION_FEEDBACK.md)：AI初稿、本人修整、承諾、実投稿を校正データとして記録する方法。
 - [発信と判断の観察](observations/README.md)：テーマごとに、バッチサマリの観察を読みやすい文章へまとめ直したもの。
+- [ニュースから拾う短編](stories/README.md)：専用のニュースRSSから記事の一点を拾い、短編にする。価値観スライドとは別系統で、Issueは作らない。
 - [作業ガイドライン](GUIDELINES.md)：自動化エージェントおよび作業者向けの公式作業基準書・分類マニュアル。
 - [オートメーション指示文](AUTOMATION_INSTRUCTIONS.md)：Cursor Automations（クラウドエージェント）向け設定プロンプト。
 - `data/utterances.jsonl`：本人とCopilotを区別した発言索引。
