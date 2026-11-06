@@ -1,0 +1,557 @@
+{
+  "batch_id": "IA-4dc3219858265dd4",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6353100564",
+      "unit_kind": "comment",
+      "issue_number": 52,
+      "comment_id": 6353100564,
+      "body_sha256": "170384120d60641b19c04f35f39258c3a26fb20020b5f8fea8f0d04f1d70b642",
+      "url": "https://github.com/Xyngwie/-text/issues/52#issuecomment-6353100564",
+      "snapshot_sha256": "a09591cee7864ff311172f9962d23d1f15c8cc293dc23372647ff3134b8456a4",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "software"
+        ],
+        "speech_act": "AIの初稿を採用せず、ロックファイルについての自身の知識状態とCI/CDの不安定さに対する所感を述べる発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "初稿の文脈を踏まえつつも、初稿の採用・修整ではなく自身の言葉で率直な所感をコメントしている。",
+        "evidence_quote": "ロックファイルがどういうものかは理解していないけれども、CI/CDが気まぐれで通ったり通らなくなったりするのは困るねぇ",
+        "analysis_candidates": [
+          {
+            "observation": "ロックファイル自体の詳細な仕様には詳しくないと前置きしつつ、CI/CDの挙動が不安定になることへの困惑を示している。",
+            "evidence_quote": "ロックファイルがどういうものかは理解していないけれども、CI/CDが気まぐれで通ったり通らなくなったりするのは困るねぇ",
+            "limitation": "開発環境やCI/CD全般に関する体系的な知識水準や好みを網羅的に示すものではない。"
+          }
+        ]
+      },
+      "batch_id": "IA-4dc3219858265dd4",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11599,
+          "candidatesTokenCount": 1500,
+          "totalTokenCount": 13099,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11599
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-06T01:50:34+00:00",
+        "input_sha256": "7fa4743f583ac00a0d9717ebcb9799450ff2e7b078aef001417405a4e69cc43e",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "2adc3dc6ce92ec1c89e62aa62978324d8d4a19b2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42146436501"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "CI環境で外部アクションの気まぐれに付き合わされる筋合いはない。依存関係をロックファイルで縛り、再現性と管理可能性を手元へ引き戻すのは、道具として至極当然の設計だ。昨日通ったビルドが今日勝手に壊れるのを祈りで直す運用など、美しいはずがないだろう。",
+        "draft_sha256": "02ccc4473679c8c61ada082d4e7996e517b87043ccd1bf111f1a8f40aa9d948c",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "CI環境で外部アクションの気まぐれに付き合わされる筋合いはない。依存関係を",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "で縛り、再現性と管",
+            "after": "がどういうものかは"
+          },
+          {
+            "operation": "replace",
+            "before": "可能性を手元へ引き戻すのは、道具と",
+            "after": "解"
+          },
+          {
+            "operation": "replace",
+            "before": "至極当然の設計だ。昨日",
+            "after": "いないけれども、CI/CDが気まぐれで"
+          },
+          {
+            "operation": "replace",
+            "before": "ビルドが今日勝手に壊れ",
+            "after": "り通らなくなったりす"
+          },
+          {
+            "operation": "delete",
+            "before": "を祈りで直す運用など、美しい",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "ずがないだろう。",
+            "after": "困るねぇ"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6353188309",
+      "unit_kind": "comment",
+      "issue_number": 53,
+      "comment_id": 6353188309,
+      "body_sha256": "0a14c97e803935ff41b4ff5a3fe8d6227f1e5fc84681f9260f2871bb70371566",
+      "url": "https://github.com/Xyngwie/-text/issues/53#issuecomment-6353188309",
+      "snapshot_sha256": "91aa62e03b51821e5a50dd875b8ffb90d0adbf01f404a94540ec7d6a6504d2b5",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games"
+        ],
+        "speech_act": "対象ゲームの系統や世界観への理解を示しつつ、作品への期待を表明する発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "初稿のトーン（タイパ批判・手応えの議論）に乗らず、既存シリーズ（ディスガイア）の文脈から作品の世界観とSRPGとしての面白さに期待を寄せている。",
+        "evidence_quote": "ディスガイアの流れを汲んだシリーズだね。生も死も弄ぶことを厭わない世界観が引き継がれているのだろう。SRPGとしては面白い部類だと思うので期待している",
+        "analysis_candidates": [
+          {
+            "observation": "ディスガイアシリーズの系譜として世界観やゲーム性を捉え、SRPGとしてポジティブに期待を述べている。",
+            "evidence_quote": "ディスガイアの流れを汲んだシリーズだね。生も死も弄ぶことを厭わない世界観が引き継がれているのだろう。SRPGとしては面白い部類だと思うので期待している",
+            "limitation": "このタイトルの個別仕様やタイパ重視システム全般に対する評価までは言及されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-4dc3219858265dd4",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11599,
+          "candidatesTokenCount": 1500,
+          "totalTokenCount": 13099,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11599
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-06T01:50:34+00:00",
+        "input_sha256": "7fa4743f583ac00a0d9717ebcb9799450ff2e7b078aef001417405a4e69cc43e",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "2adc3dc6ce92ec1c89e62aa62978324d8d4a19b2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42146436501"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "SRPGの進行を軽くすること自体は悪くないが、盤面を読む負荷や試行錯誤の抵抗まで削ぎ落とせば、残るのはただの記号消化だ。毒のあるシナリオや悪行のカタルシスを売りにするなら、手軽さの裏で戦略の芯を損なっていないかこそが問われる。快適さと引き換えに手応えを捨てるなら、そもそもSRPGという枠組みでやる意味が薄れる。違うか？",
+        "draft_sha256": "7ebe72cdecbb65cc17bd16973bf5b504153435aa05f8c3b8282479451ceaec96",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "SRPG",
+            "after": "ディスガイア"
+          },
+          {
+            "operation": "replace",
+            "before": "進行",
+            "after": "流れ"
+          },
+          {
+            "operation": "replace",
+            "before": "軽くする",
+            "after": "汲んだシリーズだね。生も死も弄ぶ"
+          },
+          {
+            "operation": "replace",
+            "before": "自体は悪く",
+            "after": "を厭わ"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "世界観"
+          },
+          {
+            "operation": "replace",
+            "before": "、盤面を読む負荷や試行錯誤の抵抗まで削ぎ落とせば、残",
+            "after": "引き継がれてい"
+          },
+          {
+            "operation": "delete",
+            "before": "はた",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "の記号消化だ",
+            "after": "ろう"
+          },
+          {
+            "operation": "delete",
+            "before": "毒のあるシナリオや悪行のカタルシスを売りにするなら、手軽さの裏で戦略の芯を損なっていないかこそが問われる。快適さと引き換えに手応えを捨てるなら、そもそも",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "しては面白"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "部類だと思"
+          },
+          {
+            "operation": "replace",
+            "before": "枠組み",
+            "after": "の"
+          },
+          {
+            "operation": "replace",
+            "before": "や",
+            "after": "期待してい"
+          },
+          {
+            "operation": "delete",
+            "before": "意味が薄れる。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6353232798",
+      "unit_kind": "comment",
+      "issue_number": 54,
+      "comment_id": 6353232798,
+      "body_sha256": "338dbeb3b89b7e553d579c8364c2587f69e8eff27357400aac0e07da4c723ce2",
+      "url": "https://github.com/Xyngwie/-text/issues/54#issuecomment-6353232798",
+      "snapshot_sha256": "e38f7b45b9e3a790edc827617230456666ddb194f0bf5b827d63ed7db3e7a37e",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "society",
+          "software"
+        ],
+        "speech_act": "一時的な電子申請停止に対する過度な批判を諌め、鷹揚に待つ姿勢を示す発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "初稿が行政インフラの不手際や責任転嫁を厳しく詰めるトーンだったのに対し、本人は命に関わる事態ではないとし、冷静に待つことを促している。",
+        "evidence_quote": "数時間申請できないことで失われる命があるような事ではない。システムのために門前で待たされることは旅行きには往々にしてあること。しばし待たれよ。",
+        "analysis_candidates": [
+          {
+            "observation": "システム障害による一時的な停止を旅の道中の足止めになぞらえ、命に関わらない範囲の遅延として許容する態度を示している。",
+            "evidence_quote": "数時間申請できないことで失われる命があるような事ではない。システムのために門前で待たされることは旅行きには往々にしてあること。しばし待たれよ。",
+            "limitation": "行政システム全体の信頼性設計や他の重大な障害に対する一般的な許容度を示すものではない。"
+          }
+        ]
+      },
+      "batch_id": "IA-4dc3219858265dd4",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11599,
+          "candidatesTokenCount": 1500,
+          "totalTokenCount": 13099,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11599
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-06T01:50:34+00:00",
+        "input_sha256": "7fa4743f583ac00a0d9717ebcb9799450ff2e7b078aef001417405a4e69cc43e",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "2adc3dc6ce92ec1c89e62aa62978324d8d4a19b2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42146436501"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※本稿は価値観スライドによるゼロショット仮説である。\n\n行政手続きの基盤を担うシステムが、管理の不整合で利用者の手を止めさせ、挙げ句「18時以降にまた入れ直せ」と相手の工数で穴埋めを図るのは筋が悪い。利用者の締め切りや作業時間を軽く見積もり、自らの不手際の後始末をクライアント側に丸投げする設計を良しとするな。インフラを名乗るなら、手続きの機会を奪わない移行手順を整えるのが最低限の責務だ。違うか？",
+        "draft_sha256": "0544ac42e71fbefd01347d3b8bdd60d9b15ad27a49d4f289a617b697f2e5a682",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "※本稿は価値観スライドによ",
+            "after": "数時間申請できないことで失われ"
+          },
+          {
+            "operation": "replace",
+            "before": "ゼロショット仮説で",
+            "after": "命が"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "ような事ではない"
+          },
+          {
+            "operation": "delete",
+            "before": "\n\n行政手続きの基盤を担う",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "が、管理",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "不整合",
+            "after": "ために門前"
+          },
+          {
+            "operation": "replace",
+            "before": "利用者の手を止め",
+            "after": "待た"
+          },
+          {
+            "operation": "replace",
+            "before": "せ、挙げ句「18時以降",
+            "after": "れることは旅行き"
+          },
+          {
+            "operation": "replace",
+            "before": "ま",
+            "after": "は往々にしてあること。しばし待"
+          },
+          {
+            "operation": "delete",
+            "before": "入",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "直せ」と相手の工数で穴埋めを図るのは筋が悪い",
+            "after": "よ"
+          },
+          {
+            "operation": "delete",
+            "before": "利用者の締め切りや作業時間を軽く見積もり、自らの不手際の後始末をクライアント側に丸投げする設計を良しとするな。インフラを名乗るなら、手続きの機会を奪わない移行手順を整えるのが最低限の責務だ。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6353277312",
+      "unit_kind": "comment",
+      "issue_number": 55,
+      "comment_id": 6353277312,
+      "body_sha256": "9ecbdb90f79f8de09dc016cd664b9bf1ca1f94ade46ce0c68f6c11271d1c5ff7",
+      "url": "https://github.com/Xyngwie/-text/issues/55#issuecomment-6353277312",
+      "snapshot_sha256": "050dd0cd8a277ccd3c25435bab340bc70d0276c659a595b12f4e2734f56ec072",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "economy"
+        ],
+        "speech_act": "IBMの組織規模を踏まえ、外野の声に惑わされず進むよう促す発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "初稿の説教調な技術基盤論とは異なり、組織の大きさを前提に構える姿勢を端的に述べている。",
+        "evidence_quote": "IBMは今でも大きな組織である。野次や些事に振り回されず邁進されよ。",
+        "analysis_candidates": [
+          {
+            "observation": "IBMを大組織として位置づけ、短期的な騒ぎや批判に動じず前進することを肯定的に捉えている。",
+            "evidence_quote": "IBMは今でも大きな組織である。野次や些事に振り回されず邁進されよ。",
+            "limitation": "IBMの具体的な個別事業や決算内容自体の是非に対する詳細な見解は含まれていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-4dc3219858265dd4",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11599,
+          "candidatesTokenCount": 1500,
+          "totalTokenCount": 13099,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11599
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-06T01:50:34+00:00",
+        "input_sha256": "7fa4743f583ac00a0d9717ebcb9799450ff2e7b078aef001417405a4e69cc43e",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "2adc3dc6ce92ec1c89e62aa62978324d8d4a19b2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42146436501"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "【価値観スライドによるゼロショット仮説】四半期の数字が予想をわずかに超えて時間外で株価が跳ねた程度で、事業の本質的な勝敗を語った気になるのは浅い。市場の瞬間的な採点に一喜一憂するのではなく、見るべきは次に残る実質的な技術基盤と構造の強さだ。目先の数字合わせで胸を張るより、次に繋がる確固たる足場を築くことこそが真の強さだろう。違うか？",
+        "draft_sha256": "2805fdb88af1bdae7b693555ba63049f30d098767d837323f49715605518814b",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "【価値観スライド",
+            "after": "IBMは今でも大きな組織である。野次や些事"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "振り回されず邁進され"
+          },
+          {
+            "operation": "delete",
+            "before": "るゼロショット仮説】四半期の数字が予想をわずかに超えて時間外で株価が跳ねた程度で、事業の本質的な勝敗を語った気になるのは浅い",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "市場の瞬間的な採点に一喜一憂するのではなく、見るべきは次に残る実質的な技術基盤と構造の強さだ。目先の数字合わせで胸を張るより、次に繋がる確固たる足場を築くことこそが真の強さだろう。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6353334696",
+      "unit_kind": "comment",
+      "issue_number": 56,
+      "comment_id": 6353334696,
+      "body_sha256": "b8b8f518730d437dd1de42d7ddd0bc7d03ec5948bf00b44e899cbf57072b1d34",
+      "url": "https://github.com/Xyngwie/-text/issues/56#issuecomment-6353334696",
+      "snapshot_sha256": "90fde867a83b28174f0605cd408dc544381bd25cf7a7e95863a546ab8aa5a636",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics"
+        ],
+        "speech_act": "初稿の資金物量戦批判に反論し、力の誇示や見せ金も統治・政治手腕の一環として検討に値すると述べる発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "「いや、」から始まり、初稿の道徳的・制度的な批判とは異なる現実的な統治・政治手腕の観点を提示している。",
+        "evidence_quote": "いや、統治の手法としての力の誇示、つまり巨額の見せ金は検討すべきである。それを実際に支払うかも含めて政治手腕というものだろう。",
+        "analysis_candidates": [
+          {
+            "observation": "巨額資金の誇示や見せ金を統治手法や政治手腕の一部として肯定的に検討すべき対象と捉えている。",
+            "evidence_quote": "いや、統治の手法としての力の誇示、つまり巨額の見せ金は検討すべきである。それを実際に支払うかも含めて政治手腕というものだろう。",
+            "limitation": "特定の選挙制度や候補者への全面的な支持・評価を意味するものではない。"
+          }
+        ]
+      },
+      "batch_id": "IA-4dc3219858265dd4",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11599,
+          "candidatesTokenCount": 1500,
+          "totalTokenCount": 13099,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11599
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-06T01:50:34+00:00",
+        "input_sha256": "7fa4743f583ac00a0d9717ebcb9799450ff2e7b078aef001417405a4e69cc43e",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "2adc3dc6ce92ec1c89e62aa62978324d8d4a19b2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42146436501"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "価値観スライドによるゼロショット仮説。終盤の接戦3州に2.7億ドルを集中させる配分は、勝敗を分けるボトルネックに資源を全振りする設計として極めて合理的だ。だが、勝つための最適解がそのまま制度としての正解になるわけではない。巨額資金の物量で結果をねじ伏せる手法は、有権者の理解と判断で結果を返すという本来の統治プロセスを形骸化させるリスクを孕んでいる。勝負の割り切りとしては見事でも、仕組みとしては歪んでいるのではないか。違うか？",
+        "draft_sha256": "185108cf30c4e81d7b4688bfdae4ed3f5dc9a4250fdeb9354cfa3d1de411cfef",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "価値観スライドによるゼロショット仮説。終盤",
+            "after": "いや、統治"
+          },
+          {
+            "operation": "replace",
+            "before": "接戦3州に2.7億ドルを集中させる配分は、勝敗を分けるボトルネックに資源を全振りする設計として極めて合理的だ。だが、勝つための最適解がそのまま制度",
+            "after": "手法"
+          },
+          {
+            "operation": "replace",
+            "before": "正解になるわけではない。",
+            "after": "力の誇示、つまり"
+          },
+          {
+            "operation": "replace",
+            "before": "資",
+            "after": "の見せ"
+          },
+          {
+            "operation": "replace",
+            "before": "の物量",
+            "after": "は検討すべき"
+          },
+          {
+            "operation": "replace",
+            "before": "結果",
+            "after": "ある。それ"
+          },
+          {
+            "operation": "replace",
+            "before": "ねじ伏せる",
+            "after": "実際に支払うかも含めて政治"
+          },
+          {
+            "operation": "replace",
+            "before": "法は、有権者の理解と判断で結果を返す",
+            "after": "腕"
+          },
+          {
+            "operation": "replace",
+            "before": "本来",
+            "after": "も"
+          },
+          {
+            "operation": "replace",
+            "before": "統治プロセスを形骸化させるリスクを孕んでいる",
+            "after": "だろう"
+          },
+          {
+            "operation": "delete",
+            "before": "勝負の割り切りとしては見事でも、仕組みとしては歪んでいるのではないか。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
