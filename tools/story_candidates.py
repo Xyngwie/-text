@@ -13,6 +13,7 @@ append-only registry at stories/registry.jsonl.
 import argparse
 import datetime as dt
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -22,6 +23,24 @@ from rss_agent import balanced_candidates, collect  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / 'config/story_rss_sources.json'
 REGISTRY = ROOT / 'stories/registry.jsonl'
+DISCLAIMER = '※この物語は、下記のニュース記事から着想を得たフィクションです。登場人物や場面は創作であり、実在の人物とは関係ありません。'
+POST_BLOCK = re.compile(r'^## 投稿用\n\n```text\n(.*?)\n```', re.MULTILINE | re.DOTALL)
+
+
+def post_problems(text, link):
+    """The copy-paste block must end with the fiction disclaimer and the source URL."""
+    match = POST_BLOCK.search(text)
+    if not match:
+        return ['missing "## 投稿用" text block']
+    lines = match.group(1).rstrip('\n').split('\n')
+    problems = []
+    if len(lines) < 4:
+        problems.append('post block too short')
+    elif lines[-2] != DISCLAIMER:
+        problems.append('post block must end with the fiction disclaimer line')
+    if lines[-1] != f'元記事：{link}':
+        problems.append('post block must end with "元記事：<URL>"')
+    return problems
 
 
 def load_registry(path=REGISTRY):
@@ -63,6 +82,9 @@ def register(registry_path, candidate, story_path):
         raise SystemExit(f"already registered: {candidate['candidate_id']}")
     if not (ROOT / story_path).exists():
         raise SystemExit(f'story file not found: {story_path}')
+    problems = post_problems((ROOT / story_path).read_text(encoding='utf-8'), candidate['link'])
+    if problems:
+        raise SystemExit(f'{story_path}: ' + '; '.join(problems))
     entry = {
         'candidate_id': candidate['candidate_id'],
         'category': candidate.get('category'),
@@ -86,8 +108,12 @@ def check(registry_path=REGISTRY):
     if len(ids) != len(set(ids)):
         problems.append('duplicate candidate_id in registry')
     for row in rows:
-        if not (ROOT / row['story_path']).exists():
+        path = ROOT / row['story_path']
+        if not path.exists():
             problems.append(f"missing story file: {row['story_path']}")
+            continue
+        problems.extend(f"{row['story_path']}: {problem}"
+                        for problem in post_problems(path.read_text(encoding='utf-8'), row['link']))
     return problems
 
 

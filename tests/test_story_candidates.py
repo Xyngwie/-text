@@ -45,8 +45,12 @@ class StoryCandidatesTest(unittest.TestCase):
         first = story_candidates.pick(self.config(), [], 5, fetcher=self.fetcher)['candidates'][0]
         with tempfile.TemporaryDirectory(dir=ROOT) as tmp:
             story = Path(tmp) / 'story.md'
-            story.write_text('x', encoding='utf-8')
             registry = Path(tmp) / 'registry.jsonl'
+            story.write_text('x', encoding='utf-8')
+            with self.assertRaises(SystemExit):
+                story_candidates.register(registry, first, story.relative_to(ROOT))
+            story.write_text('# 題\n\n## 投稿用\n\n```text\n題\n\n本文\n\n' + story_candidates.DISCLAIMER
+                             + '\n元記事：' + first['link'] + '\n```\n', encoding='utf-8')
             story_candidates.register(registry, first, story.relative_to(ROOT))
             rows = story_candidates.load_registry(registry)
             self.assertEqual(story_candidates.check(registry), [])
