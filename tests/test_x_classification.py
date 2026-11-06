@@ -128,6 +128,17 @@ class XClassificationTest(unittest.TestCase):
         self.assertEqual(records[0]['context_status'], 'standalone')
         self.assertEqual(records[1]['context_status'], 'parent_available')
 
+    def test_issue_includes_original_text_and_marks_missing_or_reposted_evidence(self):
+        text = '一行目\n```\n# 見出しではなく原文'
+        body = reporter.observation_posts(
+            {'observation_post_ids': ['1', '2']},
+            {'1': {'text': text, 'created_at_jst': '2020-01-01', 'kind': 'repost_candidate'}})
+        self.assertIn('````text\n' + text + '\n````', body)
+        self.assertIn('2020-01-01', body)
+        self.assertIn('リポスト候補', body)
+        self.assertIn('本文を取得できませんでした', body)
+        self.assertIn('https://x.com/i/web/status/2', body)
+
     def test_notification_failure_retries_without_reclassification(self):
         classifier.run(self.root, 1, self.generate)
         with patch.object(reporter, 'ROOT', self.root), patch.dict('os.environ', {'GITHUB_REPOSITORY': 'owner/repo'}), \
