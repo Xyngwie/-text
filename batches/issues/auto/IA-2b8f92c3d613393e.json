@@ -1,0 +1,430 @@
+{
+  "batch_id": "IA-2b8f92c3d613393e",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383225672",
+      "unit_kind": "comment",
+      "issue_number": 118,
+      "comment_id": 6383225672,
+      "body_sha256": "45130b09c07f5578c1a9ca8906b6c7639096195c317afc407dbdf61bf2be6f85",
+      "url": "https://github.com/Xyngwie/-text/issues/118#issuecomment-6383225672",
+      "snapshot_sha256": "e468e4b3795cd89b98a0dfec1d6acf508baf31cb1e08db3d21b7c7bebd19d020",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "society"
+        ],
+        "speech_act": "実投稿の完了を報告する発話",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "初稿や確定文そのものではなく、別コメントとして投稿完了のみを報告している定型的な発言である。",
+        "evidence_quote": "上記投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-2b8f92c3d613393e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9156,
+          "candidatesTokenCount": 1183,
+          "totalTokenCount": 10339,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9156
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T19:05:39+00:00",
+        "input_sha256": "5b7acf08f518a1604c0351c08250044e9ad48a7ffa586d7cf95ae6b4ab26c61a",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "0d58e4ae9ea621d8857296776a7bdaaaded6ee27",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42404483216"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "（価値観スライドによるゼロショット仮説）\n欧州が羨むほどの速度や仕組みを整えたというなら結構な話だが、評価すべきは威勢のいい看板ではなく「誰が責任を取り、問題時にどこで止められるか」の設計だ。手続きの無駄を省いて国内に基盤を残すのは筋の通った攻略法だが、安全管理の負担を現場へ丸投げしただけの加速なら誇るに値しない。制度の格とは、スピードと撤退条件の両立で決まる。違うか？",
+        "draft_sha256": "579bc1b81410263e0c253edf37cea2196fd8ea8b60d28efafa2361f6692f0339",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "（価値観スライドによるゼロショット仮説）\n欧州が羨むほどの速度や仕組みを整えたというなら結構な話だが、評価すべきは威勢のいい看板ではなく「誰が責任を取り、問題時にどこで止められるか」の設計だ。手続きの無駄を省いて国内に基盤を残すのは筋の通った攻略法だが、安全管理の負担を現場へ丸",
+            "after": "上記"
+          },
+          {
+            "operation": "replace",
+            "before": "げ",
+            "after": "稿しま"
+          },
+          {
+            "operation": "delete",
+            "before": "だけの加速なら誇るに値しない",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "制度の格とは、スピードと撤退条件の両立で決まる。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383255192",
+      "unit_kind": "comment",
+      "issue_number": 115,
+      "comment_id": 6383255192,
+      "body_sha256": "44f2a7c77c8a923524dcce92f2d628938ff255dd0ea7fcb85d737ba308e605ed",
+      "url": "https://github.com/Xyngwie/-text/issues/115#issuecomment-6383255192",
+      "snapshot_sha256": "209c129da5052ba4ce43e7c76355d30492b4073d3f8f60238b7f74e8b0305674",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "games",
+          "culture"
+        ],
+        "speech_act": "AI初稿に改行調整とURL付記、末尾疑問形の削除を施して採用原稿として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "AI初稿本文の大部分を維持しつつ、末尾の「違うか？」を削除し記事URLを付与して改行を調整している。",
+        "evidence_quote": "宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。\n\nhttps://www.asahi.com/articles/ASVBR03KWVBRPQIP01WM.html",
+        "analysis_candidates": [
+          {
+            "observation": "AI初稿の末尾にあった反語的問いかけ「違うか？」を削除し、断定形で文章を締めくくっている。",
+            "evidence_quote": "宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。",
+            "limitation": "単に不要な修辞として削ったのか、文末の問いかけ表現全般を避ける傾向があるのかはこの1件の編集のみからは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-2b8f92c3d613393e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9156,
+          "candidatesTokenCount": 1183,
+          "totalTokenCount": 10339,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9156
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T19:05:39+00:00",
+        "input_sha256": "5b7acf08f518a1604c0351c08250044e9ad48a7ffa586d7cf95ae6b4ab26c61a",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "0d58e4ae9ea621d8857296776a7bdaaaded6ee27",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42404483216"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "ゲームを「文化として認めてもらった」などと卑屈に喜ぶ筋合いはない。身体感覚に根ざした操作の面白さと制約の設計を積み上げ、世界中で通じる共通言語へ押し上げた結果、制度側が追認せざるを得なくなっただけの話だ。宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。違うか？",
+        "draft_sha256": "884d69770760d2358e642ad94016a3e4d4f62b8e290cfe9def9b6d866106c074",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\n\nhttps://www.asahi.com/articles/ASVBR03KWVBRPQIP01WM.html"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383256559",
+      "unit_kind": "comment",
+      "issue_number": 115,
+      "comment_id": 6383256559,
+      "body_sha256": "45130b09c07f5578c1a9ca8906b6c7639096195c317afc407dbdf61bf2be6f85",
+      "url": "https://github.com/Xyngwie/-text/issues/115#issuecomment-6383256559",
+      "snapshot_sha256": "209c129da5052ba4ce43e7c76355d30492b4073d3f8f60238b7f74e8b0305674",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "culture"
+        ],
+        "speech_act": "実投稿の完了を報告する発話",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "先行して提示した確定文の投稿完了を知らせる定型報告コメント。",
+        "evidence_quote": "上記投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-2b8f92c3d613393e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9156,
+          "candidatesTokenCount": 1183,
+          "totalTokenCount": 10339,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9156
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T19:05:39+00:00",
+        "input_sha256": "5b7acf08f518a1604c0351c08250044e9ad48a7ffa586d7cf95ae6b4ab26c61a",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "0d58e4ae9ea621d8857296776a7bdaaaded6ee27",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42404483216"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "ゲームを「文化として認めてもらった」などと卑屈に喜ぶ筋合いはない。身体感覚に根ざした操作の面白さと制約の設計を積み上げ、世界中で通じる共通言語へ押し上げた結果、制度側が追認せざるを得なくなっただけの話だ。宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。違うか？",
+        "draft_sha256": "884d69770760d2358e642ad94016a3e4d4f62b8e290cfe9def9b6d866106c074",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "ゲームを「文化と",
+            "after": "上記投稿"
+          },
+          {
+            "operation": "replace",
+            "before": "て認めてもらった」などと卑屈に喜ぶ筋合いはない。身体感覚に根ざ",
+            "after": "ま"
+          },
+          {
+            "operation": "delete",
+            "before": "操作の面白さと制約の設計を積み上げ、世界中で通じる共通言語へ押し上げた結果、制度側が追認せざるを得なくなっただけの話だ",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "宮本氏への文化勲章など、むしろ遅すぎるくらいで至極当然の帰結だろう。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383281303",
+      "unit_kind": "comment",
+      "issue_number": 113,
+      "comment_id": 6383281303,
+      "body_sha256": "b2f0f9c3aa44bfbf598e05c1a8923dbafb60f193c4cb2404d9646ea3eaebe688",
+      "url": "https://github.com/Xyngwie/-text/issues/113#issuecomment-6383281303",
+      "snapshot_sha256": "4aa0e225cd9472d8bbe6a4c3c39b8ae1f02373bec5339a301ac798fbb54ddd67",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "politics",
+          "world",
+          "economy"
+        ],
+        "speech_act": "AI初稿の文頭ラベルや末尾の問いかけを削除し語尾を微修正して採用原稿として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の「決まらん。」を「決まらんね。」に変更し、「違うか？」の削除、改行調整、記事URL追加を行っている。",
+        "evidence_quote": "額面だけで評価は決まらんね。\n\n関税圧力や優遇措置で無理に引き出したものなら、",
+        "analysis_candidates": [
+          {
+            "observation": "初稿の断定的な「決まらん。」を「決まらんね。」と語尾に助詞「ね」を加えて語調を微修正している。",
+            "evidence_quote": "額面だけで評価は決まらんね。",
+            "limitation": "特定の語尾へのこだわりか、文脈に応じた偶発的なニュアンス調整かは他の投稿例との比較がなければ特定できない。"
+          },
+          {
+            "observation": "AI初稿末尾の「違うか？」を削除し、記事URLに置き換えて結んでいる。",
+            "evidence_quote": "頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。\n\nhttps://www.reuters.com/jp/economy/TY3FBXDZGZJWPBY3I36PJXF7QM-2026-10-23/",
+            "limitation": "定型的な「違うか？」という結びをシステム側のノイズとして一律除去しているだけである可能性も高い。"
+          }
+        ]
+      },
+      "batch_id": "IA-2b8f92c3d613393e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9156,
+          "candidatesTokenCount": 1183,
+          "totalTokenCount": 10339,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9156
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T19:05:39+00:00",
+        "input_sha256": "5b7acf08f518a1604c0351c08250044e9ad48a7ffa586d7cf95ae6b4ab26c61a",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "0d58e4ae9ea621d8857296776a7bdaaaded6ee27",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42404483216"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）：企業の巨額投資や雇用創出を政治家が華々しくアピールしたところで、額面だけで評価は決まらん。関税圧力や優遇措置で無理に引き出したものなら、歪みのコストは別の誰かが払わされる。手柄の誇示より、持続可能な基盤になるのか、頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。違うか？",
+        "draft_sha256": "bde7243f75ae0f86e62731efa7c0039e3043fc604b177030e9abec2c702a8832",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（価値観スライドによるゼロショット仮説）：",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "ね"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\n\nhttps://www.reuters.com/jp/economy/TY3FBXDZGZJWPBY3I36PJXF7QM-2026-10-23/"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383291712",
+      "unit_kind": "comment",
+      "issue_number": 113,
+      "comment_id": 6383291712,
+      "body_sha256": "45130b09c07f5578c1a9ca8906b6c7639096195c317afc407dbdf61bf2be6f85",
+      "url": "https://github.com/Xyngwie/-text/issues/113#issuecomment-6383291712",
+      "snapshot_sha256": "4aa0e225cd9472d8bbe6a4c3c39b8ae1f02373bec5339a301ac798fbb54ddd67",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "world",
+          "economy"
+        ],
+        "speech_act": "実投稿の完了を報告する発話",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "直前の確定文コメントに対する投稿完了の報告。",
+        "evidence_quote": "上記投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-2b8f92c3d613393e",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9156,
+          "candidatesTokenCount": 1183,
+          "totalTokenCount": 10339,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9156
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T19:05:39+00:00",
+        "input_sha256": "5b7acf08f518a1604c0351c08250044e9ad48a7ffa586d7cf95ae6b4ab26c61a",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "0d58e4ae9ea621d8857296776a7bdaaaded6ee27",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42404483216"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）：企業の巨額投資や雇用創出を政治家が華々しくアピールしたところで、額面だけで評価は決まらん。関税圧力や優遇措置で無理に引き出したものなら、歪みのコストは別の誰かが払わされる。手柄の誇示より、持続可能な基盤になるのか、頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。違うか？",
+        "draft_sha256": "bde7243f75ae0f86e62731efa7c0039e3043fc604b177030e9abec2c702a8832",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "実験政治枠（価値観スライドによるゼロショット仮説）：企業の巨額",
+            "after": "上記"
+          },
+          {
+            "operation": "replace",
+            "before": "資や雇用創出を政治家が華々",
+            "after": "稿"
+          },
+          {
+            "operation": "replace",
+            "before": "くアピール",
+            "after": "ま"
+          },
+          {
+            "operation": "delete",
+            "before": "ところで、額面だけで評価は決まらん",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "関税圧力や優遇措置で無理に引き出したものなら、歪みのコストは別の誰かが払わされる。手柄の誇示より、持続可能な基盤になるのか、頓挫した時に誰が責任を取るのかを詰めるのが筋というものだ。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
