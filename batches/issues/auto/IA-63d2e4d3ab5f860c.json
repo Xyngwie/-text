@@ -1,0 +1,429 @@
+{
+  "batch_id": "IA-63d2e4d3ab5f860c",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383137135",
+      "unit_kind": "comment",
+      "issue_number": 123,
+      "comment_id": 6383137135,
+      "body_sha256": "5c62ed4ec65658d840036dc4bd2a067ae84ce75361b6aa136c743979b8a3a428",
+      "url": "https://github.com/Xyngwie/-text/issues/123#issuecomment-6383137135",
+      "snapshot_sha256": "76a9115f8791326f6d7310dacff2cafbccd53caa1aeb5df65dc2566227491c2a",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "life"
+        ],
+        "speech_act": "外部SNS等への投稿完了の報告",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "投稿指示に沿って直前コメントの採用原稿を投稿した旨を報告する定型的なコメントである。",
+        "evidence_quote": "投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-63d2e4d3ab5f860c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9128,
+          "candidatesTokenCount": 1378,
+          "totalTokenCount": 10506,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9128
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T07:51:06+00:00",
+        "input_sha256": "f28fc415e7f0a35096a3d524a2bbbbf77c3e05ab002b1c2caf1994b4f04233f6",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "ae80e073bc90392af2bb08aa00e134a220e48cc2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42352957918"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "一度弾かれた場所へ、何の手土産もなしに戻るのはただの未練だが、社会人で腕を磨き直して「自信がある」と言えるだけの根拠を積んで立つなら話は別だ。選別の巡り合わせに愚痴を吐く暇があるなら、相手が無視できない実績を叩きつけて再挑戦の場を自力で作るのが筋というもの。結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。違うか？",
+        "draft_sha256": "92213f67a3a6790a821dd216c26c375049d23978bcf9a65e3293bbc20e68917c",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "一度弾かれ",
+            "after": "投稿しまし"
+          },
+          {
+            "operation": "delete",
+            "before": "場所へ、何の手土産もなしに戻るのはただの未練だが、社会人で腕を磨き直して「自信がある」と言えるだけの根拠を積んで立つなら話は別だ",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "選別の巡り合わせに愚痴を吐く暇があるなら、相手が無視できない実績を叩きつけて再挑戦の場を自力で作るのが筋というもの。結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383150914",
+      "unit_kind": "comment",
+      "issue_number": 122,
+      "comment_id": 6383150914,
+      "body_sha256": "d273f1c3bb3f9c89d9df4fe9837eef087e648fe1252d93685e2664bdd3940ac7",
+      "url": "https://github.com/Xyngwie/-text/issues/122#issuecomment-6383150914",
+      "snapshot_sha256": "c03d80033dd73cec1380465d405f88572dfb3fb8f0784c39af296c650a5d50bc",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "culture"
+        ],
+        "speech_act": "正倉院宝物の管理規律と公開制約の美的な価値を論じる採用原稿の確定文提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の冒頭注記「※価値観スライドによるゼロショット仮説」や末尾の「違うか？」を削り、改行を入れ、URLを付加して採用している。",
+        "evidence_quote": "千年の時を越えて残る正倉院宝物の凄みは、\n単なる異国情緒の珍しさではない。\n\n失われずに守り抜かれた厳格な管理規律と、\n限られた期間しか姿を見せない制約そのものが美の重みを支えている。\n\n安易な常設や過剰な観光消費に流さず、\nこの緊張感を保って公開することこそが文化を預かる側の矜持というものだ。",
+        "analysis_candidates": [
+          {
+            "observation": "AI初稿の末尾にある「違うか？」という反語的な問いかけを削除し、断定的な文末で締めている。",
+            "evidence_quote": "この緊張感を保って公開することこそが文化を預かる側の矜持というものだ。",
+            "limitation": "「違うか？」の削除は初稿に自動付与された定型疑問句の整理に過ぎない可能性があり、断定表現を好むことの絶対的証明ではない。"
+          },
+          {
+            "observation": "段落間や文中に改行を細かく挟むレイアウト変更を行っている。",
+            "evidence_quote": "千年の時を越えて残る正倉院宝物の凄みは、\n単なる異国情緒の珍しさではない。",
+            "limitation": "SNS投稿時の可読性を高めるための形式的な調整である可能性があり、文体そのものの選好とは限らない。"
+          }
+        ]
+      },
+      "batch_id": "IA-63d2e4d3ab5f860c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9128,
+          "candidatesTokenCount": 1378,
+          "totalTokenCount": 10506,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9128
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T07:51:06+00:00",
+        "input_sha256": "f28fc415e7f0a35096a3d524a2bbbbf77c3e05ab002b1c2caf1994b4f04233f6",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "ae80e073bc90392af2bb08aa00e134a220e48cc2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42352957918"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※価値観スライドによるゼロショット仮説\n\n千年の時を越えて残る正倉院宝物の凄みは、単なる異国情緒の珍しさではない。失われずに守り抜かれた厳格な管理規律と、限られた期間しか姿を見せない制約そのものが美の重みを支えている。安易な常設や過剰な観光消費に流さず、この緊張感を保って公開することこそが文化を預かる側の矜持というものだ。違うか？",
+        "draft_sha256": "017dc4a63183cd349a1d979e6b8585f6c01e2544b5c5ec7ca554af8176397b74",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※価値観スライドによるゼロショット仮説\n\n",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\n\nhttps://artexhibition.jp/topics/news/20261023-AEJ3026097/"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383152612",
+      "unit_kind": "comment",
+      "issue_number": 122,
+      "comment_id": 6383152612,
+      "body_sha256": "45130b09c07f5578c1a9ca8906b6c7639096195c317afc407dbdf61bf2be6f85",
+      "url": "https://github.com/Xyngwie/-text/issues/122#issuecomment-6383152612",
+      "snapshot_sha256": "c03d80033dd73cec1380465d405f88572dfb3fb8f0784c39af296c650a5d50bc",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "culture"
+        ],
+        "speech_act": "外部SNS等への投稿完了の報告",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "直前の確定文を投稿したことを知らせる定型的な報告コメントである。",
+        "evidence_quote": "上記投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-63d2e4d3ab5f860c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9128,
+          "candidatesTokenCount": 1378,
+          "totalTokenCount": 10506,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9128
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T07:51:06+00:00",
+        "input_sha256": "f28fc415e7f0a35096a3d524a2bbbbf77c3e05ab002b1c2caf1994b4f04233f6",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "ae80e073bc90392af2bb08aa00e134a220e48cc2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42352957918"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※価値観スライドによるゼロショット仮説\n\n千年の時を越えて残る正倉院宝物の凄みは、単なる異国情緒の珍しさではない。失われずに守り抜かれた厳格な管理規律と、限られた期間しか姿を見せない制約そのものが美の重みを支えている。安易な常設や過剰な観光消費に流さず、この緊張感を保って公開することこそが文化を預かる側の矜持というものだ。違うか？",
+        "draft_sha256": "017dc4a63183cd349a1d979e6b8585f6c01e2544b5c5ec7ca554af8176397b74",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "※価値観スライドによるゼロショット仮説\n\n千年の時を越えて残る正倉院宝物の凄みは、単なる異国情緒の珍",
+            "after": "上記投稿"
+          },
+          {
+            "operation": "replace",
+            "before": "さではない",
+            "after": "ました"
+          },
+          {
+            "operation": "delete",
+            "before": "失われずに守り抜かれた厳格な管理規律と、限られた期間しか姿を見せない制約そのものが美の重みを支えている。安易な常設や過剰な観光消費に流さず、この緊張感を保って公開することこそが文化を預かる側の矜持というものだ。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383168636",
+      "unit_kind": "comment",
+      "issue_number": 121,
+      "comment_id": 6383168636,
+      "body_sha256": "7d39758270e7bf010b6de8033a01711359a3d87443fce7e73d5aa3b8d454e601",
+      "url": "https://github.com/Xyngwie/-text/issues/121#issuecomment-6383168636",
+      "snapshot_sha256": "26c68eaa308e88ea00b53bbe8e081e45b2938573b4277df8f6495322485f4012",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "culture",
+          "life"
+        ],
+        "speech_act": "気候変動を題材とする文学の価値について論じる採用原稿の確定文提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿冒頭の注記「実験政治枠（価値観スライドによるゼロショット仮説）。」および末尾「違うか？」を削除し、改行を挿入してURLを追記している。",
+        "evidence_quote": "気候変動を物語に持ち込むとき、\n単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。\n\nだが、環境が不可逆に向きを変えた現実を前提として、\n人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。\n\n恐怖を煽る記号ではなく、変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。",
+        "analysis_candidates": [
+          {
+            "observation": "AI初稿の末尾「違うか？」を削り、宣言的な「〜武器になる。」で文章を終えている。",
+            "evidence_quote": "変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。",
+            "limitation": "生成AIのメタ的な定型文末を取り除いただけであり、本人の自発的な表現パターンの証明にはならない。"
+          },
+          {
+            "observation": "初稿の文意をそのまま維持しつつ、一文ごとに空行や改行を挟む構造へ整形している。",
+            "evidence_quote": "気候変動を物語に持ち込むとき、\n単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。",
+            "limitation": "投稿先プラットフォームのレイアウト要請に応じた視覚的整形にすぎない可能性がある。"
+          }
+        ]
+      },
+      "batch_id": "IA-63d2e4d3ab5f860c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9128,
+          "candidatesTokenCount": 1378,
+          "totalTokenCount": 10506,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9128
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T07:51:06+00:00",
+        "input_sha256": "f28fc415e7f0a35096a3d524a2bbbbf77c3e05ab002b1c2caf1994b4f04233f6",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "ae80e073bc90392af2bb08aa00e134a220e48cc2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42352957918"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。気候変動を物語に持ち込むとき、単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。だが、環境が不可逆に向きを変えた現実を前提として、人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。恐怖を煽る記号ではなく、変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。違うか？",
+        "draft_sha256": "075e582a6f3d195d2489b1be3a60f32b793e02a508f385d9cee95e231f3ea5f1",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（価値観スライドによるゼロショット仮説）。",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\n\nhttps://www.asahi.com/articles/DA3S16573261.html"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383170222",
+      "unit_kind": "comment",
+      "issue_number": 121,
+      "comment_id": 6383170222,
+      "body_sha256": "45130b09c07f5578c1a9ca8906b6c7639096195c317afc407dbdf61bf2be6f85",
+      "url": "https://github.com/Xyngwie/-text/issues/121#issuecomment-6383170222",
+      "snapshot_sha256": "26c68eaa308e88ea00b53bbe8e081e45b2938573b4277df8f6495322485f4012",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "life"
+        ],
+        "speech_act": "外部SNS等への投稿完了の報告",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "直前コメントの採用原稿をSNS等へ投稿した事実を報告する定型コメント。",
+        "evidence_quote": "上記投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-63d2e4d3ab5f860c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9128,
+          "candidatesTokenCount": 1378,
+          "totalTokenCount": 10506,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9128
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T07:51:06+00:00",
+        "input_sha256": "f28fc415e7f0a35096a3d524a2bbbbf77c3e05ab002b1c2caf1994b4f04233f6",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "ae80e073bc90392af2bb08aa00e134a220e48cc2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42352957918"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。気候変動を物語に持ち込むとき、単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。だが、環境が不可逆に向きを変えた現実を前提として、人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。恐怖を煽る記号ではなく、変わってしまった世界で日常を再定義する解像度こそが、現実に対峙する武器になる。違うか？",
+        "draft_sha256": "075e582a6f3d195d2489b1be3a60f32b793e02a508f385d9cee95e231f3ea5f1",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "実験政治枠（価値観スライドによるゼロショット仮説）。気候変動を物語に持ち込むとき、単なる道徳の説教や啓蒙運動の看板にするなら読む価値はない。だが、環境が不可逆に向きを変えた現実を前提として、人間がどう生活を維持し美意識を保つかという「観察眼」として描くなら話は別だ。恐怖を煽る",
+            "after": "上"
+          },
+          {
+            "operation": "replace",
+            "before": "号ではなく、変わって",
+            "after": "投稿"
+          },
+          {
+            "operation": "replace",
+            "before": "っ",
+            "after": "し"
+          },
+          {
+            "operation": "delete",
+            "before": "世界で日常を再定義する解像度こそが、現実に対峙する武器になる",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "違うか？",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
