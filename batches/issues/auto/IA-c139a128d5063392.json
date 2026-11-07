@@ -1,0 +1,401 @@
+{
+  "batch_id": "IA-c139a128d5063392",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383099828",
+      "unit_kind": "comment",
+      "issue_number": 129,
+      "comment_id": 6383099828,
+      "body_sha256": "6e4eed6c10ff728c4cccf6c2b8c7529eb2c2e96f319b31134fb6148df3551efd",
+      "url": "https://github.com/Xyngwie/-text/issues/129#issuecomment-6383099828",
+      "snapshot_sha256": "6c1df298e4a90ef10545b44dac28c00fa4923226650ae48089d576de1140c732",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "society",
+          "politics"
+        ],
+        "speech_act": "確定原稿の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "AIの初稿からプレフィックスと末尾の「違うか？」を削除し、改行および記事URLを追加して投稿用の確定文としてコメントしている。",
+        "evidence_quote": "最高裁が高裁判決を覆して生活保護減額を違法と断じたという。",
+        "analysis_candidates": [
+          {
+            "observation": "AI初稿の末尾にあった疑問形「違うか？」を削除し、断定的な文面のまま記事URLを付与して採用している。",
+            "evidence_quote": "勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。\n\nhttps://www.asahi.com/articles/DA3S16573376.html",
+            "limitation": "「違うか？」を削ったのが問いかけ表現の忌避なのか、単なる文字数調整や好みの問題なのかは本コメント単体からは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-c139a128d5063392",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9051,
+          "candidatesTokenCount": 1155,
+          "totalTokenCount": 10206,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9051
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T01:19:13+00:00",
+        "input_sha256": "6df9e927c2920ad661fa11de1b8695da46e7c5f378448d51b3e3c8f7977ab834",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "26783d2167fac92b7880807ebe902e0eedcd3e52",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42323384568"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "【価値観スライドによるゼロショット仮説】最高裁が高裁判決を覆して生活保護減額を違法と断じたという。算定プロセスの具体的な瑕疵は原典の確認を要するが、行政が手続や根拠を都合よく歪めて結果を押し通そうとしたのなら、司法に叩き落とされるのは当然の帰結だ。勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。違うか？",
+        "draft_sha256": "f854a66b39756ca6b4c09c4629540fbaf67240104fa44f31900df980f6098ddd",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "【価値観スライドによるゼロショット仮説】",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\n\nhttps://www.asahi.com/articles/DA3S16573376.html"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383101740",
+      "unit_kind": "comment",
+      "issue_number": 129,
+      "comment_id": 6383101740,
+      "body_sha256": "45130b09c07f5578c1a9ca8906b6c7639096195c317afc407dbdf61bf2be6f85",
+      "url": "https://github.com/Xyngwie/-text/issues/129#issuecomment-6383101740",
+      "snapshot_sha256": "6c1df298e4a90ef10545b44dac28c00fa4923226650ae48089d576de1140c732",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "society",
+          "politics"
+        ],
+        "speech_act": "投稿完了の報告",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "前のコメントに提示した原稿の外部投稿完了を報告する定型的な発話であり、外部表示の独立検証は行われていない。",
+        "evidence_quote": "上記投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-c139a128d5063392",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9051,
+          "candidatesTokenCount": 1155,
+          "totalTokenCount": 10206,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9051
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T01:19:13+00:00",
+        "input_sha256": "6df9e927c2920ad661fa11de1b8695da46e7c5f378448d51b3e3c8f7977ab834",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "26783d2167fac92b7880807ebe902e0eedcd3e52",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42323384568"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "【価値観スライドによるゼロショット仮説】最高裁が高裁判決を覆して生活保護減額を違法と断じたという。算定プロセスの具体的な瑕疵は原典の確認を要するが、行政が手続や根拠を都合よく歪めて結果を押し通そうとしたのなら、司法に叩き落とされるのは当然の帰結だ。勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。違うか？",
+        "draft_sha256": "f854a66b39756ca6b4c09c4629540fbaf67240104fa44f31900df980f6098ddd",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "【価値観スライドによるゼロショット仮説】最高裁が高裁判決を覆",
+            "after": "上記投稿"
+          },
+          {
+            "operation": "replace",
+            "before": "て生活保護減額を違法と断じたという。算定プロセスの具体的な瑕疵は原典の確認を要するが、行政が手続や根拠を都合よく歪めて結果を押し通そうと",
+            "after": "ま"
+          },
+          {
+            "operation": "delete",
+            "before": "のなら、司法に叩き落とされるのは当然の帰結だ",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "勝手なルール運用で生じる歪みを下流に背負わせる設計を認めるわけにはいかない。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383117645",
+      "unit_kind": "comment",
+      "issue_number": 124,
+      "comment_id": 6383117645,
+      "body_sha256": "5eeefc5bea716f6d94bb39aa31ec43174f8947b36eab50ac9b88ae5a8e02ddc7",
+      "url": "https://github.com/Xyngwie/-text/issues/124#issuecomment-6383117645",
+      "snapshot_sha256": "24828294d78a4f4acc59116b79cfac95f266d63022389cbc70f810aee6f39f63",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "economy",
+          "society",
+          "life"
+        ],
+        "speech_act": "確定原稿の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "AI初稿のプレフィックスと末尾の「違うか？」を削除し、「依然として民草の暮らしは改善していない。」という一文と記事URLを追記して採用している。",
+        "evidence_quote": "見かけの数字で経済が回った気になっているんじゃないか、\n依然として民草の暮らしは改善していない。",
+        "analysis_candidates": [
+          {
+            "observation": "AIの初稿の末尾「違うか？」を置き換える形で、生活者の現状に言及する文言「依然として民草の暮らしは改善していない。」を加筆している。",
+            "evidence_quote": "依然として民草の暮らしは改善していない。",
+            "limitation": "本人の手による加筆部分であるが、日常的な語彙・口癖とまでは断定できず、このニュースへの固有の反応である可能性がある。"
+          }
+        ]
+      },
+      "batch_id": "IA-c139a128d5063392",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9051,
+          "candidatesTokenCount": 1155,
+          "totalTokenCount": 10206,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9051
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T01:19:13+00:00",
+        "input_sha256": "6df9e927c2920ad661fa11de1b8695da46e7c5f378448d51b3e3c8f7977ab834",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "26783d2167fac92b7880807ebe902e0eedcd3e52",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42323384568"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "（価値観スライドによるゼロショット仮説）\n消費者物価が９カ月ぶりに２％を超えたところで、コスト高を末端に押し付けた結果なら何の誇りにもならん。目標数値の帳尻合わせを成果と錯覚し、生活者の実質負担を直視しない設計は二流だ。見かけの数字で経済が回った気になっているんじゃないか、違うか？",
+        "draft_sha256": "a67dd2de7b67560632ed95aaa8c96223cf9922aac621f1f109723f6c3780c1de",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "（価値観スライドによるゼロショット仮説）\n",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\n依然として民草の暮らしは改善していない。\n\nhttps://www.jiji.com/jc/article?k=2026102300210&g=eco"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383119210",
+      "unit_kind": "comment",
+      "issue_number": 124,
+      "comment_id": 6383119210,
+      "body_sha256": "45130b09c07f5578c1a9ca8906b6c7639096195c317afc407dbdf61bf2be6f85",
+      "url": "https://github.com/Xyngwie/-text/issues/124#issuecomment-6383119210",
+      "snapshot_sha256": "24828294d78a4f4acc59116b79cfac95f266d63022389cbc70f810aee6f39f63",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "economy",
+          "society",
+          "life"
+        ],
+        "speech_act": "投稿完了の報告",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "確定文の投稿完了を報告する発話。外部での投稿実態は未検証。",
+        "evidence_quote": "上記投稿しました。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-c139a128d5063392",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9051,
+          "candidatesTokenCount": 1155,
+          "totalTokenCount": 10206,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9051
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T01:19:13+00:00",
+        "input_sha256": "6df9e927c2920ad661fa11de1b8695da46e7c5f378448d51b3e3c8f7977ab834",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "26783d2167fac92b7880807ebe902e0eedcd3e52",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42323384568"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "（価値観スライドによるゼロショット仮説）\n消費者物価が９カ月ぶりに２％を超えたところで、コスト高を末端に押し付けた結果なら何の誇りにもならん。目標数値の帳尻合わせを成果と錯覚し、生活者の実質負担を直視しない設計は二流だ。見かけの数字で経済が回った気になっているんじゃないか、違うか？",
+        "draft_sha256": "a67dd2de7b67560632ed95aaa8c96223cf9922aac621f1f109723f6c3780c1de",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "（価値観スライドによるゼロショット仮説）\n消費者物価が９カ月ぶりに２％を超え",
+            "after": "上記投稿しまし"
+          },
+          {
+            "operation": "delete",
+            "before": "ところで、コスト高を末端に押し付けた結果なら何の誇りにもならん",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "目標数値の帳尻合わせを成果と錯覚し、生活者の実質負担を直視しない設計は二流だ。見かけの数字で経済が回った気になっているんじゃないか、違うか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6383136056",
+      "unit_kind": "comment",
+      "issue_number": 123,
+      "comment_id": 6383136056,
+      "body_sha256": "1bdcbc8d4707d60c6927ee2ab34d199871f57e61c6d80d4447ac13f4ba9527b8",
+      "url": "https://github.com/Xyngwie/-text/issues/123#issuecomment-6383136056",
+      "snapshot_sha256": "76a9115f8791326f6d7310dacff2cafbccd53caa1aeb5df65dc2566227491c2a",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "culture",
+          "life"
+        ],
+        "speech_act": "確定原稿の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "AI初稿の本文骨子を維持しつつ、末尾の「違うか？」を「頑張って！！」と記事URLに置き換えて採用している。",
+        "evidence_quote": "結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。\n頑張って！！",
+        "analysis_candidates": [
+          {
+            "observation": "初稿末尾の問いかけ「違うか？」を削除し、「頑張って！！」という直接的な応援の言葉を加筆している。",
+            "evidence_quote": "頑張って！！",
+            "limitation": "感嘆符を重ねた応援表現が普遍的なトーンなのか、ドラフト再挑戦という文脈に合わせた特例的な修整なのかは不明。"
+          }
+        ]
+      },
+      "batch_id": "IA-c139a128d5063392",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9051,
+          "candidatesTokenCount": 1155,
+          "totalTokenCount": 10206,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9051
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-07T01:19:13+00:00",
+        "input_sha256": "6df9e927c2920ad661fa11de1b8695da46e7c5f378448d51b3e3c8f7977ab834",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "26783d2167fac92b7880807ebe902e0eedcd3e52",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42323384568"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "一度弾かれた場所へ、何の手土産もなしに戻るのはただの未練だが、社会人で腕を磨き直して「自信がある」と言えるだけの根拠を積んで立つなら話は別だ。選別の巡り合わせに愚痴を吐く暇があるなら、相手が無視できない実績を叩きつけて再挑戦の場を自力で作るのが筋というもの。結果はどう転ぼうと、二度目の扉をこじ開けたこと自体が立派な戦果だ。違うか？",
+        "draft_sha256": "92213f67a3a6790a821dd216c26c375049d23978bcf9a65e3293bbc20e68917c",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "replace",
+            "before": "違うか？",
+            "after": "\n頑張って！！\n\nhttps://mainichi.jp/articles/20261021/k00/00m/050/066000c"
+          }
+        ]
+      }
+    }
+  ]
+}
