@@ -1,0 +1,318 @@
+{
+  "batch_id": "IA-76104351ab4ef2f3",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6394222547",
+      "unit_kind": "comment",
+      "issue_number": 152,
+      "comment_id": 6394222547,
+      "body_sha256": "8352559b677081401fcffef21737078489cd76e474db9cb83b0a2ae6718fea96",
+      "url": "https://github.com/Xyngwie/-text/issues/152#issuecomment-6394222547",
+      "snapshot_sha256": "999d10897a9432d56b21e0cec870f6ff1c993077291d3f1034299a6daccdb1e1",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "society"
+        ],
+        "speech_act": "直前の確定文コメントを指してSNS等へ投稿した旨を報告する発話",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "初稿の採否評価ではなく、直前の採用原稿コメント（comment-6394221008）に対する投稿完了報告。初稿自体の直接の言い回し判定ではないためverdictはunknown。",
+        "evidence_quote": "上記投稿しました",
+        "analysis_candidates": [
+          {
+            "observation": "投稿指示の形式に従い、確定文のコメントとは別に独立したコメントで投稿完了を端的に報告している。",
+            "evidence_quote": "上記投稿しました",
+            "limitation": "「上記投稿しました」との自己申告のみであり、外部SNS等への実際の反映状況や投稿文面の完全な一致は確認できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-76104351ab4ef2f3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 7016,
+          "candidatesTokenCount": 1546,
+          "totalTokenCount": 8562,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7016
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T20:48:47+00:00",
+        "input_sha256": "8c464adf1d47e957e64bd3b45f040ca8dfdd9b15b5306931603e96b2721402da",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "badbfcc6ff441e9301fc0103b9b2106c39bfa518",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42521981006"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n原子力災害の避難計画を机上の計算だけで済ませず、不測の事態を想定して自衛隊の輸送力まで組み込んだ訓練を行うこと自体は、実効性を確かめる上で必要な手筋だ。\n\nどれほど書類上の手順を整えても、現場の混乱や物理的な制約があれば計画は破綻する。問われるべきは訓練をこなしたという形式ではなく、動員や輸送のボトルネックをどこまで炙り出し、次の修正につなげられるかだろう。\n\nhttps://news.google.com/rss/articles/CBMiZ0FVX3lxTE9sMWR5a1NUMXJiay1LY2tlRzBJY2RtT2NLb3NTR1JRZHZ0UWFLOTJraFk0NzdaZ3dCbXlJS0JMM2pBdXA0bjd2cnZtVmwtMjNUTTdSN1hXSVd5Q1VOSnNhVG5OcXQ4b3M?oc=5",
+        "draft_sha256": "f41ed811b51b46f562329de4b10323bd12e113d8252ee340c048442ef53fe172",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n原子力災害の避難計画を机",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "の計算だけで済",
+            "after": "記投稿し"
+          },
+          {
+            "operation": "delete",
+            "before": "せず、不測の事態を想定して自衛隊の輸送力まで組み込んだ訓練を行うこと自体は、実効性を確かめる上で必要な手筋だ。\n\nどれほど書類上の手順を整えても、現場の混乱や物理的な制約があれば計画は破綻する。問われるべきは訓練をこな",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "という形式ではなく、動員や輸送のボトルネックをどこまで炙り出し、次の修正につなげられるかだろう。\n\nhttps://news.google.com/rss/articles/CBMiZ0FVX3lxTE9sMWR5a1NUMXJiay1LY2tlRzBJY2RtT2NLb3NTR1JRZHZ0UWFLOTJraFk0NzdaZ3dCbXlJS0JMM2pBdXA0bjd2cnZtVmwtMjNUTTdSN1hXSVd5Q1VOSnNhVG5OcXQ4b3M?oc=5",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:issue-163:body",
+      "unit_kind": "issue_body",
+      "issue_number": 163,
+      "comment_id": null,
+      "body_sha256": "0b7952b80b8ae480b69a11fc1f1637b6ad52d3957e4a28ee3e2ce6a82ee21f70",
+      "url": "https://github.com/Xyngwie/-text/issues/163",
+      "snapshot_sha256": "bf2c4e38fab0372dfaea20c74084b1597134f8c83169d173b14d3801825ad0a9",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "ai",
+          "life"
+        ],
+        "speech_act": "対話記録ファイルをリポジトリへ追加した旨を通知する作業連絡の発話",
+        "feedback_kind": "source_clarification",
+        "verdict": "unknown",
+        "note": "AIの投稿初稿に対する判定ではなく、追加された資料ソースに関する連絡Issue。",
+        "evidence_quote": "sources/copilot-002に10月6日以降のこぴちーとの会話.txtを追加しました。",
+        "analysis_candidates": [
+          {
+            "observation": "AIとの対話ログ（copilot）を原典ファイルとしてリポジトリにコミットしたことを報告・記録している。",
+            "evidence_quote": "sources/copilot-002に10月6日以降のこぴちーとの会話.txtを追加しました。",
+            "limitation": "会話ログの具体的な中身やどのような意図・目的で追加されたかの詳細までは示されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-76104351ab4ef2f3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 7016,
+          "candidatesTokenCount": 1546,
+          "totalTokenCount": 8562,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7016
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T20:48:47+00:00",
+        "input_sha256": "8c464adf1d47e957e64bd3b45f040ca8dfdd9b15b5306931603e96b2721402da",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "badbfcc6ff441e9301fc0103b9b2106c39bfa518",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42521981006"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6410936641",
+      "unit_kind": "comment",
+      "issue_number": 153,
+      "comment_id": 6410936641,
+      "body_sha256": "d6e7ea8cbd74a3155799dd36822753bc3ccc3bf995c16aee664eac78d88518d2",
+      "url": "https://github.com/Xyngwie/-text/issues/153#issuecomment-6410936641",
+      "snapshot_sha256": "d3900faa7c387bafdd5534ee2585b6ba8a43934fc2c132a4d87dc3186ecfe87f",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "life"
+        ],
+        "speech_act": "過去の投稿一覧を振り返り当時の夫婦関係や自身の精神状態を回顧する発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "X過去投稿のAI分類Issueに対するコメント。当時の私生活の状況（夫婦仲）や言葉の調子について回想している。",
+        "evidence_quote": "この頃は夫婦仲もまだ良かった頃である。割と言葉にも余裕があるように思える。",
+        "analysis_candidates": [
+          {
+            "observation": "過去の自分の投稿文を客観視し、当時の夫婦関係の良好さと言葉の余裕が連動していたと分析的に振り返っている。",
+            "evidence_quote": "この頃は夫婦仲もまだ良かった頃である。割と言葉にも余裕があるように思える。",
+            "limitation": "当時の投稿群のうち具体的にどの表現を「余裕」と捉えているかの詳細基準までは語られていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-76104351ab4ef2f3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 7016,
+          "candidatesTokenCount": 1546,
+          "totalTokenCount": 8562,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7016
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T20:48:47+00:00",
+        "input_sha256": "8c464adf1d47e957e64bd3b45f040ca8dfdd9b15b5306931603e96b2721402da",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "badbfcc6ff441e9301fc0103b9b2106c39bfa518",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42521981006"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6410970209",
+      "unit_kind": "comment",
+      "issue_number": 154,
+      "comment_id": 6410970209,
+      "body_sha256": "d564e6585fd3ba22f42e4e6e0c452d1af3afd0a7970f13ed058fd31ce575a608",
+      "url": "https://github.com/Xyngwie/-text/issues/154#issuecomment-6410970209",
+      "snapshot_sha256": "517ea4807747b03402d43c2e2f2a0e7442022565f1fba600a77025e74e9e8cf6",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "life"
+        ],
+        "speech_act": "過去の投稿に登場する同行者について当時の記憶を思い出そうとする発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "サバゲーの話題に言及しつつ、登場人物の記憶が欠落していることを素直に述べている。",
+        "evidence_quote": "サバイバルゲームに関する話題。この時の初心者二人が誰だったのか、記憶にない…誰だったんだろう。",
+        "analysis_candidates": [
+          {
+            "observation": "過去の自分の投稿内容を確認し、トピックがサバゲーであることを確認しつつ、同行した初心者2名の身元が思い出せない状態を吐露している。",
+            "evidence_quote": "サバイバルゲームに関する話題。この時の初心者二人が誰だったのか、記憶にない…誰だったんだろう。",
+            "limitation": "2017年の投稿から年数が経過していることによる記憶の欠如であり、当時の人間関係全体の把握状況までは分からない。"
+          }
+        ]
+      },
+      "batch_id": "IA-76104351ab4ef2f3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 7016,
+          "candidatesTokenCount": 1546,
+          "totalTokenCount": 8562,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7016
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T20:48:47+00:00",
+        "input_sha256": "8c464adf1d47e957e64bd3b45f040ca8dfdd9b15b5306931603e96b2721402da",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "badbfcc6ff441e9301fc0103b9b2106c39bfa518",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42521981006"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6411032174",
+      "unit_kind": "comment",
+      "issue_number": 155,
+      "comment_id": 6411032174,
+      "body_sha256": "aa4e2adcb56460f8eab73817a6bbbe8c52f147b42f6e1a1903a55fa3dda1312c",
+      "url": "https://github.com/Xyngwie/-text/issues/155#issuecomment-6411032174",
+      "snapshot_sha256": "3c92fcde79f650b9c90e1c444f55de3ebffc5b1943e014de1fe301c84dad4ae4",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "culture",
+          "games",
+          "life"
+        ],
+        "speech_act": "過去の観劇の感想や印象の違いを語り、続けてサバゲー用具のメンテナンス技術を解説する発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "分類Issueで提示された過去投稿（劇団四季とエアガン整備）の双方に反応し、観劇の記憶・舞台表現と映画の違い、および電動ハンドガンの整備方法について述べている。",
+        "evidence_quote": "劇団四季！たしかに観劇して感激したなぁ。演目は確かライオンキングでした。筋は知っていても舞台で見るのと映画では表現も、受ける感情も違うよね。電動ハンドガンのマガジンは砂が噛んでしまうと動きが悪くなるんだけど、鋳鉄製なので水洗いして乾燥とって油を差しておけば完璧である。",
+        "analysis_candidates": [
+          {
+            "observation": "舞台芸術に対して「筋は知っていても舞台で見るのと映画では表現も、受ける感情も違う」と鑑賞体験の差異を言語化し、楽しんだ記憶を語っている。",
+            "evidence_quote": "筋は知っていても舞台で見るのと映画では表現も、受ける感情も違うよね。",
+            "limitation": "具体的な表現のどの差異に感銘を受けたかについてのこれ以上の詳細な批評は含まれていない。"
+          },
+          {
+            "observation": "電動ハンドガンのマガジンメンテナンスについて、材質（鋳鉄製）とトラブル原因（砂噛み）、および適切な対処法（水洗い・乾燥・注油）を具体的に把握して実践している。",
+            "evidence_quote": "電動ハンドガンのマガジンは砂が噛んでしまうと動きが悪くなるんだけど、鋳鉄製なので水洗いして乾燥とって油を差しておけば完璧である。",
+            "limitation": "他の銃器パーツや一般的なトイガン全般に対するメンテナンス手順にまで適用される知見かは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-76104351ab4ef2f3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 7016,
+          "candidatesTokenCount": 1546,
+          "totalTokenCount": 8562,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 7016
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T20:48:47+00:00",
+        "input_sha256": "8c464adf1d47e957e64bd3b45f040ca8dfdd9b15b5306931603e96b2721402da",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "badbfcc6ff441e9301fc0103b9b2106c39bfa518",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42521981006"
+      },
+      "draft_comparison": null
+    }
+  ]
+}
