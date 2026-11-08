@@ -8,17 +8,23 @@ append-only registry at stories/registry.jsonl.
   python3 tools/story_candidates.py candidates [--max-items 8]
   python3 tools/story_candidates.py register --candidate-id rss-... --story stories/2026/11/xxx.md
   python3 tools/story_candidates.py check
+  python3 tools/story_candidates.py from-url <URL> --output /tmp/story_candidates.json
 """
 
 import argparse
 import datetime as dt
+import hashlib
+import html
 import json
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from rss_agent import balanced_candidates, collect  # noqa: E402
+from rss_agent import USER_AGENT, balanced_candidates, collect  # noqa: E402
+import urllib.request  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / 'config/story_rss_sources.json'
@@ -117,6 +123,64 @@ def check(registry_path=REGISTRY):
     return problems
 
 
+class _MetaParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.meta, self.title, self._in_title = {}, '', False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'meta':
+            key = (attrs.get('property') or attrs.get('name') or '').lower()
+            if key and attrs.get('content') and key not in self.meta:
+                self.meta[key] = attrs['content']
+        elif tag == 'title':
+            self._in_title = True
+
+    def handle_endtag(self, tag):
+        if tag == 'title':
+            self._in_title = False
+
+    def handle_data(self, data):
+        if self._in_title:
+            self.title += data
+
+
+def candidate_from_page(url, page, final_url=None):
+    """Build a candidate from a page the owner chose. Only title/description metadata is used as fact."""
+    parser = _MetaParser()
+    parser.feed(page)
+    meta = parser.meta
+    clean = lambda value: re.sub(r'\s+', ' ', html.unescape(value or '')).strip()
+    title = clean(meta.get('og:title') or meta.get('twitter:title') or parser.title)
+    if not title:
+        raise SystemExit(f'could not read a title from {url}')
+    return {
+        'candidate_id': 'url-' + hashlib.sha256(url.encode('utf-8')).hexdigest()[:20],
+        'source_id': 'owner-url',
+        'source_name': 'URL supplied by the owner',
+        'track': 'story',
+        'category': 'owner-url',
+        'title': title,
+        'description': clean(meta.get('og:description') or meta.get('description') or meta.get('twitter:description')),
+        'publisher': clean(meta.get('og:site_name')) or urlparse(final_url or url).netloc,
+        'link': url,
+        'resolved_link': final_url if final_url and final_url != url else None,
+        'published_at': clean(meta.get('article:published_time')) or None,
+        'source_claim_status': 'fact_candidate_not_verified',
+        'rejected_reasons': [],
+    }
+
+
+def fetch_page(url, timeout=20):
+    if urlparse(url).scheme not in {'http', 'https'}:
+        raise SystemExit(f'not an http(s) URL: {url}')
+    request = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        charset = response.headers.get_content_charset() or 'utf-8'
+        return response.read(2_000_000).decode(charset, errors='replace'), response.geturl()
+
+
 def main():
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest='command', required=True)
@@ -129,6 +193,10 @@ def main():
     r.add_argument('--candidate-id', required=True)
     r.add_argument('--story', type=Path, required=True, help='story file path relative to the repository root')
     sub.add_parser('check')
+    u = sub.add_parser('from-url', help='make a one-item candidates file from a URL the owner supplied')
+    u.add_argument('url')
+    u.add_argument('--output', type=Path, required=True)
+    u.add_argument('--timeout', type=int, default=20)
     args = parser.parse_args()
 
     if args.command == 'candidates':
@@ -142,6 +210,15 @@ def main():
             sys.stdout.write(encoded)
         if not result['candidates']:
             raise SystemExit(1)
+    elif args.command == 'from-url':
+        page, final_url = fetch_page(args.url, args.timeout)
+        candidate = candidate_from_page(args.url, page, final_url)
+        used = {row['candidate_id']: row for row in load_registry()}
+        if candidate['candidate_id'] in used:
+            print(f"already used for {used[candidate['candidate_id']]['story_path']}", file=sys.stderr)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps({'candidates': [candidate]}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print(json.dumps(candidate, ensure_ascii=False, indent=2))
     elif args.command == 'register':
         data = json.loads(args.candidates.read_text(encoding='utf-8'))
         match = [row for row in data['candidates'] if row['candidate_id'] == args.candidate_id]

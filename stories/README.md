@@ -2,6 +2,8 @@
 
 ニュース記事の中にある「人の心が動く一点」を拾い、その一点だけをハイライトする短編を書く場所です。記事の主題そのものでなくてもかまいません。見出しの端にある一言、数字、物の名前など、一見関係なさそうな箇所から拾うことを歓迎します。
 
+本人がURLを渡して頼む場合は、スキル [`short-story-from-url`](../.claude/skills/short-story-from-url/SKILL.md) の手順で書きます（題材がRSSでなく指定のURLになる以外は、この決まりと同じ）。
+
 RSS価値観スライド（`config/rss_sources.json`、Issue作成）とは別系統です。題材は専用のニュースRSS（[`config/story_rss_sources.json`](../config/story_rss_sources.json)）から選び、Issueは作りません。
 
 ## 置き場所
@@ -23,10 +25,10 @@ RSS価値観スライド（`config/rss_sources.json`、Issue作成）とは別�
 
    ```text
    ※この物語は、下記のニュース記事から着想を得たフィクションです。登場人物や場面は創作であり、実在の人物とは関係ありません。
-   元記事：<RSSの記事URL>
+   元記事：<記事URL>
    ```
 
-   元記事URLはRSSにあるGoogle Newsのリンクで、開くと元の記事へ転送される。
+   RSSから選んだ場合、元記事URLはRSSにあるGoogle Newsのリンクで、開くと元の記事へ転送される。本人がURLを渡した場合は、そのURLをそのまま使う。
 
 ## 1本書く手順（定期実行もこの手順）
 

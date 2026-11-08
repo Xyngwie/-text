@@ -59,6 +59,17 @@ class StoryCandidatesTest(unittest.TestCase):
             with self.assertRaises(SystemExit):
                 story_candidates.register(registry, first, story.relative_to(ROOT))
 
+    def test_candidate_from_owner_page(self):
+        page = ('<html><head><title>fallback</title><meta property="og:title" content="町の時計台、百年目の鐘 &amp; 修理">'
+                '<meta name="description" content="住民が見守る中で鐘が鳴った。"><meta property="og:site_name" content="地方新聞">'
+                '</head></html>')
+        row = story_candidates.candidate_from_page('https://example.test/a', page, 'https://example.test/a')
+        self.assertEqual(row['title'], '町の時計台、百年目の鐘 & 修理')
+        self.assertEqual(row['description'], '住民が見守る中で鐘が鳴った。')
+        self.assertEqual(row['publisher'], '地方新聞')
+        self.assertTrue(row['candidate_id'].startswith('url-'))
+        self.assertIsNone(row['resolved_link'])
+
     def test_config_is_valid(self):
         config = json.loads((ROOT / 'config/story_rss_sources.json').read_text(encoding='utf-8'))
         ids = [source['source_id'] for source in config['sources']]
