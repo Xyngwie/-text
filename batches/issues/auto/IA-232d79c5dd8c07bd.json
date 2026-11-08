@@ -1,0 +1,346 @@
+{
+  "batch_id": "IA-232d79c5dd8c07bd",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6392095151",
+      "unit_kind": "comment",
+      "issue_number": 144,
+      "comment_id": 6392095151,
+      "body_sha256": "c5c4c4cb1745f4e2e9c3a37103348a9ba9e4634bf986f04c49e0fac7a2ce3724",
+      "url": "https://github.com/Xyngwie/-text/issues/144#issuecomment-6392095151",
+      "snapshot_sha256": "758504c0beeb56a1facaffc70c8a2011cb456e7e49e91ea699ada68d3193a9b8",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "life"
+        ],
+        "speech_act": "過去の行動（敷地の地図作成）についての自虐的な回顧と冗談",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "X過去ポストの要約（サバゲーフィールド図面の自作等）に対するオーナー自身のコメント。ドラフトの採否判定ではない。",
+        "evidence_quote": "今思うと、テロリスト予備軍かもしれん勝手に敷地の地図とか書いたりして。（笑）",
+        "analysis_candidates": [
+          {
+            "observation": "過去の図面作成行動について自虐的・ユーモラスに振り返っている。",
+            "evidence_quote": "今思うと、テロリスト予備軍かもしれん勝手に敷地の地図とか書いたりして。（笑）",
+            "limitation": "単一の短い冗談コメントであり、日常的な口調や恒久的な価値観の断定には使えない。"
+          }
+        ]
+      },
+      "batch_id": "IA-232d79c5dd8c07bd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8644,
+          "candidatesTokenCount": 1641,
+          "totalTokenCount": 10285,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8644
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T09:35:34+00:00",
+        "input_sha256": "ffb17c46601d23fdc8baf9722f40f564a19756c96fa6a6e36a963ae7a014cd26",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "359b9147fc63f94f31e7af87de8a5578d00d3902",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42467806704"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6392157676",
+      "unit_kind": "comment",
+      "issue_number": 146,
+      "comment_id": 6392157676,
+      "body_sha256": "12cb0ea2eda1c4dea3accc5be89145323cfb19b3d05517aec6f064526c2be2c0",
+      "url": "https://github.com/Xyngwie/-text/issues/146#issuecomment-6392157676",
+      "snapshot_sha256": "cd8a901780b663fee0b153eb5f8780aeb239b2a26574f0721be6da5223f7cbe0",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "food",
+          "thinking",
+          "society"
+        ],
+        "speech_act": "過去の3件のポスト内容に対する振り返りと評価、および世の中のパッケージ設計に対する問題提起",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "過去のXポストの分類・要約内容に対して個別に補足・回顧を行っているコメント。",
+        "evidence_quote": "この3件は結構いいね。\n軽くやられてどうするか、ということについて、\n一件目では黄色信号で立ち止まれることの大切さ\n二件目ではやられてても突っ込んでくる相手には一撃ならず二撃三撃を入れられる容易さを書いている。\n\n三件目は、手軽に食べられるパックのお寿司の蓋に、より手軽に食べられるよう醤油皿として使える仕切りがある事を発見したもの。この視点で見ると最近のパッケージでこうなっているものが減ったので、大したコストでもないのに世の中全体の発想力が落ちているんじゃないかと懸念する。",
+        "analysis_candidates": [
+          {
+            "observation": "寿司パックの仕切り機能の減少に着目し、デザインの発想力低下という視点を提示している。",
+            "evidence_quote": "この視点で見ると最近のパッケージでこうなっているものが減ったので、大したコストでもないのに世の中全体の発想力が落ちているんじゃないかと懸念する。",
+            "limitation": "過去ポストの振り返りにおける私見であり、パッケージ産業の実態や本人の普遍的批評性を示すものとまでは言えない。"
+          }
+        ]
+      },
+      "batch_id": "IA-232d79c5dd8c07bd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8644,
+          "candidatesTokenCount": 1641,
+          "totalTokenCount": 10285,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8644
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T09:35:34+00:00",
+        "input_sha256": "ffb17c46601d23fdc8baf9722f40f564a19756c96fa6a6e36a963ae7a014cd26",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "359b9147fc63f94f31e7af87de8a5578d00d3902",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42467806704"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6394041052",
+      "unit_kind": "comment",
+      "issue_number": 147,
+      "comment_id": 6394041052,
+      "body_sha256": "8df9027eac1b0a04d22b2f0755ac1f6f8e30cbbce3438a07b7205b055624cc59",
+      "url": "https://github.com/Xyngwie/-text/issues/147#issuecomment-6394041052",
+      "snapshot_sha256": "f3f48067c73778ec98d9b6495c38d7a30e0da82fd417d0800e0d8f6d11c7f50b",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "culture",
+          "society"
+        ],
+        "speech_act": "AI生成ドラフトの注記を削除し、記事URLを付加して採用確定稿として提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の冒頭注記を削除し段落構成を維持したまま元記事URLを末尾に添えて確定文としてコメントしている。",
+        "evidence_quote": "一度失われた実演の場を呼び戻すのは、新しく箱を建てる以上の摩擦と労力を伴う。大衆演劇のような現場の熱量に依存する文化にとって、5年の空白を越えて拠点が再び開いたこと自体は確かな前進だ。\n\n著名人の過去の実績といった話題性で耳目を集めるのも入口としては悪くないが、本質はそこから先にある。\n\nハコを戻しただけで満足せず、演者と観客が継続して巡る仕組みをどう保てるかが、この再開を単なるノスタルジーで終わらせないための分水嶺になる。\n\nhttps://www.asahi.com/sp/articles/ASVBS3VGFVBSTIPE00JM.html",
+        "analysis_candidates": [
+          {
+            "observation": "AIドラフトの「実験政治枠」等のプレフィックスを削除し、末尾に記事URLを付与して採用原稿としている。",
+            "evidence_quote": "https://www.asahi.com/sp/articles/ASVBS3VGFVBSTIPE00JM.html",
+            "limitation": "ドラフト本文自体には手を入れておらず、無修整採用から本人の理想の文体を直接推定することはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-232d79c5dd8c07bd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8644,
+          "candidatesTokenCount": 1641,
+          "totalTokenCount": 10285,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8644
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T09:35:34+00:00",
+        "input_sha256": "ffb17c46601d23fdc8baf9722f40f564a19756c96fa6a6e36a963ae7a014cd26",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "359b9147fc63f94f31e7af87de8a5578d00d3902",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42467806704"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n一度失われた実演の場を呼び戻すのは、新しく箱を建てる以上の摩擦と労力を伴う。大衆演劇のような現場の熱量に依存する文化にとって、5年の空白を越えて拠点が再び開いたこと自体は確かな前進だ。\n\n著名人の過去の実績といった話題性で耳目を集めるのも入口としては悪くないが、本質はそこから先にある。ハコを戻しただけで満足せず、演者と観客が継続して巡る仕組みをどう保てるかが、この再開を単なるノスタルジーで終わらせないための分水嶺になる。",
+        "draft_sha256": "8deda04b67f02a395a543f7adc666e415e0c123b8fbb6d2d4deb3f9103190cbc",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\nhttps://www.asahi.com/sp/articles/ASVBS3VGFVBSTIPE00JM.html"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6394043446",
+      "unit_kind": "comment",
+      "issue_number": 147,
+      "comment_id": 6394043446,
+      "body_sha256": "8352559b677081401fcffef21737078489cd76e474db9cb83b0a2ae6718fea96",
+      "url": "https://github.com/Xyngwie/-text/issues/147#issuecomment-6394043446",
+      "snapshot_sha256": "f3f48067c73778ec98d9b6495c38d7a30e0da82fd417d0800e0d8f6d11c7f50b",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "culture"
+        ],
+        "speech_act": "確定文を外部へ投稿した旨の報告",
+        "feedback_kind": "publication_report",
+        "verdict": "unknown",
+        "note": "直前のコメント（確定文）を外部に投稿したという本人申告。外部での実投稿状態は独立して確認されていない。",
+        "evidence_quote": "上記投稿しました",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-232d79c5dd8c07bd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8644,
+          "candidatesTokenCount": 1641,
+          "totalTokenCount": 10285,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8644
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T09:35:34+00:00",
+        "input_sha256": "ffb17c46601d23fdc8baf9722f40f564a19756c96fa6a6e36a963ae7a014cd26",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "359b9147fc63f94f31e7af87de8a5578d00d3902",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42467806704"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n一度失われた実演の場を呼び戻すのは、新しく箱を建てる以上の摩擦と労力を伴う。大衆演劇のような現場の熱量に依存する文化にとって、5年の空白を越えて拠点が再び開いたこと自体は確かな前進だ。\n\n著名人の過去の実績といった話題性で耳目を集めるのも入口としては悪くないが、本質はそこから先にある。ハコを戻しただけで満足せず、演者と観客が継続して巡る仕組みをどう保てるかが、この再開を単なるノスタルジーで終わらせないための分水嶺になる。",
+        "draft_sha256": "8deda04b67f02a395a543f7adc666e415e0c123b8fbb6d2d4deb3f9103190cbc",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n一度失われた実演の場を呼び戻すのは、新",
+            "after": "上記投稿"
+          },
+          {
+            "operation": "replace",
+            "before": "く箱を建てる以上の摩擦と労力を伴う。大衆演劇のような現場の熱量に依存する文化にとって、5年の空白を越えて拠点が再び開いたこと自体は確かな前進だ。\n\n著名人の過去の実績といった話題性で耳目を集めるのも入口としては悪くないが、本質はそこから先にある。ハコを戻",
+            "after": "ま"
+          },
+          {
+            "operation": "delete",
+            "before": "だけで満足せず、演者と観客が継続して巡る仕組みをどう保てるかが、この再開を単なるノスタルジーで終わらせないための分水嶺になる。",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6394062510",
+      "unit_kind": "comment",
+      "issue_number": 148,
+      "comment_id": 6394062510,
+      "body_sha256": "d2d7af563fb1310d3eae14293cd2ee13191677ce822d61bcd50a7d448966742c",
+      "url": "https://github.com/Xyngwie/-text/issues/148#issuecomment-6394062510",
+      "snapshot_sha256": "2fc40a52d5e15b090bc412d60a875be7d8639e9cbe382630afd6b89c6878e20e",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "society"
+        ],
+        "speech_act": "AI生成ドラフトの注記を削除し、記事URLを付加して採用確定稿として提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿のプレフィックス注記を削除し、末尾にニュース記事URLを追記してコメントしている。",
+        "evidence_quote": "日程の消化を優先してぬかるんだグラウンドで強行させず、早めに順延を切ったのは堅実で妥当な判断だ。\n\n悪条件で怪我のリスクを抱えさせたり、偶発的な泥仕合で勝敗を決めたりしては、積み上げてきた準備の検証にならない。\n\n条件を仕切り直し、万全の状態で実力を競わせることこそが運営側の果たすべき責任だろう。\n\nhttps://www.nikkansports.com/m/baseball/highschool/news/202610240000077_m.html",
+        "analysis_candidates": [
+          {
+            "observation": "AI初稿の本文を改変せずそのまま受け入れ、元記事URLを追加して確定原稿を作成している。",
+            "evidence_quote": "https://www.nikkansports.com/m/baseball/highschool/news/202610240000077_m.html",
+            "limitation": "本文が初稿のままであるため、これが許容可能な案であったことは示せるが、本人が自発的に選ぶ表現様式であるかは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-232d79c5dd8c07bd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8644,
+          "candidatesTokenCount": 1641,
+          "totalTokenCount": 10285,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8644
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-08T09:35:34+00:00",
+        "input_sha256": "ffb17c46601d23fdc8baf9722f40f564a19756c96fa6a6e36a963ae7a014cd26",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "359b9147fc63f94f31e7af87de8a5578d00d3902",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42467806704"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n日程の消化を優先してぬかるんだグラウンドで強行させず、早めに順延を切ったのは堅実で妥当な判断だ。\n\n悪条件で怪我のリスクを抱えさせたり、偶発的な泥仕合で勝敗を決めたりしては、積み上げてきた準備の検証にならない。条件を仕切り直し、万全の状態で実力を競わせることこそが運営側の果たすべき責任だろう。",
+        "draft_sha256": "380314f7b3b5ace9ff3ad13bb580ae76bbb23691abf5d15e1b0a8f834ac63dba",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\nhttps://www.nikkansports.com/m/baseball/highschool/news/202610240000077_m.html"
+          }
+        ]
+      }
+    }
+  ]
+}
