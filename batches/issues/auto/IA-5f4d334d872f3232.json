@@ -1,0 +1,379 @@
+{
+  "batch_id": "IA-5f4d334d872f3232",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6591990027",
+      "unit_kind": "comment",
+      "issue_number": 235,
+      "comment_id": 6591990027,
+      "body_sha256": "1b81ca3d837e461f9a22a442ecb994047e13492dd794d5ce04773a5b8d632447",
+      "url": "https://github.com/Xyngwie/-text/issues/235#issuecomment-6591990027",
+      "snapshot_sha256": "612d3a6d16a0ac90ac20ce74bced8fbf6b75a868b1128bceeb233ba79053767b",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "politics",
+          "world",
+          "science"
+        ],
+        "speech_act": "AI初稿を大幅に削り、自身の短い見解に書き換えて確定文を提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の大部分（前置きやゲーム的表現など）を削り、要点のみを再構成して確定文としてコメントしている。",
+        "evidence_quote": "核の均衡が崩れることはないと思うけれども、\n新たな局面に向かうことは確かである。",
+        "analysis_candidates": [
+          {
+            "observation": "AI初稿の「計算は通用しなくなる」「均衡崩壊」といった強い表現を避け、「核の均衡が崩れることはないと思うけれども」と慎重かつ独自の判断に差し替えている。",
+            "evidence_quote": "核の均衡が崩れることはないと思うけれども、\n新たな局面に向かうことは確かである。",
+            "limitation": "一回の修整例から核抑止や安全保障全般に対する体系的な思想を断定することはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-5f4d334d872f3232",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9466,
+          "candidatesTokenCount": 1498,
+          "totalTokenCount": 10964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9466
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-09T17:50:43+00:00",
+        "input_sha256": "10a137a2834032a3f44ceac535eb02313a8488c6ea4793578fe08ef3bd9b0bb0",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "c389ea9cc76732a73e61638f8bf02d40b3fd9839",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42668488605"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n盤面の前提が書き換わったことだけは分かる。\n\n宇宙兵器の配備をあえて公表した以上、これまでの「核の均衡」で成り立っていた計算は通用しなくなる。だが、これが新たな抑止として機能するのか、ただの均衡崩壊の始まりなのかは誰にも読めない。\n\n外野が即座に答えを出せる局面ではないな。今は手札の開示を見届けるしかない。",
+        "draft_sha256": "3e1facd41ff8ebdb7e5d4a55eb09b96bfe469b9a7dbe44a9319c9f33466ab3a2",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n盤面の前提が書き換わったことだけは分かる。\n\n宇宙兵器の配備をあえて公表した以上、これまでの「",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "」で成り立って",
+            "after": "が崩れることはな"
+          },
+          {
+            "operation": "replace",
+            "before": "た計算は通用しなくなる。だが",
+            "after": "と思うけれども"
+          },
+          {
+            "operation": "replace",
+            "before": "これが",
+            "after": "\n"
+          },
+          {
+            "operation": "replace",
+            "before": "抑止",
+            "after": "局面に向かうこ"
+          },
+          {
+            "operation": "replace",
+            "before": "して機能す",
+            "after": "は確かであ"
+          },
+          {
+            "operation": "delete",
+            "before": "のか、ただの均衡崩壊の始まりなのかは誰にも読めない",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "\n外野が即座に答えを出せる局面ではないな。今は手札の開示を見届けるしかない。",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6592188981",
+      "unit_kind": "comment",
+      "issue_number": 231,
+      "comment_id": 6592188981,
+      "body_sha256": "46b02a672f9b83c16f68ce4064ddb1aa4e1c5eea08b6e4afee3ee1fab6bc8c77",
+      "url": "https://github.com/Xyngwie/-text/issues/231#issuecomment-6592188981",
+      "snapshot_sha256": "10a7fe192189f7f74c1663a18afc3a3e07fa9f0e30d0d47aaf152cd169f6c616",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "society",
+          "world",
+          "economy"
+        ],
+        "speech_act": "初稿の語尾や口調を微調整し、最後に自説の一文を追加して確定文を提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の「だな（笑）」「あるがな」を整え、末尾に「奪われる側の商店も一般の民である。奪うなら国庫を狙うが筋であろう。」を追記して採用している。",
+        "evidence_quote": "奪われる側の商店も一般の民である。奪うなら国庫を狙うが筋であろう。",
+        "analysis_candidates": [
+          {
+            "observation": "AIが生成した皮肉や比喩の骨子を残しつつ、文末の（笑）を削り、奪う対象としての「一般の民」と「国庫」の筋論を付け加えている。",
+            "evidence_quote": "奪われる側の商店も一般の民である。奪うなら国庫を狙うが筋であろう。",
+            "limitation": "略奪や抗議行動全般への法規範的な立場や政治信条までを普遍化して結論付けることはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-5f4d334d872f3232",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9466,
+          "candidatesTokenCount": 1498,
+          "totalTokenCount": 10964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9466
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-09T17:50:43+00:00",
+        "input_sha256": "10a137a2834032a3f44ceac535eb02313a8488c6ea4793578fe08ef3bd9b0bb0",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "c389ea9cc76732a73e61638f8bf02d40b3fd9839",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42668488605"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n生活費が上がったからといって商店を襲って略奪するのは、抗議というよりただの無料ショッピング大会ではないのか？\n\n物価高という看板さえ掲げれば、無関係な棚から現物を持ち去ってインフレヘッジしていいと思っているなら、随分と都合のいい経済学だな（笑）。\n\n生活苦を訴える旗を立てながら、無関係な店に損失を丸投げした瞬間にただの追い剥ぎへ成り下がる。看板だけ立派にして中身を台無しにする手筋は、外から見ていて滑稽ですらあるがな。",
+        "draft_sha256": "09c94ccc1b3b8dabd88b8fb661b9eb59254a4e20314e683c6cd18b8f58b7ab26",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "な（笑）",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "。\n\n奪われる側の商店も一般の民である。奪うなら国庫を狙う"
+          },
+          {
+            "operation": "replace",
+            "before": "な",
+            "after": "筋であろう"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6592211852",
+      "unit_kind": "comment",
+      "issue_number": 230,
+      "comment_id": 6592211852,
+      "body_sha256": "01df92a44a3d672adc2c85333c359afd26d60d4495ac3d1221ce72e6e9b3a536",
+      "url": "https://github.com/Xyngwie/-text/issues/230#issuecomment-6592211852",
+      "snapshot_sha256": "81b91c775ef6c5dabd73c06d54362a0f6d271c9e743285c6e4821550d0315c3b",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "politics",
+          "society"
+        ],
+        "speech_act": "AI初稿の前置きヘッダーを除去し、段落分けを施して確定文として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "本文の文面は初稿のものをほぼそのまま採用し、改行位置の調整のみ行っている。",
+        "evidence_quote": "路上で声を上げるエネルギーを単なる怒りの発散で終わらせず、大統領選という次の選択の場へ接続しようとする動きは筋が良い。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿の「実験政治枠〜」というAI生成ラベルを外し、デモから制度への接続を評価する文面をそのまま確定文として投稿している。",
+            "evidence_quote": "路上で声を上げるエネルギーを単なる怒りの発散で終わらせず、大統領選という次の選択の場へ接続しようとする動きは筋が良い。",
+            "limitation": "無修整採用であるため、この文章が本人の理想の文体や強い信条を直接反映したものかは判断できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-5f4d334d872f3232",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9466,
+          "candidatesTokenCount": 1498,
+          "totalTokenCount": 10964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9466
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-09T17:50:43+00:00",
+        "input_sha256": "10a137a2834032a3f44ceac535eb02313a8488c6ea4793578fe08ef3bd9b0bb0",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "c389ea9cc76732a73e61638f8bf02d40b3fd9839",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42668488605"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n路上で声を上げるエネルギーを単なる怒りの発散で終わらせず、大統領選という次の選択の場へ接続しようとする動きは筋が良い。\n\nデモの熱気を無駄にしないためには、抗議の声を具体的な制度改修案や検証可能な公約要求に落とし込み、各候補者へ踏み絵として突きつける手筋が有効だ。一過性の騒乱で消費するのではなく、政策決定への交渉力として制度に組み替えていく提案を期待したい。",
+        "draft_sha256": "d9f4bf1cd109f16fef6ed6a1425d4f55f4ec66e0c7f851fd46ea6a968408ce93",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6592784008",
+      "unit_kind": "comment",
+      "issue_number": 229,
+      "comment_id": 6592784008,
+      "body_sha256": "8e83cef8c3ded419734359c99bb480360baa0601e4baada354334710a001ac50",
+      "url": "https://github.com/Xyngwie/-text/issues/229#issuecomment-6592784008",
+      "snapshot_sha256": "74e7da5c0a2b601a282d4fcfbfaa6d9e7065efc2d2db4fd222a4913bfa4c32ed",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "life"
+        ],
+        "speech_act": "過去ログの対象ポストに関する当時の文脈やコミュニティの背景を補足・説明する発話",
+        "feedback_kind": "source_clarification",
+        "verdict": "unknown",
+        "note": "AIの分類提示に対し、会話相手との関係性やゲーム（ディアブロ3）を通じた繋がりの事実関係を補足している。",
+        "evidence_quote": "うみはるさんと初めてお話したときの会話だね。\nディアブロ3以来のフォロー・フォロワーも僕のコミュニティには数多く残っている。",
+        "analysis_candidates": [
+          {
+            "observation": "過去のゲーム関連投稿について、単なるゲームの攻略情報だけでなく、特定のフォロワーとの出会いやコミュニティ形成の文脈として記憶・認識している。",
+            "evidence_quote": "うみはるさんと初めてお話したときの会話だね。\nディアブロ3以来のフォロー・フォロワーも僕のコミュニティには数多く残っている。",
+            "limitation": "このコメントだけで本人のコミュニティ運営方針全般やフォロワー関係の網羅的な実態を把握することはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-5f4d334d872f3232",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9466,
+          "candidatesTokenCount": 1498,
+          "totalTokenCount": 10964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9466
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-09T17:50:43+00:00",
+        "input_sha256": "10a137a2834032a3f44ceac535eb02313a8488c6ea4793578fe08ef3bd9b0bb0",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "c389ea9cc76732a73e61638f8bf02d40b3fd9839",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42668488605"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6598672365",
+      "unit_kind": "comment",
+      "issue_number": 166,
+      "comment_id": 6598672365,
+      "body_sha256": "9c1cae72e6faaa3e198f53790947620e8c0cbcc2844f62bb6f0c24b8499344af",
+      "url": "https://github.com/Xyngwie/-text/issues/166#issuecomment-6598672365",
+      "snapshot_sha256": "4b76d1ea483dd45994caf358a4b00391c1937528041a059cfa088ba59a832c45",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "food",
+          "life"
+        ],
+        "speech_act": "過去ポストの時期に関する食生活の習慣の開始時期を補足・説明する発話",
+        "feedback_kind": "source_clarification",
+        "verdict": "unknown",
+        "note": "過去ログのゆで卵等の話題に対して、当時の食生活（タンパク質主食）の開始時期についての事実関係を述べている。",
+        "evidence_quote": "この頃あたりの少し前からタンパク質主食の食生活にしている。",
+        "analysis_candidates": [
+          {
+            "observation": "過去ポストの時期と自身の食生活の変化（タンパク質を主食にする習慣）の時系列を紐付けて把握・説明している。",
+            "evidence_quote": "この頃あたりの少し前からタンパク質主食の食生活にしている。",
+            "limitation": "現在に至るまでの食生活の継続性や、具体的な食事内容の詳細・健康状態への影響までは不明である。"
+          }
+        ]
+      },
+      "batch_id": "IA-5f4d334d872f3232",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9466,
+          "candidatesTokenCount": 1498,
+          "totalTokenCount": 10964,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9466
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-09T17:50:43+00:00",
+        "input_sha256": "10a137a2834032a3f44ceac535eb02313a8488c6ea4793578fe08ef3bd9b0bb0",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "c389ea9cc76732a73e61638f8bf02d40b3fd9839",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42668488605"
+      },
+      "draft_comparison": null
+    }
+  ]
+}
