@@ -111,3 +111,9 @@
 - [既知の判定、議論の速さ、見返しての理解](november_consolidation/thinking_pace.md)：人狼の具体例と本人補足。分野限定の速い判定を、会話全般の即応力へ広げない。
 
 - [減らしたい手間と、残したい試行錯誤](november_consolidation/effort_and_play.md)：自動分析から3件を精読。短い賛意と採用原稿を区別し、定型化と遊びの手応えを照合。
+
+- [ヒーローの強さ、その人の幸福、共に暮らしたいか](november_consolidation/hero_values.md)：人物寸評の選択精読。力量・好悪・自己像、意味のある死と望ましい生存、庇護と本人の願いを分ける。
+
+- [見栄で背伸びすることと、期限内にもう一度試すこと](november_consolidation/showing_off_and_retrying.md)：負担と後悔の違い、成長のきっかけとなる見栄、失敗の報告と再挑戦についての本人補足。
+
+- [作品に触れたこと、人物を覚えていること、言葉だけ残ること](november_consolidation/hero_exposure_and_voice.md)：未読・記憶の薄さ・連想の区別と、口調の追加確認。音声起こしは書き言葉の記録から分離。
