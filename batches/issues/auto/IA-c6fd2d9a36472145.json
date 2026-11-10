@@ -1,0 +1,456 @@
+{
+  "batch_id": "IA-c6fd2d9a36472145",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687314127",
+      "unit_kind": "comment",
+      "issue_number": 263,
+      "comment_id": 6687314127,
+      "body_sha256": "085e9a742edc48cfba8d953eb8cc31374130ee7673c440187553385ffec5b91d",
+      "url": "https://github.com/Xyngwie/-text/issues/263#issuecomment-6687314127",
+      "snapshot_sha256": "e331ca1757431e5d6c9e5d8c043b3176aee69d79a1f668e48cfa3852cb760cfe",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "world"
+        ],
+        "speech_act": "AIの初稿提案に対する違和感を表明し、政治の話題におちょくるような言論はそぐわないと却下する意見表明",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "AIが生成した実験政治枠の初稿（選挙の膠着をゲームや特例法でおどける内容）に対し、戯れが過ぎるとして却下・苦言を呈している。",
+        "evidence_quote": "いくらなんでもこの提案は戯れが過ぎるように思いました。もともと遊びの多い話題については、おちょくるような言論もありだと思うけど、表の世界の政治についてはそぐわない気がします。",
+        "analysis_candidates": [
+          {
+            "observation": "政治のような「表の世界」の話題に対して、過度におちょくったり戯れたりする言説には慎重・否定的な態度を示している。",
+            "evidence_quote": "表の世界の政治についてはそぐわない気がします。",
+            "limitation": "本人の政治全般に対する関心度や個別の政治信条そのものを網羅的に示すものではない。"
+          }
+        ]
+      },
+      "batch_id": "IA-c6fd2d9a36472145",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11626,
+          "candidatesTokenCount": 1830,
+          "totalTokenCount": 13456,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11626
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-10T21:32:44+00:00",
+        "input_sha256": "44eb54cd727f295a1f67fa3da7f770933e4f6d80f2186bde16a756842366fd0c",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "4921938222041eea44714922f90167a15ec11721",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42905998663"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n主要政党の支持率がここまで綺麗に真っ二つなら、有権者も下手に胃を痛めてないでこの膠着状態を楽しんだ方がいい。\n\nどうせ僅差で勝ったところで四年間の足の引っ張り合いが目に見えているんだから、いっそ月水金と火木土で政権を交代運用するか、党首同士のラグビー一騎打ちで決着をつける特例法でも通してみろ（笑）。\n\n五分五分の民意を無理やり多数派の勝利に偽装するくらいなら、争点ごとに国民投票の勝ち抜き戦でもやらせる方がよほど制度として潔い提案になるんじゃないか？",
+        "draft_sha256": "9e4a310ed6208d90dad0a5d8b0eac3f334496f79584eed9f93632aeae9d7ce30",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "実験",
+            "after": "いくらなんでもこの提案は戯れが過ぎるように思いました。もともと遊びの多い話題については、おちょくるような言論もありだと思うけど、表の世界の"
+          },
+          {
+            "operation": "delete",
+            "before": "枠（価値観スライド",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "よるゼロショット仮説）。\n\n主要政党の支持率がここまで綺麗に真っ二",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "なら、有権者も下手に胃を痛め",
+            "after": "い"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "はそぐわ"
+          },
+          {
+            "operation": "replace",
+            "before": "でこの膠着状態を楽",
+            "after": "気が"
+          },
+          {
+            "operation": "replace",
+            "before": "んだ方がいい",
+            "after": "ます"
+          },
+          {
+            "operation": "delete",
+            "before": "\n\nどうせ僅差で勝ったところで四年間の足の引っ張り合いが目に見えているんだから、いっそ月水金と火木土で政権を交代運用するか、党首同士のラグビー一騎打ちで決着をつける特例法でも通してみろ（笑）。\n\n五分五分の民意を無理やり多数派の勝利に偽装するくらいなら、争点ごとに国民投票の勝ち抜き戦でもやらせる方がよほど制度として潔い提案になるんじゃないか？",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687371183",
+      "unit_kind": "comment",
+      "issue_number": 261,
+      "comment_id": 6687371183,
+      "body_sha256": "2d4d33dacbfbd315302b8812b1e7913f77a26fc9cbc43a04e0fcd184125cd458",
+      "url": "https://github.com/Xyngwie/-text/issues/261#issuecomment-6687371183",
+      "snapshot_sha256": "cc0b51bb2959b8a8ea0b6b4e56285e64293f8706fcfbd40814b350fe9925c92b",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "world"
+        ],
+        "speech_act": "AIの初稿から枠外注釈を削除したテキストをそのままコメントし、確定稿として採用する提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の文頭にあった「※実験政治枠...」の注釈のみを削除し、本文を丸ごとコピーして投稿している。実投稿報告は含まれていない。",
+        "evidence_quote": "どうせ悪質な悪戯だろうと頭の片隅で思おうが、万に一つでも命が懸かっている以上、全機を降ろして徹底的に調べるしかない。\n\nその安全の重圧を一手に背負わされ、神経をすり減らしながら手順を完遂した乗務員や空港スタッフの苦労は本当に察するに余りある。\n\n安全網にタダ乗りして混乱を弄ぶ手口は唾棄すべきだが、最悪の事態を想定して淡々と職務を果たし切った現場のプロフェッショナルたちには、心からの敬意と「本当にお疲れ様」を伝えたい。",
+        "analysis_candidates": [
+          {
+            "observation": "AIが提案した現場スタッフへのいたわりと安全手順遂行への敬意という文章表現を、修正なしでそのまま採用原稿として承認している。",
+            "evidence_quote": "安全網にタダ乗りして混乱を弄ぶ手口は唾棄すべきだが、最悪の事態を想定して淡々と職務を果たし切った現場のプロフェッショナルたちには、心からの敬意と「本当にお疲れ様」を伝えたい。",
+            "limitation": "無修整採用であるため、この言い回しが本人の自発的な口癖や理想のトーンであるとまでは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-c6fd2d9a36472145",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11626,
+          "candidatesTokenCount": 1830,
+          "totalTokenCount": 13456,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11626
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-10T21:32:44+00:00",
+        "input_sha256": "44eb54cd727f295a1f67fa3da7f770933e4f6d80f2186bde16a756842366fd0c",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "4921938222041eea44714922f90167a15ec11721",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42905998663"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\nどうせ悪質な悪戯だろうと頭の片隅で思おうが、万に一つでも命が懸かっている以上、全機を降ろして徹底的に調べるしかない。\n\nその安全の重圧を一手に背負わされ、神経をすり減らしながら手順を完遂した乗務員や空港スタッフの苦労は本当に察するに余りある。\n\n安全網にタダ乗りして混乱を弄ぶ手口は唾棄すべきだが、最悪の事態を想定して淡々と職務を果たし切った現場のプロフェッショナルたちには、心からの敬意と「本当にお疲れ様」を伝えたい。",
+        "draft_sha256": "3532eabd9f072135979670c503006c42486b712cc29491eaded39ee981e1de15",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687437882",
+      "unit_kind": "comment",
+      "issue_number": 259,
+      "comment_id": 6687437882,
+      "body_sha256": "f2ee4db1dd8f9208a66e8b98b63cda8c43bf8164c7d043f9efee6528643bdc15",
+      "url": "https://github.com/Xyngwie/-text/issues/259#issuecomment-6687437882",
+      "snapshot_sha256": "fae2b77ad24f5ffc418b0defa8e28979954b71b27947b30aad13255fe1ce8f16",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "politics",
+          "world",
+          "thinking"
+        ],
+        "speech_act": "ニュース対象人物の思想的詳細には深入りせず、信念を行動に移して投獄されたことへの受け止めを述べる意見表明",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "AI初稿（賞賛・敬意を前面に出した文章）を採用せず、自身の言葉で短く見解を記している。採用原稿か単なる所感かの明示的な指定はない。",
+        "evidence_quote": "黄之鋒氏の政治的スタンスを知らないけれど\n信念に沿って行動した事の結果として投獄されるなら\nそれも覚悟の上だったのだろう。",
+        "analysis_candidates": [
+          {
+            "observation": "対象の政治思想の是非を判断するのではなく、信念に従って行動した結果を引き受ける覚悟として事象を捉えている。",
+            "evidence_quote": "信念に沿って行動した事の結果として投獄されるなら\nそれも覚悟の上だったのだろう。",
+            "limitation": "黄之鋒氏や香港情勢に対する本人の詳細な政治的立場や支持・不支持は留保されている。"
+          }
+        ]
+      },
+      "batch_id": "IA-c6fd2d9a36472145",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11626,
+          "candidatesTokenCount": 1830,
+          "totalTokenCount": 13456,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11626
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-10T21:32:44+00:00",
+        "input_sha256": "44eb54cd727f295a1f67fa3da7f770933e4f6d80f2186bde16a756842366fd0c",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "4921938222041eea44714922f90167a15ec11721",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42905998663"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n懲役10年という判決の重さには言葉を失うが、勝敗や損得を超えて香港に踏みとどまり、自分の選んだ道を貫き通した黄之鋒氏の覚悟には素直に敬意を抱く。\n\n圧倒的な不利を悟りながらも逃げず、信念の代償を正面から引き受ける姿勢は誰にでも真似できるものじゃない。この過酷な結果をもってしても、彼が示した矜持の高さだけは誰も否定できないはずだ。",
+        "draft_sha256": "2a2dc7131aa41210b2d24352d2dac7be31bef92a8c6d344a7ed214a1ae96fc09",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n懲役10年という判決の重さには言葉を失うが、勝敗や損得を超えて香港に踏みとどまり、自分の選んだ道を貫き通した",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "政治的スタンスを知らないけれど\n信念に沿って行動した事の結果として投獄されるなら\nそれも"
+          },
+          {
+            "operation": "replace",
+            "before": "には素直に敬意を抱く",
+            "after": "の上だったのだろう"
+          },
+          {
+            "operation": "delete",
+            "before": "\n\n圧倒的な不利を悟りながらも逃げず、信念の代償を正面から引き受ける姿勢は誰にでも真似できるものじゃない。この過酷な結果をもってしても、彼が示した矜持の高さだけは誰も否定できないはずだ。",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687497652",
+      "unit_kind": "comment",
+      "issue_number": 260,
+      "comment_id": 6687497652,
+      "body_sha256": "15606b13c8f89c064c0e7e32dfa41a74e087abbb569830d639bf4f6f776d4603",
+      "url": "https://github.com/Xyngwie/-text/issues/260#issuecomment-6687497652",
+      "snapshot_sha256": "31a518a1638aa40185885b77c4d1c8d8266fb4c44bb6adecea3482d69237083b",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "life",
+          "games"
+        ],
+        "speech_act": "AIが要約・分類した過去ログの内容を補足し、試験の具体的な結果や挫折の経緯を回顧する情報提供",
+        "feedback_kind": "source_clarification",
+        "verdict": "unknown",
+        "note": "AIによる過去ログの分類Issueに対する補足コメント。当時の土地家屋調査士試験の採点状況と最終的な合否結果について自己開示している。",
+        "evidence_quote": "試験の手応えと、D3の攻略考察。　このときの試験の結果については、調査士試験の択一問題は満点であったが、記述問題がほぼ手つかずだった。この後も択一は取れるけれども記述問題を回答する才能がなかったようで土地家屋調査士試験にはついぞ合格できませんでした。",
+        "analysis_candidates": [
+          {
+            "observation": "過去の試験経験について、択一問題は満点を取れるが記述問題が不得手であったという具体的な自己分析を率直に開示している。",
+            "evidence_quote": "択一は取れるけれども記述問題を回答する才能がなかったようで土地家屋調査士試験にはついぞ合格できませんでした。",
+            "limitation": "当時の学習期間や試験への取り組みの詳細、現在の資格全般に対する見解までは述べられていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-c6fd2d9a36472145",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11626,
+          "candidatesTokenCount": 1830,
+          "totalTokenCount": 13456,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11626
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-10T21:32:44+00:00",
+        "input_sha256": "44eb54cd727f295a1f67fa3da7f770933e4f6d80f2186bde16a756842366fd0c",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "4921938222041eea44714922f90167a15ec11721",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42905998663"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687596170",
+      "unit_kind": "comment",
+      "issue_number": 258,
+      "comment_id": 6687596170,
+      "body_sha256": "91287fb70325a6fff427363e5053e61057308ff715089f06b5e7f1fe0cfd0e25",
+      "url": "https://github.com/Xyngwie/-text/issues/258#issuecomment-6687596170",
+      "snapshot_sha256": "363fb56c820a1f6cbd5cfd0e154a78ac4ae8ae749e67791a3678b2a9fa2a09b9",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "culture",
+          "society",
+          "life"
+        ],
+        "speech_act": "生の音楽・芸術の機会が広く提供される社会的意義を肯定し、今後の継続に期待を寄せる意見表明",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "AI初稿（皮肉混じりの軽口トーン）を採用せず、自分自身の落ち着いた文体で文化体験の社会的余裕について意見を述べている。",
+        "evidence_quote": "実利だけが豊かさではない。\n芸術や音楽が生の舞台で披露される機会があること、\nその機会が多ければ多いだけ社会に余裕が見える。\n\nまだ日本は終わっていない事を感じる。\nまして好事家だけが楽しむような場以外にもこういう場が提供され続けることに期待する。",
+        "analysis_candidates": [
+          {
+            "observation": "実利や効率性のみにとらわれず、生の芸術や音楽に触れられる機会の多さを社会のゆとりや健全さの指標として重視している。",
+            "evidence_quote": "実利だけが豊かさではない。\n芸術や音楽が生の舞台で披露される機会があること、\nその機会が多ければ多いだけ社会に余裕が見える。",
+            "limitation": "福祉政策全般や文化行政の財源負担のあり方についての具体的な制度論までは展開されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-c6fd2d9a36472145",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11626,
+          "candidatesTokenCount": 1830,
+          "totalTokenCount": 13456,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11626
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-10T21:32:44+00:00",
+        "input_sha256": "44eb54cd727f295a1f67fa3da7f770933e4f6d80f2186bde16a756842366fd0c",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "4921938222041eea44714922f90167a15ec11721",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42905998663"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n小難しい理屈を並べて「実利のない催しだ」などとケチをつけたがる手合いもいそうだが、日頃の窮屈さから離れて生の音を浴びる時間くらい、人間誰にとっても立派な必要経費だ。\n\n福祉だの支援だのと四角四面に構えるより、オルガンやバイオリンの贅沢な響きでシンプルに肩の力を抜かせる方がよっぽど粋というもの。効率一辺倒で息が詰まる世の中だからこそ、たまの贅沢な息抜きくらいケチケチせずに味わえばいい。違うか？",
+        "draft_sha256": "514cd2c84677a35a42358e3d3a35f56d5184d8aa61a6c38bc30c152a59d3c011",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "験政治枠（本人の意見",
+            "after": "利だけが豊かさ"
+          },
+          {
+            "operation": "replace",
+            "before": "く価値観スライドによるゼロショット仮説）",
+            "after": "い。"
+          },
+          {
+            "operation": "replace",
+            "before": "\n小難しい理屈を並べて「実利のない催しだ」などとケチをつけた",
+            "after": "芸術や音楽"
+          },
+          {
+            "operation": "delete",
+            "before": "る手合いもいそうだが、日頃の窮屈さから離れて",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "音を浴び",
+            "after": "舞台で披露され"
+          },
+          {
+            "operation": "replace",
+            "before": "時間くら",
+            "after": "機会があること、\nその機会が多ければ多"
+          },
+          {
+            "operation": "replace",
+            "before": "、人間誰",
+            "after": "だけ社会"
+          },
+          {
+            "operation": "replace",
+            "before": "とっても立派な必要経費だ",
+            "after": "余裕が見える"
+          },
+          {
+            "operation": "replace",
+            "before": "福祉",
+            "after": "ま"
+          },
+          {
+            "operation": "replace",
+            "before": "の支援",
+            "after": "日本は終わっていない事を感じる。\nまして好事家"
+          },
+          {
+            "operation": "replace",
+            "before": "のと四角四面",
+            "after": "けが楽しむような場以外"
+          },
+          {
+            "operation": "replace",
+            "before": "構えるより、オルガンやバイオリンの贅沢な響きでシンプルに肩の力を抜かせる方がよっぽど粋と",
+            "after": "もこう"
+          },
+          {
+            "operation": "replace",
+            "before": "もの",
+            "after": "場が提供され続けることに期待する"
+          },
+          {
+            "operation": "delete",
+            "before": "効率一辺倒で息が詰まる世の中だからこそ、たまの贅沢な息抜きくらいケチケチせずに味わえばいい。違うか？",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
