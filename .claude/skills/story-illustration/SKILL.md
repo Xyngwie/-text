@@ -1,17 +1,17 @@
 ---
 name: story-illustration
-description: 書き終えた短編の挿絵を、Google Drive の MUSE-GPT フォルダで ChatGPT に頼んで受け取る。依頼ファイル（短編の投稿用全文と元記事URL、挿絵の希望）を置き、12時間後に完成画像を確認する予約を入れ、受け取ったら挿絵と投稿用テキストを投稿セットとして本人に渡す。「挿絵を頼んで」「MUSE-GPT に置いて」「挿絵を受け取って」と言われたとき、または短編を保存した後に使う。
+description: 書き終えた短編の挿絵を、Google Drive の CLAUDE-GPT フォルダで ChatGPT に頼んで受け取る。依頼ファイル（短編の投稿用全文と元記事URL、挿絵の希望）を置き、12時間後に完成画像を確認する予約を入れ、受け取ったら挿絵と投稿用テキストを投稿セットとして本人に渡す。「挿絵を頼んで」「CLAUDE-GPT に置いて」「挿絵を受け取って」と言われたとき、または短編を保存した後に使う。
 ---
 
 # 短編の挿絵を頼んで受け取る
 
-短編の挿絵は、Google Drive の「MUSE-GPT」フォルダ（ID: `1QJ8jOF5rUiiROOCqBTWSZKAlqI7NwMB5`）で ChatGPT とやり取りします。ChatGPT は12時間おきにフォルダを見て、依頼ファイルに対応する完成画像を置いてくれます。挿絵と投稿用テキストがそろうと、投稿セットが完成します。
+短編の挿絵は、Google Drive の「CLAUDE-GPT」フォルダ（ID: `18AJjOCEZZTa-nw2DFd2a70T3RPIOdfc1`）で ChatGPT とやり取りします。ChatGPT は12時間おきにフォルダを見て、依頼ファイルに対応する完成画像を置いてくれます。挿絵と投稿用テキストがそろうと、投稿セットが完成します。
 
-フォルダ内の `運用ルール.md` が正です。形式が変わっていないか、毎回読んでから作業します。投稿・公開のボタンは本人が押します。ここでは制作の受け渡しだけをします。
+フォルダ内の `運用ルール.md` が正です。形式が変わっていないか、毎回読んでから作業します。「MUSE-GPT」フォルダは澪の曲紹介ストーリー専用なので、短編の依頼は置きません。投稿・公開のボタンは本人が押します。ここでは制作の受け渡しだけをします。
 
 ## A. 依頼ファイルを置く
 
-1. **運用ルールを読む。** `search_files` で `parentId = '1QJ8jOF5rUiiROOCqBTWSZKAlqI7NwMB5'` を引き、`運用ルール.md` を `read_file_content` で読む。ほかの依頼ファイルがあれば、一つ開いて書き方をそろえる。
+1. **運用ルールを読む。** `search_files` で `parentId = '18AJjOCEZZTa-nw2DFd2a70T3RPIOdfc1'` を引き、`運用ルール.md` を `read_file_content` で読む。ほかの依頼ファイルがあれば、一つ開いて書き方をそろえる。
 2. **依頼ファイルを書く。** ファイル名は `依頼_YYYY-MM-DD_<題名>.md`。日付は置いた日の日本時間。中身は次の形にする。
    - 1行目：`# 挿絵依頼 YYYY-MM-DD <題名>`
    - 出どころ：Claude 作であること、GitHub の `Xyngwie/-text` での作品のパス。
@@ -30,7 +30,7 @@ description: 書き終えた短編の挿絵を、Google Drive の MUSE-GPT フ�
 `send_later` で、依頼を置いた時刻のちょうど12時間後（分単位で切り上げ、`at="YYYY-MM-DDTHH:MM:00[Asia/Tokyo]"`）に予約する。`initiation="human_request"`、`name="挿絵の受け取り：<題名>"`。メッセージは次の形（`<>` を埋める）。
 
 ```text
-挿絵の受け取り：スキル `.claude/skills/story-illustration/SKILL.md` の「C. 受け取る」に従い、Google Drive の MUSE-GPT フォルダで `依頼_<YYYY-MM-DD>_<題名>.md`（id: <依頼ファイルのID>）に対応する完成画像を確認する。作品は `<作品のパス>`。再確認の回数：<0 または 1>。
+挿絵の受け取り：スキル `.claude/skills/story-illustration/SKILL.md` の「C. 受け取る」に従い、Google Drive の CLAUDE-GPT フォルダで `依頼_<YYYY-MM-DD>_<題名>.md`（id: <依頼ファイルのID>）に対応する完成画像を確認する。作品は `<作品のパス>`。再確認の回数：<0 または 1>。
 ```
 
 報告には、依頼ファイルのリンクと受け取りの予定時刻を書く。
