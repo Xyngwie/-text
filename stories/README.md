@@ -45,6 +45,7 @@ python3 tools/story_candidates.py candidates --output /tmp/story_candidates.json
    python3 tools/story_candidates.py check
    ```
 5. 作品と `stories/registry.jsonl` だけをコミットする。
+6. 報告には、投稿用ブロックの中身に加えて、スキル [`x-post-format`](../.claude/skills/x-post-format/SKILL.md) で整えた **X版** を毎回つける（作品ファイルには書き足さない）。
 
 ## 挿絵の依頼（Google Drive の CLAUDE-GPT フォルダ）
 

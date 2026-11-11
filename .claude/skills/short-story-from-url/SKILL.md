@@ -39,7 +39,7 @@ description: 本人（神宮）が示したニュース記事などのURLから�
    ```
    エラーが出たら作品を直してからやり直す。
 
-7. **保存して報告。** 作品ファイルと `stories/registry.jsonl` だけをコミットし、そのセッションで決められたブランチへ push する（本人が main への直接 push を許可している場合は main）。返答では、題名・拾った一点・主観人物・作品のパスを短く伝え、投稿用ブロックの中身をそのまま載せる。
+7. **保存して報告。** 作品ファイルと `stories/registry.jsonl` だけをコミットし、そのセッションで決められたブランチへ push する（本人が main への直接 push を許可している場合は main）。返答では、題名・拾った一点・主観人物・作品のパスを短く伝え、投稿用ブロックの中身をそのまま載せる。続けて、スキル [`x-post-format`](../x-post-format/SKILL.md) で整えた X版も載せる。
 
 8. **挿絵を依頼する。** スキル [`story-illustration`](../story-illustration/SKILL.md) の手順で、Google Drive の CLAUDE-GPT フォルダに `依頼_YYYY-MM-DD_<題名>.md` を置き、12時間後の受け取りを予約する（MUSE-GPT には置かない）。Drive につながっていなければ、置けなかったと報告する。
 
