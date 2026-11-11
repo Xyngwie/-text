@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-11",
+  "source": "本チャットの「さて、今日も進めていきましょう」以降の文字入力。独立エクスポートは未登録。",
+  "scope": "今回の人物質問への回答94件を、質問一件につき一行で記録。過去セッションや回答内の追加連想は母数に足さない。",
+  "status_definitions": {
+    "unknown": "作品不知",
+    "unexposed": "指定された媒体について未読・未視聴・未プレイを明示",
+    "name_only": "作品名は知るが人物不知、接触の有無は未確定",
+    "fragment": "台詞・外見・評判などの断片知識、接触の有無は未確定",
+    "limited": "接触の記憶はあるが部分的、または人物の印象が薄い",
+    "character": "人物や関係、性能への具体的な言及あり。完読・全視聴の意味ではない",
+    "uncertain": "接触したかどうか自体が曖昧"
+  },
+  "records": [
+    {
+      "id": "EX001",
+      "work": "モブサイコ100",
+      "asked_character": "霊幻新隆",
+      "status": "unknown",
+      "owner_reply_verbatim": "作品不知。"
+    },
+    {
+      "id": "EX002",
+      "work": "金色のガッシュ!!",
+      "asked_character": "高嶺清麿",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品は知ってるけど未読。"
+    },
+    {
+      "id": "EX003",
+      "work": "BLACK LAGOON",
+      "asked_character": "ロック",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。人物不知"
+    },
+    {
+      "id": "EX004",
+      "work": "赤毛のアン",
+      "asked_character": "アン・シャーリー",
+      "status": "name_only",
+      "owner_reply_verbatim": "作品は知っているけど、具体的には人物不知"
+    },
+    {
+      "id": "EX005",
+      "work": "機動武闘伝Gガンダム",
+      "asked_character": "東方不敗",
+      "status": "fragment",
+      "owner_reply_verbatim": "名言（？）だけ知ってるよ。「だからお前はダメなのだ」の人。"
+    },
+    {
+      "id": "EX006",
+      "work": "夏目友人帳",
+      "asked_character": "夏目貴志",
+      "status": "name_only",
+      "owner_reply_verbatim": "作品のみ。人物不知"
+    },
+    {
+      "id": "EX007",
+      "work": "三つ目がとおる",
+      "asked_character": "写楽保介",
+      "status": "character",
+      "owner_reply_verbatim": "昔アニメで観ましたね。丸坊主の中学生（？）　二重人格的なキャラクターって彼が先駆けかもね。"
+    },
+    {
+      "id": "EX008",
+      "work": "ふしぎの海のナディア",
+      "asked_character": "ネモ船長",
+      "status": "character",
+      "owner_reply_verbatim": "ネモ船長って、実はナディアのお父さんなんだっけ？　だとすると、申し出ずに彼女を守っていた庇護者的な位置づけだよね。"
+    },
+    {
+      "id": "EX009",
+      "work": "装甲騎兵ボトムズ",
+      "asked_character": "キリコ・キュービィー",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品の存在だけ。未視聴、人物不知。"
+    },
+    {
+      "id": "EX010",
+      "work": "天元突破グレンラガン",
+      "asked_character": "カミナ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。"
+    },
+    {
+      "id": "EX011",
+      "work": "銀河鉄道999",
+      "asked_character": "星野鉄郎",
+      "status": "limited",
+      "owner_reply_verbatim": "ちゃんとは触れていないですね。機械の身体に憧れた経緯が不明。"
+    },
+    {
+      "id": "EX012",
+      "work": "未来少年コナン",
+      "asked_character": "コナン",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。"
+    },
+    {
+      "id": "EX013",
+      "work": "機動戦士ガンダム0080",
+      "asked_character": "バーニィ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。"
+    },
+    {
+      "id": "EX014",
+      "work": "サクラ大戦",
+      "asked_character": "大神一郎",
+      "status": "character",
+      "owner_reply_verbatim": "彼はハーレムものの先駆けな気がしますね。あの後、赤松さんのラブひなとか、が続いて、典型的な良いやつっていうののテンプレート化した気がする。"
+    },
+    {
+      "id": "EX015",
+      "work": "めぞん一刻",
+      "asked_character": "五代裕作",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX016",
+      "work": "機動新世紀ガンダムX",
+      "asked_character": "ジャミル・ニート",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。"
+    },
+    {
+      "id": "EX017",
+      "work": "赤ちゃんと僕",
+      "asked_character": "榎木拓也",
+      "status": "unexposed",
+      "owner_reply_verbatim": "主人公の男の子かな…？未読です。"
+    },
+    {
+      "id": "EX018",
+      "work": "魁!!男塾",
+      "asked_character": "剣桃太郎",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX019",
+      "work": "地獄先生ぬ〜べ〜",
+      "asked_character": "鵺野鳴介",
+      "status": "character",
+      "owner_reply_verbatim": "ツーリングで右手だけグローブを脱いでいると、ぬーべーが頭の中ふわふわしてますね。先生っていう立場で生徒たちを守る良い先生だよね。庇護者。"
+    },
+    {
+      "id": "EX020",
+      "work": "魔法陣グルグル",
+      "asked_character": "ニケ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX021",
+      "work": "ロミオの青い空",
+      "asked_character": "アルフレド",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。"
+    },
+    {
+      "id": "EX022",
+      "work": "GetBackers－奪還屋－",
+      "asked_character": "美堂蛮",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX023",
+      "work": "魔法騎士レイアース",
+      "asked_character": "獅堂光",
+      "status": "character",
+      "owner_reply_verbatim": "赤い髪の小さい子ね。女の子もこういう作品を読むんだ〜って当時びっくりした。"
+    },
+    {
+      "id": "EX024",
+      "work": "逮捕しちゃうぞ",
+      "asked_character": "辻本夏実",
+      "status": "character",
+      "owner_reply_verbatim": "中学生ごろ好きだったよ。僕の正確はミユキちゃん寄りなので、あんなパートナーがいたらなあっていう憧れの女の子。"
+    },
+    {
+      "id": "EX025",
+      "work": "ケロロ軍曹",
+      "asked_character": "ギロロ伍長",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX026",
+      "work": "サイボーグ009",
+      "asked_character": "島村ジョー",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品の存在のみ。未読。"
+    },
+    {
+      "id": "EX027",
+      "work": "地球へ…",
+      "asked_character": "ソルジャー・ブルー",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読、未視聴。"
+    },
+    {
+      "id": "EX028",
+      "work": "機動戦士ガンダムSEED",
+      "asked_character": "アスラン・ザラ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴"
+    },
+    {
+      "id": "EX029",
+      "work": "エクセル・サーガ",
+      "asked_character": "エクセル",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品存在のみ。未視聴。女性。"
+    },
+    {
+      "id": "EX030",
+      "work": "らんま½",
+      "asked_character": "響良牙",
+      "status": "character",
+      "owner_reply_verbatim": "らんまの良いライバル。濡れると何になるかは覚えてない…犬？狼？"
+    },
+    {
+      "id": "EX031",
+      "work": "あずまんが大王",
+      "asked_character": "榊",
+      "status": "character",
+      "owner_reply_verbatim": "背の高い子だよね。ちょっと反応が希薄な子っていうイメージ。あずまんが大王だと好きな子は大阪とか。"
+    },
+    {
+      "id": "EX032",
+      "work": "トップをねらえ！",
+      "asked_character": "タカヤ・ノリコ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴です"
+    },
+    {
+      "id": "EX033",
+      "work": "帯をギュッとね！",
+      "asked_character": "粉川巧",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。従兄弟の家にあったのは見た、、、程度。"
+    },
+    {
+      "id": "EX034",
+      "work": "究極!!変態仮面",
+      "asked_character": "色丞狂介",
+      "status": "limited",
+      "owner_reply_verbatim": "マサルさんに通じるものがあるよね。実力は変態仮面のほうが強そう。性格は…あまり覚えていないな"
+    },
+    {
+      "id": "EX035",
+      "work": "コブラ",
+      "asked_character": "コブラ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。この企画が終わったらどうなる？知らんのか、新しい企画が始まる…"
+    },
+    {
+      "id": "EX036",
+      "work": "R.O.D",
+      "asked_character": "読子・リードマン",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX037",
+      "work": "修羅の刻",
+      "asked_character": "陸奥八雲",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品存在のみ。未読。"
+    },
+    {
+      "id": "EX038",
+      "work": "美味しんぼ",
+      "asked_character": "山岡士郎",
+      "status": "character",
+      "owner_reply_verbatim": "割とスカしたり、不真面目でも良いんだ…っていう事を教えてくれたキャラクターかも。強烈にお父さんと仲が悪くてもよい、とか。反面教師的な在り方を肯定してくれたね。個人的には好きだよ。　作品全体としては、ちょっと左翼とか味の素嫌い過ぎて思想が寄ってることに気が付いたあたりで読まなくなっちゃった。"
+    },
+    {
+      "id": "EX039",
+      "work": "銀の匙",
+      "asked_character": "八軒勇吾",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX040",
+      "work": "じゃりン子チエ",
+      "asked_character": "竹本テツ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX041",
+      "work": "よろしくメカドック",
+      "asked_character": "風見潤",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX042",
+      "work": "機動戦士ガンダム第08MS小隊",
+      "asked_character": "シロー・アマダ",
+      "status": "uncertain",
+      "owner_reply_verbatim": "未視聴…？記憶に残っていない。"
+    },
+    {
+      "id": "EX043",
+      "work": "サマーウォーズ",
+      "asked_character": "陣内栄",
+      "status": "limited",
+      "owner_reply_verbatim": "サマーウォーズは見たけど、おばあちゃんの覚えがない"
+    },
+    {
+      "id": "EX044",
+      "work": "エルフを狩るモノたち",
+      "asked_character": "龍造寺淳平",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品存在のみ。未読。"
+    },
+    {
+      "id": "EX045",
+      "work": "まじかる☆タルるートくん",
+      "asked_character": "江戸城本丸",
+      "status": "character",
+      "owner_reply_verbatim": "ドラえもんの焼き直しかと思いきや、結構自我のある子。努力もすごいするタイプ。イオナちゃんよりルイちゃんのほうが僕は好き。ツンデレなので。"
+    },
+    {
+      "id": "EX046",
+      "work": "無敵看板娘",
+      "asked_character": "鬼丸美輝",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。チャンピオンってほとんど読んでないと思う。"
+    },
+    {
+      "id": "EX047",
+      "work": "究極超人あ〜る",
+      "asked_character": "R・田中一郎",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品存在のみ。未読。"
+    },
+    {
+      "id": "EX048",
+      "work": "BOY",
+      "asked_character": "日日野晴矢",
+      "status": "limited",
+      "owner_reply_verbatim": "すんごい朧げな記憶。割と破天荒な性格で頑丈で強い子。性格はあまり覚えてない。"
+    },
+    {
+      "id": "EX049",
+      "work": "彼氏彼女の事情",
+      "asked_character": "宮沢雪野",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品存在のみ。未読。"
+    },
+    {
+      "id": "EX050",
+      "work": "機動戦士Ζガンダム",
+      "asked_character": "カミーユ・ビダン",
+      "status": "fragment",
+      "owner_reply_verbatim": "作品群中、最強パイロットかもしれないとの呼び声の高い人。不遇すぎて精神に不調をきたしてしまったんだよね。"
+    },
+    {
+      "id": "EX051",
+      "work": "ガンバの冒険",
+      "asked_character": "ガンバ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。"
+    },
+    {
+      "id": "EX052",
+      "work": "風の谷のナウシカ",
+      "asked_character": "クシャナ",
+      "status": "limited",
+      "owner_reply_verbatim": "映画版だけど、あんまり印象ないね。"
+    },
+    {
+      "id": "EX053",
+      "work": "ハーメルンのバイオリン弾き",
+      "asked_character": "ハーメル",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX054",
+      "work": "YAIBA",
+      "asked_character": "鉄刃",
+      "status": "unexposed",
+      "owner_reply_verbatim": "なんかアニメやってたなあ…ってくらいの印象。未読未視聴"
+    },
+    {
+      "id": "EX055",
+      "work": "魔女の宅急便",
+      "asked_character": "キキ",
+      "status": "character",
+      "owner_reply_verbatim": "魔女の修行で見知らぬ街で暮らす事になった子。あの子はまだまだ修行の途中だからね、これからもいろんな事が待っているんでしょう。ってとこで映画は終わってしまう。性格的にはまだ人の善意しか知らないあまちゃん。って感じ。"
+    },
+    {
+      "id": "EX056",
+      "work": "BANANA FISH",
+      "asked_character": "アッシュ・リンクス",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX057",
+      "work": "ポケットモンスター",
+      "asked_character": "ムサシ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。ポケモン関連未読未視聴、未プレイ。"
+    },
+    {
+      "id": "EX058",
+      "work": "ジャングルの王者ターちゃん",
+      "asked_character": "ターちゃん",
+      "status": "character",
+      "owner_reply_verbatim": "作風の影響が強いけど、シリアスとギャグのギャップがある人物。"
+    },
+    {
+      "id": "EX059",
+      "work": "うる星やつら",
+      "asked_character": "諸星あたる",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。バンダナ。。。時代を感じる。"
+    },
+    {
+      "id": "EX060",
+      "work": "xxxHOLiC",
+      "asked_character": "壱原侑子",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX061",
+      "work": "赤ずきんチャチャ",
+      "asked_character": "セラヴィー",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX062",
+      "work": "天空の城ラピュタ",
+      "asked_character": "ドーラ",
+      "status": "character",
+      "owner_reply_verbatim": "肝っ玉母ちゃん飛び越えて、盗賊団のお母ちゃん。豪快、でも身内には手厚い信用を置いてる。"
+    },
+    {
+      "id": "EX063",
+      "work": "忍たま乱太郎",
+      "asked_character": "土井半助",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読。"
+    },
+    {
+      "id": "EX064",
+      "work": "とっても！ラッキーマン",
+      "asked_character": "ラッキーマン",
+      "status": "limited",
+      "owner_reply_verbatim": "読んでた…けど、印象薄い。まんまだけど、ラッキーで勝ってしまうキャラだったよね。ポーカーやさんからすると敵である。。。"
+    },
+    {
+      "id": "EX065",
+      "work": "DEATH NOTE",
+      "asked_character": "夜神月",
+      "status": "character",
+      "owner_reply_verbatim": "純粋過ぎて悪を悪意なく行う人ってイメージ。とはいえ、力に溺れて悪に染まった経緯を経たような気もする。デスノートに出会っていなかったとしても、彼は世の中を嫌悪して純粋な悪になったんじゃなかろうか。"
+    },
+    {
+      "id": "EX066",
+      "work": "フルーツバスケット",
+      "asked_character": "本田透",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX067",
+      "work": "おジャ魔女どれみ",
+      "asked_character": "春風どれみ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。"
+    },
+    {
+      "id": "EX068",
+      "work": "戦闘メカ ザブングル",
+      "asked_character": "ジロン・アモス",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴"
+    },
+    {
+      "id": "EX069",
+      "work": "ハイスクール！奇面組",
+      "asked_character": "一堂零",
+      "status": "unexposed",
+      "owner_reply_verbatim": "作品は知ってる。未読。"
+    },
+    {
+      "id": "EX070",
+      "work": "スレイヤーズ",
+      "asked_character": "リナ＝インバース",
+      "status": "character",
+      "owner_reply_verbatim": "正義よりお金が大事っていう前提があるけど、ちゃんと主人公らしい正義感もあるよね。パートナーの剣士といいバランス。"
+    },
+    {
+      "id": "EX071",
+      "work": "GTO",
+      "asked_character": "鬼塚英吉",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴。ドラマも未視聴"
+    },
+    {
+      "id": "EX072",
+      "work": "犬とハサミは使いよう",
+      "asked_character": "夏野霧姫",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未読"
+    },
+    {
+      "id": "EX073",
+      "work": "ぼのぼの",
+      "asked_character": "スナドリネコ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未視聴"
+    },
+    {
+      "id": "EX074",
+      "work": "餓狼伝説",
+      "asked_character": "テリー・ボガード",
+      "status": "limited",
+      "owner_reply_verbatim": "餓狼伝説自体はあんまりやってないね。SNKのキャラクターだとマリーさんが好きよ。投げキャラ好き。"
+    },
+    {
+      "id": "EX075",
+      "work": "ストリートファイター",
+      "asked_character": "春麗",
+      "status": "character",
+      "owner_reply_verbatim": "あんまり好みではない、というか性格をよく知らない。実は刑事さんらしい。ストリートファイターシリーズだと好きなのは…さくら　投げキャラじゃないじゃん…。"
+    },
+    {
+      "id": "EX076",
+      "work": "鉄拳",
+      "asked_character": "キング",
+      "status": "character",
+      "owner_reply_verbatim": "鉄拳の最初のお気に入りキャラ。投げからの連続投げでKO狙える。\n覆面レスラーなのは孤児院を救うため。\n\n最も得意なキャラクターはポール・フェニックス"
+    },
+    {
+      "id": "EX077",
+      "work": "ヴァンパイア",
+      "asked_character": "モリガン",
+      "status": "limited",
+      "owner_reply_verbatim": "あんまりプレイしてない。　使うならサスカッチだった。"
+    },
+    {
+      "id": "EX078",
+      "work": "サムライスピリッツ",
+      "asked_character": "橘右京",
+      "status": "limited",
+      "owner_reply_verbatim": "これも深くはプレイしてない。橘右京は…結核にかかっていて…というのは覚えている。使用するなら…リムルル"
+    },
+    {
+      "id": "EX079",
+      "work": "ギルティギア",
+      "asked_character": "ソル＝バッドガイ",
+      "status": "fragment",
+      "owner_reply_verbatim": "この辺りから全く格闘ゲームやってないね。いかにも主人公です、っていう赤い装具に、竜骨砕きみたいな形状の剣。"
+    },
+    {
+      "id": "EX080",
+      "work": "逆転裁判",
+      "asked_character": "成歩堂龍一",
+      "status": "unexposed",
+      "owner_reply_verbatim": "これも未プレイです。異議はない"
+    },
+    {
+      "id": "EX081",
+      "work": "クロノ・トリガー",
+      "asked_character": "カエル",
+      "status": "character",
+      "owner_reply_verbatim": "どんな経緯でカエルになったんだっけ…作中で好きなキャラは魔王。",
+      "owner_followup_verbatim": "魔王はキャラクターというより、性能かな。僕にとってはクロノ・トリガーって、そんなに名作かなぁっていう印象で、通り過ぎた作品というところ。"
+    },
+    {
+      "id": "EX082",
+      "work": "幻想水滸伝II",
+      "asked_character": "ジョウイ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ"
+    },
+    {
+      "id": "EX083",
+      "work": "ゼノギアス",
+      "asked_character": "シタン・ウヅキ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ。シタン先生なのだけ知ってるって感じ。"
+    },
+    {
+      "id": "EX084",
+      "work": "タクティクスオウガ",
+      "asked_character": "デニム・パウエル",
+      "status": "limited",
+      "owner_reply_verbatim": "結構好きでやったはずだけど、お話をいざ思い返すとあんまり覚えていない。姉のことで親友と仲違いしたりするんだったよね。彼自身はアライメントをLOWに振ったとて、そこまで悪人にはならない印象。"
+    },
+    {
+      "id": "EX085",
+      "work": "ロマンシング サ・ガ3",
+      "asked_character": "ハリード",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ"
+    },
+    {
+      "id": "EX086",
+      "work": "ファイナルファンタジーVII",
+      "asked_character": "バレット",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ"
+    },
+    {
+      "id": "EX087",
+      "work": "聖剣伝説3",
+      "asked_character": "ホークアイ",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ"
+    },
+    {
+      "id": "EX088",
+      "work": "ファイアーエムブレム 紋章の謎",
+      "asked_character": "オグマ",
+      "status": "character",
+      "owner_reply_verbatim": "傭兵の隊長かなんかだよね。個人的にはジェガンさんが好き。最初強いけどレベル上げてももうあんまり強くならないところ含め。"
+    },
+    {
+      "id": "EX089",
+      "work": "MOTHER2",
+      "asked_character": "ネス",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ"
+    },
+    {
+      "id": "EX090",
+      "work": "風来のシレン",
+      "asked_character": "シレン",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ。トルネコはそこそこやりました。"
+    },
+    {
+      "id": "EX091",
+      "work": "ドラゴンクエストIV",
+      "asked_character": "トルネコ",
+      "status": "character",
+      "owner_reply_verbatim": "ホントは真面目なお父さんなのに、よく分かんないことしちゃう感じの人なのかな？"
+    },
+    {
+      "id": "EX092",
+      "work": "ときめきメモリアル",
+      "asked_character": "藤崎詩織",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ。今でも好きな人は好きよね"
+    },
+    {
+      "id": "EX093",
+      "work": "サイレントヒル2",
+      "asked_character": "ジェイムス",
+      "status": "unexposed",
+      "owner_reply_verbatim": "未プレイ。ホラーゲームは…クロックタワー2くらいかな"
+    },
+    {
+      "id": "EX094",
+      "work": "クロックタワー2",
+      "asked_character": "ジェニファー",
+      "status": "limited",
+      "owner_reply_verbatim": "人物像としてはそんなに印象に残っていない。なぜシザーマンに狙われるようになったんだっけ？"
+    }
+  ],
+  "limits": [
+    "整理日は発言日や作品に触れた日の推定ではない。",
+    "statusは分類者による暫定整理。本人の回答原文を優先。",
+    "未読は映像未視聴まで意味しない。ゲーム未プレイも作品不知とは限らない。",
+    "人物不知を未接触とは扱わず、詳しく語れることから完読・リアルタイム接触を推定しない。",
+    "台詞・設定・性能・制作史・作者の思想については本人の記憶や解釈であり独立検証していない。",
+    "助手が提示した作品・人物の偏りがあり、全サブカルへの接触率として外挿しない。"
+  ]
+}

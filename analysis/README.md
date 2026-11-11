@@ -117,3 +117,5 @@
 - [見栄で背伸びすることと、期限内にもう一度試すこと](november_consolidation/showing_off_and_retrying.md)：負担と後悔の違い、成長のきっかけとなる見栄、失敗の報告と再挑戦についての本人補足。
 
 - [作品に触れたこと、人物を覚えていること、言葉だけ残ること](november_consolidation/hero_exposure_and_voice.md)：未読・記憶の薄さ・連想の区別と、口調の追加確認。音声起こしは書き言葉の記録から分離。
+
+- [サブカルから離れた時期は見えるか](november_consolidation/exposure_session_20261111.md)：今回の人物質問94件を全件記録・集計。1990年代の接触の厚みと、媒体ごとの変化の仮説を、実際の接触年とは分けて整理。
