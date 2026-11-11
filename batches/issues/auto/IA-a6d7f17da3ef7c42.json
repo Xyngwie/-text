@@ -1,0 +1,314 @@
+{
+  "batch_id": "IA-a6d7f17da3ef7c42",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6710219164",
+      "unit_kind": "comment",
+      "issue_number": 271,
+      "comment_id": 6710219164,
+      "body_sha256": "99982da97867893d4d3e55921abbdad5ed68c7c307443b242a7c0b6498a8e71b",
+      "url": "https://github.com/Xyngwie/-text/issues/271#issuecomment-6710219164",
+      "snapshot_sha256": "a6041e0688ada26259978ceaab025fd9577a91f158d38d63ddb694eb6a8923c3",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "science",
+          "politics",
+          "world"
+        ],
+        "speech_act": "確定文の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "ドラフト冒頭の実験注記を削除し、初稿本文をそのまま確定文としてコメントしている。実投稿の報告は含まれない。",
+        "evidence_quote": "政治的な駆け引きや建前が先行しがちな国際会議の直前に、過酷な極地で積み上げた実測データを携えて釘を刺す。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-a6d7f17da3ef7c42",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10173,
+          "candidatesTokenCount": 820,
+          "totalTokenCount": 12029,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10173
+            }
+          ],
+          "thoughtsTokenCount": 1036,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T23:08:24+00:00",
+        "input_sha256": "14d1ca71ca6ae71cbfb1258ab71818d94b5355d4404a7b79adefc4bdb7d5631f",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "297b64ad276b2c3f1903476c594a2c8e57d822e2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43117416534"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n政治的な駆け引きや建前が先行しがちな国際会議の直前に、過酷な極地で積み上げた実測データを携えて釘を刺す。この手筋は実に鮮やかで筋が良い。\n\n不可逆な変化を前にして、机上の空論ではなく現場の泥臭い観測事実を武器に議論の土台を規定しにいく姿勢には、専門家としての確かな矜持を感じる。",
+        "draft_sha256": "a67d683e4b4c142b67de56aa845e4487eff225440fc988436d41c0591cb07539",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6710231294",
+      "unit_kind": "comment",
+      "issue_number": 270,
+      "comment_id": 6710231294,
+      "body_sha256": "27f7abb1934431ba202f9d3476552946f69b5e6b1889e0c11825ae0f172b8481",
+      "url": "https://github.com/Xyngwie/-text/issues/270#issuecomment-6710231294",
+      "snapshot_sha256": "b669cf728a1fca91762e040027476d19edf4d36fa50232fdcc0c5453ba00adbb",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "economy",
+          "society"
+        ],
+        "speech_act": "確定文の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "ドラフト冒頭の注記を削除して初稿本文をそのまま確定文として提示している。実投稿の報告はない。",
+        "evidence_quote": "物価高の直撃を受けながらも、工夫を凝らして学園祭を成立させようとする動きは率直に言って痛快だ。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-a6d7f17da3ef7c42",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10173,
+          "candidatesTokenCount": 820,
+          "totalTokenCount": 12029,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10173
+            }
+          ],
+          "thoughtsTokenCount": 1036,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T23:08:24+00:00",
+        "input_sha256": "14d1ca71ca6ae71cbfb1258ab71818d94b5355d4404a7b79adefc4bdb7d5631f",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "297b64ad276b2c3f1903476c594a2c8e57d822e2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43117416534"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n物価高の直撃を受けながらも、工夫を凝らして学園祭を成立させようとする動きは率直に言って痛快だ。\n\n潤沢な予算で無邪気に騒ぐだけの行事より、厳しいコスト制約という現実の盤面をどう攻略するか知恵を絞る方が、よほど次につながる実戦の経験になる。\n\n逆境を嘆くだけで終わらせず、限られた条件の中で形にしてみせる現場の気概には文句なしの拍手を送りたい。",
+        "draft_sha256": "1d75d25b7cf066dafcdb8ea72507c876d3cb6aab0718dd1de786fa40fa8a52db",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6710264697",
+      "unit_kind": "comment",
+      "issue_number": 269,
+      "comment_id": 6710264697,
+      "body_sha256": "4f37ecaf99d07c6cfea5688dd63097d7093fab700fd70a949438c7c96a122417",
+      "url": "https://github.com/Xyngwie/-text/issues/269#issuecomment-6710264697",
+      "snapshot_sha256": "8ca50afc8366bd82e215efea6dc73e7808ad4c457f0a6dafb337ea27b21ac3d1",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "life"
+        ],
+        "speech_act": "過去投稿への所感",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "過去ログ分類Issueに対する本人の振り返りコメントであり、初稿ドラフトに対する判定ではない。",
+        "evidence_quote": "残業するのは当たり前と思ってたので無駄に楽しそうである。",
+        "analysis_candidates": [
+          {
+            "observation": "過去の過酷な勤務状況を回顧しつつ、当時の能天気な投稿態度を客観視して述べている。",
+            "evidence_quote": "残業するのは当たり前と思ってたので無駄に楽しそうである。",
+            "limitation": "当時の労働観の全体像や現在の勤務実態までは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-a6d7f17da3ef7c42",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10173,
+          "candidatesTokenCount": 820,
+          "totalTokenCount": 12029,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10173
+            }
+          ],
+          "thoughtsTokenCount": 1036,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T23:08:24+00:00",
+        "input_sha256": "14d1ca71ca6ae71cbfb1258ab71818d94b5355d4404a7b79adefc4bdb7d5631f",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "297b64ad276b2c3f1903476c594a2c8e57d822e2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43117416534"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6721237159",
+      "unit_kind": "comment",
+      "issue_number": 283,
+      "comment_id": 6721237159,
+      "body_sha256": "e54d05aab984aaec65145794313a9886c388e7c2ea9c701e0107005504438820",
+      "url": "https://github.com/Xyngwie/-text/issues/283#issuecomment-6721237159",
+      "snapshot_sha256": "c9390480d4a36dd2f4459a470b876b5d9ac68436b31066e358c04b857025e930",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "society"
+        ],
+        "speech_act": "加筆による確定文の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の共感・いたわりの文を受け入れつつ、震度1がニュース記事になる現状に対する驚きを本人の言葉として追記している。",
+        "evidence_quote": "それでもニュース記事になる世の中の変化に少し驚いている。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿の一般的配慮に同意を示しつつ、微小な地震が即座に報道記事化されるメディア動向への着眼を独自に加えている。",
+            "evidence_quote": "それはそう。\nそれでもニュース記事になる世の中の変化に少し驚いている。",
+            "limitation": "報道基準への批判なのか単なる日常の変化への感慨なのかは文脈が限られており断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-a6d7f17da3ef7c42",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10173,
+          "candidatesTokenCount": 820,
+          "totalTokenCount": 12029,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10173
+            }
+          ],
+          "thoughtsTokenCount": 1036,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T23:08:24+00:00",
+        "input_sha256": "14d1ca71ca6ae71cbfb1258ab71818d94b5355d4404a7b79adefc4bdb7d5631f",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "297b64ad276b2c3f1903476c594a2c8e57d822e2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43117416534"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "震度1とはいえ、揺れを感じれば誰だって一瞬は身構える。何事もなかったなら何よりだ。",
+        "draft_sha256": "ddf67fa3b069c8d2d5c3d0275966a8e925687493dc42fb1fb41f6b1ef9d6d0e8",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\nそれはそう。\nそれでもニュース記事になる世の中の変化に少し驚いている。"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6722522511",
+      "unit_kind": "comment",
+      "issue_number": 282,
+      "comment_id": 6722522511,
+      "body_sha256": "60bde1ce6729e6d8125a4fba409c7136214303b4acde463b68b63d81a9080258",
+      "url": "https://github.com/Xyngwie/-text/issues/282#issuecomment-6722522511",
+      "snapshot_sha256": "32aa426fb62aff6766066c64e61f24c03499034b44f72ae967b93fa1e89a9790",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "life"
+        ],
+        "speech_act": "確定文の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿と完全に同一の文章を確定文としてコメントしている。実投稿報告は含まれていない。",
+        "evidence_quote": "八重洲にまた新しい拠点ができたらしいが、東京の玄関口という激しい人の流れの中で、このタワーは何を体験させる空間を目指しているのだろうか。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-a6d7f17da3ef7c42",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10173,
+          "candidatesTokenCount": 820,
+          "totalTokenCount": 12029,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10173
+            }
+          ],
+          "thoughtsTokenCount": 1036,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T23:08:24+00:00",
+        "input_sha256": "14d1ca71ca6ae71cbfb1258ab71818d94b5355d4404a7b79adefc4bdb7d5631f",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "297b64ad276b2c3f1903476c594a2c8e57d822e2",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43117416534"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "八重洲にまた新しい拠点ができたらしいが、東京の玄関口という激しい人の流れの中で、このタワーは何を体験させる空間を目指しているのだろうか。\n\n単にオフィスや店舗を垂直に積み上げるだけなら既存の再開発と変わらないが、散歩の視点で取り上げられるからには、足を止めて歩きたくなるような固有の仕掛けや面白さがあるのかが気になる。\n\n効率的に通過するだけの場所にどんな新しい滞留の動線を描いているのか、実際の設計を見てみたいところだな。",
+        "draft_sha256": "60bde1ce6729e6d8125a4fba409c7136214303b4acde463b68b63d81a9080258",
+        "identical": true,
+        "edits": []
+      }
+    }
+  ]
+}
