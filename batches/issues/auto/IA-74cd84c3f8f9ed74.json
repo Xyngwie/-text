@@ -1,0 +1,420 @@
+{
+  "batch_id": "IA-74cd84c3f8f9ed74",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687694127",
+      "unit_kind": "comment",
+      "issue_number": 257,
+      "comment_id": 6687694127,
+      "body_sha256": "c858d3b7296a8e4c1e60cc542b49bc30cc10b3d95572a280a8bd39ec1a147648",
+      "url": "https://github.com/Xyngwie/-text/issues/257#issuecomment-6687694127",
+      "snapshot_sha256": "fe2c909a55589b4d903e8c3c11d15b49bb46599c3a4c4175d646f27fe8a8a6fe",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "life"
+        ],
+        "speech_act": "AI提案初稿の後半段落をそのまま採用原稿として提示する",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の前半（ゲームの比喩部分）を削除し、後半部分のみをそのまま採用候補文として投稿している。直後のコメントでその意図が説明されている。",
+        "evidence_quote": "貸してしまった側が「自分の見通しが甘かったのか」と自責を抱える必要など微塵もない。",
+        "analysis_candidates": [
+          {
+            "observation": "知人間の詐欺被害という文脈において、被害者側の自責を否定し信義を踏みにじった加害構造への批判・被害者への共感を示す記述を採用している。",
+            "evidence_quote": "貸してしまった側が「自分の見通しが甘かったのか」と自責を抱える必要など微塵もない。踏みにじられたのは油断ではなく、相手を対等な人間として重んじた真っ当な信義だ。",
+            "limitation": "AI初稿からの部分採用（コピペ）であり、本人の自発的な執筆文ではないため、語彙や語調そのものが本人の口癖とは限らない。"
+          }
+        ]
+      },
+      "batch_id": "IA-74cd84c3f8f9ed74",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11086,
+          "candidatesTokenCount": 1647,
+          "totalTokenCount": 12733,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11086
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T01:30:08+00:00",
+        "input_sha256": "54505e0d0bdabd204402ab371043b8de7e48d0b7a2c36f9403ca83ec40d377b3",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "94e35300cd7f3851b4b06d87062fcb4026736d90",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42939343126"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n知人からの頼み事に手を差し伸べる行為は、同じパーティで互いに背中を預け合うようなものだ。そこに「保険金で色を付けて返す」「手持ちがない」と情に訴えて付け入るのは、味方へのフレンドリーファイアを平然と行うに等しい卑劣な裏切りだろう。\n\n貸してしまった側が「自分の見通しが甘かったのか」と自責を抱える必要など微塵もない。踏みにじられたのは油断ではなく、相手を対等な人間として重んじた真っ当な信義だ。善意で手を伸ばしたがゆえに傷を負わされた側の無念には心底から寄り添いたいし、信じた人間が馬鹿を見る構図だけは決して肯定できない。",
+        "draft_sha256": "80827b535fddfe67006b5a10c9294135379335548fa13516eec6c52b83f21745",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n知人からの頼み事に手を差し伸べる行為は、同じパーティで互いに背中を預け合うようなものだ。そこに「保険金で色を付けて返す」「手持ちがない」と情に訴えて付け入るのは、味方へのフレンドリーファイアを平然と行うに等しい卑劣な裏切りだろう。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687725423",
+      "unit_kind": "comment",
+      "issue_number": 257,
+      "comment_id": 6687725423,
+      "body_sha256": "ea45f9e2ecaf78f63e0791d44022439feeb482266b47b23bf3adafa66694bd0b",
+      "url": "https://github.com/Xyngwie/-text/issues/257#issuecomment-6687725423",
+      "snapshot_sha256": "fe2c909a55589b4d903e8c3c11d15b49bb46599c3a4c4175d646f27fe8a8a6fe",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "thinking"
+        ],
+        "speech_act": "初稿の推敲・削除理由を説明し、投稿状況を報告する",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "前段の比喩表現（ゲームの比喩）が労る内容に適していないと判断して削った旨を自発的な言葉で説明している。また「投稿は行っていない」と明示している。",
+        "evidence_quote": "前段は労る内容に対してゲームの事を持ち出していると少し適していないように思ったので削りました。投稿は行っていないが、コメントとして出すなら上記の形にします。",
+        "analysis_candidates": [
+          {
+            "observation": "真面目な被害者を労る文脈において、ゲームの比喩を持ち出すことは文脈やトーンに対して不適切であると判断し削除している。",
+            "evidence_quote": "前段は労る内容に対してゲームの事を持ち出していると少し適していないように思ったので削りました。",
+            "limitation": "ゲームの比喩全般を否定しているのか、今回の「労る内容」という特定の文脈における不調和を避けただけなのかは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-74cd84c3f8f9ed74",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11086,
+          "candidatesTokenCount": 1647,
+          "totalTokenCount": 12733,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11086
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T01:30:08+00:00",
+        "input_sha256": "54505e0d0bdabd204402ab371043b8de7e48d0b7a2c36f9403ca83ec40d377b3",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "94e35300cd7f3851b4b06d87062fcb4026736d90",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42939343126"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n知人からの頼み事に手を差し伸べる行為は、同じパーティで互いに背中を預け合うようなものだ。そこに「保険金で色を付けて返す」「手持ちがない」と情に訴えて付け入るのは、味方へのフレンドリーファイアを平然と行うに等しい卑劣な裏切りだろう。\n\n貸してしまった側が「自分の見通しが甘かったのか」と自責を抱える必要など微塵もない。踏みにじられたのは油断ではなく、相手を対等な人間として重んじた真っ当な信義だ。善意で手を伸ばしたがゆえに傷を負わされた側の無念には心底から寄り添いたいし、信じた人間が馬鹿を見る構図だけは決して肯定できない。",
+        "draft_sha256": "80827b535fddfe67006b5a10c9294135379335548fa13516eec6c52b83f21745",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "※実験政治枠（本人",
+            "after": "前段は労る内容に対してゲーム"
+          },
+          {
+            "operation": "replace",
+            "before": "意見では",
+            "after": "事を持ち出していると少し適してい"
+          },
+          {
+            "operation": "delete",
+            "before": "く価値観スライドによるゼロショット仮説）\n\n知人からの頼み事に手を差し伸べる行為は、同じパーティで互",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "に背中を預け合う",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "なものだ。そこ",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "「保険金で色を付けて返す」「手持ちがない」と情に訴えて付け入るのは、味方へのフレンドリーファイアを平然と行うに等しい卑劣な裏切りだろう。\n\n貸してしまった側が「自分の見通しが甘か",
+            "after": "思"
+          },
+          {
+            "operation": "replace",
+            "before": "か」と自責を抱える必要など微塵も",
+            "after": "で削りました。投稿は行ってい"
+          },
+          {
+            "operation": "replace",
+            "before": "。踏みにじられたのは油断ではなく",
+            "after": "が"
+          },
+          {
+            "operation": "replace",
+            "before": "相手を対等な人間",
+            "after": "コメント"
+          },
+          {
+            "operation": "replace",
+            "before": "重んじた真っ当",
+            "after": "出す"
+          },
+          {
+            "operation": "replace",
+            "before": "信義だ",
+            "after": "ら上記の形にします"
+          },
+          {
+            "operation": "delete",
+            "before": "善意で手を伸ばしたがゆえに傷を負わされた側の無念には心底から寄り添いたいし、信じた人間が馬鹿を見る構図だけは決して肯定できない。",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687766448",
+      "unit_kind": "comment",
+      "issue_number": 256,
+      "comment_id": 6687766448,
+      "body_sha256": "d6ae12ec398e6f7b54c052fbdc5b399b5f6fc6f2c20af2d9d71c386a11b1f3a3",
+      "url": "https://github.com/Xyngwie/-text/issues/256#issuecomment-6687766448",
+      "snapshot_sha256": "587db4b8ee17d9c852fc20de7f31cacca448690bde77957522477be8ef7807fe",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "society",
+          "thinking"
+        ],
+        "speech_act": "初稿の論理に一定の理解を示しつつ、それをあえて発言することの妥当性を否定・却下する",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "「それはそう」と内容の理屈には同意しつつも、わざわざ外野として切り捨てるような発言をする価値はないとして初稿を却下している。",
+        "evidence_quote": "それはそう。　と思いつつ、流石に切り捨てるような事をいう価値も感じない。",
+        "analysis_candidates": [
+          {
+            "observation": "正論や事実認識として合致していても、他者の成果や出来事をわざわざ冷淡に切り捨てるような言及を行うことには否定的である。",
+            "evidence_quote": "それはそう。　と思いつつ、流石に切り捨てるような事をいう価値も感じない。",
+            "limitation": "スポーツ全般に対する関心の度合いや、他の事象において冷淡な切り捨てを行うかどうかまでは判断できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-74cd84c3f8f9ed74",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11086,
+          "candidatesTokenCount": 1647,
+          "totalTokenCount": 12733,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11086
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T01:30:08+00:00",
+        "input_sha256": "54505e0d0bdabd204402ab371043b8de7e48d0b7a2c36f9403ca83ec40d377b3",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "94e35300cd7f3851b4b06d87062fcb4026736d90",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42939343126"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n5大会ぶりだろうが何だろうが、トーナメントの1回戦を一つ勝ったという結果が出ただけの話だ。外野が情緒的な物語を盛る筋合いはない。",
+        "draft_sha256": "da6032944463099770df0cc0b19205c57745461406197bcb54e291c55644662a",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "※実験政治枠（本人の意見で",
+            "after": "それ"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "そう。　と思いつつ、流石に切り捨てるよう"
+          },
+          {
+            "operation": "replace",
+            "before": "く",
+            "after": "事をいう"
+          },
+          {
+            "operation": "replace",
+            "before": "観スライドによるゼロショット仮説）\n\n5大会ぶりだろうが何だろうが、トーナメントの1回戦を一つ勝ったという結果が出ただけの話だ。外野が情緒的な物語を盛る筋合いは",
+            "after": "も感じ"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687796063",
+      "unit_kind": "comment",
+      "issue_number": 255,
+      "comment_id": 6687796063,
+      "body_sha256": "72d38b5d89401d0fa1f8134ac9f29a599c254d9ada3897017244a73c7a833c0a",
+      "url": "https://github.com/Xyngwie/-text/issues/255#issuecomment-6687796063",
+      "snapshot_sha256": "de1a756ee06147ee3bc8fb860281d7378246ac0418c1ef9486fb08c62d5cdbc7",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "culture"
+        ],
+        "speech_act": "初稿の実験タグのみを削除し、本文を無修正で採用原稿として提示する",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "AI初稿の冒頭の注記行を削除した以外は無修正で全文を投稿している。実投稿の報告コメントは存在しない。",
+        "evidence_quote": "客演で一度きりの熱狂を作るのと、音楽監督として楽団固有の音や歴史を丸ごと引き受けるのとでは、背負う重みがまるで違うのではないか。",
+        "analysis_candidates": [
+          {
+            "observation": "音楽監督と客演の責任の違いや、集団の矜持を守り抜く演奏家の苦心・敬意に関する初稿の記述をそのまま受容している。",
+            "evidence_quote": "互いの息遣いを確かめ合いながら集団の矜持を守り抜く労苦には頭が下がる。",
+            "limitation": "無修整採用であり、本人の理想的な表現や強いこだわりを反映したものか、単に初稿の出来を許容しただけなのかは区別できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-74cd84c3f8f9ed74",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11086,
+          "candidatesTokenCount": 1647,
+          "totalTokenCount": 12733,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11086
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T01:30:08+00:00",
+        "input_sha256": "54505e0d0bdabd204402ab371043b8de7e48d0b7a2c36f9403ca83ec40d377b3",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "94e35300cd7f3851b4b06d87062fcb4026736d90",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42939343126"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n客演で一度きりの熱狂を作るのと、音楽監督として楽団固有の音や歴史を丸ごと引き受けるのとでは、背負う重みがまるで違うのではないか。\n\n「素晴らしい個性を持つ」と評された現場の演奏家たちにとっても、その期待を背負って日々すり合わせを重ねる緊張感は計り知れない。外から成果だけを眺めるのは容易だが、互いの息遣いを確かめ合いながら集団の矜持を守り抜く労苦には頭が下がる。\n\nお互いへの敬意を前提に新しい響きを探すその苦心の中にこそ、表現の真価が宿るのだろう。",
+        "draft_sha256": "991d8ca63adbb4865f3d2cd9242f62e8d0811c9cca421fc765a76c56ff97d5da",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6687918632",
+      "unit_kind": "comment",
+      "issue_number": 254,
+      "comment_id": 6687918632,
+      "body_sha256": "c7150b20b66cbb4beb9605d7f97e78cd4e748c3e6a10ee369aa0345897c161a6",
+      "url": "https://github.com/Xyngwie/-text/issues/254#issuecomment-6687918632",
+      "snapshot_sha256": "ee3e5ec9f194f8db32b649f42d1c274767e2d8083818caf5095a4c8910c0f967",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "life"
+        ],
+        "speech_act": "初稿の注記と結びの2文を削除し、推敲した採用原稿として提示する",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "AI初稿の冒頭注記および最後の「あまりの熱量と代償の重さに〜ただただ圧倒される。」の段落を削除してコメントしている。実投稿報告はない。",
+        "evidence_quote": "昨日までいた仲間が即座に切られるような淘汰の世界へ、父親の夢と挫折を背負って家族ごと移住して挑む。",
+        "analysis_candidates": [
+          {
+            "observation": "リスク管理の観点からの懸念と外野による冷笑の双方を退けつつ、結びの過度な感情吐露（「圧倒される」など）を削って事実と覚悟への着目にとどめている。",
+            "evidence_quote": "人生の全リソースを一点に突っ込んで実際に扉をこじ開けてみせたこの覚悟の凄まじさを前に、外野が「無謀だ」「親のエゴだ」と冷笑して片付けるのも違うだろう。",
+            "limitation": "削除された末尾2文を削った積極的理由（冗長と判断したのか、感情表現が合わなかったのか等）はコメントで言語化されていないため推測の域を出ない。"
+          }
+        ]
+      },
+      "batch_id": "IA-74cd84c3f8f9ed74",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 11086,
+          "candidatesTokenCount": 1647,
+          "totalTokenCount": 12733,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 11086
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T01:30:08+00:00",
+        "input_sha256": "54505e0d0bdabd204402ab371043b8de7e48d0b7a2c36f9403ca83ec40d377b3",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "94e35300cd7f3851b4b06d87062fcb4026736d90",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/42939343126"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n昨日までいた仲間が即座に切られるような淘汰の世界へ、父親の夢と挫折を背負って家族ごと移住して挑む。\n\n通常の生活防衛やリスク管理の物差しを当てればあまりにも危ういし、合格という結果が出たからといって美談として軽々しく消費していい賭け方ではない。だが、人生の全リソースを一点に突っ込んで実際に扉をこじ開けてみせたこの覚悟の凄まじさを前に、外野が「無謀だ」「親のエゴだ」と冷笑して片付けるのも違うだろう。\n\nあまりの熱量と代償の重さに、率直に言ってどう評価を下すべきか判断が追いつかない。ただただ圧倒される。",
+        "draft_sha256": "a21885c9950eefe36406b732c9ec7a3e5038d9a0a8755446e60e4e4d926fc4ae",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "\n\nあまりの熱量と代償の重さに、率直に言ってどう評価を下すべきか判断が追いつかない。ただただ圧倒される。",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
