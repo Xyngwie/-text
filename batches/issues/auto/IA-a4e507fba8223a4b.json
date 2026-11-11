@@ -1,0 +1,374 @@
+{
+  "batch_id": "IA-a4e507fba8223a4b",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6705644247",
+      "unit_kind": "comment",
+      "issue_number": 275,
+      "comment_id": 6705644247,
+      "body_sha256": "b6018f25019940926ab1cc8628e068b0a7282ba6a5e690c667f1da57ab43676d",
+      "url": "https://github.com/Xyngwie/-text/issues/275#issuecomment-6705644247",
+      "snapshot_sha256": "748cf75457e7adc6b85f357d91aa0af89cd9c6b9aa1e9a4c148fd3f44e21b646",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "culture",
+          "food"
+        ],
+        "speech_act": "初稿と完全一致する文面の確定文提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿のテキストを無修正でそのまま投稿しているため採用原稿と判断できる。自発的な加筆・修正はない。",
+        "evidence_quote": "立冬の訪れとともに千枚漬けを漬け込む。暦の節目と職人の手技が寸分違わず噛み合う様には、理屈抜きで引き込まれる面白さがあるな。",
+        "analysis_candidates": []
+      },
+      "batch_id": "IA-a4e507fba8223a4b",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10493,
+          "candidatesTokenCount": 1329,
+          "totalTokenCount": 13183,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10493
+            }
+          ],
+          "thoughtsTokenCount": 1361,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T16:40:02+00:00",
+        "input_sha256": "224411b6547bb703c9f10a6e6f1db109e21638ceef0a296b7903154ce112bc9d",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "976a080fee4e3bdd0908fbd6031f5b7a92a0920a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43060474300"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "立冬の訪れとともに千枚漬けを漬け込む。暦の節目と職人の手技が寸分違わず噛み合う様には、理屈抜きで引き込まれる面白さがあるな。\n\nかぶらを均一に削り出し、樽の中に秩序正しく重ねていくあの手業の精度は、単なる仕込み作業を超えて一つの完成された工芸美だ。季節の巡りをこうした精緻な技術で刻んでみせる文化の分厚さには、素直に好奇心がそそられる。",
+        "draft_sha256": "b6018f25019940926ab1cc8628e068b0a7282ba6a5e690c667f1da57ab43676d",
+        "identical": true,
+        "edits": []
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6705647037",
+      "unit_kind": "comment",
+      "issue_number": 275,
+      "comment_id": 6705647037,
+      "body_sha256": "fa889e467cb87804f328a1f4dab4c5512f8f74b3e87a2456ff6f1c8309940246",
+      "url": "https://github.com/Xyngwie/-text/issues/275#issuecomment-6705647037",
+      "snapshot_sha256": "748cf75457e7adc6b85f357d91aa0af89cd9c6b9aa1e9a4c148fd3f44e21b646",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "thinking",
+          "culture"
+        ],
+        "speech_act": "直前に投稿した確定文に対する短い評価コメント",
+        "feedback_kind": "draft_verdict",
+        "verdict": "acceptable",
+        "note": "採用確定文の投稿直後に寄せられた短いコメント。皮肉か純粋な称賛かは文脈が短いため断定できない。",
+        "evidence_quote": "とっても素敵な感想文。",
+        "analysis_candidates": [
+          {
+            "observation": "AIが生成した千枚漬けの原稿を投稿した直後に、第三者的な視点で原稿を「素敵な感想文」と評している。",
+            "evidence_quote": "とっても素敵な感想文。",
+            "limitation": "一言の短文のみであり、字面通りの称賛か、あるいは情緒的・過度に綺麗にまとまった文章への揶揄や冷やかしを含むのかは判断できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-a4e507fba8223a4b",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10493,
+          "candidatesTokenCount": 1329,
+          "totalTokenCount": 13183,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10493
+            }
+          ],
+          "thoughtsTokenCount": 1361,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T16:40:02+00:00",
+        "input_sha256": "224411b6547bb703c9f10a6e6f1db109e21638ceef0a296b7903154ce112bc9d",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "976a080fee4e3bdd0908fbd6031f5b7a92a0920a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43060474300"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "立冬の訪れとともに千枚漬けを漬け込む。暦の節目と職人の手技が寸分違わず噛み合う様には、理屈抜きで引き込まれる面白さがあるな。\n\nかぶらを均一に削り出し、樽の中に秩序正しく重ねていくあの手業の精度は、単なる仕込み作業を超えて一つの完成された工芸美だ。季節の巡りをこうした精緻な技術で刻んでみせる文化の分厚さには、素直に好奇心がそそられる。",
+        "draft_sha256": "b6018f25019940926ab1cc8628e068b0a7282ba6a5e690c667f1da57ab43676d",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "立冬の訪れ",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "と",
+            "after": "って"
+          },
+          {
+            "operation": "replace",
+            "before": "に千枚漬けを漬け込む",
+            "after": "素敵な感想文"
+          },
+          {
+            "operation": "delete",
+            "before": "暦の節目と職人の手技が寸分違わず噛み合う様には、理屈抜きで引き込まれる面白さがあるな。\n\nかぶらを均一に削り出し、樽の中に秩序正しく重ねていくあの手業の精度は、単なる仕込み作業を超えて一つの完成された工芸美だ。季節の巡りをこうした精緻な技術で刻んでみせる文化の分厚さには、素直に好奇心がそそられる。",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6710104795",
+      "unit_kind": "comment",
+      "issue_number": 274,
+      "comment_id": 6710104795,
+      "body_sha256": "45cb3faf1f7d8734fd6a9867106a7a29585912a109f6809e38615eef8eee2318",
+      "url": "https://github.com/Xyngwie/-text/issues/274#issuecomment-6710104795",
+      "snapshot_sha256": "65653b85d6ba9c7ca5e018e5ee10f0e1690e885bab800464f63f9f083b7d9d93",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "economy",
+          "food"
+        ],
+        "speech_act": "結びの表現を修正した確定文の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿末尾の「仕組みとして検証していきたいところだ。」を「仕組みまで設計してこそだろう」に変更して採用している。",
+        "evidence_quote": "発信の数字だけで一喜一憂せず、現場に持続的な取引先が残る仕組みまで設計してこそだろう",
+        "analysis_candidates": [
+          {
+            "observation": "結びの文末を「検証していきたいところだ」という受動的・希望的な言い回しから、「設計してこそだろう」という要件を強く提示する表現へと書き換えている。",
+            "evidence_quote": "現場に持続的な取引先が残る仕組みまで設計してこそだろう",
+            "limitation": "単一の文末修正事例にすぎず、一般的な語尾の傾向や強い文体規則とまでは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-a4e507fba8223a4b",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10493,
+          "candidatesTokenCount": 1329,
+          "totalTokenCount": 13183,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10493
+            }
+          ],
+          "thoughtsTokenCount": 1361,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T16:40:02+00:00",
+        "input_sha256": "224411b6547bb703c9f10a6e6f1db109e21638ceef0a296b7903154ce112bc9d",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "976a080fee4e3bdd0908fbd6031f5b7a92a0920a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43060474300"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "海外のインフルエンサーを招いて現地の魅力を発信してもらう手筋自体は理解できるが、綺麗な写真がタイムラインを一瞬流れて終わるだけでは、実際の輸出や消費にどこまで結びつくのか判断に迷う。\n\n東日本の酒の販路を拓くのが目的なら、単発のPRでどれだけ見られたかを競うより、紹介された銘柄をその場で手配できる越境流通の導線や、現地の蔵元と米国のバイヤーを直接つなぐ商談機会まで最初から組み込んでおくべきだろう。\n\n発信の数字だけで一喜一憂せず、現場に持続的な取引先が残る仕組みとして検証していきたいところだ。",
+        "draft_sha256": "3cb336876d9d7b3c89d4a6c20a1606bb2a0bec2d108c1b30b133a39dc32f15ed",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "と",
+            "after": "まで設計"
+          },
+          {
+            "operation": "delete",
+            "before": "検証していきたいと",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "そだ"
+          },
+          {
+            "operation": "replace",
+            "before": "だ。",
+            "after": "う"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6710180685",
+      "unit_kind": "comment",
+      "issue_number": 273,
+      "comment_id": 6710180685,
+      "body_sha256": "205320176cda31f39027d50f094bcc34ed374089dc1abc1be7b06e8a4c6f6f71",
+      "url": "https://github.com/Xyngwie/-text/issues/273#issuecomment-6710180685",
+      "snapshot_sha256": "c394a7e76bd30e434ecba379af9ed2035f939dfa72a57cd0528f379fc116f71f",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "society",
+          "world"
+        ],
+        "speech_act": "改行位置を調整した確定文の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿の文面をほぼ維持しつつ、2段落目の中で1箇所改行を挿入して段落分けを行っている。",
+        "evidence_quote": "もし自分が同じ詰み筋に追い込まれたなら、使える手札は何であれ使ってその場を脱出するだけだ。\n道徳的規範がどうあれ、生存のための選択肢を冷徹に切れるかどうかが全てだろう。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿の文章内容や語彙には手を加えず、文の区切りに改行を1つ追加して視認性を調整している。",
+            "evidence_quote": "使える手札は何であれ使ってその場を脱出するだけだ。\n道徳的規範がどうあれ",
+            "limitation": "改行位置の挿入のみの修正であり、思考や表現上の好みを深く読み取ることは困難である。"
+          }
+        ]
+      },
+      "batch_id": "IA-a4e507fba8223a4b",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10493,
+          "candidatesTokenCount": 1329,
+          "totalTokenCount": 13183,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10493
+            }
+          ],
+          "thoughtsTokenCount": 1361,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T16:40:02+00:00",
+        "input_sha256": "224411b6547bb703c9f10a6e6f1db109e21638ceef0a296b7903154ce112bc9d",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "976a080fee4e3bdd0908fbd6031f5b7a92a0920a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43060474300"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "強制結婚から逃れるために偽の配偶者を仕立てて出国したという話を、遠い安全圏から情緒的に消費して同情を寄せる気にはなれない。\n\nもし自分が同じ詰み筋に追い込まれたなら、使える手札は何であれ使ってその場を脱出するだけだ。道徳的規範がどうあれ、生存のための選択肢を冷徹に切れるかどうかが全てだろう。\n\n外野が美談や悲劇の物語として安っぽく共感する話ではない。過酷な盤面で生き残るために最善の手を打った、ただそれだけのことだ。",
+        "draft_sha256": "360ad4662d8f842fee5a01e882643a739cf3075fed2b2f3d84f5da55a074a47a",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6710200722",
+      "unit_kind": "comment",
+      "issue_number": 272,
+      "comment_id": 6710200722,
+      "body_sha256": "14884e7a249f2fa27dd3dca5253704d38cc0bdc35c3bea87b871bc9e227d9b6e",
+      "url": "https://github.com/Xyngwie/-text/issues/272#issuecomment-6710200722",
+      "snapshot_sha256": "afcb1c7faf6aa6379beeca97d8f8aadf5a7b2230a168635a43cce8cff9cb625d",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "culture",
+          "life"
+        ],
+        "speech_act": "語彙を修正し実験枠表記を削除した確定文の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿冒頭の実験注記を削除し、「ペーパーウェイト」を「文鎮」へと置き換えて採用している。",
+        "evidence_quote": "精密な工芸品を文鎮代わりに使って「手頃で便利」と喜んでいるようなズレを覚える。",
+        "analysis_candidates": [
+          {
+            "observation": "外来語の「ペーパーウェイト」を和語・漢語表現の「文鎮」に変更して比喩の具体語を置き換えている。",
+            "evidence_quote": "精密な工芸品を文鎮代わりに使って",
+            "limitation": "単語1箇所の置換であり、外来語全般を避ける傾向があるのか、文脈や語感に合わせた局所的な判断なのかは不明である。"
+          }
+        ]
+      },
+      "batch_id": "IA-a4e507fba8223a4b",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 10493,
+          "candidatesTokenCount": 1329,
+          "totalTokenCount": 13183,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 10493
+            }
+          ],
+          "thoughtsTokenCount": 1361,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-11T16:40:02+00:00",
+        "input_sha256": "224411b6547bb703c9f10a6e6f1db109e21638ceef0a296b7903154ce112bc9d",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "976a080fee4e3bdd0908fbd6031f5b7a92a0920a",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43060474300"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（価値観スライドによるゼロショット仮説）\n\n「笑いで健康維持」という耳触りのいい枠組みを見るたび、精密な工芸品をペーパーウェイト代わりに使って「手頃で便利」と喜んでいるようなズレを覚える。\n\n本来、舞台や芸から生まれる笑いは、計算された間や緊張関係の摩擦から立ち上がる高度な技術の産物だろう。それを単なる血行促進のサプリメントみたいに無害化して消費するのは、演者が削ってきた技術への見方としても少しピントが外れている気がする。",
+        "draft_sha256": "cd50446125038f8287552342013d1c8c0f039d6ebac7d381d87c31d96bb45a6c",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "ペーパーウェイト",
+            "after": "文鎮"
+          }
+        ]
+      }
+    }
+  ]
+}
