@@ -1,0 +1,385 @@
+{
+  "batch_id": "IA-8e9360d5d8d7e1a3",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6722552766",
+      "unit_kind": "comment",
+      "issue_number": 278,
+      "comment_id": 6722552766,
+      "body_sha256": "476e8e6707798bee09fd886139e4037237913e8cb3edb58509757dcfce1df0e8",
+      "url": "https://github.com/Xyngwie/-text/issues/278#issuecomment-6722552766",
+      "snapshot_sha256": "add109606dd324041ce9cc36ea7f655fb79097fe36245f07ce12e8f47d85ee38",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "society",
+          "culture"
+        ],
+        "speech_act": "ニュースの前提に対する疑問の提起",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "初稿の採否判定語（言う/言わん等）はなく、初稿の文面とも連続性がない。確定文としての投稿か単なる感想コメントかは文脈上確定できない。",
+        "evidence_quote": "そもそも、こういうモノを盗んだとして、現金化できるものだろうか。",
+        "analysis_candidates": [
+          {
+            "observation": "ICタグによる盗難対策という管理手法そのものよりも、盗難対象の換金性という窃盗側の動機・前提に視点を向けている。",
+            "evidence_quote": "そもそも、こういうモノを盗んだとして、現金化できるものだろうか。",
+            "limitation": "単発の疑問文にとどまり、民具の流通市場や具体的な防犯対策についての持論まで述べているわけではない。"
+          }
+        ]
+      },
+      "batch_id": "IA-8e9360d5d8d7e1a3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9782,
+          "candidatesTokenCount": 1535,
+          "totalTokenCount": 13739,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9782
+            }
+          ],
+          "thoughtsTokenCount": 2422,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T04:24:29+00:00",
+        "input_sha256": "35a21e280f616aa51d849bdfac20dc193297d19796cbbd846c73083af4ffa70b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "758c9149f96ee76dd8f49d8c97e1b42566364949",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43154505964"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "収蔵品にICタグを仕込んでリストと連携させるというのは、管理や棚卸しの効率化としては筋が通っているように見える。\n\nだが、歴史的な民具にICタグを貼るという絵面の異物感もさることながら、持ち去ろうとする側がタグを剥がしたらどうするのかといった実効性の面で、どこかすっきりしない引っ掛かりが残る。\n\n現場の切実な自衛策なのは分かるが、道具の運用としてこれがどこまで機能するのか、素直に感心していいのかは正直まだ判断がつかないな。",
+        "draft_sha256": "e843c4262d481a754007df59632b20b2c342e6cfb10aa497f9f4e2a7712ff085",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "収蔵品にICタグを仕込んでリストと連携させると",
+            "after": "そもそも、こう"
+          },
+          {
+            "operation": "replace",
+            "before": "のは、管理や棚卸しの効率化",
+            "after": "モノを盗んだ"
+          },
+          {
+            "operation": "replace",
+            "before": "は筋が通ってい",
+            "after": "、現金化でき"
+          },
+          {
+            "operation": "replace",
+            "before": "ように見える。\n\n",
+            "after": "もの"
+          },
+          {
+            "operation": "delete",
+            "before": "が、歴史的な民具にICタグを貼るという絵面の異物感もさることながら、持ち去",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "とする側がタグを剥がしたらどうするの",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "といった実効性の面で、どこかすっきりしない引っ掛かりが残る",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "\n\n現場の切実な自衛策なのは分かるが、道具の運用としてこれがどこまで機能するのか、素直に感心していいのかは正直まだ判断がつかないな。",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6722580567",
+      "unit_kind": "comment",
+      "issue_number": 276,
+      "comment_id": 6722580567,
+      "body_sha256": "85b2e896f79f2246df96670198ebf949384a8e88ec509c7abefdb63998cb5f04",
+      "url": "https://github.com/Xyngwie/-text/issues/276#issuecomment-6722580567",
+      "snapshot_sha256": "a834a8b3f26eeb1d545a2fb04246bd354300ff2daf605616dfc30ee2a8c91822",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games"
+        ],
+        "speech_act": "ゲーム内検証結果の補足説明",
+        "feedback_kind": "source_clarification",
+        "verdict": "unknown",
+        "note": "過去の自身のポストで検討していたDiablo3の装備（セヴァー）に関する後日談・検証結果を補足している。",
+        "evidence_quote": "ちなみにセヴァーは役に立ちませんでした。「倒した時」にダメージが極大になる効果であって、倒す前には普通のダメージしか与えられないという効果。",
+        "analysis_candidates": [
+          {
+            "observation": "過去ポストのアイデアに対して後から判明した仕様（倒した時のみ極大、ダメージ転送不可）を論理的に説明し、機能しなかった結論を補足している。",
+            "evidence_quote": "倒したときのダメージを他の対象に転送できるなら機能したかもしれないけど、死の刻印等を使っても転送されないのが後に検証されました。",
+            "limitation": "Diablo3の特定装備の仕様検証に関する事後共有であり、他のゲームや一般的な思考習慣にまで一般化することはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-8e9360d5d8d7e1a3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9782,
+          "candidatesTokenCount": 1535,
+          "totalTokenCount": 13739,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9782
+            }
+          ],
+          "thoughtsTokenCount": 2422,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T04:24:29+00:00",
+        "input_sha256": "35a21e280f616aa51d849bdfac20dc193297d19796cbbd846c73083af4ffa70b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "758c9149f96ee76dd8f49d8c97e1b42566364949",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43154505964"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6722590617",
+      "unit_kind": "comment",
+      "issue_number": 277,
+      "comment_id": 6722590617,
+      "body_sha256": "44f04bfb04a37ac802dd429d2be599987191051652003cbffa7a9480a2015713",
+      "url": "https://github.com/Xyngwie/-text/issues/277#issuecomment-6722590617",
+      "snapshot_sha256": "80eaf32c22eb2d0f3625ec6c622a76993589f2733154d9e3b4a478b4154af0a2",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "games",
+          "society"
+        ],
+        "speech_act": "投稿群の性質に対する要約判定",
+        "feedback_kind": "source_clarification",
+        "verdict": "unknown",
+        "note": "AIが提示した分類案に対して、個別の投稿を分析するのではなく単なるフォロワーとの交流目的であると要約して位置づけている。",
+        "evidence_quote": "交流のポストのみ。",
+        "analysis_candidates": [
+          {
+            "observation": "提示された過去投稿群を思想やノウハウの開示ではなく、他者とのコミュニケーション（交流）に特化したものとして簡潔に整理している。",
+            "evidence_quote": "交流のポストのみ。",
+            "limitation": "一文のみの短い補足であり、具体的にどの発言をどのように捉えているかの詳細な内実は読み取れない。"
+          }
+        ]
+      },
+      "batch_id": "IA-8e9360d5d8d7e1a3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9782,
+          "candidatesTokenCount": 1535,
+          "totalTokenCount": 13739,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9782
+            }
+          ],
+          "thoughtsTokenCount": 2422,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T04:24:29+00:00",
+        "input_sha256": "35a21e280f616aa51d849bdfac20dc193297d19796cbbd846c73083af4ffa70b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "758c9149f96ee76dd8f49d8c97e1b42566364949",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43154505964"
+      },
+      "draft_comparison": null
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6722627591",
+      "unit_kind": "comment",
+      "issue_number": 280,
+      "comment_id": 6722627591,
+      "body_sha256": "46a9d8719e82687d3367f0eca250d264c0b51314e1b75735f46e35e38c69a2f0",
+      "url": "https://github.com/Xyngwie/-text/issues/280#issuecomment-6722627591",
+      "snapshot_sha256": "684e21192c46b0c52ffea5258532f3a1b87f735b38fd31069171ffa73ddb156e",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "software",
+          "society"
+        ],
+        "speech_act": "システム障害対応への評価と利用者の立場からの要望表明",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "unknown",
+        "note": "AI初稿の政治的トーンや誇張表現を排し、自らの言葉で書き直した代替確定文を投稿している。採否判定語は伴わない。",
+        "evidence_quote": "技術的にどうしてそれで不具合が起きてしまうかは分からないけど、迂回案が示されているのは正しい対応。ユーザー側としては誰もがファイル形式の事を理解できるわけではないけど。公共サービス的なシステムなので一刻も早く修正を願う。",
+        "analysis_candidates": [
+          {
+            "observation": "迂回案の提示を正しい初期対応として肯定しつつ、専門知識を持たない一般利用者の視点を踏まえ、公共インフラとしての早期の根本改修を求めている。",
+            "evidence_quote": "迂回案が示されているのは正しい対応。ユーザー側としては誰もがファイル形式の事を理解できるわけではないけど。公共サービス的なシステムなので一刻も早く修正を願う。",
+            "limitation": "技術的背景への深入りは避け、エンドユーザーおよび社会インフラとしての妥当性に焦点を絞った所感である。"
+          }
+        ]
+      },
+      "batch_id": "IA-8e9360d5d8d7e1a3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9782,
+          "candidatesTokenCount": 1535,
+          "totalTokenCount": 13739,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9782
+            }
+          ],
+          "thoughtsTokenCount": 2422,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T04:24:29+00:00",
+        "input_sha256": "35a21e280f616aa51d849bdfac20dc193297d19796cbbd846c73083af4ffa70b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "758c9149f96ee76dd8f49d8c97e1b42566364949",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43154505964"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n不具合が出たこと自体より、特定JPEG起因の巻き込みと切り分け、別形式への変換という具体的な回避手順を示して解消まで漕ぎ着けた手際の良さを買う。\n\n障害の原因と利用者が取れる手を即座に晒し、修正プログラムまで道筋を通すのがインフラを預かる側の正しい矜持だ。",
+        "draft_sha256": "bb5e75f37b3f0baf88018f5bc5290da952515b2b06d2c0e3a62070904e93aa62",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "replace",
+            "before": "実験政治枠（本人の意見",
+            "after": "技術的にどうしてそれ"
+          },
+          {
+            "operation": "delete",
+            "before": "はなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "出たこと自体より",
+            "after": "起きてしまうかは分からないけど"
+          },
+          {
+            "operation": "replace",
+            "before": "特定JPEG起因",
+            "after": "迂回案が示されている"
+          },
+          {
+            "operation": "replace",
+            "before": "巻き込みと切り分け、別形式への変換という具体的な回避手順を示して解消まで漕ぎ着けた手際の良さを買う。\n\n障害の原因と利用者が取れる手を即座に晒し、修正プログラムまで道筋を通すのがインフラを預かる側の",
+            "after": "は"
+          },
+          {
+            "operation": "replace",
+            "before": "矜持だ",
+            "after": "対応"
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "ユーザー側としては誰もがファイル形式の事を理解できるわけではないけど。公共サービス的なシステムなので一刻も早く修正を願う。"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6722636055",
+      "unit_kind": "comment",
+      "issue_number": 279,
+      "comment_id": 6722636055,
+      "body_sha256": "68d699d9e2edbdc3bc1619ecd74f84fff66c048b62fd6144c12d696d1cfba272",
+      "url": "https://github.com/Xyngwie/-text/issues/279#issuecomment-6722636055",
+      "snapshot_sha256": "4792c66db9954f331c7b95e7d8fab73a3fe0ee7080b4612db2c230a1fc3dd8fc",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "life",
+          "society"
+        ],
+        "speech_act": "AIドラフトの無修整採用の提示",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "AI初稿と完全に同一のテキストがコメントされており、無修整採用と判断される。ただし自発的な口癖や強い好みの証明とはしない。",
+        "evidence_quote": "鳥羽水族館のラッコ「キラ」に多くの追悼が集まっているという話。\n\nもし自分がその場に言葉を残すなら、ただ別れを惜しむのではなく、長年にわたって大勢の視線を受け止め、場を背負い続けてくれたことへの労いと敬意を記すだろう。\n\n命を見届ける側ができる最大の誠意は、その生が果たした役割を軽く扱わず、堂々と全うした事実を讃えて送ることだ。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿のテキストを一切改変せずにそのままコメントして確定文として採用している。",
+            "evidence_quote": "命を見届ける側ができる最大の誠意は、その生が果たした役割を軽く扱わず、堂々と全うした事実を讃えて送ることだ。",
+            "limitation": "AI生成ドラフトの許容・採用であり、本人がゼロから考案した語彙や独自の表現スタイルと同一視することはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-8e9360d5d8d7e1a3",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 9782,
+          "candidatesTokenCount": 1535,
+          "totalTokenCount": 13739,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 9782
+            }
+          ],
+          "thoughtsTokenCount": 2422,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T04:24:29+00:00",
+        "input_sha256": "35a21e280f616aa51d849bdfac20dc193297d19796cbbd846c73083af4ffa70b",
+        "prompt_sha256": "219bb45e67a46e96ed5fd9ad078da3640ff4dff347df6b63f61e41f979b024c2",
+        "base_commit": "758c9149f96ee76dd8f49d8c97e1b42566364949",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43154505964"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "鳥羽水族館のラッコ「キラ」に多くの追悼が集まっているという話。\n\nもし自分がその場に言葉を残すなら、ただ別れを惜しむのではなく、長年にわたって大勢の視線を受け止め、場を背負い続けてくれたことへの労いと敬意を記すだろう。\n\n命を見届ける側ができる最大の誠意は、その生が果たした役割を軽く扱わず、堂々と全うした事実を讃えて送ることだ。",
+        "draft_sha256": "68d699d9e2edbdc3bc1619ecd74f84fff66c048b62fd6144c12d696d1cfba272",
+        "identical": true,
+        "edits": []
+      }
+    }
+  ]
+}
