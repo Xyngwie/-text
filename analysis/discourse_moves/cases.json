@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-12",
+  "status": "selected_case_classification",
+  "cases": [
+    {
+      "id": "DM001",
+      "primary_skill": "poker_analogy",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/copilot002_exploration/analogy_cases.json",
+      "json_pointer": "/cases/0/owner_example_verbatim",
+      "source_file_sha256": "89b0c553639267b1f7cd7c44754bd2235e08e85047f916683a4a7856984fff50",
+      "owner_quote": "そうだね、例題ね。\n\n 上司と食事に行って、奢ってもらいました。 \n\nではここでポーカーの理論を当てはめて理解してみます。\n\nここで大前提として、上司部下という関係でポジションに差があります。\n\nここからはアクションになります。\n最初に奢ってもらうという借りを作るわけで、これは高いポジションからのオープンレイズ・ベットだとしましょう。\nすると下のポジションである部下は、基本的にはご相伴にあずかる（コール）か、お断り（フォールド）するのが普通で、奢り返す（リレイズ）するのは、ちょっと失礼なのではないでしょうか。 \nよほど自信のあるときしかできないことでしょう？\n\nと、まあ、こういうようなことね。",
+      "analyst_rationale": "日常の返礼をポジションとアクションへ移し、返すことの意味を考える。",
+      "limit": "本人の例題。実体験でも、奢り返し一般への禁止でもない。"
+    },
+    {
+      "id": "DM002",
+      "primary_skill": "poker_analogy",
+      "secondary_skills": [],
+      "evidence_kind": "inverse_mapping",
+      "source_path": "analysis/copilot002_exploration/analogy_cases.json",
+      "json_pointer": "/cases/1/evidence/0/quote",
+      "source_file_sha256": "89b0c553639267b1f7cd7c44754bd2235e08e85047f916683a4a7856984fff50",
+      "owner_quote": "あわよくば、1BBCB（アグレッサーです。）→2BBリレイズ（当たってますよ）→2/3potリレイズ（フラッシュかOESDですかー？）などという会話というかチャンバラしたいんよね",
+      "analyst_rationale": "ベットを会話として読む対応の技法。",
+      "limit": "ポーカー→会話の方向。非ポーカー記事をポーカーで説明した実例の件数へ足さない。"
+    },
+    {
+      "id": "DM003",
+      "primary_skill": "poker_analogy",
+      "secondary_skills": [],
+      "evidence_kind": "inverse_mapping",
+      "source_path": "analysis/copilot002_exploration/analogy_cases.json",
+      "json_pointer": "/cases/3/evidence/1/quote",
+      "source_file_sha256": "89b0c553639267b1f7cd7c44754bd2235e08e85047f916683a4a7856984fff50",
+      "owner_quote": "つまりこれはただの宇宙貿易だったのだ…",
+      "analyst_rationale": "ポーカーを宇宙貿易へ見立てた関連例。",
+      "limit": "逆向きの対応。対応の正しさの実証ではない。"
+    },
+    {
+      "id": "DM004",
+      "primary_skill": "overlooked_feelings",
+      "secondary_skills": [
+        "split_evaluations"
+      ],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/copilot002_exploration/competition_owner_clarifications.json",
+      "json_pointer": "/turns/6/owner_reply_verbatim",
+      "source_file_sha256": "f0d18528f9b98808f49b702ca81e20cf8e935bf64c73d0d2d069202d69cefe01",
+      "owner_quote": "悪役でもその心情を読み取れば、裏切られたと思って負けるわけじゃん？それってかわいそうじゃない？",
+      "analyst_rationale": "悪役が負けた結果だけでなく、裏切られた側の心情へ移る。",
+      "limit": "作品への本人の読解。実在の相手が何を感じたかを確定しない。"
+    },
+    {
+      "id": "DM005",
+      "primary_skill": "overlooked_feelings",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/15/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "こういう流れの中で考えると、\nとても理解不能な人物である。\n\n自分が一番強い時期が生涯のなかで長かったけど、それに奢らず常に上を目指している人。\n自分の息子が自分より強くなった事を素直に認める柔軟さも併せ持ってるとみる。\nそれについてもうちょっと内心の悔しさとかがあるかとかを掘り下げて欲しかったなあと思う。",
+      "analyst_rationale": "強さや柔軟さだけでなく、表に出ていない悔しさを知りたいと問う。",
+      "limit": "悔しいはずだと断定せず、描写を求めている。"
+    },
+    {
+      "id": "DM006",
+      "primary_skill": "overlooked_feelings",
+      "secondary_skills": [
+        "split_evaluations",
+        "life_after_outcome"
+      ],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/27/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "トリエラは、ヘンリエッタとは対比となる構造。ケルヒャーは最期までトリエラを生かす事を諦めなかったし、娘のように扱っていた。が、それはトリエラが望む関係性ではなかったのが悲劇であって想いを遂げられなかった無念が残ると見る。",
+      "analyst_rationale": "守る側の願いと守られる側が望む関係のずれへ目を向ける。",
+      "limit": "設定の独立確認ではなく本人の解釈。"
+    },
+    {
+      "id": "DM007",
+      "primary_skill": "overlooked_feelings",
+      "secondary_skills": [
+        "split_evaluations",
+        "life_after_outcome"
+      ],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/28/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "リコは義体化前の記憶を持ってるんだよね。不治の病で寝たきりだったこと、それから条件付けでジャンへの忠誠を植え付けられていること。それを踏まえて動くことができる喜び、誰かのために働く事ができる思いで公社に尽くしている、が、戦場で散る事が彼女にとっての望みではなかっただろう。",
+      "analyst_rationale": "忠誠や充実から、戦死まで望んでいたとはしない。",
+      "limit": ""
+    },
+    {
+      "id": "DM008",
+      "primary_skill": "split_evaluations",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/0/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "人格と強さは関係ないからね。憧れはともかくああいう兄貴分的な優しさには近づけたかな？",
+      "analyst_rationale": "強さと人格を明示的に切り分ける。",
+      "limit": ""
+    },
+    {
+      "id": "DM009",
+      "primary_skill": "split_evaluations",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/13/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "友達にいると迷惑である。（笑）\n真意を掴ませないブラフが多い気がしちゃう。\nでも根底の筋は通っている人物なので信用はするけど、疲れちゃうタイプ。",
+      "analyst_rationale": "信用と、一緒にいて疲れるかを分ける。",
+      "limit": ""
+    },
+    {
+      "id": "DM010",
+      "primary_skill": "split_evaluations",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/17/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "ああ、最大の庇護者かつ理解者だね。ヒーロー像かというと、やりすぎていて、僕が誰かのドラえもんになりたいかというとそんな事はないな",
+      "analyst_rationale": "庇護者としての評価と自分が担いたい役割を分ける。",
+      "limit": ""
+    },
+    {
+      "id": "DM011",
+      "primary_skill": "split_evaluations",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/22/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "亜人としての性質をハックして戦うのは生命倫理無視してて狂気的ですごいと思うんだけど、好きでも嫌いでもない人物ですねえ。",
+      "analyst_rationale": "戦術のすごさ、倫理への評価、人物への好悪を分ける。",
+      "limit": ""
+    },
+    {
+      "id": "DM012",
+      "primary_skill": "split_evaluations",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/copilot002_exploration/competition_owner_clarifications.json",
+      "json_pointer": "/turns/8/owner_reply_verbatim",
+      "source_file_sha256": "f0d18528f9b98808f49b702ca81e20cf8e935bf64c73d0d2d069202d69cefe01",
+      "owner_quote": "それは違うだろ？ってなって、あんまり好きじゃないタイプになりそ。\n実力で勝ち、策で勝ち、僥倖で勝ち、をきちんと把握してないのは勝負師として二流以下に思えるが。",
+      "analyst_rationale": "勝利という結果を実力・策・僥倖の区別なしに誇ることを問題にする。",
+      "limit": "本人の評価基準。実際の勝因を証明したデータではない。"
+    },
+    {
+      "id": "DM013",
+      "primary_skill": "life_after_outcome",
+      "secondary_skills": [],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/8/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "ヒーローを降りて、平穏に暮らすラスト、すきかも。\n\nいぬやしきは死んじゃうし。",
+      "analyst_rationale": "ヒーローを降りたあとの平穏に話を進める。",
+      "limit": ""
+    },
+    {
+      "id": "DM014",
+      "primary_skill": "life_after_outcome",
+      "secondary_skills": [
+        "overlooked_feelings"
+      ],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/9/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "むしろその方が幸せじゃないかなあ\n\n有名税ってこわいよ",
+      "analyst_rationale": "英雄としての名声より、その後の生活への負担へ視線を向ける。",
+      "limit": ""
+    },
+    {
+      "id": "DM015",
+      "primary_skill": "life_after_outcome",
+      "secondary_skills": [
+        "split_evaluations"
+      ],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/10/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "弁慶とか関羽は男としての矜持は感じるけど、生き抜く道を選んで欲しかったなあ",
+      "analyst_rationale": "最期の矜持を認めつつ生存の道を望む。",
+      "limit": "次のケースの「意味はあった」という後続補足を併読する。"
+    },
+    {
+      "id": "DM016",
+      "primary_skill": "life_after_outcome",
+      "secondary_skills": [
+        "split_evaluations"
+      ],
+      "evidence_kind": "direct_example",
+      "source_path": "analysis/november_consolidation/hero_owner_evidence.json",
+      "json_pointer": "/records/11/owner_reply_verbatim",
+      "source_file_sha256": "c5db82adb986a8ebce57a7753e2f4c844bfb359e8d59201937dd4f3cfc81747c",
+      "owner_quote": "僕の価値観だと、しゃーなし　になるけどね\n意味はあった。だけど望みを絶たないでって感じ",
+      "analyst_rationale": "死の意味を認めることと、望みを絶たないでほしいという願いを両立させる。",
+      "limit": ""
+    },
+    {
+      "id": "DM017",
+      "primary_skill": "sustainable_method",
+      "secondary_skills": [],
+      "evidence_kind": "owner_self_report",
+      "source_path": "analysis/copilot002_exploration/learning_cost_owner_clarifications.json",
+      "json_pointer": "/turns/2/owner_reply_verbatim",
+      "source_file_sha256": "78a94ad5e685752604a1a20d9b632cea0b56ddb4beeb558082ab990b154e1181",
+      "owner_quote": "ランニングコストかな。それが現行よりも脳リソースを低燃費で実行できるなら、練習したり訓練する価値があると思う。\n\nあと、大抵のことは、誰かに出来て僕には出来ないわけないとも思っている。",
+      "analyst_rationale": "習得の手間から、習得後に使い続ける負担へ評価軸を移す。",
+      "limit": "反復使用の費用を見る自己説明。制度改善記事の完成例そのものではない。"
+    },
+    {
+      "id": "DM018",
+      "primary_skill": "sustainable_method",
+      "secondary_skills": [],
+      "evidence_kind": "owner_self_report",
+      "source_path": "analysis/copilot002_exploration/wording_strategy_owner_clarifications.json",
+      "json_pointer": "/turns/0/owner_reply_verbatim",
+      "source_file_sha256": "4aaa6a4549b993358d89e71708ad7befbce25ef8159a15c5a6bb91ac9d95d938",
+      "owner_quote": "手癖、脳内リソースの少なさ、継戦能力、持続性、体調不良（疲れ、睡眠不足、酔い）でも実行できるか否か　あたりかな",
+      "analyst_rationale": "疲れや睡眠不足でも実行できるかを方法の評価に含める。",
+      "limit": ""
+    },
+    {
+      "id": "DM019",
+      "primary_skill": "sustainable_method",
+      "secondary_skills": [
+        "split_evaluations"
+      ],
+      "evidence_kind": "owner_self_report",
+      "source_path": "analysis/copilot002_exploration/wording_strategy_owner_clarifications.json",
+      "json_pointer": "/turns/1/owner_reply_verbatim",
+      "source_file_sha256": "4aaa6a4549b993358d89e71708ad7befbce25ef8159a15c5a6bb91ac9d95d938",
+      "owner_quote": "ベット額の可変化は、たぶん利益を伸ばすだろうけど、その額を考えなくても何度も殴れば勝てるので楽してますねえ",
+      "analyst_rationale": "利益を伸ばすかもしれない細かな最適化より操作負荷を省く。",
+      "limit": "利益の比較は本人の推測であり検証済み数値ではない。"
+    },
+    {
+      "id": "DM020",
+      "primary_skill": "sustainable_method",
+      "secondary_skills": [],
+      "evidence_kind": "owner_self_report",
+      "source_path": "analysis/copilot002_exploration/wording_strategy_owner_clarifications.json",
+      "json_pointer": "/turns/2/owner_reply_verbatim",
+      "source_file_sha256": "4aaa6a4549b993358d89e71708ad7befbce25ef8159a15c5a6bb91ac9d95d938",
+      "owner_quote": "相手の手読み、完全カウンターであるかどうかの判定に全振りしてます。\nこれによってノータイムで攻防をこなしつつ、利益的に振る舞い、安易な敗北を避ける事が出来ていると分析しています。",
+      "analyst_rationale": "省いた注意を手読みとカウンター検知へ振り向ける。",
+      "limit": "成果は本人の自己分析。一般的有効性は未実証。"
+    },
+    {
+      "id": "DM021",
+      "primary_skill": "sustainable_method",
+      "secondary_skills": [],
+      "evidence_kind": "owner_self_report",
+      "source_path": "analysis/copilot002_exploration/evaluation_owner_clarifications.json",
+      "json_pointer": "/turns/1/owner_reply_verbatim",
+      "source_file_sha256": "f3f242904be676ea99206b583ccc93a42ba61e4c4f7ffe60cf92a7a91cdf0839",
+      "owner_quote": "例外が多い方法は検証が困難になりやすいので美しくない。基本はシンプルイズベスト。",
+      "analyst_rationale": "例外が多いほど検証が困難という理由で簡潔さを求める。",
+      "limit": "短ければ常に優れるという一般則ではない。"
+    }
+  ]
+}
