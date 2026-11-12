@@ -2,7 +2,7 @@ name: X archive stages 1 and 2
 
 on:
   schedule:
-    - cron: '23 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       batch_size:
