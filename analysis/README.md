@@ -119,3 +119,5 @@
 - [作品に触れたこと、人物を覚えていること、言葉だけ残ること](november_consolidation/hero_exposure_and_voice.md)：未読・記憶の薄さ・連想の区別と、口調の追加確認。音声起こしは書き言葉の記録から分離。
 
 - [サブカルから離れた時期は見えるか](november_consolidation/exposure_session_20261111.md)：今回の人物質問94件を全件記録・集計。1990年代の接触の厚みと、媒体ごとの変化の仮説を、実際の接触年とは分けて整理。
+
+- [ポーカーの切り口を、原稿の一部で試す](november_consolidation/poker_angle_generation.md)：本人指定を受けRSS生成へ頻度抽選を追加。初期値25％は実測頻度ではなく試行値。対応の検討と実使用を区別し、Issueにも条件を保存。

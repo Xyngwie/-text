@@ -24,6 +24,29 @@ REACTION_DIRECTIONS = ('賛成・称賛', '反対・批判', '驚き・好奇心
 REACTION_FORMS = ('率直な感想', '具体的な提案', '別分野との比喩', '自分ならどうするかという仮定', '短い断言', '疑問から考えを進める', '軽口・皮肉', '良い点を拾って褒める')
 
 
+# Trial probability, not a measured frequency in the owner's corpus.
+POKER_ANGLE_PERCENT = 25
+
+
+def select_poker_angle():
+    return 'poker_mapping' if secrets.randbelow(100) < POKER_ANGLE_PERCENT else 'unrestricted'
+
+
+def angle_instruction(angle):
+    if angle == 'poker_mapping':
+        return ('今回の切り口候補: poker_mapping（ポーカーの対応関係）。'
+                '今回の探索のform指定よりこの切り口の検討を優先する。'
+                '元の題材の立場・働きかけ・応答・情報・損失のうち対応する関係を捉え、'
+                'そこから元の話の見えにくい点や次の一手を説明する。'
+                '単語の飾りや毎回同じ勝負の比喩にせず、対応が弱ければ通常の切り口へ戻す。'
+                'value_mappingに対応と限界、または見送った理由を短く残す。')
+    if angle == 'unrestricted':
+        return ('今回の切り口候補: unrestricted（通常の選択）。'
+                'ポーカーへ寄せる指定はない。題材に合う切り口を選ぶ。'
+                '自然に必要ならポーカーを使ってもよいが、口癖として挿入しない。')
+    raise ValueError('Unknown writing angle')
+
+
 def select_exploration():
     return dict(direction=secrets.choice(REACTION_DIRECTIONS), form=secrets.choice(REACTION_FORMS))
 
@@ -178,7 +201,7 @@ def validate_generation(value):
     return value
 
 
-def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25, exploration=None):
+def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25, exploration=None, writing_angle=None):
     validate_intensity(intensity)
     source_data = {
         "candidate_id": candidate["candidate_id"],
@@ -197,6 +220,7 @@ def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25
         instructions
         + ("\n\n## 今回の探索条件\n" + json.dumps(exploration, ensure_ascii=False)
            + "\n本人が言いそうな候補として、この反応と展開を試す。本人の賛否や経験が確認済みとは扱わない。\n" if exploration else '')
+        + ("\n\n## 今回の話の切り口\n" + angle_instruction(writing_angle) + "\n" if writing_angle else "")
         + "\n\n## 判断条件（参考データ）\n```json\n"
         + json.dumps(policy, ensure_ascii=False, indent=2)
         + "\n```\n" + examples
@@ -208,7 +232,7 @@ def prompt_for(candidate, instructions, policy, calibration=None, intensity=2.25
     )
 
 
-def issue_payload(candidate, generation, intensity=2.25, exploration=None):
+def issue_payload(candidate, generation, intensity=2.25, exploration=None, writing_angle=None):
     validate_intensity(intensity)
     draft = generation["draft"].strip()
     draft_sha = hashlib.sha256(draft.encode("utf-8")).hexdigest()
@@ -224,6 +248,8 @@ def issue_payload(candidate, generation, intensity=2.25, exploration=None):
     unknowns = "\n".join(f"- {item}" for item in generation["uncertainties"]) or "- なし"
     mapping = "\n".join(f"- {item}" for item in generation["value_mapping"]) or "- なし"
     exploration_note = ('探索条件: ' + exploration['direction'] + ' ／ ' + exploration['form']) if exploration else ''
+    angle_note = ('切り口の抽選: ポーカーの対応関係を検討' if writing_angle == 'poker_mapping'
+                  else '切り口の抽選: 通常の選択') if writing_angle else ''
     body = f"""<!-- rss-agent:v1 -->
 <!-- candidate-id:{candidate['candidate_id']} -->
 <!-- draft-sha256:{draft_sha} -->
@@ -233,6 +259,8 @@ def issue_payload(candidate, generation, intensity=2.25, exploration=None):
 {warning}
 
 {exploration_note}
+
+{angle_note}
 
 ## 出典候補
 
@@ -287,6 +315,8 @@ def issue_payload(candidate, generation, intensity=2.25, exploration=None):
         "draft_sha256": draft_sha,
         "intensity": intensity,
         "exploration": exploration,
+        "writing_angle": writing_angle,
+        "poker_angle_trial_percent": POKER_ANGLE_PERCENT if writing_angle else None,
     }
 
 
@@ -300,8 +330,9 @@ def generate_all(input_data, generator):
             continue
         intensity = select_intensity()
         exploration = select_exploration()
-        generated = validate_generation(generator(prompt_for(candidate, instructions, policy, calibration, intensity, exploration)))
-        issues.append(issue_payload(candidate, generated, intensity, exploration))
+        writing_angle = select_poker_angle()
+        generated = validate_generation(generator(prompt_for(candidate, instructions, policy, calibration, intensity, exploration, writing_angle)))
+        issues.append(issue_payload(candidate, generated, intensity, exploration, writing_angle))
     return {"schema_version": 1, "issues": issues, "collection_errors": input_data.get("errors", [])}
 
 

@@ -77,3 +77,39 @@ class ExplorationTests(IntensityTests):
             issue = dict(number=1, body=payload['body'], labels=[{'name':'rss-agent'}])
             events, _ = build_events([], issue, [dict(id=1, body=body, user={'login':'Owner'})], 'Owner', 'Owner', allow_empty=True)
             self.assertEqual(events, [])
+
+    def test_poker_angle_draw_has_exact_25_of_100_slots(self):
+        with patch.object(rss.secrets, 'randbelow', side_effect=range(100)) as draw:
+            values = [rss.select_poker_angle() for _ in range(100)]
+        self.assertEqual(values.count('poker_mapping'), 25)
+        self.assertEqual(values.count('unrestricted'), 75)
+        self.assertTrue(all(call.args == (100,) for call in draw.call_args_list))
+
+    def test_angle_reaches_prompt_and_receipt_independently(self):
+        seen = []
+        def generate(prompt):
+            seen.append(prompt)
+            return self.generation(prompt)
+        with patch.object(rss, 'select_poker_angle', side_effect=['poker_mapping', 'unrestricted']), \
+             patch.object(rss, 'select_exploration', return_value=dict(direction='共感・いたわり', form='短い断言')), \
+             patch.object(rss, 'select_intensity', return_value=1.75):
+            result = rss.generate_all({'candidates': [self.candidate(1), self.candidate(2)]}, generate)
+        first, second = result['issues']
+        self.assertEqual(first['writing_angle'], 'poker_mapping')
+        self.assertEqual(second['writing_angle'], 'unrestricted')
+        self.assertEqual(first['poker_angle_trial_percent'], 25)
+        self.assertIn('対応が弱ければ通常の切り口へ戻す', seen[0])
+        self.assertIn('value_mappingに対応と限界', seen[0])
+        self.assertIn('ポーカーへ寄せる指定はない', seen[1])
+        self.assertIn('切り口の抽選: ポーカーの対応関係を検討', first['body'])
+        self.assertIn('切り口の抽選: 通常の選択', second['body'])
+        self.assertEqual(first['intensity'], second['intensity'])
+        self.assertEqual(first['exploration'], second['exploration'])
+
+    def test_rejected_candidates_never_draw_or_generate(self):
+        candidate = self.candidate(1)
+        candidate['rejected_reasons'] = ['duplicate']
+        with patch.object(rss, 'select_poker_angle') as draw, patch.object(rss, 'call_gemini') as api:
+            self.assertEqual(rss.generate_all({'candidates': [candidate]}, api)['issues'], [])
+            draw.assert_not_called()
+            api.assert_not_called()
