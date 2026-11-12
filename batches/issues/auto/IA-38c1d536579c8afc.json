@@ -1,0 +1,377 @@
+{
+  "batch_id": "IA-38c1d536579c8afc",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6774035669",
+      "unit_kind": "comment",
+      "issue_number": 297,
+      "comment_id": 6774035669,
+      "body_sha256": "6778d943a518a67dfb68e631815df411048926f224adb77e6862ed0330bd0b5b",
+      "url": "https://github.com/Xyngwie/-text/issues/297#issuecomment-6774035669",
+      "snapshot_sha256": "3cd3a2ce62f4c8c2c620b9eb57b5d03ceb958af322e3ac4a137092be78d0d30f",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "economy",
+          "society",
+          "politics"
+        ],
+        "speech_act": "AIの初稿から実験枠表記や笑い表記を除去し、自身の実感を1文加筆して確定文として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #297の草稿を採用しつつ、末尾に「年末まで20時間制限があるので余計にそう思える。」という自身の状況を加筆している。",
+        "evidence_quote": "年末まで20時間制限があるので余計にそう思える。",
+        "analysis_candidates": [
+          {
+            "observation": "AIが生成した制度論の草稿に対し、自身に課されている時間制限の実感を結びつけて発言を確定させている。",
+            "evidence_quote": "年末まで20時間制限があるので余計にそう思える。",
+            "limitation": "「20時間制限」の具体的な文脈や職種・契約内容については明記されておらず、本Issue単体からは詳細を断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-38c1d536579c8afc",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 12598,
+          "candidatesTokenCount": 1258,
+          "totalTokenCount": 13856,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 12598
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T21:09:44+00:00",
+        "input_sha256": "bc1c8c81c32549529f4f86081cfca1078a27bfeaff36d5289ec2cd5d2d3a5b19",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "605093bb25675193591feededa8860940611a491",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43307396056"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n残業規制だ副業の労働時間通算だと、真面目に帳尻を合わせようとするほど現場の管理コストばかりが跳ね上がる。いっそ複雑な勤怠管理をやめて、週40時間の「労働リソース」を個人が自由に割り振れるコスト制のルール設計に改修したらどうだ？（笑）\n\n本業に30コスト、副業に10コスト、余った分は会社に買い取らせるか翌週へキャリーオーバー。役所のややこしい通算計算を押し付け合うより、直感的に自分の手札を管理できる制度にする方がよほど健全だ。重苦しい労務論議をこねくり回す暇があるなら、これくらい分かりやすい割り切りを本気で試してほしいものだな。",
+        "draft_sha256": "e777edaee71a0511e79667f1bdd5f8e8134845a1617f5664b40fb2836ec63911",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "（笑）",
+            "after": ""
+          },
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\n年末まで20時間制限があるので余計にそう思える。"
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6793063075",
+      "unit_kind": "comment",
+      "issue_number": 311,
+      "comment_id": 6793063075,
+      "body_sha256": "25d0ba0e3225ee83e1b00ebdf78c05ee18f957ff0824b7a8b044459a2ac8b86e",
+      "url": "https://github.com/Xyngwie/-text/issues/311#issuecomment-6793063075",
+      "snapshot_sha256": "7faa4846c97cf6958bb4defbefa844a1c9c281a4a18d556b33f67597562ffd5a",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "culture"
+        ],
+        "speech_act": "AI草稿から末尾の笑い表記のみを除去して確定文として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #311の初稿から「（笑）」を削除した以外は草稿をそのままコピーして確定文としている。実投稿の明示的な報告はない。",
+        "evidence_quote": "起訴内容をあっさり認めた往生際の良さだけは褒めてやる。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿末尾の「（笑）」のみを削り、その他の本文はそのまま採用している。",
+            "evidence_quote": "起訴内容をあっさり認めた往生際の良さだけは褒めてやる。",
+            "limitation": "（笑）の削除が文体上の好みか題材（飲酒運転事故・重傷）への配慮によるものかはIssue内の記述からは確定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-38c1d536579c8afc",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 12598,
+          "candidatesTokenCount": 1258,
+          "totalTokenCount": 13856,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 12598
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T21:09:44+00:00",
+        "input_sha256": "bc1c8c81c32549529f4f86081cfca1078a27bfeaff36d5289ec2cd5d2d3a5b19",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "605093bb25675193591feededa8860940611a491",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43307396056"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "ウーロンハイとテキーラを煽って時速160キロで爆走、同乗者に重傷を負わせるという完全な大失態だが、法廷でくだらない言い訳を並べ立てずに起訴内容をあっさり認めた往生際の良さだけは褒めてやる（笑）。\n\nやらかした事実そのものは二度と取り返しがつかないが、見苦しく責任逃れを試みて時間を浪費する輩よりは遥かに清々しい。\n\n正面から認めたなら、あとは言い訳抜きで背負うべき代償をきっちり清算することだな。",
+        "draft_sha256": "c4160b42e2205e48a05eda52101e2eb090370ed09d61a49777b73d497c58219c",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "（笑）",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6793113001",
+      "unit_kind": "comment",
+      "issue_number": 310,
+      "comment_id": 6793113001,
+      "body_sha256": "ed9f80109790d6fce504b2e5f03d17a94fc066751a25b7ba5305bbbb6a956b42",
+      "url": "https://github.com/Xyngwie/-text/issues/310#issuecomment-6793113001",
+      "snapshot_sha256": "24904038e4ad9b72d40bc98c307a34d903d1fcc2cfa77a4a7451402605a3d960",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "economy",
+          "society"
+        ],
+        "speech_act": "AI草稿の前置きを削り、表現の一部を修整して確定文として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #310の初稿から冒頭の実験枠断り書きを削除し、「褒めていい手筋だ」を「認めたい」へと修整して確定文としている。",
+        "evidence_quote": "公的基盤の維持へ機能的に接続した点は素直に認めたい。",
+        "analysis_candidates": [
+          {
+            "observation": "AI草稿の「素直に褒めていい手筋だ」を「素直に認めたい」に置き換えている。",
+            "evidence_quote": "公的基盤の維持へ機能的に接続した点は素直に認めたい。",
+            "limitation": "語彙の選択が「褒める」という上からの評価を避けたのか、語感の調整に過ぎないのかは本人の追加コメントがないため断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-38c1d536579c8afc",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 12598,
+          "candidatesTokenCount": 1258,
+          "totalTokenCount": 13856,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 12598
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T21:09:44+00:00",
+        "input_sha256": "bc1c8c81c32549529f4f86081cfca1078a27bfeaff36d5289ec2cd5d2d3a5b19",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "605093bb25675193591feededa8860940611a491",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43307396056"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n美談や情緒として持ち上げる気はないが、地銀の遺贈相談インフラを地域医療の財源確保へ素直につなげた導線設計自体は手堅く、筋が良い。\n\n個人の善意やお題目に頼るのではなく、資産整理の実務機能を公的基盤の維持へ機能的に接続した点は素直に褒めていい手筋だ。地味だが、こういう実利的な枠組み作りが一番堅実に効く。",
+        "draft_sha256": "910847e9568ce5f4842521c64d08fbc0b92eefc7eb2f36db4bbfa7454fe5d8a0",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "褒",
+            "after": "認"
+          },
+          {
+            "operation": "replace",
+            "before": "て",
+            "after": "た"
+          },
+          {
+            "operation": "delete",
+            "before": "い手筋だ",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6793151321",
+      "unit_kind": "comment",
+      "issue_number": 309,
+      "comment_id": 6793151321,
+      "body_sha256": "c3578c739fb264d143f8e6eb9af3e5907ac347df4d20bd1a69fea7130ef1f33f",
+      "url": "https://github.com/Xyngwie/-text/issues/309#issuecomment-6793151321",
+      "snapshot_sha256": "743d03641cac4cdb0272226a002d7e3bcc1dcac672db317f668c465556aa48a1",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "society",
+          "science"
+        ],
+        "speech_act": "AI草稿から前置きおよび末尾の段落を削除して確定文として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #309の初稿から冒頭の断り書きと最終段落「副反応で現場がパニックになるような…」を丸ごと削除し、2段落構成で確定文としている。",
+        "evidence_quote": "人間は痛い目を見ないと動かない生き物だという前提に立っているあたり、実に合理的で悪くない。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿にあった「副反応で現場がパニックになるような…」という懸念段落を落とし、合理的であるという評価で締めくくっている。",
+            "evidence_quote": "人間は痛い目を見ないと動かない生き物だという前提に立っているあたり、実に合理的で悪くない。",
+            "limitation": "最終段落を削除した理由（蛇足と感じたのか、内容に不同意だったのか）は明示されていない。"
+          }
+        ]
+      },
+      "batch_id": "IA-38c1d536579c8afc",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 12598,
+          "candidatesTokenCount": 1258,
+          "totalTokenCount": 13856,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 12598
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T21:09:44+00:00",
+        "input_sha256": "bc1c8c81c32549529f4f86081cfca1078a27bfeaff36d5289ec2cd5d2d3a5b19",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "605093bb25675193591feededa8860940611a491",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43307396056"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n「防災ワクチン」とはまた気の利いたネーミングを持ち出してきたものだ。要するに、本番で手遅れにならないよう、管理された環境であらかじめ微量のトラブルを注入して抗体を作っておこうという話だろう。\n\n「日頃から意識を高めましょう」などという退屈なお題目を唱えさせるより、実際に暗闇や煙の理不尽さを一度味わわせる方がよほど身に染みる。人間は痛い目を見ないと動かない生き物だという前提に立っているあたり、実に合理的で悪くない。\n\n副反応で現場がパニックになるようなお粗末な設計でなければ、こういう「前払いの失敗体験」はもっと試されていいはずだ。",
+        "draft_sha256": "af4abc259361770425e3c70a808c0d8469c06e05af24602acb9b8469933266a5",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          },
+          {
+            "operation": "delete",
+            "before": "\n\n副反応で現場がパニックになるようなお粗末な設計でなければ、こういう「前払いの失敗体験」はもっと試されていいはずだ。",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6810959020",
+      "unit_kind": "comment",
+      "issue_number": 306,
+      "comment_id": 6810959020,
+      "body_sha256": "d28c4869a2fe7853f4245f7847d8d99e76e5a5f83f6fb91d4661de3001ff8f22",
+      "url": "https://github.com/Xyngwie/-text/issues/306#issuecomment-6810959020",
+      "snapshot_sha256": "0ec2e2f400c1a2adaaf26cbcaff2234759c288ac1353698e94fd26498a89c90d",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "mixed",
+        "themes": [
+          "software",
+          "society"
+        ],
+        "speech_act": "AI草稿をそのまま維持しつつ、末尾に注意喚起の1文を加筆して確定文として提示する発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #306の初稿本文をすべて維持した上で、「また直ちにサイバー攻撃と決めつける早計も控えるべきである。」を自発的に追加している。",
+        "evidence_quote": "また直ちにサイバー攻撃と決めつける早計も控えるべきである。",
+        "analysis_candidates": [
+          {
+            "observation": "通信障害の技術的連鎖を論じる草稿に対し、早急な陰謀論やサイバー攻撃説への飛びつきを戒める補足を加えている。",
+            "evidence_quote": "また直ちにサイバー攻撃と決めつける早計も控えるべきである。",
+            "limitation": "特定の報道やSNS上の言説を念頭に置いたものかは本文から読み取れない。"
+          }
+        ]
+      },
+      "batch_id": "IA-38c1d536579c8afc",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 12598,
+          "candidatesTokenCount": 1258,
+          "totalTokenCount": 13856,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 12598
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-12T21:09:44+00:00",
+        "input_sha256": "bc1c8c81c32549529f4f86081cfca1078a27bfeaff36d5289ec2cd5d2d3a5b19",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "605093bb25675193591feededa8860940611a491",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43307396056"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "短期間で5Gの通信障害が再発したというのは、単なる部品の故障というより、精密に組み上げすぎた巨大なピタゴラスイッチで一箇所の微小なズレが全体を止めているような奇妙な脆さを感じさせる。\n\n高速・大容量を極める最新規格ほど各要素の連動がシビアになり、手前で抑えた負荷が別の合流地点へ波のように跳ね返っているのかもしれない。\n\n単なる不手際と片付けるのではなく、どういう連鎖がボトルネックを生んだのか、複雑系システムの盲点として構造の解明が気になるな。",
+        "draft_sha256": "f3f2c82b2c895e390766a1e620b412a32eae1a1eb021c3d0f2e570e3bd5c683d",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "\n\nまた直ちにサイバー攻撃と決めつける早計も控えるべきである。"
+          }
+        ]
+      }
+    }
+  ]
+}
