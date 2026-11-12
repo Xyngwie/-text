@@ -227,12 +227,19 @@ def main():
     parser.add_argument("--closing-actor", required=True)
     parser.add_argument("--log", type=Path, default=DEFAULT_LOG)
     parser.add_argument('--allow-empty', action='store_true')
+    parser.add_argument('--dispositions-log', type=Path,
+                        help='Optional separate RSS close-decision ledger')
     args = parser.parse_args()
     issue = json.loads(args.issue_file.read_text(encoding="utf-8"))
     comments = json.loads(args.comments_file.read_text(encoding="utf-8"))
     existing = load_events(args.log)
     events, summary = build_events(existing, issue, comments, args.authorized_login, args.closing_actor, args.allow_empty)
     atomic_write(args.log, events)
+    if args.dispositions_log:
+        from rss_draft_dispositions import record, validate as validate_dispositions
+        summary['rss_disposition'] = record(args.dispositions_log, issue, comments,
+                                            args.authorized_login, args.closing_actor)
+        validate_dispositions(args.dispositions_log)
     print(json.dumps(summary, ensure_ascii=False))
 
 

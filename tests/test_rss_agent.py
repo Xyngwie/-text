@@ -159,7 +159,8 @@ class RssAgentTest(unittest.TestCase):
         self.assertIn("投稿禁止", issue["body"])
         self.assertIn("experimental-politics", issue["labels"])
         self.assertIn("タグやコードブロックは不要", issue["body"])
-        self.assertIn("Closeは不要", issue["body"])
+        self.assertIn("本文をコメントせずCloseした草稿は不採用", issue["body"])
+        self.assertIn("本人が採用した発言として記録", issue["body"])
         self.assertIn("本人承認済み・未投稿", issue["body"])
 
     def test_model_selection_prefers_stable_flash_and_excludes_specialized_models(self):

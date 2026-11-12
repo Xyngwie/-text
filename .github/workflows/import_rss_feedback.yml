@@ -2,7 +2,7 @@ name: Import approved RSS feedback
 
 on:
   issues:
-    types: [closed]
+    types: [closed, reopened]
   issue_comment:
     types: [created, edited]
 
@@ -53,20 +53,22 @@ jobs:
             --comments-file "$RUNNER_TEMP/comments.json" \
             --authorized-login "$AUTHORIZED_LOGIN" \
             --closing-actor "$CLOSING_ACTOR" \
-            --allow-empty
+            --allow-empty \
+            --dispositions-log data/rss_draft_dispositions.jsonl
           python3 tools/validate.py
 
       - name: Commit append-only feedback event
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
-          if git diff --quiet -- data/publication_events.jsonl; then
+          git add data/publication_events.jsonl
+          if test -f data/rss_draft_dispositions.jsonl; then git add data/rss_draft_dispositions.jsonl; fi
+          if git diff --cached --quiet; then
             echo "No new feedback event"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/publication_events.jsonl
           git commit -m "Import approved RSS feedback from issue #$ISSUE_NUMBER"
           for attempt in 1 2 3; do
             git pull --rebase origin main
