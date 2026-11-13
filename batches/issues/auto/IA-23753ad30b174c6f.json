@@ -1,0 +1,77 @@
+{
+  "batch_id": "IA-23753ad30b174c6f",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6847882297",
+      "unit_kind": "comment",
+      "issue_number": 326,
+      "comment_id": 6847882297,
+      "body_sha256": "714aef4ea5a47007722c508d21098162e788d77749287aafeb82d3f79eed106c",
+      "url": "https://github.com/Xyngwie/-text/issues/326#issuecomment-6847882297",
+      "snapshot_sha256": "568ae3bc7b00148d2a7f16b552e56e65e9330e700fb1bd64869090e6a2326f31",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "ai",
+          "society",
+          "poker",
+          "thinking"
+        ],
+        "speech_act": "初稿からメタ注記を削除した確定本文の提示（採用発言）",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "rss-agentラベルの草稿に対し、初稿冒頭の実験枠注記のみを削除した本文を本人がコメントしてIssueがCloseされているため、採用原稿として扱える。ただし外部SNSへの実投稿報告は含まれていない。",
+        "evidence_quote": "全員が強力なソルバーを手元に置いてプレイできる卓で、「じゃあプレイヤー自身の腕前をどこで測るのか」を必死に問い直すようなものだ。",
+        "analysis_candidates": [
+          {
+            "observation": "ボットが提示したポーカーのソルバー比喩および教育評価への共感を示す初稿から、メタ注記のみを除去して確定文としてそのまま採用している。",
+            "evidence_quote": "安易な使用禁止に逃げず、激変したルールを受け止めて泥臭く基準を模索している現場には素直に頭が下がる。本当にご苦労なことだし、応援したい挑戦だ。",
+            "limitation": "AI初稿の無修整採用（メタ行の削除のみ）であり、本人の自発的な文体や独自の語彙ではなく許容範囲としての採用に留まる可能性がある。"
+          }
+        ]
+      },
+      "batch_id": "IA-23753ad30b174c6f",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 3478,
+          "candidatesTokenCount": 389,
+          "totalTokenCount": 4677,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 3478
+            }
+          ],
+          "thoughtsTokenCount": 810,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-13T18:09:56+00:00",
+        "input_sha256": "d3a39dc6b6a606f28d88064b2d375e626a956e17e7100bbaf67b66f08f6d453d",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "ac361e3437de253a0d2b50d47606bf0f440e4ebe",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43479852133"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n全員が強力なソルバーを手元に置いてプレイできる卓で、「じゃあプレイヤー自身の腕前をどこで測るのか」を必死に問い直すようなものだ。答えを出すだけならAIに代打ちさせれば済む時代に、出題と評価を背負わされる教育現場の苦悩は察するに余りある。\n\n結果の一致だけを拾う採点ならいくらでも楽ができるが、それではツールの性能を測っているだけで本人の学びにはならない。提示された解をどう疑い、どの文脈で自分の手として採用したのかという思考の筋道を評価しようとすれば、教える側の負担は跳ね上がる。\n\n安易な使用禁止に逃げず、激変したルールを受け止めて泥臭く基準を模索している現場には素直に頭が下がる。本当にご苦労なことだし、応援したい挑戦だ。",
+        "draft_sha256": "871262cd6b63b5f347ca1b2b77ca9d562d03b663814419e5b4a654cc592dfff3",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
