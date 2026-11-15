@@ -1,0 +1,76 @@
+{
+  "batch_id": "IA-39e9d96b64b1e1f8",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6892430502",
+      "unit_kind": "comment",
+      "issue_number": 343,
+      "comment_id": 6892430502,
+      "body_sha256": "eb0943bc545c066103d921f12c2979a66ff31196571388acba6fdaa0951d820b",
+      "url": "https://github.com/Xyngwie/-text/issues/343#issuecomment-6892430502",
+      "snapshot_sha256": "9037a811f0f0d26b2a6b89500a055ee18f0f3dc5a93f5f904ee6b45d01c431a2",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "politics",
+          "world",
+          "economy"
+        ],
+        "speech_act": "AI初稿から実験注記を削除した確定本文の提示による採用",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿冒頭のメタ注記（実験政治枠...）を除いた本文がそのままコメントされており、Issueがクローズされているため採用原稿として扱える。ただし実投稿の報告コメントはないため外部投稿済みとは確認できない。",
+        "evidence_quote": "米中の覇権争いの狭間に立ち、安全保障で連携を取りつつも経済の不均衡には容赦なく是正を迫る。この全方位へ神経をすり減らす綱渡りを強いられる指導者の重圧は、並大抵のものではない。",
+        "analysis_candidates": [
+          {
+            "observation": "AI草稿から冒頭のメタ説明を除去した文章をそのまま確定文として採用している。",
+            "evidence_quote": "米中の覇権争いの狭間に立ち、安全保障で連携を取りつつも経済の不均衡には容赦なく是正を迫る。この全方位へ神経をすり減らす綱渡りを強いられる指導者の重圧は、並大抵のものではない。",
+            "limitation": "AI生成文の無修整採用（注記削除のみ）であるため、本人の自発的な文体や強いこだわりを示す証拠とはみなせず、許容範囲内であること以上の好悪は判断できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-39e9d96b64b1e1f8",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 3338,
+          "candidatesTokenCount": 399,
+          "totalTokenCount": 4643,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 3338
+            }
+          ],
+          "thoughtsTokenCount": 906,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-15T11:33:44+00:00",
+        "input_sha256": "786ec21617b3c37ed8fa810e23d807b4fc91c64cb4733170f9041b9a9941e02a",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "36d9b9108ce44faef0a60fb914902468fb4923a5",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43709492217"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n米中の覇権争いの狭間に立ち、安全保障で連携を取りつつも経済の不均衡には容赦なく是正を迫る。この全方位へ神経をすり減らす綱渡りを強いられる指導者の重圧は、並大抵のものではない。\n\nもし自分が同じ舵取りを託されたなら、摩擦を嫌ってどちらかの陣営の傘の下へ安易に逃げ込みたくなるはずだ。だが、主権と自国民の生活を守るために孤立のリスクを引き受け、泥臭く実利をもぎ取りにいく姿勢は素直に頭が下がる。大国の都合に消費されまいと踏ん張る現場の苦闘は、外野が冷笑できる筋合いではないな。",
+        "draft_sha256": "1f29a5a3b05584566d2910c6287c8dfbb86de18a74bd588d0550e1f15ae040ca",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
