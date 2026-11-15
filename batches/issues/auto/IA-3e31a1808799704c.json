@@ -1,0 +1,215 @@
+{
+  "batch_id": "IA-3e31a1808799704c",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6897733919",
+      "unit_kind": "comment",
+      "issue_number": 339,
+      "comment_id": 6897733919,
+      "body_sha256": "1f3378fd04101cd4a7bfdaa498d3855bbb3fbc8e034d3e405f217fe07530cca9",
+      "url": "https://github.com/Xyngwie/-text/issues/339#issuecomment-6897733919",
+      "snapshot_sha256": "63d966ee056c8bf4eab8c729d7a027f9b3826f7f2c2c43ce2d0fd3b9741dd7f5",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "life",
+          "politics"
+        ],
+        "speech_act": "確定本文の提示および福祉施策の要求",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "botが生成した初稿から前置きの注釈文を除去し、本文をそのまま確定文としてコメントしてIssueをクローズしている。2026-11-12の運用基準に基づき採用原稿として扱えるが、実投稿報告や自発的な文章加筆はない。",
+        "evidence_quote": "北国の冬において、灯油の確保は単なる家計のやり繰りではなく生命維持のインフラそのものだ。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿の命題「灯油確保は生命維持インフラであり末端へ負担を押し付けない支援設計が必要」という論旨をそのまま受容している。",
+            "evidence_quote": "命に関わる防寒の負担を末端へ押し付けない支援設計こそが、いま何よりも求められている。",
+            "limitation": "AI草稿の注釈削除のみによる採用であるため、表現や語彙が本人の自発的な選好や口調と完全に一致しているかは判断できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-3e31a1808799704c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8100,
+          "candidatesTokenCount": 906,
+          "totalTokenCount": 10035,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8100
+            }
+          ],
+          "thoughtsTokenCount": 1029,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-15T18:00:39+00:00",
+        "input_sha256": "1022e91e92d16c3a013ba19bcd0f498e8b6801c463b090c4598b35c13c9963ec",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "e2d4ffaa026881f154f4490aaf83b1473fac4ea3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43744231373"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n北国の冬において、灯油の確保は単なる家計のやり繰りではなく生命維持のインフラそのものだ。国際情勢のあおりをまともに受けて暖房を削らざるを得ないような不安を、現場の暮らしにそのまま背負わせるのはあまりに酷だろう。\n\n個人の節約や我慢で耐えさせるのではなく、自治体の福祉灯油の助成基準を緩めることや、直接届く購入バウチャーの支給など、寒さが本格化する前に手遅れを防ぐ具体策を急ぐべきだ。命に関わる防寒の負担を末端へ押し付けない支援設計こそが、いま何よりも求められている。",
+        "draft_sha256": "f09136d387f41c61467ab65a37c8bcdcdd7a7314dafbbf8ff8b4c7e79aded82d",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6897747257",
+      "unit_kind": "comment",
+      "issue_number": 340,
+      "comment_id": 6897747257,
+      "body_sha256": "201a488e896eddd36171b6597c0c418b8ee33ead7de0b04e18ecc19f25df943d",
+      "url": "https://github.com/Xyngwie/-text/issues/340#issuecomment-6897747257",
+      "snapshot_sha256": "cf434f5112eb5cfe94fb36bc4b655a6a5e7c52dfc20ba873f1289b6924bcfcf6",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "life"
+        ],
+        "speech_act": "確定本文の提示および自己責任論への皮肉・批判",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "botの初稿から冒頭のメタ注意書きを取り除いてそのままコメントしクローズしている。採用原稿として分類できるが、自発的執筆ではなく初稿の許容採用である点に留意が必要。",
+        "evidence_quote": "「あえて専業主婦を選ぶ自由」や丁寧な暮らしといった綺麗なラベルを貼るだけで、労働環境や制度の不備を「本人が選んだ生き方」と片付けるなら、ずいぶんと安上がりな社会設計だな。",
+        "analysis_candidates": [
+          {
+            "observation": "構造的課題を個人の美談や自己責任論に回収する言説に対して冷笑的な皮肉を述べる論法を許容・採用している。",
+            "evidence_quote": "構造的な歪みを個人の自己責任や美談にすり替えて満足する手口には、相変わらず感心するよ。",
+            "limitation": "AI生成された皮肉調の草稿を修正なしで採用したものであり、本人の自発的な文体や特定の言い回しへの積極的選好とまでは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-3e31a1808799704c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8100,
+          "candidatesTokenCount": 906,
+          "totalTokenCount": 10035,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8100
+            }
+          ],
+          "thoughtsTokenCount": 1029,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-15T18:00:39+00:00",
+        "input_sha256": "1022e91e92d16c3a013ba19bcd0f498e8b6801c463b090c4598b35c13c9963ec",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "e2d4ffaa026881f154f4490aaf83b1473fac4ea3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43744231373"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n「あえて専業主婦を選ぶ自由」や丁寧な暮らしといった綺麗なラベルを貼るだけで、労働環境や制度の不備を「本人が選んだ生き方」と片付けるなら、ずいぶんと安上がりな社会設計だな。\n\n構造的な歪みを個人の自己責任や美談にすり替えて満足する手口には、相変わらず感心するよ。",
+        "draft_sha256": "909e823d981adecfab93b7fb2c25f0a81b37a2e5639e15ac716a9635794e5829",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6897773606",
+      "unit_kind": "comment",
+      "issue_number": 342,
+      "comment_id": 6897773606,
+      "body_sha256": "28a43f8516f442ec4d8b887dd1ac05c8831cea1716eeefbca97c5f0083461d8a",
+      "url": "https://github.com/Xyngwie/-text/issues/342#issuecomment-6897773606",
+      "snapshot_sha256": "e626c74f258bda6e86593eb32c66f79c8151c213075ea83250986c0fe6050fda",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "poker",
+          "thinking"
+        ],
+        "speech_act": "確定本文の提示および危機管理判断の評価",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "bot初稿の注釈文を除去した本文をコメントしクローズしている。ポーカーの概念を用いた比喩表現を含む草稿を確定本文として採用しているが、自発的執筆や実投稿報告は含まれない。",
+        "evidence_quote": "莫大な遅延という確定損失を背負ってでも、即座にフォールドを選んで致命傷を回避できる規律こそが危機管理の真骨頂だろう。",
+        "analysis_candidates": [
+          {
+            "observation": "地上待機命令による運航停止を「全損を避けるフォールド」に見立てるポーカー比喩の論理展開を許容し採用している。",
+            "evidence_quote": "情報が遮断された状況で無理に運航を強行するのは、オッズの合わない手でスタック全損のリスクを取りに行く愚行に過ぎない。",
+            "limitation": "プロンプト生成側で設定されたポーカー対応関係の草稿を無修正で採用した事例であり、普段から本人が自発的にポーカー比喩を多用するかどうかは本件のみから一般化できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-3e31a1808799704c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 8100,
+          "candidatesTokenCount": 906,
+          "totalTokenCount": 10035,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 8100
+            }
+          ],
+          "thoughtsTokenCount": 1029,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-15T18:00:39+00:00",
+        "input_sha256": "1022e91e92d16c3a013ba19bcd0f498e8b6801c463b090c4598b35c13c9963ec",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "e2d4ffaa026881f154f4490aaf83b1473fac4ea3",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43744231373"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n1万4000便以上の遅延や欠航という数字だけを見れば大混乱だが、通信障害の発生直後に地上待機命令を断行して盤面を止めた判断自体は見事だ。\n\n情報が遮断された状況で無理に運航を強行するのは、オッズの合わない手でスタック全損のリスクを取りに行く愚行に過ぎない。莫大な遅延という確定損失を背負ってでも、即座にフォールドを選んで致命傷を回避できる規律こそが危機管理の真骨頂だろう。\n\n大惨事の手前で確実にブレーキを踏み切れる運用体制の確かさは、もっと評価されていい。",
+        "draft_sha256": "d0a195e3127b4f6ce013c59251992eaf989e867a4f65c79930ebf1385a0c021a",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
