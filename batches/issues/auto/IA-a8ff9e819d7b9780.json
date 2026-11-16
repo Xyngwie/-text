@@ -1,0 +1,74 @@
+{
+  "batch_id": "IA-a8ff9e819d7b9780",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6925623490",
+      "unit_kind": "comment",
+      "issue_number": 344,
+      "comment_id": 6925623490,
+      "body_sha256": "d8879e024fd8d43b08784cd365a6cfa45472ed08776089aed83959894bca800f",
+      "url": "https://github.com/Xyngwie/-text/issues/344#issuecomment-6925623490",
+      "snapshot_sha256": "b11ff2153d2669f62f27d366b934df20c60ec85015593de365718cec1466055c",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "politics",
+          "society"
+        ],
+        "speech_act": "AI初稿冒頭の注記部分を削り、本文部分をそのまま確定原稿としてコメント投稿した発話",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "初稿から冒頭の「※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）」を除去し、それ以外のAI草稿本文をそのまま貼り付けてCloseしている。本人による加筆はなく、草稿の採用・許容にとどまるため、自発的な口癖や独自の語彙の根拠にはできない。また投稿報告コメントはないため実投稿済みかは未確認。",
+        "evidence_quote": "「随時更新」と掲げられた速報枠の見出しだけ渡されても、誰が何を掲げて戦い、結果どうなったのかが1行も流れてこないのでは論評の土俵にすら上がらない。",
+        "analysis_candidates": [
+          {
+            "observation": "速報枠見出しのみで情報が欠落している状況に対し、判断を保留し論評を避けるスタンスのAI草稿を、注記削除のみで採用原稿として承認している。",
+            "evidence_quote": "中身の検証もなしに市長選の是非に口を出せるほど軽くはない。一次情報が揃うまで保留だな。",
+            "limitation": "AIが生成した草稿のコピー採用であり、本人が自発的に執筆した文章ではないため、本人の自然な文体や口癖の強固な根拠とはみなせない。"
+          }
+        ]
+      },
+      "batch_id": "IA-a8ff9e819d7b9780",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 3146,
+          "candidatesTokenCount": 424,
+          "totalTokenCount": 3570,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 3146
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-16T22:34:39+00:00",
+        "input_sha256": "fd19f4ca5349a8e26514ae3b069526d40ca620ccd03f3172df860c5950853c21",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "8a588b132af5d2027985df4155d0259dcd3390d7",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/43971331651"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n「随時更新」と掲げられた速報枠の見出しだけ渡されても、誰が何を掲げて戦い、結果どうなったのかが1行も流れてこないのでは論評の土俵にすら上がらない。\n\n空っぽの器だけ見せられて何かを語れというなら、情報の体をなしていないと呆れるくらいが関の山だ。中身の検証もなしに市長選の是非に口を出せるほど軽くはない。一次情報が揃うまで保留だな。",
+        "draft_sha256": "5c00f48e907797f68f17d90654d5ac8bc3d66acac3f15d84fca3346ea2916557",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          }
+        ]
+      }
+    }
+  ]
+}
