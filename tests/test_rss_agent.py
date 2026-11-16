@@ -155,8 +155,8 @@ class RssAgentTest(unittest.TestCase):
             "do_not_publish_reason": "",
         }
         issue = generator.issue_payload(candidate, generated)
-        self.assertIn("本人の意見ではなく", issue["body"])
-        self.assertIn("投稿禁止", issue["body"])
+        self.assertNotIn("本人の意見ではなく", issue["body"])
+        self.assertIn("本人確認前の校正用初稿", issue["body"])
         self.assertIn("experimental-politics", issue["labels"])
         self.assertIn("タグやコードブロックは不要", issue["body"])
         self.assertIn("本文をコメントせずCloseした草稿は不採用", issue["body"])

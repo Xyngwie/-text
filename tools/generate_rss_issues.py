@@ -239,11 +239,7 @@ def issue_payload(candidate, generation, intensity=2.25, exploration=None, writi
     experimental = candidate["track"] == "experimental-politics"
     category = candidate.get('category', 'politics' if experimental else 'normal')
     title_prefix = ('[実験・' + CATEGORY_LABELS.get(category, category) + ']') if experimental else '[通常・' + CATEGORY_LABELS.get(category, category) + ']'
-    warning = (
-        "> [!WARNING]\n> これは幅広い題材への反応仮説です。本人の意見ではなく、本人確認前は投稿禁止の校正用初稿です。"
-        if experimental else
-        "> [!IMPORTANT]\n> 本人確認前の校正用初稿です。承諾なしに本人名義で投稿しないでください。"
-    )
+    warning = "> [!IMPORTANT]\n> 本人確認前の校正用初稿です。承諾なしに本人名義で投稿しないでください。"
     facts = "\n".join(f"- {item}" for item in generation["facts"]) or "- RSS断片から確定できる事項なし"
     unknowns = "\n".join(f"- {item}" for item in generation["uncertainties"]) or "- なし"
     mapping = "\n".join(f"- {item}" for item in generation["value_mapping"]) or "- なし"
