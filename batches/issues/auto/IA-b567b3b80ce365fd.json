@@ -1,0 +1,360 @@
+{
+  "batch_id": "IA-b567b3b80ce365fd",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6963835002",
+      "unit_kind": "comment",
+      "issue_number": 345,
+      "comment_id": 6963835002,
+      "body_sha256": "e2c071b6bd94127f42f7ac55504806d07a4f42342bd7e9ee64635b0d8834c02b",
+      "url": "https://github.com/Xyngwie/-text/issues/345#issuecomment-6963835002",
+      "snapshot_sha256": "c9bf1f7feea2f2b6d9caadd9db48f15ae1b7e19855de9e96658f4d8080798f86",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "economy",
+          "poker"
+        ],
+        "speech_act": "AI草稿の末尾「な」を削除して確定文としてコメントし採用",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #345でAI初稿の末尾の「な」を削除した上で確定文として投稿しIssueが閉じられているため採用原稿。AI生成文の軽微な修整採用であり、自発的な口癖とは区別する。",
+        "evidence_quote": "自分ならこの程度の勝ちでベットサイズを上げたりはしない。浮かれずに手元を固め、次の下振れに耐えられるスタック管理に徹するだけだ。",
+        "analysis_candidates": [
+          {
+            "observation": "AI草稿の語尾「だけだな。」から「な」を削除して「だけだ。」と言い切りに修整している。",
+            "evidence_quote": "浮かれずに手元を固め、次の下振れに耐えられるスタック管理に徹するだけだ。",
+            "limitation": "一文字の助詞削除のみであり、強い語尾の選好や禁止ルールまで一般化できるかは不明。"
+          }
+        ]
+      },
+      "batch_id": "IA-b567b3b80ce365fd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 13061,
+          "candidatesTokenCount": 1780,
+          "totalTokenCount": 14841,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 13061
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-18T03:54:56+00:00",
+        "input_sha256": "b00dcb989f4464f9ece9fe75ebcba84e63f76958a85b3072646bfe32dc9fcb15",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "6ab6947b58c066dee280085fd2dff157921a483b",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/44233646648"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "純利益4.6倍という数字に外野が騒ぐのは勝手だが、特定ハンドで偶々ビッグポットを拾った局面と大差ない。\n\n良いボードが噛み合ってチップが積まれたところで、長期の分散を見据えれば一過性の上振れに過ぎない可能性もある。\n\n自分ならこの程度の勝ちでベットサイズを上げたりはしない。浮かれずに手元を固め、次の下振れに耐えられるスタック管理に徹するだけだな。\n\nhttps://news.google.com/rss/articles/CBMibEFVX3lxTE9tcm14Uks2QjRFbzc2aFdjejc0M01TSW5NSmFSQmVtQi1UUVpMUy0zSE9zYjVvQUNQZ2hqOGwyc1BBWUJfa1djMWQ2X0dwV0VGZ19SWjliMjJCcF8xQnNUYl9PeXpfLUZiMVk1aw?oc=5",
+        "draft_sha256": "970931a24cde898c14598cea9fca9fe04201c918f4a208060f94bd4dc1a5bd46",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "な",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6963876087",
+      "unit_kind": "comment",
+      "issue_number": 348,
+      "comment_id": 6963876087,
+      "body_sha256": "03a62925c6787a9c87928b1faab651e1e161f9cceeb554021ab05f51c5f7e605",
+      "url": "https://github.com/Xyngwie/-text/issues/348#issuecomment-6963876087",
+      "snapshot_sha256": "b0d775f6637271378fb83f552973a9d980bf3c607793bb47b3d7a5497232144f",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "society",
+          "science"
+        ],
+        "speech_act": "初稿から冒頭の注意書き枠を削除して本文を採用確定文としてコメント",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #348でAI初稿の冒頭注記「※実験政治枠...」を除去した本文をそのまま投稿してクローズしているため採用原稿として扱う。自発的なオリジナル執筆ではない。",
+        "evidence_quote": "公共の歩行空間に面した巨木については、落葉期前の腐朽診断と剪定基準をルール化し、管理履歴を可視化する仕組みを整えるべきだ。安全を現場の運任せにせず、設計された予防で担保するのが筋だろう。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿の注意書き枠のみを削り、本文は一切修整せずに採用している。",
+            "evidence_quote": "5メートル・10キロの枝が頭上に落ちて傘の破損で済んだのは、単なる幸運に過ぎない。直撃していれば命に関わる重大事故だ。",
+            "limitation": "無修整採用であるため、表現や語彙が本人の自発的な執筆習慣や理想の口調と一致しているかまでは判断できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-b567b3b80ce365fd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 13061,
+          "candidatesTokenCount": 1780,
+          "totalTokenCount": 14841,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 13061
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-18T03:54:56+00:00",
+        "input_sha256": "b00dcb989f4464f9ece9fe75ebcba84e63f76958a85b3072646bfe32dc9fcb15",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "6ab6947b58c066dee280085fd2dff157921a483b",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/44233646648"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n5メートル・10キロの枝が頭上に落ちて傘の破損で済んだのは、単なる幸運に過ぎない。直撃していれば命に関わる重大事故だ。\n\n「自然のものだから」と天候のせいにして済ませていれば、いずれ取り返しのつかない被害が出る。公共の歩行空間に面した巨木については、落葉期前の腐朽診断と剪定基準をルール化し、管理履歴を可視化する仕組みを整えるべきだ。安全を現場の運任せにせず、設計された予防で担保するのが筋だろう。",
+        "draft_sha256": "7d04467ee8e3fb89c86bbe71879896782ec252a849785406be334a851723e099",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "※実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6963896723",
+      "unit_kind": "comment",
+      "issue_number": 351,
+      "comment_id": 6963896723,
+      "body_sha256": "9c781267b19c54cc50e52af759876b70cd373370809739d9aed4249e41882673",
+      "url": "https://github.com/Xyngwie/-text/issues/351#issuecomment-6963896723",
+      "snapshot_sha256": "c608219151ae07663a8bbe900594a6c77d4564b890ebb1bf18817b5a69eba1aa",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "culture",
+          "world"
+        ],
+        "speech_act": "初稿と完全一致する確定文をコメントして採用",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #351でAI初稿と完全に同一の本文をコメントしてCloseしているため採用発言として記録。修整がないため自発的表現とは区別する。",
+        "evidence_quote": "政治的な思惑や後継問題はさておき、雪山を舞台に主役に白いウェアを着せて一枚の画を仕上げてくるビジュアル演出は、プロモーションの絵作りとして素直にツボを押さえている。",
+        "analysis_candidates": [
+          {
+            "observation": "初稿を無修整のまま採用コメントとして貼り付けている。",
+            "evidence_quote": "家族総出のスキー場視察でしっかり「見せたい主役」を際立たせるディレクションに一切の迷いがないのは、演出の腕前として普通に感心する（笑）。見せ方の美学を外さない姿勢は見事なものだ。",
+            "limitation": "AI生成文を許容した事実にとどまり、本人が自発的に書く際の固有の文体や選好と同一視することはできない。"
+          }
+        ]
+      },
+      "batch_id": "IA-b567b3b80ce365fd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 13061,
+          "candidatesTokenCount": 1780,
+          "totalTokenCount": 14841,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 13061
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-18T03:54:56+00:00",
+        "input_sha256": "b00dcb989f4464f9ece9fe75ebcba84e63f76958a85b3072646bfe32dc9fcb15",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "6ab6947b58c066dee280085fd2dff157921a483b",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/44233646648"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "政治的な思惑や後継問題はさておき、雪山を舞台に主役に白いウェアを着せて一枚の画を仕上げてくるビジュアル演出は、プロモーションの絵作りとして素直にツボを押さえている。\n\n家族総出のスキー場視察でしっかり「見せたい主役」を際立たせるディレクションに一切の迷いがないのは、演出の腕前として普通に感心する（笑）。見せ方の美学を外さない姿勢は見事なものだ。",
+        "draft_sha256": "9c781267b19c54cc50e52af759876b70cd373370809739d9aed4249e41882673",
+        "identical": true,
+        "edits": []
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6963939581",
+      "unit_kind": "comment",
+      "issue_number": 349,
+      "comment_id": 6963939581,
+      "body_sha256": "55d0d0beae7eddc05e45942ae9a1681b7aae937ac4c3cb7d821c7ce08a9cc7dd",
+      "url": "https://github.com/Xyngwie/-text/issues/349#issuecomment-6963939581",
+      "snapshot_sha256": "0dbb676ba242b4cd3ca37c5d2e8154d9b2db49ec6d543c6e13cbe32956348640",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "pasted",
+        "themes": [
+          "food",
+          "society"
+        ],
+        "speech_act": "冒頭の注意書きを除去した本文を確定文としてコメントし採用",
+        "feedback_kind": "adopted_manuscript",
+        "verdict": "acceptable",
+        "note": "Issue #349で冒頭注意書き「実験政治枠...」を取り除いた初稿本文をコメントしてCloseしているため採用原稿。AI草稿の採用であり自発的な原文ではない。",
+        "evidence_quote": "帯域を絞られた通信環境でいかに知覚品質を保つかというデータ圧縮の工夫に似ていて、塩分を削った分を出汁の旨味やスパイスの香りで補うのは純粋な最適化の試みだ。",
+        "analysis_candidates": [
+          {
+            "observation": "実験枠のプレフィックス行のみを削除し、本文内容をそのまま確定文として採用している。",
+            "evidence_quote": "減塩というと「味気ない我慢」という印象を持たれがちだが、限られたリソースで満足度を落とさない設計問題として見るとかなり興味深い。",
+            "limitation": "修整はメタ情報の削除のみであり、本文の論理構成や語彙に対する積極的な好みまでは読み取れない。"
+          }
+        ]
+      },
+      "batch_id": "IA-b567b3b80ce365fd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 13061,
+          "candidatesTokenCount": 1780,
+          "totalTokenCount": 14841,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 13061
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-18T03:54:56+00:00",
+        "input_sha256": "b00dcb989f4464f9ece9fe75ebcba84e63f76958a85b3072646bfe32dc9fcb15",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "6ab6947b58c066dee280085fd2dff157921a483b",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/44233646648"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n減塩というと「味気ない我慢」という印象を持たれがちだが、限られたリソースで満足度を落とさない設計問題として見るとかなり興味深い。\n\n帯域を絞られた通信環境でいかに知覚品質を保つかというデータ圧縮の工夫に似ていて、塩分を削った分を出汁の旨味やスパイスの香りで補うのは純粋な最適化の試みだ。\n\n健康指導をお説教で終わらせず、制約を乗り越える工夫の体験として提示するやり方は筋が良いと思う。",
+        "draft_sha256": "10fb6e89f408d3560e5842eb984408e309216c4b47a9103c4289e90336f867d0",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "delete",
+            "before": "実験政治枠（本人の意見ではなく価値観スライドによるゼロショット仮説）。\n\n",
+            "after": ""
+          }
+        ]
+      }
+    },
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-6964023292",
+      "unit_kind": "comment",
+      "issue_number": 353,
+      "comment_id": 6964023292,
+      "body_sha256": "cf7a3f0c1eca912f358748610bd1cc048a61f3a66f4cbed241838d42c663c14a",
+      "url": "https://github.com/Xyngwie/-text/issues/353#issuecomment-6964023292",
+      "snapshot_sha256": "283208fb4cbf264d9ccb7a48029c2ad254c873cdc6b79fb32e2bae2bea0a06be",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "culture",
+          "thinking"
+        ],
+        "speech_act": "AI草稿の前提（結果論・見立て）を否定・批判し、自身の関心軸を提示",
+        "feedback_kind": "draft_verdict",
+        "verdict": "would_not_say",
+        "note": "Issue #353の初稿（職人の遠征見立て）を採用せず、「そういう結果論で問題を切るのは後出しジャンケンでズルいよ」と草稿のアプローチを批判し、所有権返還が関心対象であると自身の言葉で述べている。初稿の不採用・却下評価コメント。",
+        "evidence_quote": "そういう結果論で問題を切るのは後出しジャンケンでズルいよ。\n\n150年の凱旋を迎えて所有権がきちんと返還されるか否かが興味の対象、と言ったところだ。",
+        "analysis_candidates": [
+          {
+            "observation": "「後出しジャンケン」「ズルいよ」とくだけた口語表現を交えつつ、AI草稿の結果論的な美談化・見立てを否定し、法的な所有権返還という現実行動に焦点を当てている。",
+            "evidence_quote": "そういう結果論で問題を切るのは後出しジャンケンでズルいよ。\n\n150年の凱旋を迎えて所有権がきちんと返還されるか否かが興味の対象、と言ったところだ。",
+            "limitation": "この特定の草稿の論点設定に対する却下理由であり、美術品の返還問題全般や後世の評価全般に対する普遍的な立場とまでは断定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-b567b3b80ce365fd",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 13061,
+          "candidatesTokenCount": 1780,
+          "totalTokenCount": 14841,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 13061
+            }
+          ],
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-18T03:54:56+00:00",
+        "input_sha256": "b00dcb989f4464f9ece9fe75ebcba84e63f76958a85b3072646bfe32dc9fcb15",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "6ab6947b58c066dee280085fd2dff157921a483b",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/44233646648"
+      },
+      "draft_comparison": {
+        "status": "exact_text_comparison_not_semantic_adoption",
+        "draft": "150年前に海を渡った江戸の美術が、大英博物館から大阪へ里帰りするらしい。\n\nもし自分が当時の職人や絵師なら、国内で埋もれるより「異国の一等地に乗り込んで丁重に保管させ、150年後に凱旋してドヤ顔で戻ってくる」という超長期の遠征ルートを狙って仕込んだかもしれないな。\n\n時代も海も飛び越えて他人に管理費を払わせた上で、何世代も先の人間を唸らせる。モノを残すなら、それくらいのスケールで後世を巻き込んで楽しみたいものだ。",
+        "draft_sha256": "daf1adbd950af73dcc4b36d0cccaa3d8b248b63909f33066d32a29a672e09b83",
+        "identical": false,
+        "edits": [
+          {
+            "operation": "insert",
+            "before": "",
+            "after": "そういう結果論で問題を切るのは後出しジャンケンでズルいよ。\n\n"
+          },
+          {
+            "operation": "replace",
+            "before": "前に海",
+            "after": "の凱旋"
+          },
+          {
+            "operation": "replace",
+            "before": "渡",
+            "after": "迎えて所有権がきちんと返還されるか否かが興味の対象、と言"
+          },
+          {
+            "operation": "delete",
+            "before": "江戸の美術が、大英博物館から大阪へ里帰りするらしい。\n\nもし自分が当時の職人や絵師なら、国内で埋もれるより「異国の一等地に乗り込んで丁重に保管させ、150年後に凱旋してドヤ顔で戻ってくる」",
+            "after": ""
+          },
+          {
+            "operation": "replace",
+            "before": "いう超長期の遠征ルートを狙って仕込んだかもしれないな。\n\n時代も海も飛び越えて他人に管理費を払わせた上で、何世代も先の人間を唸らせる。モノを残すなら、それくらいのスケールで後世を巻き込んで楽しみたいもの",
+            "after": "ころ"
+          }
+        ]
+      }
+    }
+  ]
+}
