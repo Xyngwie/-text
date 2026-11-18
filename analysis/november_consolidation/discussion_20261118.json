@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-18",
+  "source": "本チャットの本人文字入力から転記。独立エクスポートは未登録。整理日を各発言日の独立証明としない。",
+  "status": "owner_supplement_not_verified_policy_or_runtime_instruction",
+  "records": [
+    {
+      "id": "NOV18-001",
+      "speech_act": "general",
+      "topic": "insurance_baseline",
+      "authorship": "own",
+      "owner_reply_verbatim": "一般的には車両価格もそこまで差はなかったはず。\n\nバカみたいな装飾品がなければね。",
+      "limit": "過去の価格差についての本人の仮説。価格統計の確認ではない。"
+    },
+    {
+      "id": "NOV18-002",
+      "speech_act": "proposal",
+      "topic": "insurance_baseline",
+      "authorship": "own",
+      "owner_reply_verbatim": "普通車で言えば、現行のクラウンくらいまででよいと思っていて。\n\nと、いうのも登録されている車両が全て毎日毎日走るわけじゃなくてかなりの数あんまり乗られないと思うので互助が働くはずなのだ",
+      "limit": "車格の目安と互助への見込み。保険収支の実証ではない。"
+    },
+    {
+      "id": "NOV18-003",
+      "speech_act": "proposal",
+      "topic": "insurance_baseline",
+      "authorship": "own",
+      "owner_reply_verbatim": "業務車については、営業保証については任意で、車両価格も標準の車格に対しての補償額程度まで自賠責保険がカバーするようになればいいでしょう",
+      "limit": "事業用車両の標準補償と営業上の損失の備えを区別する提案。"
+    },
+    {
+      "id": "NOV18-004",
+      "speech_act": "position",
+      "topic": "insurance_baseline",
+      "authorship": "own",
+      "owner_reply_verbatim": "というか、事故で生じる補償って、当然にこの程度は生じるわけで、当然に生じる損害を強制保険である自賠責がカバーしてないのが制度としておかしい。でFA。",
+      "limit": "通常生じる損害を強制補償へ含めるべきという本人の結論。現行制度が違法との断定ではない。"
+    },
+    {
+      "id": "NOV18-005",
+      "speech_act": "position",
+      "topic": "insurance_baseline",
+      "authorship": "own",
+      "owner_reply_verbatim": "それで車両を保有できない、っていうならそもそも車両を保有する能力を有さない、ってことでよくない？",
+      "limit": "必要な補償への負担を保有能力の条件に含める立場。"
+    },
+    {
+      "id": "NOV18-006",
+      "speech_act": "position",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "生活保護者に車の所有も出来ないのか、って議論があるけど、僕は当然にそうだよ、贅沢品だよ。って意見ですし。",
+      "limit": "本人の政策上の立場であり、現行制度の例外の有無を述べた記録ではない。"
+    },
+    {
+      "id": "NOV18-007",
+      "speech_act": "proposal",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "そこに住む自由はあるけど、交通の便の良いところに移るべき。",
+      "limit": "居住選択の自由と支援する生活条件を区別する立場。"
+    },
+    {
+      "id": "NOV18-008",
+      "speech_act": "proposal",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "それは出してやれば良いんじゃない？\n\n車を持たせて、その維持費用まで生活保護費に含めるくらいならペイできるとおもうよ",
+      "limit": "転居費用の支援に肯定。費用比較は本人の見通し。"
+    },
+    {
+      "id": "NOV18-009",
+      "speech_act": "proposal",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "生活保護を受ける人が介護している人も何かしらの保護者でしょうし、丸ごと移るしかなくない？\n\nなんで不便なところにしがみつくのか意味がわからん。",
+      "limit": "介護を受ける人も含めた転居案。実際に転居可能な世帯かは検証していない。"
+    },
+    {
+      "id": "NOV18-010",
+      "speech_act": "position",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "そうよ。民草は団地住まいでいいじゃねえの",
+      "limit": "住居・介護・交通の条件を整えられるなら転居を基本とする、という問いへの肯定を含む。"
+    },
+    {
+      "id": "NOV18-011",
+      "speech_act": "self_application",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "もちのろんだぜ。提唱者は高みの見物なんてダセェ思考はしないよ。自分も困窮すれば、貧困公共団地でいいと思う。そういう受け皿があれば、むしろ嬉しい。",
+      "limit": "他者に求める条件を自分にも適用すると明示。将来の行動を実証したわけではない。"
+    },
+    {
+      "id": "NOV18-012",
+      "speech_act": "position",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "健康的で文化的な最低限度の生活（笑）だよ",
+      "limit": "公的支援で保障してほしい生活水準への回答。引用表現は本人の記憶どおりで法文の逐語引用ではない。"
+    },
+    {
+      "id": "NOV18-013",
+      "speech_act": "proposal",
+      "topic": "public_support",
+      "authorship": "own",
+      "owner_reply_verbatim": "まぁ今のご時世だから、IPと最低限の端末だけは支給して欲しいけどね",
+      "limit": "通信接続と端末を生活の土台に含める希望。IPの技術仕様は未確認。"
+    },
+    {
+      "id": "NOV18-014",
+      "speech_act": "correction",
+      "topic": "insurance_baseline",
+      "authorship": "own",
+      "owner_reply_verbatim": "流石にそういうインフラにサイバー攻撃したら、マジでテロリストだよな、　ってこの話は逸脱するので、ナシ。\n\n自賠責保険。の前に任意保険の強制義務化はおかしい。",
+      "limit": "通信攻撃は自ら脱線として打ち切る。任意保険の義務化に先立つ自賠責の見直しという主題へ戻した。"
+    },
+    {
+      "id": "NOV18-015",
+      "speech_act": "hypothesis",
+      "topic": "insurance_baseline",
+      "authorship": "own",
+      "owner_reply_verbatim": "保険業界が潤う余地があるって事は、補償しないで済んだ分があるって事だから。その分ちゃんと補償できる自賠責保険の拡充の方が目があるんじゃねえの？っていう意見だよ",
+      "limit": "利益を共通補償へ回す余地を問う見立て。利益と不当な不払いは同義ではなく、自賠責拡充が安価との実証でもない。"
+    },
+    {
+      "id": "NOV18-016",
+      "speech_act": "question",
+      "topic": "university_selection",
+      "authorship": "own",
+      "owner_reply_verbatim": "選挙は1位を決めるもの。　選考委員会は2位を選出、選挙の意味を反故にするだけの反証・説明が出来ていない。このため、教授会・学生会と対立している、文科省は東大に対して上部組織である。が、介入をしないで自浄するという意見表明、　でよい？",
+      "limit": "理解の確認を求めた質問。意向投票の位置付け、団体の代表性、文科省との関係、掲示者の真意について助手が限定・訂正している。質問を確定意見に変えない。"
+    },
+    {
+      "id": "NOV18-017",
+      "speech_act": "question",
+      "topic": "university_selection",
+      "authorship": "own",
+      "owner_reply_verbatim": "政治思想の在り方でどちらを支持するか、って問題はあってもよい？　例えば選挙1位も2位も左翼だったとしたら、ここまでの問題になっていない？",
+      "limit": "両候補が左翼という事実を述べたものではなく、仮定の質問。騒動の原因を実証したものでもない。"
+    },
+    {
+      "id": "NOV18-018",
+      "speech_act": "owner_reported_reply",
+      "topic": "university_selection",
+      "authorship": "own",
+      "owner_reply_verbatim": "文科省に説明して文科省が良ければ終わり、っていう問題でもないんじゃないかなあ。対立構造は終わってないっていう表明と読んだけど、個人的には最高学府の長があの人なのは、僕もなんか腑に落ちないし。（これはあんまり関係ないお気持ちね）",
+      "limit": "本人が返事として送ったと報告した本文部分。投稿先URLや外部表示は未確認。「あの人」の人物評価と看板の解釈を本人が分けている。"
+    },
+    {
+      "id": "NOV18-019",
+      "speech_act": "interpretation_question",
+      "topic": "rhetorical_pressure",
+      "authorship": "own",
+      "owner_reply_verbatim": "ひっこめ　とか　倒す　とかが強すぎて正当性が揺らいでしまっているよね、　という意見なのかな？",
+      "limit": "他者のリプライの論旨を尋ねた質問。本人が正当性の喪失を確定評価した発言ではない。"
+    },
+    {
+      "id": "NOV18-020",
+      "speech_act": "self_report",
+      "topic": "rhetorical_pressure",
+      "authorship": "own",
+      "owner_reply_verbatim": "まぁ、僕なんかは割と賛同してる側なので、そうだそうだー！って小気味よく思ったくらいだけれども。",
+      "limit": "強い言葉を小気味よく受け取ったという本人の明示。何にどの範囲で賛同したかをこの一文から全部補わず、過去の警戒発言も上書きしない。"
+    }
+  ],
+  "external_context": [
+    {
+      "id": "NOV18-EXT001",
+      "authorship": "pasted",
+      "speaker": "第三者リプライ・本人による貼付",
+      "text": "強い言葉（言葉の圧）ばかりが目立つと、その裏にある『正当な説明を求める声』まで一緒に批判・無視されがちになりますよね🤔\n\n(ジェミニィ校正文書)",
+      "limit": "Geminiによる校正という注記だと文脈上読めるが制作過程は未確認。本人の発言や口調の原典にしない。"
+    }
+  ],
+  "limits": [
+    "前日の事故や制度の議論を文脈として参照するが、個別事故の責任割合や支払内容は推定しない。",
+    "法制度の現状、統計、歴史的因果、東大の事件経緯はこの本人補足の保存で検証済みにならない。",
+    "本人の質問、仮説、提案、確定的な好悪、返信したとの本人申告を区別する。",
+    "助手の政策案や肯定的要約、第三者のGemini校正文を本人の原文に含めない。"
+  ]
+}
