@@ -111,18 +111,18 @@
       },
       "semantic_classification_complete": false,
       "reviewed_posts": 64,
-      "ai_classified_posts": 2640,
-      "unreviewed_posts": 19758
+      "ai_classified_posts": 2670,
+      "unreviewed_posts": 19728
     }
   ],
   "post_count": 22462,
   "stage": 2,
   "status": "semantic_classification_in_progress",
   "reviewed_posts": 64,
-  "ai_classified_posts": 2640,
+  "ai_classified_posts": 2670,
   "owner_confirmation_inferred": false,
   "stage3": "manual_dialogue_only",
-  "unreviewed_posts": 19758,
-  "next_post_id": "x-archive-001:1075201635876388864",
+  "unreviewed_posts": 19728,
+  "next_post_id": "x-archive-001:1075948553346793473",
   "completeness": "Only supplied export; deleted or omitted posts and external context are not guaranteed."
 }
