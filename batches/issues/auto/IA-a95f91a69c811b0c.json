@@ -1,0 +1,63 @@
+{
+  "batch_id": "IA-a95f91a69c811b0c",
+  "status": "ai_proposed_pending_close_reading",
+  "reviews": [
+    {
+      "schema_version": 1,
+      "source_id": "github-issues-001",
+      "unit_id": "github-issues-001:comment-7185703708",
+      "unit_kind": "comment",
+      "issue_number": 427,
+      "comment_id": 7185703708,
+      "body_sha256": "8896b8530f3867fe56b2978c30c887190f382d3ec7d7da67181139e0808c57ef",
+      "url": "https://github.com/Xyngwie/-text/issues/427#issuecomment-7185703708",
+      "snapshot_sha256": "ded90d03ae2162f03641261dafc35ae1f9f066c4bb6a6c0beeb477efb7d35d56",
+      "status": "ai_proposed_pending_close_reading",
+      "analysis": {
+        "authorship": "own",
+        "themes": [
+          "culture",
+          "life"
+        ],
+        "speech_act": "過去に見ていたドラマを懐かしみ、途中で視聴をやめてしまった思い出を述べる発話",
+        "feedback_kind": "other",
+        "verdict": "unknown",
+        "note": "X分類の過去投稿に登場したドラマ『フリンジ』に反応した雑談・回想コメント。草稿への採否判定や本文の採用報告ではない。",
+        "evidence_quote": "フリンジ、懐かしいなあファイナルシーズン観ないで興味が離れちゃったんだよねえ",
+        "analysis_candidates": [
+          {
+            "observation": "過去の投稿で触れていた海外ドラマについて、ファイナルシーズンを観ないまま関心が薄れて離脱した過去の視聴体験を述懐している。",
+            "evidence_quote": "ファイナルシーズン観ないで興味が離れちゃったんだよねえ",
+            "limitation": "フリンジ以外のドラマ全般における視聴傾向や、興味が離れた具体的な理由まではこの短いコメントから特定できない。"
+          }
+        ]
+      },
+      "batch_id": "IA-a95f91a69c811b0c",
+      "provenance": {
+        "provider": "Gemini",
+        "requested_model": "auto",
+        "selected_model": "gemini-3.8-flash",
+        "model_version": "gemini-3.8-flash",
+        "usage": {
+          "promptTokenCount": 1949,
+          "candidatesTokenCount": 296,
+          "totalTokenCount": 2719,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 1949
+            }
+          ],
+          "thoughtsTokenCount": 474,
+          "serviceTier": "standard"
+        },
+        "executed_at": "2026-11-26T15:50:40+00:00",
+        "input_sha256": "55c6a9d869a69ff1fe13a18462737f7afb187ad1df21fb3e048d444990d155e8",
+        "prompt_sha256": "1b4c581a78b3478873abc3388083695e12ca9f6806e5a147401f1aa223197a9c",
+        "base_commit": "81dce419d9fa9690ae6f2c773cda7980dec2ab1c",
+        "workflow_run_url": "https://github.com/Xyngwie/-text/actions/runs/45853011211"
+      },
+      "draft_comparison": null
+    }
+  ]
+}
