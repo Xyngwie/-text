@@ -16,8 +16,8 @@ from publication_calibration import load_examples
 
 ROOT = Path(__file__).resolve().parents[1]
 PROMPT_PATH = ROOT / "prompts/rss_value_slide.md"
-POLICY_PATH = ROOT / "analysis/v016/decision_policy.json"
-CALIBRATION_PATH = ROOT / 'analysis/v039/publication_pairs.json'
+POLICY_PATH = ROOT / "analysis/v040/decision_policy.json"
+CALIBRATION_PATH = ROOT / 'analysis/v040/publication_pairs.json'
 
 
 REACTION_DIRECTIONS = ('賛成・称賛', '反対・批判', '驚き・好奇心', '楽しむ・おどける', '共感・いたわり', '冷淡・関心が薄い', '戸惑い・判断保留')

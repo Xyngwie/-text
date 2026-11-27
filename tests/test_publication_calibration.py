@@ -6,12 +6,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 from publication_calibration import comparison_text, load_examples, validate_pairs
-from generate_rss_issues import prompt_for, generate_all
+from generate_rss_issues import CALIBRATION_PATH, prompt_for, generate_all
 
 
 class PublicationCalibrationTests(unittest.TestCase):
     def setUp(self):
-        self.path = ROOT / 'analysis/v039/publication_pairs.json'
+        self.path = CALIBRATION_PATH
 
     def test_frozen_examples_preserve_counterexample_and_provenance(self):
         examples = load_examples(self.path)

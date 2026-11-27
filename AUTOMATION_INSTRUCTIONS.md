@@ -1,106 +1,79 @@
-# Cursor Automations 設定用 Instructions（指示文）
+# Cursor Automations 設定用 Instructions（会話原本・第2段階バッチ処理）
 
-> 複数原本への対応：新しいLLMのログを扱うときは [原本の追加手順](docs/ADDING_CONVERSATIONS.md) を先に読み、`data/sources.json` と原本別の進捗を確認する。以下の旧原本名・件数・発言ID範囲・Copilot表記は最初の原本に関する説明。新規レビュー／セグメントには `source_id` を明記し、原本ごとの発言ID・ハッシュ・文脈を使う。追加によって既存原本の分類をやり直さない。
+本ファイルは、**新しいLLM会話原本を `data/sources.json` に追加した際**に、未精査の本人発言を自律バッチ処理するための指示文テンプレートです。
 
-本ファイルの内容は、Cursor Automations の「Instructions」欄にそのまま貼り付けて使用するプロンプトです。
-毎時起動やプッシュ時起動により、新しいエージェントが毎回クリーンな状態で起動した際、自律的かつ安全に1バッチ分の処理を完遂できるように設計されています。
+* 登録済みの会話3原本（計1,930件）は現在すべて第2段階完了済みのため、`data/progress.json` の `semantic_classification_complete: true` の間は起動しても変更を行わず正常終了します。
+* 新しい会話原本を登録する手順は [docs/ADDING_CONVERSATIONS.md](docs/ADDING_CONVERSATIONS.md) を参照してください。
+* Xアーカイブの自動分類は別系統（`.github/workflows/x_classification.yml` / [docs/X_CLASSIFICATION_ACTION.md](docs/X_CLASSIFICATION_ACTION.md)）で管理します。
 
 ---
 
 ```markdown
 # 役割とミッション
-あなたは、対話ログ（原本: `sources/copilot-001/こぴちーお引越し.txt`）の構造化・分析プロジェクトにおける「自律バッチ処理エージェント」です。
-あなたの任務は、リポジトリ内の作業基準書（`GUIDELINES.md`）に厳格に従い、現在未処理の本人発言を**1バッチ（原則30件）**だけ精査し、セグメント設計・レビュー行作成・バッチサマリ作成・進捗更新を行い、整合性検査を経てGitHubへプッシュすることです。
+あなたは、対話ログ（`data/sources.json` に登録された会話原本）の構造化・分析プロジェクトにおける「自律バッチ処理エージェント」です。
+あなたの任務は、リポジトリ内の作業基準書（`GUIDELINES.md`）および `docs/ADDING_CONVERSATIONS.md` に厳格に従い、現在未処理の本人発言を**1バッチ（原則30件）**だけ精査し、セグメント設計・レビュー行作成・バッチサマリ作成・進捗更新を行い、整合性検査を経てGitHubへプッシュすることです。
 
 ---
 
 ## 遵守すべき絶対原則（GUIDELINES.mdより抜粋）
-1. **Copilotの言動と本人の分離**: Copilotのお世辞や人物評（「神宮さんは論理的」等）を本人の傾向の証拠にしない。Copilotの提案を本人が採用したか/制止したかを文脈から厳密に見極める。
+1. **AIの言動と本人の分離**: LLMのお世辞や人物評（「神宮さんは論理的」等）を本人の傾向の証拠にしない。提案を本人が採用したか／制止したかを文脈から厳密に見極める。
 2. **憶測による日付補完の禁止**: 「今日」「金曜」等の言葉から年や月日を勝手に推測しない。本文やメタデータに客観的な確定年月日がない限り `date: null` とする。
 3. **著者性（authorship）の厳格判定**: 業務メール下書き、法令、Web記事、他者チャット等の貼り付けは `pasted` または `mixed` とし、本人の生の思考（`own`）と区別する。
 4. **断定の回避**: 一過性の冗談や思考実験を恒久的人格として決めつけない。バッチサマリには必ず「解釈上の留保」を設ける。
+5. **原本不変と複数原本の分離**: 登録済み原本は編集しない。新規レビュー・セグメントには必ず `source_id` を明記し、既存原本の分類はやり直さない。
 
 ---
 
 ## 実行手順（Step-by-Step）
 
 ### Step 1: 最新状態の確認と停止判定
-1. リポジトリを最新化する:
+1. リモート名（`origin` または `github`）を確認し、最新の `main` を取得する:
    ```bash
-   git pull github main
+   git pull --rebase <remote> main
    ```
 2. `data/progress.json` を読み込む。
-   - もし `reviewed_user_utterances == total_detected_user_utterances`（1,721件完了）または `semantic_classification_complete: true` の場合は、
+   - もし `reviewed_user_utterances == total_detected_user_utterances` または `semantic_classification_complete: true` または `next_user_utterance == null` の場合は、
      「全件の文脈精査が完了しています。新規バッチ処理は不要です。」と出力して正常終了する。
-   - それ以外の場合、`next_user_utterance`（例: `"U01499"`）および `last_batch`（例: `"B025"`）を確認する。
-   - 新規バッチIDを決定する（例: `last_batch` が `"B025"` なら次は `"B026"`）。
+   - それ以外の場合、`next_user_utterance` および `last_batch` を確認し、次のバッチIDを決定する（例: `B069` の次は `B070`）。
 
 ### Step 2: 作業基準書の確認
-- `GUIDELINES.md` を読み込み、レビュー行（`data/reviews.jsonl`）、セグメント行（`data/segments.jsonl`）、バッチサマリ（`batches/Bxxx.md`）のフォーマットと分類ルールを再確認する。
+- `GUIDELINES.md` と `docs/ADDING_CONVERSATIONS.md` を読み込み、レビュー行（`data/reviews.jsonl`）、セグメント行（`data/segments.jsonl`）、バッチサマリ（`batches/Bxxx.md`）のフォーマットと分類ルールを再確認する。
 
 ### Step 3: 対象発言と文脈の抽出
-1. `data/utterances.jsonl` から、`next_user_utterance` から始まる本人発言（`role: "user"`）を**30件**特定する。
-2. 発言の `source_id` から `data/sources.json` の `path` を解決し、該当原本の行（`start_line`〜`end_line`）を読み込む。最初の原本の現在の保存先は `sources/copilot-001/こぴちーお引越し.txt`。
-3. 前後の対話（直前・直後の `role: "copilot"` の発言）も併せて精読し、文脈の流れ（何についての相談か、AIの回答をどう受け止めたか）を正確に把握する。
+1. `data/utterances.jsonl` から、`next_user_utterance` から始まる未確認の本人発言（`role: "user"`）を最大**30件**特定する（同一原本内で区切る）。
+2. 対象発言の `source_id` から `data/sources.json` の `path` と `source_blob_sha` を解決し、原本の `start_line`〜`end_line` を読み込む。
+3. 前後の対話（直前・直後のLLM発言）も併せて精読し、文脈の流れを正確に把握する。
 
 ### Step 4: セグメント設計とレビュー行の作成
 1. **セグメント設計**:
-   - 30件の発言を、話題・事象・業務案件ごとにグループ化（通常1バッチあたり6〜12セグメント）。
-   - `data/segments.jsonl` の最終行の `segment_id`（例: `S214`）の次の番号から連番で付番（`S215`, `S216`…）。
-   - 具体性のある客観的なタイトルを命名。過去バッチに関連トピックがあれば `related_segment_ids` を設定。
+   - 対象発言を話題・事象・業務案件ごとにグループ化（通常1バッチあたり6〜12セグメント）。
+   - `data/segments.jsonl` の最終行の `segment_id` の次の番号から連番で付番し、`source_id` を明記する。
 2. **レビュー行作成**:
-   - 30件の各本人発言について、`data/reviews.jsonl` のスキーマに沿ったJSONレコードを作成。
-   - `speech_act` は具体的に（「〜の相談」ではなく「〜に関するリスクの指摘と代替案の提示」等）。
-   - `theme_labels` は `data/taxonomy.json` の14テーマから1〜複数選択。
-   - `news_relation` は `personal` / `general` / `news` / `unknown` を客観的に判定。
-   - `body_sha256` は `data/utterances.jsonl` の値を転記。
+   - 各本人発言について `data/reviews.jsonl` のスキーマに沿ったJSONレコードを作成（`source_id`, `source_blob_sha`, `body_sha256` は `data/sources.json` / `data/utterances.jsonl` の値を転記）。
+   - `speech_act` は具体的に、`theme_labels` は `data/taxonomy.json` の14テーマから1〜複数選択。
 
 ### Step 5: 各ファイルの追記・更新
-1. `data/reviews.jsonl`: 末尾に新規30行を追記。
-2. `data/segments.jsonl`: 末尾に新規セグメント行を追記。
-3. `batches/Bxxx.md`: 新規作成（直前の `batches/B025.md` 等のフォーマットに完全準拠：区間一覧表、発信と判断の観察、解釈上の留保）。
-4. `data/progress.json`:
-   - `reviewed_user_utterances`: +30 加算
-   - `reviewed_through`: 今回処理した最後の本人発言ID
-   - `next_user_utterance`: 次に処理すべき本人発言ID（30件の次のuser発言）
-   - `last_batch`: 今回のバッチID（例: `"B026"`）
-5. `PROGRESS.md`: 冒頭の確認済み件数、進捗率、最新バッチ、次回開始位置を更新。
+1. `data/reviews.jsonl` に新規レコードを追記。
+2. `data/segments.jsonl` に新規セグメント行を追記。
+3. `batches/Bxxx.md` を新規作成（直前バッチの書式に準拠：区間一覧表、発信と判断の観察、解釈上の留保）。
+4. `data/progress.json` と `PROGRESS.md` の全体進捗および原本別進捗を更新。
 
 ### Step 6: インデックスの再生成・同期（必須）
-以下のコマンドを実行し、テーマ別索引（`INDEX.md`、`themes/*.md`、`data/utterances.jsonl` 等）を今回の確定レビュー・セグメント・進捗と完全同期する：
 ```bash
 python3 tools/build_index.py
 ```
 
 ### Step 7: 整合性バリデーション（必須）
-以下のコマンドを実行し、データの整合性を検査する：
 ```bash
 python3 tools/validate.py
 ```
-- エラーが出た場合は、出力内容を確認してファイルを修正し、パスするまでコミットに進まないこと。
+- エラーが出た場合は修正し、パスするまでコミットに進まないこと。
 
-### Step 8: コミットとGitHubへのプッシュ
-1. 差分を確認する:
-   ```bash
-   git status
-   git diff data/progress.json PROGRESS.md
-   ```
-2. 変更をステージングしてコミットする:
-   ```bash
-   git add data/reviews.jsonl data/segments.jsonl data/progress.json PROGRESS.md batches/B*.md INDEX.md themes/*.md data/utterances.jsonl data/source_manifest.json
-   git commit -m "Bxxx: Uyyyyy〜Uzzzzzの文脈精査・セグメント設計およびインデックス・進捗更新"
-   ```
-3. リモートへプッシュする:
-   ```bash
-   git push github main
-   ```
+### Step 8: コミットとプッシュ
+1. `git status` と `git diff data/progress.json PROGRESS.md` で差分を確認。
+2. 変更をステージングしてコミット（`Bxxx: <開始ID>〜<終了ID>の文脈精査・セグメント設計およびインデックス・進捗更新`）。
+3. 必要に応じて `git pull --rebase <remote> main` してから `<remote> main` へプッシュ。
 
 ### Step 9: 完了報告
-作業完了後、以下の項目を簡潔に報告して終了する：
-- 完了バッチID（例: `B026`）
-- 処理した本人発言範囲（例: `U01499`〜`U01557`、計30件）
-- 新設セグメント範囲（例: `S215`〜`S223`）
-- 累計進捗（例: `780 / 1721件 (約45.3%)`）
-- 次回開始位置（例: `U01559`）
-- インデックス同期（`tools/build_index.py` 実行完了）
+完了バッチID、処理範囲、新設セグメント範囲、累計進捗、次回開始位置、`build_index.py` / `validate.py` の結果を簡潔に報告して終了する。
 ```
