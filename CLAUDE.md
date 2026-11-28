@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+プロジェクト全体の現行ルールは下記の運用方針を入口にする。投稿案を作る際は対象の生成指示と判断資料も読む。 [現行の運用方針](analysis/current_rules.md)。
+
 このリポジトリで作業するAIエージェント向けの入口メモ。
 
 ## まず確認する正本（Single Source of Truth）
@@ -20,4 +22,4 @@
 
 - XのURL（`x.com` / `twitter.com`）を渡されたら、ブラウザを開かず、`api.fxtwitter.com` をcurlで叩いて読む。
 - 手順は `.claude/skills/read-x-post/SKILL.md` にまとめてある。
-- fxtwitterは非公式サービス。応答しないときは、取れなかったことを正直に伝え、内容を推測で埋めない。
+- fxtwitterは非公式サービス。応答しないときは公開の埋め込みや出典も確認し、取得できた範囲を伝える。

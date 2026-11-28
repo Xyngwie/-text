@@ -1,5 +1,7 @@
 # Cursor Automations 設定用 Instructions（会話原本・第2段階バッチ処理）
 
+会話原本の第2段階用。X分類・Issue分析・RSS生成の実行条件は、それぞれのワークフローと運用手順を参照する。 [現行の運用方針](analysis/current_rules.md)。
+
 本ファイルは、**新しいLLM会話原本を `data/sources.json` に追加した際**に、未精査の本人発言を自律バッチ処理するための指示文テンプレートです。
 
 * 登録済みの会話3原本（計1,930件）は現在すべて第2段階完了済みのため、`data/progress.json` の `semantic_classification_complete: true` の間は起動しても変更を行わず正常終了します。

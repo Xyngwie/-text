@@ -10,6 +10,8 @@
 
 ## 最初に読む入口（クイックマップ）
 
+[現行の運用方針](analysis/current_rules.md)に、分類・原稿生成・本人確認で使う決定をまとめています。
+
 | 知りたいこと | 入口ファイル | 概要 |
 |---|---|---|
 | 現在の全体進捗 | [PROGRESS.md](PROGRESS.md) | 会話原本・Xアーカイブ・第3/4段階の最新件数 |
@@ -34,8 +36,8 @@
    * 正式版は [analysis/README.md](analysis/README.md)（`v001`〜`v040` を上書きせず保全）。
    * チャットに加え、[Issueでの第三段階壁打ち](docs/STAGE3_DIALOGUE_ACTION.md) でも暫定分析と本人確認を並行運用（正式版やRSS生成へは自動反映しない）。
 4. **第4段階：ニュース反応の試作・校正・検証（校正ループ稼働中）**
-   * [RSSエージェント運用手順](docs/RSS_AGENT.md) により17分野から1日最大6件を Issue 化。
-   * 本人の採用・修整・不採用（Close）・実投稿申告を追記型台帳（[実投稿の取込手順](docs/PUBLICATION_FEEDBACK.md)）へ記録。未見題材での前向き検証はこれから。
+   * [RSSエージェント運用手順](docs/RSS_AGENT.md) により26分野から1日最大6件を Issue 化。
+   * 本人の採用・修整・不採用（Close）・実投稿申告を追記型台帳（[実投稿の取込手順](docs/PUBLICATION_FEEDBACK.md)）へ記録。採否・本人の修整・実投稿後の反応は、それぞれ確認できた範囲で評価する。
 
 ---
 
@@ -44,7 +46,7 @@
 | ワークフロー | 役割 | 詳細ドキュメント |
 |---|---|---|
 | `.github/workflows/x_classification.yml` | Xアーカイブの索引検証・AI第2段階分類（5分間隔・最大30件） | [docs/X_CLASSIFICATION_ACTION.md](docs/X_CLASSIFICATION_ACTION.md) |
-| `.github/workflows/rss_ai_agent.yml` | 17分野のRSS収集・投稿案Issue生成（1日1回・最大6件） | [docs/RSS_AGENT.md](docs/RSS_AGENT.md) |
+| `.github/workflows/rss_ai_agent.yml` | 26分野のRSS収集・投稿案Issue生成（1日1回・最大6件） | [docs/RSS_AGENT.md](docs/RSS_AGENT.md) |
 | `.github/workflows/import_rss_feedback.yml` | RSS Issueの本人コメント・Close採否・実投稿報告の取込 | [docs/RSS_AGENT.md](docs/RSS_AGENT.md) / [docs/PUBLICATION_FEEDBACK.md](docs/PUBLICATION_FEEDBACK.md) |
 | `.github/workflows/stage3_dialogue.yml` | 第3段階の問い出し・本人コメントへの暫定分析（毎時） | [docs/STAGE3_DIALOGUE_ACTION.md](docs/STAGE3_DIALOGUE_ACTION.md) |
 | `.github/workflows/archive_issue_comments.yml` | GitHub Issue上の本人コメント原典を文脈付きで保全 | [sources/github-issues-001/README.md](sources/github-issues-001/README.md) |
